@@ -1,5 +1,9 @@
 var NAVTREEINDEX2 =
 {
+"classVelPlaneAverage.html":[2,0,12],
+"classVelPlaneAverage.html#a0e172ce8d86cd386074fdbd186a9f2dc":[2,0,12,10],
+"classVelPlaneAverage.html#a17f4d08237aaeb3e864bbbdfbf46a7fb":[2,0,12,2],
+"classVelPlaneAverage.html#a3f7a21e75561eab5d694cba6c30287ac":[2,0,12,4],
 "classVelPlaneAverage.html#a40d22fac5018b7fe2bc9ecb1dfa9b643":[2,0,12,3],
 "classVelPlaneAverage.html#a67f35043ad864b6935891396e17dfa89":[2,0,12,7],
 "classVelPlaneAverage.html#a6a6d4af0b0c15dd403dd81ba7d88561a":[2,0,12,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX2 =
 "structSolverChoice.html#a6426e150ba9c1ba2e14151228bf6ffaf":[2,0,10,42],
 "structSolverChoice.html#a69e2f0b874cba8faae57987ead4e3ebb":[2,0,10,5],
 "structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5":[2,0,10,45],
-"structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017":[2,0,10,46],
-"structSolverChoice.html#a83092085c4e0f7ea1c5c3dd9ee822d98":[2,0,10,25],
-"structSolverChoice.html#a8567bc83a2159c88c5372ea30770725e":[2,0,10,44],
-"structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b":[2,0,10,20],
-"structSolverChoice.html#a8d16d654d2a02cec62427b38498c2462":[2,0,10,22]
+"structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017":[2,0,10,46]
 };
