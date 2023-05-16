@@ -209,6 +209,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a521d5cd2edc92841f77c046f6ba45d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afadbab3c79b65f13e46e86f467d1ed27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSX.html#afadbab3c79b65f13e46e86f467d1ed27">rhs_2d</a> (const amrex::Box &amp;bx, amrex::Array4&lt; amrex::Real &gt; uold, amrex::Array4&lt; amrex::Real &gt; vold, amrex::Array4&lt; amrex::Real &gt; ru, amrex::Array4&lt; amrex::Real &gt; rv, amrex::Array4&lt; amrex::Real &gt; Huon, amrex::Array4&lt; amrex::Real &gt; Hvom, int nrhs, int N)</td></tr>
 <tr class="separator:afadbab3c79b65f13e46e86f467d1ed27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5e454e7261a71dffe751c77db3b96c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSX.html#a6e5e454e7261a71dffe751c77db3b96c">rho_eos</a> (const amrex::Box &amp;bx, amrex::Array4&lt; amrex::Real &gt; rho, amrex::Array4&lt; amrex::Real &gt; rhoA, amrex::Array4&lt; amrex::Real &gt; rhoS, amrex::Array4&lt; amrex::Real &gt; pden, amrex::Array4&lt; amrex::Real &gt; Hz, const int N)</td></tr>
+<tr class="separator:a6e5e454e7261a71dffe751c77db3b96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7426015e12ae9d70581d87c2de0ef6c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSX.html#a7426015e12ae9d70581d87c2de0ef6c1">update_vel_3d</a> (const amrex::Box &amp;bx, const int ioff, const int joff, amrex::Array4&lt; amrex::Real &gt; vel, amrex::Array4&lt; amrex::Real &gt; vel_old, amrex::Array4&lt; amrex::Real &gt; rvel, amrex::Array4&lt; amrex::Real &gt; Hz, amrex::Array4&lt; amrex::Real &gt; Akv, amrex::Array4&lt; amrex::Real &gt; pm, amrex::Array4&lt; amrex::Real &gt; pn, amrex::Array4&lt; amrex::Real &gt; DC, amrex::Array4&lt; amrex::Real &gt; FC, amrex::Array4&lt; amrex::Real &gt; sstr, amrex::Array4&lt; amrex::Real &gt; bstr, amrex::Array4&lt; amrex::Real &gt; z_r, const int iic, const int ntfirst, const int nnew, int nstp, int nrhs, int N, const amrex::Real lambda, const amrex::Real dt_lev)</td></tr>
 <tr class="separator:a7426015e12ae9d70581d87c2de0ef6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02bd6266f0576c515cac5a2d4475695a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSX.html#a02bd6266f0576c515cac5a2d4475695a">vert_visc_3d</a> (const amrex::Box &amp;bx, const int ioff, const int joff, amrex::Array4&lt; amrex::Real &gt; phi, amrex::Array4&lt; amrex::Real &gt; Hz, amrex::Array4&lt; amrex::Real &gt; Hzk, amrex::Array4&lt; amrex::Real &gt; oHz, amrex::Array4&lt; amrex::Real &gt; AK, amrex::Array4&lt; amrex::Real &gt; Akv, amrex::Array4&lt; amrex::Real &gt; BC, amrex::Array4&lt; amrex::Real &gt; DC, amrex::Array4&lt; amrex::Real &gt; FC, amrex::Array4&lt; amrex::Real &gt; CF, const int nnew, const int N, const amrex::Real dt_lev)</td></tr>
@@ -680,18 +682,18 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;       }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a1062d4182e7f6a1064a8605c3e8ccb56"><div class="ttname"><a href="classROMSX.html#a1062d4182e7f6a1064a8605c3e8ccb56">ROMSX::flux_registers</a></div><div class="ttdeci">amrex::Vector&lt; amrex::FluxRegister * &gt; flux_registers</div><div class="ttdef"><b>Definition:</b> ROMSX.H:742</div></div>
-<div class="ttc" id="aclassROMSX_html_a31b7954d302e5fd9474c084078ad4784"><div class="ttname"><a href="classROMSX.html#a31b7954d302e5fd9474c084078ad4784">ROMSX::istep</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; istep</div><div class="ttdef"><b>Definition:</b> ROMSX.H:717</div></div>
+<div class="ttc" id="aclassROMSX_html_a1062d4182e7f6a1064a8605c3e8ccb56"><div class="ttname"><a href="classROMSX.html#a1062d4182e7f6a1064a8605c3e8ccb56">ROMSX::flux_registers</a></div><div class="ttdeci">amrex::Vector&lt; amrex::FluxRegister * &gt; flux_registers</div><div class="ttdef"><b>Definition:</b> ROMSX.H:751</div></div>
+<div class="ttc" id="aclassROMSX_html_a31b7954d302e5fd9474c084078ad4784"><div class="ttname"><a href="classROMSX.html#a31b7954d302e5fd9474c084078ad4784">ROMSX::istep</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; istep</div><div class="ttdef"><b>Definition:</b> ROMSX.H:726</div></div>
 <div class="ttc" id="aclassROMSX_html_a4ea53c7dac70940e948e43f7d623798b"><div class="ttname"><a href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">ROMSX::vars_new</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Vector&lt; amrex::MultiFab &gt; &gt; vars_new</div><div class="ttdef"><b>Definition:</b> ROMSX.H:224</div></div>
 <div class="ttc" id="aclassROMSX_html_a570a9208f8598e95442e4c5717902638"><div class="ttname"><a href="classROMSX.html#a570a9208f8598e95442e4c5717902638">ROMSX::setPlotVariables</a></div><div class="ttdeci">void setPlotVariables(const std::string &amp;pp_plot_var_names, amrex::Vector&lt; std::string &gt; &amp;plot_var_names)</div><div class="ttdef"><b>Definition:</b> Plotfile.cpp:10</div></div>
-<div class="ttc" id="aclassROMSX_html_a6fd2ffd8760dc3b1d68392d18cc728ae"><div class="ttname"><a href="classROMSX.html#a6fd2ffd8760dc3b1d68392d18cc728ae">ROMSX::plot_var_names_1</a></div><div class="ttdeci">amrex::Vector&lt; std::string &gt; plot_var_names_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:803</div></div>
+<div class="ttc" id="aclassROMSX_html_a6fd2ffd8760dc3b1d68392d18cc728ae"><div class="ttname"><a href="classROMSX.html#a6fd2ffd8760dc3b1d68392d18cc728ae">ROMSX::plot_var_names_1</a></div><div class="ttdeci">amrex::Vector&lt; std::string &gt; plot_var_names_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:812</div></div>
 <div class="ttc" id="aclassROMSX_html_a8e2bb34e9fcd0826f96118f6d5ba62f1"><div class="ttname"><a href="classROMSX.html#a8e2bb34e9fcd0826f96118f6d5ba62f1">ROMSX::vars_old</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Vector&lt; amrex::MultiFab &gt; &gt; vars_old</div><div class="ttdef"><b>Definition:</b> ROMSX.H:225</div></div>
 <div class="ttc" id="aclassROMSX_html_a95cf73016433f9bc8822da57b7f3736e"><div class="ttname"><a href="classROMSX.html#a95cf73016433f9bc8822da57b7f3736e">ROMSX::refinement_criteria_setup</a></div><div class="ttdeci">void refinement_criteria_setup()</div><div class="ttdef"><b>Definition:</b> ROMSX_Tagging.cpp:23</div></div>
-<div class="ttc" id="aclassROMSX_html_a9b9c22ebd57fa77b0bb64f3932acc51c"><div class="ttname"><a href="classROMSX.html#a9b9c22ebd57fa77b0bb64f3932acc51c">ROMSX::plot_var_names_2</a></div><div class="ttdeci">amrex::Vector&lt; std::string &gt; plot_var_names_2</div><div class="ttdef"><b>Definition:</b> ROMSX.H:804</div></div>
-<div class="ttc" id="aclassROMSX_html_aa8a469941edd719ce7c6052afc30d067"><div class="ttname"><a href="classROMSX.html#aa8a469941edd719ce7c6052afc30d067">ROMSX::dt</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; dt</div><div class="ttdef"><b>Definition:</b> ROMSX.H:723</div></div>
-<div class="ttc" id="aclassROMSX_html_aac116ec30618bbd5641218e7522cdb86"><div class="ttname"><a href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">ROMSX::t_new</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; t_new</div><div class="ttdef"><b>Definition:</b> ROMSX.H:721</div></div>
-<div class="ttc" id="aclassROMSX_html_ab02aa1c49bf90239a6bce4ca84da985d"><div class="ttname"><a href="classROMSX.html#ab02aa1c49bf90239a6bce4ca84da985d">ROMSX::nsubsteps</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; nsubsteps</div><div class="ttdef"><b>Definition:</b> ROMSX.H:718</div></div>
-<div class="ttc" id="aclassROMSX_html_ac395453aa10633a05bb7323b2946101e"><div class="ttname"><a href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">ROMSX::t_old</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; t_old</div><div class="ttdef"><b>Definition:</b> ROMSX.H:722</div></div>
+<div class="ttc" id="aclassROMSX_html_a9b9c22ebd57fa77b0bb64f3932acc51c"><div class="ttname"><a href="classROMSX.html#a9b9c22ebd57fa77b0bb64f3932acc51c">ROMSX::plot_var_names_2</a></div><div class="ttdeci">amrex::Vector&lt; std::string &gt; plot_var_names_2</div><div class="ttdef"><b>Definition:</b> ROMSX.H:813</div></div>
+<div class="ttc" id="aclassROMSX_html_aa8a469941edd719ce7c6052afc30d067"><div class="ttname"><a href="classROMSX.html#aa8a469941edd719ce7c6052afc30d067">ROMSX::dt</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; dt</div><div class="ttdef"><b>Definition:</b> ROMSX.H:732</div></div>
+<div class="ttc" id="aclassROMSX_html_aac116ec30618bbd5641218e7522cdb86"><div class="ttname"><a href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">ROMSX::t_new</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; t_new</div><div class="ttdef"><b>Definition:</b> ROMSX.H:730</div></div>
+<div class="ttc" id="aclassROMSX_html_ab02aa1c49bf90239a6bce4ca84da985d"><div class="ttname"><a href="classROMSX.html#ab02aa1c49bf90239a6bce4ca84da985d">ROMSX::nsubsteps</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; nsubsteps</div><div class="ttdef"><b>Definition:</b> ROMSX.H:727</div></div>
+<div class="ttc" id="aclassROMSX_html_ac395453aa10633a05bb7323b2946101e"><div class="ttname"><a href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">ROMSX::t_old</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; t_old</div><div class="ttdef"><b>Definition:</b> ROMSX.H:731</div></div>
 <div class="ttc" id="aclassROMSX_html_ae3543d5a8078423ea4ac399ee53a67b9"><div class="ttname"><a href="classROMSX.html#ae3543d5a8078423ea4ac399ee53a67b9">ROMSX::ReadParameters</a></div><div class="ttdeci">void ReadParameters()</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:678</div></div>
 <div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a5deccaa24d5e74279425d7749f7d1494"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a5deccaa24d5e74279425d7749f7d1494">Vars::NumTypes</a></div><div class="ttdeci">@ NumTypes</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:103</div></div>
 <div class="ttc" id="aprob__common_8H_html_afef32e2116829d24b864c64caebf5ea6"><div class="ttname"><a href="prob__common_8H.html#afef32e2116829d24b864c64caebf5ea6">amrex_probinit</a></div><div class="ttdeci">void amrex_probinit(const amrex_real *problo, const amrex_real *probhi)</div></div>
@@ -1187,7 +1189,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclassROMSX_html_a52a5f265a370595f128046c31b9f31d5"><div class="ttname"><a href="classROMSX.html#a52a5f265a370595f128046c31b9f31d5">ROMSX::vec_rvfrc</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_rvfrc</div><div class="ttdef"><b>Definition:</b> ROMSX.H:233</div></div>
 <div class="ttc" id="aclassROMSX_html_a5a981dafaf65d2d8d96f16e1e7467eb2"><div class="ttname"><a href="classROMSX.html#a5a981dafaf65d2d8d96f16e1e7467eb2">ROMSX::vec_bvstr</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_bvstr</div><div class="ttdef"><b>Definition:</b> ROMSX.H:250</div></div>
 <div class="ttc" id="aclassROMSX_html_a607e27d43f6eaebcf557c4ae17b8039a"><div class="ttname"><a href="classROMSX.html#a607e27d43f6eaebcf557c4ae17b8039a">ROMSX::vec_bustr</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_bustr</div><div class="ttdef"><b>Definition:</b> ROMSX.H:249</div></div>
-<div class="ttc" id="aclassROMSX_html_a676fc3cc2402734727ca9e04e050d171"><div class="ttname"><a href="classROMSX.html#a676fc3cc2402734727ca9e04e050d171">ROMSX::fixed_ndtfast_ratio</a></div><div class="ttdeci">static int fixed_ndtfast_ratio</div><div class="ttdef"><b>Definition:</b> ROMSX.H:785</div></div>
+<div class="ttc" id="aclassROMSX_html_a676fc3cc2402734727ca9e04e050d171"><div class="ttname"><a href="classROMSX.html#a676fc3cc2402734727ca9e04e050d171">ROMSX::fixed_ndtfast_ratio</a></div><div class="ttdeci">static int fixed_ndtfast_ratio</div><div class="ttdef"><b>Definition:</b> ROMSX.H:794</div></div>
 <div class="ttc" id="aclassROMSX_html_a6847259dab9f6118da780bf623a9868a"><div class="ttname"><a href="classROMSX.html#a6847259dab9f6118da780bf623a9868a">ROMSX::vec_DV_avg2</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_DV_avg2</div><div class="ttdef"><b>Definition:</b> ROMSX.H:255</div></div>
 <div class="ttc" id="aclassROMSX_html_a7137f5e39d218263180f04072cb93b73"><div class="ttname"><a href="classROMSX.html#a7137f5e39d218263180f04072cb93b73">ROMSX::set_smflux</a></div><div class="ttdeci">void set_smflux(int lev, amrex::Real time)</div><div class="ttdef"><b>Definition:</b> DepthStretchTransform.H:153</div></div>
 <div class="ttc" id="aclassROMSX_html_a83d781ead821f8ed29f6f2b9ef70a9aa"><div class="ttname"><a href="classROMSX.html#a83d781ead821f8ed29f6f2b9ef70a9aa">ROMSX::vec_rvbar</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_rvbar</div><div class="ttdef"><b>Definition:</b> ROMSX.H:257</div></div>
@@ -2131,7 +2133,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    }</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;}</div>
 <div class="ttc" id="aclassROMSX_html_a1781a7c54d695e8889f2d394062b85a7"><div class="ttname"><a href="classROMSX.html#a1781a7c54d695e8889f2d394062b85a7">ROMSX::vec_weight2</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; vec_weight2</div><div class="ttdef"><b>Definition:</b> ROMSX.H:266</div></div>
-<div class="ttc" id="aclassROMSX_html_a21df816ace6144ce0ed78d0031eaa946"><div class="ttname"><a href="classROMSX.html#a21df816ace6144ce0ed78d0031eaa946">ROMSX::solverChoice</a></div><div class="ttdeci">static SolverChoice solverChoice</div><div class="ttdef"><b>Definition:</b> ROMSX.H:815</div></div>
+<div class="ttc" id="aclassROMSX_html_a21df816ace6144ce0ed78d0031eaa946"><div class="ttname"><a href="classROMSX.html#a21df816ace6144ce0ed78d0031eaa946">ROMSX::solverChoice</a></div><div class="ttdeci">static SolverChoice solverChoice</div><div class="ttdef"><b>Definition:</b> ROMSX.H:824</div></div>
 <div class="ttc" id="aclassROMSX_html_a55d028f9a1e55a035ab877607ac326fe"><div class="ttname"><a href="classROMSX.html#a55d028f9a1e55a035ab877607ac326fe">ROMSX::vec_weight1</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; vec_weight1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:265</div></div>
 <div class="ttc" id="aclassROMSX_html_afadbab3c79b65f13e46e86f467d1ed27"><div class="ttname"><a href="classROMSX.html#afadbab3c79b65f13e46e86f467d1ed27">ROMSX::rhs_2d</a></div><div class="ttdeci">void rhs_2d(const amrex::Box &amp;bx, amrex::Array4&lt; amrex::Real &gt; uold, amrex::Array4&lt; amrex::Real &gt; vold, amrex::Array4&lt; amrex::Real &gt; ru, amrex::Array4&lt; amrex::Real &gt; rv, amrex::Array4&lt; amrex::Real &gt; Huon, amrex::Array4&lt; amrex::Real &gt; Hvom, int nrhs, int N)</div><div class="ttdef"><b>Definition:</b> ROMSX_rhs_uv_2d.cpp:11</div></div>
 <div class="ttc" id="astructSolverChoice_html_a1e2c4b0ec69ffe8eebf3114fd61c44d0"><div class="ttname"><a href="structSolverChoice.html#a1e2c4b0ec69ffe8eebf3114fd61c44d0">SolverChoice::evolve_free_surface</a></div><div class="ttdeci">bool evolve_free_surface</div><div class="ttdef"><b>Definition:</b> DataStruct.H:327</div></div>
@@ -2831,7 +2833,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classROMSX.html#a6d17615a53d63c67d12c657c9b5dade5">fine_mask</a>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a6d17615a53d63c67d12c657c9b5dade5"><div class="ttname"><a href="classROMSX.html#a6d17615a53d63c67d12c657c9b5dade5">ROMSX::fine_mask</a></div><div class="ttdeci">amrex::MultiFab fine_mask</div><div class="ttdef"><b>Definition:</b> ROMSX.H:883</div></div>
+<div class="ttc" id="aclassROMSX_html_a6d17615a53d63c67d12c657c9b5dade5"><div class="ttname"><a href="classROMSX.html#a6d17615a53d63c67d12c657c9b5dade5">ROMSX::fine_mask</a></div><div class="ttdeci">amrex::MultiFab fine_mask</div><div class="ttdef"><b>Definition:</b> ROMSX.H:892</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2918,9 +2920,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classROMSX.html#aa8a469941edd719ce7c6052afc30d067">dt</a>[lev] = <a class="code" href="classROMSX.html#aa8a469941edd719ce7c6052afc30d067">dt</a>[lev-1] / <a class="code" href="classROMSX.html#ab02aa1c49bf90239a6bce4ca84da985d">nsubsteps</a>[lev];</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a22dfd39392c026bd023c8f1d57fd0889"><div class="ttname"><a href="classROMSX.html#a22dfd39392c026bd023c8f1d57fd0889">ROMSX::stop_time</a></div><div class="ttdeci">amrex::Real stop_time</div><div class="ttdef"><b>Definition:</b> ROMSX.H:772</div></div>
+<div class="ttc" id="aclassROMSX_html_a22dfd39392c026bd023c8f1d57fd0889"><div class="ttname"><a href="classROMSX.html#a22dfd39392c026bd023c8f1d57fd0889">ROMSX::stop_time</a></div><div class="ttdeci">amrex::Real stop_time</div><div class="ttdef"><b>Definition:</b> ROMSX.H:781</div></div>
 <div class="ttc" id="aclassROMSX_html_aaf5a8c8dcd7e6c993fea4acf2845e3d0"><div class="ttname"><a href="classROMSX.html#aaf5a8c8dcd7e6c993fea4acf2845e3d0">ROMSX::estTimeStep</a></div><div class="ttdeci">amrex::Real estTimeStep(int lev) const</div><div class="ttdef"><b>Definition:</b> ROMSX_ComputeTimestep.cpp:40</div></div>
-<div class="ttc" id="aclassROMSX_html_afe5f357fc00e46eb1445f35f84cbdf8e"><div class="ttname"><a href="classROMSX.html#afe5f357fc00e46eb1445f35f84cbdf8e">ROMSX::change_max</a></div><div class="ttdeci">static amrex::Real change_max</div><div class="ttdef"><b>Definition:</b> ROMSX.H:780</div></div>
+<div class="ttc" id="aclassROMSX_html_afe5f357fc00e46eb1445f35f84cbdf8e"><div class="ttname"><a href="classROMSX.html#afe5f357fc00e46eb1445f35f84cbdf8e">ROMSX::change_max</a></div><div class="ttdeci">static amrex::Real change_max</div><div class="ttdef"><b>Definition:</b> ROMSX.H:789</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2947,31 +2949,31 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                                                {</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;      <span class="keywordtype">int</span> nGhostCells;</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160; </div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;      <span class="keywordflow">switch</span> (spatial_order) {</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;          nGhostCells = 2; <span class="comment">// We need this many to compute the eddy viscosity in the ghost cells</span></div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;          nGhostCells = 2;</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;          nGhostCells = 2;</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        <span class="keywordflow">case</span> 5:</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;          nGhostCells = 3;</div>
+<div class="fragment"><div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                                                {</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;      <span class="keywordtype">int</span> nGhostCells;</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160; </div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;      <span class="keywordflow">switch</span> (spatial_order) {</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;          nGhostCells = 2; <span class="comment">// We need this many to compute the eddy viscosity in the ghost cells</span></div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        <span class="keywordflow">case</span> 6:</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;          nGhostCells = 3;</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;          nGhostCells = 2;</div>
 <div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;          amrex::Error(<span class="stringliteral">&quot;Must specify spatial order to be 2,3,4,5 or 6&quot;</span>);</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;      }</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160; </div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;      <span class="keywordflow">return</span> nGhostCells;</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    }</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;          nGhostCells = 2;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        <span class="keywordflow">case</span> 5:</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;          nGhostCells = 3;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        <span class="keywordflow">case</span> 6:</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;          nGhostCells = 3;</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;          amrex::Error(<span class="stringliteral">&quot;Must specify spatial order to be 2,3,4,5 or 6&quot;</span>);</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;      }</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160; </div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;      <span class="keywordflow">return</span> nGhostCells;</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2998,10 +3000,10 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    {</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">datalog</a>[i];</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    }</div>
-<div class="ttc" id="aclassROMSX_html_a854a34e778a776e3ca46f7eeac9813e4"><div class="ttname"><a href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">ROMSX::datalog</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; std::fstream &gt; &gt; datalog</div><div class="ttdef"><b>Definition:</b> ROMSX.H:965</div></div>
+<div class="fragment"><div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    {</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">datalog</a>[i];</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;    }</div>
+<div class="ttc" id="aclassROMSX_html_a854a34e778a776e3ca46f7eeac9813e4"><div class="ttname"><a href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">ROMSX::datalog</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; std::fstream &gt; &gt; datalog</div><div class="ttdef"><b>Definition:</b> ROMSX.H:974</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3030,8 +3032,8 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>The filename of the ith datalog file. </p>
-<div class="fragment"><div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classROMSX.html#ae308f7068f2eb8e48913fc77d32f9065">datalogname</a>[i]; }</div>
-<div class="ttc" id="aclassROMSX_html_ae308f7068f2eb8e48913fc77d32f9065"><div class="ttname"><a href="classROMSX.html#ae308f7068f2eb8e48913fc77d32f9065">ROMSX::datalogname</a></div><div class="ttdeci">amrex::Vector&lt; std::string &gt; datalogname</div><div class="ttdef"><b>Definition:</b> ROMSX.H:966</div></div>
+<div class="fragment"><div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classROMSX.html#ae308f7068f2eb8e48913fc77d32f9065">datalogname</a>[i]; }</div>
+<div class="ttc" id="aclassROMSX_html_ae308f7068f2eb8e48913fc77d32f9065"><div class="ttname"><a href="classROMSX.html#ae308f7068f2eb8e48913fc77d32f9065">ROMSX::datalogname</a></div><div class="ttdeci">amrex::Vector&lt; std::string &gt; datalogname</div><div class="ttdef"><b>Definition:</b> ROMSX.H:975</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3091,7 +3093,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classROMSX.html#a335a655f6cf611277de2803029419c4c">ref_tags</a>[j](tags,mf.get(),clearval,tagval,time,level,geom[level]);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a335a655f6cf611277de2803029419c4c"><div class="ttname"><a href="classROMSX.html#a335a655f6cf611277de2803029419c4c">ROMSX::ref_tags</a></div><div class="ttdeci">static amrex::Vector&lt; amrex::AMRErrorTag &gt; ref_tags</div><div class="ttdef"><b>Definition:</b> ROMSX.H:877</div></div>
+<div class="ttc" id="aclassROMSX_html_a335a655f6cf611277de2803029419c4c"><div class="ttname"><a href="classROMSX.html#a335a655f6cf611277de2803029419c4c">ROMSX::ref_tags</a></div><div class="ttdeci">static amrex::Vector&lt; amrex::AMRErrorTag &gt; ref_tags</div><div class="ttdef"><b>Definition:</b> ROMSX.H:886</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3168,9 +3170,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> estdt_lowM;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a87dc05168f41e1ad8b45d1030655f6e7"><div class="ttname"><a href="classROMSX.html#a87dc05168f41e1ad8b45d1030655f6e7">ROMSX::cfl</a></div><div class="ttdeci">static amrex::Real cfl</div><div class="ttdef"><b>Definition:</b> ROMSX.H:778</div></div>
-<div class="ttc" id="aclassROMSX_html_a9f1ff8349f4357e88dc70143f163b392"><div class="ttname"><a href="classROMSX.html#a9f1ff8349f4357e88dc70143f163b392">ROMSX::fixed_dt</a></div><div class="ttdeci">static amrex::Real fixed_dt</div><div class="ttdef"><b>Definition:</b> ROMSX.H:783</div></div>
-<div class="ttc" id="aclassROMSX_html_ab37afaafcf05a9b10c0fba3180539610"><div class="ttname"><a href="classROMSX.html#ab37afaafcf05a9b10c0fba3180539610">ROMSX::verbose</a></div><div class="ttdeci">static int verbose</div><div class="ttdef"><b>Definition:</b> ROMSX.H:817</div></div>
+<div class="ttc" id="aclassROMSX_html_a87dc05168f41e1ad8b45d1030655f6e7"><div class="ttname"><a href="classROMSX.html#a87dc05168f41e1ad8b45d1030655f6e7">ROMSX::cfl</a></div><div class="ttdeci">static amrex::Real cfl</div><div class="ttdef"><b>Definition:</b> ROMSX.H:787</div></div>
+<div class="ttc" id="aclassROMSX_html_a9f1ff8349f4357e88dc70143f163b392"><div class="ttname"><a href="classROMSX.html#a9f1ff8349f4357e88dc70143f163b392">ROMSX::fixed_dt</a></div><div class="ttdeci">static amrex::Real fixed_dt</div><div class="ttdef"><b>Definition:</b> ROMSX.H:792</div></div>
+<div class="ttc" id="aclassROMSX_html_ab37afaafcf05a9b10c0fba3180539610"><div class="ttname"><a href="classROMSX.html#ab37afaafcf05a9b10c0fba3180539610">ROMSX::verbose</a></div><div class="ttdeci">static int verbose</div><div class="ttdef"><b>Definition:</b> ROMSX.H:826</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3262,18 +3264,18 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;}</div>
 <div class="ttc" id="aclassROMSX_html_a0049697ad0398380ac5a058705fece48"><div class="ttname"><a href="classROMSX.html#a0049697ad0398380ac5a058705fece48">ROMSX::WritePlotFile</a></div><div class="ttdeci">void WritePlotFile(int which, amrex::Vector&lt; std::string &gt; plot_var_names)</div><div class="ttdef"><b>Definition:</b> Plotfile.cpp:85</div></div>
-<div class="ttc" id="aclassROMSX_html_a216e5a3eb30ef276aef23458bd6ebd98"><div class="ttname"><a href="classROMSX.html#a216e5a3eb30ef276aef23458bd6ebd98">ROMSX::check_int</a></div><div class="ttdeci">int check_int</div><div class="ttdef"><b>Definition:</b> ROMSX.H:801</div></div>
-<div class="ttc" id="aclassROMSX_html_a25ecb4567ed2adbaf9be2fbae65d3640"><div class="ttname"><a href="classROMSX.html#a25ecb4567ed2adbaf9be2fbae65d3640">ROMSX::last_plot_file_step_2</a></div><div class="ttdeci">int last_plot_file_step_2</div><div class="ttdef"><b>Definition:</b> ROMSX.H:760</div></div>
-<div class="ttc" id="aclassROMSX_html_a33906f6209da9e2a247b1022f60d24ac"><div class="ttname"><a href="classROMSX.html#a33906f6209da9e2a247b1022f60d24ac">ROMSX::last_check_file_step</a></div><div class="ttdeci">int last_check_file_step</div><div class="ttdef"><b>Definition:</b> ROMSX.H:764</div></div>
-<div class="ttc" id="aclassROMSX_html_a3d94cb5986d9f35bc8becc666cfaea3d"><div class="ttname"><a href="classROMSX.html#a3d94cb5986d9f35bc8becc666cfaea3d">ROMSX::last_plot_file_step_1</a></div><div class="ttdeci">int last_plot_file_step_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:759</div></div>
+<div class="ttc" id="aclassROMSX_html_a216e5a3eb30ef276aef23458bd6ebd98"><div class="ttname"><a href="classROMSX.html#a216e5a3eb30ef276aef23458bd6ebd98">ROMSX::check_int</a></div><div class="ttdeci">int check_int</div><div class="ttdef"><b>Definition:</b> ROMSX.H:810</div></div>
+<div class="ttc" id="aclassROMSX_html_a25ecb4567ed2adbaf9be2fbae65d3640"><div class="ttname"><a href="classROMSX.html#a25ecb4567ed2adbaf9be2fbae65d3640">ROMSX::last_plot_file_step_2</a></div><div class="ttdeci">int last_plot_file_step_2</div><div class="ttdef"><b>Definition:</b> ROMSX.H:769</div></div>
+<div class="ttc" id="aclassROMSX_html_a33906f6209da9e2a247b1022f60d24ac"><div class="ttname"><a href="classROMSX.html#a33906f6209da9e2a247b1022f60d24ac">ROMSX::last_check_file_step</a></div><div class="ttdeci">int last_check_file_step</div><div class="ttdef"><b>Definition:</b> ROMSX.H:773</div></div>
+<div class="ttc" id="aclassROMSX_html_a3d94cb5986d9f35bc8becc666cfaea3d"><div class="ttname"><a href="classROMSX.html#a3d94cb5986d9f35bc8becc666cfaea3d">ROMSX::last_plot_file_step_1</a></div><div class="ttdeci">int last_plot_file_step_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:768</div></div>
 <div class="ttc" id="aclassROMSX_html_a5abd4890b0a7b5939c66c6af3d9bb6c2"><div class="ttname"><a href="classROMSX.html#a5abd4890b0a7b5939c66c6af3d9bb6c2">ROMSX::timeStep</a></div><div class="ttdeci">void timeStep(int lev, amrex::Real time, int iteration)</div><div class="ttdef"><b>Definition:</b> ROMSX_TimeStep.cpp:10</div></div>
 <div class="ttc" id="aclassROMSX_html_a6b84298925e299d4f57401ef3020227b"><div class="ttname"><a href="classROMSX.html#a6b84298925e299d4f57401ef3020227b">ROMSX::ComputeDt</a></div><div class="ttdeci">void ComputeDt()</div><div class="ttdef"><b>Definition:</b> ROMSX_ComputeTimestep.cpp:8</div></div>
-<div class="ttc" id="aclassROMSX_html_a72cbded1c13914c8b88cd81ee1a95824"><div class="ttname"><a href="classROMSX.html#a72cbded1c13914c8b88cd81ee1a95824">ROMSX::check_type</a></div><div class="ttdeci">std::string check_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:799</div></div>
-<div class="ttc" id="aclassROMSX_html_aa3cd25f16ca7432ac68b7a02a8880226"><div class="ttname"><a href="classROMSX.html#aa3cd25f16ca7432ac68b7a02a8880226">ROMSX::plot_int_2</a></div><div class="ttdeci">int plot_int_2</div><div class="ttdef"><b>Definition:</b> ROMSX.H:795</div></div>
+<div class="ttc" id="aclassROMSX_html_a72cbded1c13914c8b88cd81ee1a95824"><div class="ttname"><a href="classROMSX.html#a72cbded1c13914c8b88cd81ee1a95824">ROMSX::check_type</a></div><div class="ttdeci">std::string check_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:808</div></div>
+<div class="ttc" id="aclassROMSX_html_aa3cd25f16ca7432ac68b7a02a8880226"><div class="ttname"><a href="classROMSX.html#aa3cd25f16ca7432ac68b7a02a8880226">ROMSX::plot_int_2</a></div><div class="ttdeci">int plot_int_2</div><div class="ttdef"><b>Definition:</b> ROMSX.H:804</div></div>
 <div class="ttc" id="aclassROMSX_html_aae2265fdbf5360bf2409b673135281a7"><div class="ttname"><a href="classROMSX.html#aae2265fdbf5360bf2409b673135281a7">ROMSX::post_timestep</a></div><div class="ttdeci">void post_timestep(int nstep, amrex::Real time, amrex::Real dt_lev)</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:217</div></div>
-<div class="ttc" id="aclassROMSX_html_abaae04ebda466750a5480506239c6ca7"><div class="ttname"><a href="classROMSX.html#abaae04ebda466750a5480506239c6ca7">ROMSX::plot_int_1</a></div><div class="ttdeci">int plot_int_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:794</div></div>
+<div class="ttc" id="aclassROMSX_html_abaae04ebda466750a5480506239c6ca7"><div class="ttname"><a href="classROMSX.html#abaae04ebda466750a5480506239c6ca7">ROMSX::plot_int_1</a></div><div class="ttdeci">int plot_int_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:803</div></div>
 <div class="ttc" id="aclassROMSX_html_acc4b85fa57f43aa0f68f33c4edd82611"><div class="ttname"><a href="classROMSX.html#acc4b85fa57f43aa0f68f33c4edd82611">ROMSX::WriteCheckpointFile</a></div><div class="ttdeci">void WriteCheckpointFile() const</div><div class="ttdef"><b>Definition:</b> Checkpoint.cpp:15</div></div>
-<div class="ttc" id="aclassROMSX_html_ad895c0936e0bd64ca71ec355e5e164b6"><div class="ttname"><a href="classROMSX.html#ad895c0936e0bd64ca71ec355e5e164b6">ROMSX::max_step</a></div><div class="ttdeci">int max_step</div><div class="ttdef"><b>Definition:</b> ROMSX.H:771</div></div>
+<div class="ttc" id="aclassROMSX_html_ad895c0936e0bd64ca71ec355e5e164b6"><div class="ttname"><a href="classROMSX.html#ad895c0936e0bd64ca71ec355e5e164b6">ROMSX::max_step</a></div><div class="ttdeci">int max_step</div><div class="ttdef"><b>Definition:</b> ROMSX.H:780</div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
 <div class="dynheader">
@@ -3453,14 +3455,14 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;}</div>
 <div class="ttc" id="aIndexDefines_8H_html_ad5195ac8f863f5a9a7eaa0db094f7639"><div class="ttname"><a href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a></div><div class="ttdeci">#define NVAR</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:31</div></div>
 <div class="ttc" id="aclassROMSXPhysBCFunct_html"><div class="ttname"><a href="classROMSXPhysBCFunct.html">ROMSXPhysBCFunct</a></div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:35</div></div>
-<div class="ttc" id="aclassROMSX_html_a003d617559e7196bba737b43e23f9fc4"><div class="ttname"><a href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">ROMSX::domain_bcs_type</a></div><div class="ttdeci">amrex::Vector&lt; amrex::BCRec &gt; domain_bcs_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:747</div></div>
-<div class="ttc" id="aclassROMSX_html_a04e9242a2702910e640d84f47a7aae3c"><div class="ttname"><a href="classROMSX.html#a04e9242a2702910e640d84f47a7aae3c">ROMSX::domain_bcs_type_d</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::BCRec &gt; domain_bcs_type_d</div><div class="ttdef"><b>Definition:</b> ROMSX.H:748</div></div>
+<div class="ttc" id="aclassROMSX_html_a003d617559e7196bba737b43e23f9fc4"><div class="ttname"><a href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">ROMSX::domain_bcs_type</a></div><div class="ttdeci">amrex::Vector&lt; amrex::BCRec &gt; domain_bcs_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:756</div></div>
+<div class="ttc" id="aclassROMSX_html_a04e9242a2702910e640d84f47a7aae3c"><div class="ttname"><a href="classROMSX.html#a04e9242a2702910e640d84f47a7aae3c">ROMSX::domain_bcs_type_d</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::BCRec &gt; domain_bcs_type_d</div><div class="ttdef"><b>Definition:</b> ROMSX.H:757</div></div>
 <div class="ttc" id="aclassROMSX_html_a1dc11d863a7ed83b76003eca972a8578"><div class="ttname"><a href="classROMSX.html#a1dc11d863a7ed83b76003eca972a8578">ROMSX::GetDataAtTime</a></div><div class="ttdeci">TimeInterpolatedData GetDataAtTime(int lev, amrex::Real time)</div><div class="ttdef"><b>Definition:</b> ROMSX_FillPatch.cpp:95</div></div>
-<div class="ttc" id="aclassROMSX_html_a4cf598b92bd690e1fc33b679c542bd20"><div class="ttname"><a href="classROMSX.html#a4cf598b92bd690e1fc33b679c542bd20">ROMSX::z_phys_nd</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; z_phys_nd</div><div class="ttdef"><b>Definition:</b> ROMSX.H:729</div></div>
-<div class="ttc" id="aclassROMSX_html_a5a6658ee6b3ac5d5688c5a1a69ab9f86"><div class="ttname"><a href="classROMSX.html#a5a6658ee6b3ac5d5688c5a1a69ab9f86">ROMSX::m_bc_extdir_vals</a></div><div class="ttdeci">amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+NVAR &gt; m_bc_extdir_vals</div><div class="ttdef"><b>Definition:</b> ROMSX.H:754</div></div>
+<div class="ttc" id="aclassROMSX_html_a4cf598b92bd690e1fc33b679c542bd20"><div class="ttname"><a href="classROMSX.html#a4cf598b92bd690e1fc33b679c542bd20">ROMSX::z_phys_nd</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; z_phys_nd</div><div class="ttdef"><b>Definition:</b> ROMSX.H:738</div></div>
+<div class="ttc" id="aclassROMSX_html_a5a6658ee6b3ac5d5688c5a1a69ab9f86"><div class="ttname"><a href="classROMSX.html#a5a6658ee6b3ac5d5688c5a1a69ab9f86">ROMSX::m_bc_extdir_vals</a></div><div class="ttdeci">amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+NVAR &gt; m_bc_extdir_vals</div><div class="ttdef"><b>Definition:</b> ROMSX.H:763</div></div>
 <div class="ttc" id="aclassROMSX_html_abc5cfdac432d69a20b89d663102acd91"><div class="ttname"><a href="classROMSX.html#abc5cfdac432d69a20b89d663102acd91">ROMSX::FillCoarsePatch</a></div><div class="ttdeci">void FillCoarsePatch(int lev, amrex::Real time, amrex::MultiFab &amp;mf, int icomp, int ncomp, int var_idx)</div><div class="ttdef"><b>Definition:</b> ROMSX_FillPatch.cpp:371</div></div>
-<div class="ttc" id="aclassROMSX_html_abca823cae95a0507a2f850744fd03093"><div class="ttname"><a href="classROMSX.html#abca823cae95a0507a2f850744fd03093">ROMSX::init_type</a></div><div class="ttdeci">static std::string init_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:834</div></div>
-<div class="ttc" id="aclassROMSX_html_accd4bba06a768622851aebca986bc284"><div class="ttname"><a href="classROMSX.html#accd4bba06a768622851aebca986bc284">ROMSX::detJ_cc</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; detJ_cc</div><div class="ttdef"><b>Definition:</b> ROMSX.H:731</div></div>
+<div class="ttc" id="aclassROMSX_html_abca823cae95a0507a2f850744fd03093"><div class="ttname"><a href="classROMSX.html#abca823cae95a0507a2f850744fd03093">ROMSX::init_type</a></div><div class="ttdeci">static std::string init_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:843</div></div>
+<div class="ttc" id="aclassROMSX_html_accd4bba06a768622851aebca986bc284"><div class="ttname"><a href="classROMSX.html#accd4bba06a768622851aebca986bc284">ROMSX::detJ_cc</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; detJ_cc</div><div class="ttdef"><b>Definition:</b> ROMSX.H:740</div></div>
 <div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a35b6db75aef9a4eca57e85396dc5dc12"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a35b6db75aef9a4eca57e85396dc5dc12">Vars::xmom</a></div><div class="ttdeci">@ xmom</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:104</div></div>
 <div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3aa92727db248ec616aa835c2faa22f44c"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3aa92727db248ec616aa835c2faa22f44c">Vars::ymom</a></div><div class="ttdeci">@ ymom</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:105</div></div>
 <div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3ada7d061afb1d0d7089d9dfe4874c965d"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3ada7d061afb1d0d7089d9dfe4874c965d">Vars::zmom</a></div><div class="ttdeci">@ zmom</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:106</div></div>
@@ -3838,9 +3840,9 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;    {</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;      <span class="keywordflow">return</span> *<a class="code" href="classROMSX.html#a1062d4182e7f6a1064a8605c3e8ccb56">flux_registers</a>[lev];</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    {</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;      <span class="keywordflow">return</span> *<a class="code" href="classROMSX.html#a1062d4182e7f6a1064a8605c3e8ccb56">flux_registers</a>[lev];</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3866,20 +3868,20 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    {</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;      <span class="keywordtype">int</span> numCores = amrex::ParallelDescriptor::NProcs();</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;      numCores = numCores * omp_get_max_threads();</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160; </div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;      amrex::Real <a class="code" href="namespaceWRFBdyVars.html#aa5064ee47782b2e0cfbf132fdf55b2b2a1e7df4966430ffdaa4bb7bbd0f8a6d02">T</a> =</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;        numCores * (amrex::ParallelDescriptor::second() - <a class="code" href="classROMSX.html#ab3e7f280e92f9e5cbdad88a3f222069c">startCPUTime</a>) +</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;        <a class="code" href="classROMSX.html#afe8d71bf62ec39dc02fb961910a79811">previousCPUTimeUsed</a>;</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160; </div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="namespaceWRFBdyVars.html#aa5064ee47782b2e0cfbf132fdf55b2b2a1e7df4966430ffdaa4bb7bbd0f8a6d02">T</a>;</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    }</div>
-<div class="ttc" id="aclassROMSX_html_ab3e7f280e92f9e5cbdad88a3f222069c"><div class="ttname"><a href="classROMSX.html#ab3e7f280e92f9e5cbdad88a3f222069c">ROMSX::startCPUTime</a></div><div class="ttdeci">static amrex::Real startCPUTime</div><div class="ttdef"><b>Definition:</b> ROMSX.H:934</div></div>
-<div class="ttc" id="aclassROMSX_html_afe8d71bf62ec39dc02fb961910a79811"><div class="ttname"><a href="classROMSX.html#afe8d71bf62ec39dc02fb961910a79811">ROMSX::previousCPUTimeUsed</a></div><div class="ttdeci">static amrex::Real previousCPUTimeUsed</div><div class="ttdef"><b>Definition:</b> ROMSX.H:935</div></div>
+<div class="fragment"><div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;    {</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;      <span class="keywordtype">int</span> numCores = amrex::ParallelDescriptor::NProcs();</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;      numCores = numCores * omp_get_max_threads();</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160; </div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;      amrex::Real <a class="code" href="namespaceWRFBdyVars.html#aa5064ee47782b2e0cfbf132fdf55b2b2a1e7df4966430ffdaa4bb7bbd0f8a6d02">T</a> =</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        numCores * (amrex::ParallelDescriptor::second() - <a class="code" href="classROMSX.html#ab3e7f280e92f9e5cbdad88a3f222069c">startCPUTime</a>) +</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;        <a class="code" href="classROMSX.html#afe8d71bf62ec39dc02fb961910a79811">previousCPUTimeUsed</a>;</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160; </div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="namespaceWRFBdyVars.html#aa5064ee47782b2e0cfbf132fdf55b2b2a1e7df4966430ffdaa4bb7bbd0f8a6d02">T</a>;</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    }</div>
+<div class="ttc" id="aclassROMSX_html_ab3e7f280e92f9e5cbdad88a3f222069c"><div class="ttname"><a href="classROMSX.html#ab3e7f280e92f9e5cbdad88a3f222069c">ROMSX::startCPUTime</a></div><div class="ttdeci">static amrex::Real startCPUTime</div><div class="ttdef"><b>Definition:</b> ROMSX.H:943</div></div>
+<div class="ttc" id="aclassROMSX_html_afe8d71bf62ec39dc02fb961910a79811"><div class="ttname"><a href="classROMSX.html#afe8d71bf62ec39dc02fb961910a79811">ROMSX::previousCPUTimeUsed</a></div><div class="ttdeci">static amrex::Real previousCPUTimeUsed</div><div class="ttdef"><b>Definition:</b> ROMSX.H:944</div></div>
 <div class="ttc" id="anamespaceWRFBdyVars_html_aa5064ee47782b2e0cfbf132fdf55b2b2a1e7df4966430ffdaa4bb7bbd0f8a6d02"><div class="ttname"><a href="namespaceWRFBdyVars.html#aa5064ee47782b2e0cfbf132fdf55b2b2a1e7df4966430ffdaa4bb7bbd0f8a6d02">WRFBdyVars::T</a></div><div class="ttdeci">@ T</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:73</div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="classROMSX.html#ae886b3856fed4fa4d820c5dda7effb7c">writeJobInfo()</a>.</p>
@@ -4400,8 +4402,8 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aIndexDefines_8H_html_a8c2583d7b3aea3f36ba249890cc5e281acb8c716b8d9b499d9bc323d8f8a410d3"><div class="ttname"><a href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281acb8c716b8d9b499d9bc323d8f8a410d3">ROMSX_BC::no_slip_wall</a></div><div class="ttdeci">@ no_slip_wall</div></div>
 <div class="ttc" id="aIndexDefines_8H_html_a8c2583d7b3aea3f36ba249890cc5e281ad37e67db17cfd059f2852e2673b9e8ef"><div class="ttname"><a href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ad37e67db17cfd059f2852e2673b9e8ef">ROMSX_BC::inflow</a></div><div class="ttdeci">@ inflow</div></div>
 <div class="ttc" id="aIndexDefines_8H_html_a8c2583d7b3aea3f36ba249890cc5e281ae6ffdec5e14fce371eb7ae99edebbbee"><div class="ttname"><a href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ae6ffdec5e14fce371eb7ae99edebbbee">ROMSX_BC::periodic</a></div><div class="ttdeci">@ periodic</div></div>
-<div class="ttc" id="aclassROMSX_html_a3ebadda9dbf9fbf5fd040bb1df0f18c3"><div class="ttname"><a href="classROMSX.html#a3ebadda9dbf9fbf5fd040bb1df0f18c3">ROMSX::domain_bc_type</a></div><div class="ttdeci">amrex::Array&lt; std::string, 2 *AMREX_SPACEDIM &gt; domain_bc_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:751</div></div>
-<div class="ttc" id="aclassROMSX_html_a99fc9ef2e303a2fd0cb70225fca95acb"><div class="ttname"><a href="classROMSX.html#a99fc9ef2e303a2fd0cb70225fca95acb">ROMSX::phys_bc_type</a></div><div class="ttdeci">amrex::GpuArray&lt; ROMSX_BC, AMREX_SPACEDIM *2 &gt; phys_bc_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:757</div></div>
+<div class="ttc" id="aclassROMSX_html_a3ebadda9dbf9fbf5fd040bb1df0f18c3"><div class="ttname"><a href="classROMSX.html#a3ebadda9dbf9fbf5fd040bb1df0f18c3">ROMSX::domain_bc_type</a></div><div class="ttdeci">amrex::Array&lt; std::string, 2 *AMREX_SPACEDIM &gt; domain_bc_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:760</div></div>
+<div class="ttc" id="aclassROMSX_html_a99fc9ef2e303a2fd0cb70225fca95acb"><div class="ttname"><a href="classROMSX.html#a99fc9ef2e303a2fd0cb70225fca95acb">ROMSX::phys_bc_type</a></div><div class="ttdeci">amrex::GpuArray&lt; ROMSX_BC, AMREX_SPACEDIM *2 &gt; phys_bc_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:766</div></div>
 <div class="ttc" id="anamespaceBCVars_html_a6fd8f72c3055242c4af20c780f391073a029ef491930290dea3a984ebdb6d6ae4"><div class="ttname"><a href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a029ef491930290dea3a984ebdb6d6ae4">BCVars::RhoScalar_bc_comp</a></div><div class="ttdeci">@ RhoScalar_bc_comp</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:56</div></div>
 <div class="ttc" id="anamespaceBCVars_html_a6fd8f72c3055242c4af20c780f391073a03b35ec9e83f34bb1349a86965d34e34"><div class="ttname"><a href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a03b35ec9e83f34bb1349a86965d34e34">BCVars::zvel_bc</a></div><div class="ttdeci">@ zvel_bc</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:63</div></div>
 <div class="ttc" id="anamespaceBCVars_html_a6fd8f72c3055242c4af20c780f391073a0d8c9f8308d3e1a0dedf68c3765d2205"><div class="ttname"><a href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0d8c9f8308d3e1a0dedf68c3765d2205">BCVars::Temp_bc_comp</a></div><div class="ttdeci">@ Temp_bc_comp</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:53</div></div>
@@ -4485,9 +4487,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
 <div class="ttc" id="aclassROMSX_html_a7e2a55ae7fb02290e6ead16ec3e658fa"><div class="ttname"><a href="classROMSX.html#a7e2a55ae7fb02290e6ead16ec3e658fa">ROMSX::vec_z_w</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_z_w</div><div class="ttdef"><b>Definition:</b> ROMSX.H:243</div></div>
-<div class="ttc" id="aclassROMSX_html_aa0433760a408aa7d3680518bb86eae90"><div class="ttname"><a href="classROMSX.html#aa0433760a408aa7d3680518bb86eae90">ROMSX::z_phys_cc</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; z_phys_cc</div><div class="ttdef"><b>Definition:</b> ROMSX.H:730</div></div>
+<div class="ttc" id="aclassROMSX_html_aa0433760a408aa7d3680518bb86eae90"><div class="ttname"><a href="classROMSX.html#aa0433760a408aa7d3680518bb86eae90">ROMSX::z_phys_cc</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; z_phys_cc</div><div class="ttdef"><b>Definition:</b> ROMSX.H:739</div></div>
 <div class="ttc" id="aclassROMSX_html_abd0ef9b9a56b5f6985a0903895d81e46"><div class="ttname"><a href="classROMSX.html#abd0ef9b9a56b5f6985a0903895d81e46">ROMSX::set_2darrays</a></div><div class="ttdeci">void set_2darrays(int lev)</div><div class="ttdef"><b>Definition:</b> DepthStretchTransform.H:12</div></div>
-<div class="ttc" id="aclassROMSX_html_acfd1851ef45db54a02e64166303cfb9a"><div class="ttname"><a href="classROMSX.html#acfd1851ef45db54a02e64166303cfb9a">ROMSX::base_state</a></div><div class="ttdeci">amrex::Vector&lt; amrex::MultiFab &gt; base_state</div><div class="ttdef"><b>Definition:</b> ROMSX.H:739</div></div>
+<div class="ttc" id="aclassROMSX_html_acfd1851ef45db54a02e64166303cfb9a"><div class="ttname"><a href="classROMSX.html#acfd1851ef45db54a02e64166303cfb9a">ROMSX::base_state</a></div><div class="ttdeci">amrex::Vector&lt; amrex::MultiFab &gt; base_state</div><div class="ttdef"><b>Definition:</b> ROMSX.H:748</div></div>
 <div class="ttc" id="aprob__common_8H_html_a49190f228d7dba629d84809f453f11f7"><div class="ttname"><a href="prob__common_8H.html#a49190f228d7dba629d84809f453f11f7">init_custom_prob</a></div><div class="ttdeci">void init_custom_prob(const amrex::Box &amp;bx, amrex::Array4&lt; amrex::Real &gt; const &amp;state, amrex::Array4&lt; amrex::Real &gt; const &amp;x_vel, amrex::Array4&lt; amrex::Real &gt; const &amp;y_vel, amrex::Array4&lt; amrex::Real &gt; const &amp;z_vel, amrex::Array4&lt; amrex::Real &gt; const &amp;r_hse, amrex::Array4&lt; amrex::Real &gt; const &amp;p_hse, amrex::Array4&lt; amrex::Real const &gt; const &amp;z_nd, amrex::Array4&lt; amrex::Real const &gt; const &amp;z_cc, amrex::Array4&lt; amrex::Real const &gt; const &amp;z_w, amrex::Array4&lt; amrex::Real const &gt; const &amp;z_r, amrex::Array4&lt; amrex::Real const &gt; const &amp;Hz, amrex::Array4&lt; amrex::Real const &gt; const &amp;h, amrex::Array4&lt; amrex::Real const &gt; const &amp;Zt_avg1, amrex::GeometryData const &amp;geomdata)</div></div>
 <div class="ttc" id="astructSolverChoice_html_a063a88594452100497651e8aaf1f68d7"><div class="ttname"><a href="structSolverChoice.html#a063a88594452100497651e8aaf1f68d7">SolverChoice::use_terrain</a></div><div class="ttdeci">bool use_terrain</div><div class="ttdef"><b>Definition:</b> DataStruct.H:325</div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -4702,16 +4704,16 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aTerrainMetrics_8cpp_html_a164b37e7ca02d7284ddd6c32cd95f2db"><div class="ttname"><a href="TerrainMetrics_8cpp.html#a164b37e7ca02d7284ddd6c32cd95f2db">init_terrain_grid</a></div><div class="ttdeci">void init_terrain_grid(const Geometry &amp;geom, MultiFab &amp;z_phys_nd)</div><div class="ttdef"><b>Definition:</b> TerrainMetrics.cpp:16</div></div>
 <div class="ttc" id="aTerrainMetrics_8cpp_html_a55f4a92935f0efe394664231cd73b9fe"><div class="ttname"><a href="TerrainMetrics_8cpp.html#a55f4a92935f0efe394664231cd73b9fe">make_metrics</a></div><div class="ttdeci">void make_metrics(const amrex::Geometry &amp;geom, amrex::MultiFab &amp;z_phys_nd, amrex::MultiFab &amp;z_phys_cc, amrex::MultiFab &amp;detJ_cc)</div><div class="ttdef"><b>Definition:</b> TerrainMetrics.cpp:350</div></div>
 <div class="ttc" id="aclassROMSX_html_a11fae6ec83db5a377afd32858e0a80a1"><div class="ttname"><a href="classROMSX.html#a11fae6ec83db5a377afd32858e0a80a1">ROMSX::is_it_time_for_action</a></div><div class="ttdeci">bool is_it_time_for_action(int nstep, amrex::Real time, amrex::Real dt, int action_interval, amrex::Real action_per)</div><div class="ttdef"><b>Definition:</b> ROMSX_SumIQ.cpp:137</div></div>
-<div class="ttc" id="aclassROMSX_html_a1b766eb32c763c5c2ace9e723ad5df89"><div class="ttname"><a href="classROMSX.html#a1b766eb32c763c5c2ace9e723ad5df89">ROMSX::do_reflux</a></div><div class="ttdeci">static int do_reflux</div><div class="ttdef"><b>Definition:</b> ROMSX.H:823</div></div>
+<div class="ttc" id="aclassROMSX_html_a1b766eb32c763c5c2ace9e723ad5df89"><div class="ttname"><a href="classROMSX.html#a1b766eb32c763c5c2ace9e723ad5df89">ROMSX::do_reflux</a></div><div class="ttdeci">static int do_reflux</div><div class="ttdef"><b>Definition:</b> ROMSX.H:832</div></div>
 <div class="ttc" id="aclassROMSX_html_a55bb606cb2f4fc86e05232b5c314a829"><div class="ttname"><a href="classROMSX.html#a55bb606cb2f4fc86e05232b5c314a829">ROMSX::sum_integrated_quantities</a></div><div class="ttdeci">void sum_integrated_quantities(amrex::Real time)</div><div class="ttdef"><b>Definition:</b> ROMSX_SumIQ.cpp:8</div></div>
 <div class="ttc" id="aclassROMSX_html_a5a73ffdd93eed4bef7f0d3c6bdac0e6e"><div class="ttname"><a href="classROMSX.html#a5a73ffdd93eed4bef7f0d3c6bdac0e6e">ROMSX::AverageDown</a></div><div class="ttdeci">void AverageDown()</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:914</div></div>
-<div class="ttc" id="aclassROMSX_html_a90451fd26c3ca52a56982e35d2887214"><div class="ttname"><a href="classROMSX.html#a90451fd26c3ca52a56982e35d2887214">ROMSX::plot_file_on_restart</a></div><div class="ttdeci">int plot_file_on_restart</div><div class="ttdef"><b>Definition:</b> ROMSX.H:765</div></div>
+<div class="ttc" id="aclassROMSX_html_a90451fd26c3ca52a56982e35d2887214"><div class="ttname"><a href="classROMSX.html#a90451fd26c3ca52a56982e35d2887214">ROMSX::plot_file_on_restart</a></div><div class="ttdeci">int plot_file_on_restart</div><div class="ttdef"><b>Definition:</b> ROMSX.H:774</div></div>
 <div class="ttc" id="aclassROMSX_html_a9e841cff9ccca5ed1945876def44c681"><div class="ttname"><a href="classROMSX.html#a9e841cff9ccca5ed1945876def44c681">ROMSX::restart</a></div><div class="ttdeci">void restart()</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:372</div></div>
 <div class="ttc" id="aclassROMSX_html_aae7ba5940968ecd9397fa506a7082933"><div class="ttname"><a href="classROMSX.html#aae7ba5940968ecd9397fa506a7082933">ROMSX::init_only</a></div><div class="ttdeci">void init_only(int lev, amrex::Real time)</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:648</div></div>
 <div class="ttc" id="aclassROMSX_html_abba6cffe4a459932b33465a0d126d4d8"><div class="ttname"><a href="classROMSX.html#abba6cffe4a459932b33465a0d126d4d8">ROMSX::init_bcs</a></div><div class="ttdeci">void init_bcs()</div><div class="ttdef"><b>Definition:</b> ROMSX_init_bcs.cpp:9</div></div>
-<div class="ttc" id="aclassROMSX_html_ae2d89ab211dd0d324dda03720b8c4bff"><div class="ttname"><a href="classROMSX.html#ae2d89ab211dd0d324dda03720b8c4bff">ROMSX::restart_chkfile</a></div><div class="ttdeci">std::string restart_chkfile</div><div class="ttdef"><b>Definition:</b> ROMSX.H:775</div></div>
-<div class="ttc" id="aclassROMSX_html_af638ada4294dcf5b33de335efef61de1"><div class="ttname"><a href="classROMSX.html#af638ada4294dcf5b33de335efef61de1">ROMSX::sum_per</a></div><div class="ttdeci">static amrex::Real sum_per</div><div class="ttdef"><b>Definition:</b> ROMSX.H:828</div></div>
-<div class="ttc" id="aclassROMSX_html_afcedb31381fd065fff2ca36196f8da40"><div class="ttname"><a href="classROMSX.html#afcedb31381fd065fff2ca36196f8da40">ROMSX::sum_interval</a></div><div class="ttdeci">static int sum_interval</div><div class="ttdef"><b>Definition:</b> ROMSX.H:827</div></div>
+<div class="ttc" id="aclassROMSX_html_ae2d89ab211dd0d324dda03720b8c4bff"><div class="ttname"><a href="classROMSX.html#ae2d89ab211dd0d324dda03720b8c4bff">ROMSX::restart_chkfile</a></div><div class="ttdeci">std::string restart_chkfile</div><div class="ttdef"><b>Definition:</b> ROMSX.H:784</div></div>
+<div class="ttc" id="aclassROMSX_html_af638ada4294dcf5b33de335efef61de1"><div class="ttname"><a href="classROMSX.html#af638ada4294dcf5b33de335efef61de1">ROMSX::sum_per</a></div><div class="ttdeci">static amrex::Real sum_per</div><div class="ttdef"><b>Definition:</b> ROMSX.H:837</div></div>
+<div class="ttc" id="aclassROMSX_html_afcedb31381fd065fff2ca36196f8da40"><div class="ttname"><a href="classROMSX.html#afcedb31381fd065fff2ca36196f8da40">ROMSX::sum_interval</a></div><div class="ttdeci">static int sum_interval</div><div class="ttdef"><b>Definition:</b> ROMSX.H:836</div></div>
 <div class="ttc" id="aprob__common_8H_html_a00938a7e96931475ce127c85a9d2b931"><div class="ttname"><a href="prob__common_8H.html#a00938a7e96931475ce127c85a9d2b931">init_custom_terrain</a></div><div class="ttdeci">void init_custom_terrain(const amrex::Geometry &amp;geom, amrex::MultiFab &amp;z_phys_nd, const amrex::Real &amp;time=0.0)</div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
@@ -5026,11 +5028,11 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    amrex::Gpu::copy(amrex::Gpu::hostToDevice, h_havg_qc.begin(), h_havg_qc.end(), d_havg_qc.begin());</div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a09200be1d5d74f87d3679591a850eaef"><div class="ttname"><a href="classROMSX.html#a09200be1d5d74f87d3679591a850eaef">ROMSX::d_havg_pressure</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::Real &gt; d_havg_pressure</div><div class="ttdef"><b>Definition:</b> ROMSX.H:870</div></div>
-<div class="ttc" id="aclassROMSX_html_a271306c0bdbc6ac6822bbca35f395d07"><div class="ttname"><a href="classROMSX.html#a271306c0bdbc6ac6822bbca35f395d07">ROMSX::d_havg_density</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::Real &gt; d_havg_density</div><div class="ttdef"><b>Definition:</b> ROMSX.H:868</div></div>
-<div class="ttc" id="aclassROMSX_html_a6efd311333adc503a24d5b3364c4a2d3"><div class="ttname"><a href="classROMSX.html#a6efd311333adc503a24d5b3364c4a2d3">ROMSX::h_havg_density</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; h_havg_density</div><div class="ttdef"><b>Definition:</b> ROMSX.H:865</div></div>
-<div class="ttc" id="aclassROMSX_html_a9af6ccc61c900c2139238378b214ce44"><div class="ttname"><a href="classROMSX.html#a9af6ccc61c900c2139238378b214ce44">ROMSX::d_havg_temperature</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::Real &gt; d_havg_temperature</div><div class="ttdef"><b>Definition:</b> ROMSX.H:869</div></div>
-<div class="ttc" id="aclassROMSX_html_aa5dcbcc6efc7c4e5fbca45b466b475ac"><div class="ttname"><a href="classROMSX.html#aa5dcbcc6efc7c4e5fbca45b466b475ac">ROMSX::h_havg_temperature</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; h_havg_temperature</div><div class="ttdef"><b>Definition:</b> ROMSX.H:866</div></div>
+<div class="ttc" id="aclassROMSX_html_a09200be1d5d74f87d3679591a850eaef"><div class="ttname"><a href="classROMSX.html#a09200be1d5d74f87d3679591a850eaef">ROMSX::d_havg_pressure</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::Real &gt; d_havg_pressure</div><div class="ttdef"><b>Definition:</b> ROMSX.H:879</div></div>
+<div class="ttc" id="aclassROMSX_html_a271306c0bdbc6ac6822bbca35f395d07"><div class="ttname"><a href="classROMSX.html#a271306c0bdbc6ac6822bbca35f395d07">ROMSX::d_havg_density</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::Real &gt; d_havg_density</div><div class="ttdef"><b>Definition:</b> ROMSX.H:877</div></div>
+<div class="ttc" id="aclassROMSX_html_a6efd311333adc503a24d5b3364c4a2d3"><div class="ttname"><a href="classROMSX.html#a6efd311333adc503a24d5b3364c4a2d3">ROMSX::h_havg_density</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; h_havg_density</div><div class="ttdef"><b>Definition:</b> ROMSX.H:874</div></div>
+<div class="ttc" id="aclassROMSX_html_a9af6ccc61c900c2139238378b214ce44"><div class="ttname"><a href="classROMSX.html#a9af6ccc61c900c2139238378b214ce44">ROMSX::d_havg_temperature</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::Real &gt; d_havg_temperature</div><div class="ttdef"><b>Definition:</b> ROMSX.H:878</div></div>
+<div class="ttc" id="aclassROMSX_html_aa5dcbcc6efc7c4e5fbca45b466b475ac"><div class="ttname"><a href="classROMSX.html#aa5dcbcc6efc7c4e5fbca45b466b475ac">ROMSX::h_havg_temperature</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; h_havg_temperature</div><div class="ttdef"><b>Definition:</b> ROMSX.H:875</div></div>
 <div class="ttc" id="anamespaceCons_html_aa5b867507379ab774c4d0a32dfb1dc7ba2fc980fcd8edc02981fb1159c08d3571"><div class="ttname"><a href="namespaceCons.html#aa5b867507379ab774c4d0a32dfb1dc7ba2fc980fcd8edc02981fb1159c08d3571">Cons::Temp</a></div><div class="ttdeci">@ Temp</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:113</div></div>
 <div class="ttc" id="anamespaceCons_html_aa5b867507379ab774c4d0a32dfb1dc7ba5c9c77ea576137ca2664783567e7f588"><div class="ttname"><a href="namespaceCons.html#aa5b867507379ab774c4d0a32dfb1dc7ba5c9c77ea576137ca2664783567e7f588">Cons::Rho</a></div><div class="ttdeci">@ Rho</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:112</div></div>
 </div><!-- fragment -->
@@ -5330,15 +5332,15 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassROMSX_html_a2de6e4298de90faa955d8073a65f7cd9"><div class="ttname"><a href="classROMSX.html#a2de6e4298de90faa955d8073a65f7cd9">ROMSX::vec_x_r</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_x_r</div><div class="ttdef"><b>Definition:</b> ROMSX.H:240</div></div>
 <div class="ttc" id="aclassROMSX_html_a3ca3a726e1b0ecfc4339b2a07ade77b7"><div class="ttname"><a href="classROMSX.html#a3ca3a726e1b0ecfc4339b2a07ade77b7">ROMSX::set_weights</a></div><div class="ttdeci">void set_weights(int lev)</div><div class="ttdef"><b>Definition:</b> DepthStretchTransform.H:468</div></div>
 <div class="ttc" id="aclassROMSX_html_a48b99337b5ac313ce48a95ab0b9e73dc"><div class="ttname"><a href="classROMSX.html#a48b99337b5ac313ce48a95ab0b9e73dc">ROMSX::set_vmix</a></div><div class="ttdeci">void set_vmix(int lev)</div><div class="ttdef"><b>Definition:</b> DepthStretchTransform.H:126</div></div>
-<div class="ttc" id="aclassROMSX_html_a4e8f6e71ae2c366a6455882d029de926"><div class="ttname"><a href="classROMSX.html#a4e8f6e71ae2c366a6455882d029de926">ROMSX::ComputeGhostCells</a></div><div class="ttdeci">AMREX_FORCE_INLINE int ComputeGhostCells(const int &amp;spatial_order)</div><div class="ttdef"><b>Definition:</b> ROMSX.H:887</div></div>
+<div class="ttc" id="aclassROMSX_html_a4e8f6e71ae2c366a6455882d029de926"><div class="ttname"><a href="classROMSX.html#a4e8f6e71ae2c366a6455882d029de926">ROMSX::ComputeGhostCells</a></div><div class="ttdeci">AMREX_FORCE_INLINE int ComputeGhostCells(const int &amp;spatial_order)</div><div class="ttdef"><b>Definition:</b> ROMSX.H:896</div></div>
 <div class="ttc" id="aclassROMSX_html_a5dd9fc911df600f1eb0e8f3c131d8353"><div class="ttname"><a href="classROMSX.html#a5dd9fc911df600f1eb0e8f3c131d8353">ROMSX::set_hmixcoef</a></div><div class="ttdeci">void set_hmixcoef(int lev)</div><div class="ttdef"><b>Definition:</b> DepthStretchTransform.H:413</div></div>
-<div class="ttc" id="aclassROMSX_html_a606d7f526ef409ef78feb8ce127f98c9"><div class="ttname"><a href="classROMSX.html#a606d7f526ef409ef78feb8ce127f98c9">ROMSX::mapfac_m</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; mapfac_m</div><div class="ttdef"><b>Definition:</b> ROMSX.H:733</div></div>
+<div class="ttc" id="aclassROMSX_html_a606d7f526ef409ef78feb8ce127f98c9"><div class="ttname"><a href="classROMSX.html#a606d7f526ef409ef78feb8ce127f98c9">ROMSX::mapfac_m</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; mapfac_m</div><div class="ttdef"><b>Definition:</b> ROMSX.H:742</div></div>
 <div class="ttc" id="aclassROMSX_html_a640f040827d96f0b2085a385f0faaa3b"><div class="ttname"><a href="classROMSX.html#a640f040827d96f0b2085a385f0faaa3b">ROMSX::vec_visc3d_r</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_visc3d_r</div><div class="ttdef"><b>Definition:</b> ROMSX.H:235</div></div>
 <div class="ttc" id="aclassROMSX_html_a7a3b7fb166ec3acf1b1057f53e08adad"><div class="ttname"><a href="classROMSX.html#a7a3b7fb166ec3acf1b1057f53e08adad">ROMSX::vec_s_r</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_s_r</div><div class="ttdef"><b>Definition:</b> ROMSX.H:244</div></div>
 <div class="ttc" id="aclassROMSX_html_a7f2dc9f3ff4a7d473039286fb3446206"><div class="ttname"><a href="classROMSX.html#a7f2dc9f3ff4a7d473039286fb3446206">ROMSX::set_depth</a></div><div class="ttdeci">void set_depth(int lev)</div><div class="ttdef"><b>Definition:</b> DepthStretchTransform.H:194</div></div>
-<div class="ttc" id="aclassROMSX_html_a865698971c9689455573c4b81ecaf26c"><div class="ttname"><a href="classROMSX.html#a865698971c9689455573c4b81ecaf26c">ROMSX::mapfac_u</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; mapfac_u</div><div class="ttdef"><b>Definition:</b> ROMSX.H:734</div></div>
+<div class="ttc" id="aclassROMSX_html_a865698971c9689455573c4b81ecaf26c"><div class="ttname"><a href="classROMSX.html#a865698971c9689455573c4b81ecaf26c">ROMSX::mapfac_u</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; mapfac_u</div><div class="ttdef"><b>Definition:</b> ROMSX.H:743</div></div>
 <div class="ttc" id="aclassROMSX_html_a9a453443ec491d496adbd2cf5ac292d8"><div class="ttname"><a href="classROMSX.html#a9a453443ec491d496adbd2cf5ac292d8">ROMSX::vec_y_r</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_y_r</div><div class="ttdef"><b>Definition:</b> ROMSX.H:241</div></div>
-<div class="ttc" id="aclassROMSX_html_ad96e947b76f50a01928821d3cd2455f7"><div class="ttname"><a href="classROMSX.html#ad96e947b76f50a01928821d3cd2455f7">ROMSX::mapfac_v</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; mapfac_v</div><div class="ttdef"><b>Definition:</b> ROMSX.H:735</div></div>
+<div class="ttc" id="aclassROMSX_html_ad96e947b76f50a01928821d3cd2455f7"><div class="ttname"><a href="classROMSX.html#ad96e947b76f50a01928821d3cd2455f7">ROMSX::mapfac_v</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; mapfac_v</div><div class="ttdef"><b>Definition:</b> ROMSX.H:744</div></div>
 <div class="ttc" id="aclassROMSX_html_afbc1fc6bd3f6ededfed2346989ccf055"><div class="ttname"><a href="classROMSX.html#afbc1fc6bd3f6ededfed2346989ccf055">ROMSX::set_drag</a></div><div class="ttdeci">void set_drag(int lev)</div><div class="ttdef"><b>Definition:</b> DepthStretchTransform.H:445</div></div>
 <div class="ttc" id="anamespaceCons_html_aa5b867507379ab774c4d0a32dfb1dc7ba5934ebcc17d4dfd56ed8cf6221c9a5ed"><div class="ttname"><a href="namespaceCons.html#aa5b867507379ab774c4d0a32dfb1dc7ba5934ebcc17d4dfd56ed8cf6221c9a5ed">Cons::NumVars</a></div><div class="ttdeci">@ NumVars</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:125</div></div>
 <div class="ttc" id="astructSolverChoice_html_a8e053ce39997ed619ac81aa4d5a1fd44"><div class="ttname"><a href="structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44">SolverChoice::spatial_order</a></div><div class="ttdeci">int spatial_order</div><div class="ttdef"><b>Definition:</b> DataStruct.H:395</div></div>
@@ -5367,9 +5369,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    {</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">datalog</a>.size();</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    {</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">datalog</a>.size();</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5485,7 +5487,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <a class="code" href="classROMSX.html#a55bb606cb2f4fc86e05232b5c314a829">sum_integrated_quantities</a>(time);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a49a068f1e0314c715e59f29d7de50ff8"><div class="ttname"><a href="classROMSX.html#a49a068f1e0314c715e59f29d7de50ff8">ROMSX::get_flux_reg</a></div><div class="ttdeci">AMREX_FORCE_INLINE amrex::FluxRegister &amp; get_flux_reg(int lev)</div><div class="ttdef"><b>Definition:</b> ROMSX.H:915</div></div>
+<div class="ttc" id="aclassROMSX_html_a49a068f1e0314c715e59f29d7de50ff8"><div class="ttname"><a href="classROMSX.html#a49a068f1e0314c715e59f29d7de50ff8">ROMSX::get_flux_reg</a></div><div class="ttdeci">AMREX_FORCE_INLINE amrex::FluxRegister &amp; get_flux_reg(int lev)</div><div class="ttdef"><b>Definition:</b> ROMSX.H:924</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -6569,21 +6571,21 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160; </div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    <a class="code" href="classROMSX.html#a21df816ace6144ce0ed78d0031eaa946">solverChoice</a>.<a class="code" href="structSolverChoice.html#a4829661b558b213e32970a02e147077f">init_params</a>();</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a05371cb6acdebe55d3aa25bebbaa65e2"><div class="ttname"><a href="classROMSX.html#a05371cb6acdebe55d3aa25bebbaa65e2">ROMSX::plot_file_1</a></div><div class="ttdeci">std::string plot_file_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:792</div></div>
-<div class="ttc" id="aclassROMSX_html_a067945622be8aeb2bd7a812ae222b031"><div class="ttname"><a href="classROMSX.html#a067945622be8aeb2bd7a812ae222b031">ROMSX::nc_bdy_file</a></div><div class="ttdeci">static std::string nc_bdy_file</div><div class="ttdef"><b>Definition:</b> ROMSX.H:840</div></div>
-<div class="ttc" id="aclassROMSX_html_a2b67bb92b64c187e9869d8f8726e4e42"><div class="ttname"><a href="classROMSX.html#a2b67bb92b64c187e9869d8f8726e4e42">ROMSX::num_boxes_at_level</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; num_boxes_at_level</div><div class="ttdef"><b>Definition:</b> ROMSX.H:713</div></div>
-<div class="ttc" id="aclassROMSX_html_a2e6058cb21bf6f6c2b491581fa742828"><div class="ttname"><a href="classROMSX.html#a2e6058cb21bf6f6c2b491581fa742828">ROMSX::check_file</a></div><div class="ttdeci">std::string check_file</div><div class="ttdef"><b>Definition:</b> ROMSX.H:798</div></div>
-<div class="ttc" id="aclassROMSX_html_a802f6c0afcdf21170461376c39e9701a"><div class="ttname"><a href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">ROMSX::plotfile_type</a></div><div class="ttdeci">static std::string plotfile_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:831</div></div>
-<div class="ttc" id="aclassROMSX_html_a9b13ff6c8fec8f7ac0eb7330732d9bcc"><div class="ttname"><a href="classROMSX.html#a9b13ff6c8fec8f7ac0eb7330732d9bcc">ROMSX::fixed_fast_dt</a></div><div class="ttdeci">static amrex::Real fixed_fast_dt</div><div class="ttdef"><b>Definition:</b> ROMSX.H:784</div></div>
-<div class="ttc" id="aclassROMSX_html_aa0f18c68a94b27d41e87d49662ec0ac1"><div class="ttname"><a href="classROMSX.html#aa0f18c68a94b27d41e87d49662ec0ac1">ROMSX::plot_file_2</a></div><div class="ttdeci">std::string plot_file_2</div><div class="ttdef"><b>Definition:</b> ROMSX.H:793</div></div>
-<div class="ttc" id="aclassROMSX_html_ab61e1364d5b301c8f727566234b9eb89"><div class="ttname"><a href="classROMSX.html#ab61e1364d5b301c8f727566234b9eb89">ROMSX::regrid_int</a></div><div class="ttdeci">int regrid_int</div><div class="ttdef"><b>Definition:</b> ROMSX.H:789</div></div>
-<div class="ttc" id="aclassROMSX_html_ab8125e3b638f29f6f08872c2cefd5335"><div class="ttname"><a href="classROMSX.html#ab8125e3b638f29f6f08872c2cefd5335">ROMSX::boxes_at_level</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Vector&lt; amrex::Box &gt; &gt; boxes_at_level</div><div class="ttdef"><b>Definition:</b> ROMSX.H:715</div></div>
-<div class="ttc" id="aclassROMSX_html_abdccbdf27483fa87a7fc769ef6aa16fd"><div class="ttname"><a href="classROMSX.html#abdccbdf27483fa87a7fc769ef6aa16fd">ROMSX::setRecordDataInfo</a></div><div class="ttdeci">void setRecordDataInfo(int i, const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> ROMSX.H:952</div></div>
-<div class="ttc" id="aclassROMSX_html_accabd81356a4f601bf6558f2d9030b3c"><div class="ttname"><a href="classROMSX.html#accabd81356a4f601bf6558f2d9030b3c">ROMSX::do_avg_down</a></div><div class="ttdeci">static int do_avg_down</div><div class="ttdef"><b>Definition:</b> ROMSX.H:824</div></div>
-<div class="ttc" id="aclassROMSX_html_adb84a2eea3c51e9954981176e98341c3"><div class="ttname"><a href="classROMSX.html#adb84a2eea3c51e9954981176e98341c3">ROMSX::num_files_at_level</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; num_files_at_level</div><div class="ttdef"><b>Definition:</b> ROMSX.H:714</div></div>
-<div class="ttc" id="aclassROMSX_html_ae637f59528ab8ecd6d5780a4b9e667e5"><div class="ttname"><a href="classROMSX.html#ae637f59528ab8ecd6d5780a4b9e667e5">ROMSX::nc_init_file</a></div><div class="ttdeci">static amrex::Vector&lt; amrex::Vector&lt; std::string &gt; &gt; nc_init_file</div><div class="ttdef"><b>Definition:</b> ROMSX.H:837</div></div>
-<div class="ttc" id="aclassROMSX_html_ae866db953617cc0cc4090aeedfd3103c"><div class="ttname"><a href="classROMSX.html#ae866db953617cc0cc4090aeedfd3103c">ROMSX::restart_type</a></div><div class="ttdeci">std::string restart_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:800</div></div>
-<div class="ttc" id="aclassROMSX_html_afc2d5ca5334b8dc2acb9c6c57febbcf1"><div class="ttname"><a href="classROMSX.html#afc2d5ca5334b8dc2acb9c6c57febbcf1">ROMSX::init_shrink</a></div><div class="ttdeci">static amrex::Real init_shrink</div><div class="ttdef"><b>Definition:</b> ROMSX.H:779</div></div>
+<div class="ttc" id="aclassROMSX_html_a05371cb6acdebe55d3aa25bebbaa65e2"><div class="ttname"><a href="classROMSX.html#a05371cb6acdebe55d3aa25bebbaa65e2">ROMSX::plot_file_1</a></div><div class="ttdeci">std::string plot_file_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:801</div></div>
+<div class="ttc" id="aclassROMSX_html_a067945622be8aeb2bd7a812ae222b031"><div class="ttname"><a href="classROMSX.html#a067945622be8aeb2bd7a812ae222b031">ROMSX::nc_bdy_file</a></div><div class="ttdeci">static std::string nc_bdy_file</div><div class="ttdef"><b>Definition:</b> ROMSX.H:849</div></div>
+<div class="ttc" id="aclassROMSX_html_a2b67bb92b64c187e9869d8f8726e4e42"><div class="ttname"><a href="classROMSX.html#a2b67bb92b64c187e9869d8f8726e4e42">ROMSX::num_boxes_at_level</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; num_boxes_at_level</div><div class="ttdef"><b>Definition:</b> ROMSX.H:722</div></div>
+<div class="ttc" id="aclassROMSX_html_a2e6058cb21bf6f6c2b491581fa742828"><div class="ttname"><a href="classROMSX.html#a2e6058cb21bf6f6c2b491581fa742828">ROMSX::check_file</a></div><div class="ttdeci">std::string check_file</div><div class="ttdef"><b>Definition:</b> ROMSX.H:807</div></div>
+<div class="ttc" id="aclassROMSX_html_a802f6c0afcdf21170461376c39e9701a"><div class="ttname"><a href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">ROMSX::plotfile_type</a></div><div class="ttdeci">static std::string plotfile_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:840</div></div>
+<div class="ttc" id="aclassROMSX_html_a9b13ff6c8fec8f7ac0eb7330732d9bcc"><div class="ttname"><a href="classROMSX.html#a9b13ff6c8fec8f7ac0eb7330732d9bcc">ROMSX::fixed_fast_dt</a></div><div class="ttdeci">static amrex::Real fixed_fast_dt</div><div class="ttdef"><b>Definition:</b> ROMSX.H:793</div></div>
+<div class="ttc" id="aclassROMSX_html_aa0f18c68a94b27d41e87d49662ec0ac1"><div class="ttname"><a href="classROMSX.html#aa0f18c68a94b27d41e87d49662ec0ac1">ROMSX::plot_file_2</a></div><div class="ttdeci">std::string plot_file_2</div><div class="ttdef"><b>Definition:</b> ROMSX.H:802</div></div>
+<div class="ttc" id="aclassROMSX_html_ab61e1364d5b301c8f727566234b9eb89"><div class="ttname"><a href="classROMSX.html#ab61e1364d5b301c8f727566234b9eb89">ROMSX::regrid_int</a></div><div class="ttdeci">int regrid_int</div><div class="ttdef"><b>Definition:</b> ROMSX.H:798</div></div>
+<div class="ttc" id="aclassROMSX_html_ab8125e3b638f29f6f08872c2cefd5335"><div class="ttname"><a href="classROMSX.html#ab8125e3b638f29f6f08872c2cefd5335">ROMSX::boxes_at_level</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Vector&lt; amrex::Box &gt; &gt; boxes_at_level</div><div class="ttdef"><b>Definition:</b> ROMSX.H:724</div></div>
+<div class="ttc" id="aclassROMSX_html_abdccbdf27483fa87a7fc769ef6aa16fd"><div class="ttname"><a href="classROMSX.html#abdccbdf27483fa87a7fc769ef6aa16fd">ROMSX::setRecordDataInfo</a></div><div class="ttdeci">void setRecordDataInfo(int i, const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> ROMSX.H:961</div></div>
+<div class="ttc" id="aclassROMSX_html_accabd81356a4f601bf6558f2d9030b3c"><div class="ttname"><a href="classROMSX.html#accabd81356a4f601bf6558f2d9030b3c">ROMSX::do_avg_down</a></div><div class="ttdeci">static int do_avg_down</div><div class="ttdef"><b>Definition:</b> ROMSX.H:833</div></div>
+<div class="ttc" id="aclassROMSX_html_adb84a2eea3c51e9954981176e98341c3"><div class="ttname"><a href="classROMSX.html#adb84a2eea3c51e9954981176e98341c3">ROMSX::num_files_at_level</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; num_files_at_level</div><div class="ttdef"><b>Definition:</b> ROMSX.H:723</div></div>
+<div class="ttc" id="aclassROMSX_html_ae637f59528ab8ecd6d5780a4b9e667e5"><div class="ttname"><a href="classROMSX.html#ae637f59528ab8ecd6d5780a4b9e667e5">ROMSX::nc_init_file</a></div><div class="ttdeci">static amrex::Vector&lt; amrex::Vector&lt; std::string &gt; &gt; nc_init_file</div><div class="ttdef"><b>Definition:</b> ROMSX.H:846</div></div>
+<div class="ttc" id="aclassROMSX_html_ae866db953617cc0cc4090aeedfd3103c"><div class="ttname"><a href="classROMSX.html#ae866db953617cc0cc4090aeedfd3103c">ROMSX::restart_type</a></div><div class="ttdeci">std::string restart_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:809</div></div>
+<div class="ttc" id="aclassROMSX_html_afc2d5ca5334b8dc2acb9c6c57febbcf1"><div class="ttname"><a href="classROMSX.html#afc2d5ca5334b8dc2acb9c6c57febbcf1">ROMSX::init_shrink</a></div><div class="ttdeci">static amrex::Real init_shrink</div><div class="ttdef"><b>Definition:</b> ROMSX.H:788</div></div>
 <div class="ttc" id="aclassROMSX_html_afda0f54b3ad1ed8dbb39bbef8ed48c92"><div class="ttname"><a href="classROMSX.html#afda0f54b3ad1ed8dbb39bbef8ed48c92">ROMSX::pp_prefix</a></div><div class="ttdeci">std::string pp_prefix</div><div class="ttdef"><b>Definition:</b> ROMSX.H:222</div></div>
 <div class="ttc" id="astructSolverChoice_html_a4829661b558b213e32970a02e147077f"><div class="ttname"><a href="structSolverChoice.html#a4829661b558b213e32970a02e147077f">SolverChoice::init_params</a></div><div class="ttdeci">void init_params()</div><div class="ttdef"><b>Definition:</b> DataStruct.H:63</div></div>
 <div class="ttc" id="astructSolverChoice_html_a4b0edf29a032ff18b10a42825fa9e4b6"><div class="ttname"><a href="structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6">SolverChoice::pp_prefix</a></div><div class="ttdeci">std::string pp_prefix</div><div class="ttdef"><b>Definition:</b> DataStruct.H:323</div></div>
@@ -6821,6 +6823,64 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
 <div class="ttc" id="aclassROMSX_html_a750d5e2613cd056f28a42a7eb950be05"><div class="ttname"><a href="classROMSX.html#a750d5e2613cd056f28a42a7eb950be05">ROMSX::ReadCheckpointFile</a></div><div class="ttdeci">void ReadCheckpointFile()</div><div class="ttdef"><b>Definition:</b> Checkpoint.cpp:131</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a6e5e454e7261a71dffe751c77db3b96c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e5e454e7261a71dffe751c77db3b96c">&#9670;&nbsp;</a></span>rho_eos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ROMSX::rho_eos </td>
+          <td>(</td>
+          <td class="paramtype">const amrex::Box &amp;&#160;</td>
+          <td class="paramname"><em>bx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real &gt;&#160;</td>
+          <td class="paramname"><em>rho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real &gt;&#160;</td>
+          <td class="paramname"><em>rhoA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real &gt;&#160;</td>
+          <td class="paramname"><em>rhoS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real &gt;&#160;</td>
+          <td class="paramname"><em>pden</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real &gt;&#160;</td>
+          <td class="paramname"><em>Hz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>N</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="afadbab3c79b65f13e46e86f467d1ed27"></a>
@@ -8799,8 +8859,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    plot_var_names = tmp_plot_names;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 <div class="ttc" id="aROMSX_8H_html_a1f8554e7b211b0acfc202e8a600e7d67"><div class="ttname"><a href="ROMSX_8H.html#a1f8554e7b211b0acfc202e8a600e7d67">containerHasElement</a></div><div class="ttdeci">bool containerHasElement(const V &amp;iterable, const T &amp;query)</div><div class="ttdef"><b>Definition:</b> ROMSX.H:59</div></div>
-<div class="ttc" id="aclassROMSX_html_ab221b060f02f422f90d511e71b5c13d6"><div class="ttname"><a href="classROMSX.html#ab221b060f02f422f90d511e71b5c13d6">ROMSX::derived_names</a></div><div class="ttdeci">const amrex::Vector&lt; std::string &gt; derived_names</div><div class="ttdef"><b>Definition:</b> ROMSX.H:809</div></div>
-<div class="ttc" id="aclassROMSX_html_afd7f32f1e2d2c5152773534f6f8ab5a0"><div class="ttname"><a href="classROMSX.html#afd7f32f1e2d2c5152773534f6f8ab5a0">ROMSX::cons_names</a></div><div class="ttdeci">const amrex::Vector&lt; std::string &gt; cons_names</div><div class="ttdef"><b>Definition:</b> ROMSX.H:806</div></div>
+<div class="ttc" id="aclassROMSX_html_ab221b060f02f422f90d511e71b5c13d6"><div class="ttname"><a href="classROMSX.html#ab221b060f02f422f90d511e71b5c13d6">ROMSX::derived_names</a></div><div class="ttdeci">const amrex::Vector&lt; std::string &gt; derived_names</div><div class="ttdef"><b>Definition:</b> ROMSX.H:818</div></div>
+<div class="ttc" id="aclassROMSX_html_afd7f32f1e2d2c5152773534f6f8ab5a0"><div class="ttname"><a href="classROMSX.html#afd7f32f1e2d2c5152773534f6f8ab5a0">ROMSX::cons_names</a></div><div class="ttdeci">const amrex::Vector&lt; std::string &gt; cons_names</div><div class="ttdef"><b>Definition:</b> ROMSX.H:815</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -8846,17 +8906,17 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;    {</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;        <span class="keywordflow">if</span> (amrex::ParallelDescriptor::IOProcessor())</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        {</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;            <a class="code" href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">datalog</a>[i] = std::make_unique&lt;std::fstream&gt;();</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;            <a class="code" href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">datalog</a>[i]-&gt;open(filename.c_str(),std::ios::out|std::ios::app);</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">datalog</a>[i]-&gt;good()) {</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;                amrex::FileOpenFailed(filename);</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;            }</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;        }</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;        amrex::ParallelDescriptor::Barrier(<span class="stringliteral">&quot;ROMSX::setRecordDataInfo&quot;</span>);</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    {</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;        <span class="keywordflow">if</span> (amrex::ParallelDescriptor::IOProcessor())</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;        {</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;            <a class="code" href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">datalog</a>[i] = std::make_unique&lt;std::fstream&gt;();</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;            <a class="code" href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">datalog</a>[i]-&gt;open(filename.c_str(),std::ios::out|std::ios::app);</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4">datalog</a>[i]-&gt;good()) {</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;                amrex::FileOpenFailed(filename);</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;            }</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        }</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;        amrex::ParallelDescriptor::Barrier(<span class="stringliteral">&quot;ROMSX::setRecordDataInfo&quot;</span>);</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -8938,9 +8998,9 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aDataStruct_8H_html_a07130f00a795700d6b2b83f773b807b4aa27a6549ade38cc036f7b8c58a840510"><div class="ttname"><a href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4aa27a6549ade38cc036f7b8c58a840510">AdvectedQuantity::scalar</a></div><div class="ttdeci">@ scalar</div></div>
 <div class="ttc" id="aIndexDefines_8H_html_a0296f21cd48e5d8236c62ae4ce319b2f"><div class="ttname"><a href="IndexDefines_8H.html#a0296f21cd48e5d8236c62ae4ce319b2f">RhoScalar_comp</a></div><div class="ttdeci">#define RhoScalar_comp</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:12</div></div>
 <div class="ttc" id="aIndexDefines_8H_html_a27dcc910aeb002a0fd44727954dc0e49"><div class="ttname"><a href="IndexDefines_8H.html#a27dcc910aeb002a0fd44727954dc0e49">Rho_comp</a></div><div class="ttdeci">#define Rho_comp</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:8</div></div>
-<div class="ttc" id="aclassROMSX_html_a2cc7343babd4642f2cf727a3d40035f3"><div class="ttname"><a href="classROMSX.html#a2cc7343babd4642f2cf727a3d40035f3">ROMSX::DataLog</a></div><div class="ttdeci">AMREX_FORCE_INLINE std::ostream &amp; DataLog(int i)</div><div class="ttdef"><b>Definition:</b> ROMSX.H:922</div></div>
+<div class="ttc" id="aclassROMSX_html_a2cc7343babd4642f2cf727a3d40035f3"><div class="ttname"><a href="classROMSX.html#a2cc7343babd4642f2cf727a3d40035f3">ROMSX::DataLog</a></div><div class="ttdeci">AMREX_FORCE_INLINE std::ostream &amp; DataLog(int i)</div><div class="ttdef"><b>Definition:</b> ROMSX.H:931</div></div>
 <div class="ttc" id="aclassROMSX_html_adca6904cd162a4201fd631cf0be6c2fe"><div class="ttname"><a href="classROMSX.html#adca6904cd162a4201fd631cf0be6c2fe">ROMSX::volWgtSumMF</a></div><div class="ttdeci">amrex::Real volWgtSumMF(int lev, const amrex::MultiFab &amp;mf, int comp, bool local, bool finemask)</div><div class="ttdef"><b>Definition:</b> ROMSX_SumIQ.cpp:71</div></div>
-<div class="ttc" id="aclassROMSX_html_adf6f2e4f8b883d81702ea424d90ff4de"><div class="ttname"><a href="classROMSX.html#adf6f2e4f8b883d81702ea424d90ff4de">ROMSX::NumDataLogs</a></div><div class="ttdeci">AMREX_FORCE_INLINE int NumDataLogs() noexcept</div><div class="ttdef"><b>Definition:</b> ROMSX.H:929</div></div>
+<div class="ttc" id="aclassROMSX_html_adf6f2e4f8b883d81702ea424d90ff4de"><div class="ttname"><a href="classROMSX.html#adf6f2e4f8b883d81702ea424d90ff4de">ROMSX::NumDataLogs</a></div><div class="ttdeci">AMREX_FORCE_INLINE int NumDataLogs() noexcept</div><div class="ttdef"><b>Definition:</b> ROMSX.H:938</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -10834,7 +10894,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  amrex::ParmParse::dumpTable(jobInfoFile, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  jobInfoFile.close();</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a0103d20b9a7008fea63fa553b76726f2"><div class="ttname"><a href="classROMSX.html#a0103d20b9a7008fea63fa553b76726f2">ROMSX::getCPUTime</a></div><div class="ttdeci">amrex::Real getCPUTime() const</div><div class="ttdef"><b>Definition:</b> ROMSX.H:938</div></div>
+<div class="ttc" id="aclassROMSX_html_a0103d20b9a7008fea63fa553b76726f2"><div class="ttname"><a href="classROMSX.html#a0103d20b9a7008fea63fa553b76726f2">ROMSX::getCPUTime</a></div><div class="ttdeci">amrex::Real getCPUTime() const</div><div class="ttdef"><b>Definition:</b> ROMSX.H:947</div></div>
 <div class="ttc" id="awriteJobInfo_8cpp_html_aabaa127a3a319c1b86090d6c88568965"><div class="ttname"><a href="writeJobInfo_8cpp.html#aabaa127a3a319c1b86090d6c88568965">inputs_name</a></div><div class="ttdeci">std::string inputs_name</div><div class="ttdef"><b>Definition:</b> main.cpp:9</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -11289,7 +11349,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        }</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    } <span class="comment">// end multi-level</span></div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a07e31a4dec6fc9e9d1ec3f1e96381c53"><div class="ttname"><a href="classROMSX.html#a07e31a4dec6fc9e9d1ec3f1e96381c53">ROMSX::total_plot_file_step_1</a></div><div class="ttdeci">int total_plot_file_step_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:762</div></div>
+<div class="ttc" id="aclassROMSX_html_a07e31a4dec6fc9e9d1ec3f1e96381c53"><div class="ttname"><a href="classROMSX.html#a07e31a4dec6fc9e9d1ec3f1e96381c53">ROMSX::total_plot_file_step_1</a></div><div class="ttdeci">int total_plot_file_step_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:771</div></div>
 <div class="ttc" id="aclassROMSX_html_a90513a04a1af8d87b94d246bb53df455"><div class="ttname"><a href="classROMSX.html#a90513a04a1af8d87b94d246bb53df455">ROMSX::WriteMultiLevelPlotfileWithTerrain</a></div><div class="ttdeci">void WriteMultiLevelPlotfileWithTerrain(const std::string &amp;plotfilename, int nlevels, const amrex::Vector&lt; const amrex::MultiFab * &gt; &amp;mf, const amrex::Vector&lt; const amrex::MultiFab * &gt; &amp;mf_nd, const amrex::Vector&lt; std::string &gt; &amp;varnames, amrex::Real time, const amrex::Vector&lt; int &gt; &amp;level_steps, const std::string &amp;versionName=&quot;HyperCLaw-V1.1&quot;, const std::string &amp;levelPrefix=&quot;Level_&quot;, const std::string &amp;mfPrefix=&quot;Cell&quot;, const amrex::Vector&lt; std::string &gt; &amp;extra_dirs=amrex::Vector&lt; std::string &gt;()) const</div><div class="ttdef"><b>Definition:</b> Plotfile.cpp:348</div></div>
 <div class="ttc" id="aclassROMSX_html_ae387d14721ffd15c0a57002fdbc150cc"><div class="ttname"><a href="classROMSX.html#ae387d14721ffd15c0a57002fdbc150cc">ROMSX::PlotFileVarNames</a></div><div class="ttdeci">amrex::Vector&lt; std::string &gt; PlotFileVarNames(amrex::Vector&lt; std::string &gt; plot_var_names) const</div><div class="ttdef"><b>Definition:</b> Plotfile.cpp:73</div></div>
 <div class="ttc" id="aclassROMSX_html_ae886b3856fed4fa4d820c5dda7effb7c"><div class="ttname"><a href="classROMSX.html#ae886b3856fed4fa4d820c5dda7effb7c">ROMSX::writeJobInfo</a></div><div class="ttdeci">void writeJobInfo(const std::string &amp;dir) const</div><div class="ttdef"><b>Definition:</b> writeJobInfo.cpp:7</div></div>

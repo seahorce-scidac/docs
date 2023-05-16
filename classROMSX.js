@@ -51,6 +51,7 @@ var classROMSX =
     [ "refinement_criteria_setup", "classROMSX.html#a95cf73016433f9bc8822da57b7f3736e", null ],
     [ "RemakeLevel", "classROMSX.html#a366c20991d6dd6d7057ff0a593c8c11f", null ],
     [ "restart", "classROMSX.html#a9e841cff9ccca5ed1945876def44c681", null ],
+    [ "rho_eos", "classROMSX.html#a6e5e454e7261a71dffe751c77db3b96c", null ],
     [ "rhs_2d", "classROMSX.html#afadbab3c79b65f13e46e86f467d1ed27", null ],
     [ "rhs_3d", "classROMSX.html#a521d5cd2edc92841f77c046f6ba45d52", null ],
     [ "rhs_t_3d", "classROMSX.html#ab88dc4f4eb1f62f90b0d73af0e76a8b8", null ],
