@@ -135,8 +135,8 @@ $(document).ready(function(){initNavTree('DepthStretchTransform_8H_source.html',
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::unique_ptr&lt;MultiFab&gt;&amp; mf_vbar = vec_vbar[lev];</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::unique_ptr&lt;MultiFab&gt;&amp; mf_Hz  = vec_Hz[lev];</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> nstp = 0;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> kstp = 2;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> knew = 1;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> kstp = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> knew = 0;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> ncomp = 1;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> ( MFIter mfi(U_old, TilingIfNotGPU()); mfi.isValid(); ++mfi )</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
