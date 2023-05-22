@@ -1793,7 +1793,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            });</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        }</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        amrex::ParallelFor(gbx1D,</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        amrex::ParallelFor(gbx2D,</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        {</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            zeta(i,j,0,knew)=zeta(i,j,0,kstp);</div>
@@ -1804,7 +1804,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <span class="comment">//  If predictor step, load right-side-term into shared array.</span></div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordflow">if</span> (predictor_2d_step) {</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            amrex::ParallelFor(gbx1D,</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            amrex::ParallelFor(gbx2D,</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            {</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                rzeta(i,j,0,krhs)=0.0;</div>
@@ -2038,7 +2038,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="comment">//  Compute total water column depth.</span></div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    amrex::ParallelFor(gbx1D,</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    amrex::ParallelFor(gbx2D,</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    {</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="comment">//DO j=JstrV-1,Jend</span></div>
