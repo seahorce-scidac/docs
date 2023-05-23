@@ -961,220 +961,233 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        gbx1.grow(IntVect(1,1,0));</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        gbx11.grow(IntVect(1,1,1));</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        FArrayBox fab_FC(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        FArrayBox fab_FX(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        FArrayBox fab_FE(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        FArrayBox fab_BC(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        FArrayBox fab_CF(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        FArrayBox fab_pn(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        FArrayBox fab_pm(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        FArrayBox fab_on_u(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        FArrayBox fab_om_v(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        FArrayBox fab_om_u(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        FArrayBox fab_on_v(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        FArrayBox fab_om_r(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        FArrayBox fab_on_r(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        FArrayBox fab_om_p(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        FArrayBox fab_on_p(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        FArrayBox fab_pmon_u(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        FArrayBox fab_pnom_u(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        FArrayBox fab_pmon_v(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        FArrayBox fab_pnom_v(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        FArrayBox fab_fomn(gbx2,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        FArrayBox fab_oHz(gbx11,1,amrex::The_Async_Arena());</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keyword">auto</span> FC=fab_FC.array();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keyword">auto</span> FX=fab_FX.array();</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keyword">auto</span> FE=fab_FE.array();</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keyword">auto</span> pn=fab_pn.array();</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keyword">auto</span> pm=fab_pm.array();</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keyword">auto</span> on_u=fab_on_u.array();</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keyword">auto</span> om_v=fab_om_v.array();</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keyword">auto</span> om_u=fab_om_u.array();</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keyword">auto</span> on_v=fab_on_v.array();</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keyword">auto</span> om_r=fab_om_r.array();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keyword">auto</span> on_r=fab_on_r.array();</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">auto</span> om_p=fab_om_p.array();</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keyword">auto</span> on_p=fab_on_p.array();</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keyword">auto</span> pmon_u=fab_pmon_u.array();</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keyword">auto</span> pnom_u=fab_pnom_u.array();</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keyword">auto</span> pmon_v=fab_pmon_v.array();</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keyword">auto</span> pnom_v=fab_pnom_v.array();</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keyword">auto</span> fomn=fab_fomn.array();</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="comment">//From ana_grid.h and metrics.F</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        amrex::LoopConcurrentOnCpu(gbx2,</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        [=] (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span>  )</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            {</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;              pm(i,j,0)=dxi[0];</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;              pn(i,j,0)=dxi[1];</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;              <span class="comment">//defined UPWELLING</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> f0=-8.26e-5;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> beta=0.0;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> Esize=1000*(Mm);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> <a class="code" href="DataStruct_8H.html#a627f1f843904477f763577ad1460de01a415290769594460e2e485922904f345d">y</a> = prob_lo[1] + (j + 0.5) * dx[1];</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> f=fomn(i,j,0)=f0+beta*(<a class="code" href="DataStruct_8H.html#a627f1f843904477f763577ad1460de01a415290769594460e2e485922904f345d">y</a>-.5*Esize);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;              fomn(i,j,0)=f*(1.0/(pm(i,j,0)*pn(i,j,0)));</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            });</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        amrex::LoopConcurrentOnCpu(gbx2,</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        [=] (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;          <span class="comment">//Note: are the comment definitons right? Don&#39;t seem to match metrics.f90</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;          om_v(i,j,0)=1.0/dxi[0]; <span class="comment">// 2/(pm(i,j-1)+pm(i,j))</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;          on_u(i,j,0)=1.0/dxi[1]; <span class="comment">// 2/(pm(i,j-1)+pm(i,j))</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;          om_r(i,j,0)=1.0/dxi[0]; <span class="comment">// 1/pm(i,j)</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;          on_r(i,j,0)=1.0/dxi[1]; <span class="comment">// 1/pn(i,j)</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;          <span class="comment">//todo: om_p on_p</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          om_p(i,j,0)=1.0/dxi[0]; <span class="comment">// 4/(pm(i-1,j-1)+pm(i-1,j)+pm(i,j-1)+pm(i,j))</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;          on_p(i,j,0)=1.0/dxi[1]; <span class="comment">// 4/(pn(i-1,j-1)+pn(i-1,j)+pn(i,j-1)+pn(i,j))</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;          on_v(i,j,0)=1.0/dxi[1]; <span class="comment">// 2/(pn(i-1,j)+pn(i,j))</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;          om_u(i,j,0)=1.0/dxi[0]; <span class="comment">// 2/(pm(i-1,j)+pm(i,j))</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;          pmon_u(i,j,0)=1.0;        <span class="comment">// (pm(i-1,j)+pm(i,j))/(pn(i-1,j)+pn(i,j))</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;          pnom_u(i,j,0)=1.0;        <span class="comment">// (pn(i-1,j)+pn(i,j))/(pm(i-1,j)+pm(i,j))</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;          pmon_v(i,j,0)=1.0;        <span class="comment">// (pm(i,j-1)+pm(i,j))/(pn(i,j-1)+pn(i,j))</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          pnom_v(i,j,0)=1.0;        <span class="comment">// (pn(i,j-1)+pn(i,j))/(pm(i,j-1)+pm(i,j))</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          Huon(i,j,k,0)=0.0;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;          Hvom(i,j,k,0)=0.0;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        });</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="comment">// Set bottom stress as defined in set_vbx.F</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        amrex::ParallelFor(gbx1,</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        [=] (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="comment">//DO j=Jstr,Jend</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="comment">//  DO i=IstrU,Iend</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            bustr(i,j,k) = 0.5 * (rdrag(i-1,j,k)+rdrag(i,j,k))*(<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i,j,0,nrhs));</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="comment">//DO j=JstrV,Jend</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="comment">//  DO i=Istr,Iend</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            bvstr(i,j,k) = 0.5 * (rdrag(i,j-1,k)+rdrag(i,j,k))*(<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j,0,nrhs));</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        Box bxD = bx;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        bxD.makeSlab(2,0);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        Box gbx1D = bxD;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        Box gbx2D = bxD;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        gbx1D.grow(IntVect(1,1,0));</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        gbx2D.grow(IntVect(2,2,0));</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        FArrayBox fab_FC(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//3D</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        FArrayBox fab_FX(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//3D</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        FArrayBox fab_FE(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//3D</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        FArrayBox fab_BC(gbx2,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        FArrayBox fab_CF(gbx2,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        FArrayBox fab_pn(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        FArrayBox fab_pm(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        FArrayBox fab_on_u(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        FArrayBox fab_om_v(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        FArrayBox fab_om_u(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        FArrayBox fab_on_v(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        FArrayBox fab_om_r(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        FArrayBox fab_on_r(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        FArrayBox fab_om_p(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        FArrayBox fab_on_p(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        FArrayBox fab_pmon_u(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        FArrayBox fab_pnom_u(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        FArrayBox fab_pmon_v(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        FArrayBox fab_pnom_v(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        FArrayBox fab_fomn(gbx2D,1,amrex::The_Async_Arena());</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="comment">//FArrayBox fab_oHz(gbx11,1,amrex::The_Async_Arena());</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keyword">auto</span> FC=fab_FC.array();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keyword">auto</span> FX=fab_FX.array();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keyword">auto</span> FE=fab_FE.array();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keyword">auto</span> pn=fab_pn.array();</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">auto</span> pm=fab_pm.array();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keyword">auto</span> on_u=fab_on_u.array();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keyword">auto</span> om_v=fab_om_v.array();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keyword">auto</span> om_u=fab_om_u.array();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keyword">auto</span> on_v=fab_on_v.array();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keyword">auto</span> om_r=fab_om_r.array();</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keyword">auto</span> on_r=fab_on_r.array();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">auto</span> om_p=fab_om_p.array();</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keyword">auto</span> on_p=fab_on_p.array();</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keyword">auto</span> pmon_u=fab_pmon_u.array();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keyword">auto</span> pnom_u=fab_pnom_u.array();</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keyword">auto</span> pmon_v=fab_pmon_v.array();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keyword">auto</span> pnom_v=fab_pnom_v.array();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keyword">auto</span> fomn=fab_fomn.array();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">//From ana_grid.h and metrics.F</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        amrex::LoopConcurrentOnCpu(gbx2D,</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        [=] (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span>  )</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;              pm(i,j,0)=dxi[0];</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;              pn(i,j,0)=dxi[1];</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;              <span class="comment">//defined UPWELLING</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> f0=-8.26e-5;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> beta=0.0;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> Esize=1000*(Mm);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> <a class="code" href="DataStruct_8H.html#a627f1f843904477f763577ad1460de01a415290769594460e2e485922904f345d">y</a> = prob_lo[1] + (j + 0.5) * dx[1];</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> f=fomn(i,j,0)=f0+beta*(<a class="code" href="DataStruct_8H.html#a627f1f843904477f763577ad1460de01a415290769594460e2e485922904f345d">y</a>-.5*Esize);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;              fomn(i,j,0)=f*(1.0/(pm(i,j,0)*pn(i,j,0)));</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            });</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        amrex::LoopConcurrentOnCpu(gbx2D,</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        [=] (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;          <span class="comment">//Note: are the comment definitons right? Don&#39;t seem to match metrics.f90</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;          om_v(i,j,0)=1.0/dxi[0]; <span class="comment">// 2/(pm(i,j-1)+pm(i,j))</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;          on_u(i,j,0)=1.0/dxi[1]; <span class="comment">// 2/(pm(i,j-1)+pm(i,j))</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;          om_r(i,j,0)=1.0/dxi[0]; <span class="comment">// 1/pm(i,j)</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;          on_r(i,j,0)=1.0/dxi[1]; <span class="comment">// 1/pn(i,j)</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;          <span class="comment">//todo: om_p on_p</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          om_p(i,j,0)=1.0/dxi[0]; <span class="comment">// 4/(pm(i-1,j-1)+pm(i-1,j)+pm(i,j-1)+pm(i,j))</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          on_p(i,j,0)=1.0/dxi[1]; <span class="comment">// 4/(pn(i-1,j-1)+pn(i-1,j)+pn(i,j-1)+pn(i,j))</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;          on_v(i,j,0)=1.0/dxi[1]; <span class="comment">// 2/(pn(i-1,j)+pn(i,j))</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;          om_u(i,j,0)=1.0/dxi[0]; <span class="comment">// 2/(pm(i-1,j)+pm(i,j))</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;          pmon_u(i,j,0)=1.0;        <span class="comment">// (pm(i-1,j)+pm(i,j))/(pn(i-1,j)+pn(i,j))</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;          pnom_u(i,j,0)=1.0;        <span class="comment">// (pn(i-1,j)+pn(i,j))/(pm(i-1,j)+pm(i,j))</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;          pmon_v(i,j,0)=1.0;        <span class="comment">// (pm(i,j-1)+pm(i,j))/(pn(i,j-1)+pn(i,j))</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;          pnom_v(i,j,0)=1.0;        <span class="comment">// (pn(i,j-1)+pn(i,j))/(pm(i,j-1)+pm(i,j))</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        });</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        amrex::LoopConcurrentOnCpu(gbx2,</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        [=] (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;          Huon(i,j,k,0)=0.0;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;          Hvom(i,j,k,0)=0.0;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        });</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">// updates Huon/Hvom</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <a class="code" href="classROMSX.html#a2fa6652da9defa1009c0e9985f41c57e">set_massflux_3d</a>(Box(Huon),1,0,uold,Huon,Hz,on_u,nnew);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <a class="code" href="classROMSX.html#a2fa6652da9defa1009c0e9985f41c57e">set_massflux_3d</a>(Box(Hvom),0,1,vold,Hvom,Hz,om_v,nnew);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> lambda = 1.0;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="comment">// prestep_t_3d</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="comment">//Test this after advection included in 3d time, consider refactoring to call once per tracer</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="comment">// updates temp, tempstore</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <a class="code" href="classROMSX.html#af9abcfb7a11148f4ef01f3d31afe9df3">prestep_t_3d</a>(bx, uold, vold, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>, tempold, saltold, temp, salt, ru, rv, Hz, Akv, on_u, om_v, Huon, Hvom,</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                     pm, pn, W, DC, FC, tempstore, saltstore, FX, FE, z_r, iic, ntfirst, nnew, nstp, nrhs, N,</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                          lambda, dt_lev);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="classROMSX.html#af9abcfb7a11148f4ef01f3d31afe9df3">prestep_t_3d</a>(bx, uold, vold, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>, saltold, saltold, salt, salt, ru, rv, Hz, Akv, on_u, om_v, Huon, Hvom,</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                     pm, pn, W, DC, FC, saltstore, saltstore, FX, FE, z_r, iic, ntfirst, nnew, nstp, nrhs, N,</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                          lambda, dt_lev);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">// Set bottom stress as defined in set_vbx.F</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        amrex::ParallelFor(gbx1D,</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        [=] (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="comment">//DO j=Jstr,Jend</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <span class="comment">//  DO i=IstrU,Iend</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            bustr(i,j,0) = 0.5 * (rdrag(i-1,j,0)+rdrag(i,j,0))*(<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i,j,0,nrhs));</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <span class="comment">//DO j=JstrV,Jend</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="comment">//  DO i=Istr,Iend</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            bvstr(i,j,0) = 0.5 * (rdrag(i,j-1,0)+rdrag(i,j,0))*(<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j,0,nrhs));</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        });</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="comment">// updates Huon/Hvom</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <a class="code" href="classROMSX.html#a2fa6652da9defa1009c0e9985f41c57e">set_massflux_3d</a>(Box(Huon),1,0,uold,Huon,Hz,on_u,nnew);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="classROMSX.html#a2fa6652da9defa1009c0e9985f41c57e">set_massflux_3d</a>(Box(Hvom),0,1,vold,Hvom,Hz,om_v,nnew);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> lambda = 1.0;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="comment">// prestep_t_3d</span></div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="comment">// prestep_uv_3d</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="comment">//updates u,v,ru,rv (ru and rv have multiple components)</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="classROMSX.html#a0b7d5099bf3d9fe1118728b2142c8243">prestep_uv_3d</a>(bx, uold, vold, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>, ru, rv, Hz, Akv, on_u, om_v, Huon, Hvom,</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                          pm, pn, W, DC, FC, z_r, sustr, svstr, bustr, bvstr, iic, ntfirst, nnew, nstp, nrhs, N,</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                          lambda, dt_lev);</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="classROMSX.html#a214d27ef55abaa1a5f9f439bf42d2e54">t3dmix</a>(bx, temp, diff2_temp, Hz, pm, pn, pmon_u, pnom_v, nrhs, nnew, dt_lev);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <a class="code" href="classROMSX.html#a214d27ef55abaa1a5f9f439bf42d2e54">t3dmix</a>(bx, salt, diff2_salt, Hz, pm, pn, pmon_u, pnom_v, nrhs, nnew, dt_lev);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#ifdef UV_COR</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="comment">//Test this after advection included in 3d time, consider refactoring to call once per tracer</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="comment">// updates temp, tempstore</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <a class="code" href="classROMSX.html#af9abcfb7a11148f4ef01f3d31afe9df3">prestep_t_3d</a>(bx, uold, vold, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>, tempold, saltold, temp, salt, ru, rv, Hz, Akv, on_u, om_v, Huon, Hvom,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                     pm, pn, W, DC, FC, tempstore, saltstore, FX, FE, z_r, iic, ntfirst, nnew, nstp, nrhs, N,</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                          lambda, dt_lev);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <a class="code" href="classROMSX.html#af9abcfb7a11148f4ef01f3d31afe9df3">prestep_t_3d</a>(bx, uold, vold, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>, saltold, saltold, salt, salt, ru, rv, Hz, Akv, on_u, om_v, Huon, Hvom,</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                     pm, pn, W, DC, FC, saltstore, saltstore, FX, FE, z_r, iic, ntfirst, nnew, nstp, nrhs, N,</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                          lambda, dt_lev);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="comment">// prestep_uv_3d</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="comment">// coriolis</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="comment">// ru, rv updated</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="comment">// In ROMS, coriolis is the first (un-ifdefed) thing to happen in rhs3d_tile, which gets called after t3dmix</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        coriolis(bx, uold, vold, ru, rv, Hz, fomn, nrhs, nrhs);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="comment">// rhs_3d</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">        ////rufrc from 3d is set to ru, then the wind stress (and bottom stress) is added, then the mixing is added</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment"></span>        <span class="comment">//rufrc=ru+sustr*om_u*on_u</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <a class="code" href="classROMSX.html#a521d5cd2edc92841f77c046f6ba45d52">rhs_3d</a>(bx, uold, vold, ru, rv, rufrc, rvfrc, sustr, svstr, bustr, bvstr, Huon, Hvom, on_u, om_v, om_u, on_v, W, FC, nrhs, N);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="comment">//u=u+(contributions from S-surfaces viscosity not scaled by dt)*dt*dx*dy</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="comment">//rufrc=rufrc + (contributions from S-surfaces viscosity not scaled by dt*dx*dy)</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="classROMSX.html#acd6828d5fba1883c3efa407b67bf341f">uv3dmix</a>(bx, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>, rufrc, rvfrc, visc2_p, visc2_r, Hz, om_r, on_r, om_p, on_p, pm, pn, nrhs, nnew, dt_lev);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    } <span class="comment">// MFIter</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    mf_temp.FillBoundary();</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    mf_salt.FillBoundary();</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    mf_tempold.FillBoundary();</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    mf_saltold.FillBoundary();</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="code" href="classROMSX.html#a2fb956d77ea6218caea0802b4f181b12">vec_t3</a>[lev]-&gt;FillBoundary();</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <a class="code" href="classROMSX.html#abfbbd9c597dda991fdfe61497cca0a3b">vec_s3</a>[lev]-&gt;FillBoundary();</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <a class="code" href="classROMSX.html#a24f02b944df51884168ab0c08c736c91">vec_Huon</a>[lev]-&gt;FillBoundary();</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <a class="code" href="classROMSX.html#a21dcccced847102e553281c1852ce005">vec_Hvom</a>[lev]-&gt;FillBoundary();</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">bool</span> predictor_2d_step=<span class="keyword">true</span>;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">bool</span> first_2d_step=<span class="keyword">true</span>;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">int</span> nfast=<a class="code" href="classROMSX.html#a676fc3cc2402734727ca9e04e050d171">fixed_ndtfast_ratio</a>+1;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordtype">int</span> nfast_counter=predictor_2d_step ? nfast : nfast-1;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="comment">//Compute fast timestep from dt_lev and ratio</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> dtfast_lev=dt_lev/<a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a>(<a class="code" href="classROMSX.html#a676fc3cc2402734727ca9e04e050d171">fixed_ndtfast_ratio</a>);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordtype">int</span> next_indx1 = 0;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> my_iif = 0; my_iif &lt; nfast_counter; my_iif++) {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        first_2d_step=(my_iif==0);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="comment">//Predictor</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        predictor_2d_step=<span class="keyword">true</span>;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <a class="code" href="classROMSX.html#afc06c25354f30ebaaffc77f95671042e">advance_2d</a>(lev, mf_u, mf_v, <a class="code" href="classROMSX.html#ab1343869d59f89fd4773bc7fa230aa73">vec_ru</a>[lev], <a class="code" href="classROMSX.html#ab5041f0f370ab1ec4f7f7e16127c9039">vec_rv</a>[lev],</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                   <a class="code" href="classROMSX.html#ab5b7ff78a167e59ae727b22094b39079">vec_rufrc</a>[lev], <a class="code" href="classROMSX.html#a52a5f265a370595f128046c31b9f31d5">vec_rvfrc</a>[lev],</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                   <a class="code" href="classROMSX.html#ab962f23dc27b3ce17bb19e3b8c9991f8">vec_Zt_avg1</a>[lev],</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                   <a class="code" href="classROMSX.html#a18212e9657c0655cd29e0c6241c1224f">vec_DU_avg1</a>[lev], <a class="code" href="classROMSX.html#a883756f67229729f133b9bdf784c21ff">vec_DU_avg2</a>[lev],</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                   <a class="code" href="classROMSX.html#aa9738d90727df4f8aba2afb0ffed1e8f">vec_DV_avg1</a>[lev], <a class="code" href="classROMSX.html#a6847259dab9f6118da780bf623a9868a">vec_DV_avg2</a>[lev],</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                   <a class="code" href="classROMSX.html#ab5d263be53bfdd397f6c64672ee77009">vec_rubar</a>[lev], <a class="code" href="classROMSX.html#a83d781ead821f8ed29f6f2b9ef70a9aa">vec_rvbar</a>[lev], <a class="code" href="classROMSX.html#ac2324a5a8d5949f83ac7621ef79f8fdd">vec_rzeta</a>[lev],</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                    <a class="code" href="classROMSX.html#a047f6faef02a00ced0a6c1766e4c9b5a">vec_ubar</a>[lev],  <a class="code" href="classROMSX.html#a2a375f2e83347418b7cf5d4bd812ee55">vec_vbar</a>[lev],  <a class="code" href="classROMSX.html#ab026fffd3c4e9a9ef612cbb23132a1f5">vec_zeta</a>[lev],</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                   <a class="code" href="classROMSX.html#a03b79a651abf3dc2bd37fadaca99fd46">vec_hOfTheConfusingName</a>[lev], <a class="code" href="classROMSX.html#af83a943f37cd6bbaf25c52fcaceb0930">vec_visc2_p</a>[lev], <a class="code" href="classROMSX.html#aa8fff925fc76e919ddc53de08b3725e9">vec_visc2_r</a>[lev],</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                   ncomp, dt_lev, dtfast_lev, predictor_2d_step, first_2d_step, my_iif, nfast, next_indx1);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="comment">//Corrector</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        predictor_2d_step=<span class="keyword">false</span>;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <a class="code" href="classROMSX.html#afc06c25354f30ebaaffc77f95671042e">advance_2d</a>(lev, mf_u, mf_v, <a class="code" href="classROMSX.html#ab1343869d59f89fd4773bc7fa230aa73">vec_ru</a>[lev], <a class="code" href="classROMSX.html#ab5041f0f370ab1ec4f7f7e16127c9039">vec_rv</a>[lev],</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                   <a class="code" href="classROMSX.html#ab5b7ff78a167e59ae727b22094b39079">vec_rufrc</a>[lev], <a class="code" href="classROMSX.html#a52a5f265a370595f128046c31b9f31d5">vec_rvfrc</a>[lev],</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                   <a class="code" href="classROMSX.html#ab962f23dc27b3ce17bb19e3b8c9991f8">vec_Zt_avg1</a>[lev],</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                   <a class="code" href="classROMSX.html#a18212e9657c0655cd29e0c6241c1224f">vec_DU_avg1</a>[lev], <a class="code" href="classROMSX.html#a883756f67229729f133b9bdf784c21ff">vec_DU_avg2</a>[lev],</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                   <a class="code" href="classROMSX.html#aa9738d90727df4f8aba2afb0ffed1e8f">vec_DV_avg1</a>[lev], <a class="code" href="classROMSX.html#a6847259dab9f6118da780bf623a9868a">vec_DV_avg2</a>[lev],</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                   <a class="code" href="classROMSX.html#ab5d263be53bfdd397f6c64672ee77009">vec_rubar</a>[lev], <a class="code" href="classROMSX.html#a83d781ead821f8ed29f6f2b9ef70a9aa">vec_rvbar</a>[lev], <a class="code" href="classROMSX.html#ac2324a5a8d5949f83ac7621ef79f8fdd">vec_rzeta</a>[lev],</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                    <a class="code" href="classROMSX.html#a047f6faef02a00ced0a6c1766e4c9b5a">vec_ubar</a>[lev],  <a class="code" href="classROMSX.html#a2a375f2e83347418b7cf5d4bd812ee55">vec_vbar</a>[lev],  <a class="code" href="classROMSX.html#ab026fffd3c4e9a9ef612cbb23132a1f5">vec_zeta</a>[lev],</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                   <a class="code" href="classROMSX.html#a03b79a651abf3dc2bd37fadaca99fd46">vec_hOfTheConfusingName</a>[lev], <a class="code" href="classROMSX.html#af83a943f37cd6bbaf25c52fcaceb0930">vec_visc2_p</a>[lev], <a class="code" href="classROMSX.html#aa8fff925fc76e919ddc53de08b3725e9">vec_visc2_r</a>[lev],</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                   ncomp, dt_lev, dtfast_lev, predictor_2d_step, first_2d_step, my_iif, nfast, next_indx1);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    }</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <a class="code" href="classROMSX.html#aca38099dc70a4c766e5d250c18fec5ea">advance_3d</a>(lev, mf_u, mf_v, mf_tempold, mf_saltold, mf_temp, mf_salt, <a class="code" href="classROMSX.html#a2fb956d77ea6218caea0802b4f181b12">vec_t3</a>[lev], <a class="code" href="classROMSX.html#abfbbd9c597dda991fdfe61497cca0a3b">vec_s3</a>[lev], <a class="code" href="classROMSX.html#ab1343869d59f89fd4773bc7fa230aa73">vec_ru</a>[lev], <a class="code" href="classROMSX.html#ab5041f0f370ab1ec4f7f7e16127c9039">vec_rv</a>[lev],</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;               <a class="code" href="classROMSX.html#a18212e9657c0655cd29e0c6241c1224f">vec_DU_avg1</a>[lev], <a class="code" href="classROMSX.html#a883756f67229729f133b9bdf784c21ff">vec_DU_avg2</a>[lev],</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;               <a class="code" href="classROMSX.html#aa9738d90727df4f8aba2afb0ffed1e8f">vec_DV_avg1</a>[lev], <a class="code" href="classROMSX.html#a6847259dab9f6118da780bf623a9868a">vec_DV_avg2</a>[lev],</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;               <a class="code" href="classROMSX.html#a047f6faef02a00ced0a6c1766e4c9b5a">vec_ubar</a>[lev],  <a class="code" href="classROMSX.html#a2a375f2e83347418b7cf5d4bd812ee55">vec_vbar</a>[lev],</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;               mf_AK, mf_DC,</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;               mf_Hzk, <a class="code" href="classROMSX.html#aec2c137ce4314357035cbc7ae292338f">vec_Akv</a>[lev], <a class="code" href="classROMSX.html#aa5461758b528d199101b5ea74f9a6c12">vec_Hz</a>[lev], <a class="code" href="classROMSX.html#a24f02b944df51884168ab0c08c736c91">vec_Huon</a>[lev], <a class="code" href="classROMSX.html#a21dcccced847102e553281c1852ce005">vec_Hvom</a>[lev], ncomp, N, dt_lev);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    MultiFab::Copy(U_new,mf_u,0,0,U_new.nComp(),IntVect(AMREX_D_DECL(1,1,0)));</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    U_new.FillBoundary();</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    MultiFab::Copy(V_new,mf_v,0,0,V_new.nComp(),IntVect(AMREX_D_DECL(1,1,0)));</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    V_new.FillBoundary();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="comment">//updates u,v,ru,rv (ru and rv have multiple components)</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <a class="code" href="classROMSX.html#a0b7d5099bf3d9fe1118728b2142c8243">prestep_uv_3d</a>(bx, uold, vold, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>, ru, rv, Hz, Akv, on_u, om_v, Huon, Hvom,</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                          pm, pn, W, DC, FC, z_r, sustr, svstr, bustr, bvstr, iic, ntfirst, nnew, nstp, nrhs, N,</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                          lambda, dt_lev);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <a class="code" href="classROMSX.html#a214d27ef55abaa1a5f9f439bf42d2e54">t3dmix</a>(bx, temp, diff2_temp, Hz, pm, pn, pmon_u, pnom_v, nrhs, nnew, dt_lev);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <a class="code" href="classROMSX.html#a214d27ef55abaa1a5f9f439bf42d2e54">t3dmix</a>(bx, salt, diff2_salt, Hz, pm, pn, pmon_u, pnom_v, nrhs, nnew, dt_lev);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#ifdef UV_COR</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="comment">// coriolis</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="comment">// ru, rv updated</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="comment">// In ROMS, coriolis is the first (un-ifdefed) thing to happen in rhs3d_tile, which gets called after t3dmix</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        coriolis(bx, uold, vold, ru, rv, Hz, fomn, nrhs, nrhs);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="comment">// rhs_3d</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="comment">//-----------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">        ////rufrc from 3d is set to ru, then the wind stress (and bottom stress) is added, then the mixing is added</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment"></span>        <span class="comment">//rufrc=ru+sustr*om_u*on_u</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <a class="code" href="classROMSX.html#a521d5cd2edc92841f77c046f6ba45d52">rhs_3d</a>(bx, uold, vold, ru, rv, rufrc, rvfrc, sustr, svstr, bustr, bvstr, Huon, Hvom, on_u, om_v, om_u, on_v, W, FC, nrhs, N);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="comment">//u=u+(contributions from S-surfaces viscosity not scaled by dt)*dt*dx*dy</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="comment">//rufrc=rufrc + (contributions from S-surfaces viscosity not scaled by dt*dx*dy)</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <a class="code" href="classROMSX.html#acd6828d5fba1883c3efa407b67bf341f">uv3dmix</a>(bx, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>, <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>, rufrc, rvfrc, visc2_p, visc2_r, Hz, om_r, on_r, om_p, on_p, pm, pn, nrhs, nnew, dt_lev);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    } <span class="comment">// MFIter</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    mf_temp.FillBoundary();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    mf_salt.FillBoundary();</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    mf_tempold.FillBoundary();</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    mf_saltold.FillBoundary();</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <a class="code" href="classROMSX.html#a2fb956d77ea6218caea0802b4f181b12">vec_t3</a>[lev]-&gt;FillBoundary();</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="classROMSX.html#abfbbd9c597dda991fdfe61497cca0a3b">vec_s3</a>[lev]-&gt;FillBoundary();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <a class="code" href="classROMSX.html#a24f02b944df51884168ab0c08c736c91">vec_Huon</a>[lev]-&gt;FillBoundary();</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <a class="code" href="classROMSX.html#a21dcccced847102e553281c1852ce005">vec_Hvom</a>[lev]-&gt;FillBoundary();</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordtype">bool</span> predictor_2d_step=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordtype">bool</span> first_2d_step=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordtype">int</span> nfast=<a class="code" href="classROMSX.html#a676fc3cc2402734727ca9e04e050d171">fixed_ndtfast_ratio</a>+1;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordtype">int</span> nfast_counter=predictor_2d_step ? nfast : nfast-1;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="comment">//Compute fast timestep from dt_lev and ratio</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> dtfast_lev=dt_lev/<a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a>(<a class="code" href="classROMSX.html#a676fc3cc2402734727ca9e04e050d171">fixed_ndtfast_ratio</a>);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordtype">int</span> next_indx1 = 0;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> my_iif = 0; my_iif &lt; nfast_counter; my_iif++) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        first_2d_step=(my_iif==0);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="comment">//Predictor</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        predictor_2d_step=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="comment">// updates ubar, vbar, zeta, rhs versions</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="classROMSX.html#afc06c25354f30ebaaffc77f95671042e">advance_2d</a>(lev, mf_u, mf_v, <a class="code" href="classROMSX.html#ab1343869d59f89fd4773bc7fa230aa73">vec_ru</a>[lev], <a class="code" href="classROMSX.html#ab5041f0f370ab1ec4f7f7e16127c9039">vec_rv</a>[lev],</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                   <a class="code" href="classROMSX.html#ab5b7ff78a167e59ae727b22094b39079">vec_rufrc</a>[lev], <a class="code" href="classROMSX.html#a52a5f265a370595f128046c31b9f31d5">vec_rvfrc</a>[lev],</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                   <a class="code" href="classROMSX.html#ab962f23dc27b3ce17bb19e3b8c9991f8">vec_Zt_avg1</a>[lev],</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                   <a class="code" href="classROMSX.html#a18212e9657c0655cd29e0c6241c1224f">vec_DU_avg1</a>[lev], <a class="code" href="classROMSX.html#a883756f67229729f133b9bdf784c21ff">vec_DU_avg2</a>[lev],</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                   <a class="code" href="classROMSX.html#aa9738d90727df4f8aba2afb0ffed1e8f">vec_DV_avg1</a>[lev], <a class="code" href="classROMSX.html#a6847259dab9f6118da780bf623a9868a">vec_DV_avg2</a>[lev],</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                   <a class="code" href="classROMSX.html#ab5d263be53bfdd397f6c64672ee77009">vec_rubar</a>[lev], <a class="code" href="classROMSX.html#a83d781ead821f8ed29f6f2b9ef70a9aa">vec_rvbar</a>[lev], <a class="code" href="classROMSX.html#ac2324a5a8d5949f83ac7621ef79f8fdd">vec_rzeta</a>[lev],</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                    <a class="code" href="classROMSX.html#a047f6faef02a00ced0a6c1766e4c9b5a">vec_ubar</a>[lev],  <a class="code" href="classROMSX.html#a2a375f2e83347418b7cf5d4bd812ee55">vec_vbar</a>[lev],  <a class="code" href="classROMSX.html#ab026fffd3c4e9a9ef612cbb23132a1f5">vec_zeta</a>[lev],</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                   <a class="code" href="classROMSX.html#a03b79a651abf3dc2bd37fadaca99fd46">vec_hOfTheConfusingName</a>[lev], <a class="code" href="classROMSX.html#af83a943f37cd6bbaf25c52fcaceb0930">vec_visc2_p</a>[lev], <a class="code" href="classROMSX.html#aa8fff925fc76e919ddc53de08b3725e9">vec_visc2_r</a>[lev],</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                   ncomp, dt_lev, dtfast_lev, predictor_2d_step, first_2d_step, my_iif, nfast, next_indx1);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="comment">//Corrector</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        predictor_2d_step=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <a class="code" href="classROMSX.html#afc06c25354f30ebaaffc77f95671042e">advance_2d</a>(lev, mf_u, mf_v, <a class="code" href="classROMSX.html#ab1343869d59f89fd4773bc7fa230aa73">vec_ru</a>[lev], <a class="code" href="classROMSX.html#ab5041f0f370ab1ec4f7f7e16127c9039">vec_rv</a>[lev],</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                   <a class="code" href="classROMSX.html#ab5b7ff78a167e59ae727b22094b39079">vec_rufrc</a>[lev], <a class="code" href="classROMSX.html#a52a5f265a370595f128046c31b9f31d5">vec_rvfrc</a>[lev],</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                   <a class="code" href="classROMSX.html#ab962f23dc27b3ce17bb19e3b8c9991f8">vec_Zt_avg1</a>[lev],</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                   <a class="code" href="classROMSX.html#a18212e9657c0655cd29e0c6241c1224f">vec_DU_avg1</a>[lev], <a class="code" href="classROMSX.html#a883756f67229729f133b9bdf784c21ff">vec_DU_avg2</a>[lev],</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                   <a class="code" href="classROMSX.html#aa9738d90727df4f8aba2afb0ffed1e8f">vec_DV_avg1</a>[lev], <a class="code" href="classROMSX.html#a6847259dab9f6118da780bf623a9868a">vec_DV_avg2</a>[lev],</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                   <a class="code" href="classROMSX.html#ab5d263be53bfdd397f6c64672ee77009">vec_rubar</a>[lev], <a class="code" href="classROMSX.html#a83d781ead821f8ed29f6f2b9ef70a9aa">vec_rvbar</a>[lev], <a class="code" href="classROMSX.html#ac2324a5a8d5949f83ac7621ef79f8fdd">vec_rzeta</a>[lev],</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                    <a class="code" href="classROMSX.html#a047f6faef02a00ced0a6c1766e4c9b5a">vec_ubar</a>[lev],  <a class="code" href="classROMSX.html#a2a375f2e83347418b7cf5d4bd812ee55">vec_vbar</a>[lev],  <a class="code" href="classROMSX.html#ab026fffd3c4e9a9ef612cbb23132a1f5">vec_zeta</a>[lev],</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                   <a class="code" href="classROMSX.html#a03b79a651abf3dc2bd37fadaca99fd46">vec_hOfTheConfusingName</a>[lev], <a class="code" href="classROMSX.html#af83a943f37cd6bbaf25c52fcaceb0930">vec_visc2_p</a>[lev], <a class="code" href="classROMSX.html#aa8fff925fc76e919ddc53de08b3725e9">vec_visc2_r</a>[lev],</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                   ncomp, dt_lev, dtfast_lev, predictor_2d_step, first_2d_step, my_iif, nfast, next_indx1);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    mf_temp.FillBoundary();</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    mf_salt.FillBoundary();</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    mf_tempold.FillBoundary();</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    mf_saltold.FillBoundary();</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <a class="code" href="classROMSX.html#a2fb956d77ea6218caea0802b4f181b12">vec_t3</a>[lev]-&gt;FillBoundary();</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <a class="code" href="classROMSX.html#abfbbd9c597dda991fdfe61497cca0a3b">vec_s3</a>[lev]-&gt;FillBoundary();</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="comment">//We are not storing computed W aka Omega</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="comment">//    MultiFab::Copy(W_new,mf_w,0,0,W_new.nComp(),IntVect(AMREX_D_DECL(1,1,0)));</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="comment">//    W_new.FillBoundary();</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="comment">//    MultiFab::Copy(mf_W,S_old,Omega_comp,0,mf_W.nComp(),mf_w.nGrowVect());</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="classROMSX.html#a7f2dc9f3ff4a7d473039286fb3446206">set_depth</a>(lev);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <a class="code" href="classROMSX.html#afbc1fc6bd3f6ededfed2346989ccf055">set_drag</a>(lev);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;}</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <a class="code" href="classROMSX.html#aca38099dc70a4c766e5d250c18fec5ea">advance_3d</a>(lev, mf_u, mf_v, mf_tempold, mf_saltold, mf_temp, mf_salt, <a class="code" href="classROMSX.html#a2fb956d77ea6218caea0802b4f181b12">vec_t3</a>[lev], <a class="code" href="classROMSX.html#abfbbd9c597dda991fdfe61497cca0a3b">vec_s3</a>[lev], <a class="code" href="classROMSX.html#ab1343869d59f89fd4773bc7fa230aa73">vec_ru</a>[lev], <a class="code" href="classROMSX.html#ab5041f0f370ab1ec4f7f7e16127c9039">vec_rv</a>[lev],</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;               <a class="code" href="classROMSX.html#a18212e9657c0655cd29e0c6241c1224f">vec_DU_avg1</a>[lev], <a class="code" href="classROMSX.html#a883756f67229729f133b9bdf784c21ff">vec_DU_avg2</a>[lev],</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;               <a class="code" href="classROMSX.html#aa9738d90727df4f8aba2afb0ffed1e8f">vec_DV_avg1</a>[lev], <a class="code" href="classROMSX.html#a6847259dab9f6118da780bf623a9868a">vec_DV_avg2</a>[lev],</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;               <a class="code" href="classROMSX.html#a047f6faef02a00ced0a6c1766e4c9b5a">vec_ubar</a>[lev],  <a class="code" href="classROMSX.html#a2a375f2e83347418b7cf5d4bd812ee55">vec_vbar</a>[lev],</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;               mf_AK, mf_DC,</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;               mf_Hzk, <a class="code" href="classROMSX.html#aec2c137ce4314357035cbc7ae292338f">vec_Akv</a>[lev], <a class="code" href="classROMSX.html#aa5461758b528d199101b5ea74f9a6c12">vec_Hz</a>[lev], <a class="code" href="classROMSX.html#a24f02b944df51884168ab0c08c736c91">vec_Huon</a>[lev], <a class="code" href="classROMSX.html#a21dcccced847102e553281c1852ce005">vec_Hvom</a>[lev], ncomp, N, dt_lev);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    MultiFab::Copy(U_new,mf_u,0,0,U_new.nComp(),IntVect(AMREX_D_DECL(1,1,0)));</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    U_new.FillBoundary();</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    MultiFab::Copy(V_new,mf_v,0,0,V_new.nComp(),IntVect(AMREX_D_DECL(1,1,0)));</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    V_new.FillBoundary();</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    mf_temp.FillBoundary();</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    mf_salt.FillBoundary();</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    mf_tempold.FillBoundary();</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    mf_saltold.FillBoundary();</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <a class="code" href="classROMSX.html#a2fb956d77ea6218caea0802b4f181b12">vec_t3</a>[lev]-&gt;FillBoundary();</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <a class="code" href="classROMSX.html#abfbbd9c597dda991fdfe61497cca0a3b">vec_s3</a>[lev]-&gt;FillBoundary();</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="comment">//We are not storing computed W aka Omega</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="comment">//    MultiFab::Copy(W_new,mf_w,0,0,W_new.nComp(),IntVect(AMREX_D_DECL(1,1,0)));</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="comment">//    W_new.FillBoundary();</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="comment">//    MultiFab::Copy(mf_W,S_old,Omega_comp,0,mf_W.nComp(),mf_w.nGrowVect());</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <a class="code" href="classROMSX.html#a7f2dc9f3ff4a7d473039286fb3446206">set_depth</a>(lev);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <a class="code" href="classROMSX.html#afbc1fc6bd3f6ededfed2346989ccf055">set_drag</a>(lev);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
 <div class="ttc" id="aDataStruct_8H_html_a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c"><div class="ttname"><a href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">AdvectedQuantity::u</a></div><div class="ttdeci">@ u</div></div>
 <div class="ttc" id="aDataStruct_8H_html_a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a"><div class="ttname"><a href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">AdvectedQuantity::v</a></div><div class="ttdeci">@ v</div></div>
 <div class="ttc" id="aDataStruct_8H_html_a627f1f843904477f763577ad1460de01a415290769594460e2e485922904f345d"><div class="ttname"><a href="DataStruct_8H.html#a627f1f843904477f763577ad1460de01a415290769594460e2e485922904f345d">Coord::y</a></div><div class="ttdeci">@ y</div></div>
@@ -2125,7 +2138,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                                 (Dstp(i,j,0)+Dstp(i-1,j,0))+</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                                 cff*(cff1*rhs_ubar(i,j,0)+</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;                                      cff2*rubar(i,j,0,kstp)-</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                                      cff3*rubar(i,j,ptsk)))*fac;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                                      cff3*rubar(i,j,0,ptsk)))*fac;</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;            });</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;            <span class="comment">//END DO</span></div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;            <span class="comment">//END DO</span></div>
@@ -2140,7 +2153,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                                 (Dstp(i,j,0)+Dstp(i,j-1,0))+</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                                 cff*(cff1*rhs_vbar(i,j,0)+</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                                      cff2*rvbar(i,j,0,kstp)-</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                                      cff3*rvbar(i,j,ptsk)))*fac;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                                      cff3*rvbar(i,j,0,ptsk)))*fac;</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;            });</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;            <span class="comment">//END DO</span></div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;            <span class="comment">//END DO</span></div>
@@ -5336,8 +5349,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <a class="code" href="classROMSX.html#a2fb956d77ea6218caea0802b4f181b12">vec_t3</a>.resize(lev+1);</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <a class="code" href="classROMSX.html#abfbbd9c597dda991fdfe61497cca0a3b">vec_s3</a>.resize(lev+1);</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160; </div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <a class="code" href="classROMSX.html#a03b79a651abf3dc2bd37fadaca99fd46">vec_hOfTheConfusingName</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0))); <span class="comment">//2d, depth (double check if negative)</span></div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    <a class="code" href="classROMSX.html#ab962f23dc27b3ce17bb19e3b8c9991f8">vec_Zt_avg1</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0))); <span class="comment">//2d, average of the free surface (zeta)</span></div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <a class="code" href="classROMSX.html#a03b79a651abf3dc2bd37fadaca99fd46">vec_hOfTheConfusingName</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0))); <span class="comment">//2d, depth (double check if negative)</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    <a class="code" href="classROMSX.html#ab962f23dc27b3ce17bb19e3b8c9991f8">vec_Zt_avg1</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0))); <span class="comment">//2d, average of the free surface (zeta)</span></div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <a class="code" href="classROMSX.html#a7a3b7fb166ec3acf1b1057f53e08adad">vec_s_r</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba1d,dm,1,IntVect(0,0,0))); <span class="comment">// scaled vertical coordinate [0,1] , transforms to z</span></div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <a class="code" href="classROMSX.html#a7e2a55ae7fb02290e6ead16ec3e658fa">vec_z_w</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0))); <span class="comment">// z at w points</span></div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <a class="code" href="classROMSX.html#a0a9b1a5cf021018defc82b45cbecb2c5">vec_z_r</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0))); <span class="comment">// z at r points</span></div>
@@ -5356,25 +5369,25 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    <span class="comment">// maybe TODO: clean up component indexing in prestep?</span></div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <a class="code" href="classROMSX.html#ab1343869d59f89fd4773bc7fa230aa73">vec_ru</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,2,IntVect(2,2,0))); <span class="comment">// RHS u (incl horizontal and vertical advection)</span></div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    <a class="code" href="classROMSX.html#ab5041f0f370ab1ec4f7f7e16127c9039">vec_rv</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,2,IntVect(2,2,0))); <span class="comment">// RHS v</span></div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    <a class="code" href="classROMSX.html#ab5b7ff78a167e59ae727b22094b39079">vec_rufrc</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,2,IntVect(2,2,0))); <span class="comment">//2d, (incl advection terms and surface/bottom stresses, integral over the whole columnn, k=0)</span></div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <a class="code" href="classROMSX.html#a52a5f265a370595f128046c31b9f31d5">vec_rvfrc</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,2,IntVect(2,2,0))); <span class="comment">//2d, same as above but v</span></div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <a class="code" href="classROMSX.html#a2082155131b8b7e0dec29068a92cece2">vec_sustr</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0))); <span class="comment">//2d, surface stress</span></div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    <a class="code" href="classROMSX.html#a44a44e4d82bc38d55daa03f281437113">vec_svstr</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0))); <span class="comment">//2d</span></div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    <a class="code" href="classROMSX.html#ac49463f0fb789402ba8641f289906456">vec_rdrag</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0))); <span class="comment">//2d, linear drag coefficient [m/s], defined at rho, somehow related to rdrg</span></div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <a class="code" href="classROMSX.html#a607e27d43f6eaebcf557c4ae17b8039a">vec_bustr</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0))); <span class="comment">//2d, bottom stress</span></div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <a class="code" href="classROMSX.html#a5a981dafaf65d2d8d96f16e1e7467eb2">vec_bvstr</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0)));</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    <a class="code" href="classROMSX.html#ab5b7ff78a167e59ae727b22094b39079">vec_rufrc</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,2,IntVect(2,2,0))); <span class="comment">//2d, (incl advection terms and surface/bottom stresses, integral over the whole columnn, k=0)</span></div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <a class="code" href="classROMSX.html#a52a5f265a370595f128046c31b9f31d5">vec_rvfrc</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,2,IntVect(2,2,0))); <span class="comment">//2d, same as above but v</span></div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <a class="code" href="classROMSX.html#a2082155131b8b7e0dec29068a92cece2">vec_sustr</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0))); <span class="comment">//2d, surface stress</span></div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    <a class="code" href="classROMSX.html#a44a44e4d82bc38d55daa03f281437113">vec_svstr</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0))); <span class="comment">//2d</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    <a class="code" href="classROMSX.html#ac49463f0fb789402ba8641f289906456">vec_rdrag</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0))); <span class="comment">//2d, linear drag coefficient [m/s], defined at rho, somehow related to rdrg</span></div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <a class="code" href="classROMSX.html#a607e27d43f6eaebcf557c4ae17b8039a">vec_bustr</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0))); <span class="comment">//2d, bottom stress</span></div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <a class="code" href="classROMSX.html#a5a981dafaf65d2d8d96f16e1e7467eb2">vec_bvstr</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0)));</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160; </div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <span class="comment">//all 2d -- all associated with the 2D advance</span></div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <a class="code" href="classROMSX.html#a18212e9657c0655cd29e0c6241c1224f">vec_DU_avg1</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0))); <span class="comment">//2d DU: sum(height[incl free surface?] * u)</span></div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <a class="code" href="classROMSX.html#a883756f67229729f133b9bdf784c21ff">vec_DU_avg2</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0))); <span class="comment">//2d like above, but correct(or)?</span></div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <a class="code" href="classROMSX.html#aa9738d90727df4f8aba2afb0ffed1e8f">vec_DV_avg1</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0)));</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    <a class="code" href="classROMSX.html#a6847259dab9f6118da780bf623a9868a">vec_DV_avg2</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,1,IntVect(2,2,0)));</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <a class="code" href="classROMSX.html#ab5d263be53bfdd397f6c64672ee77009">vec_rubar</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,4,IntVect(2,2,0))); <span class="comment">// 2d RHS ubar</span></div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <a class="code" href="classROMSX.html#a83d781ead821f8ed29f6f2b9ef70a9aa">vec_rvbar</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,4,IntVect(2,2,0)));</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <a class="code" href="classROMSX.html#ac2324a5a8d5949f83ac7621ef79f8fdd">vec_rzeta</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,4,IntVect(2,2,0))); <span class="comment">// 2d RHS zeta</span></div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <a class="code" href="classROMSX.html#ab5d263be53bfdd397f6c64672ee77009">vec_rubar</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,4,IntVect(2,2,0))); <span class="comment">// 2d RHS ubar</span></div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <a class="code" href="classROMSX.html#a83d781ead821f8ed29f6f2b9ef70a9aa">vec_rvbar</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,4,IntVect(2,2,0)));</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <a class="code" href="classROMSX.html#ac2324a5a8d5949f83ac7621ef79f8fdd">vec_rzeta</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,4,IntVect(2,2,0))); <span class="comment">// 2d RHS zeta</span></div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <a class="code" href="classROMSX.html#a047f6faef02a00ced0a6c1766e4c9b5a">vec_ubar</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,3,IntVect(2,2,0))); <span class="comment">// starts off kind of like a depth-averaged u, but exists at more points and more timesteps (b/c fast 2D update) than full u</span></div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <a class="code" href="classROMSX.html#a2a375f2e83347418b7cf5d4bd812ee55">vec_vbar</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,3,IntVect(2,2,0)));</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <a class="code" href="classROMSX.html#ab026fffd3c4e9a9ef612cbb23132a1f5">vec_zeta</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,3,IntVect(2,2,0)));  <span class="comment">// 2d free surface</span></div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <a class="code" href="classROMSX.html#ab026fffd3c4e9a9ef612cbb23132a1f5">vec_zeta</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba2d,dm,3,IntVect(2,2,0)));  <span class="comment">// 2d free surface</span></div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160; </div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <a class="code" href="classROMSX.html#a2fb956d77ea6218caea0802b4f181b12">vec_t3</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0))); <span class="comment">//tempstore</span></div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <a class="code" href="classROMSX.html#abfbbd9c597dda991fdfe61497cca0a3b">vec_s3</a>[lev].reset(<span class="keyword">new</span> MultiFab(ba,dm,1,IntVect(2,2,0))); <span class="comment">//saltstore</span></div>
@@ -7349,262 +7362,284 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    gbx1.grow(IntVect(1,1,0));</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    gbx11.grow(IntVect(1,1,1));</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Scratch space</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    FArrayBox fab_Huee(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_Huee.setVal(0.0);</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    FArrayBox fab_uee(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_uee.setVal(0.0);</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    FArrayBox fab_Hvee(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_Hvee.setVal(0.0);</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    FArrayBox fab_vee(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_vee.setVal(0.0);</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    FArrayBox fab_Hvxx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_Hvxx.setVal(0.0);</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    FArrayBox fab_uxx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_uxx.setVal(0.0);</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    FArrayBox fab_Huxx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_Huxx.setVal(0.0);</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    FArrayBox fab_vxx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_vxx.setVal(0.0);</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    FArrayBox fab_UFx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_UFx.setVal(0.0);</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    FArrayBox fab_UFe(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_UFe.setVal(0.0);</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    FArrayBox fab_VFx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_VFx.setVal(0.0);</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    FArrayBox fab_VFe(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_VFe.setVal(0.0);</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Box bxD = bx;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    bxD.makeSlab(2,0);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Box gbx1D = bxD;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    gbx1D.grow(IntVect(1,1,0));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Scratch space</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    FArrayBox fab_Huee(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_Huee.setVal(0.0);</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    FArrayBox fab_uee(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_uee.setVal(0.0);</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    FArrayBox fab_Hvee(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_Hvee.setVal(0.0);</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    FArrayBox fab_vee(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_vee.setVal(0.0);</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    FArrayBox fab_Hvxx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_Hvxx.setVal(0.0);</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    FArrayBox fab_uxx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_uxx.setVal(0.0);</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    FArrayBox fab_Huxx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_Huxx.setVal(0.0);</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    FArrayBox fab_vxx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_vxx.setVal(0.0);</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">auto</span> Huxx=fab_Huxx.array();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">auto</span> Hvxx=fab_Hvxx.array();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">auto</span> Huee=fab_Huee.array();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">auto</span> Hvee=fab_Hvee.array();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">auto</span> uxx=fab_uxx.array();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">auto</span> uee=fab_uee.array();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span> vxx=fab_vxx.array();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">auto</span> vee=fab_vee.array();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">auto</span> UFx=fab_UFx.array();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">auto</span> UFe=fab_UFe.array();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">auto</span> VFx=fab_VFx.array();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">auto</span> VFe=fab_VFe.array();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//check this////////////</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">const</span> <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> Gadv = -0.25;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    amrex::ParallelFor(gbx2,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        Huee(i,j,k)=0.0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        uee(i,j,k)=0.0;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        Hvee(i,j,k)=0.0;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        vee(i,j,k)=0.0;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        Huxx(i,j,k)=0.0;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        uxx(i,j,k)=0.0;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        Hvxx(i,j,k)=0.0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        vxx(i,j,k)=0.0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    FArrayBox fab_UFx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_UFx.setVal(0.0);</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    FArrayBox fab_UFe(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_UFe.setVal(0.0);</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    FArrayBox fab_VFx(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_VFx.setVal(0.0);</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    FArrayBox fab_VFe(gbx2,1,amrex::The_Async_Arena()); <span class="comment">//fab_VFe.setVal(0.0);</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">auto</span> Huxx=fab_Huxx.array();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span> Hvxx=fab_Hvxx.array();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">auto</span> Huee=fab_Huee.array();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">auto</span> Hvee=fab_Hvee.array();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">auto</span> uxx=fab_uxx.array();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">auto</span> uee=fab_uee.array();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">auto</span> vxx=fab_vxx.array();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">auto</span> vee=fab_vee.array();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">auto</span> UFx=fab_UFx.array();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">auto</span> UFe=fab_UFe.array();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">auto</span> VFx=fab_VFx.array();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">auto</span> VFe=fab_VFe.array();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//check this////////////</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">const</span> <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> Gadv = -0.25;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    amrex::ParallelFor(gbx2,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        Huee(i,j,k)=0.0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        uee(i,j,k)=0.0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        Hvee(i,j,k)=0.0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        vee(i,j,k)=0.0;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        UFx(i,j,k)=0.0;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        UFe(i,j,k)=0.0;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        VFx(i,j,k)=0.0;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        VFe(i,j,k)=0.0;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    });</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    amrex::ParallelFor(gbx1,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">//should not include grow cells</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        uxx(i,j,k)=uold(i-1,j,k,nrhs)-2.0*uold(i,j,k,nrhs)+uold(i+1,j,k,nrhs);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">//neglecting terms about periodicity since testing only periodic for now</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        Huxx(i,j,k)=Huon(i-1,j,k)-2.0*Huon(i,j,k)+Huon(i+1,j,k);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    });</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    amrex::ParallelFor(gbx1,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=uold(i  ,j,k,nrhs)+uold(i+1,j,k,nrhs);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (cff1 &gt; 0.0) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;          cff=uxx(i,j,k);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          cff=uxx(i+1,j,k);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        UFx(i,j,k)=0.25*(cff1+Gadv*cff) * (Huon(i,j,k)+ Huon(i+1,j,k)+</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                         Gadv*0.5*(Huxx(i,j,k)+ Huxx(i+1,j,k)));</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">//should not include grow cells</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        uee(i,j,k)=uold(i,j-1,k,nrhs)-2.0*uold(i,j,k,nrhs)+uold(i,j+1,k,nrhs);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    });</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    amrex::ParallelFor(gbx1,</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {<span class="comment"></span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">        /////////////MIGHT NEED NEW LOOP HERE</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"></span>        <span class="comment">//neglecting terms about periodicity since testing only periodic for now</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        Hvxx(i,j,k)=Hvom(i-1,j,k)-2.0*Hvom(i,j,k)+Hvom(i+1,j,k);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    });</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    amrex::ParallelFor(gbx1,</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=uold(i,j  ,k,nrhs)+uold(i,j-1,k,nrhs);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff2=Hvom(i,j,k)+Hvom(i-1,j,k);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">if</span> (cff2&gt;0.0) {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;              cff=uee(i,j-1,k);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;              cff=uee(i,j,k);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            UFe(i,j,k)=0.25*(cff1+Gadv*cff)*</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;              (cff2+Gadv*0.5*(Hvxx(i  ,j,k)+Hvxx(i-1,j,k)));</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            vxx(i,j,k)=vold(i-1,j,k,nrhs)-2.0*vold(i,j,k,nrhs)+</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;              vold(i+1,j,k,nrhs);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="comment">//neglecting terms about periodicity since testing only periodic for now</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            Huee(i,j,k)=Huon(i,j-1,k)-2.0*Huon(i,j,k)+Huon(i,j+1,k);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            cff1=vold(i  ,j,k,nrhs)+vold(i-1,j,k,nrhs);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            cff2=Huon(i,j,k)+Huon(i,j-1,k);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">if</span> (cff2&gt;0.0) {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;              cff=vxx(i-1,j,k);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;              cff=vxx(i,j,k);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            VFx(i,j,k)=0.25*(cff1+Gadv*cff)* (cff2+Gadv*0.5*(Huee(i,j,k)+ Huee(i,j-1,k)));</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            vee(i,j,k)=vold(i,j-1,k,nrhs)-2.0*vold(i,j,k,nrhs)+</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;              vold(i,j+1,k,nrhs);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            Hvee(i,j,k)=Hvom(i,j-1,k)-2.0*Hvom(i,j,k)+Hvom(i,j+1,k);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        });</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        amrex::ParallelFor(gbx1,</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="comment">//neglecting terms about periodicity since testing only periodic for now</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=vold(i,j  ,k,nrhs)+vold(i,j+1,k,nrhs);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">if</span> (cff1&gt;0.0) {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;              cff=vee(i,j,k);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;              cff=vee(i,j+1,k);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            VFe(i,j,k) = 0.25 * (cff1+Gadv*cff) * (Hvom(i,j  ,k)+ Hvom(i,j+1,k) +</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                         0.5  *            Gadv * (Hvee(i,j  ,k)+ Hvee(i,j+1,k)));</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        });</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        amrex::ParallelFor(gbx1,</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;              <span class="comment">//</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;              <span class="comment">//  Add in horizontal advection.</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;              <span class="comment">//</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=UFx(i,j  ,k)-UFx(i-1,j,k);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff2=UFe(i,j+1,k)-UFe(i  ,j,k);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff=cff1+cff2;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;              ru(i,j,k,nrhs) -= cff;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;              cff1=VFx(i+1,j,k)-VFx(i  ,j,k);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;              cff2=VFe(i  ,j,k)-VFe(i,j-1,k);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;              cff=cff1+cff2;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;              rv(i,j,k,nrhs) -= cff;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        Huxx(i,j,k)=0.0;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        uxx(i,j,k)=0.0;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        Hvxx(i,j,k)=0.0;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        vxx(i,j,k)=0.0;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        UFx(i,j,k)=0.0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        UFe(i,j,k)=0.0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        VFx(i,j,k)=0.0;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        VFe(i,j,k)=0.0;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    });</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    amrex::ParallelFor(gbx1,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">//should not include grow cells</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        uxx(i,j,k)=uold(i-1,j,k,nrhs)-2.0*uold(i,j,k,nrhs)+uold(i+1,j,k,nrhs);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="comment">//neglecting terms about periodicity since testing only periodic for now</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        Huxx(i,j,k)=Huon(i-1,j,k)-2.0*Huon(i,j,k)+Huon(i+1,j,k);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    });</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    amrex::ParallelFor(gbx1,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=uold(i  ,j,k,nrhs)+uold(i+1,j,k,nrhs);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (cff1 &gt; 0.0) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          cff=uxx(i,j,k);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          cff=uxx(i+1,j,k);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        UFx(i,j,k)=0.25*(cff1+Gadv*cff) * (Huon(i,j,k)+ Huon(i+1,j,k)+</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                         Gadv*0.5*(Huxx(i,j,k)+ Huxx(i+1,j,k)));</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="comment">//should not include grow cells</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        uee(i,j,k)=uold(i,j-1,k,nrhs)-2.0*uold(i,j,k,nrhs)+uold(i,j+1,k,nrhs);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    });</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    amrex::ParallelFor(gbx1,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {<span class="comment"></span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">        /////////////MIGHT NEED NEW LOOP HERE</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"></span>        <span class="comment">//neglecting terms about periodicity since testing only periodic for now</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        Hvxx(i,j,k)=Hvom(i-1,j,k)-2.0*Hvom(i,j,k)+Hvom(i+1,j,k);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    });</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    amrex::ParallelFor(gbx1,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=uold(i,j  ,k,nrhs)+uold(i,j-1,k,nrhs);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff2=Hvom(i,j,k)+Hvom(i-1,j,k);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">if</span> (cff2&gt;0.0) {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;              cff=uee(i,j-1,k);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;              cff=uee(i,j,k);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            UFe(i,j,k)=0.25*(cff1+Gadv*cff)*</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;              (cff2+Gadv*0.5*(Hvxx(i  ,j,k)+Hvxx(i-1,j,k)));</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            vxx(i,j,k)=vold(i-1,j,k,nrhs)-2.0*vold(i,j,k,nrhs)+</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;              vold(i+1,j,k,nrhs);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">//neglecting terms about periodicity since testing only periodic for now</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            Huee(i,j,k)=Huon(i,j-1,k)-2.0*Huon(i,j,k)+Huon(i,j+1,k);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            cff1=vold(i  ,j,k,nrhs)+vold(i-1,j,k,nrhs);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            cff2=Huon(i,j,k)+Huon(i,j-1,k);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">if</span> (cff2&gt;0.0) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;              cff=vxx(i-1,j,k);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;              cff=vxx(i,j,k);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            VFx(i,j,k)=0.25*(cff1+Gadv*cff)* (cff2+Gadv*0.5*(Huee(i,j,k)+ Huee(i,j-1,k)));</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            vee(i,j,k)=vold(i,j-1,k,nrhs)-2.0*vold(i,j,k,nrhs)+</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;              vold(i,j+1,k,nrhs);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            Hvee(i,j,k)=Hvom(i,j-1,k)-2.0*Hvom(i,j,k)+Hvom(i,j+1,k);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        });</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        amrex::ParallelFor(gbx1,</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="comment">//neglecting terms about periodicity since testing only periodic for now</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=vold(i,j  ,k,nrhs)+vold(i,j+1,k,nrhs);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">if</span> (cff1&gt;0.0) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;              cff=vee(i,j,k);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;              cff=vee(i,j+1,k);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            VFe(i,j,k) = 0.25 * (cff1+Gadv*cff) * (Hvom(i,j  ,k)+ Hvom(i,j+1,k) +</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                         0.5  *            Gadv * (Hvee(i,j  ,k)+ Hvee(i,j+1,k)));</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        });</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        amrex::ParallelFor(gbx1,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;              <span class="comment">//</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;              <span class="comment">//  Add in horizontal advection.</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;              <span class="comment">//</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=UFx(i,j  ,k)-UFx(i-1,j,k);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff2=UFe(i,j+1,k)-UFe(i  ,j,k);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff=cff1+cff2;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;              ru(i,j,k,nrhs) -= cff;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;              <span class="comment">//-----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;              <span class="comment">//  Add in vertical advection.</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;              <span class="comment">//-----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;              cff1=9.0/16.0;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;              cff2=1.0/16.0;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;              <span class="comment">//              if(i&gt;=0)</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;              <span class="keywordflow">if</span> (k&gt;=1 &amp;&amp; k&lt;=N-2)</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;              {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                      FC(i,j,k)=( cff1*(uold(i  ,j,k  ,nrhs)+ uold(i,j,k+1,nrhs))</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                                 -cff2*(uold(i  ,j,k-1,nrhs)+ uold(i,j,k+2,nrhs)) )*</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                    ( cff1*(   W(i  ,j,k)+ W(i-1,j,k))</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                                     -cff2*(   W(i+1,j,k)+ W(i-2,j,k)) );</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;              }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;              <span class="keywordflow">else</span> <span class="comment">// this needs to be split up so that the following can be concurrent</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;              {</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                  FC(i,j,N)=0.0;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                  FC(i,j,N-1)=( cff1*(uold(i  ,j,N-1,nrhs)+ uold(i,j,N  ,nrhs))</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                               -cff2*(uold(i  ,j,N-2,nrhs)+ uold(i,j,N  ,nrhs)) )*</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                  ( cff1*(   W(i  ,j,N-1)+ W(i-1,j,N-1))</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                                   -cff2*(   W(i+1,j,N-1)+ W(i-2,j,N-1)) );</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;              cff1=VFx(i+1,j,k)-VFx(i  ,j,k);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;              cff2=VFe(i  ,j,k)-VFe(i,j-1,k);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;              cff=cff1+cff2;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;              rv(i,j,k,nrhs) -= cff;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;              <span class="comment">//-----------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;              <span class="comment">//  Add in vertical advection.</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;              <span class="comment">//-----------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;              cff1=9.0/16.0;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;              cff2=1.0/16.0;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;              <span class="comment">//              if(i&gt;=0)</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;              <span class="keywordflow">if</span> (k&gt;=1 &amp;&amp; k&lt;=N-2)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;              {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                      FC(i,j,k)=( cff1*(uold(i  ,j,k  ,nrhs)+ uold(i,j,k+1,nrhs))</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                                 -cff2*(uold(i  ,j,k-1,nrhs)+ uold(i,j,k+2,nrhs)) )*</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                                    ( cff1*(   W(i  ,j,k)+ W(i-1,j,k))</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                                     -cff2*(   W(i+1,j,k)+ W(i-2,j,k)) );</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;              }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;              <span class="keywordflow">else</span> <span class="comment">// this needs to be split up so that the following can be concurrent</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;              {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                  FC(i,j,N)=0.0;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                  FC(i,j,0)=( cff1*(uold(i  ,j,1,nrhs)+ uold(i,j,2,nrhs))</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                             -cff2*(uold(i  ,j,1,nrhs)+ uold(i,j,3,nrhs)) )*</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                ( cff1*(   W(i  ,j,1)+ W(i-1,j,1))</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                 -cff2*(   W(i+1,j,1)+ W(i-2,j,1)) );</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                  FC(i,j,N-1)=( cff1*(uold(i  ,j,N-1,nrhs)+ uold(i,j,N  ,nrhs))</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                               -cff2*(uold(i  ,j,N-2,nrhs)+ uold(i,j,N  ,nrhs)) )*</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                  ( cff1*(   W(i  ,j,N-1)+ W(i-1,j,N-1))</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                   -cff2*(   W(i+1,j,N-1)+ W(i-2,j,N-1)) );</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                  <span class="comment">//              FC(i,0,-1)=0.0;</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;              }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;              <span class="keywordflow">if</span>(k-1&gt;=0) {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                  cff=FC(i,j,k)-FC(i,j,k-1);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;              } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                  cff=FC(i,j,k);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;              }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;              ru(i,j,k,nrhs) -= cff;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;              <span class="keywordflow">if</span> (k&gt;=1 &amp;&amp; k&lt;=N-2)</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;              {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                  FC(i,j,k)=( cff1*(vold(i,j,k  ,nrhs)+ vold(i,j,k+1,nrhs))</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                             -cff2*(vold(i,j,k-1,nrhs)+ vold(i,j,k+2,nrhs)) )*</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                ( cff1*(W(i,j  ,k)+ W(i,j-1,k))</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                                 -cff2*(W(i,j+1,k)+ W(i,j-2,k)) );</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;              }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;              <span class="keywordflow">else</span> <span class="comment">// this needs to be split up so that the following can be concurrent</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;              {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                  FC(i,j,N)=0.0;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                  FC(i,j,N-1)=( cff1*(vold(i,j,N-1,nrhs)+ vold(i,j,N  ,nrhs))</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                               -cff2*(vold(i,j,N-2,nrhs)+ vold(i,j,N  ,nrhs)) )*</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                  ( cff1*(W(i,j  ,N-1)+ W(i,j-1,N-1))</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                                   -cff2*(W(i,j+1,N-1)+ W(i,j-2,N-1)) );</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                  FC(i,j,0)=( cff1*(vold(i,j,1,nrhs)+ vold(i,j,2,nrhs))</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                 -cff2*(vold(i,j,1,nrhs)+ vold(i,j,3,nrhs)) )*</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                ( cff1*(W(i,j  ,1)+ W(i,j-1,1))</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                 -cff2*(W(i,j+1,1)+ W(i,j-2,1)) );</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                  FC(i,j,0)=( cff1*(uold(i  ,j,1,nrhs)+ uold(i,j,2,nrhs))</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                             -cff2*(uold(i  ,j,1,nrhs)+ uold(i,j,3,nrhs)) )*</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                                ( cff1*(   W(i  ,j,1)+ W(i-1,j,1))</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                 -cff2*(   W(i+1,j,1)+ W(i-2,j,1)) );</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                  <span class="comment">//              FC(i,0,-1)=0.0;</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;              }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;              <span class="keywordflow">if</span>(k-1&gt;=0) {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                  cff=FC(i,j,k)-FC(i,j,k-1);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;              } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                  cff=FC(i,j,k);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;              }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;              ru(i,j,k,nrhs) -= cff;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;              <span class="keywordflow">if</span> (k&gt;=1 &amp;&amp; k&lt;=N-2)</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;              {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                  FC(i,j,k)=( cff1*(vold(i,j,k  ,nrhs)+ vold(i,j,k+1,nrhs))</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                             -cff2*(vold(i,j,k-1,nrhs)+ vold(i,j,k+2,nrhs)) )*</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                ( cff1*(W(i,j  ,k)+ W(i,j-1,k))</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                 -cff2*(W(i,j+1,k)+ W(i,j-2,k)) );</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;              }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;              <span class="keywordflow">else</span> <span class="comment">// this needs to be split up so that the following can be concurrent</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;              {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                  FC(i,j,N)=0.0;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                  FC(i,j,N-1)=( cff1*(vold(i,j,N-1,nrhs)+ vold(i,j,N  ,nrhs))</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                               -cff2*(vold(i,j,N-2,nrhs)+ vold(i,j,N  ,nrhs)) )*</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                  ( cff1*(W(i,j  ,N-1)+ W(i,j-1,N-1))</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                   -cff2*(W(i,j+1,N-1)+ W(i,j-2,N-1)) );</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                  <span class="comment">//              FC(i,0,-1)=0.0;</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;              }</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;              <span class="keywordflow">if</span>(k-1&gt;=0) {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                  cff=FC(i,j,k)-FC(i,j,k-1);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;              } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                  cff=FC(i,j,k);</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;              }</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;              rv(i,j,k,nrhs) -= cff;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;              <span class="comment">//Recursive summation:</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;              rufrc(i,j,0)+=ru(i,j,k,nrhs);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;              rvfrc(i,j,0)+=rv(i,j,k,nrhs);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;              <span class="comment">//These forcing terms should possibly be updated on a slabbed box</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;              cff=om_u(i,j,0)*on_u(i,j,0);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;              <span class="keywordflow">if</span>(k==N) <span class="comment">// this is consistent with update_vel_3d</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                  cff1=sustr(i,j,0)*cff;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;              <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                  cff1=0.0;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;              <span class="keywordflow">if</span>(k==0) <span class="comment">//should this be k==-1?</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                  cff2=-bustr(i,j,0)*cff;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;              <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                  cff2=0.0;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;              rufrc(i,j,0)+=cff1+cff2;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;              <span class="comment">//These forcing terms should possibly be updated on a slabbed box</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;              cff=om_v(i,j,0)*on_v(i,j,0);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;              <span class="keywordflow">if</span>(k==N) <span class="comment">// this is consistent with update_vel_3d</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                  cff1=svstr(i,j,0)*cff;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;              <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                  cff1=0.0;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;              <span class="keywordflow">if</span>(k==0) <span class="comment">//should this be k==-1?</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                  cff2=-bvstr(i,j,0)*cff;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;              <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                  cff2=0.0;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;              rvfrc(i,j,0)+=cff1+cff2;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    });</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                  FC(i,j,0)=( cff1*(vold(i,j,1,nrhs)+ vold(i,j,2,nrhs))</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                 -cff2*(vold(i,j,1,nrhs)+ vold(i,j,3,nrhs)) )*</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                ( cff1*(W(i,j  ,1)+ W(i,j-1,1))</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                 -cff2*(W(i,j+1,1)+ W(i,j-2,1)) );</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                  <span class="comment">//              FC(i,0,-1)=0.0;</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;              }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;              <span class="keywordflow">if</span>(k-1&gt;=0) {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                  cff=FC(i,j,k)-FC(i,j,k-1);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;              } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                  cff=FC(i,j,k);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;              }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;              rv(i,j,k,nrhs) -= cff;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;              <span class="comment">//Recursive summation:</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;              rufrc(i,j,0)+=ru(i,j,k,nrhs);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;              rvfrc(i,j,0)+=rv(i,j,k,nrhs);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">// This toggles whether to upate forcing terms on slabbed box or not. Slabbing it changes plotfile to machine precision</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#if 1</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;              <span class="comment">//These forcing terms should possibly be updated on a slabbed box</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;              cff=om_u(i,j,0)*on_u(i,j,0);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;              <span class="keywordflow">if</span>(k==N) <span class="comment">// this is consistent with update_vel_3d</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                  cff1=sustr(i,j,0)*cff;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                  cff1=0.0;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;              <span class="keywordflow">if</span>(k==0) <span class="comment">//should this be k==-1?</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                  cff2=-bustr(i,j,0)*cff;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                  cff2=0.0;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;              rufrc(i,j,0)+=cff1+cff2;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;              <span class="comment">//These forcing terms should possibly be updated on a slabbed box</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;              cff=om_v(i,j,0)*on_v(i,j,0);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;              <span class="keywordflow">if</span>(k==N) <span class="comment">// this is consistent with update_vel_3d</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                  cff1=svstr(i,j,0)*cff;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                  cff1=0.0;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;              <span class="keywordflow">if</span>(k==0) <span class="comment">//should this be k==-1?</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                  cff2=-bvstr(i,j,0)*cff;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                  cff2=0.0;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;              rvfrc(i,j,0)+=cff1+cff2;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        });</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        amrex::ParallelFor(gbx1D,</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff=om_u(i,j,0)*on_u(i,j,0);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=sustr(i,j,0)*cff;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;              <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff2=-bustr(i,j,0)*cff;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;              rufrc(i,j,0) += cff1+cff2;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;              cff=om_v(i,j,0)*on_v(i,j,0);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;              cff1=svstr(i,j,0)*cff;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;              cff2=-bvstr(i,j,0)*cff;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;              rvfrc(i,j,0)+=cff1+cff2;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        });</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -9910,86 +9945,88 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//K_LOOP : DO k=1,N(ng)</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//DO j=JstrV-1,Jend</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//DO i=IstrU-1,Iend</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    amrex::ParallelFor(bx, ncomp,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keyword">const</span> amrex::Real cff = 0.5*Hz(i,j,k) * (pm(i,j,0) / pn(i,j,0) *</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        ((pn(i,  j,0) + pn(i+1,j,0)) * <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i+1,j,k,nrhs)-</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                         (pn(i-1,j,0) + pn(i,  j,0)) * <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i  ,j,k,nrhs))-</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        pn(i,j,0) / pm(i,j,0) *</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        ((pm(i,j  ,0)+pm(i,j+1,0))*<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j+1,k,nrhs)-</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                         (pm(i,j-1,0)+pm(i,j  ,0))*<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j  ,k,nrhs)));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="comment">// ifndef VISC_3DCOEF branch</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                UFx(i,j,0) = on_r(i,j,0)*on_r(i,j,0)*visc2_r(i,j,0)*cff;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                VFe(i,j,0) = om_r(i,j,0)*om_r(i,j,0)*visc2_r(i,j,0)*cff;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            });</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//K_LOOP : DO k=1,N(ng)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//DO j=Jstr,Jend+1</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//DO i=Istr,Iend+1</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    amrex::ParallelFor(bx, ncomp,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keyword">const</span> amrex::Real cff = 0.125 * (Hz(i-1,j  ,k)+Hz(i,j  ,k)+</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                      Hz(i-1,j-1,k)+Hz(i,j-1,k))*</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                            (pm(i,j,0)/pn(i,j,0)*</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                             ((pn(i  ,j-1,0)+pn(i  ,j,0))*<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i  ,j,k,nrhs)-</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                              (pn(i-1,j-1,0)+pn(i-1,j,0))*<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i-1,j,k,nrhs)));</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="comment">// ifndef VISC_3DCOEF branch</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                UFe(i,j,0) = om_p(i,j,0)*om_p(i,j,0)*visc2_p(i,j,0)*cff;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                VFx(i,j,0) = on_p(i,j,0)*on_p(i,j,0)*visc2_p(i,j,0)*cff;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            });</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> Time-step harmonic, S-surfaces viscosity term. Notice that momentum</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> at this stage is HzU and HzV and has m2/s units. Add contribution for</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> barotropic forcing terms.</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//K_LOOP : DO k=1,N(ng)</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//DO j=Jstr,Jend</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//DO i=IstrU,Iend</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    amrex::ParallelFor(bx, ncomp,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keyword">const</span> amrex::Real cff=dt_lev*0.25*(pm(i-1,j,0)+pm(i,j,0))*(pn(i-1,j,0)+pn(i,j,0));</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keyword">const</span> amrex::Real cff1=0.5*(pn(i-1,j,0)+pn(i,j,0))*(UFx(i,j  ,0)-UFx(i-1,j,0));</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keyword">const</span> amrex::Real cff2=0.5*(pm(i-1,j,0)+pm(i,j,0))*(UFe(i,j+1,0)-UFe(i  ,j,0));</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keyword">const</span> amrex::Real cff3=cff*(cff1+cff2);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                rufrc(i,j,0)=rufrc(i,j,0)+cff1+cff2;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i,j,k,nnew)=<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i,j,k,nnew)+cff3;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">/*#ifdef DIAGNOSTICS_UV</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">                DiaRUfrc(i,j,3,M2hvis)=DiaRUfrc(i,j,3,M2hvis)+cff1+cff2</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">                DiaRUfrc(i,j,3,M2xvis)=DiaRUfrc(i,j,3,M2xvis)+cff1</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">                DiaRUfrc(i,j,3,M2yvis)=DiaRUfrc(i,j,3,M2yvis)+cff2</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">                DiaU3wrk(i,j,k,M3hvis)=cff3</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">                DiaU3wrk(i,j,k,M3xvis)=cff*cff1</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">                DiaU3wrk(i,j,k,M3yvis)=cff*cff2</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">#endif*/</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            });</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//K_LOOP : DO k=1,N(ng)</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//DO j=JstrV,Jend</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">//DO i=Istr,Iend</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    amrex::ParallelFor(bx, ncomp,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keyword">const</span> amrex::Real cff=dt_lev*0.25*(pm(i,j,0)+pm(i,j-1,0))*(pn(i,j,0)+pn(i,j-1,0));</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keyword">const</span> amrex::Real cff1=0.5*(pn(i,j-1,0)+pn(i,j,0))*(VFx(i+1,j,0)-VFx(i,j  ,0));</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keyword">const</span> amrex::Real cff2=0.5*(pm(i,j-1,0)+pm(i,j,0))*(VFe(i  ,j,0)-VFe(i,j-1,0));</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keyword">const</span> amrex::Real cff3=cff*(cff1-cff2);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                rvfrc(i,j,0)=rvfrc(i,j,0)+cff1-cff2;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j,k,nnew)=<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j,k,nnew)+cff3;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">/*#ifdef DIAGNOSTICS_UV</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">                DiaRVfrc(i,j,3,M2hvis)=DiaRVfrc(i,j,3,M2hvis)+cff1-cff2</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">                DiaRVfrc(i,j,3,M2xvis)=DiaRVfrc(i,j,3,M2xvis)+cff1</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">                DiaRVfrc(i,j,3,M2yvis)=DiaRVfrc(i,j,3,M2yvis)-cff2</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">                DiaV3wrk(i,j,k,M3hvis)=cff3</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">                DiaV3wrk(i,j,k,M3xvis)= cff*cff1</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">                DiaV3wrk(i,j,k,M3yvis)=-cff*cff2</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">#endif*/</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            });</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// Should these be on ubox/vbox?</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    amrex::ParallelFor(bx, ncomp,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="comment">// cff depends on k, but UFx and VFe will only be affected by the last cell?</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keyword">const</span> amrex::Real cff = 0.5*Hz(i,j,k) * (pm(i,j,0) / pn(i,j,0) *</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        ((pn(i,  j,0) + pn(i+1,j,0)) * <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i+1,j,k,nrhs)-</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                         (pn(i-1,j,0) + pn(i,  j,0)) * <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i  ,j,k,nrhs))-</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        pn(i,j,0) / pm(i,j,0) *</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        ((pm(i,j  ,0)+pm(i,j+1,0))*<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j+1,k,nrhs)-</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                         (pm(i,j-1,0)+pm(i,j  ,0))*<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j  ,k,nrhs)));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="comment">// ifndef VISC_3DCOEF branch</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                UFx(i,j,k) = on_r(i,j,0)*on_r(i,j,0)*visc2_r(i,j,0)*cff;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                VFe(i,j,k) = om_r(i,j,0)*om_r(i,j,0)*visc2_r(i,j,0)*cff;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            });</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//K_LOOP : DO k=1,N(ng)</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//DO j=Jstr,Jend+1</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//DO i=Istr,Iend+1</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    amrex::ParallelFor(bx, ncomp,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keyword">const</span> amrex::Real cff = 0.125 * (Hz(i-1,j  ,k)+Hz(i,j  ,k)+</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                      Hz(i-1,j-1,k)+Hz(i,j-1,k))*</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                            (pm(i,j,0)/pn(i,j,0)*</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                             ((pn(i  ,j-1,0)+pn(i  ,j,0))*<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i  ,j,k,nrhs)-</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                              (pn(i-1,j-1,0)+pn(i-1,j,0))*<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i-1,j,k,nrhs)));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="comment">// ifndef VISC_3DCOEF branch</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                UFe(i,j,k) = om_p(i,j,0)*om_p(i,j,0)*visc2_p(i,j,0)*cff;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                VFx(i,j,k) = on_p(i,j,0)*on_p(i,j,0)*visc2_p(i,j,0)*cff;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            });</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> Time-step harmonic, S-surfaces viscosity term. Notice that momentum</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> at this stage is HzU and HzV and has m2/s units. Add contribution for</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> barotropic forcing terms.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//K_LOOP : DO k=1,N(ng)</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//DO j=Jstr,Jend</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//DO i=IstrU,Iend</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    amrex::ParallelFor(bx, ncomp,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keyword">const</span> amrex::Real cff=dt_lev*0.25*(pm(i-1,j,0)+pm(i,j,0))*(pn(i-1,j,0)+pn(i,j,0));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keyword">const</span> amrex::Real cff1=0.5*(pn(i-1,j,0)+pn(i,j,0))*(UFx(i,j  ,k)-UFx(i-1,j,k));</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keyword">const</span> amrex::Real cff2=0.5*(pm(i-1,j,0)+pm(i,j,0))*(UFe(i,j+1,k)-UFe(i  ,j,k));</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keyword">const</span> amrex::Real cff3=cff*(cff1+cff2);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                rufrc(i,j,0)=rufrc(i,j,0)+cff1+cff2;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i,j,k,nnew)=<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i,j,k,nnew)+cff3;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">/*#ifdef DIAGNOSTICS_UV</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">                DiaRUfrc(i,j,3,M2hvis)=DiaRUfrc(i,j,3,M2hvis)+cff1+cff2</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">                DiaRUfrc(i,j,3,M2xvis)=DiaRUfrc(i,j,3,M2xvis)+cff1</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">                DiaRUfrc(i,j,3,M2yvis)=DiaRUfrc(i,j,3,M2yvis)+cff2</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">                DiaU3wrk(i,j,k,M3hvis)=cff3</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">                DiaU3wrk(i,j,k,M3xvis)=cff*cff1</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">                DiaU3wrk(i,j,k,M3yvis)=cff*cff2</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">#endif*/</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            });</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">//K_LOOP : DO k=1,N(ng)</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">//DO j=JstrV,Jend</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">//DO i=Istr,Iend</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    amrex::ParallelFor(bx, ncomp,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keyword">const</span> amrex::Real cff=dt_lev*0.25*(pm(i,j,0)+pm(i,j-1,0))*(pn(i,j,0)+pn(i,j-1,0));</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keyword">const</span> amrex::Real cff1=0.5*(pn(i,j-1,0)+pn(i,j,0))*(VFx(i+1,j,k)-VFx(i,j  ,k));</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keyword">const</span> amrex::Real cff2=0.5*(pm(i,j-1,0)+pm(i,j,0))*(VFe(i  ,j,k)-VFe(i,j-1,k));</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keyword">const</span> amrex::Real cff3=cff*(cff1-cff2);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                rvfrc(i,j,0)=rvfrc(i,j,0)+cff1-cff2;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j,k,nnew)=<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j,k,nnew)+cff3;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">/*#ifdef DIAGNOSTICS_UV</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">                DiaRVfrc(i,j,3,M2hvis)=DiaRVfrc(i,j,3,M2hvis)+cff1-cff2</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">                DiaRVfrc(i,j,3,M2xvis)=DiaRVfrc(i,j,3,M2xvis)+cff1</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">                DiaRVfrc(i,j,3,M2yvis)=DiaRVfrc(i,j,3,M2yvis)-cff2</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">                DiaV3wrk(i,j,k,M3hvis)=cff3</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">                DiaV3wrk(i,j,k,M3xvis)= cff*cff1</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">                DiaV3wrk(i,j,k,M3yvis)=-cff*cff2</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">#endif*/</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            });</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
