@@ -2585,7 +2585,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                ubar(i,j,k,0) = DC(i,j,-1)*DU_avg1(i,j,0);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                ubar(i,j,k,1) = ubar(i,j,k,0);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            });</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="classROMSX.html#a2178d9cdcc39fcc27269d5b450c83c39">update_massflux_3d</a>(Box(Hvom),bx,0,1,<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>,Hvom,Hz,om_v,DV_avg1,DV_avg2,DC,FC,CF,nnew);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <a class="code" href="classROMSX.html#a2178d9cdcc39fcc27269d5b450c83c39">update_massflux_3d</a>(Box(Hvom),bx,0,1,<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>,Hvom,Hz,om_v,DV_avg1,DV_avg2,DC,FC,CF,nnew);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        amrex::ParallelFor(Box(vbar),</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            {</div>
@@ -7069,9 +7069,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    amrex::ParallelFor(phi_bx,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        rho(i,j,k)=R0-                                          </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        rho(i,j,k)=R0-</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            R0*Tcoef*(temp(i,j,k,nrhs)-T0);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        rho(i,j,k)=rho(i,j,k)+                                      </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        rho(i,j,k)=rho(i,j,k)+</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            R0*Scoef*(salt(i,j,k,nrhs)-S0);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        rho(i,j,k)=rho(i,j,k)-1000.0_rt;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        pden(i,j,k)=rho(i,j,k);</div>
