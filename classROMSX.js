@@ -69,7 +69,7 @@ var classROMSX =
     [ "sum_integrated_quantities", "classROMSX.html#a55bb606cb2f4fc86e05232b5c314a829", null ],
     [ "t3dmix", "classROMSX.html#a214d27ef55abaa1a5f9f439bf42d2e54", null ],
     [ "timeStep", "classROMSX.html#a5abd4890b0a7b5939c66c6af3d9bb6c2", null ],
-    [ "update_massflux_3d", "classROMSX.html#acb20056f1e64a04c971525ad026c0787", null ],
+    [ "update_massflux_3d", "classROMSX.html#a2178d9cdcc39fcc27269d5b450c83c39", null ],
     [ "update_vel_3d", "classROMSX.html#a7426015e12ae9d70581d87c2de0ef6c1", null ],
     [ "uv3dmix", "classROMSX.html#acd6828d5fba1883c3efa407b67bf341f", null ],
     [ "vert_mean_3d", "classROMSX.html#a3876e9c37fd6291a0f502b6c7e7aeb11", null ],

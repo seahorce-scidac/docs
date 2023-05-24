@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['datalog_809',['DataLog',['../classROMSX.html#a2cc7343babd4642f2cf727a3d40035f3',1,'ROMSX']]],
-  ['datalogname_810',['DataLogName',['../classROMSX.html#a34887f38557bf5026acaf46581e05375',1,'ROMSX']]],
-  ['def_5farray_811',['def_array',['../classncutils_1_1NCGroup.html#acdfa4a8e44ca0f1901ea120a3946d1db',1,'ncutils::NCGroup']]],
-  ['def_5fdim_812',['def_dim',['../classncutils_1_1NCGroup.html#ae0ecaad10c77614a283bd6e66d2dca41',1,'ncutils::NCGroup']]],
-  ['def_5fgroup_813',['def_group',['../classncutils_1_1NCGroup.html#ac5c99d691660e36a00afffae6f0d6f71',1,'ncutils::NCGroup']]],
-  ['def_5fscalar_814',['def_scalar',['../classncutils_1_1NCGroup.html#a43450deb9f15f2b0b805612d76145bbc',1,'ncutils::NCGroup']]],
-  ['def_5fvar_815',['def_var',['../classncutils_1_1NCGroup.html#aa049e7d6f5f7f88ad840fa2ced3c61b4',1,'ncutils::NCGroup']]],
-  ['dim_816',['dim',['../classncutils_1_1NCGroup.html#addc8bbac9a2cfa8d9c49497b7da0310f',1,'ncutils::NCGroup']]],
-  ['display_817',['display',['../structSolverChoice.html#abb95d84167308078ce369b4196ef979c',1,'SolverChoice']]],
-  ['dx_818',['dx',['../classPlaneAverage.html#abf7bfae5c1b6fed56ff09fd06368b12c',1,'PlaneAverage']]]
+  ['datalog_810',['DataLog',['../classROMSX.html#a2cc7343babd4642f2cf727a3d40035f3',1,'ROMSX']]],
+  ['datalogname_811',['DataLogName',['../classROMSX.html#a34887f38557bf5026acaf46581e05375',1,'ROMSX']]],
+  ['def_5farray_812',['def_array',['../classncutils_1_1NCGroup.html#acdfa4a8e44ca0f1901ea120a3946d1db',1,'ncutils::NCGroup']]],
+  ['def_5fdim_813',['def_dim',['../classncutils_1_1NCGroup.html#ae0ecaad10c77614a283bd6e66d2dca41',1,'ncutils::NCGroup']]],
+  ['def_5fgroup_814',['def_group',['../classncutils_1_1NCGroup.html#ac5c99d691660e36a00afffae6f0d6f71',1,'ncutils::NCGroup']]],
+  ['def_5fscalar_815',['def_scalar',['../classncutils_1_1NCGroup.html#a43450deb9f15f2b0b805612d76145bbc',1,'ncutils::NCGroup']]],
+  ['def_5fvar_816',['def_var',['../classncutils_1_1NCGroup.html#aa049e7d6f5f7f88ad840fa2ced3c61b4',1,'ncutils::NCGroup']]],
+  ['dim_817',['dim',['../classncutils_1_1NCGroup.html#addc8bbac9a2cfa8d9c49497b7da0310f',1,'ncutils::NCGroup']]],
+  ['display_818',['display',['../structSolverChoice.html#abb95d84167308078ce369b4196ef979c',1,'SolverChoice']]],
+  ['dx_819',['dx',['../classPlaneAverage.html#abf7bfae5c1b6fed56ff09fd06368b12c',1,'PlaneAverage']]]
 ];
