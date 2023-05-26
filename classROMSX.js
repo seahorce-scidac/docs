@@ -73,7 +73,7 @@ var classROMSX =
     [ "update_vel_3d", "classROMSX.html#a7426015e12ae9d70581d87c2de0ef6c1", null ],
     [ "uv3dmix", "classROMSX.html#acd6828d5fba1883c3efa407b67bf341f", null ],
     [ "vert_mean_3d", "classROMSX.html#a3876e9c37fd6291a0f502b6c7e7aeb11", null ],
-    [ "vert_visc_3d", "classROMSX.html#a02bd6266f0576c515cac5a2d4475695a", null ],
+    [ "vert_visc_3d", "classROMSX.html#a65ce5f9c75ebc04eba79be47394ec6af", null ],
     [ "volWgtSumMF", "classROMSX.html#adca6904cd162a4201fd631cf0be6c2fe", null ],
     [ "writeBuildInfo", "classROMSX.html#a08b14a766ed31e1f6a9ccec0c7f64618", null ],
     [ "WriteCheckpointFile", "classROMSX.html#acc4b85fa57f43aa0f68f33c4edd82611", null ],
