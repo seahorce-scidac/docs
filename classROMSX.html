@@ -1980,8 +1980,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="comment">//Coupling from 3d to 2d</span><span class="comment"></span></div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="comment">        /////////Coupling of 3d updates to 2d predictor-corrector</span></div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="comment"></span>        <span class="comment">//todo: my_iif=&gt;my_my_iif iic =&gt; icc</span></div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordflow">if</span> (my_iif==0&amp;&amp;predictor_2d_step) {</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            <span class="keywordflow">if</span> (first_2d_step) {</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordflow">if</span> (first_2d_step&amp;&amp;predictor_2d_step) {</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            <span class="keywordflow">if</span> (iic==ntfirst) {</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                <span class="comment">//Print() &lt;&lt; &quot;(0,0,0 before update&quot; &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                <span class="comment">//Print() &lt;&lt; FArrayBox(rhs_ubar) &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                <span class="comment">//Print() &lt;&lt; FArrayBox(rhs_vbar) &lt;&lt; std::endl;</span></div>
