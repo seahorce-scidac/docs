@@ -1,15 +1,9 @@
 var searchData=
 [
-  ['sc_5ft_1135',['Sc_t',['../structSolverChoice.html#a10043b88372894f67ed0f3e68bf27cb6',1,'SolverChoice']]],
-  ['sc_5ft_5finv_1136',['Sc_t_inv',['../structSolverChoice.html#a5d8e6a103e2e5d61dc0990fa2141a675',1,'SolverChoice']]],
-  ['shape_1137',['shape',['../structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5',1,'NDArray']]],
-  ['sigma_5fk_1138',['sigma_k',['../structSolverChoice.html#affbc103f3361b47fbcf605a08b99d8ec',1,'SolverChoice']]],
-  ['sinphi_1139',['sinphi',['../structSolverChoice.html#a6426e150ba9c1ba2e14151228bf6ffaf',1,'SolverChoice']]],
-  ['solverchoice_1140',['solverChoice',['../classROMSX.html#a21df816ace6144ce0ed78d0031eaa946',1,'ROMSX']]],
-  ['spatial_5forder_1141',['spatial_order',['../structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44',1,'SolverChoice']]],
-  ['sst_1142',['sst',['../classROMSX.html#ae1071e0c88d861f589184ad86ff14774',1,'ROMSX']]],
-  ['startcputime_1143',['startCPUTime',['../classROMSX.html#ab3e7f280e92f9e5cbdad88a3f222069c',1,'ROMSX']]],
-  ['stop_5ftime_1144',['stop_time',['../classROMSX.html#a22dfd39392c026bd023c8f1d57fd0889',1,'ROMSX']]],
-  ['sum_5finterval_1145',['sum_interval',['../classROMSX.html#afcedb31381fd065fff2ca36196f8da40',1,'ROMSX']]],
-  ['sum_5fper_1146',['sum_per',['../classROMSX.html#af638ada4294dcf5b33de335efef61de1',1,'ROMSX']]]
+  ['t_5fnew_1145',['t_new',['../classROMSX.html#aac116ec30618bbd5641218e7522cdb86',1,'ROMSX']]],
+  ['t_5fold_1146',['t_old',['../classROMSX.html#ac395453aa10633a05bb7323b2946101e',1,'ROMSX']]],
+  ['tcline_1147',['tcline',['../structSolverChoice.html#a8567bc83a2159c88c5372ea30770725e',1,'SolverChoice']]],
+  ['theta_5fb_1148',['theta_b',['../structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5',1,'SolverChoice']]],
+  ['theta_5fs_1149',['theta_s',['../structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017',1,'SolverChoice']]],
+  ['total_5fplot_5ffile_5fstep_5f1_1150',['total_plot_file_step_1',['../classROMSX.html#a07e31a4dec6fc9e9d1ec3f1e96381c53',1,'ROMSX']]]
 ];

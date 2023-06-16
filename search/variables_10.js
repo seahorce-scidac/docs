@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['t_5fnew_1147',['t_new',['../classROMSX.html#aac116ec30618bbd5641218e7522cdb86',1,'ROMSX']]],
-  ['t_5fold_1148',['t_old',['../classROMSX.html#ac395453aa10633a05bb7323b2946101e',1,'ROMSX']]],
-  ['tcline_1149',['tcline',['../structSolverChoice.html#a8567bc83a2159c88c5372ea30770725e',1,'SolverChoice']]],
-  ['theta_5fb_1150',['theta_b',['../structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5',1,'SolverChoice']]],
-  ['theta_5fs_1151',['theta_s',['../structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017',1,'SolverChoice']]],
-  ['total_5fplot_5ffile_5fstep_5f1_1152',['total_plot_file_step_1',['../classROMSX.html#a07e31a4dec6fc9e9d1ec3f1e96381c53',1,'ROMSX']]]
+  ['use_5fcoriolis_1151',['use_coriolis',['../structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606',1,'SolverChoice']]],
+  ['use_5fgravity_1152',['use_gravity',['../structSolverChoice.html#a3ab48411073a3c1f75435292d7b407e5',1,'SolverChoice']]],
+  ['use_5fnative_5fmri_1153',['use_native_mri',['../classROMSX.html#a606a93b62deea72f9e2cbc7c4e5b83f8',1,'ROMSX']]],
+  ['use_5fqke_1154',['use_QKE',['../structSolverChoice.html#a47152bbb3815b6f4c9c465b8c75ebeb5',1,'SolverChoice']]],
+  ['use_5fterrain_1155',['use_terrain',['../structSolverChoice.html#a063a88594452100497651e8aaf1f68d7',1,'SolverChoice']]]
 ];

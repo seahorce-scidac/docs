@@ -17,7 +17,6 @@ var structSolverChoice =
     [ "Cs", "structSolverChoice.html#aaf85773d50dc693905867d3acc127dd0", null ],
     [ "diffuse_QKE_3D", "structSolverChoice.html#ad8f19f1ba25a4de9578af14ec787c0cc", null ],
     [ "dynamicViscosity", "structSolverChoice.html#a244a1303b78fa79d217bd86d124f0446", null ],
-    [ "evolve_free_surface", "structSolverChoice.html#a1e2c4b0ec69ffe8eebf3114fd61c44d0", null ],
     [ "flat_bathymetry", "structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a", null ],
     [ "gravity", "structSolverChoice.html#a47a54f2e44955202b5b437e4b1b4a61b", null ],
     [ "icBcType", "structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b", null ],

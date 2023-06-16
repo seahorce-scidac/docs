@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['real_1126',['Real',['../structncutils_1_1NCDType.html#a7a5be35daa7dbb2cc72507cc4b5a422c',1,'ncutils::NCDType']]],
-  ['ref_5fcounted_1127',['ref_counted',['../structNDArray.html#a8a0bbff40020f6aea23346ac656bf972',1,'NDArray']]],
-  ['ref_5ftags_1128',['ref_tags',['../classROMSX.html#a335a655f6cf611277de2803029419c4c',1,'ROMSX']]],
-  ['regrid_5fint_1129',['regrid_int',['../classROMSX.html#ab61e1364d5b301c8f727566234b9eb89',1,'ROMSX']]],
-  ['restart_5fchkfile_1130',['restart_chkfile',['../classROMSX.html#ae2d89ab211dd0d324dda03720b8c4bff',1,'ROMSX']]],
-  ['restart_5ftype_1131',['restart_type',['../classROMSX.html#ae866db953617cc0cc4090aeedfd3103c',1,'ROMSX']]],
-  ['rho0_5ftrans_1132',['rho0_trans',['../structSolverChoice.html#a3dd9fcb274b4d556d88346eeb683d00a',1,'SolverChoice']]],
-  ['rhoalpha_5fc_1133',['rhoAlpha_C',['../structSolverChoice.html#a3571709ee9c72dca3523638986976821',1,'SolverChoice']]],
-  ['rhoalpha_5ft_1134',['rhoAlpha_T',['../structSolverChoice.html#a3436b31b3e0e439c700d07c30d22e7a3',1,'SolverChoice']]]
+  ['sc_5ft_1133',['Sc_t',['../structSolverChoice.html#a10043b88372894f67ed0f3e68bf27cb6',1,'SolverChoice']]],
+  ['sc_5ft_5finv_1134',['Sc_t_inv',['../structSolverChoice.html#a5d8e6a103e2e5d61dc0990fa2141a675',1,'SolverChoice']]],
+  ['shape_1135',['shape',['../structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5',1,'NDArray']]],
+  ['sigma_5fk_1136',['sigma_k',['../structSolverChoice.html#affbc103f3361b47fbcf605a08b99d8ec',1,'SolverChoice']]],
+  ['sinphi_1137',['sinphi',['../structSolverChoice.html#a6426e150ba9c1ba2e14151228bf6ffaf',1,'SolverChoice']]],
+  ['solverchoice_1138',['solverChoice',['../classROMSX.html#a21df816ace6144ce0ed78d0031eaa946',1,'ROMSX']]],
+  ['spatial_5forder_1139',['spatial_order',['../structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44',1,'SolverChoice']]],
+  ['sst_1140',['sst',['../classROMSX.html#ae1071e0c88d861f589184ad86ff14774',1,'ROMSX']]],
+  ['startcputime_1141',['startCPUTime',['../classROMSX.html#ab3e7f280e92f9e5cbdad88a3f222069c',1,'ROMSX']]],
+  ['stop_5ftime_1142',['stop_time',['../classROMSX.html#a22dfd39392c026bd023c8f1d57fd0889',1,'ROMSX']]],
+  ['sum_5finterval_1143',['sum_interval',['../classROMSX.html#afcedb31381fd065fff2ca36196f8da40',1,'ROMSX']]],
+  ['sum_5fper_1144',['sum_per',['../classROMSX.html#af638ada4294dcf5b33de335efef61de1',1,'ROMSX']]]
 ];
