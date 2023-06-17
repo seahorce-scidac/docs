@@ -11,6 +11,7 @@ var classROMSX =
     [ "ClearLevel", "classROMSX.html#a57d541b3753f65c8359d606869b31a25", null ],
     [ "ComputeDt", "classROMSX.html#a6b84298925e299d4f57401ef3020227b", null ],
     [ "ComputeGhostCells", "classROMSX.html#a4e8f6e71ae2c366a6455882d029de926", null ],
+    [ "coriolis", "classROMSX.html#abf809e0f653641780b4a49c7287d713d", null ],
     [ "DataLog", "classROMSX.html#a2cc7343babd4642f2cf727a3d40035f3", null ],
     [ "DataLogName", "classROMSX.html#a34887f38557bf5026acaf46581e05375", null ],
     [ "ErrorEst", "classROMSX.html#ac3d2c692cc496f5f7a57b46f0c9e2f12", null ],
