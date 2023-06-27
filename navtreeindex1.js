@@ -1,8 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classPlaneAverage.html#a049c64513c0ed306d7e68ef95df87033":[2,0,7,26],
-"classPlaneAverage.html#a0b4bb610551a2f07eb05b8e8b7d91820":[2,0,7,4],
-"classPlaneAverage.html#a1f08f5f76700c51c42243410ffce6e66":[2,0,7,29],
 "classPlaneAverage.html#a25aeb78bc5bf19b8c4ce136e2e410cd4":[2,0,7,16],
 "classPlaneAverage.html#a34db2f938bd249c23d2f4c2cdca7ee4e":[2,0,7,0],
 "classPlaneAverage.html#a3860fd72df3e8dbb6b8decfdc360864f":[2,0,7,15],
@@ -249,5 +246,8 @@ var NAVTREEINDEX1 =
 "classROMSXPhysBCFunct.html":[2,0,9],
 "classROMSXPhysBCFunct.html#a003e4b00897ad6858ba99b2996b1eae5":[2,0,9,13],
 "classROMSXPhysBCFunct.html#a01cf92fc009bc18277a286c66ea1bcdc":[2,0,9,6],
-"classROMSXPhysBCFunct.html#a0ebbb8086455536e9b5462d8a94e7591":[2,0,9,9]
+"classROMSXPhysBCFunct.html#a0ebbb8086455536e9b5462d8a94e7591":[2,0,9,9],
+"classROMSXPhysBCFunct.html#a1016f2d4f5c13c179f4f59bf93049d6c":[2,0,9,12],
+"classROMSXPhysBCFunct.html#a19c4c9c61f2276af5dd220109e62e9ee":[2,0,9,10],
+"classROMSXPhysBCFunct.html#a5016d1c7d6f7991efbbe7330b4f4b46e":[2,0,9,0]
 };
