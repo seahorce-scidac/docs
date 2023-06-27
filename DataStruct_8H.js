@@ -24,6 +24,10 @@ var DataStruct_8H =
       [ "y", "DataStruct_8H.html#a5943cc9db33abe98a5e07cd2b4387f53a415290769594460e2e485922904f345d", null ],
       [ "z", "DataStruct_8H.html#a5943cc9db33abe98a5e07cd2b4387f53afbade9e36a3f36d3d676c1b808451dd7", null ]
     ] ],
+    [ "AdvectionScheme", "DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212c", [
+      [ "centered4", "DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca6d779455e4a7eebf97d6bcb893dd5235", null ],
+      [ "upstream3", "DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca5b2d34872c0b46cfbabc832368e6ec7d", null ]
+    ] ],
     [ "Coord", "DataStruct_8H.html#a627f1f843904477f763577ad1460de01", [
       [ "x", "DataStruct_8H.html#a627f1f843904477f763577ad1460de01a9dd4e461268c8034f5c8564e155c67a6", null ],
       [ "y", "DataStruct_8H.html#a627f1f843904477f763577ad1460de01a415290769594460e2e485922904f345d", null ],
