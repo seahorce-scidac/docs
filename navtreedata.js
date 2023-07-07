@@ -68,9 +68,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BoundaryConditions__bndryreg_8cpp.html",
-"classPlaneAverage.html#a027673d7c6dd35a1b45cd1fa8f2b4cb5",
-"classROMSXPhysBCFunct.html#a01cf92fc009bc18277a286c66ea1bcdc",
-"structSolverChoice.html#a47a54f2e44955202b5b437e4b1b4a61b"
+"classPlaneAverage.html#a25aeb78bc5bf19b8c4ce136e2e410cd4",
+"classROMSXPhysBCFunct.html#a510a420017c02c5cd23046a13d92d8db",
+"structSolverChoice.html#a57a93f28b746dae8cbfa9b0df0960f27"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
