@@ -157,7 +157,6 @@ var classROMSX =
     [ "plotfile_type", "classROMSX.html#a802f6c0afcdf21170461376c39e9701a", null ],
     [ "pp_prefix", "classROMSX.html#afda0f54b3ad1ed8dbb39bbef8ed48c92", null ],
     [ "previousCPUTimeUsed", "classROMSX.html#afe8d71bf62ec39dc02fb961910a79811", null ],
-    [ "printinloop", "classROMSX.html#a8ec818036215981185f9b78f3399dce8", null ],
     [ "ref_tags", "classROMSX.html#a335a655f6cf611277de2803029419c4c", null ],
     [ "regrid_int", "classROMSX.html#ab61e1364d5b301c8f727566234b9eb89", null ],
     [ "restart_chkfile", "classROMSX.html#ae2d89ab211dd0d324dda03720b8c4bff", null ],
