@@ -47,8 +47,12 @@ var structSolverChoice =
     [ "test_vertical", "structSolverChoice.html#a16f2d4db87edb257cd115f6b9ecd5ec3", null ],
     [ "theta_b", "structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5", null ],
     [ "theta_s", "structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017", null ],
+    [ "use_baroclinic", "structSolverChoice.html#a092beaf56ca711be832b219044efcba6", null ],
+    [ "use_barotropic", "structSolverChoice.html#a2a6fbf7ebea6ac5d9faddcbfe36771bd", null ],
     [ "use_coriolis", "structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606", null ],
     [ "use_gravity", "structSolverChoice.html#a3ab48411073a3c1f75435292d7b407e5", null ],
+    [ "use_prestep", "structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6", null ],
     [ "use_QKE", "structSolverChoice.html#a47152bbb3815b6f4c9c465b8c75ebeb5", null ],
-    [ "use_terrain", "structSolverChoice.html#a063a88594452100497651e8aaf1f68d7", null ]
+    [ "use_terrain", "structSolverChoice.html#a063a88594452100497651e8aaf1f68d7", null ],
+    [ "use_uv3dmix", "structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba", null ]
 ];
