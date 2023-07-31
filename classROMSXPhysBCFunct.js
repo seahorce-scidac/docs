@@ -1,6 +1,6 @@
 var classROMSXPhysBCFunct =
 [
-    [ "ROMSXPhysBCFunct", "classROMSXPhysBCFunct.html#a5016d1c7d6f7991efbbe7330b4f4b46e", null ],
+    [ "ROMSXPhysBCFunct", "classROMSXPhysBCFunct.html#a899d8bb8f8e7bbf51f6db619706a0d3c", null ],
     [ "~ROMSXPhysBCFunct", "classROMSXPhysBCFunct.html#a9b49c60a4779f5af3e512cc9b60affc2", null ],
     [ "fill_from_bndryregs", "classROMSXPhysBCFunct.html#ab62acd557eec4b6767bc29cb0f889381", null ],
     [ "FillBoundary", "classROMSXPhysBCFunct.html#a55040a762000240bfabb9a27b03fcc04", null ],
@@ -11,11 +11,9 @@ var classROMSXPhysBCFunct =
     [ "operator()", "classROMSXPhysBCFunct.html#ad4ca48208e725399634dfa7e32c70bec", null ],
     [ "m_bc_extdir_vals", "classROMSXPhysBCFunct.html#a0ebbb8086455536e9b5462d8a94e7591", null ],
     [ "m_data", "classROMSXPhysBCFunct.html#a19c4c9c61f2276af5dd220109e62e9ee", null ],
-    [ "m_detJ_cc", "classROMSXPhysBCFunct.html#a510a420017c02c5cd23046a13d92d8db", null ],
     [ "m_domain_bcs_type", "classROMSXPhysBCFunct.html#a1016f2d4f5c13c179f4f59bf93049d6c", null ],
     [ "m_domain_bcs_type_d", "classROMSXPhysBCFunct.html#a003e4b00897ad6858ba99b2996b1eae5", null ],
     [ "m_geom", "classROMSXPhysBCFunct.html#ab3ec985809c2d3e49c2d797994968ab5", null ],
     [ "m_lev", "classROMSXPhysBCFunct.html#a9fdfe99760d66b9d8acd10f49ed561d7", null ],
-    [ "m_var_idx", "classROMSXPhysBCFunct.html#ada83101caf53a77a07c5455c294e515d", null ],
-    [ "m_z_phys_nd", "classROMSXPhysBCFunct.html#a70318645cacad687a69117dbb06299a9", null ]
+    [ "m_var_idx", "classROMSXPhysBCFunct.html#ada83101caf53a77a07c5455c294e515d", null ]
 ];

@@ -106,7 +106,6 @@ var classROMSX =
     [ "datalog", "classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4", null ],
     [ "datalogname", "classROMSX.html#ae308f7068f2eb8e48913fc77d32f9065", null ],
     [ "derived_names", "classROMSX.html#ab221b060f02f422f90d511e71b5c13d6", null ],
-    [ "detJ_cc", "classROMSX.html#accd4bba06a768622851aebca986bc284", null ],
     [ "do_avg_down", "classROMSX.html#accabd81356a4f601bf6558f2d9030b3c", null ],
     [ "do_reflux", "classROMSX.html#a1b766eb32c763c5c2ace9e723ad5df89", null ],
     [ "domain_bc_type", "classROMSX.html#a3ebadda9dbf9fbf5fd040bb1df0f18c3", null ],
@@ -213,7 +212,5 @@ var classROMSX =
     [ "vec_zeta", "classROMSX.html#ab026fffd3c4e9a9ef612cbb23132a1f5", null ],
     [ "vec_Zt_avg1", "classROMSX.html#ab962f23dc27b3ce17bb19e3b8c9991f8", null ],
     [ "velocity_names", "classROMSX.html#a86fcc7e51eaaa5c7a5414eeb853216d3", null ],
-    [ "verbose", "classROMSX.html#ab37afaafcf05a9b10c0fba3180539610", null ],
-    [ "z_phys_cc", "classROMSX.html#aa0433760a408aa7d3680518bb86eae90", null ],
-    [ "z_phys_nd", "classROMSX.html#a4cf598b92bd690e1fc33b679c542bd20", null ]
+    [ "verbose", "classROMSX.html#ab37afaafcf05a9b10c0fba3180539610", null ]
 ];
