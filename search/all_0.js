@@ -23,6 +23,5 @@ var searchData=
   ['alpha_5ft_20',['alpha_T',['../structSolverChoice.html#a2b9c77c4a08b52f5519b452f6ed3a4cc',1,'SolverChoice']]],
   ['amrex_5fprobinit_21',['amrex_probinit',['../prob__common_8H.html#afef32e2116829d24b864c64caebf5ea6',1,'prob_common.H']]],
   ['averagedown_22',['AverageDown',['../classROMSX.html#a5a73ffdd93eed4bef7f0d3c6bdac0e6e',1,'ROMSX']]],
-  ['averagedownto_23',['AverageDownTo',['../classROMSX.html#a243ea260c190601764cb8b6368d18615',1,'ROMSX']]],
-  ['axis_24',['axis',['../classPlaneAverage.html#ae90ae5492fc58db64f54c342c800f59a',1,'PlaneAverage']]]
+  ['averagedownto_23',['AverageDownTo',['../classROMSX.html#a243ea260c190601764cb8b6368d18615',1,'ROMSX']]]
 ];
