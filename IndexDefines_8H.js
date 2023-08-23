@@ -2,7 +2,6 @@ var IndexDefines_8H =
 [
     [ "NGROW", "IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38", null ],
     [ "NUM_PRIM", "IndexDefines_8H.html#a76cb673ca03cd7f8ae6cc8544d6dd0fa", null ],
-    [ "NVAR", "IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639", null ],
     [ "Omega_comp", "IndexDefines_8H.html#ad9946cebb227ca07d11bb1bc3daa1a88", null ],
     [ "PrimKE_comp", "IndexDefines_8H.html#a9ab6bf01b348d4b7cef99f3655c9dbb2", null ],
     [ "PrimQKE_comp", "IndexDefines_8H.html#ad6174e899597e766afde82f9c11def75", null ],

@@ -37,7 +37,6 @@ var classROMSX =
     [ "InitializeLevelFromData", "classROMSX.html#a54b6fe8dfe7db9e4f0d5ae6af6b1156b", null ],
     [ "initRayleigh", "classROMSX.html#a2e3c16fa9a25b28f842de8981ce7b00e", null ],
     [ "is_it_time_for_action", "classROMSX.html#a11fae6ec83db5a377afd32858e0a80a1", null ],
-    [ "MakeHorizontalAverages", "classROMSX.html#a01e4ca221246f093fb4e9676340726ad", null ],
     [ "MakeNewLevelFromCoarse", "classROMSX.html#a8f756bf6c9c2c09f1d9f1d9ba0bf387e", null ],
     [ "MakeNewLevelFromScratch", "classROMSX.html#ac9e8dc15f5a291fb654b1ef1bdc47974", null ],
     [ "NumDataLogs", "classROMSX.html#adf6f2e4f8b883d81702ea424d90ff4de", null ],

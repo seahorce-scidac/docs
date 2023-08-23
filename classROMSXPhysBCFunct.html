@@ -112,7 +112,7 @@ Collaboration diagram for ROMSXPhysBCFunct:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a899d8bb8f8e7bbf51f6db619706a0d3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSXPhysBCFunct.html#a899d8bb8f8e7bbf51f6db619706a0d3c">ROMSXPhysBCFunct</a> (const int lev, const amrex::Geometry &amp;geom, const amrex::Vector&lt; amrex::BCRec &gt; &amp;domain_bcs_type, const amrex::Gpu::DeviceVector&lt; amrex::BCRec &gt; &amp;domain_bcs_type_d, const int &amp;var_idx, <a class="el" href="structTimeInterpolatedData.html">TimeInterpolatedData</a> &amp;data, amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+<a class="el" href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a> &gt; bc_extdir_vals)</td></tr>
+<tr class="memitem:a899d8bb8f8e7bbf51f6db619706a0d3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSXPhysBCFunct.html#a899d8bb8f8e7bbf51f6db619706a0d3c">ROMSXPhysBCFunct</a> (const int lev, const amrex::Geometry &amp;geom, const amrex::Vector&lt; amrex::BCRec &gt; &amp;domain_bcs_type, const amrex::Gpu::DeviceVector&lt; amrex::BCRec &gt; &amp;domain_bcs_type_d, const int &amp;var_idx, <a class="el" href="structTimeInterpolatedData.html">TimeInterpolatedData</a> &amp;data, amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+NVAR &gt; bc_extdir_vals)</td></tr>
 <tr class="separator:a899d8bb8f8e7bbf51f6db619706a0d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b49c60a4779f5af3e512cc9b60affc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSXPhysBCFunct.html#a9b49c60a4779f5af3e512cc9b60affc2">~ROMSXPhysBCFunct</a> ()</td></tr>
 <tr class="separator:a9b49c60a4779f5af3e512cc9b60affc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +145,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ada83101caf53a77a07c5455c294e515d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19c4c9c61f2276af5dd220109e62e9ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTimeInterpolatedData.html">TimeInterpolatedData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSXPhysBCFunct.html#a19c4c9c61f2276af5dd220109e62e9ee">m_data</a></td></tr>
 <tr class="separator:a19c4c9c61f2276af5dd220109e62e9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ebbb8086455536e9b5462d8a94e7591"><td class="memItemLeft" align="right" valign="top">amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+<a class="el" href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSXPhysBCFunct.html#a0ebbb8086455536e9b5462d8a94e7591">m_bc_extdir_vals</a></td></tr>
+<tr class="memitem:a0ebbb8086455536e9b5462d8a94e7591"><td class="memItemLeft" align="right" valign="top">amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+NVAR &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSXPhysBCFunct.html#a0ebbb8086455536e9b5462d8a94e7591">m_bc_extdir_vals</a></td></tr>
 <tr class="separator:a0ebbb8086455536e9b5462d8a94e7591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -197,7 +197,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+<a class="el" href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a> &gt;&#160;</td>
+          <td class="paramtype">amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+NVAR &gt;&#160;</td>
           <td class="paramname"><em>bc_extdir_vals</em>&#160;</td>
         </tr>
         <tr>
@@ -492,7 +492,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> amrex::BCRec* bc_ptr = bcrs_d.data();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    GpuArray&lt;GpuArray&lt;Real, AMREX_SPACEDIM*2&gt;,AMREX_SPACEDIM+<a class="code" href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a>&gt; l_bc_extdir_vals_d;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    GpuArray&lt;GpuArray&lt;Real, AMREX_SPACEDIM*2&gt;,AMREX_SPACEDIM+NVAR&gt; l_bc_extdir_vals_d;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ncomp; i++)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ori = 0; ori &lt; 2*AMREX_SPACEDIM; ori++)</div>
@@ -646,12 +646,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    Gpu::streamSynchronize();</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
-<div class="ttc" id="aIndexDefines_8H_html_ad5195ac8f863f5a9a7eaa0db094f7639"><div class="ttname"><a href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a></div><div class="ttdeci">#define NVAR</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:31</div></div>
 <div class="ttc" id="aclassROMSXPhysBCFunct_html_adba4872aa8251e61cc5ee08aee724857"><div class="ttname"><a href="classROMSXPhysBCFunct.html#adba4872aa8251e61cc5ee08aee724857">ROMSXPhysBCFunct::impose_cons_bcs</a></div><div class="ttdeci">void impose_cons_bcs(const amrex::Array4&lt; amrex::Real &gt; &amp;mf, const amrex::Box &amp;bx, const amrex::Box &amp;domain, const amrex::GpuArray&lt; amrex::Real, AMREX_SPACEDIM &gt; dxInv, int icomp, int ncomp, amrex::Real time, int bccomp)</div><div class="ttdef"><b>Definition:</b> BoundaryConditions_cons.cpp:17</div></div>
-<div class="ttc" id="anamespaceROMSXBCType_html_af4e42fa51742c38508f617adb429d81ea41abfed9daecbbf69d81938a9d1a61ae"><div class="ttname"><a href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea41abfed9daecbbf69d81938a9d1a61ae">ROMSXBCType::foextrap</a></div><div class="ttdeci">@ foextrap</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:175</div></div>
-<div class="ttc" id="anamespaceROMSXBCType_html_af4e42fa51742c38508f617adb429d81ea85a791a2c305ad887b26b131d91cb3fc"><div class="ttname"><a href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea85a791a2c305ad887b26b131d91cb3fc">ROMSXBCType::reflect_even</a></div><div class="ttdeci">@ reflect_even</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:174</div></div>
-<div class="ttc" id="anamespaceROMSXBCType_html_af4e42fa51742c38508f617adb429d81ea9f8add981228e79241a7c5d2d38c5910"><div class="ttname"><a href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea9f8add981228e79241a7c5d2d38c5910">ROMSXBCType::reflect_odd</a></div><div class="ttdeci">@ reflect_odd</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:172</div></div>
-<div class="ttc" id="anamespaceROMSXBCType_html_af4e42fa51742c38508f617adb429d81eacc659361b9824734b263d615fefee265"><div class="ttname"><a href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81eacc659361b9824734b263d615fefee265">ROMSXBCType::ext_dir</a></div><div class="ttdeci">@ ext_dir</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:176</div></div>
+<div class="ttc" id="anamespaceROMSXBCType_html_af4e42fa51742c38508f617adb429d81ea41abfed9daecbbf69d81938a9d1a61ae"><div class="ttname"><a href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea41abfed9daecbbf69d81938a9d1a61ae">ROMSXBCType::foextrap</a></div><div class="ttdeci">@ foextrap</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:142</div></div>
+<div class="ttc" id="anamespaceROMSXBCType_html_af4e42fa51742c38508f617adb429d81ea85a791a2c305ad887b26b131d91cb3fc"><div class="ttname"><a href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea85a791a2c305ad887b26b131d91cb3fc">ROMSXBCType::reflect_even</a></div><div class="ttdeci">@ reflect_even</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:141</div></div>
+<div class="ttc" id="anamespaceROMSXBCType_html_af4e42fa51742c38508f617adb429d81ea9f8add981228e79241a7c5d2d38c5910"><div class="ttname"><a href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea9f8add981228e79241a7c5d2d38c5910">ROMSXBCType::reflect_odd</a></div><div class="ttdeci">@ reflect_odd</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:139</div></div>
+<div class="ttc" id="anamespaceROMSXBCType_html_af4e42fa51742c38508f617adb429d81eacc659361b9824734b263d615fefee265"><div class="ttname"><a href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81eacc659361b9824734b263d615fefee265">ROMSXBCType::ext_dir</a></div><div class="ttdeci">@ ext_dir</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:143</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -731,7 +730,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> amrex::BCRec* bc_ptr = bcrs_d.data();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    GpuArray&lt;GpuArray&lt;Real, AMREX_SPACEDIM*2&gt;,AMREX_SPACEDIM+<a class="code" href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a>&gt; l_bc_extdir_vals_d;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    GpuArray&lt;GpuArray&lt;Real, AMREX_SPACEDIM*2&gt;,AMREX_SPACEDIM+NVAR&gt; l_bc_extdir_vals_d;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ncomp; i++)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ori = 0; ori &lt; 2*AMREX_SPACEDIM; ori++)</div>
@@ -936,7 +935,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> amrex::BCRec* bc_ptr = bcrs_d.data();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    GpuArray&lt;GpuArray&lt;Real, AMREX_SPACEDIM*2&gt;, AMREX_SPACEDIM+<a class="code" href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a>&gt; l_bc_extdir_vals_d;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    GpuArray&lt;GpuArray&lt;Real, AMREX_SPACEDIM*2&gt;, AMREX_SPACEDIM+NVAR&gt; l_bc_extdir_vals_d;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ncomp; i++)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ori = 0; ori &lt; 2*AMREX_SPACEDIM; ori++)</div>
@@ -1165,7 +1164,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> amrex::BCRec* bc_ptr = bcrs_d.data();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    GpuArray&lt;GpuArray&lt;Real, AMREX_SPACEDIM*2&gt;,AMREX_SPACEDIM+<a class="code" href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a>&gt; l_bc_extdir_vals_d;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    GpuArray&lt;GpuArray&lt;Real, AMREX_SPACEDIM*2&gt;,AMREX_SPACEDIM+NVAR&gt; l_bc_extdir_vals_d;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ncomp; i++)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ori = 0; ori &lt; 2*AMREX_SPACEDIM; ori++)</div>
@@ -1402,7 +1401,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                        time,bccomp);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classROMSXPhysBCFunct.html#ada83101caf53a77a07c5455c294e515d">m_var_idx</a> == <a class="code" href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a47abe072e12c61d29cde15a509a0664b">Vars::cons</a>) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        AMREX_ALWAYS_ASSERT(icomp == 0 &amp;&amp; icomp+ncomp &lt;= <a class="code" href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        AMREX_ALWAYS_ASSERT(icomp == 0 &amp;&amp; icomp+ncomp &lt;= NVAR);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                        <a class="code" href="classROMSXPhysBCFunct.html#adba4872aa8251e61cc5ee08aee724857">impose_cons_bcs</a>(dest_arr,bx,domain,</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                        dxInv,icomp,ncomp,time,bccomp);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    } <span class="keywordflow">else</span> {</div>
@@ -1457,11 +1456,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    } <span class="comment">// operator()</span></div>
 <div class="ttc" id="aIndexDefines_8H_html_a2439ff23f4449b8ffa90ddc5bcb36173"><div class="ttname"><a href="IndexDefines_8H.html#a2439ff23f4449b8ffa90ddc5bcb36173">Temp_comp</a></div><div class="ttdeci">#define Temp_comp</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:9</div></div>
 <div class="ttc" id="aclassROMSXPhysBCFunct_html_a051a8691c576ca637623b53480095ccd"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a051a8691c576ca637623b53480095ccd">ROMSXPhysBCFunct::impose_zvel_bcs</a></div><div class="ttdeci">void impose_zvel_bcs(const amrex::Array4&lt; amrex::Real &gt; &amp;dest_arr, const amrex::Box &amp;bx, const amrex::Box &amp;domain, const amrex::Array4&lt; amrex::Real const &gt; &amp;velx_arr, const amrex::Array4&lt; amrex::Real const &gt; &amp;vely_arr, const amrex::GpuArray&lt; amrex::Real, AMREX_SPACEDIM &gt; dx, const amrex::GpuArray&lt; amrex::Real, AMREX_SPACEDIM &gt; dxInv, amrex::Real time, int bccomp)</div><div class="ttdef"><b>Definition:</b> BoundaryConditions_zvel.cpp:13</div></div>
-<div class="ttc" id="anamespaceBCVars_html_a6fd8f72c3055242c4af20c780f391073a0d8c9f8308d3e1a0dedf68c3765d2205"><div class="ttname"><a href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0d8c9f8308d3e1a0dedf68c3765d2205">BCVars::Temp_bc_comp</a></div><div class="ttdeci">@ Temp_bc_comp</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:54</div></div>
-<div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a2a10a6e726515894b07621908abd4c0c"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a2a10a6e726515894b07621908abd4c0c">Vars::xvel</a></div><div class="ttdeci">@ xvel</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:101</div></div>
-<div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a47abe072e12c61d29cde15a509a0664b"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a47abe072e12c61d29cde15a509a0664b">Vars::cons</a></div><div class="ttdeci">@ cons</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:100</div></div>
-<div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a48ee63b17bc216e9661511c33c68bd8b"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a48ee63b17bc216e9661511c33c68bd8b">Vars::zvel</a></div><div class="ttdeci">@ zvel</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:103</div></div>
-<div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a81793b83204cfa56d4683bc676fbbfb6"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a81793b83204cfa56d4683bc676fbbfb6">Vars::yvel</a></div><div class="ttdeci">@ yvel</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:102</div></div>
+<div class="ttc" id="anamespaceBCVars_html_a6fd8f72c3055242c4af20c780f391073a0d8c9f8308d3e1a0dedf68c3765d2205"><div class="ttname"><a href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0d8c9f8308d3e1a0dedf68c3765d2205">BCVars::Temp_bc_comp</a></div><div class="ttdeci">@ Temp_bc_comp</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:33</div></div>
+<div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a2a10a6e726515894b07621908abd4c0c"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a2a10a6e726515894b07621908abd4c0c">Vars::xvel</a></div><div class="ttdeci">@ xvel</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:76</div></div>
+<div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a47abe072e12c61d29cde15a509a0664b"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a47abe072e12c61d29cde15a509a0664b">Vars::cons</a></div><div class="ttdeci">@ cons</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:75</div></div>
+<div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a48ee63b17bc216e9661511c33c68bd8b"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a48ee63b17bc216e9661511c33c68bd8b">Vars::zvel</a></div><div class="ttdeci">@ zvel</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:78</div></div>
+<div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a81793b83204cfa56d4683bc676fbbfb6"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a81793b83204cfa56d4683bc676fbbfb6">Vars::yvel</a></div><div class="ttdeci">@ yvel</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:77</div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="classROMSXPhysBCFunct.html#a55040a762000240bfabb9a27b03fcc04">FillBoundary()</a>.</p>
 <div class="dynheader">
@@ -1487,7 +1486,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">amrex::Array&lt;amrex::Array&lt;amrex::Real, AMREX_SPACEDIM*2&gt;,AMREX_SPACEDIM+<a class="el" href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a>&gt; ROMSXPhysBCFunct::m_bc_extdir_vals</td>
+          <td class="memname">amrex::Array&lt;amrex::Array&lt;amrex::Real, AMREX_SPACEDIM*2&gt;,AMREX_SPACEDIM+NVAR&gt; ROMSXPhysBCFunct::m_bc_extdir_vals</td>
         </tr>
       </table>
   </td>
