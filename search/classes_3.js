@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timeinterpolateddata_626',['TimeInterpolatedData',['../structTimeInterpolatedData.html',1,'']]]
+  ['solverchoice_640',['SolverChoice',['../structSolverChoice.html',1,'']]]
 ];

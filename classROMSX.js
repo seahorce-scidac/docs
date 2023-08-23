@@ -169,6 +169,7 @@ var classROMSX =
     [ "t_old", "classROMSX.html#ac395453aa10633a05bb7323b2946101e", null ],
     [ "total_plot_file_step_1", "classROMSX.html#a07e31a4dec6fc9e9d1ec3f1e96381c53", null ],
     [ "use_native_mri", "classROMSX.html#a606a93b62deea72f9e2cbc7c4e5b83f8", null ],
+    [ "use_tracer_particles", "classROMSX.html#a1e111db2e680a1a90e4f1ddd37212ba6", null ],
     [ "vars_new", "classROMSX.html#a4ea53c7dac70940e948e43f7d623798b", null ],
     [ "vars_old", "classROMSX.html#a8e2bb34e9fcd0826f96118f6d5ba62f1", null ],
     [ "vec_Akv", "classROMSX.html#aec2c137ce4314357035cbc7ae292338f", null ],

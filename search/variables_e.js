@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['sc_5ft_1011',['Sc_t',['../structSolverChoice.html#a10043b88372894f67ed0f3e68bf27cb6',1,'SolverChoice']]],
-  ['sc_5ft_5finv_1012',['Sc_t_inv',['../structSolverChoice.html#a5d8e6a103e2e5d61dc0990fa2141a675',1,'SolverChoice']]],
-  ['shape_1013',['shape',['../structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5',1,'NDArray']]],
-  ['sigma_5fk_1014',['sigma_k',['../structSolverChoice.html#affbc103f3361b47fbcf605a08b99d8ec',1,'SolverChoice']]],
-  ['sinphi_1015',['sinphi',['../structSolverChoice.html#a6426e150ba9c1ba2e14151228bf6ffaf',1,'SolverChoice']]],
-  ['solverchoice_1016',['solverChoice',['../classROMSX.html#a21df816ace6144ce0ed78d0031eaa946',1,'ROMSX']]],
-  ['spatial_5forder_1017',['spatial_order',['../structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44',1,'SolverChoice']]],
-  ['sst_1018',['sst',['../classROMSX.html#ae1071e0c88d861f589184ad86ff14774',1,'ROMSX']]],
-  ['startcputime_1019',['startCPUTime',['../classROMSX.html#ab3e7f280e92f9e5cbdad88a3f222069c',1,'ROMSX']]],
-  ['stop_5ftime_1020',['stop_time',['../classROMSX.html#a22dfd39392c026bd023c8f1d57fd0889',1,'ROMSX']]],
-  ['sum_5finterval_1021',['sum_interval',['../classROMSX.html#afcedb31381fd065fff2ca36196f8da40',1,'ROMSX']]],
-  ['sum_5fper_1022',['sum_per',['../classROMSX.html#af638ada4294dcf5b33de335efef61de1',1,'ROMSX']]]
+  ['sc_5ft_1032',['Sc_t',['../structSolverChoice.html#a10043b88372894f67ed0f3e68bf27cb6',1,'SolverChoice']]],
+  ['sc_5ft_5finv_1033',['Sc_t_inv',['../structSolverChoice.html#a5d8e6a103e2e5d61dc0990fa2141a675',1,'SolverChoice']]],
+  ['shape_1034',['shape',['../structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5',1,'NDArray']]],
+  ['sigma_5fk_1035',['sigma_k',['../structSolverChoice.html#affbc103f3361b47fbcf605a08b99d8ec',1,'SolverChoice']]],
+  ['sinphi_1036',['sinphi',['../structSolverChoice.html#a6426e150ba9c1ba2e14151228bf6ffaf',1,'SolverChoice']]],
+  ['solverchoice_1037',['solverChoice',['../classROMSX.html#a21df816ace6144ce0ed78d0031eaa946',1,'ROMSX']]],
+  ['spatial_5forder_1038',['spatial_order',['../structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44',1,'SolverChoice']]],
+  ['sst_1039',['sst',['../classROMSX.html#ae1071e0c88d861f589184ad86ff14774',1,'ROMSX']]],
+  ['startcputime_1040',['startCPUTime',['../classROMSX.html#ab3e7f280e92f9e5cbdad88a3f222069c',1,'ROMSX']]],
+  ['stop_5ftime_1041',['stop_time',['../classROMSX.html#a22dfd39392c026bd023c8f1d57fd0889',1,'ROMSX']]],
+  ['sum_5finterval_1042',['sum_interval',['../classROMSX.html#afcedb31381fd065fff2ca36196f8da40',1,'ROMSX']]],
+  ['sum_5fper_1043',['sum_per',['../classROMSX.html#af638ada4294dcf5b33de335efef61de1',1,'ROMSX']]]
 ];
