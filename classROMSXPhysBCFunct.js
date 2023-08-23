@@ -2,7 +2,6 @@ var classROMSXPhysBCFunct =
 [
     [ "ROMSXPhysBCFunct", "classROMSXPhysBCFunct.html#a899d8bb8f8e7bbf51f6db619706a0d3c", null ],
     [ "~ROMSXPhysBCFunct", "classROMSXPhysBCFunct.html#a9b49c60a4779f5af3e512cc9b60affc2", null ],
-    [ "fill_from_bndryregs", "classROMSXPhysBCFunct.html#ab62acd557eec4b6767bc29cb0f889381", null ],
     [ "FillBoundary", "classROMSXPhysBCFunct.html#a55040a762000240bfabb9a27b03fcc04", null ],
     [ "impose_cons_bcs", "classROMSXPhysBCFunct.html#adba4872aa8251e61cc5ee08aee724857", null ],
     [ "impose_xvel_bcs", "classROMSXPhysBCFunct.html#a4f7aafa8569836b0bc7f5641eaf8ad1b", null ],

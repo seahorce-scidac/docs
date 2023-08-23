@@ -126,8 +126,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a051a8691c576ca637623b53480095ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adba4872aa8251e61cc5ee08aee724857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSXPhysBCFunct.html#adba4872aa8251e61cc5ee08aee724857">impose_cons_bcs</a> (const amrex::Array4&lt; amrex::Real &gt; &amp;mf, const amrex::Box &amp;bx, const amrex::Box &amp;domain, const amrex::GpuArray&lt; amrex::Real, AMREX_SPACEDIM &gt; dxInv, int icomp, int ncomp, amrex::Real time, int bccomp)</td></tr>
 <tr class="separator:adba4872aa8251e61cc5ee08aee724857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab62acd557eec4b6767bc29cb0f889381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSXPhysBCFunct.html#ab62acd557eec4b6767bc29cb0f889381">fill_from_bndryregs</a> (const int lev, const amrex::Box &amp;bx, const amrex::Array4&lt; amrex::Real &gt; &amp;dest_arr, const int icomp, const int bccomp, const int ncomp, const amrex::Box &amp;domain, const amrex::BCRec *bc_ptr, const amrex::Real time)</td></tr>
-<tr class="separator:ab62acd557eec4b6767bc29cb0f889381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55040a762000240bfabb9a27b03fcc04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSXPhysBCFunct.html#a55040a762000240bfabb9a27b03fcc04">FillBoundary</a> (amrex::MultiFab &amp;mf, int dcomp, int ncomp, amrex::IntVect const &amp;nghost, amrex::Real time, int bccomp)</td></tr>
 <tr class="separator:a55040a762000240bfabb9a27b03fcc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -225,13 +223,13 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          m_bdy_time_interval(bdy_time_interval)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          {}</div>
-<div class="ttc" id="aclassROMSXPhysBCFunct_html_a003e4b00897ad6858ba99b2996b1eae5"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a003e4b00897ad6858ba99b2996b1eae5">ROMSXPhysBCFunct::m_domain_bcs_type_d</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::BCRec &gt; m_domain_bcs_type_d</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:124</div></div>
-<div class="ttc" id="aclassROMSXPhysBCFunct_html_a0ebbb8086455536e9b5462d8a94e7591"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a0ebbb8086455536e9b5462d8a94e7591">ROMSXPhysBCFunct::m_bc_extdir_vals</a></div><div class="ttdeci">amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+NVAR &gt; m_bc_extdir_vals</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:127</div></div>
-<div class="ttc" id="aclassROMSXPhysBCFunct_html_a1016f2d4f5c13c179f4f59bf93049d6c"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a1016f2d4f5c13c179f4f59bf93049d6c">ROMSXPhysBCFunct::m_domain_bcs_type</a></div><div class="ttdeci">amrex::Vector&lt; amrex::BCRec &gt; m_domain_bcs_type</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:123</div></div>
-<div class="ttc" id="aclassROMSXPhysBCFunct_html_a19c4c9c61f2276af5dd220109e62e9ee"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a19c4c9c61f2276af5dd220109e62e9ee">ROMSXPhysBCFunct::m_data</a></div><div class="ttdeci">TimeInterpolatedData &amp; m_data</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:126</div></div>
-<div class="ttc" id="aclassROMSXPhysBCFunct_html_a9fdfe99760d66b9d8acd10f49ed561d7"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a9fdfe99760d66b9d8acd10f49ed561d7">ROMSXPhysBCFunct::m_lev</a></div><div class="ttdeci">int m_lev</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:121</div></div>
-<div class="ttc" id="aclassROMSXPhysBCFunct_html_ab3ec985809c2d3e49c2d797994968ab5"><div class="ttname"><a href="classROMSXPhysBCFunct.html#ab3ec985809c2d3e49c2d797994968ab5">ROMSXPhysBCFunct::m_geom</a></div><div class="ttdeci">amrex::Geometry m_geom</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:122</div></div>
-<div class="ttc" id="aclassROMSXPhysBCFunct_html_ada83101caf53a77a07c5455c294e515d"><div class="ttname"><a href="classROMSXPhysBCFunct.html#ada83101caf53a77a07c5455c294e515d">ROMSXPhysBCFunct::m_var_idx</a></div><div class="ttdeci">int m_var_idx</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:125</div></div>
+<div class="ttc" id="aclassROMSXPhysBCFunct_html_a003e4b00897ad6858ba99b2996b1eae5"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a003e4b00897ad6858ba99b2996b1eae5">ROMSXPhysBCFunct::m_domain_bcs_type_d</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::BCRec &gt; m_domain_bcs_type_d</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:119</div></div>
+<div class="ttc" id="aclassROMSXPhysBCFunct_html_a0ebbb8086455536e9b5462d8a94e7591"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a0ebbb8086455536e9b5462d8a94e7591">ROMSXPhysBCFunct::m_bc_extdir_vals</a></div><div class="ttdeci">amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+NVAR &gt; m_bc_extdir_vals</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:122</div></div>
+<div class="ttc" id="aclassROMSXPhysBCFunct_html_a1016f2d4f5c13c179f4f59bf93049d6c"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a1016f2d4f5c13c179f4f59bf93049d6c">ROMSXPhysBCFunct::m_domain_bcs_type</a></div><div class="ttdeci">amrex::Vector&lt; amrex::BCRec &gt; m_domain_bcs_type</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:118</div></div>
+<div class="ttc" id="aclassROMSXPhysBCFunct_html_a19c4c9c61f2276af5dd220109e62e9ee"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a19c4c9c61f2276af5dd220109e62e9ee">ROMSXPhysBCFunct::m_data</a></div><div class="ttdeci">TimeInterpolatedData &amp; m_data</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:121</div></div>
+<div class="ttc" id="aclassROMSXPhysBCFunct_html_a9fdfe99760d66b9d8acd10f49ed561d7"><div class="ttname"><a href="classROMSXPhysBCFunct.html#a9fdfe99760d66b9d8acd10f49ed561d7">ROMSXPhysBCFunct::m_lev</a></div><div class="ttdeci">int m_lev</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:116</div></div>
+<div class="ttc" id="aclassROMSXPhysBCFunct_html_ab3ec985809c2d3e49c2d797994968ab5"><div class="ttname"><a href="classROMSXPhysBCFunct.html#ab3ec985809c2d3e49c2d797994968ab5">ROMSXPhysBCFunct::m_geom</a></div><div class="ttdeci">amrex::Geometry m_geom</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:117</div></div>
+<div class="ttc" id="aclassROMSXPhysBCFunct_html_ada83101caf53a77a07c5455c294e515d"><div class="ttname"><a href="classROMSXPhysBCFunct.html#ada83101caf53a77a07c5455c294e515d">ROMSXPhysBCFunct::m_var_idx</a></div><div class="ttdeci">int m_var_idx</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:120</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -262,76 +260,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab62acd557eec4b6767bc29cb0f889381"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab62acd557eec4b6767bc29cb0f889381">&#9670;&nbsp;</a></span>fill_from_bndryregs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ROMSXPhysBCFunct::fill_from_bndryregs </td>
-          <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>lev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const amrex::Box &amp;&#160;</td>
-          <td class="paramname"><em>bx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const amrex::Array4&lt; amrex::Real &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dest_arr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>icomp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>bccomp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>ncomp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const amrex::Box &amp;&#160;</td>
-          <td class="paramname"><em>domain</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const amrex::BCRec *&#160;</td>
-          <td class="paramname"><em>bc_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const amrex::Real&#160;</td>
-          <td class="paramname"><em>time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a55040a762000240bfabb9a27b03fcc04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55040a762000240bfabb9a27b03fcc04">&#9670;&nbsp;</a></span>FillBoundary()</h2>
 
@@ -389,9 +317,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                                   {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        this-&gt;<a class="code" href="classROMSXPhysBCFunct.html#ad4ca48208e725399634dfa7e32c70bec">operator()</a>(mf,dcomp,ncomp,nghost,time,bccomp);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                   {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        this-&gt;<a class="code" href="classROMSXPhysBCFunct.html#ad4ca48208e725399634dfa7e32c70bec">operator()</a>(mf,dcomp,ncomp,nghost,time,bccomp);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
 <div class="ttc" id="aclassROMSXPhysBCFunct_html_ad4ca48208e725399634dfa7e32c70bec"><div class="ttname"><a href="classROMSXPhysBCFunct.html#ad4ca48208e725399634dfa7e32c70bec">ROMSXPhysBCFunct::operator()</a></div><div class="ttdeci">void operator()(amrex::MultiFab &amp;mf, int icomp, int ncomp, amrex::IntVect const &amp;nghost, amrex::Real time, int bccomp)</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.cpp:19</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

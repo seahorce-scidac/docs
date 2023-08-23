@@ -133,7 +133,7 @@ var classROMSX =
     [ "mapfac_v", "classROMSX.html#ad96e947b76f50a01928821d3cd2455f7", null ],
     [ "max_step", "classROMSX.html#ad895c0936e0bd64ca71ec355e5e164b6", null ],
     [ "nc_bdy_file", "classROMSX.html#a067945622be8aeb2bd7a812ae222b031", null ],
-    [ "nc_init_file", "classROMSX.html#ae637f59528ab8ecd6d5780a4b9e667e5", null ],
+    [ "nc_init_file", "classROMSX.html#a735045f231ea51402d057488fe972227", null ],
     [ "nfast", "classROMSX.html#ac248f5de275736769f83c3e6bfc6b550", null ],
     [ "ng_dens_hse", "classROMSX.html#a5637fc9b8f7b941c5c745c961bef4703", null ],
     [ "ng_pres_hse", "classROMSX.html#af8d59c21d13a447c7a86c386867545a3", null ],
