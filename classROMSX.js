@@ -207,6 +207,7 @@ var classROMSX =
     [ "vec_weight2", "classROMSX.html#a1781a7c54d695e8889f2d394062b85a7", null ],
     [ "vec_x_r", "classROMSX.html#a2de6e4298de90faa955d8073a65f7cd9", null ],
     [ "vec_y_r", "classROMSX.html#a9a453443ec491d496adbd2cf5ac292d8", null ],
+    [ "vec_z_phys_nd", "classROMSX.html#a8e887c13b3d23581a26580f4e7e9aef0", null ],
     [ "vec_z_r", "classROMSX.html#a0a9b1a5cf021018defc82b45cbecb2c5", null ],
     [ "vec_z_w", "classROMSX.html#a7e2a55ae7fb02290e6ead16ec3e658fa", null ],
     [ "vec_zeta", "classROMSX.html#ab026fffd3c4e9a9ef612cbb23132a1f5", null ],
