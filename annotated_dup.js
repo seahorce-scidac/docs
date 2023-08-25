@@ -14,6 +14,7 @@ var annotated_dup =
     [ "ROMSX", "classROMSX.html", "classROMSX" ],
     [ "ROMSXPhysBCFunct", "classROMSXPhysBCFunct.html", "classROMSXPhysBCFunct" ],
     [ "SolverChoice", "structSolverChoice.html", "structSolverChoice" ],
+    [ "TerrainFittedAssignor", "structTerrainFittedAssignor.html", "structTerrainFittedAssignor" ],
     [ "TerrainFittedPC", "classTerrainFittedPC.html", "classTerrainFittedPC" ],
     [ "TimeInterpolatedData", "structTimeInterpolatedData.html", "structTimeInterpolatedData" ]
 ];

@@ -18,5 +18,6 @@ var hierarchy =
     [ "RealIdx", "structRealIdx.html", null ],
     [ "ROMSXPhysBCFunct", "classROMSXPhysBCFunct.html", null ],
     [ "SolverChoice", "structSolverChoice.html", null ],
+    [ "TerrainFittedAssignor", "structTerrainFittedAssignor.html", null ],
     [ "TimeInterpolatedData", "structTimeInterpolatedData.html", null ]
 ];
