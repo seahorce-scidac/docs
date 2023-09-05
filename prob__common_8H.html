@@ -88,16 +88,25 @@ $(document).ready(function(){initNavTree('prob__common_8H.html',''); initResizab
 <div class="title">prob_common.H File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;AMReX_Geometry.H&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="DataStruct_8H_source.html">DataStruct.H</a>&gt;</code><br />
+<code>#include &lt;AMReX_Geometry.H&gt;</code><br />
 <code>#include &lt;AMReX_FArrayBox.H&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for prob_common.H:</div>
 <div class="dyncontent">
 <div class="center"><img src="prob__common_8H__incl.png" border="0" usemap="#a_2home_2runner_2work_2ROMSX_2ROMSX_2Source_2prob__common_8H" alt=""/></div>
 <map name="a_2home_2runner_2work_2ROMSX_2ROMSX_2Source_2prob__common_8H" id="a_2home_2runner_2work_2ROMSX_2ROMSX_2Source_2prob__common_8H">
-<area shape="rect" title=" " alt="" coords="55,5,288,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,159,121"/>
-<area shape="rect" title=" " alt="" coords="183,95,339,121"/>
+<area shape="rect" title=" " alt="" coords="390,5,623,47"/>
+<area shape="rect" href="DataStruct_8H.html" title=" " alt="" coords="301,95,406,121"/>
+<area shape="rect" title=" " alt="" coords="430,95,583,121"/>
+<area shape="rect" title=" " alt="" coords="607,95,763,121"/>
+<area shape="rect" title=" " alt="" coords="5,169,64,196"/>
+<area shape="rect" title=" " alt="" coords="88,169,168,196"/>
+<area shape="rect" title=" " alt="" coords="193,169,351,196"/>
+<area shape="rect" title=" " alt="" coords="376,169,496,196"/>
+<area shape="rect" title=" " alt="" coords="521,169,637,196"/>
+<area shape="rect" href="ROMSX__Constants_8H.html" title=" " alt="" coords="661,169,817,196"/>
+<area shape="rect" title=" " alt="" coords="677,244,800,271"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -120,8 +129,10 @@ This graph shows which files directly or indirectly include this file:</div>
 Functions</h2></td></tr>
 <tr class="memitem:afef32e2116829d24b864c64caebf5ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prob__common_8H.html#afef32e2116829d24b864c64caebf5ea6">amrex_probinit</a> (const amrex_real *problo, const amrex_real *probhi)</td></tr>
 <tr class="separator:afef32e2116829d24b864c64caebf5ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3b8abb5791d1ce32620e7e8af6dea99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prob__common_8H.html#aa3b8abb5791d1ce32620e7e8af6dea99">init_custom_prob</a> (const amrex::Box &amp;bx, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;state, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;x_vel, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;y_vel, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;z_vel, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;r_hse, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;p_hse, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> const &gt; const &amp;z_w, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> const &gt; const &amp;z_r, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> const &gt; const &amp;Hz, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> const &gt; const &amp;h, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> const &gt; const &amp;Zt_avg1, amrex::GeometryData const &amp;geomdata)</td></tr>
-<tr class="separator:aa3b8abb5791d1ce32620e7e8af6dea99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68d28a7206cc0b416fc795540bea36a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prob__common_8H.html#aa68d28a7206cc0b416fc795540bea36a">init_custom_prob</a> (const amrex::Box &amp;bx, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;state, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;x_vel, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;y_vel, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;z_vel, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;r_hse, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> &gt; const &amp;p_hse, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> const &gt; const &amp;z_w, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> const &gt; const &amp;z_r, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> const &gt; const &amp;Hz, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> const &gt; const &amp;h, amrex::Array4&lt; <a class="el" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">amrex::Real</a> const &gt; const &amp;Zt_avg1, amrex::GeometryData const &amp;geomdata, <a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;m_solverChoice)</td></tr>
+<tr class="separator:aa68d28a7206cc0b416fc795540bea36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1089aaebf4e1bffc2452c15a45e988"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prob__common_8H.html#a2a1089aaebf4e1bffc2452c15a45e988">init_custom_bathymetry</a> (const amrex::Geometry &amp;geom, amrex::MultiFab &amp;mf_h, amrex::MultiFab &amp;mf_Zt_avg1, <a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;m_solverChoice)</td></tr>
+<tr class="separator:a2a1089aaebf4e1bffc2452c15a45e988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="afef32e2116829d24b864c64caebf5ea6"></a>
@@ -163,8 +174,59 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aa3b8abb5791d1ce32620e7e8af6dea99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3b8abb5791d1ce32620e7e8af6dea99">&#9670;&nbsp;</a></span>init_custom_prob()</h2>
+<a id="a2a1089aaebf4e1bffc2452c15a45e988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a1089aaebf4e1bffc2452c15a45e988">&#9670;&nbsp;</a></span>init_custom_bathymetry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_custom_bathymetry </td>
+          <td>(</td>
+          <td class="paramtype">const amrex::Geometry &amp;&#160;</td>
+          <td class="paramname"><em>geom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname"><em>mf_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname"><em>mf_Zt_avg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;&#160;</td>
+          <td class="paramname"><em>m_solverChoice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classROMSX.html#ab93d802ac3111e738dafe04367813135">ROMSX::set_bathymetry()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="prob__common_8H_a2a1089aaebf4e1bffc2452c15a45e988_icgraph.png" border="0" usemap="#aprob__common_8H_a2a1089aaebf4e1bffc2452c15a45e988_icgraph" alt=""/></div>
+<map name="aprob__common_8H_a2a1089aaebf4e1bffc2452c15a45e988_icgraph" id="aprob__common_8H_a2a1089aaebf4e1bffc2452c15a45e988_icgraph">
+<area shape="rect" title=" " alt="" coords="235,5,416,32"/>
+<area shape="rect" href="classROMSX.html#ab93d802ac3111e738dafe04367813135" title=" " alt="" coords="5,5,187,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa68d28a7206cc0b416fc795540bea36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68d28a7206cc0b416fc795540bea36a">&#9670;&nbsp;</a></span>init_custom_prob()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +307,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">amrex::GeometryData const &amp;&#160;</td>
-          <td class="paramname"><em>geomdata</em>&#160;</td>
+          <td class="paramname"><em>geomdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;&#160;</td>
+          <td class="paramname"><em>m_solverChoice</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -259,8 +327,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="prob__common_8H_aa3b8abb5791d1ce32620e7e8af6dea99_icgraph.png" border="0" usemap="#aprob__common_8H_aa3b8abb5791d1ce32620e7e8af6dea99_icgraph" alt=""/></div>
-<map name="aprob__common_8H_aa3b8abb5791d1ce32620e7e8af6dea99_icgraph" id="aprob__common_8H_aa3b8abb5791d1ce32620e7e8af6dea99_icgraph">
+<div class="center"><img src="prob__common_8H_aa68d28a7206cc0b416fc795540bea36a_icgraph.png" border="0" usemap="#aprob__common_8H_aa68d28a7206cc0b416fc795540bea36a_icgraph" alt=""/></div>
+<map name="aprob__common_8H_aa68d28a7206cc0b416fc795540bea36a_icgraph" id="aprob__common_8H_aa68d28a7206cc0b416fc795540bea36a_icgraph">
 <area shape="rect" title=" " alt="" coords="208,5,343,32"/>
 <area shape="rect" href="classROMSX.html#af3c54ec9fe911484d73ce5ba486ccfc5" title=" " alt="" coords="5,5,160,32"/>
 </map>
