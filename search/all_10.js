@@ -27,7 +27,7 @@ var searchData=
   ['rho0_5ftrans_394',['rho0_trans',['../structSolverChoice.html#a3dd9fcb274b4d556d88346eeb683d00a',1,'SolverChoice']]],
   ['rho_5fbc_5fcomp_395',['Rho_bc_comp',['../namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a559799ff291d4e692283c4056bac8db1',1,'BCVars']]],
   ['rho_5fcomp_396',['Rho_comp',['../IndexDefines_8H.html#a27dcc910aeb002a0fd44727954dc0e49',1,'IndexDefines.H']]],
-  ['rho_5feos_397',['rho_eos',['../classROMSX.html#a70ab0daef1e6d6c1e7ffe19ddf4fed54',1,'ROMSX']]],
+  ['rho_5feos_397',['rho_eos',['../classROMSX.html#aa74fd83dc7dfca68665ab3e4c026fe2f',1,'ROMSX']]],
   ['rho_5fu_398',['rho_u',['../DataStruct_8H.html#a0f913d9c7675b91d39c19beb8ada7432a1ae26c2d396a1f7100feac6ad99172d3',1,'DataStruct.H']]],
   ['rho_5fv_399',['rho_v',['../DataStruct_8H.html#a0f913d9c7675b91d39c19beb8ada7432a8e833bbd3cf3c869edc727d60cb65424',1,'DataStruct.H']]],
   ['rho_5fw_400',['rho_w',['../DataStruct_8H.html#a0f913d9c7675b91d39c19beb8ada7432a4be15d5cfb3c45122ca4724ae2df295f',1,'DataStruct.H']]],

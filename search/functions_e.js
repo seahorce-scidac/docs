@@ -7,7 +7,7 @@ var searchData=
   ['refinement_5fcriteria_5fsetup_854',['refinement_criteria_setup',['../classROMSX.html#a95cf73016433f9bc8822da57b7f3736e',1,'ROMSX']]],
   ['remakelevel_855',['RemakeLevel',['../classROMSX.html#a366c20991d6dd6d7057ff0a593c8c11f',1,'ROMSX']]],
   ['restart_856',['restart',['../classROMSX.html#a9e841cff9ccca5ed1945876def44c681',1,'ROMSX']]],
-  ['rho_5feos_857',['rho_eos',['../classROMSX.html#a70ab0daef1e6d6c1e7ffe19ddf4fed54',1,'ROMSX']]],
+  ['rho_5feos_857',['rho_eos',['../classROMSX.html#aa74fd83dc7dfca68665ab3e4c026fe2f',1,'ROMSX']]],
   ['rhs_5f2d_858',['rhs_2d',['../classROMSX.html#afadbab3c79b65f13e46e86f467d1ed27',1,'ROMSX']]],
   ['rhs_5f3d_859',['rhs_3d',['../classROMSX.html#a027541429a7e392b348c4fe454227132',1,'ROMSX']]],
   ['rhs_5ft_5f3d_860',['rhs_t_3d',['../classROMSX.html#a77a3751052031059c316a384124a27c8',1,'ROMSX']]],
