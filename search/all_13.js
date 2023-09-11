@@ -17,5 +17,5 @@ var searchData=
   ['use_5ftracer_5fparticles_543',['use_tracer_particles',['../classROMSX.html#a1e111db2e680a1a90e4f1ddd37212ba6',1,'ROMSX']]],
   ['use_5fuv3dmix_544',['use_uv3dmix',['../structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba',1,'SolverChoice']]],
   ['utils_2eh_545',['Utils.H',['../Utils_8H.html',1,'']]],
-  ['uv3dmix_546',['uv3dmix',['../classROMSX.html#acd6828d5fba1883c3efa407b67bf341f',1,'ROMSX']]]
+  ['uv3dmix_546',['uv3dmix',['../classROMSX.html#a17761562bb5a9d19093d18bd8e919a74',1,'ROMSX']]]
 ];
