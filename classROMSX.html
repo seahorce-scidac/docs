@@ -3332,13 +3332,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>set covered coarse cells to be the average of overlying fine cells </p>
-<div class="fragment"><div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;{</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> lev = finest_level-1; lev &gt;= 0; --lev)</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    {</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        <a class="code" href="classROMSX.html#a243ea260c190601764cb8b6368d18615">AverageDownTo</a>(lev);</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    }</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;}</div>
-<div class="ttc" id="aclassROMSX_html_a243ea260c190601764cb8b6368d18615"><div class="ttname"><a href="classROMSX.html#a243ea260c190601764cb8b6368d18615">ROMSX::AverageDownTo</a></div><div class="ttdeci">void AverageDownTo(int crse_lev)</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:834</div></div>
+<div class="fragment"><div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;{</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> lev = finest_level-1; lev &gt;= 0; --lev)</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    {</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        <a class="code" href="classROMSX.html#a243ea260c190601764cb8b6368d18615">AverageDownTo</a>(lev);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    }</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;}</div>
+<div class="ttc" id="aclassROMSX_html_a243ea260c190601764cb8b6368d18615"><div class="ttname"><a href="classROMSX.html#a243ea260c190601764cb8b6368d18615">ROMSX::AverageDownTo</a></div><div class="ttdeci">void AverageDownTo(int crse_lev)</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:839</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3366,17 +3366,17 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>more flexible version of <a class="el" href="classROMSX.html#a5a73ffdd93eed4bef7f0d3c6bdac0e6e">AverageDown()</a> that lets you average down across multiple levels </p>
-<div class="fragment"><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;{</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> var_idx = 0; var_idx &lt; <a class="code" href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a5deccaa24d5e74279425d7749f7d1494">Vars::NumTypes</a>; ++var_idx) {</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        <span class="keyword">const</span> BoxArray&amp; ba(<a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev][var_idx].boxArray());</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        <span class="keywordflow">if</span> (ba[0].type() == IntVect::TheZeroVector())</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;            amrex::average_down(<a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev+1][var_idx], <a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev][var_idx],</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;                                0, <a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev][var_idx].nComp(), refRatio(crse_lev));</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        <span class="keywordflow">else</span> <span class="comment">// We assume the arrays are face-centered if not cell-centered</span></div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;            amrex::average_down_faces(<a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev+1][var_idx], <a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev][var_idx],</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                                      refRatio(crse_lev),geom[crse_lev]);</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    }</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;{</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> var_idx = 0; var_idx &lt; <a class="code" href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a5deccaa24d5e74279425d7749f7d1494">Vars::NumTypes</a>; ++var_idx) {</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        <span class="keyword">const</span> BoxArray&amp; ba(<a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev][var_idx].boxArray());</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        <span class="keywordflow">if</span> (ba[0].type() == IntVect::TheZeroVector())</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;            amrex::average_down(<a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev+1][var_idx], <a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev][var_idx],</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                                0, <a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev][var_idx].nComp(), refRatio(crse_lev));</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        <span class="keywordflow">else</span> <span class="comment">// We assume the arrays are face-centered if not cell-centered</span></div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;            amrex::average_down_faces(<a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev+1][var_idx], <a class="code" href="classROMSX.html#a4ea53c7dac70940e948e43f7d623798b">vars_new</a>[crse_lev][var_idx],</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                                      refRatio(crse_lev),geom[crse_lev]);</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    }</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5401,7 +5401,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclassROMSX_html_a11fae6ec83db5a377afd32858e0a80a1"><div class="ttname"><a href="classROMSX.html#a11fae6ec83db5a377afd32858e0a80a1">ROMSX::is_it_time_for_action</a></div><div class="ttdeci">bool is_it_time_for_action(int nstep, amrex::Real time, amrex::Real dt, int action_interval, amrex::Real action_per)</div><div class="ttdef"><b>Definition:</b> ROMSX_SumIQ.cpp:132</div></div>
 <div class="ttc" id="aclassROMSX_html_a1b766eb32c763c5c2ace9e723ad5df89"><div class="ttname"><a href="classROMSX.html#a1b766eb32c763c5c2ace9e723ad5df89">ROMSX::do_reflux</a></div><div class="ttdeci">static int do_reflux</div><div class="ttdef"><b>Definition:</b> ROMSX.H:962</div></div>
 <div class="ttc" id="aclassROMSX_html_a55bb606cb2f4fc86e05232b5c314a829"><div class="ttname"><a href="classROMSX.html#a55bb606cb2f4fc86e05232b5c314a829">ROMSX::sum_integrated_quantities</a></div><div class="ttdeci">void sum_integrated_quantities(amrex::Real time)</div><div class="ttdef"><b>Definition:</b> ROMSX_SumIQ.cpp:8</div></div>
-<div class="ttc" id="aclassROMSX_html_a5a73ffdd93eed4bef7f0d3c6bdac0e6e"><div class="ttname"><a href="classROMSX.html#a5a73ffdd93eed4bef7f0d3c6bdac0e6e">ROMSX::AverageDown</a></div><div class="ttdeci">void AverageDown()</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:824</div></div>
+<div class="ttc" id="aclassROMSX_html_a5a73ffdd93eed4bef7f0d3c6bdac0e6e"><div class="ttname"><a href="classROMSX.html#a5a73ffdd93eed4bef7f0d3c6bdac0e6e">ROMSX::AverageDown</a></div><div class="ttdeci">void AverageDown()</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:829</div></div>
 <div class="ttc" id="aclassROMSX_html_a90451fd26c3ca52a56982e35d2887214"><div class="ttname"><a href="classROMSX.html#a90451fd26c3ca52a56982e35d2887214">ROMSX::plot_file_on_restart</a></div><div class="ttdeci">int plot_file_on_restart</div><div class="ttdef"><b>Definition:</b> ROMSX.H:903</div></div>
 <div class="ttc" id="aclassROMSX_html_a9e841cff9ccca5ed1945876def44c681"><div class="ttname"><a href="classROMSX.html#a9e841cff9ccca5ed1945876def44c681">ROMSX::restart</a></div><div class="ttdeci">void restart()</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:362</div></div>
 <div class="ttc" id="aclassROMSX_html_aae7ba5940968ecd9397fa506a7082933"><div class="ttname"><a href="classROMSX.html#aae7ba5940968ecd9397fa506a7082933">ROMSX::init_only</a></div><div class="ttdeci">void init_only(int lev, amrex::Real time)</div><div class="ttdef"><b>Definition:</b> ROMSX.cpp:655</div></div>
@@ -8050,29 +8050,34 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        <span class="comment">// Output format</span></div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        pp.query(<span class="stringliteral">&quot;plotfile_type&quot;</span>, <a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a>);</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> != <span class="stringliteral">&quot;amrex&quot;</span> &amp;&amp;</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            <a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> != <span class="stringliteral">&quot;netcdf&quot;</span> &amp;&amp; <a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> != <span class="stringliteral">&quot;NetCDF&quot;</span> &amp;&amp;</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;            <a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> != <span class="stringliteral">&quot;hdf5&quot;</span>   &amp;&amp; <a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> != <span class="stringliteral">&quot;HDF5&quot;</span> )</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        {</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;User selected plotfile_type = &quot;</span> &lt;&lt; <a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;            amrex::Abort(<span class="stringliteral">&quot;Dont know this plotfile_type&quot;</span>);</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;        }</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        pp.query(<span class="stringliteral">&quot;plot_file_1&quot;</span>, <a class="code" href="classROMSX.html#a05371cb6acdebe55d3aa25bebbaa65e2">plot_file_1</a>);</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        pp.query(<span class="stringliteral">&quot;plot_file_2&quot;</span>, <a class="code" href="classROMSX.html#aa0f18c68a94b27d41e87d49662ec0ac1">plot_file_2</a>);</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        pp.query(<span class="stringliteral">&quot;plot_int_1&quot;</span>, <a class="code" href="classROMSX.html#abaae04ebda466750a5480506239c6ca7">plot_int_1</a>);</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        pp.query(<span class="stringliteral">&quot;plot_int_2&quot;</span>, <a class="code" href="classROMSX.html#aa3cd25f16ca7432ac68b7a02a8880226">plot_int_2</a>);</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160; </div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="preprocessor">#ifdef ROMSX_USE_PARTICLES</span></div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <span class="comment">// Tracer particle toggle</span></div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        pp.query(<span class="stringliteral">&quot;use_tracer_particles&quot;</span>, <a class="code" href="classROMSX.html#a1e111db2e680a1a90e4f1ddd37212ba6">use_tracer_particles</a>);</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    }</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160; </div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="preprocessor">#ifdef ROMSX_USE_MULTIBLOCK</span></div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <a class="code" href="classROMSX.html#a21df816ace6144ce0ed78d0031eaa946">solverChoice</a>.<a class="code" href="structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6">pp_prefix</a> = <a class="code" href="classROMSX.html#afda0f54b3ad1ed8dbb39bbef8ed48c92">pp_prefix</a>;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            <a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> != <span class="stringliteral">&quot;netcdf&quot;</span> &amp;&amp; <a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> != <span class="stringliteral">&quot;NetCDF&quot;</span>)</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        {</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;User selected plotfile_type = &quot;</span> &lt;&lt; <a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            amrex::Abort(<span class="stringliteral">&quot;Dont know this plotfile_type&quot;</span>);</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        }</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;<span class="preprocessor">#ifndef ROMSX_USE_NETCDF</span></div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> == <span class="stringliteral">&quot;netcdf&quot;</span> || <a class="code" href="classROMSX.html#a802f6c0afcdf21170461376c39e9701a">plotfile_type</a> == <span class="stringliteral">&quot;NetCDF&quot;</span>)</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        {</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;            amrex::Abort(<span class="stringliteral">&quot;Please compile with NetCDF in order to enable NetCDF plotfiles&quot;</span>);</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        }</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        pp.query(<span class="stringliteral">&quot;plot_file_1&quot;</span>, <a class="code" href="classROMSX.html#a05371cb6acdebe55d3aa25bebbaa65e2">plot_file_1</a>);</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        pp.query(<span class="stringliteral">&quot;plot_file_2&quot;</span>, <a class="code" href="classROMSX.html#aa0f18c68a94b27d41e87d49662ec0ac1">plot_file_2</a>);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        pp.query(<span class="stringliteral">&quot;plot_int_1&quot;</span>, <a class="code" href="classROMSX.html#abaae04ebda466750a5480506239c6ca7">plot_int_1</a>);</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        pp.query(<span class="stringliteral">&quot;plot_int_2&quot;</span>, <a class="code" href="classROMSX.html#aa3cd25f16ca7432ac68b7a02a8880226">plot_int_2</a>);</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160; </div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="preprocessor">#ifdef ROMSX_USE_PARTICLES</span></div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        <span class="comment">// Tracer particle toggle</span></div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        pp.query(<span class="stringliteral">&quot;use_tracer_particles&quot;</span>, <a class="code" href="classROMSX.html#a1e111db2e680a1a90e4f1ddd37212ba6">use_tracer_particles</a>);</div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160; </div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    <a class="code" href="classROMSX.html#a21df816ace6144ce0ed78d0031eaa946">solverChoice</a>.<a class="code" href="structSolverChoice.html#a4829661b558b213e32970a02e147077f">init_params</a>();</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;}</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    }</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160; </div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;<span class="preprocessor">#ifdef ROMSX_USE_MULTIBLOCK</span></div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    <a class="code" href="classROMSX.html#a21df816ace6144ce0ed78d0031eaa946">solverChoice</a>.<a class="code" href="structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6">pp_prefix</a> = <a class="code" href="classROMSX.html#afda0f54b3ad1ed8dbb39bbef8ed48c92">pp_prefix</a>;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160; </div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <a class="code" href="classROMSX.html#a21df816ace6144ce0ed78d0031eaa946">solverChoice</a>.<a class="code" href="structSolverChoice.html#a4829661b558b213e32970a02e147077f">init_params</a>();</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;}</div>
 <div class="ttc" id="aclassROMSX_html_a05371cb6acdebe55d3aa25bebbaa65e2"><div class="ttname"><a href="classROMSX.html#a05371cb6acdebe55d3aa25bebbaa65e2">ROMSX::plot_file_1</a></div><div class="ttdeci">std::string plot_file_1</div><div class="ttdef"><b>Definition:</b> ROMSX.H:931</div></div>
 <div class="ttc" id="aclassROMSX_html_a067945622be8aeb2bd7a812ae222b031"><div class="ttname"><a href="classROMSX.html#a067945622be8aeb2bd7a812ae222b031">ROMSX::nc_bdy_file</a></div><div class="ttdeci">static std::string nc_bdy_file</div><div class="ttdef"><b>Definition:</b> ROMSX.H:982</div></div>
 <div class="ttc" id="aclassROMSX_html_a2b67bb92b64c187e9869d8f8726e4e42"><div class="ttname"><a href="classROMSX.html#a2b67bb92b64c187e9869d8f8726e4e42">ROMSX::num_boxes_at_level</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; num_boxes_at_level</div><div class="ttdef"><b>Definition:</b> ROMSX.H:855</div></div>
