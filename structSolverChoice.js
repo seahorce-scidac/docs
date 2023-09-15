@@ -44,7 +44,6 @@ var structSolverChoice =
     [ "sinphi", "structSolverChoice.html#a6426e150ba9c1ba2e14151228bf6ffaf", null ],
     [ "spatial_order", "structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44", null ],
     [ "tcline", "structSolverChoice.html#a8567bc83a2159c88c5372ea30770725e", null ],
-    [ "test_vertical", "structSolverChoice.html#a16f2d4db87edb257cd115f6b9ecd5ec3", null ],
     [ "theta_b", "structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5", null ],
     [ "theta_s", "structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017", null ],
     [ "use_baroclinic", "structSolverChoice.html#a092beaf56ca711be832b219044efcba6", null ],
