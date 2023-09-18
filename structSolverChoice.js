@@ -2,10 +2,6 @@ var structSolverChoice =
 [
     [ "display", "structSolverChoice.html#abb95d84167308078ce369b4196ef979c", null ],
     [ "init_params", "structSolverChoice.html#a4829661b558b213e32970a02e147077f", null ],
-    [ "abl_driver_type", "structSolverChoice.html#abe7f2d933204e7a6127469a006240f8f", null ],
-    [ "abl_geo_forcing", "structSolverChoice.html#a5147634b7c1414a7694c59c1b4a88d69", null ],
-    [ "abl_pressure_grad", "structSolverChoice.html#a69e2f0b874cba8faae57987ead4e3ebb", null ],
-    [ "advect_QKE", "structSolverChoice.html#a38dc1d6637afc39c42b09560735f8191", null ],
     [ "alpha_C", "structSolverChoice.html#a404f875b4796e931ef346bc11b6c7dcb", null ],
     [ "alpha_T", "structSolverChoice.html#a2b9c77c4a08b52f5519b452f6ed3a4cc", null ],
     [ "Ce", "structSolverChoice.html#ac28e6ad4be78bfb7b25c9cf88d43724a", null ],
@@ -14,7 +10,6 @@ var structSolverChoice =
     [ "coriolis_factor", "structSolverChoice.html#a1163778ed56af6977001ef4ec55a3da3", null ],
     [ "cosphi", "structSolverChoice.html#a411fbfea721cd40033e113cf54a8047f", null ],
     [ "Cs", "structSolverChoice.html#aaf85773d50dc693905867d3acc127dd0", null ],
-    [ "diffuse_QKE_3D", "structSolverChoice.html#ad8f19f1ba25a4de9578af14ec787c0cc", null ],
     [ "dynamicViscosity", "structSolverChoice.html#a244a1303b78fa79d217bd86d124f0446", null ],
     [ "flat_bathymetry", "structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a", null ],
     [ "gravity", "structSolverChoice.html#a47a54f2e44955202b5b437e4b1b4a61b", null ],
@@ -52,6 +47,5 @@ var structSolverChoice =
     [ "use_coriolis", "structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606", null ],
     [ "use_gravity", "structSolverChoice.html#a3ab48411073a3c1f75435292d7b407e5", null ],
     [ "use_prestep", "structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6", null ],
-    [ "use_QKE", "structSolverChoice.html#a47152bbb3815b6f4c9c465b8c75ebeb5", null ],
     [ "use_uv3dmix", "structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba", null ]
 ];

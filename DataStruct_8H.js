@@ -1,11 +1,6 @@
 var DataStruct_8H =
 [
     [ "SolverChoice", "structSolverChoice.html", "structSolverChoice" ],
-    [ "ABLDriverType", "DataStruct_8H.html#a90da675b718151491fd0c934a0ad3ceb", [
-      [ "None", "DataStruct_8H.html#a90da675b718151491fd0c934a0ad3ceba6adf97f83acf6453d4a6a4b1070f3754", null ],
-      [ "PressureGradient", "DataStruct_8H.html#a90da675b718151491fd0c934a0ad3ceba527d74300afe17c5171b0e5e015918e6", null ],
-      [ "GeostrophicWind", "DataStruct_8H.html#a90da675b718151491fd0c934a0ad3ceba6c2c47a19d5c773bae606eb243104880", null ]
-    ] ],
     [ "AdvectedQuantity", "DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4", [
       [ "unity", "DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a439b3a25b555b3bc8667a09a036ae70c", null ],
       [ "u", "DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c", null ],
