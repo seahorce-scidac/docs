@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('DepthStretchTransform_8H_source.html',
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> &amp; geomdata = Geom(lev).data();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordtype">int</span> ncomp = 1;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      Gpu::synchronize();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      amrex::ParallelFor(bx, ncomp,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      amrex::ParallelFor(amrex::makeSlab(bx,2,0), ncomp,</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> prob_lo         = geomdata.ProbLo();</div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('DepthStretchTransform_8H_source.html',
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                CF(i,j,-1)=CF(i,j,-1)+DC(i,j,k)*<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a>(i,j,k,nstp);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            });</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        amrex::ParallelFor(gbx1,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        amrex::ParallelFor(amrex::makeSlab(gbx1,2,0),</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=1.0/DC(i,j,-1);</div>
@@ -209,7 +209,7 @@ $(document).ready(function(){initNavTree('DepthStretchTransform_8H_source.html',
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                CF(i,j,-1)=CF(i,j,-1)+DC(i,j,k)*<a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a9e3669d19b675bd57058fd4664205d2a">v</a>(i,j,k,nstp);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            });</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        amrex::ParallelFor(gbx1,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        amrex::ParallelFor(amrex::makeSlab(gbx1,2,0),</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            {</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> cff1=1.0/DC(i,j,-1);</div>
