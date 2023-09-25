@@ -30,6 +30,7 @@ var structSolverChoice =
     [ "pp_prefix", "structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6", null ],
     [ "Pr_t", "structSolverChoice.html#ac6ce37592bdc2abee5231a47802c316b", null ],
     [ "Pr_t_inv", "structSolverChoice.html#aedad420dddffb0b78651c5d8b399a67b", null ],
+    [ "rdrag", "structSolverChoice.html#ab32c6e7161ddf37e8051743fae717cf5", null ],
     [ "rho0_trans", "structSolverChoice.html#a3dd9fcb274b4d556d88346eeb683d00a", null ],
     [ "rhoAlpha_C", "structSolverChoice.html#a3571709ee9c72dca3523638986976821", null ],
     [ "rhoAlpha_T", "structSolverChoice.html#a3436b31b3e0e439c700d07c30d22e7a3", null ],
