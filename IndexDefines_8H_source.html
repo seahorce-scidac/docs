@@ -86,8 +86,8 @@ $(document).ready(function(){initNavTree('IndexDefines_8H_source.html',''); init
 <div class="title">IndexDefines.H</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="IndexDefines_8H.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _INDEX_DEFINES_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _INDEX_DEFINES_H_</span></div>
+<a href="IndexDefines_8H.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ROMSX_INDEX_DEFINES_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ROMSX_INDEX_DEFINES_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;AMReX_REAL.H&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;AMReX_Arena.H&gt;</span></div>
@@ -106,10 +106,10 @@ $(document).ready(function(){initNavTree('IndexDefines_8H_source.html',''); init
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Cell-centered primitive variables</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="IndexDefines_8H.html#a8b9c5b827b61f426a3879bc5d2883040">   21</a></span>&#160;<span class="preprocessor">#define PrimTheta_comp   Temp_comp -1</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="IndexDefines_8H.html#aa9d1308b0d214f7bfbe9b8c11c4176b7">   22</a></span>&#160;<span class="preprocessor">#define PrimScalar_comp  RhoScalar_comp-1</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="IndexDefines_8H.html#a8b9c5b827b61f426a3879bc5d2883040">   21</a></span>&#160;<span class="preprocessor">#define PrimTheta_comp   (Temp_comp -1)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="IndexDefines_8H.html#aa9d1308b0d214f7bfbe9b8c11c4176b7">   22</a></span>&#160;<span class="preprocessor">#define PrimScalar_comp  (RhoScalar_comp-1)</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="IndexDefines_8H.html#a76cb673ca03cd7f8ae6cc8544d6dd0fa">   24</a></span>&#160;<span class="preprocessor">#define NUM_PRIM         NVAR-1</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="IndexDefines_8H.html#a76cb673ca03cd7f8ae6cc8544d6dd0fa">   24</a></span>&#160;<span class="preprocessor">#define NUM_PRIM         (NVAR-1)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">   25</a></span>&#160;<span class="preprocessor">#define NGROW          2</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceBCVars.html">   27</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceBCVars.html">BCVars</a> {</div>
