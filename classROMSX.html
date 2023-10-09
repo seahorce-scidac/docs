@@ -1353,8 +1353,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        }</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        <span class="comment">// Set zeta components to time-averaged value in preparation for barotropic update</span></div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        amrex::ParallelFor(gbx2,</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        amrex::ParallelFor(gbx2D,</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span>)</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        {</div>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;            zeta(i,j,0,0) = Zt_avg1(i,j,0);</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;            zeta(i,j,0,1) = Zt_avg1(i,j,0);</div>
