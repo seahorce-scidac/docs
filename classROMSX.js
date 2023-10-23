@@ -74,7 +74,7 @@ var classROMSX =
     [ "timeStep", "classROMSX.html#a5abd4890b0a7b5939c66c6af3d9bb6c2", null ],
     [ "update_massflux_3d", "classROMSX.html#a2178d9cdcc39fcc27269d5b450c83c39", null ],
     [ "update_vel_3d", "classROMSX.html#a39cc4340b94a3842a4d7ef7d06a03ffc", null ],
-    [ "uv3dmix", "classROMSX.html#a17761562bb5a9d19093d18bd8e919a74", null ],
+    [ "uv3dmix", "classROMSX.html#aa798f03140762a614e58b368dbd37ae6", null ],
     [ "vert_mean_3d", "classROMSX.html#a3876e9c37fd6291a0f502b6c7e7aeb11", null ],
     [ "vert_visc_3d", "classROMSX.html#a65ce5f9c75ebc04eba79be47394ec6af", null ],
     [ "volWgtSumMF", "classROMSX.html#adca6904cd162a4201fd631cf0be6c2fe", null ],

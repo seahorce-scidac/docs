@@ -15,5 +15,5 @@ var searchData=
   ['use_5fprestep_510',['use_prestep',['../structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6',1,'SolverChoice']]],
   ['use_5ftracer_5fparticles_511',['use_tracer_particles',['../classROMSX.html#a1e111db2e680a1a90e4f1ddd37212ba6',1,'ROMSX']]],
   ['use_5fuv3dmix_512',['use_uv3dmix',['../structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba',1,'SolverChoice']]],
-  ['uv3dmix_513',['uv3dmix',['../classROMSX.html#a17761562bb5a9d19093d18bd8e919a74',1,'ROMSX']]]
+  ['uv3dmix_513',['uv3dmix',['../classROMSX.html#aa798f03140762a614e58b368dbd37ae6',1,'ROMSX']]]
 ];
