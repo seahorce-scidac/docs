@@ -77,7 +77,7 @@ var classROMSX =
     [ "uv3dmix", "classROMSX.html#aa798f03140762a614e58b368dbd37ae6", null ],
     [ "vert_mean_3d", "classROMSX.html#a3876e9c37fd6291a0f502b6c7e7aeb11", null ],
     [ "vert_visc_3d", "classROMSX.html#a65ce5f9c75ebc04eba79be47394ec6af", null ],
-    [ "volWgtSumMF", "classROMSX.html#adca6904cd162a4201fd631cf0be6c2fe", null ],
+    [ "volWgtSumMF", "classROMSX.html#a65203858561c0499791ef95ef51f3447", null ],
     [ "writeBuildInfo", "classROMSX.html#a08b14a766ed31e1f6a9ccec0c7f64618", null ],
     [ "WriteCheckpointFile", "classROMSX.html#acc4b85fa57f43aa0f68f33c4edd82611", null ],
     [ "WriteGenericPlotfileHeaderWithTerrain", "classROMSX.html#a3e9e85fac319ffadf256b8832e16d998", null ],
