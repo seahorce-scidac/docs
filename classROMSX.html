@@ -7896,11 +7896,11 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                               (rho(i,j,k)-rho(i-1,j,k)-</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                OneTwelfth*</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                (dRx(i,j,k)+dRx(i-1,j,k))))));</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classROMSX.html#ab37afaafcf05a9b10c0fba3180539610">verbose</a> &gt; 2) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                printf(<span class="stringliteral">&quot;%d %d %d  %15.15g %15.15g  %15.15g %15.15g  %15.15g %15.15g  %15.15g %15.15g   %15.15g %15.15g   %15.15g %15.15g ru prsgrd  Hz P rho z_r dZx dRx\n&quot;</span>,</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                    i,j,k, Hz(i,j,k), Hz(i-1,j,k),</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                    P(i,j,k), P(i-1,j,k), rho(i,j,k), rho(i-1,j,k), z_r(i,j,k), z_r(i-1,j,k), dZx(i,j,k), dZx(i-1,j,k), dRx(i,j,k), dRx(i-1,j,k));</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="comment">//if (verbose &gt; 2) {</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="comment">//    printf(&quot;%d %d %d  %15.15g %15.15g  %15.15g %15.15g  %15.15g %15.15g  %15.15g %15.15g   %15.15g %15.15g   %15.15g %15.15g ru prsgrd  Hz P rho z_r dZx dRx\n&quot;,</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="comment">//        i,j,k, Hz(i,j,k), Hz(i-1,j,k),</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="comment">//        P(i,j,k), P(i-1,j,k), rho(i,j,k), rho(i-1,j,k), z_r(i,j,k), z_r(i-1,j,k), dZx(i,j,k), dZx(i-1,j,k), dRx(i,j,k), dRx(i-1,j,k));</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="comment">//}</span></div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        }</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    });</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
