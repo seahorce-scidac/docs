@@ -2700,10 +2700,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;                ubar(i,j,0,knew)=(ubar(i,j,0,kstp)*</div>
 <div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;                                 (Dstp(i,j,0)+Dstp(i-1,j,0))+</div>
 <div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;                                  cff*cff1*rhs_ubar(i,j,0))*fac;</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classROMSX.html#ab37afaafcf05a9b10c0fba3180539610">verbose</a> &gt; 2) {</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;                    printf(<span class="stringliteral">&quot;%d %d   %15.15g %15.15g %15.15g %15.15g %15.15g %15.15g %15.15g  branch1 ubarknew ubarkstp Dstp Dstp cff rhs_ubar fac\n&quot;</span>,</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;                        i,j,ubar(i,j,0,knew), ubar(i,j,0,kstp), Dstp(i,j,0), Dstp(i-1,j,0), cff, rhs_ubar(i,j,0), fac);</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;                }</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;                <span class="comment">//if (verbose &gt; 2) {</span></div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;                <span class="comment">//    printf(&quot;%d %d   %15.15g %15.15g %15.15g %15.15g %15.15g %15.15g %15.15g  branch1 ubarknew ubarkstp Dstp Dstp cff rhs_ubar fac\n&quot;,</span></div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;                <span class="comment">//        i,j,ubar(i,j,0,knew), ubar(i,j,0,kstp), Dstp(i,j,0), Dstp(i-1,j,0), cff, rhs_ubar(i,j,0), fac);</span></div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;                <span class="comment">//}</span></div>
 <div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;            });</div>
 <div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;            <span class="comment">//END DO</span></div>
 <div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;            <span class="comment">//END DO</span></div>
