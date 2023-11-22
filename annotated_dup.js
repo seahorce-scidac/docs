@@ -7,14 +7,15 @@ var annotated_dup =
       [ "NCGroup", "classncutils_1_1NCGroup.html", "classncutils_1_1NCGroup" ],
       [ "NCFile", "classncutils_1_1NCFile.html", "classncutils_1_1NCFile" ]
     ] ],
-    [ "IntIdx", "structIntIdx.html", null ],
     [ "NDArray", "structNDArray.html", "structNDArray" ],
     [ "NullFill", "structNullFill.html", "structNullFill" ],
-    [ "RealIdx", "structRealIdx.html", null ],
+    [ "ParticleData", "structParticleData.html", "structParticleData" ],
     [ "ROMSX", "classROMSX.html", "classROMSX" ],
     [ "ROMSXPhysBCFunct", "classROMSXPhysBCFunct.html", "classROMSXPhysBCFunct" ],
     [ "SolverChoice", "structSolverChoice.html", "structSolverChoice" ],
-    [ "TerrainFittedAssignor", "structTerrainFittedAssignor.html", "structTerrainFittedAssignor" ],
-    [ "TerrainFittedPC", "classTerrainFittedPC.html", "classTerrainFittedPC" ],
-    [ "TimeInterpolatedData", "structTimeInterpolatedData.html", "structTimeInterpolatedData" ]
+    [ "TimeInterpolatedData", "structTimeInterpolatedData.html", "structTimeInterpolatedData" ],
+    [ "TracerAssignor", "structTracerAssignor.html", "structTracerAssignor" ],
+    [ "TracerIntIdx", "structTracerIntIdx.html", null ],
+    [ "TracerPC", "classTracerPC.html", "classTracerPC" ],
+    [ "TracerRealIdx", "structTracerRealIdx.html", null ]
 ];
