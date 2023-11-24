@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['deardorff_1114',['Deardorff',['../DataStruct_8H.html#aa346fa9f5c0cb101a7766563fb76c500ab7106655ebb5e00e0f040302bf4129bf',1,'DataStruct.H']]]
+  ['ext_5fdir_1051',['ext_dir',['../namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81eacc659361b9824734b263d615fefee265',1,'ROMSXBCType']]],
+  ['ext_5fdir_5fingested_1052',['ext_dir_ingested',['../namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea5ea0bb01d58de7e004c4058df06c0902',1,'ROMSXBCType']]]
 ];

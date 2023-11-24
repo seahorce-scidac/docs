@@ -1,14 +1,10 @@
 var searchData=
 [
-  ['r_1148',['R',['../namespaceWRFBdyVars.html#aa5064ee47782b2e0cfbf132fdf55b2b2a21c496fde087064e9fa91a2349d4d2eb',1,'WRFBdyVars']]],
-  ['real_1149',['Real',['../DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1',1,'DataStruct.H']]],
-  ['reflect_5feven_1150',['reflect_even',['../namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea85a791a2c305ad887b26b131d91cb3fc',1,'ROMSXBCType']]],
-  ['reflect_5fodd_1151',['reflect_odd',['../namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea9f8add981228e79241a7c5d2d38c5910',1,'ROMSXBCType']]],
-  ['rho_1152',['Rho',['../namespaceCons.html#aa5b867507379ab774c4d0a32dfb1dc7ba5c9c77ea576137ca2664783567e7f588',1,'Cons']]],
-  ['rho_5fbc_5fcomp_1153',['Rho_bc_comp',['../namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a559799ff291d4e692283c4056bac8db1',1,'BCVars']]],
-  ['rho_5fu_1154',['rho_u',['../DataStruct_8H.html#a0f913d9c7675b91d39c19beb8ada7432a1ae26c2d396a1f7100feac6ad99172d3',1,'DataStruct.H']]],
-  ['rho_5fv_1155',['rho_v',['../DataStruct_8H.html#a0f913d9c7675b91d39c19beb8ada7432a8e833bbd3cf3c869edc727d60cb65424',1,'DataStruct.H']]],
-  ['rho_5fw_1156',['rho_w',['../DataStruct_8H.html#a0f913d9c7675b91d39c19beb8ada7432a4be15d5cfb3c45122ca4724ae2df295f',1,'DataStruct.H']]],
-  ['rhoscalar_1157',['RhoScalar',['../namespaceCons.html#aa5b867507379ab774c4d0a32dfb1dc7baecbc791e1b628f0dfb08050876d18d53',1,'Cons']]],
-  ['rhoscalar_5fbc_5fcomp_1158',['RhoScalar_bc_comp',['../namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a029ef491930290dea3a984ebdb6d6ae4',1,'BCVars']]]
+  ['scalar_1095',['Scalar',['../namespacePrim.html#acb87058f5aed3526b2addad665ec5715afedd432e3ecc9fd06a3a9a68d749c1af',1,'Prim']]],
+  ['scalar_1096',['scalar',['../DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4aa27a6549ade38cc036f7b8c58a840510',1,'DataStruct.H']]],
+  ['scalar_5fh_1097',['Scalar_h',['../namespaceEddyDiff.html#a7e7e94a6b49fe20d106a1ea7317d149ea85d322ae06bc4f66f791d4eda0a13ae6',1,'EddyDiff']]],
+  ['scalar_5fv_1098',['Scalar_v',['../namespaceEddyDiff.html#a7e7e94a6b49fe20d106a1ea7317d149ea2b82a72be137b3159e7d4945735fcbf5',1,'EddyDiff']]],
+  ['slip_5fwall_1099',['slip_wall',['../IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a03ee6de9fd100444c5c0567ea01bd538',1,'IndexDefines.H']]],
+  ['slow_1100',['slow',['../namespaceRHSVar.html#a1c3cb7f133158e90d955c9b49f16f0b9ae601862ca8d00b1c87baf8202d758ecf',1,'RHSVar']]],
+  ['symmetry_1101',['symmetry',['../IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a40e712f30d56083318ab20a2402921d2',1,'IndexDefines.H']]]
 ];

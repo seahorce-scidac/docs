@@ -28,6 +28,10 @@ var DataStruct_8H =
       [ "y", "DataStruct_8H.html#a627f1f843904477f763577ad1460de01a415290769594460e2e485922904f345d", null ],
       [ "z", "DataStruct_8H.html#a627f1f843904477f763577ad1460de01afbade9e36a3f36d3d676c1b808451dd7", null ]
     ] ],
+    [ "CouplingType", "DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139b", [
+      [ "OneWay", "DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba8d892b915adb5e7c957f4425253ee1d6", null ],
+      [ "TwoWay", "DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba6c267346f8ebb889610a5a90838be815", null ]
+    ] ],
     [ "DiffusionDir", "DataStruct_8H.html#a7264869c7035dc345642d2461b168715", [
       [ "x", "DataStruct_8H.html#a7264869c7035dc345642d2461b168715a9dd4e461268c8034f5c8564e155c67a6", null ],
       [ "y", "DataStruct_8H.html#a7264869c7035dc345642d2461b168715a415290769594460e2e485922904f345d", null ],
@@ -36,11 +40,6 @@ var DataStruct_8H =
     [ "IC_BC_Type", "DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36", [
       [ "Ideal", "DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a22b7c2abfb7dcf0f672899fb2b6f1670", null ],
       [ "Real", "DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1", null ]
-    ] ],
-    [ "LESType", "DataStruct_8H.html#aa346fa9f5c0cb101a7766563fb76c500", [
-      [ "None", "DataStruct_8H.html#aa346fa9f5c0cb101a7766563fb76c500a6adf97f83acf6453d4a6a4b1070f3754", null ],
-      [ "Smagorinsky", "DataStruct_8H.html#aa346fa9f5c0cb101a7766563fb76c500a409c5986f243d66ca7b1ef5882f4f808", null ],
-      [ "Deardorff", "DataStruct_8H.html#aa346fa9f5c0cb101a7766563fb76c500ab7106655ebb5e00e0f040302bf4129bf", null ]
     ] ],
     [ "MolecDiffType", "DataStruct_8H.html#a84e6bfbbb8e490790c506939b364f735", [
       [ "None", "DataStruct_8H.html#a84e6bfbbb8e490790c506939b364f735a6adf97f83acf6453d4a6a4b1070f3754", null ],
@@ -51,10 +50,6 @@ var DataStruct_8H =
       [ "x", "DataStruct_8H.html#aae430a2a4cb35dd03bcc13e8bc002dd9a9dd4e461268c8034f5c8564e155c67a6", null ],
       [ "y", "DataStruct_8H.html#aae430a2a4cb35dd03bcc13e8bc002dd9a415290769594460e2e485922904f345d", null ],
       [ "z", "DataStruct_8H.html#aae430a2a4cb35dd03bcc13e8bc002dd9afbade9e36a3f36d3d676c1b808451dd7", null ]
-    ] ],
-    [ "PBLType", "DataStruct_8H.html#a4a079f2650ca30c787a8375ec5f17ca5", [
-      [ "None", "DataStruct_8H.html#a4a079f2650ca30c787a8375ec5f17ca5a6adf97f83acf6453d4a6a4b1070f3754", null ],
-      [ "MYNN25", "DataStruct_8H.html#a4a079f2650ca30c787a8375ec5f17ca5abdeb9a753db1d1f3fe0e944eab1d0601", null ]
     ] ],
     [ "Stagger", "DataStruct_8H.html#af22a7de290327224f6e1b45f125cb77d", [
       [ "None", "DataStruct_8H.html#af22a7de290327224f6e1b45f125cb77da6adf97f83acf6453d4a6a4b1070f3754", null ],

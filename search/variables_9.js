@@ -1,17 +1,13 @@
 var searchData=
 [
-  ['m_5fbc_5fextdir_5fvals_946',['m_bc_extdir_vals',['../classROMSXPhysBCFunct.html#a0ebbb8086455536e9b5462d8a94e7591',1,'ROMSXPhysBCFunct::m_bc_extdir_vals()'],['../classROMSX.html#a5a6658ee6b3ac5d5688c5a1a69ab9f86',1,'ROMSX::m_bc_extdir_vals()']]],
-  ['m_5fdata_947',['m_data',['../classROMSXPhysBCFunct.html#a19c4c9c61f2276af5dd220109e62e9ee',1,'ROMSXPhysBCFunct::m_data()'],['../structTimeInterpolatedData.html#a7021ade0b30697e6eef3df932447d4fc',1,'TimeInterpolatedData::m_data()']]],
-  ['m_5fdomain_5fbcs_5ftype_948',['m_domain_bcs_type',['../classROMSXPhysBCFunct.html#a1016f2d4f5c13c179f4f59bf93049d6c',1,'ROMSXPhysBCFunct']]],
-  ['m_5fdomain_5fbcs_5ftype_5fd_949',['m_domain_bcs_type_d',['../classROMSXPhysBCFunct.html#a003e4b00897ad6858ba99b2996b1eae5',1,'ROMSXPhysBCFunct']]],
-  ['m_5fgeom_950',['m_geom',['../classROMSXPhysBCFunct.html#ab3ec985809c2d3e49c2d797994968ab5',1,'ROMSXPhysBCFunct']]],
-  ['m_5flev_951',['m_lev',['../classROMSXPhysBCFunct.html#a9fdfe99760d66b9d8acd10f49ed561d7',1,'ROMSXPhysBCFunct']]],
-  ['m_5fowns_5fdata_952',['m_owns_data',['../structTimeInterpolatedData.html#a6eeb9167e2d8051c16fdbb1e7fee54ed',1,'TimeInterpolatedData']]],
-  ['m_5ftime_953',['m_time',['../structTimeInterpolatedData.html#a9b0102facc1d00011f48f95132955e27',1,'TimeInterpolatedData']]],
-  ['m_5fvar_5fidx_954',['m_var_idx',['../classROMSXPhysBCFunct.html#ada83101caf53a77a07c5455c294e515d',1,'ROMSXPhysBCFunct']]],
-  ['mapfac_5fm_955',['mapfac_m',['../classROMSX.html#a606d7f526ef409ef78feb8ce127f98c9',1,'ROMSX']]],
-  ['mapfac_5fu_956',['mapfac_u',['../classROMSX.html#a865698971c9689455573c4b81ecaf26c',1,'ROMSX']]],
-  ['mapfac_5fv_957',['mapfac_v',['../classROMSX.html#ad96e947b76f50a01928821d3cd2455f7',1,'ROMSX']]],
-  ['max_5fstep_958',['max_step',['../classROMSX.html#ad895c0936e0bd64ca71ec355e5e164b6',1,'ROMSX']]],
-  ['molec_5fdiff_5ftype_959',['molec_diff_type',['../structSolverChoice.html#a8d16d654d2a02cec62427b38498c2462',1,'SolverChoice']]]
+  ['name_919',['name',['../structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09',1,'NDArray']]],
+  ['nc_5fbdy_5ffile_920',['nc_bdy_file',['../classROMSX.html#a067945622be8aeb2bd7a812ae222b031',1,'ROMSX']]],
+  ['nc_5finit_5ffile_921',['nc_init_file',['../classROMSX.html#a735045f231ea51402d057488fe972227',1,'ROMSX']]],
+  ['ncid_922',['ncid',['../structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544',1,'ncutils::NCDim::ncid()'],['../structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218',1,'ncutils::NCVar::ncid()'],['../classncutils_1_1NCGroup.html#a860fe8aaf1cd7859541c67594fb8eabd',1,'ncutils::NCGroup::ncid()']]],
+  ['nfast_923',['nfast',['../classROMSX.html#ac248f5de275736769f83c3e6bfc6b550',1,'ROMSX']]],
+  ['non_5fowning_924',['non_owning',['../structTimeInterpolatedData.html#a39ab53c6a67f3b87c895483a89e2fc0f',1,'TimeInterpolatedData']]],
+  ['nsubsteps_925',['nsubsteps',['../classROMSX.html#ab02aa1c49bf90239a6bce4ca84da985d',1,'ROMSX']]],
+  ['null_5fbc_926',['null_bc',['../ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc',1,'ROMSX_FillPatch.cpp']]],
+  ['num_5fboxes_5fat_5flevel_927',['num_boxes_at_level',['../classROMSX.html#a2b67bb92b64c187e9869d8f8726e4e42',1,'ROMSX']]],
+  ['num_5ffiles_5fat_5flevel_928',['num_files_at_level',['../classROMSX.html#adb84a2eea3c51e9954981176e98341c3',1,'ROMSX']]]
 ];

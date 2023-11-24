@@ -12,13 +12,12 @@ var searchData=
   ['advectiondir_9',['AdvectionDir',['../DataStruct_8H.html#a5943cc9db33abe98a5e07cd2b4387f53',1,'DataStruct.H']]],
   ['advectionscheme_10',['AdvectionScheme',['../DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212c',1,'DataStruct.H']]],
   ['advectwithumac_11',['AdvectWithUmac',['../classTracerPC.html#ad410894fbf658dea3321338e1573c896',1,'TracerPC']]],
-  ['all_12',['all',['../namespaceRHSVar.html#a1c3cb7f133158e90d955c9b49f16f0b9a663b433383c61be43231a25243ec832d',1,'RHSVar::all()'],['../namespaceTerrainMet.html#a87cd31196a44457df0a6b17acb778e65a55241740af286ead1d5a89a646688467',1,'TerrainMet::all()']]],
-  ['all_5fdims_13',['all_dims',['../classncutils_1_1NCGroup.html#a8e01fe072fa48f4fa9c8be33a3a401b0',1,'ncutils::NCGroup']]],
-  ['all_5fgroups_14',['all_groups',['../classncutils_1_1NCGroup.html#a82a48643f27b33b27cdd87c60e63f5f5',1,'ncutils::NCGroup']]],
-  ['all_5fvars_15',['all_vars',['../classncutils_1_1NCGroup.html#affa2e62434110dd4fa47d093162e56cf',1,'ncutils::NCGroup']]],
-  ['alpha_5fc_16',['alpha_C',['../structSolverChoice.html#a404f875b4796e931ef346bc11b6c7dcb',1,'SolverChoice']]],
-  ['alpha_5ft_17',['alpha_T',['../structSolverChoice.html#a2b9c77c4a08b52f5519b452f6ed3a4cc',1,'SolverChoice']]],
-  ['amrex_5fprobinit_18',['amrex_probinit',['../prob__common_8H.html#afef32e2116829d24b864c64caebf5ea6',1,'prob_common.H']]],
-  ['averagedown_19',['AverageDown',['../classROMSX.html#a5a73ffdd93eed4bef7f0d3c6bdac0e6e',1,'ROMSX']]],
-  ['averagedownto_20',['AverageDownTo',['../classROMSX.html#a243ea260c190601764cb8b6368d18615',1,'ROMSX']]]
+  ['advflux_5freg_12',['advflux_reg',['../classROMSX.html#afc5b78f8bc38863080c02301dba5377f',1,'ROMSX']]],
+  ['all_13',['all',['../namespaceRHSVar.html#a1c3cb7f133158e90d955c9b49f16f0b9a663b433383c61be43231a25243ec832d',1,'RHSVar::all()'],['../namespaceTerrainMet.html#a87cd31196a44457df0a6b17acb778e65a55241740af286ead1d5a89a646688467',1,'TerrainMet::all()']]],
+  ['all_5fdims_14',['all_dims',['../classncutils_1_1NCGroup.html#a8e01fe072fa48f4fa9c8be33a3a401b0',1,'ncutils::NCGroup']]],
+  ['all_5fgroups_15',['all_groups',['../classncutils_1_1NCGroup.html#a82a48643f27b33b27cdd87c60e63f5f5',1,'ncutils::NCGroup']]],
+  ['all_5fvars_16',['all_vars',['../classncutils_1_1NCGroup.html#affa2e62434110dd4fa47d093162e56cf',1,'ncutils::NCGroup']]],
+  ['amrex_5fprobinit_17',['amrex_probinit',['../prob__common_8H.html#afef32e2116829d24b864c64caebf5ea6',1,'prob_common.H']]],
+  ['averagedown_18',['AverageDown',['../classROMSX.html#a5a73ffdd93eed4bef7f0d3c6bdac0e6e',1,'ROMSX']]],
+  ['averagedownto_19',['AverageDownTo',['../classROMSX.html#a243ea260c190601764cb8b6368d18615',1,'ROMSX']]]
 ];
