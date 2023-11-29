@@ -186,10 +186,16 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   <span class="comment">// (rather than the amrex default of 1).</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   pp.add(<span class="stringliteral">&quot;n_proper&quot;</span>,2);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;   pp.add(<span class="stringliteral">&quot;max_grid_size&quot;</span>,2048);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   pp.add(<span class="stringliteral">&quot;blocking_factor&quot;</span>,1);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;   pp.add(<span class="stringliteral">&quot;n_error_buf&quot;</span>,0);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;   <span class="keywordtype">int</span> max_grid_size = 2048;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   pp.queryAdd(<span class="stringliteral">&quot;max_grid_size&quot;</span>,max_grid_size);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;   <span class="comment">// This will set the default value of blocking_factor to be 1, but will allow</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   <span class="comment">//     the user to override it in the inputs file or on command line</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;   <span class="keywordtype">int</span> blocking_factor = 1;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;   pp.queryAdd(<span class="stringliteral">&quot;blocking_factor&quot;</span>,blocking_factor);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   pp.add(<span class="stringliteral">&quot;n_error_buf&quot;</span>,0);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
 <div class="dynheader">
@@ -229,55 +235,55 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// Check to see if the command line contains --describe</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (argc &gt;= 2) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 1; i &lt; argc; i++) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span> (std::string(argv[i]) == <span class="stringliteral">&quot;--describe&quot;</span>) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="classROMSX.html#a08b14a766ed31e1f6a9ccec0c7f64618">ROMSX::writeBuildInfo</a>(std::cout);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    amrex::Initialize(argc,argv,<span class="keyword">true</span>,MPI_COMM_WORLD,<a class="code" href="main_8cpp.html#a183e783116d02836167ccbed3b28c1d3">add_par</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Save the inputs file name for later.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (!strchr(argv[1], <span class="charliteral">&#39;=&#39;</span>)) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <a class="code" href="main_8cpp.html#aabaa127a3a319c1b86090d6c88568965">inputs_name</a> = argv[1];</div>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Check to see if the command line contains --describe</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (argc &gt;= 2) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 1; i &lt; argc; i++) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span> (std::string(argv[i]) == <span class="stringliteral">&quot;--describe&quot;</span>) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <a class="code" href="classROMSX.html#a08b14a766ed31e1f6a9ccec0c7f64618">ROMSX::writeBuildInfo</a>(std::cout);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// timer for profiling</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    BL_PROFILE_VAR(<span class="stringliteral">&quot;main()&quot;</span>, pmain);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// wallclock time</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> strt_total = amrex::second();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    amrex::Initialize(argc,argv,<span class="keyword">true</span>,MPI_COMM_WORLD,<a class="code" href="main_8cpp.html#a183e783116d02836167ccbed3b28c1d3">add_par</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Save the inputs file name for later.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (!strchr(argv[1], <span class="charliteral">&#39;=&#39;</span>)) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="main_8cpp.html#aabaa127a3a319c1b86090d6c88568965">inputs_name</a> = argv[1];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// constructor - reads in parameters from inputs file</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">//             - sizes multilevel arrays and data structures</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classROMSX.html">ROMSX</a> romsx;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">// initialize AMR data</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        romsx.<a class="code" href="classROMSX.html#a93658365b6d73248b584d7952b75a899">InitData</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// advance solution to final time</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        romsx.<a class="code" href="classROMSX.html#a2491883c8e50f6734a2c474d65817824">Evolve</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// timer for profiling</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    BL_PROFILE_VAR(<span class="stringliteral">&quot;main()&quot;</span>, pmain);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// wallclock time</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> strt_total = amrex::second();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// constructor - reads in parameters from inputs file</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">//             - sizes multilevel arrays and data structures</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classROMSX.html">ROMSX</a> romsx;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// wallclock time</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> end_total = amrex::second() - strt_total;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// initialize AMR data</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        romsx.<a class="code" href="classROMSX.html#a93658365b6d73248b584d7952b75a899">InitData</a>();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// print wallclock time</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        ParallelDescriptor::ReduceRealMax(end_total ,ParallelDescriptor::IOProcessorNumber());</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span> (romsx.Verbose()) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;\nTotal Time: &quot;</span> &lt;&lt; end_total &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// destroy timer for profiling</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    BL_PROFILE_VAR_STOP(pmain);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    amrex::Finalize();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// advance solution to final time</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        romsx.<a class="code" href="classROMSX.html#a2491883c8e50f6734a2c474d65817824">Evolve</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment">// wallclock time</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> end_total = amrex::second() - strt_total;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">// print wallclock time</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        ParallelDescriptor::ReduceRealMax(end_total ,ParallelDescriptor::IOProcessorNumber());</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">if</span> (romsx.Verbose()) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;\nTotal Time: &quot;</span> &lt;&lt; end_total &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// destroy timer for profiling</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    BL_PROFILE_VAR_STOP(pmain);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    amrex::Finalize();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 <div class="ttc" id="aDataStruct_8H_html_aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1"><div class="ttname"><a href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">IC_BC_Type::Real</a></div><div class="ttdeci">@ Real</div></div>
 <div class="ttc" id="aclassROMSX_html"><div class="ttname"><a href="classROMSX.html">ROMSX</a></div><div class="ttdef"><b>Definition:</b> ROMSX.H:69</div></div>
 <div class="ttc" id="aclassROMSX_html_a08b14a766ed31e1f6a9ccec0c7f64618"><div class="ttname"><a href="classROMSX.html#a08b14a766ed31e1f6a9ccec0c7f64618">ROMSX::writeBuildInfo</a></div><div class="ttdeci">static void writeBuildInfo(std::ostream &amp;os)</div><div class="ttdef"><b>Definition:</b> writeJobInfo.cpp:135</div></div>
