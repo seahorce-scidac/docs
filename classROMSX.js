@@ -108,6 +108,7 @@ var classROMSX =
     [ "datalog", "classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4", null ],
     [ "datalogname", "classROMSX.html#ae308f7068f2eb8e48913fc77d32f9065", null ],
     [ "derived_names", "classROMSX.html#ab221b060f02f422f90d511e71b5c13d6", null ],
+    [ "do_substep", "classROMSX.html#a116ad0a8fa0753367f3458e5744c8e8e", null ],
     [ "domain_bc_type", "classROMSX.html#a3ebadda9dbf9fbf5fd040bb1df0f18c3", null ],
     [ "domain_bcs_type", "classROMSX.html#a003d617559e7196bba737b43e23f9fc4", null ],
     [ "domain_bcs_type_d", "classROMSX.html#a04e9242a2702910e640d84f47a7aae3c", null ],

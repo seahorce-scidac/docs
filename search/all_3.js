@@ -23,9 +23,10 @@ var searchData=
   ['dim_96',['dim',['../classncutils_1_1NCGroup.html#addc8bbac9a2cfa8d9c49497b7da0310f',1,'ncutils::NCGroup']]],
   ['dimid_97',['dimid',['../structncutils_1_1NCDim.html#a1c5560c95be35dbcedaf1390972175f8',1,'ncutils::NCDim']]],
   ['display_98',['display',['../structSolverChoice.html#abb95d84167308078ce369b4196ef979c',1,'SolverChoice']]],
-  ['domain_5fbc_5ftype_99',['domain_bc_type',['../classROMSX.html#a3ebadda9dbf9fbf5fd040bb1df0f18c3',1,'ROMSX']]],
-  ['domain_5fbcs_5ftype_100',['domain_bcs_type',['../classROMSX.html#a003d617559e7196bba737b43e23f9fc4',1,'ROMSX']]],
-  ['domain_5fbcs_5ftype_5fd_101',['domain_bcs_type_d',['../classROMSX.html#a04e9242a2702910e640d84f47a7aae3c',1,'ROMSX']]],
-  ['dt_102',['dt',['../classROMSX.html#aa8a469941edd719ce7c6052afc30d067',1,'ROMSX']]],
-  ['dtype_103',['DType',['../structNDArray.html#a96033b69f69ea0ae537a24288715752d',1,'NDArray']]]
+  ['do_5fsubstep_99',['do_substep',['../classROMSX.html#a116ad0a8fa0753367f3458e5744c8e8e',1,'ROMSX']]],
+  ['domain_5fbc_5ftype_100',['domain_bc_type',['../classROMSX.html#a3ebadda9dbf9fbf5fd040bb1df0f18c3',1,'ROMSX']]],
+  ['domain_5fbcs_5ftype_101',['domain_bcs_type',['../classROMSX.html#a003d617559e7196bba737b43e23f9fc4',1,'ROMSX']]],
+  ['domain_5fbcs_5ftype_5fd_102',['domain_bcs_type_d',['../classROMSX.html#a04e9242a2702910e640d84f47a7aae3c',1,'ROMSX']]],
+  ['dt_103',['dt',['../classROMSX.html#aa8a469941edd719ce7c6052afc30d067',1,'ROMSX']]],
+  ['dtype_104',['DType',['../structNDArray.html#a96033b69f69ea0ae537a24288715752d',1,'NDArray']]]
 ];
