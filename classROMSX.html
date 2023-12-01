@@ -1082,7 +1082,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    MultiFab mf_DUon(ba,dm,1,IntVect(<a class="code" href="IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>+1,<a class="code" href="IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>+1,0));</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    MultiFab mf_DVom(ba,dm,1,IntVect(<a class="code" href="IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>+1,<a class="code" href="IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>+1,0));</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">for</span> ( MFIter mfi(*mf_ru, TilingIfNotGPU()); mfi.isValid(); ++mfi )</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">for</span> ( MFIter mfi(*mf_rhoS, TilingIfNotGPU()); mfi.isValid(); ++mfi )</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a> = (mf_u).array(mfi);</div>
@@ -1298,7 +1298,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    mf_DVom.FillBoundary(geom[lev].periodicity());</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">for</span> ( MFIter mfi(*mf_ru, TilingIfNotGPU()); mfi.isValid(); ++mfi )</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">for</span> ( MFIter mfi(*mf_rhoS, TilingIfNotGPU()); mfi.isValid(); ++mfi )</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    {</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; <a class="code" href="DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4a7b774effe4a349c6dd82ad4f4f21d34c">u</a> = (mf_u).array(mfi);</div>
