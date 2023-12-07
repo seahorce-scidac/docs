@@ -60,7 +60,7 @@ var classROMSX =
     [ "rho_eos", "classROMSX.html#af05997945f183a417b7fc334fd3e6f39", null ],
     [ "rhs_2d", "classROMSX.html#a68aaf031ceac86e43c40b41a5f7354f4", null ],
     [ "rhs_t_3d", "classROMSX.html#aaf9f32897499d17bad9d80230331db6a", null ],
-    [ "rhs_uv_3d", "classROMSX.html#a4dbaef1f63bd022dcbf9040e0019694a", null ],
+    [ "rhs_uv_3d", "classROMSX.html#a383351010df001682415bf701c47cbe8", null ],
     [ "romsx_advance", "classROMSX.html#ad462a3ade367c29008f7e42e4063410e", null ],
     [ "set_2darrays", "classROMSX.html#abd0ef9b9a56b5f6985a0903895d81e46", null ],
     [ "set_bathymetry", "classROMSX.html#ab93d802ac3111e738dafe04367813135", null ],
