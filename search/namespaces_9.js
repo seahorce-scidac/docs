@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vars_617',['Vars',['../namespaceVars.html',1,'']]]
+  ['wrfbdytypes_616',['WRFBdyTypes',['../namespaceWRFBdyTypes.html',1,'']]],
+  ['wrfbdyvars_617',['WRFBdyVars',['../namespaceWRFBdyVars.html',1,'']]]
 ];

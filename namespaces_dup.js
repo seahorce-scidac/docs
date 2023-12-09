@@ -27,7 +27,6 @@ var namespaces_dup =
       ] ]
     ] ],
     [ "TerrainMet", "namespaceTerrainMet.html", null ],
-    [ "Vars", "namespaceVars.html", null ],
     [ "WRFBdyTypes", "namespaceWRFBdyTypes.html", null ],
     [ "WRFBdyVars", "namespaceWRFBdyVars.html", null ]
 ];

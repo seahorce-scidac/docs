@@ -118,8 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5d4b5e8f7864197f5ad9de1fd27de1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d79f8a94c1091d4d2e98ac7b2aad9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f">Restart</a> (amrex::ParGDBBase *a_gdb, std::string &amp;restart_file)</td></tr>
 <tr class="separator:a01d79f8a94c1091d4d2e98ac7b2aad9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b21ad361d3d2140f857cf593eeaa06a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParticleData.html#a1b21ad361d3d2140f857cf593eeaa06a">advance_particles</a> (int lev, amrex::Real dt_lev, amrex::Vector&lt; amrex::Vector&lt; amrex::MultiFab &gt;&gt; &amp;vars_new, const amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt;&gt; &amp;z_phys_nd)</td></tr>
-<tr class="separator:a1b21ad361d3d2140f857cf593eeaa06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b394c70413faee1fd8905a1c7e844f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParticleData.html#a8b394c70413faee1fd8905a1c7e844f2">advance_particles</a> (int lev, amrex::Real dt_lev, amrex::Vector&lt; amrex::Vector&lt; amrex::MultiFab &gt;&gt; &amp;vel_new, const amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt;&gt; &amp;z_phys_nd)</td></tr>
+<tr class="separator:a8b394c70413faee1fd8905a1c7e844f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c0e8c4ee784e488c4469abf41bf5433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute</a> ()</td></tr>
 <tr class="separator:a0c0e8c4ee784e488c4469abf41bf5433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -137,8 +137,8 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container holding many of the particle-related data and options </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1b21ad361d3d2140f857cf593eeaa06a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b21ad361d3d2140f857cf593eeaa06a">&#9670;&nbsp;</a></span>advance_particles()</h2>
+<a id="a8b394c70413faee1fd8905a1c7e844f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b394c70413faee1fd8905a1c7e844f2">&#9670;&nbsp;</a></span>advance_particles()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +162,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">amrex::Vector&lt; amrex::Vector&lt; amrex::MultiFab &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>vars_new</em>, </td>
+          <td class="paramname"><em>vel_new</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -182,22 +182,21 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// Update tracer particles</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structParticleData.html#aef22181bb9da832f4ae87d32fa4572e1">use_tracer_particles</a>) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            amrex::MultiFab* mac_vel = &amp;vars_new[lev][<a class="code" href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a2a10a6e726515894b07621908abd4c0c">Vars::xvel</a>];</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">bool</span> use_terrain = (z_phys_nd[lev] != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">if</span> (use_terrain) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <a class="code" href="structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc">tracer_particles</a>-&gt;AdvectWithUmac(mac_vel, lev, dt_lev, use_terrain, *z_phys_nd[lev]);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                amrex::MultiFab dummy;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <a class="code" href="structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc">tracer_particles</a>-&gt;AdvectWithUmac(mac_vel, lev, dt_lev, use_terrain, dummy);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="ttc" id="anamespaceVars_html_a4d83f9f2eeb1164765959831280edce3a2a10a6e726515894b07621908abd4c0c"><div class="ttname"><a href="namespaceVars.html#a4d83f9f2eeb1164765959831280edce3a2a10a6e726515894b07621908abd4c0c">Vars::xvel</a></div><div class="ttdeci">@ xvel</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:72</div></div>
-<div class="ttc" id="astructParticleData_html_aef22181bb9da832f4ae87d32fa4572e1"><div class="ttname"><a href="structParticleData.html#aef22181bb9da832f4ae87d32fa4572e1">ParticleData::use_tracer_particles</a></div><div class="ttdeci">int use_tracer_particles</div><div class="ttdef"><b>Definition:</b> ParticleData.H:87</div></div>
-<div class="ttc" id="astructParticleData_html_af0a74cde6ad8dfa3908229f947a1bdbc"><div class="ttname"><a href="structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc">ParticleData::tracer_particles</a></div><div class="ttdeci">std::unique_ptr&lt; TracerPC &gt; tracer_particles</div><div class="ttdef"><b>Definition:</b> ParticleData.H:88</div></div>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// Update tracer particles</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structParticleData.html#aef22181bb9da832f4ae87d32fa4572e1">use_tracer_particles</a>) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            amrex::MultiFab* mac_vel = {&amp;xvel_new[lev], &amp;yvel_new[lev], &amp;zvel_new[lev]};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">bool</span> use_terrain = (z_phys_nd[lev] != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">if</span> (use_terrain) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc">tracer_particles</a>-&gt;AdvectWithUmac(mac_vel, lev, dt_lev, use_terrain, *z_phys_nd[lev]);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                amrex::MultiFab dummy;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <a class="code" href="structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc">tracer_particles</a>-&gt;AdvectWithUmac(mac_vel, lev, dt_lev, use_terrain, dummy);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="ttc" id="astructParticleData_html_aef22181bb9da832f4ae87d32fa4572e1"><div class="ttname"><a href="structParticleData.html#aef22181bb9da832f4ae87d32fa4572e1">ParticleData::use_tracer_particles</a></div><div class="ttdeci">int use_tracer_particles</div><div class="ttdef"><b>Definition:</b> ParticleData.H:88</div></div>
+<div class="ttc" id="astructParticleData_html_af0a74cde6ad8dfa3908229f947a1bdbc"><div class="ttname"><a href="structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc">ParticleData::tracer_particles</a></div><div class="ttdeci">std::unique_ptr&lt; TracerPC &gt; tracer_particles</div><div class="ttdef"><b>Definition:</b> ParticleData.H:89</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -229,7 +228,7 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc">tracer_particles</a>-&gt;Checkpoint(filename, <span class="stringliteral">&quot;tracer_particles&quot;</span>, <span class="keyword">true</span>, <a class="code" href="structParticleData.html#a9fc8840f6c644da7378157c793844cd8">tracer_particle_varnames</a>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="ttc" id="astructParticleData_html_a9fc8840f6c644da7378157c793844cd8"><div class="ttname"><a href="structParticleData.html#a9fc8840f6c644da7378157c793844cd8">ParticleData::tracer_particle_varnames</a></div><div class="ttdeci">amrex::Vector&lt; std::string &gt; tracer_particle_varnames</div><div class="ttdef"><b>Definition:</b> ParticleData.H:89</div></div>
+<div class="ttc" id="astructParticleData_html_a9fc8840f6c644da7378157c793844cd8"><div class="ttname"><a href="structParticleData.html#a9fc8840f6c644da7378157c793844cd8">ParticleData::tracer_particle_varnames</a></div><div class="ttdeci">amrex::Vector&lt; std::string &gt; tracer_particle_varnames</div><div class="ttdef"><b>Definition:</b> ParticleData.H:90</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -261,7 +260,7 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="structParticleData.html#aef22181bb9da832f4ae87d32fa4572e1">use_tracer_particles</a> = 0;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        pp.query(<span class="stringliteral">&quot;use_tracer_particles&quot;</span>, <a class="code" href="structParticleData.html#aef22181bb9da832f4ae87d32fa4572e1">use_tracer_particles</a>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="ttc" id="astructParticleData_html_aaa083f35f56a9163a011d8ae9a5adf6d"><div class="ttname"><a href="structParticleData.html#aaa083f35f56a9163a011d8ae9a5adf6d">ParticleData::pp_prefix</a></div><div class="ttdeci">std::string pp_prefix</div><div class="ttdef"><b>Definition:</b> ParticleData.H:85</div></div>
+<div class="ttc" id="astructParticleData_html_aaa083f35f56a9163a011d8ae9a5adf6d"><div class="ttname"><a href="structParticleData.html#aaa083f35f56a9163a011d8ae9a5adf6d">ParticleData::pp_prefix</a></div><div class="ttdeci">std::string pp_prefix</div><div class="ttdef"><b>Definition:</b> ParticleData.H:86</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -336,11 +335,11 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structParticleData.html#aef22181bb9da832f4ae87d32fa4572e1">use_tracer_particles</a>) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc">tracer_particles</a>-&gt;Redistribute();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structParticleData.html#aef22181bb9da832f4ae87d32fa4572e1">use_tracer_particles</a>) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc">tracer_particles</a>-&gt;Redistribute();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -433,7 +432,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="structParticleData.html#a1b21ad361d3d2140f857cf593eeaa06a">advance_particles()</a>, <a class="el" href="structParticleData.html#a5d4b5e8f7864197f5ad9de1fd27de1aa">Checkpoint()</a>, <a class="el" href="structParticleData.html#ab8cad6915b715e930b1d8748f309269c">init_particles()</a>, <a class="el" href="structParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute()</a>, and <a class="el" href="structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f">Restart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="structParticleData.html#a8b394c70413faee1fd8905a1c7e844f2">advance_particles()</a>, <a class="el" href="structParticleData.html#a5d4b5e8f7864197f5ad9de1fd27de1aa">Checkpoint()</a>, <a class="el" href="structParticleData.html#ab8cad6915b715e930b1d8748f309269c">init_particles()</a>, <a class="el" href="structParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute()</a>, and <a class="el" href="structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f">Restart()</a>.</p>
 
 </div>
 </div>
@@ -449,7 +448,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="structParticleData.html#a1b21ad361d3d2140f857cf593eeaa06a">advance_particles()</a>, <a class="el" href="structParticleData.html#a5d4b5e8f7864197f5ad9de1fd27de1aa">Checkpoint()</a>, <a class="el" href="structParticleData.html#acc757d72fcca062226ad8810ffcbd128">init_particle_params()</a>, <a class="el" href="structParticleData.html#ab8cad6915b715e930b1d8748f309269c">init_particles()</a>, <a class="el" href="structParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute()</a>, and <a class="el" href="structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f">Restart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="structParticleData.html#a8b394c70413faee1fd8905a1c7e844f2">advance_particles()</a>, <a class="el" href="structParticleData.html#a5d4b5e8f7864197f5ad9de1fd27de1aa">Checkpoint()</a>, <a class="el" href="structParticleData.html#acc757d72fcca062226ad8810ffcbd128">init_particle_params()</a>, <a class="el" href="structParticleData.html#ab8cad6915b715e930b1d8748f309269c">init_particles()</a>, <a class="el" href="structParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute()</a>, and <a class="el" href="structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f">Restart()</a>.</p>
 
 </div>
 </div>
