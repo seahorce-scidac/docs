@@ -35,7 +35,7 @@ var searchData=
   ['constantalpha_69',['ConstantAlpha',['../DataStruct_8H.html#a84e6bfbbb8e490790c506939b364f735a6f0229db491c3b01860363456dc57288',1,'DataStruct.H']]],
   ['containerhaselement_70',['containerHasElement',['../ROMSX_8H.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'ROMSX.H']]],
   ['coord_71',['Coord',['../DataStruct_8H.html#a627f1f843904477f763577ad1460de01',1,'DataStruct.H']]],
-  ['coriolis_72',['coriolis',['../classROMSX.html#a38eb43b738a979fd1048253da2727095',1,'ROMSX']]],
+  ['coriolis_72',['coriolis',['../classROMSX.html#afa92192721003020501bef87d5f4a667',1,'ROMSX']]],
   ['coriolis_5ffactor_73',['coriolis_factor',['../structSolverChoice.html#a1163778ed56af6977001ef4ec55a3da3',1,'SolverChoice']]],
   ['cosphi_74',['cosphi',['../structSolverChoice.html#a411fbfea721cd40033e113cf54a8047f',1,'SolverChoice']]],
   ['coupling_5ftype_75',['coupling_type',['../structSolverChoice.html#af976afa61859c07e6249963edc367c2d',1,'SolverChoice']]],
