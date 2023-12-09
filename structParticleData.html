@@ -118,8 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5d4b5e8f7864197f5ad9de1fd27de1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d79f8a94c1091d4d2e98ac7b2aad9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f">Restart</a> (amrex::ParGDBBase *a_gdb, std::string &amp;restart_file)</td></tr>
 <tr class="separator:a01d79f8a94c1091d4d2e98ac7b2aad9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b394c70413faee1fd8905a1c7e844f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParticleData.html#a8b394c70413faee1fd8905a1c7e844f2">advance_particles</a> (int lev, amrex::Real dt_lev, amrex::Vector&lt; amrex::Vector&lt; amrex::MultiFab &gt;&gt; &amp;vel_new, const amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt;&gt; &amp;z_phys_nd)</td></tr>
-<tr class="separator:a8b394c70413faee1fd8905a1c7e844f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c78c674ffb71b5a894fa94f55d23ac8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParticleData.html#a2c78c674ffb71b5a894fa94f55d23ac8">advance_particles</a> (int lev, amrex::Real dt_lev, amrex::MultiFab *xvel, amrex::MultiFab *yvel, amrex::MultiFab *zvel, const amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt;&gt; &amp;z_phys_nd)</td></tr>
+<tr class="separator:a2c78c674ffb71b5a894fa94f55d23ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c0e8c4ee784e488c4469abf41bf5433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute</a> ()</td></tr>
 <tr class="separator:a0c0e8c4ee784e488c4469abf41bf5433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -137,8 +137,8 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container holding many of the particle-related data and options </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8b394c70413faee1fd8905a1c7e844f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b394c70413faee1fd8905a1c7e844f2">&#9670;&nbsp;</a></span>advance_particles()</h2>
+<a id="a2c78c674ffb71b5a894fa94f55d23ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c78c674ffb71b5a894fa94f55d23ac8">&#9670;&nbsp;</a></span>advance_particles()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,8 +161,20 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">amrex::Vector&lt; amrex::Vector&lt; amrex::MultiFab &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>vel_new</em>, </td>
+          <td class="paramtype">amrex::MultiFab *&#160;</td>
+          <td class="paramname"><em>xvel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab *&#160;</td>
+          <td class="paramname"><em>yvel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab *&#160;</td>
+          <td class="paramname"><em>zvel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -185,7 +197,7 @@ Public Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// Update tracer particles</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structParticleData.html#aef22181bb9da832f4ae87d32fa4572e1">use_tracer_particles</a>) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            amrex::MultiFab* mac_vel = {&amp;xvel_new[lev], &amp;yvel_new[lev], &amp;zvel_new[lev]};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            amrex::Array&lt;amrex::MultiFab const*, AMREX_SPACEDIM&gt; mac_vel = {xvel, yvel, zvel};</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">bool</span> use_terrain = (z_phys_nd[lev] != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">if</span> (use_terrain) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc">tracer_particles</a>-&gt;AdvectWithUmac(mac_vel, lev, dt_lev, use_terrain, *z_phys_nd[lev]);</div>
@@ -432,7 +444,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="structParticleData.html#a8b394c70413faee1fd8905a1c7e844f2">advance_particles()</a>, <a class="el" href="structParticleData.html#a5d4b5e8f7864197f5ad9de1fd27de1aa">Checkpoint()</a>, <a class="el" href="structParticleData.html#ab8cad6915b715e930b1d8748f309269c">init_particles()</a>, <a class="el" href="structParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute()</a>, and <a class="el" href="structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f">Restart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="structParticleData.html#a2c78c674ffb71b5a894fa94f55d23ac8">advance_particles()</a>, <a class="el" href="structParticleData.html#a5d4b5e8f7864197f5ad9de1fd27de1aa">Checkpoint()</a>, <a class="el" href="structParticleData.html#ab8cad6915b715e930b1d8748f309269c">init_particles()</a>, <a class="el" href="structParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute()</a>, and <a class="el" href="structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f">Restart()</a>.</p>
 
 </div>
 </div>
@@ -448,7 +460,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="structParticleData.html#a8b394c70413faee1fd8905a1c7e844f2">advance_particles()</a>, <a class="el" href="structParticleData.html#a5d4b5e8f7864197f5ad9de1fd27de1aa">Checkpoint()</a>, <a class="el" href="structParticleData.html#acc757d72fcca062226ad8810ffcbd128">init_particle_params()</a>, <a class="el" href="structParticleData.html#ab8cad6915b715e930b1d8748f309269c">init_particles()</a>, <a class="el" href="structParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute()</a>, and <a class="el" href="structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f">Restart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="structParticleData.html#a2c78c674ffb71b5a894fa94f55d23ac8">advance_particles()</a>, <a class="el" href="structParticleData.html#a5d4b5e8f7864197f5ad9de1fd27de1aa">Checkpoint()</a>, <a class="el" href="structParticleData.html#acc757d72fcca062226ad8810ffcbd128">init_particle_params()</a>, <a class="el" href="structParticleData.html#ab8cad6915b715e930b1d8748f309269c">init_particles()</a>, <a class="el" href="structParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute()</a>, and <a class="el" href="structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f">Restart()</a>.</p>
 
 </div>
 </div>
