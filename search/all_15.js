@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['w_554',['w',['../DataStruct_8H.html#a07130f00a795700d6b2b83f773b807b4af1290186a5d0b1ceab27f4e77c0c5d68',1,'DataStruct.H']]],
-  ['wrfbdytypes_555',['WRFBdyTypes',['../namespaceWRFBdyTypes.html',1,'']]],
-  ['wrfbdyvars_556',['WRFBdyVars',['../namespaceWRFBdyVars.html',1,'']]],
-  ['writebuildinfo_557',['writeBuildInfo',['../classROMSX.html#a08b14a766ed31e1f6a9ccec0c7f64618',1,'ROMSX']]],
-  ['writecheckpointfile_558',['WriteCheckpointFile',['../classROMSX.html#acc4b85fa57f43aa0f68f33c4edd82611',1,'ROMSX']]],
-  ['writegenericplotfileheaderwithterrain_559',['WriteGenericPlotfileHeaderWithTerrain',['../classROMSX.html#a3e9e85fac319ffadf256b8832e16d998',1,'ROMSX']]],
-  ['writejobinfo_560',['writeJobInfo',['../classROMSX.html#ae886b3856fed4fa4d820c5dda7effb7c',1,'ROMSX']]],
-  ['writejobinfo_2ecpp_561',['writeJobInfo.cpp',['../writeJobInfo_8cpp.html',1,'']]],
-  ['writemultilevelplotfilewithterrain_562',['WriteMultiLevelPlotfileWithTerrain',['../classROMSX.html#a90513a04a1af8d87b94d246bb53df455',1,'ROMSX']]],
-  ['writeplotfile_563',['WritePlotFile',['../classROMSX.html#a0049697ad0398380ac5a058705fece48',1,'ROMSX']]]
+  ['x_508',['x',['../DataStruct_8H.html#a627f1f843904477f763577ad1460de01a9dd4e461268c8034f5c8564e155c67a6',1,'x():&#160;DataStruct.H'],['../DataStruct_8H.html#a5943cc9db33abe98a5e07cd2b4387f53a9dd4e461268c8034f5c8564e155c67a6',1,'x():&#160;DataStruct.H']]],
+  ['x_5fhi_509',['x_hi',['../namespaceWRFBdyTypes.html#a6a7608ba7d1c7672998371de505c7a3aa2fb939041519d2066c720539d0ee4107',1,'WRFBdyTypes']]],
+  ['x_5flo_510',['x_lo',['../namespaceWRFBdyTypes.html#a6a7608ba7d1c7672998371de505c7a3aa34b5dbdab94034026b166bad509f7ca7',1,'WRFBdyTypes']]],
+  ['xvel_5fbc_511',['xvel_bc',['../namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073ab1782753c68aaad8632b0a7d575e57f4',1,'BCVars']]],
+  ['xvel_5fnew_512',['xvel_new',['../classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2',1,'ROMSX']]],
+  ['xvel_5fold_513',['xvel_old',['../classROMSX.html#af0b5074dc426b753beb5511bd63df407',1,'ROMSX']]]
 ];

@@ -3,17 +3,10 @@ var namespaces_dup =
     [ "BCVars", "namespaceBCVars.html", null ],
     [ "Cons", "namespaceCons.html", null ],
     [ "derived", "namespacederived.html", [
-      [ "romsx_dernull", "namespacederived.html#af28239f0827a8e4bc3ed2e559c0f0019", null ],
-      [ "romsx_deromega", "namespacederived.html#a5aa890bce14ad85074289d3995298ad6", null ],
-      [ "romsx_derrhodivide", "namespacederived.html#a835a4327c571aa4e7dfc691c2fe2534c", null ],
-      [ "romsx_derscalar", "namespacederived.html#a06b4d2561aa74412efdf6306e2aed1da", null ]
+      [ "romsx_dernull", "namespacederived.html#af28239f0827a8e4bc3ed2e559c0f0019", null ]
     ] ],
-    [ "EddyDiff", "namespaceEddyDiff.html", null ],
     [ "InterpType", "namespaceInterpType.html", null ],
-    [ "IntVar", "namespaceIntVar.html", null ],
     [ "ncutils", "namespacencutils.html", "namespacencutils" ],
-    [ "Prim", "namespacePrim.html", null ],
-    [ "RHSVar", "namespaceRHSVar.html", null ],
     [ "ROMSXBCType", "namespaceROMSXBCType.html", [
       [ "mathematicalBndryTypes", "namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81e", [
         [ "bogus", "namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea93f98432d1c975c4a1d2da8a3cd41141", null ],
@@ -26,7 +19,6 @@ var namespaces_dup =
         [ "ext_dir_ingested", "namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea5ea0bb01d58de7e004c4058df06c0902", null ]
       ] ]
     ] ],
-    [ "TerrainMet", "namespaceTerrainMet.html", null ],
     [ "WRFBdyTypes", "namespaceWRFBdyTypes.html", null ],
     [ "WRFBdyVars", "namespaceWRFBdyVars.html", null ]
 ];

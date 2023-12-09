@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['interptype_608',['InterpType',['../namespaceInterpType.html',1,'']]],
-  ['intvar_609',['IntVar',['../namespaceIntVar.html',1,'']]]
+  ['ncutils_549',['ncutils',['../namespacencutils.html',1,'']]]
 ];
