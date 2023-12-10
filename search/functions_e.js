@@ -10,7 +10,7 @@ var searchData=
   ['resize_5fstuff_750',['resize_stuff',['../classROMSX.html#aab4e25f240ebdc93f8fa58f522faf740',1,'ROMSX']]],
   ['restart_751',['restart',['../classROMSX.html#a9e841cff9ccca5ed1945876def44c681',1,'ROMSX']]],
   ['restart_752',['Restart',['../structParticleData.html#a01d79f8a94c1091d4d2e98ac7b2aad9f',1,'ParticleData']]],
-  ['rho_5feos_753',['rho_eos',['../classROMSX.html#af05997945f183a417b7fc334fd3e6f39',1,'ROMSX']]],
+  ['rho_5feos_753',['rho_eos',['../classROMSX.html#accddcb599d00835c859985fa10df5b27',1,'ROMSX']]],
   ['rhs_5ft_5f3d_754',['rhs_t_3d',['../classROMSX.html#aaf9f32897499d17bad9d80230331db6a',1,'ROMSX']]],
   ['rhs_5fuv_5f2d_755',['rhs_uv_2d',['../classROMSX.html#a1c78b061e07c56adac2e9732485480fc',1,'ROMSX']]],
   ['rhs_5fuv_5f3d_756',['rhs_uv_3d',['../classROMSX.html#aed11841ea026316e25162880b8c455c9',1,'ROMSX']]],
