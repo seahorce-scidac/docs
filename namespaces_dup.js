@@ -18,7 +18,5 @@ var namespaces_dup =
         [ "MOST", "namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea538a46a3706dace0c85381fd5df796a0", null ],
         [ "ext_dir_ingested", "namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea5ea0bb01d58de7e004c4058df06c0902", null ]
       ] ]
-    ] ],
-    [ "WRFBdyTypes", "namespaceWRFBdyTypes.html", null ],
-    [ "WRFBdyVars", "namespaceWRFBdyVars.html", null ]
+    ] ]
 ];

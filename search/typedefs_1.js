@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['planevector_978',['PlaneVector',['../ROMSX__PhysBCFunct_8H.html#a60014a8d74bed0d5ae984e600c68dc85',1,'PlaneVector():&#160;ROMSX_PhysBCFunct.H'],['../NCBuildFABs_8cpp.html#a60014a8d74bed0d5ae984e600c68dc85',1,'PlaneVector():&#160;NCBuildFABs.cpp'],['../NCWpsFile_8H.html#a60014a8d74bed0d5ae984e600c68dc85',1,'PlaneVector():&#160;NCWpsFile.H']]]
+  ['rtype_916',['RType',['../structncutils_1_1NCDType.html#a079bbf4314ad09362b5c8124670c821f',1,'ncutils::NCDType']]]
 ];

@@ -7,7 +7,6 @@ var annotated_dup =
       [ "NCGroup", "classncutils_1_1NCGroup.html", "classncutils_1_1NCGroup" ],
       [ "NCFile", "classncutils_1_1NCFile.html", "classncutils_1_1NCFile" ]
     ] ],
-    [ "NDArray", "structNDArray.html", "structNDArray" ],
     [ "NullFill", "structNullFill.html", "structNullFill" ],
     [ "ParticleData", "structParticleData.html", "structParticleData" ],
     [ "ROMSX", "classROMSX.html", "classROMSX" ],
