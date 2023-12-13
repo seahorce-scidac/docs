@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['yvel_5fnew_905',['yvel_new',['../classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48',1,'ROMSX']]],
-  ['yvel_5fold_906',['yvel_old',['../classROMSX.html#a87f0b7446438b8145bdea79012b985f5',1,'ROMSX']]]
+  ['xvel_5fnew_914',['xvel_new',['../classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2',1,'ROMSX']]],
+  ['xvel_5fold_915',['xvel_old',['../classROMSX.html#af0b5074dc426b753beb5511bd63df407',1,'ROMSX']]]
 ];

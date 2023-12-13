@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['icbctype_780',['icBcType',['../structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b',1,'SolverChoice']]],
-  ['init_5fshrink_781',['init_shrink',['../classROMSX.html#afc2d5ca5334b8dc2acb9c6c57febbcf1',1,'ROMSX']]],
-  ['init_5ftype_782',['init_type',['../classROMSX.html#abca823cae95a0507a2f850744fd03093',1,'ROMSX']]],
-  ['input_5fbndry_5fplanes_783',['input_bndry_planes',['../classROMSX.html#ae3894b8be6ddf628ddd718abfc4c36ad',1,'ROMSX']]],
-  ['input_5fsounding_5ffile_784',['input_sounding_file',['../classROMSX.html#addd7497677393458ec87e5aa1ed1b6c5',1,'ROMSX']]],
-  ['inputs_5fname_785',['inputs_name',['../NCPlotFile_8H.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name():&#160;main.cpp'],['../writeJobInfo_8cpp.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name():&#160;main.cpp'],['../main_8cpp.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name():&#160;main.cpp']]],
-  ['int_786',['Int',['../structncutils_1_1NCDType.html#ac5bfba212db12de3dfde52dc3ae3eb0c',1,'ncutils::NCDType']]],
-  ['is_5fopen_787',['is_open',['../classncutils_1_1NCFile.html#aa98d902ef67803393e80929bb73cb379',1,'ncutils::NCFile']]],
-  ['istep_788',['istep',['../classROMSX.html#a31b7954d302e5fd9474c084078ad4784',1,'ROMSX']]]
+  ['h_5fhavg_5fdensity_782',['h_havg_density',['../classROMSX.html#a6efd311333adc503a24d5b3364c4a2d3',1,'ROMSX']]],
+  ['h_5fhavg_5fpressure_783',['h_havg_pressure',['../classROMSX.html#a82b2332d9dee5db2130ebd0ef2fa0d0b',1,'ROMSX']]],
+  ['h_5fhavg_5ftemperature_784',['h_havg_temperature',['../classROMSX.html#aa5dcbcc6efc7c4e5fbca45b466b475ac',1,'ROMSX']]],
+  ['hadv_5fscheme_785',['Hadv_scheme',['../structSolverChoice.html#a4f1fced24fb1c3e55bc9b7333f211b9f',1,'SolverChoice']]]
 ];

@@ -28,14 +28,13 @@ var searchData=
   ['cons_5fnames_56',['cons_names',['../classROMSX.html#afd7f32f1e2d2c5152773534f6f8ab5a0',1,'ROMSX']]],
   ['cons_5fnew_57',['cons_new',['../classROMSX.html#a7f7c60f6b48935de00903f101ffcf412',1,'ROMSX']]],
   ['cons_5fold_58',['cons_old',['../classROMSX.html#a7a14aa971cac1b1ad0eb5d4b46b90343',1,'ROMSX']]],
-  ['const_5fgrav_59',['CONST_GRAV',['../ROMSX__Constants_8H.html#a063fd3095e4994e6136a62d78b7c5901',1,'ROMSX_Constants.H']]],
-  ['containerhaselement_60',['containerHasElement',['../ROMSX_8H.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'ROMSX.H']]],
-  ['coord_61',['Coord',['../DataStruct_8H.html#a627f1f843904477f763577ad1460de01',1,'DataStruct.H']]],
-  ['coriolis_62',['coriolis',['../classROMSX.html#afa92192721003020501bef87d5f4a667',1,'ROMSX']]],
-  ['coriolis_5ffactor_63',['coriolis_factor',['../structSolverChoice.html#a1163778ed56af6977001ef4ec55a3da3',1,'SolverChoice']]],
-  ['cosphi_64',['cosphi',['../structSolverChoice.html#a411fbfea721cd40033e113cf54a8047f',1,'SolverChoice']]],
-  ['coupling_5ftype_65',['coupling_type',['../structSolverChoice.html#af976afa61859c07e6249963edc367c2d',1,'SolverChoice']]],
-  ['couplingtype_66',['CouplingType',['../DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139b',1,'DataStruct.H']]],
-  ['create_67',['create',['../classncutils_1_1NCFile.html#a47bdccee2cc22a735ca715d9c88e4f6b',1,'ncutils::NCFile']]],
-  ['create_5fpar_68',['create_par',['../classncutils_1_1NCFile.html#a6607bd5f3f75b451e2436ff713931f19',1,'ncutils::NCFile']]]
+  ['containerhaselement_59',['containerHasElement',['../ROMSX_8H.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'ROMSX.H']]],
+  ['coord_60',['Coord',['../DataStruct_8H.html#a627f1f843904477f763577ad1460de01',1,'DataStruct.H']]],
+  ['coriolis_61',['coriolis',['../classROMSX.html#afa92192721003020501bef87d5f4a667',1,'ROMSX']]],
+  ['coriolis_5fbeta_62',['coriolis_beta',['../structSolverChoice.html#a0d7c9053be4054e355768bf3c17bf029',1,'SolverChoice']]],
+  ['coriolis_5ff0_63',['coriolis_f0',['../structSolverChoice.html#a3a0b717e880c818de989b2e92c199d34',1,'SolverChoice']]],
+  ['coupling_5ftype_64',['coupling_type',['../structSolverChoice.html#af976afa61859c07e6249963edc367c2d',1,'SolverChoice']]],
+  ['couplingtype_65',['CouplingType',['../DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139b',1,'DataStruct.H']]],
+  ['create_66',['create',['../classncutils_1_1NCFile.html#a47bdccee2cc22a735ca715d9c88e4f6b',1,'ncutils::NCFile']]],
+  ['create_5fpar_67',['create_par',['../classncutils_1_1NCFile.html#a6607bd5f3f75b451e2436ff713931f19',1,'ncutils::NCFile']]]
 ];

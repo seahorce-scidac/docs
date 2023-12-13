@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['t_5fnew_843',['t_new',['../classROMSX.html#aac116ec30618bbd5641218e7522cdb86',1,'ROMSX']]],
-  ['t_5fold_844',['t_old',['../classROMSX.html#ac395453aa10633a05bb7323b2946101e',1,'ROMSX']]],
-  ['tcline_845',['tcline',['../structSolverChoice.html#a8567bc83a2159c88c5372ea30770725e',1,'SolverChoice']]],
-  ['theta_5fb_846',['theta_b',['../structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5',1,'SolverChoice']]],
-  ['theta_5fs_847',['theta_s',['../structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017',1,'SolverChoice']]],
-  ['total_5fplot_5ffile_5fstep_5f1_848',['total_plot_file_step_1',['../classROMSX.html#a07e31a4dec6fc9e9d1ec3f1e96381c53',1,'ROMSX']]],
-  ['tracer_5fparticle_5fvarnames_849',['tracer_particle_varnames',['../structParticleData.html#a9fc8840f6c644da7378157c793844cd8',1,'ParticleData']]],
-  ['tracer_5fparticles_850',['tracer_particles',['../structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc',1,'ParticleData']]]
+  ['s0_843',['S0',['../structSolverChoice.html#af8337b0c99a50300e9880db3e8296d91',1,'SolverChoice']]],
+  ['scoef_844',['Scoef',['../structSolverChoice.html#ae8dbad91ad7a9be8eb4c2db5a62f5c47',1,'SolverChoice']]],
+  ['solverchoice_845',['solverChoice',['../classROMSX.html#a21df816ace6144ce0ed78d0031eaa946',1,'ROMSX']]],
+  ['spatial_5forder_846',['spatial_order',['../structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44',1,'SolverChoice']]],
+  ['sst_847',['sst',['../classROMSX.html#ae1071e0c88d861f589184ad86ff14774',1,'ROMSX']]],
+  ['startcputime_848',['startCPUTime',['../classROMSX.html#ab3e7f280e92f9e5cbdad88a3f222069c',1,'ROMSX']]],
+  ['stop_5ftime_849',['stop_time',['../classROMSX.html#a22dfd39392c026bd023c8f1d57fd0889',1,'ROMSX']]],
+  ['sum_5finterval_850',['sum_interval',['../classROMSX.html#afcedb31381fd065fff2ca36196f8da40',1,'ROMSX']]],
+  ['sum_5fper_851',['sum_per',['../classROMSX.html#af638ada4294dcf5b33de335efef61de1',1,'ROMSX']]]
 ];

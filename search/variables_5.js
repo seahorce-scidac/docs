@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['h_5fhavg_5fdensity_776',['h_havg_density',['../classROMSX.html#a6efd311333adc503a24d5b3364c4a2d3',1,'ROMSX']]],
-  ['h_5fhavg_5fpressure_777',['h_havg_pressure',['../classROMSX.html#a82b2332d9dee5db2130ebd0ef2fa0d0b',1,'ROMSX']]],
-  ['h_5fhavg_5ftemperature_778',['h_havg_temperature',['../classROMSX.html#aa5dcbcc6efc7c4e5fbca45b466b475ac',1,'ROMSX']]],
-  ['hadv_5fscheme_779',['Hadv_scheme',['../structSolverChoice.html#a4f1fced24fb1c3e55bc9b7333f211b9f',1,'SolverChoice']]]
+  ['g_781',['g',['../structSolverChoice.html#aeee9d0099e1ac4105829345280a4f03c',1,'SolverChoice']]]
 ];
