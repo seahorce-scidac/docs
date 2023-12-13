@@ -14,7 +14,7 @@ var searchData=
   ['init_5fbcs_146',['init_bcs',['../classROMSX.html#abba6cffe4a459932b33465a0d126d4d8',1,'ROMSX']]],
   ['init_5fcustom_147',['init_custom',['../classROMSX.html#af3c54ec9fe911484d73ce5ba486ccfc5',1,'ROMSX']]],
   ['init_5fcustom_5fbathymetry_148',['init_custom_bathymetry',['../prob__common_8H.html#a2a1089aaebf4e1bffc2452c15a45e988',1,'prob_common.H']]],
-  ['init_5fcustom_5fhmix_149',['init_custom_hmix',['../prob__common_8H.html#ab4c9082f768ffcec8ac603957957db57',1,'prob_common.H']]],
+  ['init_5fcustom_5fhmix_149',['init_custom_hmix',['../prob__common_8H.html#ac03b2472176ba10b0edc225576774769',1,'prob_common.H']]],
   ['init_5fcustom_5fprob_150',['init_custom_prob',['../prob__common_8H.html#adbedc34f482b6a491593d88706d948da',1,'prob_common.H']]],
   ['init_5fcustom_5fsmflux_151',['init_custom_smflux',['../prob__common_8H.html#a36a5501b26f66b3ec6d4d187236bc3bc',1,'prob_common.H']]],
   ['init_5fcustom_5fvmix_152',['init_custom_vmix',['../prob__common_8H.html#a3aabbde4e8cfbf5eeb55157f2ac5fe98',1,'prob_common.H']]],

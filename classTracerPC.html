@@ -290,14 +290,14 @@ Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                                                  &amp;((*umac_pointer[2])[grid])) };</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="comment">//array of these pointers to pass to the GPU</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            amrex::GpuArray&lt;amrex::Array4&lt;const Real&gt;, AMREX_SPACEDIM&gt;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            GpuArray&lt;Array4&lt;const Real&gt;, AMREX_SPACEDIM&gt;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="keyword">const</span> umacarr {{AMREX_D_DECL((*fab[0]).array(),</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                             (*fab[1]).array(),</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                             (*fab[2]).array() )}};</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keyword">auto</span> zheight      = use_terrain ? a_z_height[grid].array() : Array4&lt;Real&gt;{};</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            amrex::ParallelFor(n,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            ParallelFor(n,</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                               [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i)</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            {</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                ParticleType&amp; p = p_pbox[i];</div>
