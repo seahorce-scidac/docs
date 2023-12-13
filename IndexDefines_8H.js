@@ -2,7 +2,6 @@ var IndexDefines_8H =
 [
     [ "NCONS", "IndexDefines_8H.html#ae3f12540307d28407f8d7dd4a169e325", null ],
     [ "NGROW", "IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38", null ],
-    [ "Omega_comp", "IndexDefines_8H.html#ad9946cebb227ca07d11bb1bc3daa1a88", null ],
     [ "Salt_comp", "IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf", null ],
     [ "Scalar_comp", "IndexDefines_8H.html#a4dd1335cac3e63bb654450bb807978a4", null ],
     [ "Temp_comp", "IndexDefines_8H.html#a2439ff23f4449b8ffa90ddc5bcb36173", null ],
