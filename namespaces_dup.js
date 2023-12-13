@@ -1,7 +1,6 @@
 var namespaces_dup =
 [
     [ "BCVars", "namespaceBCVars.html", null ],
-    [ "Cons", "namespaceCons.html", null ],
     [ "derived", "namespacederived.html", [
       [ "romsx_dernull", "namespacederived.html#af28239f0827a8e4bc3ed2e559c0f0019", null ]
     ] ],

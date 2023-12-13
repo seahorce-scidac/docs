@@ -166,8 +166,6 @@ This graph shows which files directly or indirectly include this file:</div>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceBCVars"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html">BCVars</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceCons"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCons.html">Cons</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceROMSXBCType"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceROMSXBCType.html">ROMSXBCType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -179,8 +177,10 @@ Macros</h2></td></tr>
 <tr class="separator:a4dd1335cac3e63bb654450bb807978a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9946cebb227ca07d11bb1bc3daa1a88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="IndexDefines_8H.html#ad9946cebb227ca07d11bb1bc3daa1a88">Omega_comp</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:ad9946cebb227ca07d11bb1bc3daa1a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5195ac8f863f5a9a7eaa0db094f7639"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="IndexDefines_8H.html#ad5195ac8f863f5a9a7eaa0db094f7639">NVAR</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:ad5195ac8f863f5a9a7eaa0db094f7639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84ceec196f4b00670dab4fa7794d1cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf">Salt_comp</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ab84ceec196f4b00670dab4fa7794d1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f12540307d28407f8d7dd4a169e325"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="IndexDefines_8H.html#ae3f12540307d28407f8d7dd4a169e325">NCONS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ae3f12540307d28407f8d7dd4a169e325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a124da9e47fb1b1f3debaf49368f42e38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a124da9e47fb1b1f3debaf49368f42e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -190,7 +190,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073aaf601346b01655b32acf66d07b856aec">BCVars::cons_bc</a> = 0
 , <a class="el" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0d8c9f8308d3e1a0dedf68c3765d2205">BCVars::Temp_bc_comp</a> = 0
 , <a class="el" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a59e20f7c1b74c9cbdbc9300394bbc335">BCVars::Scalar_bc_comp</a>
-, <a class="el" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073ab1782753c68aaad8632b0a7d575e57f4">BCVars::xvel_bc</a> = NVAR
+, <a class="el" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073ab1782753c68aaad8632b0a7d575e57f4">BCVars::xvel_bc</a> = NCONS
 , <br />
 &#160;&#160;<a class="el" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a98ad22810fdfe9e585bc6481fc12454e">BCVars::yvel_bc</a>
 , <a class="el" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a03b35ec9e83f34bb1349a86965d34e34">BCVars::zvel_bc</a>
@@ -198,12 +198,6 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a6fd8f72c3055242c4af20c780f391073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adae10bdf9ba119a0aee80a206c428f0f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespaceCons.html#adae10bdf9ba119a0aee80a206c428f0fa2fc980fcd8edc02981fb1159c08d3571">Cons::Temp</a> = 0
-, <a class="el" href="namespaceCons.html#adae10bdf9ba119a0aee80a206c428f0fa0e888fd999f901d9d60f5f7d5ca45aeb">Cons::Scalar</a>
-, <a class="el" href="namespaceCons.html#adae10bdf9ba119a0aee80a206c428f0fa18cdbcda348dc5fec538cb897386134a">Cons::Omega</a>
-, <a class="el" href="namespaceCons.html#adae10bdf9ba119a0aee80a206c428f0fa5934ebcc17d4dfd56ed8cf6221c9a5ed">Cons::NumVars</a>
- }</td></tr>
-<tr class="separator:adae10bdf9ba119a0aee80a206c428f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c2583d7b3aea3f36ba249890cc5e281"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281">ROMSX_BC</a> { <br />
 &#160;&#160;<a class="el" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a40e712f30d56083318ab20a2402921d2">symmetry</a>
 , <a class="el" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ad37e67db17cfd059f2852e2673b9e8ef">inflow</a>
@@ -232,6 +226,20 @@ Enumerations</h2></td></tr>
 <tr class="separator:af4e42fa51742c38508f617adb429d81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ae3f12540307d28407f8d7dd4a169e325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f12540307d28407f8d7dd4a169e325">&#9670;&nbsp;</a></span>NCONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NCONS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a124da9e47fb1b1f3debaf49368f42e38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a124da9e47fb1b1f3debaf49368f42e38">&#9670;&nbsp;</a></span>NGROW</h2>
 
@@ -246,20 +254,6 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5195ac8f863f5a9a7eaa0db094f7639"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5195ac8f863f5a9a7eaa0db094f7639">&#9670;&nbsp;</a></span>NVAR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NVAR&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad9946cebb227ca07d11bb1bc3daa1a88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9946cebb227ca07d11bb1bc3daa1a88">&#9670;&nbsp;</a></span>Omega_comp</h2>
 
@@ -268,6 +262,20 @@ Enumerations</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define Omega_comp&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab84ceec196f4b00670dab4fa7794d1cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84ceec196f4b00670dab4fa7794d1cf">&#9670;&nbsp;</a></span>Salt_comp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Salt_comp&#160;&#160;&#160;3</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -332,9 +340,9 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a8c2583d7b3aea3f36ba249890cc5e281a882dd232c0425bb9366544f84f0a7b6c"></a>MOST&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8c2583d7b3aea3f36ba249890cc5e281a5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"></td></tr>
 </table>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                     {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a40e712f30d56083318ab20a2402921d2">symmetry</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ad37e67db17cfd059f2852e2673b9e8ef">inflow</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281acac0c32caf84a889ec9b2b4cb2d56972">outflow</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281acb8c716b8d9b499d9bc323d8f8a410d3">no_slip_wall</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a03ee6de9fd100444c5c0567ea01bd538">slip_wall</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ae6ffdec5e14fce371eb7ae99edebbbee">periodic</a>, <a class="code" href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea538a46a3706dace0c85381fd5df796a0">MOST</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a5e543256c480ac577d30f76f9120eb74">undefined</a></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                     {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a40e712f30d56083318ab20a2402921d2">symmetry</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ad37e67db17cfd059f2852e2673b9e8ef">inflow</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281acac0c32caf84a889ec9b2b4cb2d56972">outflow</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281acb8c716b8d9b499d9bc323d8f8a410d3">no_slip_wall</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a03ee6de9fd100444c5c0567ea01bd538">slip_wall</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ae6ffdec5e14fce371eb7ae99edebbbee">periodic</a>, <a class="code" href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea538a46a3706dace0c85381fd5df796a0">MOST</a>, <a class="code" href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a5e543256c480ac577d30f76f9120eb74">undefined</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
 <div class="ttc" id="aIndexDefines_8H_html_a8c2583d7b3aea3f36ba249890cc5e281a03ee6de9fd100444c5c0567ea01bd538"><div class="ttname"><a href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a03ee6de9fd100444c5c0567ea01bd538">ROMSX_BC::slip_wall</a></div><div class="ttdeci">@ slip_wall</div></div>
 <div class="ttc" id="aIndexDefines_8H_html_a8c2583d7b3aea3f36ba249890cc5e281a40e712f30d56083318ab20a2402921d2"><div class="ttname"><a href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a40e712f30d56083318ab20a2402921d2">ROMSX_BC::symmetry</a></div><div class="ttdeci">@ symmetry</div></div>
 <div class="ttc" id="aIndexDefines_8H_html_a8c2583d7b3aea3f36ba249890cc5e281a5e543256c480ac577d30f76f9120eb74"><div class="ttname"><a href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a5e543256c480ac577d30f76f9120eb74">ROMSX_BC::undefined</a></div><div class="ttdeci">@ undefined</div></div>
@@ -342,7 +350,7 @@ Enumerations</h2></td></tr>
 <div class="ttc" id="aIndexDefines_8H_html_a8c2583d7b3aea3f36ba249890cc5e281acb8c716b8d9b499d9bc323d8f8a410d3"><div class="ttname"><a href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281acb8c716b8d9b499d9bc323d8f8a410d3">ROMSX_BC::no_slip_wall</a></div><div class="ttdeci">@ no_slip_wall</div></div>
 <div class="ttc" id="aIndexDefines_8H_html_a8c2583d7b3aea3f36ba249890cc5e281ad37e67db17cfd059f2852e2673b9e8ef"><div class="ttname"><a href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ad37e67db17cfd059f2852e2673b9e8ef">ROMSX_BC::inflow</a></div><div class="ttdeci">@ inflow</div></div>
 <div class="ttc" id="aIndexDefines_8H_html_a8c2583d7b3aea3f36ba249890cc5e281ae6ffdec5e14fce371eb7ae99edebbbee"><div class="ttname"><a href="IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ae6ffdec5e14fce371eb7ae99edebbbee">ROMSX_BC::periodic</a></div><div class="ttdeci">@ periodic</div></div>
-<div class="ttc" id="anamespaceROMSXBCType_html_af4e42fa51742c38508f617adb429d81ea538a46a3706dace0c85381fd5df796a0"><div class="ttname"><a href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea538a46a3706dace0c85381fd5df796a0">ROMSXBCType::MOST</a></div><div class="ttdeci">@ MOST</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:59</div></div>
+<div class="ttc" id="anamespaceROMSXBCType_html_af4e42fa51742c38508f617adb429d81ea538a46a3706dace0c85381fd5df796a0"><div class="ttname"><a href="namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea538a46a3706dace0c85381fd5df796a0">ROMSXBCType::MOST</a></div><div class="ttdeci">@ MOST</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:42</div></div>
 </div><!-- fragment -->
 </div>
 </div>

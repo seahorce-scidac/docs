@@ -122,6 +122,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a4b0edf29a032ff18b10a42825fa9e4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e1d7e053fa63774c4c44980272031a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a">flat_bathymetry</a> = true</td></tr>
 <tr class="separator:a57e1d7e053fa63774c4c44980272031a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc652006d7343f1e01f5b9967604a0aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSolverChoice.html#afc652006d7343f1e01f5b9967604a0aa">use_salt</a> = true</td></tr>
+<tr class="separator:afc652006d7343f1e01f5b9967604a0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e86533aa6df5bf6408d91f0dfd23606"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606">use_coriolis</a> = false</td></tr>
 <tr class="separator:a9e86533aa6df5bf6408d91f0dfd23606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef43f702963efac7f3e0c2b43249fbb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6">use_prestep</a> = true</td></tr>
@@ -178,45 +180,47 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        amrex::Print() &lt;&lt; <span class="stringliteral">&quot;SOLVER CHOICE: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        amrex::Print() &lt;&lt; <span class="stringliteral">&quot;use_coriolis          : &quot;</span> &lt;&lt; <a class="code" href="structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606">use_coriolis</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        amrex::Print() &lt;&lt; <span class="stringliteral">&quot;spatial_order         : &quot;</span> &lt;&lt; <a class="code" href="structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44">spatial_order</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b">icBcType</a> == <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a22b7c2abfb7dcf0f672899fb2b6f1670">IC_BC_Type::Ideal</a>) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Using idealized initial and boundary conditions (No mesoscale forcing!)&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b">icBcType</a> == <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">IC_BC_Type::Real</a>) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Using REAL initial and boundary conditions (Mesoscale forcing!)&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#a4f1fced24fb1c3e55bc9b7333f211b9f">Hadv_scheme</a> == <a class="code" href="DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca6d779455e4a7eebf97d6bcb893dd5235">AdvectionScheme::centered4</a>) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Horizontal advection scheme: &quot;</span> &lt;&lt; <span class="stringliteral">&quot;Centered 4&quot;</span> &lt;&lt; std::endl;</div>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        amrex::Print() &lt;&lt; <span class="stringliteral">&quot;SOLVER CHOICE: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        amrex::Print() &lt;&lt; <span class="stringliteral">&quot;use_salt              : &quot;</span> &lt;&lt; <a class="code" href="structSolverChoice.html#afc652006d7343f1e01f5b9967604a0aa">use_salt</a>     &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        amrex::Print() &lt;&lt; <span class="stringliteral">&quot;use_coriolis          : &quot;</span> &lt;&lt; <a class="code" href="structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606">use_coriolis</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        amrex::Print() &lt;&lt; <span class="stringliteral">&quot;spatial_order         : &quot;</span> &lt;&lt; <a class="code" href="structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44">spatial_order</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b">icBcType</a> == <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a22b7c2abfb7dcf0f672899fb2b6f1670">IC_BC_Type::Ideal</a>) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Using idealized initial and boundary conditions (No mesoscale forcing!)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b">icBcType</a> == <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">IC_BC_Type::Real</a>) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Using REAL initial and boundary conditions (Mesoscale forcing!)&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#a4f1fced24fb1c3e55bc9b7333f211b9f">Hadv_scheme</a> == <a class="code" href="DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca5b2d34872c0b46cfbabc832368e6ec7d">AdvectionScheme::upstream3</a>) {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Horizontal advection scheme: &quot;</span> &lt;&lt; <span class="stringliteral">&quot;Upstream 3&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            amrex::Error(<span class="stringliteral">&quot;Invalid horizontal advection scheme.&quot;</span>);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#af976afa61859c07e6249963edc367c2d">coupling_type</a> == <a class="code" href="DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba6c267346f8ebb889610a5a90838be815">CouplingType::TwoWay</a>) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Using two-way coupling &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#af976afa61859c07e6249963edc367c2d">coupling_type</a> == <a class="code" href="DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba8d892b915adb5e7c957f4425253ee1d6">CouplingType::OneWay</a>) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Using one-way coupling &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#a4f1fced24fb1c3e55bc9b7333f211b9f">Hadv_scheme</a> == <a class="code" href="DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca6d779455e4a7eebf97d6bcb893dd5235">AdvectionScheme::centered4</a>) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Horizontal advection scheme: &quot;</span> &lt;&lt; <span class="stringliteral">&quot;Centered 4&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#a4f1fced24fb1c3e55bc9b7333f211b9f">Hadv_scheme</a> == <a class="code" href="DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca5b2d34872c0b46cfbabc832368e6ec7d">AdvectionScheme::upstream3</a>) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Horizontal advection scheme: &quot;</span> &lt;&lt; <span class="stringliteral">&quot;Upstream 3&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            amrex::Error(<span class="stringliteral">&quot;Invalid horizontal advection scheme.&quot;</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#af976afa61859c07e6249963edc367c2d">coupling_type</a> == <a class="code" href="DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba6c267346f8ebb889610a5a90838be815">CouplingType::TwoWay</a>) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Using two-way coupling &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="structSolverChoice.html#af976afa61859c07e6249963edc367c2d">coupling_type</a> == <a class="code" href="DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba8d892b915adb5e7c957f4425253ee1d6">CouplingType::OneWay</a>) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Using one-way coupling &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
 <div class="ttc" id="aDataStruct_8H_html_a3ffde1e69b7cc5344b53bf310e4a212ca5b2d34872c0b46cfbabc832368e6ec7d"><div class="ttname"><a href="DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca5b2d34872c0b46cfbabc832368e6ec7d">AdvectionScheme::upstream3</a></div><div class="ttdeci">@ upstream3</div></div>
 <div class="ttc" id="aDataStruct_8H_html_a3ffde1e69b7cc5344b53bf310e4a212ca6d779455e4a7eebf97d6bcb893dd5235"><div class="ttname"><a href="DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca6d779455e4a7eebf97d6bcb893dd5235">AdvectionScheme::centered4</a></div><div class="ttdeci">@ centered4</div></div>
 <div class="ttc" id="aDataStruct_8H_html_aa307030d99f8c225e1a1adb20224ed36a22b7c2abfb7dcf0f672899fb2b6f1670"><div class="ttname"><a href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a22b7c2abfb7dcf0f672899fb2b6f1670">IC_BC_Type::Ideal</a></div><div class="ttdeci">@ Ideal</div></div>
 <div class="ttc" id="aDataStruct_8H_html_aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1"><div class="ttname"><a href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">IC_BC_Type::Real</a></div><div class="ttdeci">@ Real</div></div>
 <div class="ttc" id="aDataStruct_8H_html_ad285be248c0803917aaf5cf8ce62139ba6c267346f8ebb889610a5a90838be815"><div class="ttname"><a href="DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba6c267346f8ebb889610a5a90838be815">CouplingType::TwoWay</a></div><div class="ttdeci">@ TwoWay</div></div>
 <div class="ttc" id="aDataStruct_8H_html_ad285be248c0803917aaf5cf8ce62139ba8d892b915adb5e7c957f4425253ee1d6"><div class="ttname"><a href="DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba8d892b915adb5e7c957f4425253ee1d6">CouplingType::OneWay</a></div><div class="ttdeci">@ OneWay</div></div>
-<div class="ttc" id="astructSolverChoice_html_a4f1fced24fb1c3e55bc9b7333f211b9f"><div class="ttname"><a href="structSolverChoice.html#a4f1fced24fb1c3e55bc9b7333f211b9f">SolverChoice::Hadv_scheme</a></div><div class="ttdeci">AdvectionScheme Hadv_scheme</div><div class="ttdef"><b>Definition:</b> DataStruct.H:137</div></div>
-<div class="ttc" id="astructSolverChoice_html_a890734318e58de211bb8e9c4d2c89c9b"><div class="ttname"><a href="structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b">SolverChoice::icBcType</a></div><div class="ttdeci">IC_BC_Type icBcType</div><div class="ttdef"><b>Definition:</b> DataStruct.H:158</div></div>
-<div class="ttc" id="astructSolverChoice_html_a8e053ce39997ed619ac81aa4d5a1fd44"><div class="ttname"><a href="structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44">SolverChoice::spatial_order</a></div><div class="ttdeci">int spatial_order</div><div class="ttdef"><b>Definition:</b> DataStruct.H:155</div></div>
-<div class="ttc" id="astructSolverChoice_html_a9e86533aa6df5bf6408d91f0dfd23606"><div class="ttname"><a href="structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606">SolverChoice::use_coriolis</a></div><div class="ttdeci">bool use_coriolis</div><div class="ttdef"><b>Definition:</b> DataStruct.H:129</div></div>
-<div class="ttc" id="astructSolverChoice_html_af976afa61859c07e6249963edc367c2d"><div class="ttname"><a href="structSolverChoice.html#af976afa61859c07e6249963edc367c2d">SolverChoice::coupling_type</a></div><div class="ttdeci">CouplingType coupling_type</div><div class="ttdef"><b>Definition:</b> DataStruct.H:139</div></div>
+<div class="ttc" id="astructSolverChoice_html_a4f1fced24fb1c3e55bc9b7333f211b9f"><div class="ttname"><a href="structSolverChoice.html#a4f1fced24fb1c3e55bc9b7333f211b9f">SolverChoice::Hadv_scheme</a></div><div class="ttdeci">AdvectionScheme Hadv_scheme</div><div class="ttdef"><b>Definition:</b> DataStruct.H:143</div></div>
+<div class="ttc" id="astructSolverChoice_html_a890734318e58de211bb8e9c4d2c89c9b"><div class="ttname"><a href="structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b">SolverChoice::icBcType</a></div><div class="ttdeci">IC_BC_Type icBcType</div><div class="ttdef"><b>Definition:</b> DataStruct.H:164</div></div>
+<div class="ttc" id="astructSolverChoice_html_a8e053ce39997ed619ac81aa4d5a1fd44"><div class="ttname"><a href="structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44">SolverChoice::spatial_order</a></div><div class="ttdeci">int spatial_order</div><div class="ttdef"><b>Definition:</b> DataStruct.H:161</div></div>
+<div class="ttc" id="astructSolverChoice_html_a9e86533aa6df5bf6408d91f0dfd23606"><div class="ttname"><a href="structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606">SolverChoice::use_coriolis</a></div><div class="ttdeci">bool use_coriolis</div><div class="ttdef"><b>Definition:</b> DataStruct.H:135</div></div>
+<div class="ttc" id="astructSolverChoice_html_af976afa61859c07e6249963edc367c2d"><div class="ttname"><a href="structSolverChoice.html#af976afa61859c07e6249963edc367c2d">SolverChoice::coupling_type</a></div><div class="ttdeci">CouplingType coupling_type</div><div class="ttdef"><b>Definition:</b> DataStruct.H:145</div></div>
+<div class="ttc" id="astructSolverChoice_html_afc652006d7343f1e01f5b9967604a0aa"><div class="ttname"><a href="structSolverChoice.html#afc652006d7343f1e01f5b9967604a0aa">SolverChoice::use_salt</a></div><div class="ttdeci">bool use_salt</div><div class="ttdef"><b>Definition:</b> DataStruct.H:132</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -264,46 +268,49 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// Order of spatial discretization</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        pp.query(<span class="stringliteral">&quot;spatial_order&quot;</span>, <a class="code" href="structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44">spatial_order</a>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Include Coriolis forcing?</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        pp.query(<span class="stringliteral">&quot;use_coriolis&quot;</span>, <a class="code" href="structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606">use_coriolis</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Include salinity?</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        pp.query(<span class="stringliteral">&quot;use_salt&quot;</span>, <a class="code" href="structSolverChoice.html#afc652006d7343f1e01f5b9967604a0aa">use_salt</a>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">// Include prestep / lagged predictor / corrections</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        pp.query(<span class="stringliteral">&quot;use_prestep&quot;</span>, <a class="code" href="structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6">use_prestep</a>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">// Include Coriolis forcing?</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        pp.query(<span class="stringliteral">&quot;use_coriolis&quot;</span>, <a class="code" href="structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606">use_coriolis</a>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">//This affect forcing and some of the mixing terms for velocity</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        pp.query(<span class="stringliteral">&quot;use_uv3dmix&quot;</span>, <a class="code" href="structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba">use_uv3dmix</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// Include prestep / lagged predictor / corrections</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        pp.query(<span class="stringliteral">&quot;use_prestep&quot;</span>, <a class="code" href="structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6">use_prestep</a>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">//This accounts for the main 2d loop but may not include coupling and copying properly</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        pp.query(<span class="stringliteral">&quot;use_barotropic&quot;</span>, <a class="code" href="structSolverChoice.html#a2a6fbf7ebea6ac5d9faddcbfe36771bd">use_barotropic</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">//This affect forcing and some of the mixing terms for velocity</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        pp.query(<span class="stringliteral">&quot;use_uv3dmix&quot;</span>, <a class="code" href="structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba">use_uv3dmix</a>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">static</span> std::string ic_bc_type_string = <span class="stringliteral">&quot;Ideal&quot;</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        pp.query(<span class="stringliteral">&quot;ic_bc_type&quot;</span>, ic_bc_type_string);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">//This accounts for the main 2d loop but may not include coupling and copying properly</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        pp.query(<span class="stringliteral">&quot;use_barotropic&quot;</span>, <a class="code" href="structSolverChoice.html#a2a6fbf7ebea6ac5d9faddcbfe36771bd">use_barotropic</a>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> (!ic_bc_type_string.compare(<span class="stringliteral">&quot;Ideal&quot;</span>)) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b">icBcType</a> = <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a22b7c2abfb7dcf0f672899fb2b6f1670">IC_BC_Type::Ideal</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!ic_bc_type_string.compare(<span class="stringliteral">&quot;Real&quot;</span>)) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b">icBcType</a> = <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">IC_BC_Type::Real</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            amrex::Error(<span class="stringliteral">&quot;Don&#39;t know this ic_bc_type&quot;</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// Which type of refinement</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">static</span> std::string coupling_type_string = <span class="stringliteral">&quot;TwoWay&quot;</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        pp.query(<span class="stringliteral">&quot;coupling_type&quot;</span>,coupling_type_string);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">if</span> (coupling_type_string == <span class="stringliteral">&quot;TwoWay&quot;</span>) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="structSolverChoice.html#af976afa61859c07e6249963edc367c2d">coupling_type</a> = <a class="code" href="DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba6c267346f8ebb889610a5a90838be815">CouplingType::TwoWay</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (coupling_type_string == <span class="stringliteral">&quot;OneWay&quot;</span>) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="structSolverChoice.html#af976afa61859c07e6249963edc367c2d">coupling_type</a> = <a class="code" href="DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba8d892b915adb5e7c957f4425253ee1d6">CouplingType::OneWay</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            amrex::Abort(<span class="stringliteral">&quot;Dont know this coupling_type&quot;</span>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="ttc" id="astructSolverChoice_html_a11fa6da1900fa3ad034197da861432ba"><div class="ttname"><a href="structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba">SolverChoice::use_uv3dmix</a></div><div class="ttdeci">bool use_uv3dmix</div><div class="ttdef"><b>Definition:</b> DataStruct.H:133</div></div>
-<div class="ttc" id="astructSolverChoice_html_a2a6fbf7ebea6ac5d9faddcbfe36771bd"><div class="ttname"><a href="structSolverChoice.html#a2a6fbf7ebea6ac5d9faddcbfe36771bd">SolverChoice::use_barotropic</a></div><div class="ttdeci">bool use_barotropic</div><div class="ttdef"><b>Definition:</b> DataStruct.H:135</div></div>
-<div class="ttc" id="astructSolverChoice_html_a4b0edf29a032ff18b10a42825fa9e4b6"><div class="ttname"><a href="structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6">SolverChoice::pp_prefix</a></div><div class="ttdeci">std::string pp_prefix</div><div class="ttdef"><b>Definition:</b> DataStruct.H:124</div></div>
-<div class="ttc" id="astructSolverChoice_html_a57e1d7e053fa63774c4c44980272031a"><div class="ttname"><a href="structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a">SolverChoice::flat_bathymetry</a></div><div class="ttdeci">bool flat_bathymetry</div><div class="ttdef"><b>Definition:</b> DataStruct.H:126</div></div>
-<div class="ttc" id="astructSolverChoice_html_ab32c6e7161ddf37e8051743fae717cf5"><div class="ttname"><a href="structSolverChoice.html#ab32c6e7161ddf37e8051743fae717cf5">SolverChoice::rdrag</a></div><div class="ttdeci">amrex::Real rdrag</div><div class="ttdef"><b>Definition:</b> DataStruct.H:147</div></div>
-<div class="ttc" id="astructSolverChoice_html_aef43f702963efac7f3e0c2b43249fbb6"><div class="ttname"><a href="structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6">SolverChoice::use_prestep</a></div><div class="ttdeci">bool use_prestep</div><div class="ttdef"><b>Definition:</b> DataStruct.H:132</div></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">static</span> std::string ic_bc_type_string = <span class="stringliteral">&quot;Ideal&quot;</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        pp.query(<span class="stringliteral">&quot;ic_bc_type&quot;</span>, ic_bc_type_string);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (!ic_bc_type_string.compare(<span class="stringliteral">&quot;Ideal&quot;</span>)) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b">icBcType</a> = <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a22b7c2abfb7dcf0f672899fb2b6f1670">IC_BC_Type::Ideal</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!ic_bc_type_string.compare(<span class="stringliteral">&quot;Real&quot;</span>)) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b">icBcType</a> = <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">IC_BC_Type::Real</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            amrex::Error(<span class="stringliteral">&quot;Don&#39;t know this ic_bc_type&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">// Which type of refinement</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">static</span> std::string coupling_type_string = <span class="stringliteral">&quot;TwoWay&quot;</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        pp.query(<span class="stringliteral">&quot;coupling_type&quot;</span>,coupling_type_string);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span> (coupling_type_string == <span class="stringliteral">&quot;TwoWay&quot;</span>) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="structSolverChoice.html#af976afa61859c07e6249963edc367c2d">coupling_type</a> = <a class="code" href="DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba6c267346f8ebb889610a5a90838be815">CouplingType::TwoWay</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (coupling_type_string == <span class="stringliteral">&quot;OneWay&quot;</span>) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="structSolverChoice.html#af976afa61859c07e6249963edc367c2d">coupling_type</a> = <a class="code" href="DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba8d892b915adb5e7c957f4425253ee1d6">CouplingType::OneWay</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            amrex::Abort(<span class="stringliteral">&quot;Dont know this coupling_type&quot;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="ttc" id="astructSolverChoice_html_a11fa6da1900fa3ad034197da861432ba"><div class="ttname"><a href="structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba">SolverChoice::use_uv3dmix</a></div><div class="ttdeci">bool use_uv3dmix</div><div class="ttdef"><b>Definition:</b> DataStruct.H:139</div></div>
+<div class="ttc" id="astructSolverChoice_html_a2a6fbf7ebea6ac5d9faddcbfe36771bd"><div class="ttname"><a href="structSolverChoice.html#a2a6fbf7ebea6ac5d9faddcbfe36771bd">SolverChoice::use_barotropic</a></div><div class="ttdeci">bool use_barotropic</div><div class="ttdef"><b>Definition:</b> DataStruct.H:141</div></div>
+<div class="ttc" id="astructSolverChoice_html_a4b0edf29a032ff18b10a42825fa9e4b6"><div class="ttname"><a href="structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6">SolverChoice::pp_prefix</a></div><div class="ttdeci">std::string pp_prefix</div><div class="ttdef"><b>Definition:</b> DataStruct.H:128</div></div>
+<div class="ttc" id="astructSolverChoice_html_a57e1d7e053fa63774c4c44980272031a"><div class="ttname"><a href="structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a">SolverChoice::flat_bathymetry</a></div><div class="ttdeci">bool flat_bathymetry</div><div class="ttdef"><b>Definition:</b> DataStruct.H:130</div></div>
+<div class="ttc" id="astructSolverChoice_html_ab32c6e7161ddf37e8051743fae717cf5"><div class="ttname"><a href="structSolverChoice.html#ab32c6e7161ddf37e8051743fae717cf5">SolverChoice::rdrag</a></div><div class="ttdeci">amrex::Real rdrag</div><div class="ttdef"><b>Definition:</b> DataStruct.H:153</div></div>
+<div class="ttc" id="astructSolverChoice_html_aef43f702963efac7f3e0c2b43249fbb6"><div class="ttname"><a href="structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6">SolverChoice::use_prestep</a></div><div class="ttdeci">bool use_prestep</div><div class="ttdef"><b>Definition:</b> DataStruct.H:138</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -563,6 +570,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="reference">Referenced by <a class="el" href="structSolverChoice.html#a4829661b558b213e32970a02e147077f">init_params()</a>.</p>
+
+</div>
+</div>
+<a id="afc652006d7343f1e01f5b9967604a0aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc652006d7343f1e01f5b9967604a0aa">&#9670;&nbsp;</a></span>use_salt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SolverChoice::use_salt = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="structSolverChoice.html#abb95d84167308078ce369b4196ef979c">display()</a>, and <a class="el" href="structSolverChoice.html#a4829661b558b213e32970a02e147077f">init_params()</a>.</p>
 
 </div>
 </div>

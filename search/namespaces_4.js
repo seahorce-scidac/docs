@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ncutils_509',['ncutils',['../namespacencutils.html',1,'']]]
+  ['romsxbctype_506',['ROMSXBCType',['../namespaceROMSXBCType.html',1,'']]]
 ];

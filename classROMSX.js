@@ -132,7 +132,7 @@ var classROMSX =
     [ "last_check_file_step", "classROMSX.html#a33906f6209da9e2a247b1022f60d24ac", null ],
     [ "last_plot_file_step_1", "classROMSX.html#a3d94cb5986d9f35bc8becc666cfaea3d", null ],
     [ "last_plot_file_step_2", "classROMSX.html#a25ecb4567ed2adbaf9be2fbae65d3640", null ],
-    [ "m_bc_extdir_vals", "classROMSX.html#a5a6658ee6b3ac5d5688c5a1a69ab9f86", null ],
+    [ "m_bc_extdir_vals", "classROMSX.html#a3e9e683aa14e1ce2cd331cc56e665faa", null ],
     [ "mapfac_m", "classROMSX.html#a606d7f526ef409ef78feb8ce127f98c9", null ],
     [ "mapfac_u", "classROMSX.html#a865698971c9689455573c4b81ecaf26c", null ],
     [ "mapfac_v", "classROMSX.html#ad96e947b76f50a01928821d3cd2455f7", null ],
