@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['vx_963',['vx',['../structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a6e2bebac49626fbcc27b89ece3932796',1,'TracerRealIdx']]],
-  ['vy_964',['vy',['../structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a2d638933673c0753c10ce5d16d905916',1,'TracerRealIdx']]],
-  ['vz_965',['vz',['../structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a17d40272cad6fa640a83017b720a0999',1,'TracerRealIdx']]]
+  ['x_966',['x',['../DataStruct_8H.html#a627f1f843904477f763577ad1460de01a9dd4e461268c8034f5c8564e155c67a6',1,'x():&#160;DataStruct.H'],['../DataStruct_8H.html#a5943cc9db33abe98a5e07cd2b4387f53a9dd4e461268c8034f5c8564e155c67a6',1,'x():&#160;DataStruct.H']]],
+  ['xvel_5fbc_967',['xvel_bc',['../namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073ab1782753c68aaad8632b0a7d575e57f4',1,'BCVars']]]
 ];
