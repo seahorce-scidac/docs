@@ -248,8 +248,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afbc1fc6bd3f6ededfed2346989ccf055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ca3a726e1b0ecfc4339b2a07ade77b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSX.html#a3ca3a726e1b0ecfc4339b2a07ade77b7">set_weights</a> (int lev)</td></tr>
 <tr class="separator:a3ca3a726e1b0ecfc4339b2a07ade77b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56b882fde3fb2f7ed5bf2d93cc30463d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a> (int lev, amrex::Real time, amrex::MultiFab *mf_to_be_filled, amrex::Vector&lt; amrex::MultiFab * &gt; &amp;mf)</td></tr>
-<tr class="separator:a56b882fde3fb2f7ed5bf2d93cc30463d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9e3a06ecbafa6f4860576cc80db30c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a> (int lev, amrex::Real time, amrex::MultiFab &amp;mf_to_be_filled, amrex::Vector&lt; amrex::MultiFab * &gt; const &amp;mfs)</td></tr>
+<tr class="separator:abb9e3a06ecbafa6f4860576cc80db30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae886b3856fed4fa4d820c5dda7effb7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classROMSX.html#ae886b3856fed4fa4d820c5dda7effb7c">writeJobInfo</a> (const std::string &amp;dir) const</td></tr>
 <tr class="separator:ae886b3856fed4fa4d820c5dda7effb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -2543,10 +2543,10 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">// Fill in three ways: 1) interpolate from coarse grid if lev &gt; 0; 2) fill from physical boundaries;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">//                     3) fine-fine fill of ghost cells with FillBoundary call</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev], <a class="code" href="classROMSX.html#a7a14aa971cac1b1ad0eb5d4b46b90343">cons_old</a>[lev], <a class="code" href="classROMSX.html#a7a14aa971cac1b1ad0eb5d4b46b90343">cons_old</a>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev], <a class="code" href="classROMSX.html#af0b5074dc426b753beb5511bd63df407">xvel_old</a>[lev], <a class="code" href="classROMSX.html#af0b5074dc426b753beb5511bd63df407">xvel_old</a>);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev], <a class="code" href="classROMSX.html#a87f0b7446438b8145bdea79012b985f5">yvel_old</a>[lev], <a class="code" href="classROMSX.html#a87f0b7446438b8145bdea79012b985f5">yvel_old</a>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev], <a class="code" href="classROMSX.html#acb72d33af4be09dede2005fa6c901686">zvel_old</a>[lev], <a class="code" href="classROMSX.html#acb72d33af4be09dede2005fa6c901686">zvel_old</a>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>[lev], <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>[lev], <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>[lev], <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>[lev], <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">auto</span> N = Geom(lev).Domain().size()[2]-1; <span class="comment">// Number of vertical &quot;levs&quot; aka, NZ</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -2568,10 +2568,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// Fill in three ways: 1) interpolate from coarse grid if lev &gt; 0; 2) fill from physical boundaries;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//                     3) fine-fine fill of ghost cells with FillBoundary call</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// Note that we need the fine-fine and physical bc&#39;s in order to correctly move the particles</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>[lev], <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>[lev], <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>[lev], <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>[lev], <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>[lev], <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>[lev], <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>[lev], <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>[lev], <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifdef ROMSX_USE_PARTICLES</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//***************************************************</span></div>
@@ -2584,11 +2584,11 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclassROMSX_html_a21dcccced847102e553281c1852ce005"><div class="ttname"><a href="classROMSX.html#a21dcccced847102e553281c1852ce005">ROMSX::vec_Hvom</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_Hvom</div><div class="ttdef"><b>Definition:</b> ROMSX.H:201</div></div>
 <div class="ttc" id="aclassROMSX_html_a24f02b944df51884168ab0c08c736c91"><div class="ttname"><a href="classROMSX.html#a24f02b944df51884168ab0c08c736c91">ROMSX::vec_Huon</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_Huon</div><div class="ttdef"><b>Definition:</b> ROMSX.H:199</div></div>
 <div class="ttc" id="aclassROMSX_html_a2fb956d77ea6218caea0802b4f181b12"><div class="ttname"><a href="classROMSX.html#a2fb956d77ea6218caea0802b4f181b12">ROMSX::vec_t3</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_t3</div><div class="ttdef"><b>Definition:</b> ROMSX.H:268</div></div>
-<div class="ttc" id="aclassROMSX_html_a56b882fde3fb2f7ed5bf2d93cc30463d"><div class="ttname"><a href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">ROMSX::FillPatch</a></div><div class="ttdeci">void FillPatch(int lev, amrex::Real time, amrex::MultiFab *mf_to_be_filled, amrex::Vector&lt; amrex::MultiFab * &gt; &amp;mf)</div><div class="ttdef"><b>Definition:</b> ROMSX_FillPatch.cpp:16</div></div>
 <div class="ttc" id="aclassROMSX_html_a63d077c5232d18aa0c31f1824b63b5ca"><div class="ttname"><a href="classROMSX.html#a63d077c5232d18aa0c31f1824b63b5ca">ROMSX::vec_Akt</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_Akt</div><div class="ttdef"><b>Definition:</b> ROMSX.H:213</div></div>
 <div class="ttc" id="aclassROMSX_html_a7e2a55ae7fb02290e6ead16ec3e658fa"><div class="ttname"><a href="classROMSX.html#a7e2a55ae7fb02290e6ead16ec3e658fa">ROMSX::vec_z_w</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_z_w</div><div class="ttdef"><b>Definition:</b> ROMSX.H:228</div></div>
 <div class="ttc" id="aclassROMSX_html_a8e887c13b3d23581a26580f4e7e9aef0"><div class="ttname"><a href="classROMSX.html#a8e887c13b3d23581a26580f4e7e9aef0">ROMSX::vec_z_phys_nd</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_z_phys_nd</div><div class="ttdef"><b>Definition:</b> ROMSX.H:232</div></div>
 <div class="ttc" id="aclassROMSX_html_aa5461758b528d199101b5ea74f9a6c12"><div class="ttname"><a href="classROMSX.html#aa5461758b528d199101b5ea74f9a6c12">ROMSX::vec_Hz</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_Hz</div><div class="ttdef"><b>Definition:</b> ROMSX.H:197</div></div>
+<div class="ttc" id="aclassROMSX_html_abb9e3a06ecbafa6f4860576cc80db30c"><div class="ttname"><a href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">ROMSX::FillPatch</a></div><div class="ttdeci">void FillPatch(int lev, amrex::Real time, amrex::MultiFab &amp;mf_to_be_filled, amrex::Vector&lt; amrex::MultiFab * &gt; const &amp;mfs)</div><div class="ttdef"><b>Definition:</b> ROMSX_FillPatch.cpp:16</div></div>
 <div class="ttc" id="aclassROMSX_html_abfbbd9c597dda991fdfe61497cca0a3b"><div class="ttname"><a href="classROMSX.html#abfbbd9c597dda991fdfe61497cca0a3b">ROMSX::vec_s3</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_s3</div><div class="ttdef"><b>Definition:</b> ROMSX.H:270</div></div>
 <div class="ttc" id="aclassROMSX_html_aec2c137ce4314357035cbc7ae292338f"><div class="ttname"><a href="classROMSX.html#aec2c137ce4314357035cbc7ae292338f">ROMSX::vec_Akv</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_Akv</div><div class="ttdef"><b>Definition:</b> ROMSX.H:211</div></div>
 </div><!-- fragment -->
@@ -3385,84 +3385,84 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>fill an entire multifab by interpolating from the coarser level this comes into play when a new level of refinement appears </p>
-<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    BL_PROFILE_VAR(<span class="stringliteral">&quot;FillCoarsePatch()&quot;</span>,<a class="code" href="classROMSX.html#afcdff09eb45a7281877f6bd97c07738f">FillCoarsePatch</a>);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    AMREX_ASSERT(lev &gt; 0);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">int</span> bccomp = 0;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">int</span>  icomp = 0;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">int</span>  ncomp = 1;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    amrex::Interpolater* mapper = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    Box box_mf = ((*mf_to_fill)[0]).box();</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(0,0,0)))</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        bccomp = 0;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        mapper = &amp;cell_cons_interp;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        ncomp = <a class="code" href="IndexDefines_8H.html#ae3f12540307d28407f8d7dd4a169e325">NCONS</a>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(1,0,0)))</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073ab1782753c68aaad8632b0a7d575e57f4">BCVars::xvel_bc</a>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        mapper = &amp;face_linear_interp;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(0,1,0)))</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a98ad22810fdfe9e585bc6481fc12454e">BCVars::yvel_bc</a>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        mapper = &amp;face_linear_interp;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(0,0,1)))</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a03b35ec9e83f34bb1349a86965d34e34">BCVars::zvel_bc</a>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        mapper = &amp;face_linear_interp;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;          amrex::Abort(<span class="stringliteral">&quot;Dont recognize this box type in ROMSX_FillPatch&quot;</span>);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="structTimeInterpolatedData.html">TimeInterpolatedData</a> cdata = <a class="code" href="classROMSX.html#a1dc11d863a7ed83b76003eca972a8578">GetDataAtTime</a>(lev-1, time);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="structTimeInterpolatedData.html">TimeInterpolatedData</a> fdata = <a class="code" href="classROMSX.html#a1dc11d863a7ed83b76003eca972a8578">GetDataAtTime</a>(lev  , time);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    Vector&lt;Real&gt; ctime = {cdata.<a class="code" href="structTimeInterpolatedData.html#a3f1217eba0582186b1ea1b43babcc5f4">get_time</a>()};</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    Vector&lt;MultiFab*&gt; cmf = {mf_crse};</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    Vector&lt;Real&gt; ctime = {time};</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="classROMSXPhysBCFunct.html">ROMSXPhysBCFunct</a> cphysbc(lev-1,geom[lev-1],</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                             <a class="code" href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">domain_bcs_type</a>,<a class="code" href="classROMSX.html#a04e9242a2702910e640d84f47a7aae3c">domain_bcs_type_d</a>,</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                             cdata,</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                             <a class="code" href="classROMSX.html#a3e9e683aa14e1ce2cd331cc56e665faa">m_bc_extdir_vals</a></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;#ifdef ROMSX_USE_NETCDF</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                            ,<a class="code" href="classROMSX.html#abca823cae95a0507a2f850744fd03093">init_type</a>,bdy_data_xlo,bdy_data_xhi,</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                             bdy_data_ylo,bdy_data_yhi,bdy_time_interval</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;#endif</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                            );</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="classROMSXPhysBCFunct.html">ROMSXPhysBCFunct</a> fphysbc(lev,geom[lev],</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                             <a class="code" href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">domain_bcs_type</a>,<a class="code" href="classROMSX.html#a04e9242a2702910e640d84f47a7aae3c">domain_bcs_type_d</a>,</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                             fdata,</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                             <a class="code" href="classROMSX.html#a3e9e683aa14e1ce2cd331cc56e665faa">m_bc_extdir_vals</a></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;#ifdef ROMSX_USE_NETCDF</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                            ,<a class="code" href="classROMSX.html#abca823cae95a0507a2f850744fd03093">init_type</a>,bdy_data_xlo,bdy_data_xhi,</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                             bdy_data_ylo,bdy_data_yhi,bdy_time_interval</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;#endif</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                            );</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">//  amrex::InterpFromCoarseLevel(mf, time, *cmf[0], 0, icomp, ncomp, geom[lev-1], geom[lev],</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">//                               cphysbc, 0, fphysbc, 0, refRatio(lev-1),</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">//                               mapper, domain_bcs_type, bccomp);</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    amrex::InterpFromCoarseLevel(*mf_to_fill, time, mf_crse[lev-1], 0, icomp, ncomp, geom[lev-1], geom[lev],</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                                 <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, 0, <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, 0, refRatio(lev-1),</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                 mapper, <a class="code" href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">domain_bcs_type</a>, bccomp);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    BL_PROFILE_VAR(<span class="stringliteral">&quot;FillCoarsePatch()&quot;</span>,<a class="code" href="classROMSX.html#afcdff09eb45a7281877f6bd97c07738f">FillCoarsePatch</a>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    AMREX_ASSERT(lev &gt; 0);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">int</span> bccomp = 0;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">int</span>  icomp = 0;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">int</span>  ncomp = 1;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    amrex::Interpolater* mapper = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    Box box_mf = ((*mf_to_fill)[0]).box();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(0,0,0)))</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        bccomp = 0;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        mapper = &amp;cell_cons_interp;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        ncomp = <a class="code" href="IndexDefines_8H.html#ae3f12540307d28407f8d7dd4a169e325">NCONS</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(1,0,0)))</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073ab1782753c68aaad8632b0a7d575e57f4">BCVars::xvel_bc</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(0,1,0)))</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a98ad22810fdfe9e585bc6481fc12454e">BCVars::yvel_bc</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(0,0,1)))</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a03b35ec9e83f34bb1349a86965d34e34">BCVars::zvel_bc</a>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;          amrex::Abort(<span class="stringliteral">&quot;Dont recognize this box type in ROMSX_FillPatch&quot;</span>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="structTimeInterpolatedData.html">TimeInterpolatedData</a> cdata = <a class="code" href="classROMSX.html#a1dc11d863a7ed83b76003eca972a8578">GetDataAtTime</a>(lev-1, time);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="structTimeInterpolatedData.html">TimeInterpolatedData</a> fdata = <a class="code" href="classROMSX.html#a1dc11d863a7ed83b76003eca972a8578">GetDataAtTime</a>(lev  , time);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    Vector&lt;Real&gt; ctime = {cdata.<a class="code" href="structTimeInterpolatedData.html#a3f1217eba0582186b1ea1b43babcc5f4">get_time</a>()};</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    Vector&lt;MultiFab*&gt; cmf = {mf_crse};</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    Vector&lt;Real&gt; ctime = {time};</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="classROMSXPhysBCFunct.html">ROMSXPhysBCFunct</a> cphysbc(lev-1,geom[lev-1],</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                             <a class="code" href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">domain_bcs_type</a>,<a class="code" href="classROMSX.html#a04e9242a2702910e640d84f47a7aae3c">domain_bcs_type_d</a>,</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                             cdata,</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                             <a class="code" href="classROMSX.html#a3e9e683aa14e1ce2cd331cc56e665faa">m_bc_extdir_vals</a></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;#ifdef ROMSX_USE_NETCDF</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                            ,<a class="code" href="classROMSX.html#abca823cae95a0507a2f850744fd03093">init_type</a>,bdy_data_xlo,bdy_data_xhi,</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                             bdy_data_ylo,bdy_data_yhi,bdy_time_interval</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;#endif</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                            );</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="classROMSXPhysBCFunct.html">ROMSXPhysBCFunct</a> fphysbc(lev,geom[lev],</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                             <a class="code" href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">domain_bcs_type</a>,<a class="code" href="classROMSX.html#a04e9242a2702910e640d84f47a7aae3c">domain_bcs_type_d</a>,</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                             fdata,</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                             <a class="code" href="classROMSX.html#a3e9e683aa14e1ce2cd331cc56e665faa">m_bc_extdir_vals</a></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;#ifdef ROMSX_USE_NETCDF</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                            ,<a class="code" href="classROMSX.html#abca823cae95a0507a2f850744fd03093">init_type</a>,bdy_data_xlo,bdy_data_xhi,</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                             bdy_data_ylo,bdy_data_yhi,bdy_time_interval</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;#endif</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                            );</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">//  amrex::InterpFromCoarseLevel(mf, time, *cmf[0], 0, icomp, ncomp, geom[lev-1], geom[lev],</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">//                               cphysbc, 0, fphysbc, 0, refRatio(lev-1),</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">//                               mapper, domain_bcs_type, bccomp);</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    amrex::InterpFromCoarseLevel(*mf_to_fill, time, mf_crse[lev-1], 0, icomp, ncomp, geom[lev-1], geom[lev],</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                 <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, 0, <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, 0, refRatio(lev-1),</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                 mapper, <a class="code" href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">domain_bcs_type</a>, bccomp);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
 <div class="ttc" id="aIndexDefines_8H_html_ae3f12540307d28407f8d7dd4a169e325"><div class="ttname"><a href="IndexDefines_8H.html#ae3f12540307d28407f8d7dd4a169e325">NCONS</a></div><div class="ttdeci">#define NCONS</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:11</div></div>
 <div class="ttc" id="aROMSX__FillPatch_8cpp_html_a85a7293fad1a59ed566bcea306373abc"><div class="ttname"><a href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a></div><div class="ttdeci">PhysBCFunctNoOp null_bc</div><div class="ttdef"><b>Definition:</b> ROMSX_FillPatch.cpp:8</div></div>
 <div class="ttc" id="aclassROMSXPhysBCFunct_html"><div class="ttname"><a href="classROMSXPhysBCFunct.html">ROMSXPhysBCFunct</a></div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:34</div></div>
 <div class="ttc" id="aclassROMSX_html_a003d617559e7196bba737b43e23f9fc4"><div class="ttname"><a href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">ROMSX::domain_bcs_type</a></div><div class="ttdeci">amrex::Vector&lt; amrex::BCRec &gt; domain_bcs_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:773</div></div>
 <div class="ttc" id="aclassROMSX_html_a04e9242a2702910e640d84f47a7aae3c"><div class="ttname"><a href="classROMSX.html#a04e9242a2702910e640d84f47a7aae3c">ROMSX::domain_bcs_type_d</a></div><div class="ttdeci">amrex::Gpu::DeviceVector&lt; amrex::BCRec &gt; domain_bcs_type_d</div><div class="ttdef"><b>Definition:</b> ROMSX.H:774</div></div>
-<div class="ttc" id="aclassROMSX_html_a1dc11d863a7ed83b76003eca972a8578"><div class="ttname"><a href="classROMSX.html#a1dc11d863a7ed83b76003eca972a8578">ROMSX::GetDataAtTime</a></div><div class="ttdeci">TimeInterpolatedData GetDataAtTime(int lev, amrex::Real time)</div><div class="ttdef"><b>Definition:</b> ROMSX_FillPatch.cpp:93</div></div>
+<div class="ttc" id="aclassROMSX_html_a1dc11d863a7ed83b76003eca972a8578"><div class="ttname"><a href="classROMSX.html#a1dc11d863a7ed83b76003eca972a8578">ROMSX::GetDataAtTime</a></div><div class="ttdeci">TimeInterpolatedData GetDataAtTime(int lev, amrex::Real time)</div><div class="ttdef"><b>Definition:</b> ROMSX_FillPatch.cpp:94</div></div>
 <div class="ttc" id="aclassROMSX_html_a3e9e683aa14e1ce2cd331cc56e665faa"><div class="ttname"><a href="classROMSX.html#a3e9e683aa14e1ce2cd331cc56e665faa">ROMSX::m_bc_extdir_vals</a></div><div class="ttdeci">amrex::Array&lt; amrex::Array&lt; amrex::Real, AMREX_SPACEDIM *2 &gt;, AMREX_SPACEDIM+NCONS &gt; m_bc_extdir_vals</div><div class="ttdef"><b>Definition:</b> ROMSX.H:780</div></div>
 <div class="ttc" id="aclassROMSX_html_abca823cae95a0507a2f850744fd03093"><div class="ttname"><a href="classROMSX.html#abca823cae95a0507a2f850744fd03093">ROMSX::init_type</a></div><div class="ttdeci">static std::string init_type</div><div class="ttdef"><b>Definition:</b> ROMSX.H:867</div></div>
-<div class="ttc" id="aclassROMSX_html_afcdff09eb45a7281877f6bd97c07738f"><div class="ttname"><a href="classROMSX.html#afcdff09eb45a7281877f6bd97c07738f">ROMSX::FillCoarsePatch</a></div><div class="ttdeci">void FillCoarsePatch(int lev, amrex::Real time, amrex::MultiFab *mf_fine, amrex::MultiFab *mf_crse)</div><div class="ttdef"><b>Definition:</b> ROMSX_FillPatch.cpp:154</div></div>
+<div class="ttc" id="aclassROMSX_html_afcdff09eb45a7281877f6bd97c07738f"><div class="ttname"><a href="classROMSX.html#afcdff09eb45a7281877f6bd97c07738f">ROMSX::FillCoarsePatch</a></div><div class="ttdeci">void FillCoarsePatch(int lev, amrex::Real time, amrex::MultiFab *mf_fine, amrex::MultiFab *mf_crse)</div><div class="ttdef"><b>Definition:</b> ROMSX_FillPatch.cpp:155</div></div>
 <div class="ttc" id="anamespaceBCVars_html_a6fd8f72c3055242c4af20c780f391073a03b35ec9e83f34bb1349a86965d34e34"><div class="ttname"><a href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a03b35ec9e83f34bb1349a86965d34e34">BCVars::zvel_bc</a></div><div class="ttdeci">@ zvel_bc</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:22</div></div>
 <div class="ttc" id="anamespaceBCVars_html_a6fd8f72c3055242c4af20c780f391073a98ad22810fdfe9e585bc6481fc12454e"><div class="ttname"><a href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a98ad22810fdfe9e585bc6481fc12454e">BCVars::yvel_bc</a></div><div class="ttdeci">@ yvel_bc</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:21</div></div>
 <div class="ttc" id="anamespaceBCVars_html_a6fd8f72c3055242c4af20c780f391073ab1782753c68aaad8632b0a7d575e57f4"><div class="ttname"><a href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073ab1782753c68aaad8632b0a7d575e57f4">BCVars::xvel_bc</a></div><div class="ttdeci">@ xvel_bc</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:20</div></div>
@@ -3480,8 +3480,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a56b882fde3fb2f7ed5bf2d93cc30463d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56b882fde3fb2f7ed5bf2d93cc30463d">&#9670;&nbsp;</a></span>FillPatch()</h2>
+<a id="abb9e3a06ecbafa6f4860576cc80db30c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9e3a06ecbafa6f4860576cc80db30c">&#9670;&nbsp;</a></span>FillPatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3501,14 +3501,14 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">amrex::MultiFab *&#160;</td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
           <td class="paramname"><em>mf_to_be_filled</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">amrex::Vector&lt; amrex::MultiFab * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>mf</em>&#160;</td>
+          <td class="paramtype">amrex::Vector&lt; amrex::MultiFab * &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>mfs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3523,9 +3523,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    amrex::Interpolater* mapper = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> icomp = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> ncomp = mf_to_fill-&gt;nComp();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> ncomp = mf_to_fill.nComp();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Box mf_box(mf_to_fill-&gt;boxArray()[0]);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Box mf_box(mf_to_fill.boxArray()[0]);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(0,0,0)))</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        bccomp = 0;</div>
@@ -3555,7 +3555,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        Vector&lt;MultiFab*&gt; fmf = {mfs[lev], mfs[lev]};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        Vector&lt;Real&gt; ftime    = {<a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev], <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev]};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        amrex::FillPatchSingleLevel(*mf_to_fill, time, fmf, ftime, icomp, icomp, ncomp,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        amrex::FillPatchSingleLevel(mf_to_fill, time, fmf, ftime, icomp, icomp, ncomp,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                    geom[lev], <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, bccomp);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">else</span></div>
@@ -3565,7 +3565,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        Vector&lt;MultiFab*&gt; cmf = {mfs[lev-1], mfs[lev-1]};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        Vector&lt;Real&gt; ctime    = {<a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev-1], <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev-1]};</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        amrex::FillPatchTwoLevels(*mf_to_fill, time, cmf, ctime, fmf, ftime,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        amrex::FillPatchTwoLevels(mf_to_fill, time, cmf, ctime, fmf, ftime,</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                  0, icomp, ncomp, geom[lev-1], geom[lev],</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                  <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, bccomp, <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, bccomp, refRatio(lev-1),</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                  mapper, <a class="code" href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">domain_bcs_type</a>, bccomp);</div>
@@ -3576,12 +3576,12 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;         (mf_box.ixType() == IndexType(IntVect(0,1,0))) )</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">int</span> khi = geom[lev].Domain().bigEnd(2);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">for</span> (MFIter mfi(*mf_to_fill); mfi.isValid(); ++mfi)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">for</span> (MFIter mfi(mf_to_fill); mfi.isValid(); ++mfi)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            Box gbx  = mfi.growntilebox(); <span class="comment">// Note this is face-centered since vel is</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            gbx.setSmall(2,khi+1);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> (gbx.ok()) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                Array4&lt;Real&gt; vel_arr = mf_to_fill-&gt;array(mfi);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                Array4&lt;Real&gt; vel_arr = mf_to_fill.array(mfi);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                ParallelFor(gbx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    vel_arr(i,j,k) = vel_arr(i,j,khi);</div>
@@ -3650,55 +3650,55 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;{</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    BL_PROFILE_VAR(<span class="stringliteral">&quot;ROMSX::FillPatchNoPhysBC()&quot;</span>,ROMSX_FillPatchNoPhysBC);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">int</span> bccomp = 0;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    amrex::Interpolater* mapper = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    Box mf_box(mf_to_fill.boxArray()[0]);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(0,0,0)))</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        bccomp = 0;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        mapper = &amp;cell_cons_interp;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(1,0,0)))</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073ab1782753c68aaad8632b0a7d575e57f4">BCVars::xvel_bc</a>;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        mapper = &amp;face_linear_interp;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(0,1,0)))</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a98ad22810fdfe9e585bc6481fc12454e">BCVars::yvel_bc</a>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        mapper = &amp;face_linear_interp;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(0,0,1)))</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a03b35ec9e83f34bb1349a86965d34e34">BCVars::zvel_bc</a>;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        mapper = &amp;face_linear_interp;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;          amrex::Abort(<span class="stringliteral">&quot;Dont recognize this box type in ROMSX_FillPatchNoPhysBC&quot;</span>);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">if</span> (lev == 0)</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        Vector&lt;MultiFab*&gt; fmf = {mfs_to_use[lev], mfs_to_use[lev]};</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        Vector&lt;Real&gt; ftime    = {time,time};</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        amrex::FillPatchSingleLevel(mf_to_fill, time, fmf, ftime, icomp, icomp, ncomp,</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                    geom[lev], <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, bccomp);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        Vector&lt;MultiFab*&gt; fmf = {mfs_to_use[lev],mfs_to_use[lev]};</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        Vector&lt;Real&gt; ftime    = {time, time};</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        Vector&lt;MultiFab*&gt; cmf = {mfs_to_use[lev-1],mfs_to_use[lev-1]};</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        Vector&lt;Real&gt; ctime    = {time, time};</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        amrex::FillPatchTwoLevels(mf_to_fill, time, cmf, ctime, fmf, ftime,</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                  0, icomp, ncomp, geom[lev-1], geom[lev],</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                  <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, bccomp, <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, bccomp, refRatio(lev-1),</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                                  mapper, <a class="code" href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">domain_bcs_type</a>, bccomp);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    } <span class="comment">// lev &gt; 0</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;{</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    BL_PROFILE_VAR(<span class="stringliteral">&quot;ROMSX::FillPatchNoPhysBC()&quot;</span>,ROMSX_FillPatchNoPhysBC);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordtype">int</span> bccomp = 0;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    amrex::Interpolater* mapper = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    Box mf_box(mf_to_fill.boxArray()[0]);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(0,0,0)))</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        bccomp = 0;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        mapper = &amp;cell_cons_interp;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(1,0,0)))</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073ab1782753c68aaad8632b0a7d575e57f4">BCVars::xvel_bc</a>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(0,1,0)))</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a98ad22810fdfe9e585bc6481fc12454e">BCVars::yvel_bc</a>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(0,0,1)))</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        bccomp = <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a03b35ec9e83f34bb1349a86965d34e34">BCVars::zvel_bc</a>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;          amrex::Abort(<span class="stringliteral">&quot;Dont recognize this box type in ROMSX_FillPatchNoPhysBC&quot;</span>);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">if</span> (lev == 0)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        Vector&lt;MultiFab*&gt; fmf = {mfs_to_use[lev], mfs_to_use[lev]};</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        Vector&lt;Real&gt; ftime    = {time,time};</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        amrex::FillPatchSingleLevel(mf_to_fill, time, fmf, ftime, icomp, icomp, ncomp,</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                    geom[lev], <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, bccomp);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        Vector&lt;MultiFab*&gt; fmf = {mfs_to_use[lev],mfs_to_use[lev]};</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        Vector&lt;Real&gt; ftime    = {time, time};</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        Vector&lt;MultiFab*&gt; cmf = {mfs_to_use[lev-1],mfs_to_use[lev-1]};</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        Vector&lt;Real&gt; ctime    = {time, time};</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        amrex::FillPatchTwoLevels(mf_to_fill, time, cmf, ctime, fmf, ftime,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                  0, icomp, ncomp, geom[lev-1], geom[lev],</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                                  <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, bccomp, <a class="code" href="ROMSX__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc">null_bc</a>, bccomp, refRatio(lev-1),</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                  mapper, <a class="code" href="classROMSX.html#a003d617559e7196bba737b43e23f9fc4">domain_bcs_type</a>, bccomp);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    } <span class="comment">// lev &gt; 0</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3815,61 +3815,61 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>utility to copy in data from old and/or new state into another multifab </p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    BL_PROFILE_VAR(<span class="stringliteral">&quot;GetDataAtTime()&quot;</span>,<a class="code" href="classROMSX.html#a1dc11d863a7ed83b76003eca972a8578">GetDataAtTime</a>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="structTimeInterpolatedData.html">TimeInterpolatedData</a> data;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">// HACK HACK HACK</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">const</span> <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> teps = (<a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev] - <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev]) * 1.e-3;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (time &gt; <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev] - teps &amp;&amp; time &lt; <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev] + teps)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0b88b0a3a03a3e787a7b27717ec64de7">Vars::NumTypes</a>; ++i) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            data.<a class="code" href="structTimeInterpolatedData.html#a3b9292eb3012672361abacc2ab7d9b2c">add_var</a>(&amp;vars_new[lev][i], data.<a class="code" href="structTimeInterpolatedData.html#a39ab53c6a67f3b87c895483a89e2fc0f">non_owning</a>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a0d6dcefbf7407a24669d2a37c7f558d4">set_time</a>(<a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev]);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (time &gt; <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev] - teps &amp;&amp; time &lt; <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev] + teps)</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0b88b0a3a03a3e787a7b27717ec64de7">Vars::NumTypes</a>; ++i) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            data.<a class="code" href="structTimeInterpolatedData.html#a3b9292eb3012672361abacc2ab7d9b2c">add_var</a>(&amp;vars_old[lev][i], data.<a class="code" href="structTimeInterpolatedData.html#a39ab53c6a67f3b87c895483a89e2fc0f">non_owning</a>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a0d6dcefbf7407a24669d2a37c7f558d4">set_time</a>(<a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev]);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (time &gt; <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev] &amp;&amp; time &lt; <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev])</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">// do first order interpolation in time between [t_old[lev], t_new[lev]]</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="comment">// time interpolation includes the ghost cells</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0b88b0a3a03a3e787a7b27717ec64de7">Vars::NumTypes</a>; ++i) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            MultiFab* mf_tmp = <span class="keyword">new</span> MultiFab(vars_new[lev][i].boxArray(),</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                            vars_new[lev][i].DistributionMap(),</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                            vars_new[lev][i].nComp(), vars_new[lev][i].nGrowVect());</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            mf_tmp-&gt;setVal(0.0_rt);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keyword">const</span> <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> dt_fraction = (time - <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev]) / (<a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev] - <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev]);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            MultiFab::Saxpy(*mf_tmp, 1.0_rt - dt_fraction, vars_old[lev][i], 0, 0, mf_tmp-&gt;nComp(), mf_tmp-&gt;nGrowVect());</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            MultiFab::Saxpy(*mf_tmp,          dt_fraction, vars_new[lev][i], 0, 0, mf_tmp-&gt;nComp(), mf_tmp-&gt;nGrowVect());</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            data.<a class="code" href="structTimeInterpolatedData.html#a3b9292eb3012672361abacc2ab7d9b2c">add_var</a>(mf_tmp, data.<a class="code" href="structTimeInterpolatedData.html#af9c5a331c09d13db10c98ad3033114d8">owning</a>);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a0d6dcefbf7407a24669d2a37c7f558d4">set_time</a>(time);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        amrex::Error(<span class="stringliteral">&quot;Requested data at a time outside the interval [t_old, t_new]&quot;</span>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="comment">// We need to make sure to fill these before we compute the viscosity</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0b88b0a3a03a3e787a7b27717ec64de7">Vars::NumTypes</a>; ++i) {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a65f3edf3f03a779a931f5c58bd438602">get_var</a>(Vars::xvel).FillBoundary(geom[lev].periodicity());</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a65f3edf3f03a779a931f5c58bd438602">get_var</a>(Vars::yvel).FillBoundary(geom[lev].periodicity());</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a65f3edf3f03a779a931f5c58bd438602">get_var</a>(Vars::zvel).FillBoundary(geom[lev].periodicity());</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a65f3edf3f03a779a931f5c58bd438602">get_var</a>(Vars::cons).FillBoundary(geom[lev].periodicity());</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> data;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    BL_PROFILE_VAR(<span class="stringliteral">&quot;GetDataAtTime()&quot;</span>,<a class="code" href="classROMSX.html#a1dc11d863a7ed83b76003eca972a8578">GetDataAtTime</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="structTimeInterpolatedData.html">TimeInterpolatedData</a> data;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// HACK HACK HACK</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> teps = (<a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev] - <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev]) * 1.e-3;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (time &gt; <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev] - teps &amp;&amp; time &lt; <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev] + teps)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0b88b0a3a03a3e787a7b27717ec64de7">Vars::NumTypes</a>; ++i) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            data.<a class="code" href="structTimeInterpolatedData.html#a3b9292eb3012672361abacc2ab7d9b2c">add_var</a>(&amp;vars_new[lev][i], data.<a class="code" href="structTimeInterpolatedData.html#a39ab53c6a67f3b87c895483a89e2fc0f">non_owning</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a0d6dcefbf7407a24669d2a37c7f558d4">set_time</a>(<a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev]);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (time &gt; <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev] - teps &amp;&amp; time &lt; <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev] + teps)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0b88b0a3a03a3e787a7b27717ec64de7">Vars::NumTypes</a>; ++i) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            data.<a class="code" href="structTimeInterpolatedData.html#a3b9292eb3012672361abacc2ab7d9b2c">add_var</a>(&amp;vars_old[lev][i], data.<a class="code" href="structTimeInterpolatedData.html#a39ab53c6a67f3b87c895483a89e2fc0f">non_owning</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a0d6dcefbf7407a24669d2a37c7f558d4">set_time</a>(<a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev]);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (time &gt; <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev] &amp;&amp; time &lt; <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev])</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="comment">// do first order interpolation in time between [t_old[lev], t_new[lev]]</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">// time interpolation includes the ghost cells</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0b88b0a3a03a3e787a7b27717ec64de7">Vars::NumTypes</a>; ++i) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            MultiFab* mf_tmp = <span class="keyword">new</span> MultiFab(vars_new[lev][i].boxArray(),</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                            vars_new[lev][i].DistributionMap(),</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                            vars_new[lev][i].nComp(), vars_new[lev][i].nGrowVect());</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            mf_tmp-&gt;setVal(0.0_rt);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keyword">const</span> <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> dt_fraction = (time - <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev]) / (<a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev] - <a class="code" href="classROMSX.html#ac395453aa10633a05bb7323b2946101e">t_old</a>[lev]);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            MultiFab::Saxpy(*mf_tmp, 1.0_rt - dt_fraction, vars_old[lev][i], 0, 0, mf_tmp-&gt;nComp(), mf_tmp-&gt;nGrowVect());</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            MultiFab::Saxpy(*mf_tmp,          dt_fraction, vars_new[lev][i], 0, 0, mf_tmp-&gt;nComp(), mf_tmp-&gt;nGrowVect());</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            data.<a class="code" href="structTimeInterpolatedData.html#a3b9292eb3012672361abacc2ab7d9b2c">add_var</a>(mf_tmp, data.<a class="code" href="structTimeInterpolatedData.html#af9c5a331c09d13db10c98ad3033114d8">owning</a>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a0d6dcefbf7407a24669d2a37c7f558d4">set_time</a>(time);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        amrex::Error(<span class="stringliteral">&quot;Requested data at a time outside the interval [t_old, t_new]&quot;</span>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// We need to make sure to fill these before we compute the viscosity</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0b88b0a3a03a3e787a7b27717ec64de7">Vars::NumTypes</a>; ++i) {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a65f3edf3f03a779a931f5c58bd438602">get_var</a>(Vars::xvel).FillBoundary(geom[lev].periodicity());</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a65f3edf3f03a779a931f5c58bd438602">get_var</a>(Vars::yvel).FillBoundary(geom[lev].periodicity());</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a65f3edf3f03a779a931f5c58bd438602">get_var</a>(Vars::zvel).FillBoundary(geom[lev].periodicity());</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        data.<a class="code" href="structTimeInterpolatedData.html#a65f3edf3f03a779a931f5c58bd438602">get_var</a>(Vars::cons).FillBoundary(geom[lev].periodicity());</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">return</span> data;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
 <div class="ttc" id="anamespaceBCVars_html_a6fd8f72c3055242c4af20c780f391073a0b88b0a3a03a3e787a7b27717ec64de7"><div class="ttname"><a href="namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a0b88b0a3a03a3e787a7b27717ec64de7">BCVars::NumTypes</a></div><div class="ttdeci">@ NumTypes</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:23</div></div>
 <div class="ttc" id="astructTimeInterpolatedData_html_a0d6dcefbf7407a24669d2a37c7f558d4"><div class="ttname"><a href="structTimeInterpolatedData.html#a0d6dcefbf7407a24669d2a37c7f558d4">TimeInterpolatedData::set_time</a></div><div class="ttdeci">void set_time(amrex::Real time)</div><div class="ttdef"><b>Definition:</b> TimeInterpolatedData.H:17</div></div>
 <div class="ttc" id="astructTimeInterpolatedData_html_a39ab53c6a67f3b87c895483a89e2fc0f"><div class="ttname"><a href="structTimeInterpolatedData.html#a39ab53c6a67f3b87c895483a89e2fc0f">TimeInterpolatedData::non_owning</a></div><div class="ttdeci">const int non_owning</div><div class="ttdef"><b>Definition:</b> TimeInterpolatedData.H:50</div></div>
@@ -4664,10 +4664,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="comment">// Fill ghost cells/faces</span></div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> lev = 0; lev &lt;= finest_level; ++lev)</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>[lev], <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>[lev], <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>[lev], <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>[lev], <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>[lev], <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>[lev], <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>[lev], <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>[lev], <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="comment">// Copy from new into old just in case</span></div>
@@ -7155,10 +7155,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    MultiFab* tmp_zvel_old; tmp_zvel_old-&gt;define(convert(ba, IntVect(0,0,1)), dm, 1, IntVect(ngrow_vels,ngrow_vels,0));</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// This will fill the temporary MultiFabs with data from previous fine data as well as coarse where needed</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, time, tmp_cons_new, <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, time, tmp_xvel_new, <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, time, tmp_yvel_new, <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, time, tmp_zvel_new, <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *tmp_cons_new, <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *tmp_xvel_new, <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *tmp_yvel_new, <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *tmp_zvel_new, <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    MultiFab::Copy(*tmp_cons_old,*tmp_cons_new,0,0,<a class="code" href="IndexDefines_8H.html#ae3f12540307d28407f8d7dd4a169e325">NCONS</a>,tmp_cons_new[lev].nGrowVect());</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    MultiFab::Copy(*tmp_xvel_old,*tmp_xvel_new,0,0,   1,tmp_xvel_new[lev].nGrowVect());</div>
@@ -9338,10 +9338,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> nvars = S_old.nComp();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// Fill ghost cells/faces at old time</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, time, <a class="code" href="classROMSX.html#a7a14aa971cac1b1ad0eb5d4b46b90343">cons_old</a>[lev], <a class="code" href="classROMSX.html#a7a14aa971cac1b1ad0eb5d4b46b90343">cons_old</a>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, time, <a class="code" href="classROMSX.html#af0b5074dc426b753beb5511bd63df407">xvel_old</a>[lev], <a class="code" href="classROMSX.html#af0b5074dc426b753beb5511bd63df407">xvel_old</a>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, time, <a class="code" href="classROMSX.html#a87f0b7446438b8145bdea79012b985f5">yvel_old</a>[lev], <a class="code" href="classROMSX.html#a87f0b7446438b8145bdea79012b985f5">yvel_old</a>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, time, <a class="code" href="classROMSX.html#acb72d33af4be09dede2005fa6c901686">zvel_old</a>[lev], <a class="code" href="classROMSX.html#acb72d33af4be09dede2005fa6c901686">zvel_old</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *<a class="code" href="classROMSX.html#a7a14aa971cac1b1ad0eb5d4b46b90343">cons_old</a>[lev], <a class="code" href="classROMSX.html#a7a14aa971cac1b1ad0eb5d4b46b90343">cons_old</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *<a class="code" href="classROMSX.html#af0b5074dc426b753beb5511bd63df407">xvel_old</a>[lev], <a class="code" href="classROMSX.html#af0b5074dc426b753beb5511bd63df407">xvel_old</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *<a class="code" href="classROMSX.html#a87f0b7446438b8145bdea79012b985f5">yvel_old</a>[lev], <a class="code" href="classROMSX.html#a87f0b7446438b8145bdea79012b985f5">yvel_old</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *<a class="code" href="classROMSX.html#acb72d33af4be09dede2005fa6c901686">zvel_old</a>[lev], <a class="code" href="classROMSX.html#acb72d33af4be09dede2005fa6c901686">zvel_old</a>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    //////////    //pre_step3d corrections to boundaries</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span> </div>
@@ -9976,47 +9976,49 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      });</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="classROMSX.html#a7e2a55ae7fb02290e6ead16ec3e658fa">vec_z_w</a>[lev]-&gt;FillBoundary(geom[lev].periodicity());</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="classROMSX.html#a0a9b1a5cf021018defc82b45cbecb2c5">vec_z_r</a>[lev]-&gt;FillBoundary(geom[lev].periodicity());</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="classROMSX.html#a7a3b7fb166ec3acf1b1057f53e08adad">vec_s_r</a>[lev]-&gt;FillBoundary(geom[lev].periodicity());</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="classROMSX.html#aa5461758b528d199101b5ea74f9a6c12">vec_Hz</a>[lev]-&gt;FillBoundary(geom[lev].periodicity());</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// Define nodal z as average of z on w-faces</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">for</span> ( MFIter mfi(*<a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>[lev], TilingIfNotGPU()); mfi.isValid(); ++mfi )</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      Array4&lt;Real&gt; <span class="keyword">const</span>&amp; z_w = (mf_z_w)-&gt;array(mfi);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      Array4&lt;Real&gt; <span class="keyword">const</span>&amp; z_phys_nd  = (mf_z_phys_nd)-&gt;array(mfi);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      Box z_w_box = Box(z_w);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <span class="keyword">auto</span> <span class="keyword">const</span> lo = amrex::lbound(z_w_box);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <span class="keyword">auto</span> <span class="keyword">const</span> hi = amrex::ubound(z_w_box);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      <span class="comment">// WARNING: z_w(i,j,k)       refers to the face on the HIGH side of cell (i,j,k)</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      <span class="comment">// WARNING: z_phys_nd(i,j,k) refers to the node on the LOW  side of cell (i,j,k)</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      amrex::ParallelFor(Box(z_phys_nd),</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;          <span class="comment">// For now assume all boundaries are constant height --</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;          <span class="comment">//     we will enforce periodicity below</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;          <span class="keywordtype">int</span> kk = (k == 0) ? hi.z : k-1;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;          if ( i &gt;= lo.x &amp;&amp; i &lt;= hi.x-1 &amp;&amp; j &gt;= lo.y &amp;&amp; j &lt;= hi.y-1 )</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;          {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;              z_phys_nd(i,j,k)=0.25*( z_w(i,j  ,kk) + z_w(i+1,j  ,kk) +</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                      z_w(i,j+1,kk) + z_w(i+1,j+1,kk) );</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;          } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;             <span class="keywordtype">int</span> ii = std::min(std::max(i, lo.x), hi.x);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;             <span class="keywordtype">int</span> jj = std::min(std::max(j, lo.y), hi.y);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;             z_phys_nd(i,j,k) = z_w(ii,jj,kk);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;          }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;          <span class="keywordflow">if</span> (k == 0)  z_phys_nd(i,j,k) *= -1.;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      });</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    } <span class="comment">// mf</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">// Enforce periodicity</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <a class="code" href="classROMSX.html#a8e887c13b3d23581a26580f4e7e9aef0">vec_z_phys_nd</a>[lev]-&gt;FillBoundary(geom[lev].periodicity());</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">Real</a> time = <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev];</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *<a class="code" href="classROMSX.html#a7e2a55ae7fb02290e6ead16ec3e658fa">vec_z_w</a>[lev], GetVecOfPtrs(<a class="code" href="classROMSX.html#a7e2a55ae7fb02290e6ead16ec3e658fa">vec_z_w</a>));</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *<a class="code" href="classROMSX.html#a0a9b1a5cf021018defc82b45cbecb2c5">vec_z_r</a>[lev], GetVecOfPtrs(<a class="code" href="classROMSX.html#a0a9b1a5cf021018defc82b45cbecb2c5">vec_z_r</a>));</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *<a class="code" href="classROMSX.html#a7a3b7fb166ec3acf1b1057f53e08adad">vec_s_r</a>[lev], GetVecOfPtrs(<a class="code" href="classROMSX.html#a7a3b7fb166ec3acf1b1057f53e08adad">vec_s_r</a>));</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, time, *<a class="code" href="classROMSX.html#aa5461758b528d199101b5ea74f9a6c12">vec_Hz</a>[lev] , GetVecOfPtrs(<a class="code" href="classROMSX.html#aa5461758b528d199101b5ea74f9a6c12">vec_Hz</a>));</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">// Define nodal z as average of z on w-faces</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">for</span> ( MFIter mfi(*<a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>[lev], TilingIfNotGPU()); mfi.isValid(); ++mfi )</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      Array4&lt;Real&gt; <span class="keyword">const</span>&amp; z_w = (mf_z_w)-&gt;array(mfi);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      Array4&lt;Real&gt; <span class="keyword">const</span>&amp; z_phys_nd  = (mf_z_phys_nd)-&gt;array(mfi);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      Box z_w_box = Box(z_w);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <span class="keyword">auto</span> <span class="keyword">const</span> lo = amrex::lbound(z_w_box);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      <span class="keyword">auto</span> <span class="keyword">const</span> hi = amrex::ubound(z_w_box);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      <span class="comment">// WARNING: z_w(i,j,k)       refers to the face on the HIGH side of cell (i,j,k)</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <span class="comment">// WARNING: z_phys_nd(i,j,k) refers to the node on the LOW  side of cell (i,j,k)</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      amrex::ParallelFor(Box(z_phys_nd),</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;          <span class="comment">// For now assume all boundaries are constant height --</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;          <span class="comment">//     we will enforce periodicity below</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;          <span class="keywordtype">int</span> kk = (k == 0) ? hi.z : k-1;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;          if ( i &gt;= lo.x &amp;&amp; i &lt;= hi.x-1 &amp;&amp; j &gt;= lo.y &amp;&amp; j &lt;= hi.y-1 )</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;          {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;              z_phys_nd(i,j,k)=0.25*( z_w(i,j  ,kk) + z_w(i+1,j  ,kk) +</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                                      z_w(i,j+1,kk) + z_w(i+1,j+1,kk) );</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;          } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;             <span class="keywordtype">int</span> ii = std::min(std::max(i, lo.x), hi.x);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;             <span class="keywordtype">int</span> jj = std::min(std::max(j, lo.y), hi.y);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;             z_phys_nd(i,j,k) = z_w(ii,jj,kk);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;          }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;          <span class="keywordflow">if</span> (k == 0)  z_phys_nd(i,j,k) *= -1.;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      });</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    } <span class="comment">// mf</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">// Note that we do *not* want to do a multilevel fill here -- we have</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">// already filled z_phys_nd on the grown boxes, but we enforce periodicity just in case</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="classROMSX.html#a8e887c13b3d23581a26580f4e7e9aef0">vec_z_phys_nd</a>[lev]-&gt;FillBoundary(geom[lev].periodicity());</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
 <div class="ttc" id="astructSolverChoice_html_a6b82e27f159d8bc0bf4e3429cecce8b5"><div class="ttname"><a href="structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5">SolverChoice::theta_b</a></div><div class="ttdeci">amrex::Real theta_b</div><div class="ttdef"><b>Definition:</b> DataStruct.H:171</div></div>
 <div class="ttc" id="astructSolverChoice_html_a6c6e710a8470aace72066b3dfdd69017"><div class="ttname"><a href="structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017">SolverChoice::theta_s</a></div><div class="ttdeci">amrex::Real theta_s</div><div class="ttdef"><b>Definition:</b> DataStruct.H:170</div></div>
 <div class="ttc" id="astructSolverChoice_html_a8567bc83a2159c88c5372ea30770725e"><div class="ttname"><a href="structSolverChoice.html#a8567bc83a2159c88c5372ea30770725e">SolverChoice::tcline</a></div><div class="ttdeci">amrex::Real tcline</div><div class="ttdef"><b>Definition:</b> DataStruct.H:172</div></div>
@@ -12389,10 +12391,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// We fillpatch here because some of the derived quantities require derivatives</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">//     which require ghost cells to be filled</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> lev = 0; lev &lt;= finest_level; ++lev) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>[lev], <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>[lev], <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>[lev], <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classROMSX.html#a56b882fde3fb2f7ed5bf2d93cc30463d">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>[lev], <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>[lev], <a class="code" href="classROMSX.html#a7f7c60f6b48935de00903f101ffcf412">cons_new</a>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>[lev], <a class="code" href="classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2">xvel_new</a>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>[lev], <a class="code" href="classROMSX.html#aa67ecec73cc05ad8c7af8578faa77b48">yvel_new</a>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c">FillPatch</a>(lev, <a class="code" href="classROMSX.html#aac116ec30618bbd5641218e7522cdb86">t_new</a>[lev], *<a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>[lev], <a class="code" href="classROMSX.html#af4db3a202bf1aa714f1c5a2e9d6174e4">zvel_new</a>);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span> (ncomp_mf == 0)</div>
