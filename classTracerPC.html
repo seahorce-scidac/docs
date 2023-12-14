@@ -341,32 +341,26 @@ Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                        p.idata(0) -= 1;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                    }</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                }</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                p.rdata(<a class="code" href="structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a6e2bebac49626fbcc27b89ece3932796">TracerRealIdx::vx</a>) = v[0];</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                p.rdata(<a class="code" href="structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a2d638933673c0753c10ce5d16d905916">TracerRealIdx::vy</a>) = v[1];</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                p.rdata(<a class="code" href="structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a17d40272cad6fa640a83017b720a0999">TracerRealIdx::vz</a>) = v[2];</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            });</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">if</span> (m_verbose &gt; 1)</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keyword">auto</span> stoptime = amrex::second() - strttime;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#ifdef AMREX_LAZY</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        Lazy::QueueReduction( [=] () <span class="keyword">mutable</span> {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                ParallelReduce::Max(stoptime, ParallelContext::IOProcessorNumberSub(),</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                    ParallelContext::CommunicatorSub());</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                amrex::Print() &lt;&lt; <span class="stringliteral">&quot;TracerParticleContainer::AdvectWithUmac() time: &quot;</span> &lt;&lt; stoptime &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#ifdef AMREX_LAZY</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        });</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
-<div class="ttc" id="astructTracerRealIdx_html_a3ae2a1ff4251f83342ede5fca1a1c615a17d40272cad6fa640a83017b720a0999"><div class="ttname"><a href="structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a17d40272cad6fa640a83017b720a0999">TracerRealIdx::vz</a></div><div class="ttdeci">@ vz</div><div class="ttdef"><b>Definition:</b> TracerPC.H:10</div></div>
-<div class="ttc" id="astructTracerRealIdx_html_a3ae2a1ff4251f83342ede5fca1a1c615a2d638933673c0753c10ce5d16d905916"><div class="ttname"><a href="structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a2d638933673c0753c10ce5d16d905916">TracerRealIdx::vy</a></div><div class="ttdeci">@ vy</div><div class="ttdef"><b>Definition:</b> TracerPC.H:10</div></div>
-<div class="ttc" id="astructTracerRealIdx_html_a3ae2a1ff4251f83342ede5fca1a1c615a6e2bebac49626fbcc27b89ece3932796"><div class="ttname"><a href="structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a6e2bebac49626fbcc27b89ece3932796">TracerRealIdx::vx</a></div><div class="ttdeci">@ vx</div><div class="ttdef"><b>Definition:</b> TracerPC.H:9</div></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            });</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">if</span> (m_verbose &gt; 1)</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keyword">auto</span> stoptime = amrex::second() - strttime;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#ifdef AMREX_LAZY</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        Lazy::QueueReduction( [=] () <span class="keyword">mutable</span> {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                ParallelReduce::Max(stoptime, ParallelContext::IOProcessorNumberSub(),</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                                    ParallelContext::CommunicatorSub());</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                amrex::Print() &lt;&lt; <span class="stringliteral">&quot;TracerParticleContainer::AdvectWithUmac() time: &quot;</span> &lt;&lt; stoptime &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#ifdef AMREX_LAZY</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        });</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -438,6 +432,9 @@ Public Member Functions</h2></td></tr>
 <div class="ttc" id="aDataStruct_8H_html_a627f1f843904477f763577ad1460de01afbade9e36a3f36d3d676c1b808451dd7"><div class="ttname"><a href="DataStruct_8H.html#a627f1f843904477f763577ad1460de01afbade9e36a3f36d3d676c1b808451dd7">Coord::z</a></div><div class="ttdeci">@ z</div></div>
 <div class="ttc" id="aDataStruct_8H_html_aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1"><div class="ttname"><a href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">IC_BC_Type::Real</a></div><div class="ttdeci">@ Real</div></div>
 <div class="ttc" id="astructTracerIntIdx_html_a801d7c88926a2d081412b6bed4ad6c36a3cd751863b202becad46f43dbe1ca655"><div class="ttname"><a href="structTracerIntIdx.html#a801d7c88926a2d081412b6bed4ad6c36a3cd751863b202becad46f43dbe1ca655">TracerIntIdx::k</a></div><div class="ttdeci">@ k</div><div class="ttdef"><b>Definition:</b> TracerPC.H:18</div></div>
+<div class="ttc" id="astructTracerRealIdx_html_a3ae2a1ff4251f83342ede5fca1a1c615a17d40272cad6fa640a83017b720a0999"><div class="ttname"><a href="structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a17d40272cad6fa640a83017b720a0999">TracerRealIdx::vz</a></div><div class="ttdeci">@ vz</div><div class="ttdef"><b>Definition:</b> TracerPC.H:10</div></div>
+<div class="ttc" id="astructTracerRealIdx_html_a3ae2a1ff4251f83342ede5fca1a1c615a2d638933673c0753c10ce5d16d905916"><div class="ttname"><a href="structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a2d638933673c0753c10ce5d16d905916">TracerRealIdx::vy</a></div><div class="ttdeci">@ vy</div><div class="ttdef"><b>Definition:</b> TracerPC.H:10</div></div>
+<div class="ttc" id="astructTracerRealIdx_html_a3ae2a1ff4251f83342ede5fca1a1c615a6e2bebac49626fbcc27b89ece3932796"><div class="ttname"><a href="structTracerRealIdx.html#a3ae2a1ff4251f83342ede5fca1a1c615a6e2bebac49626fbcc27b89ece3932796">TracerRealIdx::vx</a></div><div class="ttdeci">@ vx</div><div class="ttdef"><b>Definition:</b> TracerPC.H:9</div></div>
 </div><!-- fragment -->
 </div>
 </div>
