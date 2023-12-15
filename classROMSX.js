@@ -3,7 +3,7 @@ var classROMSX =
     [ "ROMSX", "classROMSX.html#a172ef44112e79149fd4b321e8c1ab357", null ],
     [ "~ROMSX", "classROMSX.html#a9fba793897d4512a556f2a7da8da3de0", null ],
     [ "Advance", "classROMSX.html#a5d120bfdaf2972b92fda49a4c1bbc43d", null ],
-    [ "advance_2d", "classROMSX.html#ad668659df1441472397484a7eb6c1737", null ],
+    [ "advance_2d", "classROMSX.html#a00ce68e5a1dd4a3db8e47bc28f4f9c73", null ],
     [ "advance_2d_onestep", "classROMSX.html#a8fa9ebf787a2bcd053f235b50e5dbac3", null ],
     [ "advance_3d", "classROMSX.html#a18448df301e0e902023abdefa4889cdd", null ],
     [ "advance_3d_ml", "classROMSX.html#a77f393227b048d127b50340ea256a9cf", null ],

@@ -140,6 +140,7 @@ var NAVTREEINDEX0 =
 "classROMSX.html":[2,0,3],
 "classROMSX.html#a003d617559e7196bba737b43e23f9fc4":[2,0,3,114],
 "classROMSX.html#a0049697ad0398380ac5a058705fece48":[2,0,3,87],
+"classROMSX.html#a00ce68e5a1dd4a3db8e47bc28f4f9c73":[2,0,3,3],
 "classROMSX.html#a0103d20b9a7008fea63fa553b76726f2":[2,0,3,24],
 "classROMSX.html#a03b79a651abf3dc2bd37fadaca99fd46":[2,0,3,180],
 "classROMSX.html#a047f6faef02a00ced0a6c1766e4c9b5a":[2,0,3,199],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classROMSX.html#a83d781ead821f8ed29f6f2b9ef70a9aa":[2,0,3,191],
 "classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4":[2,0,3,109],
 "classROMSX.html#a865698971c9689455573c4b81ecaf26c":[2,0,3,134],
-"classROMSX.html#a87dc05168f41e1ad8b45d1030655f6e7":[2,0,3,93],
-"classROMSX.html#a87f0b7446438b8145bdea79012b985f5":[2,0,3,217]
+"classROMSX.html#a87dc05168f41e1ad8b45d1030655f6e7":[2,0,3,93]
 };
