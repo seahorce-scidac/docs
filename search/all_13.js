@@ -44,9 +44,8 @@ var searchData=
   ['vec_5fz_5fw_460',['vec_z_w',['../classROMSX.html#a7e2a55ae7fb02290e6ead16ec3e658fa',1,'ROMSX']]],
   ['vec_5fzeta_461',['vec_zeta',['../classROMSX.html#ab026fffd3c4e9a9ef612cbb23132a1f5',1,'ROMSX']]],
   ['vec_5fzt_5favg1_462',['vec_Zt_avg1',['../classROMSX.html#ab962f23dc27b3ce17bb19e3b8c9991f8',1,'ROMSX']]],
-  ['velocity_5fnames_463',['velocity_names',['../classROMSX.html#a86fcc7e51eaaa5c7a5414eeb853216d3',1,'ROMSX']]],
-  ['verbose_464',['verbose',['../classROMSX.html#ab37afaafcf05a9b10c0fba3180539610',1,'ROMSX']]],
-  ['vert_5fmean_5f3d_465',['vert_mean_3d',['../classROMSX.html#ad3bb9347625aef307add2c82a9b21d10',1,'ROMSX']]],
-  ['vert_5fvisc_5f3d_466',['vert_visc_3d',['../classROMSX.html#a3a506eb0db4a850e63f4479269a97b38',1,'ROMSX']]],
-  ['volwgtsummf_467',['volWgtSumMF',['../classROMSX.html#a65203858561c0499791ef95ef51f3447',1,'ROMSX']]]
+  ['verbose_463',['verbose',['../classROMSX.html#ab37afaafcf05a9b10c0fba3180539610',1,'ROMSX']]],
+  ['vert_5fmean_5f3d_464',['vert_mean_3d',['../classROMSX.html#ad3bb9347625aef307add2c82a9b21d10',1,'ROMSX']]],
+  ['vert_5fvisc_5f3d_465',['vert_visc_3d',['../classROMSX.html#a3a506eb0db4a850e63f4479269a97b38',1,'ROMSX']]],
+  ['volwgtsummf_466',['volWgtSumMF',['../classROMSX.html#a65203858561c0499791ef95ef51f3447',1,'ROMSX']]]
 ];

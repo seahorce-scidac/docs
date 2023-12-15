@@ -213,7 +213,6 @@ var classROMSX =
     [ "vec_z_w", "classROMSX.html#a7e2a55ae7fb02290e6ead16ec3e658fa", null ],
     [ "vec_zeta", "classROMSX.html#ab026fffd3c4e9a9ef612cbb23132a1f5", null ],
     [ "vec_Zt_avg1", "classROMSX.html#ab962f23dc27b3ce17bb19e3b8c9991f8", null ],
-    [ "velocity_names", "classROMSX.html#a86fcc7e51eaaa5c7a5414eeb853216d3", null ],
     [ "verbose", "classROMSX.html#ab37afaafcf05a9b10c0fba3180539610", null ],
     [ "xvel_new", "classROMSX.html#a2d8d8b238ca3a5ebf4346e4110c82af2", null ],
     [ "xvel_old", "classROMSX.html#af0b5074dc426b753beb5511bd63df407", null ],
