@@ -21,7 +21,7 @@ var searchData=
   ['inithse_653',['initHSE',['../classROMSX.html#a1d1af171ee1ce7a7b4ab8e3908de7f1d',1,'ROMSX']]],
   ['initializefromfile_654',['InitializeFromFile',['../classROMSX.html#acd827bd0a6a3e30ec9c105bc8a533a88',1,'ROMSX']]],
   ['initializelevelfromdata_655',['InitializeLevelFromData',['../classROMSX.html#a54b6fe8dfe7db9e4f0d5ae6af6b1156b',1,'ROMSX']]],
-  ['initparticles_656',['InitParticles',['../classTracerPC.html#a56dab71987bdc3bb944433b6b4f63336',1,'TracerPC::InitParticles(const amrex::MultiFab &amp;a_z_height)'],['../classTracerPC.html#ab730a5b65644821e6aa65b68beb61a0d',1,'TracerPC::InitParticles()']]],
+  ['initparticles_656',['InitParticles',['../classTracerPC.html#a56dab71987bdc3bb944433b6b4f63336',1,'TracerPC']]],
   ['initrayleigh_657',['initRayleigh',['../classROMSX.html#a2e3c16fa9a25b28f842de8981ce7b00e',1,'ROMSX']]],
   ['interpolate_5f1d_658',['interpolate_1d',['../ROMSX__Math_8H.html#a803d0d35d4ca4791556cbe02bbf51cbb',1,'ROMSX_Math.H']]],
   ['is_5fit_5ftime_5ffor_5faction_659',['is_it_time_for_action',['../classROMSX.html#a11fae6ec83db5a377afd32858e0a80a1',1,'ROMSX']]]
