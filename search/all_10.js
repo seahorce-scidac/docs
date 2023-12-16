@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['s0_353',['S0',['../structSolverChoice.html#af8337b0c99a50300e9880db3e8296d91',1,'SolverChoice']]],
+  ['s0_352',['S0',['../structSolverChoice.html#af8337b0c99a50300e9880db3e8296d91',1,'SolverChoice']]],
+  ['salt_5fbc_5fcomp_353',['Salt_bc_comp',['../namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073ab284ea9b749e574cd1d0493de25e459e',1,'BCVars']]],
   ['salt_5fcomp_354',['Salt_comp',['../IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf',1,'IndexDefines.H']]],
   ['scalar_5fbc_5fcomp_355',['Scalar_bc_comp',['../namespaceBCVars.html#a6fd8f72c3055242c4af20c780f391073a59e20f7c1b74c9cbdbc9300394bbc335',1,'BCVars']]],
   ['scalar_5fcomp_356',['Scalar_comp',['../IndexDefines_8H.html#a4dd1335cac3e63bb654450bb807978a4',1,'IndexDefines.H']]],
