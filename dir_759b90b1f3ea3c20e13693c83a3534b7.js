@@ -8,8 +8,8 @@ var dir_759b90b1f3ea3c20e13693c83a3534b7 =
     [ "ROMSX_ComputeTimestep.cpp", "ROMSX__ComputeTimestep_8cpp.html", null ],
     [ "ROMSX_coriolis.cpp", "ROMSX__coriolis_8cpp.html", null ],
     [ "ROMSX_prestep.cpp", "ROMSX__prestep_8cpp.html", null ],
-    [ "ROMSX_prestep_t_3d.cpp", "ROMSX__prestep__t__3d_8cpp.html", null ],
-    [ "ROMSX_prestep_uv_3d.cpp", "ROMSX__prestep__uv__3d_8cpp.html", null ],
+    [ "ROMSX_prestep_diffusion.cpp", "ROMSX__prestep__diffusion_8cpp.html", null ],
+    [ "ROMSX_prestep_t_advection.cpp", "ROMSX__prestep__t__advection_8cpp.html", null ],
     [ "ROMSX_prsgrd.cpp", "ROMSX__prsgrd_8cpp.html", null ],
     [ "ROMSX_rho_eos.cpp", "ROMSX__rho__eos_8cpp.html", null ],
     [ "ROMSX_rhs_t_3d.cpp", "ROMSX__rhs__t__3d_8cpp.html", null ],
@@ -22,7 +22,6 @@ var dir_759b90b1f3ea3c20e13693c83a3534b7 =
     [ "ROMSX_TimeStep.cpp", "ROMSX__TimeStep_8cpp.html", null ],
     [ "ROMSX_TimeStepML.cpp", "ROMSX__TimeStepML_8cpp.html", null ],
     [ "ROMSX_update_massflux_3d.cpp", "ROMSX__update__massflux__3d_8cpp.html", null ],
-    [ "ROMSX_update_vel_3d.cpp", "ROMSX__update__vel__3d_8cpp.html", null ],
     [ "ROMSX_uv3dmix.cpp", "ROMSX__uv3dmix_8cpp.html", null ],
     [ "ROMSX_vert_mean_3d.cpp", "ROMSX__vert__mean__3d_8cpp.html", null ],
     [ "ROMSX_vert_visc_3d.cpp", "ROMSX__vert__visc__3d_8cpp.html", null ]
