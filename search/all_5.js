@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['fill_5frhs_102',['fill_rhs',['../classROMSX.html#aa79a87e1aaab7555dbf9ce414b385bb9',1,'ROMSX']]],
-  ['fillboundary_103',['FillBoundary',['../classROMSXPhysBCFunct.html#a55040a762000240bfabb9a27b03fcc04',1,'ROMSXPhysBCFunct']]],
+  ['fill_5frhs_103',['fill_rhs',['../classROMSX.html#aa79a87e1aaab7555dbf9ce414b385bb9',1,'ROMSX']]],
   ['fillcoarsepatch_104',['FillCoarsePatch',['../classROMSX.html#afcdff09eb45a7281877f6bd97c07738f',1,'ROMSX']]],
   ['fillpatch_105',['FillPatch',['../classROMSX.html#abb9e3a06ecbafa6f4860576cc80db30c',1,'ROMSX']]],
   ['fine_5fmask_106',['fine_mask',['../classROMSX.html#a6d17615a53d63c67d12c657c9b5dade5',1,'ROMSX']]],

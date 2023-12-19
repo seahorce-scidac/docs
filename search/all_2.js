@@ -36,5 +36,6 @@ var searchData=
   ['coupling_5ftype_64',['coupling_type',['../structSolverChoice.html#af976afa61859c07e6249963edc367c2d',1,'SolverChoice']]],
   ['couplingtype_65',['CouplingType',['../DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139b',1,'DataStruct.H']]],
   ['create_66',['create',['../classncutils_1_1NCFile.html#a47bdccee2cc22a735ca715d9c88e4f6b',1,'ncutils::NCFile']]],
-  ['create_5fpar_67',['create_par',['../classncutils_1_1NCFile.html#a6607bd5f3f75b451e2436ff713931f19',1,'ncutils::NCFile']]]
+  ['create_5fpar_67',['create_par',['../classncutils_1_1NCFile.html#a6607bd5f3f75b451e2436ff713931f19',1,'ncutils::NCFile']]],
+  ['custom_68',['Custom',['../DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a90589c47f06eb971d548591f23c285af',1,'DataStruct.H']]]
 ];

@@ -20,7 +20,7 @@ var DataStruct_8H =
       [ "TwoWay", "DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba6c267346f8ebb889610a5a90838be815", null ]
     ] ],
     [ "IC_BC_Type", "DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36", [
-      [ "Ideal", "DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a22b7c2abfb7dcf0f672899fb2b6f1670", null ],
+      [ "Custom", "DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a90589c47f06eb971d548591f23c285af", null ],
       [ "Real", "DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1", null ]
     ] ]
 ];

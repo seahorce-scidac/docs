@@ -124,7 +124,6 @@ var classROMSX =
     [ "h_havg_pressure", "classROMSX.html#a82b2332d9dee5db2130ebd0ef2fa0d0b", null ],
     [ "h_havg_temperature", "classROMSX.html#aa5dcbcc6efc7c4e5fbca45b466b475ac", null ],
     [ "init_shrink", "classROMSX.html#afc2d5ca5334b8dc2acb9c6c57febbcf1", null ],
-    [ "init_type", "classROMSX.html#abca823cae95a0507a2f850744fd03093", null ],
     [ "input_bndry_planes", "classROMSX.html#ae3894b8be6ddf628ddd718abfc4c36ad", null ],
     [ "input_sounding_file", "classROMSX.html#addd7497677393458ec87e5aa1ed1b6c5", null ],
     [ "istep", "classROMSX.html#a31b7954d302e5fd9474c084078ad4784", null ],

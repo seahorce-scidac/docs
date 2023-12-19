@@ -8,7 +8,7 @@ var structSolverChoice =
     [ "flat_bathymetry", "structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a", null ],
     [ "g", "structSolverChoice.html#aeee9d0099e1ac4105829345280a4f03c", null ],
     [ "Hadv_scheme", "structSolverChoice.html#a4f1fced24fb1c3e55bc9b7333f211b9f", null ],
-    [ "icBcType", "structSolverChoice.html#a890734318e58de211bb8e9c4d2c89c9b", null ],
+    [ "ic_bc_type", "structSolverChoice.html#a345dba1135888a3a3e422c9b6a010ebf", null ],
     [ "pp_prefix", "structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6", null ],
     [ "R0", "structSolverChoice.html#a7f081843ab68cd0a410afd74a27dfc30", null ],
     [ "rdrag", "structSolverChoice.html#ab32c6e7161ddf37e8051743fae717cf5", null ],
