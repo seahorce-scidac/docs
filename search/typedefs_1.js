@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rtype_910',['RType',['../structncutils_1_1NCDType.html#a079bbf4314ad09362b5c8124670c821f',1,'ncutils::NCDType']]]
+  ['planevector_949',['PlaneVector',['../ROMSX__PhysBCFunct_8H.html#a60014a8d74bed0d5ae984e600c68dc85',1,'PlaneVector():&#160;ROMSX_PhysBCFunct.H'],['../NCFile_8H.html#a60014a8d74bed0d5ae984e600c68dc85',1,'PlaneVector():&#160;NCFile.H']]]
 ];

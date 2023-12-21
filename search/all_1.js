@@ -11,5 +11,6 @@ var searchData=
   ['boundaryconditions_5fyvel_2ecpp_27',['BoundaryConditions_yvel.cpp',['../BoundaryConditions__yvel_8cpp.html',1,'']]],
   ['boundaryconditions_5fzvel_2ecpp_28',['BoundaryConditions_zvel.cpp',['../BoundaryConditions__zvel_8cpp.html',1,'']]],
   ['boxes_5fat_5flevel_29',['boxes_at_level',['../classROMSX.html#ab8125e3b638f29f6f08872c2cefd5335',1,'ROMSX']]],
-  ['build_5ffine_5fmask_30',['build_fine_mask',['../classROMSX.html#a6c60bb81e7afd74c2a73020e3096bd32',1,'ROMSX']]]
+  ['build_5ffine_5fmask_30',['build_fine_mask',['../classROMSX.html#a6c60bb81e7afd74c2a73020e3096bd32',1,'ROMSX']]],
+  ['buildfabsfromnetcdffile_31',['BuildFABsFromNetCDFFile',['../NCFile_8H.html#abcadbd0591038f7d3c9bb13c37df21f9',1,'NCFile.H']]]
 ];
