@@ -206,16 +206,16 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    : <a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>{vname}, <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>{vshape}, <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>{1}, <a class="code" href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">owned</a>{<span class="keyword">true</span>} {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a> = <span class="keyword">new</span> <a class="code" href="structNDArray.html#a96033b69f69ea0ae537a24288715752d">DType</a> [this-&gt;<a class="code" href="structNDArray.html#a1b3ece1ab109568fcb919d1af8f14eee">ndim</a>()];</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   }</div>
-<div class="ttc" id="astructNDArray_html_a0a1c90304eddb4d078132a1c1f45bef9"><div class="ttname"><a href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">NDArray::owned</a></div><div class="ttdeci">bool owned</div><div class="ttdef"><b>Definition:</b> NCFile.H:100</div></div>
-<div class="ttc" id="astructNDArray_html_a0d3be2b45f3fb008d12ec17dfd6abf09"><div class="ttname"><a href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">NDArray::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> NCFile.H:97</div></div>
-<div class="ttc" id="astructNDArray_html_a1b3ece1ab109568fcb919d1af8f14eee"><div class="ttname"><a href="structNDArray.html#a1b3ece1ab109568fcb919d1af8f14eee">NDArray::ndim</a></div><div class="ttdeci">size_t ndim()</div><div class="ttdef"><b>Definition:</b> NCFile.H:84</div></div>
-<div class="ttc" id="astructNDArray_html_a8a0bbff40020f6aea23346ac656bf972"><div class="ttname"><a href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">NDArray::ref_counted</a></div><div class="ttdeci">std::atomic&lt; size_t &gt; ref_counted</div><div class="ttdef"><b>Definition:</b> NCFile.H:99</div></div>
-<div class="ttc" id="astructNDArray_html_a96033b69f69ea0ae537a24288715752d"><div class="ttname"><a href="structNDArray.html#a96033b69f69ea0ae537a24288715752d">NDArray::DType</a></div><div class="ttdeci">typename std::remove_const&lt; DataType &gt;::type DType</div><div class="ttdef"><b>Definition:</b> NCFile.H:31</div></div>
-<div class="ttc" id="astructNDArray_html_a99d704051dda7b5635b12cbe785d7bb5"><div class="ttname"><a href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">NDArray::shape</a></div><div class="ttdeci">std::vector&lt; size_t &gt; shape</div><div class="ttdef"><b>Definition:</b> NCFile.H:98</div></div>
-<div class="ttc" id="astructNDArray_html_a9d3679c95b5bf1813a7edaedf221837e"><div class="ttname"><a href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">NDArray::data</a></div><div class="ttdeci">DType * data</div><div class="ttdef"><b>Definition:</b> NCFile.H:101</div></div>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    : <a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>{vname}, <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>{vshape}, <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>{1}, <a class="code" href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">owned</a>{<span class="keyword">true</span>} {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a> = <span class="keyword">new</span> <a class="code" href="structNDArray.html#a96033b69f69ea0ae537a24288715752d">DType</a> [this-&gt;<a class="code" href="structNDArray.html#a1b3ece1ab109568fcb919d1af8f14eee">ndim</a>()];</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;   }</div>
+<div class="ttc" id="astructNDArray_html_a0a1c90304eddb4d078132a1c1f45bef9"><div class="ttname"><a href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">NDArray::owned</a></div><div class="ttdeci">bool owned</div><div class="ttdef"><b>Definition:</b> NCFile.H:101</div></div>
+<div class="ttc" id="astructNDArray_html_a0d3be2b45f3fb008d12ec17dfd6abf09"><div class="ttname"><a href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">NDArray::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> NCFile.H:98</div></div>
+<div class="ttc" id="astructNDArray_html_a1b3ece1ab109568fcb919d1af8f14eee"><div class="ttname"><a href="structNDArray.html#a1b3ece1ab109568fcb919d1af8f14eee">NDArray::ndim</a></div><div class="ttdeci">size_t ndim()</div><div class="ttdef"><b>Definition:</b> NCFile.H:85</div></div>
+<div class="ttc" id="astructNDArray_html_a8a0bbff40020f6aea23346ac656bf972"><div class="ttname"><a href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">NDArray::ref_counted</a></div><div class="ttdeci">std::atomic&lt; size_t &gt; ref_counted</div><div class="ttdef"><b>Definition:</b> NCFile.H:100</div></div>
+<div class="ttc" id="astructNDArray_html_a96033b69f69ea0ae537a24288715752d"><div class="ttname"><a href="structNDArray.html#a96033b69f69ea0ae537a24288715752d">NDArray::DType</a></div><div class="ttdeci">typename std::remove_const&lt; DataType &gt;::type DType</div><div class="ttdef"><b>Definition:</b> NCFile.H:32</div></div>
+<div class="ttc" id="astructNDArray_html_a99d704051dda7b5635b12cbe785d7bb5"><div class="ttname"><a href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">NDArray::shape</a></div><div class="ttdeci">std::vector&lt; size_t &gt; shape</div><div class="ttdef"><b>Definition:</b> NCFile.H:99</div></div>
+<div class="ttc" id="astructNDArray_html_a9d3679c95b5bf1813a7edaedf221837e"><div class="ttname"><a href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">NDArray::data</a></div><div class="ttdeci">DType * data</div><div class="ttdef"><b>Definition:</b> NCFile.H:102</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -252,7 +252,7 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;: <a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>{<span class="stringliteral">&quot;null&quot;</span>}, <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>{1}, <a class="code" href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">owned</a>{<span class="keyword">false</span>}, <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>{<span class="keyword">nullptr</span>} {}</div>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;: <a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>{<span class="stringliteral">&quot;null&quot;</span>}, <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>{1}, <a class="code" href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">owned</a>{<span class="keyword">false</span>}, <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>{<span class="keyword">nullptr</span>} {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -281,13 +281,13 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                  {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>  = array.<a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;     <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a> = array.<a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;     <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>  = array.<a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;     <a class="code" href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">owned</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>.fetch_add(1, std::memory_order_relaxed);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;   }</div>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                  {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;     <a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>  = array.<a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;     <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a> = array.<a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;     <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>  = array.<a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     <a class="code" href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">owned</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;     <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>.fetch_add(1, std::memory_order_relaxed);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -315,10 +315,10 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;               {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;     <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>.fetch_sub(1, std::memory_order_acq_rel);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;     <span class="keywordflow">if</span> (<a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a> == 1 &amp;&amp; <a class="code" href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">owned</a>) <span class="keyword">delete</span>[] <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   }</div>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;               {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;     <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>.fetch_sub(1, std::memory_order_acq_rel);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;     <span class="keywordflow">if</span> (<a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a> == 1 &amp;&amp; <a class="code" href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">owned</a>) <span class="keyword">delete</span>[] <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -347,10 +347,10 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                              {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;     <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>.fetch_add(1, std::memory_order_relaxed);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;     <span class="keywordflow">return</span> <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   }</div>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                              {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;     <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>.fetch_add(1, std::memory_order_relaxed);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     <span class="keywordflow">return</span> <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;   }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -378,9 +378,9 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                          {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;     <span class="keywordflow">return</span> <a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;   }</div>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                          {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;     <span class="keywordflow">return</span> <a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;   }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -408,9 +408,9 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                   {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;     <span class="keywordflow">return</span> <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;   }</div>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                   {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;     <span class="keywordflow">return</span> <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;   }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -438,12 +438,12 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                  {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;     <span class="keywordtype">size_t</span> num = 1;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     <span class="keywordtype">int</span> isize = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>.size());</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=0; i&lt;isize; ++i) num *= <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>[i];</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;     <span class="keywordflow">return</span> num;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;   }</div>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                  {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     <span class="keywordtype">size_t</span> num = 1;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     <span class="keywordtype">int</span> isize = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>.size());</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;     <span class="keywordflow">for</span> (<span class="keyword">auto</span> i=0; i&lt;isize; ++i) num *= <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>[i];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;     <span class="keywordflow">return</span> num;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;   }</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="structNDArray.html#a7bd19397e539424afc06e9fe12760434">NDArray&lt; DataType &gt;::NDArray()</a>.</p>
 <div class="dynheader">
@@ -483,14 +483,14 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                            {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>  = array.<a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a> = array.<a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>  = array.<a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">owned</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>.fetch_add(1, std::memory_order_relaxed);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                            {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>  = array.<a class="code" href="structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09">name</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a> = array.<a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>  = array.<a class="code" href="structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e">data</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">owned</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="structNDArray.html#a8a0bbff40020f6aea23346ac656bf972">ref_counted</a>.fetch_add(1, std::memory_order_relaxed);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -519,9 +519,9 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                              {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;     <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a> = vshape;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                              {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;     <a class="code" href="structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5">shape</a> = vshape;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
