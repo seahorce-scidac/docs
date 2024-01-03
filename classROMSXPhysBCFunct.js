@@ -5,7 +5,7 @@ var classROMSXPhysBCFunct =
     [ "impose_cons_bcs", "classROMSXPhysBCFunct.html#adba4872aa8251e61cc5ee08aee724857", null ],
     [ "impose_xvel_bcs", "classROMSXPhysBCFunct.html#a4f7aafa8569836b0bc7f5641eaf8ad1b", null ],
     [ "impose_yvel_bcs", "classROMSXPhysBCFunct.html#a1e2e601f3307e8b45ae3a4ee2d3a1e6b", null ],
-    [ "impose_zvel_bcs", "classROMSXPhysBCFunct.html#a051a8691c576ca637623b53480095ccd", null ],
+    [ "impose_zvel_bcs", "classROMSXPhysBCFunct.html#a72a641ec934b44c8cb248dbe8022b221", null ],
     [ "operator()", "classROMSXPhysBCFunct.html#ad4ca48208e725399634dfa7e32c70bec", null ],
     [ "m_bc_extdir_vals", "classROMSXPhysBCFunct.html#ae42dc97b9e0c385f374323ef320204b0", null ],
     [ "m_domain_bcs_type", "classROMSXPhysBCFunct.html#a1016f2d4f5c13c179f4f59bf93049d6c", null ],
