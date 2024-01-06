@@ -4,6 +4,7 @@ var structSolverChoice =
     [ "init_params", "structSolverChoice.html#a4829661b558b213e32970a02e147077f", null ],
     [ "coriolis_beta", "structSolverChoice.html#a0d7c9053be4054e355768bf3c17bf029", null ],
     [ "coriolis_f0", "structSolverChoice.html#a3a0b717e880c818de989b2e92c199d34", null ],
+    [ "coriolis_type", "structSolverChoice.html#a5a2eb680fa53af115784a54eaa1924bf", null ],
     [ "coupling_type", "structSolverChoice.html#af976afa61859c07e6249963edc367c2d", null ],
     [ "flat_bathymetry", "structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a", null ],
     [ "g", "structSolverChoice.html#aeee9d0099e1ac4105829345280a4f03c", null ],

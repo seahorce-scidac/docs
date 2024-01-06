@@ -136,6 +136,8 @@ Functions</h2></td></tr>
 <tr class="separator:adbedc34f482b6a491593d88706d948da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1cdb9793fdab1b03dec18cf8fa52085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prob__common_8H.html#aa1cdb9793fdab1b03dec18cf8fa52085">init_custom_bathymetry</a> (const amrex::Geometry &amp;geom, amrex::MultiFab &amp;mf_h, <a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;m_solverChoice)</td></tr>
 <tr class="separator:aa1cdb9793fdab1b03dec18cf8fa52085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134e39605b6afbabb6fe2a35f2189257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prob__common_8H.html#a134e39605b6afbabb6fe2a35f2189257">init_custom_coriolis</a> (const amrex::Geometry &amp;geom, amrex::MultiFab &amp;mf_fcor, <a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;m_solverChoice)</td></tr>
+<tr class="separator:a134e39605b6afbabb6fe2a35f2189257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aabbde4e8cfbf5eeb55157f2ac5fe98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prob__common_8H.html#a3aabbde4e8cfbf5eeb55157f2ac5fe98">init_custom_vmix</a> (const amrex::Geometry &amp;geom, amrex::MultiFab &amp;mf_Akv, amrex::MultiFab &amp;mf_Akt, amrex::MultiFab &amp;mf_z_w, <a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;m_solverChoice)</td></tr>
 <tr class="separator:a3aabbde4e8cfbf5eeb55157f2ac5fe98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac03b2472176ba10b0edc225576774769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prob__common_8H.html#ac03b2472176ba10b0edc225576774769">init_custom_hmix</a> (const amrex::Geometry &amp;geom, amrex::MultiFab &amp;mf_visc2_p, amrex::MultiFab &amp;mf_visc2_r, amrex::MultiFab &amp;mf_diff2, <a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;m_solverChoice)</td></tr>
@@ -223,6 +225,51 @@ Here is the caller graph for this function:</div>
 <map name="aprob__common_8H_aa1cdb9793fdab1b03dec18cf8fa52085_icgraph" id="aprob__common_8H_aa1cdb9793fdab1b03dec18cf8fa52085_icgraph">
 <area shape="rect" title=" " alt="" coords="235,5,416,32"/>
 <area shape="rect" href="classROMSX.html#ab93d802ac3111e738dafe04367813135" title=" " alt="" coords="5,5,187,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a134e39605b6afbabb6fe2a35f2189257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134e39605b6afbabb6fe2a35f2189257">&#9670;&nbsp;</a></span>init_custom_coriolis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_custom_coriolis </td>
+          <td>(</td>
+          <td class="paramtype">const amrex::Geometry &amp;&#160;</td>
+          <td class="paramname"><em>geom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname"><em>mf_fcor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;&#160;</td>
+          <td class="paramname"><em>m_solverChoice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classROMSX.html#a9b5dac252f379d72d0a257bf3de48b4f">ROMSX::set_coriolis()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="prob__common_8H_a134e39605b6afbabb6fe2a35f2189257_icgraph.png" border="0" usemap="#aprob__common_8H_a134e39605b6afbabb6fe2a35f2189257_icgraph" alt=""/></div>
+<map name="aprob__common_8H_a134e39605b6afbabb6fe2a35f2189257_icgraph" id="aprob__common_8H_a134e39605b6afbabb6fe2a35f2189257_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,357,32"/>
+<area shape="rect" href="classROMSX.html#a9b5dac252f379d72d0a257bf3de48b4f" title=" " alt="" coords="5,5,157,32"/>
 </map>
 </div>
 
