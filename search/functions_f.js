@@ -1,19 +1,19 @@
 var searchData=
 [
-  ['set_5f2darrays_748',['set_2darrays',['../classROMSX.html#abd0ef9b9a56b5f6985a0903895d81e46',1,'ROMSX']]],
-  ['set_5fbathymetry_749',['set_bathymetry',['../classROMSX.html#ab93d802ac3111e738dafe04367813135',1,'ROMSX']]],
-  ['set_5fcoriolis_750',['set_coriolis',['../classROMSX.html#a9b5dac252f379d72d0a257bf3de48b4f',1,'ROMSX']]],
-  ['set_5fdrag_751',['set_drag',['../classROMSX.html#afbc1fc6bd3f6ededfed2346989ccf055',1,'ROMSX']]],
-  ['set_5fhmixcoef_752',['set_hmixcoef',['../classROMSX.html#a5dd9fc911df600f1eb0e8f3c131d8353',1,'ROMSX']]],
-  ['set_5fsmflux_753',['set_smflux',['../classROMSX.html#a7137f5e39d218263180f04072cb93b73',1,'ROMSX']]],
+  ['set_5f2darrays_748',['set_2darrays',['../classREMORA.html#ab9d2fbd8ac171ab10eb09ff189cbb69b',1,'REMORA']]],
+  ['set_5fbathymetry_749',['set_bathymetry',['../classREMORA.html#a97de693d117772818b80fb566720d4c1',1,'REMORA']]],
+  ['set_5fcoriolis_750',['set_coriolis',['../classREMORA.html#a43ebfe013ec1e2d1d0a8faaba3ebbbb6',1,'REMORA']]],
+  ['set_5fdrag_751',['set_drag',['../classREMORA.html#a6554e8c3a6e26956493818ff4e9ef1f8',1,'REMORA']]],
+  ['set_5fhmixcoef_752',['set_hmixcoef',['../classREMORA.html#ac61ff34983f1636e08e957c5a2a0ddbc',1,'REMORA']]],
+  ['set_5fsmflux_753',['set_smflux',['../classREMORA.html#a4d4e9bae68124255e7ef6e949949d7ae',1,'REMORA']]],
   ['set_5ftime_754',['set_time',['../structTimeInterpolatedData.html#a0d6dcefbf7407a24669d2a37c7f558d4',1,'TimeInterpolatedData']]],
-  ['set_5fvmix_755',['set_vmix',['../classROMSX.html#a48b99337b5ac313ce48a95ab0b9e73dc',1,'ROMSX']]],
+  ['set_5fvmix_755',['set_vmix',['../classREMORA.html#a72df3d34cb4020524bc7aefe66db5aa8',1,'REMORA']]],
   ['set_5fvshape_756',['set_vshape',['../structNDArray.html#a6a0a485b6da8ce09dda81fc51607da73',1,'NDArray']]],
-  ['set_5fweights_757',['set_weights',['../classROMSX.html#a3ca3a726e1b0ecfc4339b2a07ade77b7',1,'ROMSX']]],
-  ['setplotvariables_758',['setPlotVariables',['../classROMSX.html#a570a9208f8598e95442e4c5717902638',1,'ROMSX']]],
-  ['setrecorddatainfo_759',['setRecordDataInfo',['../classROMSX.html#abdccbdf27483fa87a7fc769ef6aa16fd',1,'ROMSX']]],
-  ['setup_5fstep_760',['setup_step',['../classROMSX.html#a62d0fa7d294be023f9050f71bb0ad221',1,'ROMSX']]],
+  ['set_5fweights_757',['set_weights',['../classREMORA.html#ad09828d9cb740f8465f4a794c2d90460',1,'REMORA']]],
+  ['setplotvariables_758',['setPlotVariables',['../classREMORA.html#afe11d354ade4deed0c57c6f44f85ab41',1,'REMORA']]],
+  ['setrecorddatainfo_759',['setRecordDataInfo',['../classREMORA.html#a7f4ee77d07b875ac526da57e8f0f1e98',1,'REMORA']]],
+  ['setup_5fstep_760',['setup_step',['../classREMORA.html#ad9ee5aba5b9cb8e020e6cbc8ff3cff74',1,'REMORA']]],
   ['shape_761',['shape',['../structncutils_1_1NCVar.html#adb6e5fe1bfe8ab79e9ecf33ca5800797',1,'ncutils::NCVar']]],
-  ['stretch_5ftransform_762',['stretch_transform',['../classROMSX.html#aad35c03f38c28e55791b50da18f2604c',1,'ROMSX']]],
-  ['sum_5fintegrated_5fquantities_763',['sum_integrated_quantities',['../classROMSX.html#a55bb606cb2f4fc86e05232b5c314a829',1,'ROMSX']]]
+  ['stretch_5ftransform_762',['stretch_transform',['../classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5',1,'REMORA']]],
+  ['sum_5fintegrated_5fquantities_763',['sum_integrated_quantities',['../classREMORA.html#aafa685722589c03eb84d71568feb26bc',1,'REMORA']]]
 ];

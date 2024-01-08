@@ -7,10 +7,10 @@ var searchData=
   ['get_5fvar_661',['get_var',['../structTimeInterpolatedData.html#a65f3edf3f03a779a931f5c58bd438602',1,'TimeInterpolatedData']]],
   ['get_5fvname_662',['get_vname',['../structNDArray.html#a4d7550e3c00d13d8397f1cfbdfd2ab48',1,'NDArray']]],
   ['get_5fvshape_663',['get_vshape',['../structNDArray.html#ad839c3c65bd755311afb6f0dad08f336',1,'NDArray']]],
-  ['getadvfluxreg_664',['getAdvFluxReg',['../classROMSX.html#a2b610851883faf8e10f6ac7f660e3e44',1,'ROMSX']]],
-  ['getcputime_665',['getCPUTime',['../classROMSX.html#a0103d20b9a7008fea63fa553b76726f2',1,'ROMSX']]],
-  ['getdataattime_666',['GetDataAtTime',['../classROMSX.html#a1dc11d863a7ed83b76003eca972a8578',1,'ROMSX']]],
+  ['getadvfluxreg_664',['getAdvFluxReg',['../classREMORA.html#a0e2c89247c418609b713bdc107696258',1,'REMORA']]],
+  ['getcputime_665',['getCPUTime',['../classREMORA.html#a79eb0ac9909062422d3b3207a7643dd8',1,'REMORA']]],
+  ['getdataattime_666',['GetDataAtTime',['../classREMORA.html#a99e2295484a51457ec8d2c9700261783',1,'REMORA']]],
   ['gettgivenrandth_667',['getTgivenRandTh',['../EOS_8H.html#af56cd63dc6a1ed3fc8f38bb780cd0f12',1,'EOS.H']]],
-  ['gotonextline_668',['GotoNextLine',['../classROMSX.html#a20d2ef21f22efe90f8939f86ebc40b54',1,'ROMSX']]],
+  ['gotonextline_668',['GotoNextLine',['../classREMORA.html#a03e3346471b528f47454cd969393786d',1,'REMORA']]],
   ['group_669',['group',['../classncutils_1_1NCGroup.html#a757c592cddc2272a86033fe888232333',1,'ncutils::NCGroup']]]
 ];

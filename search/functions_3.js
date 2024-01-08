@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['datalog_637',['DataLog',['../classROMSX.html#a2cc7343babd4642f2cf727a3d40035f3',1,'ROMSX']]],
-  ['datalogname_638',['DataLogName',['../classROMSX.html#a34887f38557bf5026acaf46581e05375',1,'ROMSX']]],
+  ['datalog_637',['DataLog',['../classREMORA.html#a82e5140a7b4d9092e8230b7043d0a388',1,'REMORA']]],
+  ['datalogname_638',['DataLogName',['../classREMORA.html#a8062b4dcb1ea9deba016d427d23480aa',1,'REMORA']]],
   ['def_5farray_639',['def_array',['../classncutils_1_1NCGroup.html#acdfa4a8e44ca0f1901ea120a3946d1db',1,'ncutils::NCGroup']]],
   ['def_5fdim_640',['def_dim',['../classncutils_1_1NCGroup.html#ae0ecaad10c77614a283bd6e66d2dca41',1,'ncutils::NCGroup']]],
   ['def_5fgroup_641',['def_group',['../classncutils_1_1NCGroup.html#ac5c99d691660e36a00afffae6f0d6f71',1,'ncutils::NCGroup']]],

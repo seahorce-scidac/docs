@@ -5,21 +5,21 @@ var IndexDefines_8H =
     [ "Salt_comp", "IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf", null ],
     [ "Scalar_comp", "IndexDefines_8H.html#a4dd1335cac3e63bb654450bb807978a4", null ],
     [ "Temp_comp", "IndexDefines_8H.html#a2439ff23f4449b8ffa90ddc5bcb36173", null ],
-    [ "mathematicalBndryTypes", "IndexDefines_8H.html#af4e42fa51742c38508f617adb429d81e", [
-      [ "bogus", "IndexDefines_8H.html#af4e42fa51742c38508f617adb429d81ea93f98432d1c975c4a1d2da8a3cd41141", null ],
-      [ "reflect_odd", "IndexDefines_8H.html#af4e42fa51742c38508f617adb429d81ea9f8add981228e79241a7c5d2d38c5910", null ],
-      [ "int_dir", "IndexDefines_8H.html#af4e42fa51742c38508f617adb429d81ea0a4990a00b5710e86a6259a83089451a", null ],
-      [ "reflect_even", "IndexDefines_8H.html#af4e42fa51742c38508f617adb429d81ea85a791a2c305ad887b26b131d91cb3fc", null ],
-      [ "foextrap", "IndexDefines_8H.html#af4e42fa51742c38508f617adb429d81ea41abfed9daecbbf69d81938a9d1a61ae", null ],
-      [ "ext_dir", "IndexDefines_8H.html#af4e42fa51742c38508f617adb429d81eacc659361b9824734b263d615fefee265", null ]
+    [ "mathematicalBndryTypes", "IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346", [
+      [ "bogus", "IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346aa8f1b3ad9a76977588e149a0f264e93b", null ],
+      [ "reflect_odd", "IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346a9d34de510d9acde35ba5ebe70aa11cde", null ],
+      [ "int_dir", "IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346a223988127b7e8a66aabbc3a1f98dddf0", null ],
+      [ "reflect_even", "IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346aaf8c10264d04dea51594afe39fd3c8a1", null ],
+      [ "foextrap", "IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346af756bb6d63add06a5624fa131cc82407", null ],
+      [ "ext_dir", "IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0", null ]
     ] ],
-    [ "ROMSX_BC", "IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281", [
-      [ "symmetry", "IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a40e712f30d56083318ab20a2402921d2", null ],
-      [ "inflow", "IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ad37e67db17cfd059f2852e2673b9e8ef", null ],
-      [ "outflow", "IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281acac0c32caf84a889ec9b2b4cb2d56972", null ],
-      [ "no_slip_wall", "IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281acb8c716b8d9b499d9bc323d8f8a410d3", null ],
-      [ "slip_wall", "IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a03ee6de9fd100444c5c0567ea01bd538", null ],
-      [ "periodic", "IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281ae6ffdec5e14fce371eb7ae99edebbbee", null ],
-      [ "undefined", "IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281a5e543256c480ac577d30f76f9120eb74", null ]
+    [ "REMORA_BC", "IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325", [
+      [ "symmetry", "IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a40e712f30d56083318ab20a2402921d2", null ],
+      [ "inflow", "IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ad37e67db17cfd059f2852e2673b9e8ef", null ],
+      [ "outflow", "IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325acac0c32caf84a889ec9b2b4cb2d56972", null ],
+      [ "no_slip_wall", "IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325acb8c716b8d9b499d9bc323d8f8a410d3", null ],
+      [ "slip_wall", "IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a03ee6de9fd100444c5c0567ea01bd538", null ],
+      [ "periodic", "IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ae6ffdec5e14fce371eb7ae99edebbbee", null ],
+      [ "undefined", "IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74", null ]
     ] ]
 ];

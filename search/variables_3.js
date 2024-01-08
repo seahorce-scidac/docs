@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['d_5fhavg_5fdensity_808',['d_havg_density',['../classROMSX.html#a271306c0bdbc6ac6822bbca35f395d07',1,'ROMSX']]],
-  ['d_5fhavg_5fpressure_809',['d_havg_pressure',['../classROMSX.html#a09200be1d5d74f87d3679591a850eaef',1,'ROMSX']]],
-  ['d_5fhavg_5ftemperature_810',['d_havg_temperature',['../classROMSX.html#a9af6ccc61c900c2139238378b214ce44',1,'ROMSX']]],
+  ['d_5fhavg_5fdensity_808',['d_havg_density',['../classREMORA.html#aa86962216f5ba94d0d6a92b313fe6b91',1,'REMORA']]],
+  ['d_5fhavg_5fpressure_809',['d_havg_pressure',['../classREMORA.html#a9d8bfb2faf76f5666db1f2e6c3c27c46',1,'REMORA']]],
+  ['d_5fhavg_5ftemperature_810',['d_havg_temperature',['../classREMORA.html#a815d07375e65ea99f9e99dc3b32cc5c4',1,'REMORA']]],
   ['data_811',['data',['../structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e',1,'NDArray']]],
-  ['datalog_812',['datalog',['../classROMSX.html#a854a34e778a776e3ca46f7eeac9813e4',1,'ROMSX']]],
-  ['datalogname_813',['datalogname',['../classROMSX.html#ae308f7068f2eb8e48913fc77d32f9065',1,'ROMSX']]],
-  ['derived_5fnames_814',['derived_names',['../classROMSX.html#ab221b060f02f422f90d511e71b5c13d6',1,'ROMSX']]],
+  ['datalog_812',['datalog',['../classREMORA.html#ad3530fc80b87c25ce728095929a4ea99',1,'REMORA']]],
+  ['datalogname_813',['datalogname',['../classREMORA.html#a39048951d6927086a690d57a53754160',1,'REMORA']]],
+  ['derived_5fnames_814',['derived_names',['../classREMORA.html#ae91017557bdacda7d14418c7f15967e2',1,'REMORA']]],
   ['dimid_815',['dimid',['../structncutils_1_1NCDim.html#a1c5560c95be35dbcedaf1390972175f8',1,'ncutils::NCDim']]],
-  ['do_5fsubstep_816',['do_substep',['../classROMSX.html#a116ad0a8fa0753367f3458e5744c8e8e',1,'ROMSX']]],
-  ['domain_5fbc_5ftype_817',['domain_bc_type',['../classROMSX.html#a3ebadda9dbf9fbf5fd040bb1df0f18c3',1,'ROMSX']]],
-  ['domain_5fbcs_5ftype_818',['domain_bcs_type',['../classROMSX.html#a003d617559e7196bba737b43e23f9fc4',1,'ROMSX']]],
-  ['domain_5fbcs_5ftype_5fd_819',['domain_bcs_type_d',['../classROMSX.html#a04e9242a2702910e640d84f47a7aae3c',1,'ROMSX']]],
-  ['dt_820',['dt',['../classROMSX.html#aa8a469941edd719ce7c6052afc30d067',1,'ROMSX']]]
+  ['do_5fsubstep_816',['do_substep',['../classREMORA.html#a2c050fd7227b627691a3c074eb104c8d',1,'REMORA']]],
+  ['domain_5fbc_5ftype_817',['domain_bc_type',['../classREMORA.html#ac686c83706316dc3388d6c1d6b270a2c',1,'REMORA']]],
+  ['domain_5fbcs_5ftype_818',['domain_bcs_type',['../classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f',1,'REMORA']]],
+  ['domain_5fbcs_5ftype_5fd_819',['domain_bcs_type_d',['../classREMORA.html#af4c01c1be8a352c96a61e03e08c25121',1,'REMORA']]],
+  ['dt_820',['dt',['../classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb',1,'REMORA']]]
 ];

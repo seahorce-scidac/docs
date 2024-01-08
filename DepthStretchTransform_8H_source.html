@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ROMSX: /home/runner/work/ROMSX/ROMSX/Source/Utils/DepthStretchTransform.H Source File</title>
+<title>REMORA: /home/runner/work/REMORA/REMORA/Source/Utils/DepthStretchTransform.H Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ROMSX
+   <div id="projectname">REMORA
    </div>
    <div id="projectbrief">Energy Research and Forecasting: An Atmospheric Modeling Code</div>
   </td>
@@ -91,13 +91,13 @@ $(document).ready(function(){initNavTree('DepthStretchTransform_8H_source.html',
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="DataStruct_8H.html">DataStruct.H</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ROMSX_8H.html">ROMSX.H</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="REMORA_8H.html">REMORA.H</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="prob__common_8H.html">prob_common.H</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span>amrex;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classROMSX.html#aad35c03f38c28e55791b50da18f2604c">   12</a></span>&#160;<a class="code" href="classROMSX.html#aad35c03f38c28e55791b50da18f2604c">ROMSX::stretch_transform</a> (<span class="keywordtype">int</span> lev)</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5">   12</a></span>&#160;<a class="code" href="classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5">REMORA::stretch_transform</a> (<span class="keywordtype">int</span> lev)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::unique_ptr&lt;MultiFab&gt;&amp; mf_z_w = vec_z_w[lev];</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::unique_ptr&lt;MultiFab&gt;&amp; mf_z_r = vec_z_r[lev];</div>
@@ -327,8 +327,8 @@ $(document).ready(function(){initNavTree('DepthStretchTransform_8H_source.html',
 <div class="ttc" id="aDataStruct_8H_html"><div class="ttname"><a href="DataStruct_8H.html">DataStruct.H</a></div></div>
 <div class="ttc" id="aDataStruct_8H_html_aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1"><div class="ttname"><a href="DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1">IC_BC_Type::Real</a></div><div class="ttdeci">@ Real</div></div>
 <div class="ttc" id="aIndexDefines_8H_html_a124da9e47fb1b1f3debaf49368f42e38"><div class="ttname"><a href="IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a></div><div class="ttdeci">#define NGROW</div><div class="ttdef"><b>Definition:</b> IndexDefines.H:13</div></div>
-<div class="ttc" id="aROMSX_8H_html"><div class="ttname"><a href="ROMSX_8H.html">ROMSX.H</a></div></div>
-<div class="ttc" id="aclassROMSX_html_aad35c03f38c28e55791b50da18f2604c"><div class="ttname"><a href="classROMSX.html#aad35c03f38c28e55791b50da18f2604c">ROMSX::stretch_transform</a></div><div class="ttdeci">void stretch_transform(int lev)</div><div class="ttdef"><b>Definition:</b> DepthStretchTransform.H:12</div></div>
+<div class="ttc" id="aREMORA_8H_html"><div class="ttname"><a href="REMORA_8H.html">REMORA.H</a></div></div>
+<div class="ttc" id="aclassREMORA_html_a20f12090c7b81ca46d953ccf1319c0f5"><div class="ttname"><a href="classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5">REMORA::stretch_transform</a></div><div class="ttdeci">void stretch_transform(int lev)</div><div class="ttdef"><b>Definition:</b> DepthStretchTransform.H:12</div></div>
 <div class="ttc" id="aprob__common_8H_html"><div class="ttname"><a href="prob__common_8H.html">prob_common.H</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

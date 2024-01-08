@@ -10,5 +10,5 @@ var searchData=
   ['num_5fgroups_712',['num_groups',['../classncutils_1_1NCGroup.html#a4efddc44f72cc32a58849982bb7e8bce',1,'ncutils::NCGroup']]],
   ['num_5fvariables_713',['num_variables',['../classncutils_1_1NCGroup.html#a4721cc36bd0f188be0250112329d3ba1',1,'ncutils::NCGroup']]],
   ['num_5fvars_714',['num_vars',['../structTimeInterpolatedData.html#a69fdc01eabf8ded65ff6cac13e59c0c0',1,'TimeInterpolatedData']]],
-  ['numdatalogs_715',['NumDataLogs',['../classROMSX.html#adf6f2e4f8b883d81702ea424d90ff4de',1,'ROMSX']]]
+  ['numdatalogs_715',['NumDataLogs',['../classREMORA.html#abe6c7702fc1edcb5bb7d9a1a56d007a9',1,'REMORA']]]
 ];

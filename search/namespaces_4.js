@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['romsxbctype_542',['ROMSXBCType',['../namespaceROMSXBCType.html',1,'']]]
+  ['remorabctype_542',['REMORABCType',['../namespaceREMORABCType.html',1,'']]]
 ];

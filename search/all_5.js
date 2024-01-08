@@ -1,15 +1,15 @@
 var searchData=
 [
   ['fill_5ffab_5ffrom_5farrays_109',['fill_fab_from_arrays',['../NCFile_8H.html#a5fbca9044ab6c565786cf158ff9a6c0f',1,'NCFile.H']]],
-  ['fill_5ffrom_5fbdyfiles_110',['fill_from_bdyfiles',['../classROMSX.html#a7aca81d493f8262e3fe6c74fb5b635b3',1,'ROMSX']]],
-  ['fill_5frhs_111',['fill_rhs',['../classROMSX.html#aa79a87e1aaab7555dbf9ce414b385bb9',1,'ROMSX']]],
-  ['fillcoarsepatch_112',['FillCoarsePatch',['../classROMSX.html#afcdff09eb45a7281877f6bd97c07738f',1,'ROMSX']]],
-  ['fillpatch_113',['FillPatch',['../classROMSX.html#a75c63446dcb32a98cb9b94cc639697b9',1,'ROMSX']]],
-  ['fine_5fmask_114',['fine_mask',['../classROMSX.html#a6d17615a53d63c67d12c657c9b5dade5',1,'ROMSX']]],
-  ['fixed_5fdt_115',['fixed_dt',['../classROMSX.html#a9f1ff8349f4357e88dc70143f163b392',1,'ROMSX']]],
-  ['fixed_5ffast_5fdt_116',['fixed_fast_dt',['../classROMSX.html#a9b13ff6c8fec8f7ac0eb7330732d9bcc',1,'ROMSX']]],
-  ['fixed_5fndtfast_5fratio_117',['fixed_ndtfast_ratio',['../classROMSX.html#a676fc3cc2402734727ca9e04e050d171',1,'ROMSX']]],
+  ['fill_5ffrom_5fbdyfiles_110',['fill_from_bdyfiles',['../classREMORA.html#ab33ba40181998f803a89d89c175d561e',1,'REMORA']]],
+  ['fill_5frhs_111',['fill_rhs',['../classREMORA.html#abb9088da220a64e077ddb2cc8939ba2d',1,'REMORA']]],
+  ['fillcoarsepatch_112',['FillCoarsePatch',['../classREMORA.html#a95cda6dc2401e1e6d3df49eeda4ee6e1',1,'REMORA']]],
+  ['fillpatch_113',['FillPatch',['../classREMORA.html#aeac4c75110a1011acdf716c00bc62299',1,'REMORA']]],
+  ['fine_5fmask_114',['fine_mask',['../classREMORA.html#a1767264051aeb1f4463f23304214617e',1,'REMORA']]],
+  ['fixed_5fdt_115',['fixed_dt',['../classREMORA.html#a0c9e94b2bbf3ee8167abb9acd4b86807',1,'REMORA']]],
+  ['fixed_5ffast_5fdt_116',['fixed_fast_dt',['../classREMORA.html#a5cdf62f58282022e2d5f79de304d425f',1,'REMORA']]],
+  ['fixed_5fndtfast_5fratio_117',['fixed_ndtfast_ratio',['../classREMORA.html#acc900ee008729de41eb6aa28a36f6a26',1,'REMORA']]],
   ['flat_5fbathymetry_118',['flat_bathymetry',['../structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a',1,'SolverChoice']]],
-  ['foextrap_119',['foextrap',['../namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81ea41abfed9daecbbf69d81938a9d1a61ae',1,'ROMSXBCType']]],
+  ['foextrap_119',['foextrap',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346af756bb6d63add06a5624fa131cc82407',1,'REMORABCType']]],
   ['full_5fname_120',['full_name',['../classncutils_1_1NCGroup.html#a56f4429492300eabd16fa0d4bd55b8c7',1,'ncutils::NCGroup']]]
 ];

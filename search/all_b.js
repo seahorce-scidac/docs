@@ -1,21 +1,21 @@
 var searchData=
 [
-  ['m_5fbc_5fextdir_5fvals_193',['m_bc_extdir_vals',['../classROMSXPhysBCFunct.html#ae42dc97b9e0c385f374323ef320204b0',1,'ROMSXPhysBCFunct::m_bc_extdir_vals()'],['../classROMSX.html#a3e9e683aa14e1ce2cd331cc56e665faa',1,'ROMSX::m_bc_extdir_vals()']]],
+  ['m_5fbc_5fextdir_5fvals_193',['m_bc_extdir_vals',['../classREMORAPhysBCFunct.html#a83aa70d2c0300f112a6a8ac869c2f41d',1,'REMORAPhysBCFunct::m_bc_extdir_vals()'],['../classREMORA.html#a09a032f4d90f8dd939ab8e2ab5a06e06',1,'REMORA::m_bc_extdir_vals()']]],
   ['m_5fdata_194',['m_data',['../structTimeInterpolatedData.html#a7021ade0b30697e6eef3df932447d4fc',1,'TimeInterpolatedData']]],
-  ['m_5fdomain_5fbcs_5ftype_195',['m_domain_bcs_type',['../classROMSXPhysBCFunct.html#a1016f2d4f5c13c179f4f59bf93049d6c',1,'ROMSXPhysBCFunct']]],
-  ['m_5fdomain_5fbcs_5ftype_5fd_196',['m_domain_bcs_type_d',['../classROMSXPhysBCFunct.html#a003e4b00897ad6858ba99b2996b1eae5',1,'ROMSXPhysBCFunct']]],
-  ['m_5fgeom_197',['m_geom',['../classROMSXPhysBCFunct.html#ab3ec985809c2d3e49c2d797994968ab5',1,'ROMSXPhysBCFunct']]],
-  ['m_5flev_198',['m_lev',['../classROMSXPhysBCFunct.html#a9fdfe99760d66b9d8acd10f49ed561d7',1,'ROMSXPhysBCFunct']]],
+  ['m_5fdomain_5fbcs_5ftype_195',['m_domain_bcs_type',['../classREMORAPhysBCFunct.html#a74c61939fd45d56cc0bfcc6756806b65',1,'REMORAPhysBCFunct']]],
+  ['m_5fdomain_5fbcs_5ftype_5fd_196',['m_domain_bcs_type_d',['../classREMORAPhysBCFunct.html#aba45ee7bbf2e50eae7392f03670d6214',1,'REMORAPhysBCFunct']]],
+  ['m_5fgeom_197',['m_geom',['../classREMORAPhysBCFunct.html#aa908f5a017f82a511905b364b5758614',1,'REMORAPhysBCFunct']]],
+  ['m_5flev_198',['m_lev',['../classREMORAPhysBCFunct.html#a109327f6a7007aaea8884bc74283a17a',1,'REMORAPhysBCFunct']]],
   ['m_5fowns_5fdata_199',['m_owns_data',['../structTimeInterpolatedData.html#a6eeb9167e2d8051c16fdbb1e7fee54ed',1,'TimeInterpolatedData']]],
   ['m_5ftime_200',['m_time',['../structTimeInterpolatedData.html#a9b0102facc1d00011f48f95132955e27',1,'TimeInterpolatedData']]],
   ['main_201',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
   ['main_2ecpp_202',['main.cpp',['../main_8cpp.html',1,'']]],
   ['main_2edox_203',['main.dox',['../main_8dox.html',1,'']]],
-  ['makenewlevelfromcoarse_204',['MakeNewLevelFromCoarse',['../classROMSX.html#a8f756bf6c9c2c09f1d9f1d9ba0bf387e',1,'ROMSX']]],
-  ['makenewlevelfromscratch_205',['MakeNewLevelFromScratch',['../classROMSX.html#ac9e8dc15f5a291fb654b1ef1bdc47974',1,'ROMSX']]],
-  ['mapfac_5fm_206',['mapfac_m',['../classROMSX.html#a606d7f526ef409ef78feb8ce127f98c9',1,'ROMSX']]],
-  ['mapfac_5fu_207',['mapfac_u',['../classROMSX.html#a865698971c9689455573c4b81ecaf26c',1,'ROMSX']]],
-  ['mapfac_5fv_208',['mapfac_v',['../classROMSX.html#ad96e947b76f50a01928821d3cd2455f7',1,'ROMSX']]],
-  ['mathematicalbndrytypes_209',['mathematicalBndryTypes',['../namespaceROMSXBCType.html#af4e42fa51742c38508f617adb429d81e',1,'ROMSXBCType']]],
-  ['max_5fstep_210',['max_step',['../classROMSX.html#ad895c0936e0bd64ca71ec355e5e164b6',1,'ROMSX']]]
+  ['makenewlevelfromcoarse_204',['MakeNewLevelFromCoarse',['../classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe',1,'REMORA']]],
+  ['makenewlevelfromscratch_205',['MakeNewLevelFromScratch',['../classREMORA.html#ad64e9b244603ae920ed761821753a71f',1,'REMORA']]],
+  ['mapfac_5fm_206',['mapfac_m',['../classREMORA.html#a6b32e42c790f2f3ac55ce545c2d03314',1,'REMORA']]],
+  ['mapfac_5fu_207',['mapfac_u',['../classREMORA.html#a5d56f29784bbca12778ba7c58fa0f36d',1,'REMORA']]],
+  ['mapfac_5fv_208',['mapfac_v',['../classREMORA.html#aa30c202e051228d1936a521eedcd6957',1,'REMORA']]],
+  ['mathematicalbndrytypes_209',['mathematicalBndryTypes',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346',1,'REMORABCType']]],
+  ['max_5fstep_210',['max_step',['../classREMORA.html#a69c542c1c57e6c6532a20eec60b9a0c3',1,'REMORA']]]
 ];

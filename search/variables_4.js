@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['fine_5fmask_821',['fine_mask',['../classROMSX.html#a6d17615a53d63c67d12c657c9b5dade5',1,'ROMSX']]],
-  ['fixed_5fdt_822',['fixed_dt',['../classROMSX.html#a9f1ff8349f4357e88dc70143f163b392',1,'ROMSX']]],
-  ['fixed_5ffast_5fdt_823',['fixed_fast_dt',['../classROMSX.html#a9b13ff6c8fec8f7ac0eb7330732d9bcc',1,'ROMSX']]],
-  ['fixed_5fndtfast_5fratio_824',['fixed_ndtfast_ratio',['../classROMSX.html#a676fc3cc2402734727ca9e04e050d171',1,'ROMSX']]],
+  ['fine_5fmask_821',['fine_mask',['../classREMORA.html#a1767264051aeb1f4463f23304214617e',1,'REMORA']]],
+  ['fixed_5fdt_822',['fixed_dt',['../classREMORA.html#a0c9e94b2bbf3ee8167abb9acd4b86807',1,'REMORA']]],
+  ['fixed_5ffast_5fdt_823',['fixed_fast_dt',['../classREMORA.html#a5cdf62f58282022e2d5f79de304d425f',1,'REMORA']]],
+  ['fixed_5fndtfast_5fratio_824',['fixed_ndtfast_ratio',['../classREMORA.html#acc900ee008729de41eb6aa28a36f6a26',1,'REMORA']]],
   ['flat_5fbathymetry_825',['flat_bathymetry',['../structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a',1,'SolverChoice']]]
 ];

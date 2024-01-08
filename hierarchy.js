@@ -1,7 +1,7 @@
 var hierarchy =
 [
     [ "amrex::AmrCore", null, [
-      [ "ROMSX", "classROMSX.html", null ]
+      [ "REMORA", "classREMORA.html", null ]
     ] ],
     [ "ncutils::NCDim", "structncutils_1_1NCDim.html", null ],
     [ "ncutils::NCDType", "structncutils_1_1NCDType.html", null ],
@@ -15,7 +15,7 @@ var hierarchy =
       [ "TracerPC", "classTracerPC.html", null ]
     ] ],
     [ "ParticleData", "structParticleData.html", null ],
-    [ "ROMSXPhysBCFunct", "classROMSXPhysBCFunct.html", null ],
+    [ "REMORAPhysBCFunct", "classREMORAPhysBCFunct.html", null ],
     [ "SolverChoice", "structSolverChoice.html", null ],
     [ "TimeInterpolatedData", "structTimeInterpolatedData.html", null ],
     [ "TracerAssignor", "structTracerAssignor.html", null ],

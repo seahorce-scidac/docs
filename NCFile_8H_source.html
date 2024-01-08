@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ROMSX: /home/runner/work/ROMSX/ROMSX/Source/IO/NCFile.H Source File</title>
+<title>REMORA: /home/runner/work/REMORA/REMORA/Source/IO/NCFile.H Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ROMSX
+   <div id="projectname">REMORA
    </div>
    <div id="projectbrief">Energy Research and Forecasting: An Atmospheric Modeling Code</div>
   </td>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('NCFile_8H_source.html',''); initResiza
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;AMReX_IArrayBox.H&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="NCInterface_8H.html">NCInterface.H</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="NCFile_8H.html#a60014a8d74bed0d5ae984e600c68dc85">   13</a></span>&#160;<span class="keyword">using</span> <a class="code" href="ROMSX__PhysBCFunct_8H.html#a60014a8d74bed0d5ae984e600c68dc85">PlaneVector</a> = amrex::Vector&lt;amrex::FArrayBox&gt;;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="NCFile_8H.html#a60014a8d74bed0d5ae984e600c68dc85">   13</a></span>&#160;<span class="keyword">using</span> <a class="code" href="REMORA__PhysBCFunct_8H.html#a60014a8d74bed0d5ae984e600c68dc85">PlaneVector</a> = amrex::Vector&lt;amrex::FArrayBox&gt;;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">   15</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a> {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06aa3968158227ea04595d4003503cca22b">Time_BT_SN_WE</a>,</div>
@@ -403,7 +403,7 @@ $(document).ready(function(){initNavTree('NCFile_8H_source.html',''); initResiza
 <div class="ttc" id="aNCFile_8H_html_aa682cd5b28ee9ffaf36c6944bd124af0"><div class="ttname"><a href="NCFile_8H.html#aa682cd5b28ee9ffaf36c6944bd124af0">ReadNetCDFFile</a></div><div class="ttdeci">void ReadNetCDFFile(const std::string &amp;fname, amrex::Vector&lt; std::string &gt; names, amrex::Vector&lt; NDArray&lt; DType &gt; &gt; &amp;arrays)</div><div class="ttdef"><b>Definition:</b> NCFile.H:106</div></div>
 <div class="ttc" id="aNCFile_8H_html_abcadbd0591038f7d3c9bb13c37df21f9"><div class="ttname"><a href="NCFile_8H.html#abcadbd0591038f7d3c9bb13c37df21f9">BuildFABsFromNetCDFFile</a></div><div class="ttdeci">void BuildFABsFromNetCDFFile(const amrex::Box &amp;domain, const std::string &amp;fname, amrex::Vector&lt; std::string &gt; nc_var_names, amrex::Vector&lt; enum NC_Data_Dims_Type &gt; NC_dim_types, amrex::Vector&lt; FAB * &gt; fab_vars)</div><div class="ttdef"><b>Definition:</b> NCFile.H:254</div></div>
 <div class="ttc" id="aNCInterface_8H_html"><div class="ttname"><a href="NCInterface_8H.html">NCInterface.H</a></div></div>
-<div class="ttc" id="aROMSX__PhysBCFunct_8H_html_a60014a8d74bed0d5ae984e600c68dc85"><div class="ttname"><a href="ROMSX__PhysBCFunct_8H.html#a60014a8d74bed0d5ae984e600c68dc85">PlaneVector</a></div><div class="ttdeci">amrex::Vector&lt; amrex::FArrayBox &gt; PlaneVector</div><div class="ttdef"><b>Definition:</b> ROMSX_PhysBCFunct.H:19</div></div>
+<div class="ttc" id="aREMORA__PhysBCFunct_8H_html_a60014a8d74bed0d5ae984e600c68dc85"><div class="ttname"><a href="REMORA__PhysBCFunct_8H.html#a60014a8d74bed0d5ae984e600c68dc85">PlaneVector</a></div><div class="ttdeci">amrex::Vector&lt; amrex::FArrayBox &gt; PlaneVector</div><div class="ttdef"><b>Definition:</b> REMORA_PhysBCFunct.H:19</div></div>
 <div class="ttc" id="aclassncutils_1_1NCFile_html_a2881b70e450e11f01b474c538b8d6885"><div class="ttname"><a href="classncutils_1_1NCFile.html#a2881b70e450e11f01b474c538b8d6885">ncutils::NCFile::open</a></div><div class="ttdeci">static NCFile open(const std::string &amp;name, const int cmode=NC_NOWRITE)</div><div class="ttdef"><b>Definition:</b> NCInterface.cpp:574</div></div>
 <div class="ttc" id="astructNDArray_html"><div class="ttname"><a href="structNDArray.html">NDArray</a></div><div class="ttdef"><b>Definition:</b> NCFile.H:31</div></div>
 <div class="ttc" id="astructNDArray_html_a0a1c90304eddb4d078132a1c1f45bef9"><div class="ttname"><a href="structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9">NDArray::owned</a></div><div class="ttdeci">bool owned</div><div class="ttdef"><b>Definition:</b> NCFile.H:101</div></div>

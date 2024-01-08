@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['romsx_5fbc_980',['ROMSX_BC',['../IndexDefines_8H.html#a8c2583d7b3aea3f36ba249890cc5e281',1,'IndexDefines.H']]]
+  ['remora_5fbc_980',['REMORA_BC',['../IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325',1,'IndexDefines.H']]]
 ];

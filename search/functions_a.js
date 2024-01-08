@@ -1,6 +1,6 @@
 var searchData=
 [
   ['main_702',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
-  ['makenewlevelfromcoarse_703',['MakeNewLevelFromCoarse',['../classROMSX.html#a8f756bf6c9c2c09f1d9f1d9ba0bf387e',1,'ROMSX']]],
-  ['makenewlevelfromscratch_704',['MakeNewLevelFromScratch',['../classROMSX.html#ac9e8dc15f5a291fb654b1ef1bdc47974',1,'ROMSX']]]
+  ['makenewlevelfromcoarse_703',['MakeNewLevelFromCoarse',['../classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe',1,'REMORA']]],
+  ['makenewlevelfromscratch_704',['MakeNewLevelFromScratch',['../classREMORA.html#ad64e9b244603ae920ed761821753a71f',1,'REMORA']]]
 ];

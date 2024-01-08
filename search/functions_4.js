@@ -1,8 +1,8 @@
 var searchData=
 [
   ['enter_5fdef_5fmode_646',['enter_def_mode',['../classncutils_1_1NCGroup.html#aef6b6e2be36e6179a001d9873e94df82',1,'ncutils::NCGroup']]],
-  ['errorest_647',['ErrorEst',['../classROMSX.html#ac3d2c692cc496f5f7a57b46f0c9e2f12',1,'ROMSX']]],
-  ['esttimestep_648',['estTimeStep',['../classROMSX.html#aaf5a8c8dcd7e6c993fea4acf2845e3d0',1,'ROMSX']]],
-  ['evolve_649',['Evolve',['../classROMSX.html#a2491883c8e50f6734a2c474d65817824',1,'ROMSX']]],
+  ['errorest_647',['ErrorEst',['../classREMORA.html#a783db1b357863608197eccb6fe7d4c52',1,'REMORA']]],
+  ['esttimestep_648',['estTimeStep',['../classREMORA.html#ac71630052015782fce4f20e204e42016',1,'REMORA']]],
+  ['evolve_649',['Evolve',['../classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e',1,'REMORA']]],
   ['exit_5fdef_5fmode_650',['exit_def_mode',['../classncutils_1_1NCGroup.html#a3a4ebd106195be96fb41bb3bfde83143',1,'ncutils::NCGroup']]]
 ];

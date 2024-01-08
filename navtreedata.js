@@ -24,8 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "ROMSX", "index.html", [
-    [ "Regional Ocean Modeling built on AMReX: ROMSX", "index.html", [
+  [ "REMORA", "index.html", [
+    [ "Regional Modeling of Oceans Refined Adaptively (built on AMReX): REMORA", "index.html", [
       [ "Introduction", "index.html#Introduction", null ],
       [ "Adaptive Mesh Refinement", "index.html#amr", null ],
       [ "Getting Started", "index.html#getting_started", null ],
@@ -69,7 +69,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BoundaryConditions__cons_8cpp.html",
-"classROMSX.html#a750d5e2613cd056f28a42a7eb950be05",
+"classREMORA.html#a79eb0ac9909062422d3b3207a7643dd8",
 "index.html"
 ];
 

@@ -12,10 +12,10 @@ var dir_74389ed8173ad57b461b9d623a1f3867 =
     [ "EOS.H", "EOS_8H.html", "EOS_8H" ],
     [ "IndexDefines.H", "IndexDefines_8H.html", "IndexDefines_8H" ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
-    [ "ROMSX.cpp", "ROMSX_8cpp.html", "ROMSX_8cpp" ],
-    [ "ROMSX.H", "ROMSX_8H.html", "ROMSX_8H" ],
-    [ "ROMSX_Constants.H", "ROMSX__Constants_8H.html", "ROMSX__Constants_8H" ],
-    [ "ROMSX_make_new_level.cpp", "ROMSX__make__new__level_8cpp.html", null ],
-    [ "ROMSX_SumIQ.cpp", "ROMSX__SumIQ_8cpp.html", null ],
-    [ "ROMSX_Tagging.cpp", "ROMSX__Tagging_8cpp.html", null ]
+    [ "REMORA.cpp", "REMORA_8cpp.html", "REMORA_8cpp" ],
+    [ "REMORA.H", "REMORA_8H.html", "REMORA_8H" ],
+    [ "REMORA_Constants.H", "REMORA__Constants_8H.html", "REMORA__Constants_8H" ],
+    [ "REMORA_make_new_level.cpp", "REMORA__make__new__level_8cpp.html", null ],
+    [ "REMORA_SumIQ.cpp", "REMORA__SumIQ_8cpp.html", null ],
+    [ "REMORA_Tagging.cpp", "REMORA__Tagging_8cpp.html", null ]
 ];
