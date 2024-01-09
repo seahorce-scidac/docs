@@ -27,5 +27,10 @@ var DataStruct_8H =
     [ "IC_BC_Type", "DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36", [
       [ "Custom", "DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a90589c47f06eb971d548591f23c285af", null ],
       [ "Real", "DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a7f80fcc452c2f1ed2bb51b39d0864df1", null ]
+    ] ],
+    [ "PlotfileType", "DataStruct_8H.html#a4036964f680afc43cfce078311111a9e", [
+      [ "amrex", "DataStruct_8H.html#a4036964f680afc43cfce078311111a9eabbe17e876cafcbc06d3ea0d2a23854d3", null ],
+      [ "netcdf", "DataStruct_8H.html#a4036964f680afc43cfce078311111a9eac2e0f73e7b066a47b743d6ce8213e684", null ],
+      [ "hdf5", "DataStruct_8H.html#a4036964f680afc43cfce078311111a9ead12072103bcd8a3e062dd7bc9124d354", null ]
     ] ]
 ];

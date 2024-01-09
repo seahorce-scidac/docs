@@ -153,7 +153,7 @@ var classREMORA =
     [ "plot_int_2", "classREMORA.html#a1db03ec74ac9a6e94c59ed0e4a187bbb", null ],
     [ "plot_var_names_1", "classREMORA.html#a0737e2206f4961852b5cbdc0c9c889f1", null ],
     [ "plot_var_names_2", "classREMORA.html#a2dc73785c2de0224c069e73c5d57e794", null ],
-    [ "plotfile_type", "classREMORA.html#a8f54ff89ec074a80c1c63c1a39ee69ef", null ],
+    [ "plotfile_type", "classREMORA.html#a002524d813441c4b5fe1b223b46389fa", null ],
     [ "pp_prefix", "classREMORA.html#a9724f153d0c7a89c5d6aec11605959aa", null ],
     [ "previousCPUTimeUsed", "classREMORA.html#a13791ab61c74d1c95a4caa544d9ac3d3", null ],
     [ "ref_tags", "classREMORA.html#a476b854ad74dd35ec1bf21cd9ea1f0b0", null ],

@@ -16,7 +16,8 @@ var searchData=
   ['all_5fdims_13',['all_dims',['../classncutils_1_1NCGroup.html#a8e01fe072fa48f4fa9c8be33a3a401b0',1,'ncutils::NCGroup']]],
   ['all_5fgroups_14',['all_groups',['../classncutils_1_1NCGroup.html#a82a48643f27b33b27cdd87c60e63f5f5',1,'ncutils::NCGroup']]],
   ['all_5fvars_15',['all_vars',['../classncutils_1_1NCGroup.html#affa2e62434110dd4fa47d093162e56cf',1,'ncutils::NCGroup']]],
-  ['amrex_5fprobinit_16',['amrex_probinit',['../prob__common_8H.html#afef32e2116829d24b864c64caebf5ea6',1,'prob_common.H']]],
-  ['averagedown_17',['AverageDown',['../classREMORA.html#acc4cc491f4e1714d3d4999290046c82e',1,'REMORA']]],
-  ['averagedownto_18',['AverageDownTo',['../classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3',1,'REMORA']]]
+  ['amrex_16',['amrex',['../DataStruct_8H.html#a4036964f680afc43cfce078311111a9eabbe17e876cafcbc06d3ea0d2a23854d3',1,'DataStruct.H']]],
+  ['amrex_5fprobinit_17',['amrex_probinit',['../prob__common_8H.html#afef32e2116829d24b864c64caebf5ea6',1,'prob_common.H']]],
+  ['averagedown_18',['AverageDown',['../classREMORA.html#acc4cc491f4e1714d3d4999290046c82e',1,'REMORA']]],
+  ['averagedownto_19',['AverageDownTo',['../classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3',1,'REMORA']]]
 ];

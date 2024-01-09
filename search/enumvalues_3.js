@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['foextrap_992',['foextrap',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346af756bb6d63add06a5624fa131cc82407',1,'REMORABCType']]]
+  ['ext_5fdir_997',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]]
 ];

@@ -1,5 +1,10 @@
 var NAVTREEINDEX1 =
 {
+"classREMORA.html#a76b30b516d67fc5b30bfdfc221d63554":[2,0,4,84],
+"classREMORA.html#a7714f7f51b35f7a425da770fdae443c6":[2,0,4,82],
+"classREMORA.html#a77de1102264f09670fbd00a76aa2c58f":[2,0,4,30],
+"classREMORA.html#a783db1b357863608197eccb6fe7d4c52":[2,0,4,16],
+"classREMORA.html#a784ba6c1f790c6df29d1e04772193ff0":[2,0,4,146],
 "classREMORA.html#a79eb0ac9909062422d3b3207a7643dd8":[2,0,4,24],
 "classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089":[2,0,4,33],
 "classREMORA.html#a7c44493fe1a5743c92f272c91c3aa558":[2,0,4,126],
@@ -18,7 +23,6 @@ var NAVTREEINDEX1 =
 "classREMORA.html#a8a16e552c794ae05498e4cb0a65399af":[2,0,4,0],
 "classREMORA.html#a8c3a852e766271b0dcf52a99f2ba6500":[2,0,4,94],
 "classREMORA.html#a8c6fbe147d0a9bc99510fc8ee97aea98":[2,0,4,86],
-"classREMORA.html#a8f54ff89ec074a80c1c63c1a39ee69ef":[2,0,4,153],
 "classREMORA.html#a95cda6dc2401e1e6d3df49eeda4ee6e1":[2,0,4,21],
 "classREMORA.html#a9724f153d0c7a89c5d6aec11605959aa":[2,0,4,154],
 "classREMORA.html#a97de693d117772818b80fb566720d4c1":[2,0,4,62],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "globals.html":[3,1,0],
 "globals_defs.html":[3,1,5],
 "globals_enum.html":[3,1,4],
-"globals_func.html":[3,1,1],
-"globals_type.html":[3,1,3],
-"globals_vars.html":[3,1,2],
-"hierarchy.html":[2,2],
-"index.html":[]
+"globals_func.html":[3,1,1]
 };
