@@ -167,7 +167,7 @@ var classREMORA =
     [ "sum_per", "classREMORA.html#aee90bf7b804b280c88a65dd354d97ee5", null ],
     [ "t_new", "classREMORA.html#aa726a41ea5c80773654850a9444bf7fe", null ],
     [ "t_old", "classREMORA.html#ae94018d43dcebc3cd70293e6c621c46a", null ],
-    [ "total_plot_file_step_1", "classREMORA.html#ad166c2b2bb981f115c4cef7da8036b66", null ],
+    [ "total_nc_plot_file_step", "classREMORA.html#ab001c0ea487d4b30d2e7570665c2e452", null ],
     [ "use_tracer_particles", "classREMORA.html#a97dfe1e54e1222290a2c76a64cdf7339", null ],
     [ "vec_Akt", "classREMORA.html#a48c1bf42530780ce02b3655d7cefe592", null ],
     [ "vec_Akv", "classREMORA.html#ad36ee94716ca0cde00d8cad5fe5cce94", null ],

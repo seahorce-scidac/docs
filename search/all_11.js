@@ -17,7 +17,7 @@ var searchData=
   ['timeinterpolateddata_2eh_418',['TimeInterpolatedData.H',['../TimeInterpolatedData_8H.html',1,'']]],
   ['timestep_419',['timeStep',['../classREMORA.html#ac88ed7a3bf97eec4dca7f70126a0600d',1,'REMORA']]],
   ['timestepml_420',['timeStepML',['../classREMORA.html#acf259537f6d9c23a0edcf6641381a9d0',1,'REMORA']]],
-  ['total_5fplot_5ffile_5fstep_5f1_421',['total_plot_file_step_1',['../classREMORA.html#ad166c2b2bb981f115c4cef7da8036b66',1,'REMORA']]],
+  ['total_5fnc_5fplot_5ffile_5fstep_421',['total_nc_plot_file_step',['../classREMORA.html#ab001c0ea487d4b30d2e7570665c2e452',1,'REMORA']]],
   ['tracer_5fparticle_5fvarnames_422',['tracer_particle_varnames',['../structParticleData.html#a9fc8840f6c644da7378157c793844cd8',1,'ParticleData']]],
   ['tracer_5fparticles_423',['tracer_particles',['../structParticleData.html#af0a74cde6ad8dfa3908229f947a1bdbc',1,'ParticleData']]],
   ['tracerassignor_424',['TracerAssignor',['../structTracerAssignor.html',1,'']]],
