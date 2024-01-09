@@ -69,8 +69,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BoundaryConditions__cons_8cpp.html",
-"classREMORA.html#a76b30b516d67fc5b30bfdfc221d63554",
-"globals_type.html"
+"classREMORA.html#a7714f7f51b35f7a425da770fdae443c6",
+"hierarchy.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

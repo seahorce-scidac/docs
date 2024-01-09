@@ -10,7 +10,6 @@ var dir_4c48f420b74c1f1cc31b316243ca788c =
       [ "NCGroup", "classncutils_1_1NCGroup.html", "classncutils_1_1NCGroup" ],
       [ "NCFile", "classncutils_1_1NCFile.html", "classncutils_1_1NCFile" ]
     ] ],
-    [ "NCMultiFabFile.cpp", "NCMultiFabFile_8cpp.html", null ],
     [ "NCPlotFile.cpp", "NCPlotFile_8cpp.html", null ],
     [ "NCPlotFile.H", "NCPlotFile_8H.html", "NCPlotFile_8H" ],
     [ "Plotfile.cpp", "Plotfile_8cpp.html", null ],
