@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"classREMORA.html#a75e6e53bc24b47b664fddcafed41dbd1":[2,0,4,145],
+"classREMORA.html#a7671b889b87ca190f7aba7188074efa3":[2,0,4,11],
+"classREMORA.html#a76b30b516d67fc5b30bfdfc221d63554":[2,0,4,84],
 "classREMORA.html#a7714f7f51b35f7a425da770fdae443c6":[2,0,4,82],
 "classREMORA.html#a77de1102264f09670fbd00a76aa2c58f":[2,0,4,30],
 "classREMORA.html#a783db1b357863608197eccb6fe7d4c52":[2,0,4,16],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "functions_~.html":[2,3,0,24],
 "globals.html":[3,1,0],
 "globals_defs.html":[3,1,5],
-"globals_enum.html":[3,1,4],
-"globals_func.html":[3,1,1],
-"globals_type.html":[3,1,3],
-"globals_vars.html":[3,1,2]
+"globals_enum.html":[3,1,4]
 };

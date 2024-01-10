@@ -9,5 +9,6 @@ var NCFile_8H =
     ] ],
     [ "BuildFABsFromNetCDFFile", "NCFile_8H.html#abcadbd0591038f7d3c9bb13c37df21f9", null ],
     [ "fill_fab_from_arrays", "NCFile_8H.html#a5fbca9044ab6c565786cf158ff9a6c0f", null ],
-    [ "ReadNetCDFFile", "NCFile_8H.html#aa682cd5b28ee9ffaf36c6944bd124af0", null ]
+    [ "ReadNetCDFFile", "NCFile_8H.html#aa682cd5b28ee9ffaf36c6944bd124af0", null ],
+    [ "ReadNetCDFVarAttrStr", "NCFile_8H.html#af8eb0b5eb41bbbf48a6dbced8cd0d6ea", null ]
 ];
