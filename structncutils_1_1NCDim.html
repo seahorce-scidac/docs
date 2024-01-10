@@ -142,11 +142,11 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of this dimension. </p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">size_t</span> dlen;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    check_nc_error(nc_inq_dimlen(<a class="code" href="structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544">ncid</a>, <a class="code" href="structncutils_1_1NCDim.html#a1c5560c95be35dbcedaf1390972175f8">dimid</a>, &amp;dlen));</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> dlen;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">size_t</span> dlen;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    check_nc_error(nc_inq_dimlen(<a class="code" href="structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544">ncid</a>, <a class="code" href="structncutils_1_1NCDim.html#a1c5560c95be35dbcedaf1390972175f8">dimid</a>, &amp;dlen));</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> dlen;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="ttc" id="astructncutils_1_1NCDim_html_a1c5560c95be35dbcedaf1390972175f8"><div class="ttname"><a href="structncutils_1_1NCDim.html#a1c5560c95be35dbcedaf1390972175f8">ncutils::NCDim::dimid</a></div><div class="ttdeci">const int dimid</div><div class="ttdoc">Dimension ID used with NetCDF API.</div><div class="ttdef"><b>Definition:</b> NCInterface.H:42</div></div>
 <div class="ttc" id="astructncutils_1_1NCDim_html_a3272d1768518ba020b9bcd0d3699d544"><div class="ttname"><a href="structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544">ncutils::NCDim::ncid</a></div><div class="ttdeci">const int ncid</div><div class="ttdoc">File/Group Identifier.</div><div class="ttdef"><b>Definition:</b> NCInterface.H:39</div></div>
 </div><!-- fragment -->
@@ -168,10 +168,10 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Name of this dimension. </p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    check_nc_error(nc_inq_dimname(<a class="code" href="structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544">ncid</a>, <a class="code" href="structncutils_1_1NCDim.html#a1c5560c95be35dbcedaf1390972175f8">dimid</a>, recname));</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> std::string(recname);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    check_nc_error(nc_inq_dimname(<a class="code" href="structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544">ncid</a>, <a class="code" href="structncutils_1_1NCDim.html#a1c5560c95be35dbcedaf1390972175f8">dimid</a>, recname));</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> std::string(recname);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
