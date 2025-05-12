@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['s0_895',['S0',['../structSolverChoice.html#af8337b0c99a50300e9880db3e8296d91',1,'SolverChoice']]],
-  ['scoef_896',['Scoef',['../structSolverChoice.html#ae8dbad91ad7a9be8eb4c2db5a62f5c47',1,'SolverChoice']]],
-  ['shape_897',['shape',['../structNDArray.html#a99d704051dda7b5635b12cbe785d7bb5',1,'NDArray']]],
-  ['solverchoice_898',['solverChoice',['../classREMORA.html#aa88bf20926ca017d05ebabe44f224443',1,'REMORA']]],
-  ['spatial_5forder_899',['spatial_order',['../structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44',1,'SolverChoice']]],
-  ['sst_900',['sst',['../classREMORA.html#a87c0b19a10b9aaf727f902e62dad8f77',1,'REMORA']]],
-  ['startcputime_901',['startCPUTime',['../classREMORA.html#a4d3e0a094fbd5ed0ef96114162a88478',1,'REMORA']]],
-  ['stop_5ftime_902',['stop_time',['../classREMORA.html#a2981da216b5811080251dc15b27ca281',1,'REMORA']]],
-  ['sum_5finterval_903',['sum_interval',['../classREMORA.html#a295ab241204aca35cc4c720392bb3fd2',1,'REMORA']]],
-  ['sum_5fper_904',['sum_per',['../classREMORA.html#aee90bf7b804b280c88a65dd354d97ee5',1,'REMORA']]]
+  ['q00_0',['Q00',['../REMORA__Constants_8H.html#a8e0841f122fc83b9e08b32b55e7f33c5',1,'REMORA_Constants.H']]],
+  ['q01_1',['Q01',['../REMORA__Constants_8H.html#aa231639da9fd73b9be24afad82497ad0',1,'REMORA_Constants.H']]],
+  ['q02_2',['Q02',['../REMORA__Constants_8H.html#a99f847c32263e2aeeec665a56f4e2a97',1,'REMORA_Constants.H']]],
+  ['q03_3',['Q03',['../REMORA__Constants_8H.html#ab26a0f5c68d9f199dc24254151873cb3',1,'REMORA_Constants.H']]],
+  ['q04_4',['Q04',['../REMORA__Constants_8H.html#a2549145b8b7aab6b7d49ee1da2778459',1,'REMORA_Constants.H']]],
+  ['q05_5',['Q05',['../REMORA__Constants_8H.html#ac341187acb1b842e0ce85cc12ab900ce',1,'REMORA_Constants.H']]]
 ];

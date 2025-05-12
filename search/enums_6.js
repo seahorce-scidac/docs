@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['remora_5fbc_985',['REMORA_BC',['../IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325',1,'IndexDefines.H']]]
+  ['ic_5fbc_5ftype_0',['IC_BC_Type',['../REMORA__DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36',1,'REMORA_DataStruct.H']]]
 ];

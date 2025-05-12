@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['remorabctype_546',['REMORABCType',['../namespaceREMORABCType.html',1,'']]]
+  ['interptype_0',['InterpType',['../namespaceInterpType.html',1,'']]]
 ];

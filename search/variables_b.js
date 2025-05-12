@@ -1,7 +1,19 @@
 var searchData=
 [
-  ['output_5f1d_5fcolumn_870',['output_1d_column',['../classREMORA.html#ad280580fcce56885135a6923a2e0239c',1,'REMORA']]],
-  ['output_5fbndry_5fplanes_871',['output_bndry_planes',['../classREMORA.html#a6266d103134197c8d3847f1033b80736',1,'REMORA']]],
-  ['owned_872',['owned',['../structNDArray.html#a0a1c90304eddb4d078132a1c1f45bef9',1,'NDArray']]],
-  ['owning_873',['owning',['../structTimeInterpolatedData.html#af9c5a331c09d13db10c98ad3033114d8',1,'TimeInterpolatedData']]]
+  ['name_0',['name',['../structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09',1,'NDArray']]],
+  ['nc_5fbdry_5ffile_1',['nc_bdry_file',['../classREMORA.html#ade8f2985b433261b76ac1d8f28fa6d0a',1,'REMORA']]],
+  ['nc_5fclim_5fcoeff_5ffile_2',['nc_clim_coeff_file',['../classREMORA.html#a7e036cab1a75c0be9068965a3b7d6cf1',1,'REMORA']]],
+  ['nc_5fclim_5fhis_5ffile_3',['nc_clim_his_file',['../classREMORA.html#ac856db864b4c4d7c0165e084388552ca',1,'REMORA']]],
+  ['nc_5ffrc_5ffile_4',['nc_frc_file',['../classREMORA.html#a47f78aa3f33d31e7ad125efe1a76ddce',1,'REMORA']]],
+  ['nc_5fgrid_5ffile_5',['nc_grid_file',['../classREMORA.html#af0ba249e52817855bb895b47cb005227',1,'REMORA']]],
+  ['nc_5finit_5ffile_6',['nc_init_file',['../classREMORA.html#af7b7f34b69f804f7acd9a1bc0c7bb5b9',1,'REMORA']]],
+  ['ncid_7',['ncid',['../classncutils_1_1NCFile.html#a08428af09deb00321229ef4c20587476',1,'ncutils::NCFile::ncid'],['../structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218',1,'ncutils::NCVar::ncid'],['../structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544',1,'ncutils::NCDim::ncid']]],
+  ['nfast_8',['nfast',['../classREMORA.html#a05d2c2f58537f7fdae1bb5088f50e149',1,'REMORA']]],
+  ['non_5fowning_9',['non_owning',['../structTimeInterpolatedData.html#a39ab53c6a67f3b87c895483a89e2fc0f',1,'TimeInterpolatedData']]],
+  ['nsubsteps_10',['nsubsteps',['../classREMORA.html#a7595b63fdb3f613a189cd20936290d2b',1,'REMORA']]],
+  ['nudg_5fcoeff_11',['nudg_coeff',['../structSolverChoice.html#a13b47da7539e19d8dd12100b56cfc67c',1,'SolverChoice']]],
+  ['null_5fbc_12',['null_bc',['../REMORA__FillPatch_8cpp.html#a85a7293fad1a59ed566bcea306373abc',1,'REMORA_FillPatch.cpp']]],
+  ['null_5fbc_5ffor_5ffill_13',['null_bc_for_fill',['../REMORA__Plotfile_8cpp.html#aeb56b4bca6dfa0e3b81d3f983926e8a2',1,'REMORA_Plotfile.cpp']]],
+  ['num_5fboxes_5fat_5flevel_14',['num_boxes_at_level',['../classREMORA.html#a6d28606118c0069a57eb6a3c13685c56',1,'REMORA']]],
+  ['num_5ffiles_5fat_5flevel_15',['num_files_at_level',['../classREMORA.html#a66ad489788fb8d0913833d3d6c89b9dd',1,'REMORA']]]
 ];

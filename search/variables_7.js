@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['ic_5fbc_5ftype_836',['ic_bc_type',['../structSolverChoice.html#a345dba1135888a3a3e422c9b6a010ebf',1,'SolverChoice']]],
-  ['init_5fshrink_837',['init_shrink',['../classREMORA.html#a17de9bc2e49fbb1de53a5c57489d36bb',1,'REMORA']]],
-  ['input_5fbndry_5fplanes_838',['input_bndry_planes',['../classREMORA.html#acf556866c1e50658f057b20b323b637a',1,'REMORA']]],
-  ['input_5fsounding_5ffile_839',['input_sounding_file',['../classREMORA.html#aef205c3aa9b16521417f944c4f95f401',1,'REMORA']]],
-  ['inputs_5fname_840',['inputs_name',['../NCPlotFile_8H.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name():&#160;main.cpp'],['../writeJobInfo_8cpp.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name():&#160;main.cpp'],['../main_8cpp.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name():&#160;main.cpp']]],
-  ['int_841',['Int',['../structncutils_1_1NCDType.html#ac5bfba212db12de3dfde52dc3ae3eb0c',1,'ncutils::NCDType']]],
-  ['is_5fopen_842',['is_open',['../classncutils_1_1NCFile.html#aa98d902ef67803393e80929bb73cb379',1,'ncutils::NCFile']]],
-  ['istep_843',['istep',['../classREMORA.html#a7c44493fe1a5743c92f272c91c3aa558',1,'REMORA']]]
+  ['h00_0',['H00',['../REMORA__Constants_8H.html#a154eea4d34664a1988845271e63691df',1,'REMORA_Constants.H']]],
+  ['h01_1',['H01',['../REMORA__Constants_8H.html#a3c57cd2d2425ad965bbd558f6082012b',1,'REMORA_Constants.H']]],
+  ['h02_2',['H02',['../REMORA__Constants_8H.html#a9f34e98bbb1d4bc4882f1089912f8a1c',1,'REMORA_Constants.H']]],
+  ['hair_3',['Hair',['../structSolverChoice.html#ad543d5441b4ea9d4ecba199d220671d7',1,'SolverChoice']]],
+  ['history_5fcount_4',['history_count',['../classREMORA.html#a296bed166ddc9b98d606f3959ca6bfda',1,'REMORA']]],
+  ['horiz_5fmixing_5ftype_5',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]]
 ];

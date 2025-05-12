@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['zvel_5fnew_971',['zvel_new',['../classREMORA.html#a3950916f4ed965bcd10f62e28e08fd76',1,'REMORA']]],
-  ['zvel_5fold_972',['zvel_old',['../classREMORA.html#a6a980b1cd1d4d0e1253a641bee00de75',1,'REMORA']]]
+  ['w00_0',['W00',['../REMORA__Constants_8H.html#a13d8685abbbf65429305a0ad4abaf573',1,'REMORA_Constants.H']]],
+  ['wind_5ftype_1',['wind_type',['../structSolverChoice.html#ae6a63553633955dec12073057622d1db',1,'SolverChoice']]]
 ];

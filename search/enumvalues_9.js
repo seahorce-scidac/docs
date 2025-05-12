@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['old_5fx_1009',['old_x',['../structTracerRealIdx.html#a735b38cf09c1d46aba980cc144365f0fa797efc0d30d3876e61613522e9e3ca21',1,'TracerRealIdx']]],
-  ['old_5fy_1010',['old_y',['../structTracerRealIdx.html#a735b38cf09c1d46aba980cc144365f0facf24fe4af5da5453b89360dbd4203623',1,'TracerRealIdx']]],
-  ['old_5fz_1011',['old_z',['../structTracerRealIdx.html#a735b38cf09c1d46aba980cc144365f0fa11df01238bfd6d84bd89474c5019f868',1,'TracerRealIdx']]],
-  ['oneway_1012',['OneWay',['../DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba8d892b915adb5e7c957f4425253ee1d6',1,'DataStruct.H']]],
-  ['outflow_1013',['outflow',['../IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325acac0c32caf84a889ec9b2b4cb2d56972',1,'IndexDefines.H']]]
+  ['netcdf_0',['netcdf',['../REMORA__DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36ac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a70dc28894261645bb2ac2f2eb5c2ac55ac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9eac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a3c0b9a5b6463511000d925bad1d90256ac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#ab8e8b71b471dbb9aeba77602dcf6240aac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H']]],
+  ['no_5fslip_5fwall_1',['no_slip_wall',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325acb8c716b8d9b499d9bc323d8f8a410d3',1,'REMORA_IndexDefines.H']]],
+  ['nodebilinear_2',['NodeBilinear',['../namespaceInterpType.html#ac65aa6d3ffa2549732d15f959cff81abaa8e5f7bd547098a67d20537514465dd9',1,'InterpType']]],
+  ['nonlinear_3',['nonlinear',['../REMORA__DataStruct_8H.html#af1aa2592a3b3a5f297a0310e481a999ba06de001201911c5c9361c398bd7e9a79',1,'REMORA_DataStruct.H']]],
+  ['null_4',['null',['../namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fab738c65b8fa93b2166002dce928aca27',1,'BdyVars']]],
+  ['numtypes_5',['numtypes',['../namespaceBCVars.html#a00367571247ba920989360b94c156f4aa0b88b0a3a03a3e787a7b27717ec64de7',1,'BCVars::NumTypes'],['../namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fae8976e37b454253c3ce1e065ff1f6102',1,'BdyVars::NumTypes']]]
 ];

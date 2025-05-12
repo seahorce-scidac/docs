@@ -1,30 +1,4 @@
 var searchData=
 [
-  ['impose_5fcons_5fbcs_678',['impose_cons_bcs',['../classREMORAPhysBCFunct.html#a4624a4f5a5a8b4f520cf01db8bcefb4f',1,'REMORAPhysBCFunct']]],
-  ['impose_5fxvel_5fbcs_679',['impose_xvel_bcs',['../classREMORAPhysBCFunct.html#a75f9a4f09b4a03a3b4dd8ca6e2471a75',1,'REMORAPhysBCFunct']]],
-  ['impose_5fyvel_5fbcs_680',['impose_yvel_bcs',['../classREMORAPhysBCFunct.html#a82395a7c9c9dda82651c3364236a4ff2',1,'REMORAPhysBCFunct']]],
-  ['impose_5fzvel_5fbcs_681',['impose_zvel_bcs',['../classREMORAPhysBCFunct.html#a1584999db5f4c4ff944901d6f500d5c0',1,'REMORAPhysBCFunct']]],
-  ['init1darrays_682',['init1DArrays',['../classREMORA.html#a437491da7d00b192e02dcd409825023e',1,'REMORA']]],
-  ['init_5fbcs_683',['init_bcs',['../classREMORA.html#a0fb1bee6b7c41edde86f488eeb440478',1,'REMORA']]],
-  ['init_5fbeta_5fplane_5fcoriolis_684',['init_beta_plane_coriolis',['../classREMORA.html#a71e63d1870dd72923c2e110fa4158202',1,'REMORA']]],
-  ['init_5fcustom_685',['init_custom',['../classREMORA.html#a77de1102264f09670fbd00a76aa2c58f',1,'REMORA']]],
-  ['init_5fcustom_5fbathymetry_686',['init_custom_bathymetry',['../prob__common_8H.html#aa1cdb9793fdab1b03dec18cf8fa52085',1,'prob_common.H']]],
-  ['init_5fcustom_5fcoriolis_687',['init_custom_coriolis',['../prob__common_8H.html#a134e39605b6afbabb6fe2a35f2189257',1,'prob_common.H']]],
-  ['init_5fcustom_5fhmix_688',['init_custom_hmix',['../prob__common_8H.html#ac03b2472176ba10b0edc225576774769',1,'prob_common.H']]],
-  ['init_5fcustom_5fprob_689',['init_custom_prob',['../prob__common_8H.html#adbedc34f482b6a491593d88706d948da',1,'prob_common.H']]],
-  ['init_5fcustom_5fsmflux_690',['init_custom_smflux',['../prob__common_8H.html#a36a5501b26f66b3ec6d4d187236bc3bc',1,'prob_common.H']]],
-  ['init_5fcustom_5fvmix_691',['init_custom_vmix',['../prob__common_8H.html#a3aabbde4e8cfbf5eeb55157f2ac5fe98',1,'prob_common.H']]],
-  ['init_5fonly_692',['init_only',['../classREMORA.html#a4010e1137df2630bdd56327fad98e4a1',1,'REMORA']]],
-  ['init_5fparams_693',['init_params',['../structSolverChoice.html#a4829661b558b213e32970a02e147077f',1,'SolverChoice']]],
-  ['init_5fparticle_5fparams_694',['init_particle_params',['../structParticleData.html#acc757d72fcca062226ad8810ffcbd128',1,'ParticleData']]],
-  ['init_5fparticles_695',['init_particles',['../structParticleData.html#ab8cad6915b715e930b1d8748f309269c',1,'ParticleData']]],
-  ['init_5fstuff_696',['init_stuff',['../classREMORA.html#a98ad64e4a964e4748ebae07a26405286',1,'REMORA']]],
-  ['initdata_697',['InitData',['../classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089',1,'REMORA']]],
-  ['inithse_698',['initHSE',['../classREMORA.html#a98506141bb44abb0093a766be5d93318',1,'REMORA']]],
-  ['initializefromfile_699',['InitializeFromFile',['../classREMORA.html#af25043e75bc350bc40ae56f65649554b',1,'REMORA']]],
-  ['initializelevelfromdata_700',['InitializeLevelFromData',['../classREMORA.html#abc5dc3d0306ebb6507e6c702241f07a0',1,'REMORA']]],
-  ['initparticles_701',['InitParticles',['../classTracerPC.html#a56dab71987bdc3bb944433b6b4f63336',1,'TracerPC']]],
-  ['initrayleigh_702',['initRayleigh',['../classREMORA.html#adb0b6f25ef34e41463df97bf33d0cdee',1,'REMORA']]],
-  ['interpolate_5f1d_703',['interpolate_1d',['../REMORA__Math_8H.html#a803d0d35d4ca4791556cbe02bbf51cbb',1,'REMORA_Math.H']]],
-  ['is_5fit_5ftime_5ffor_5faction_704',['is_it_time_for_action',['../classREMORA.html#ac1343ee03c1a0119736b4afe199019f3',1,'REMORA']]]
+  ['lin_5feos_0',['lin_eos',['../classREMORA.html#a7ef206df9b5d4f71dfe5c57049ffb06e',1,'REMORA']]]
 ];

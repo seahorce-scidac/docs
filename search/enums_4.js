@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['nc_5fdata_5fdims_5ftype_983',['NC_Data_Dims_Type',['../NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06',1,'NCFile.H']]]
+  ['gls_5fstabilitytype_0',['GLS_StabilityType',['../REMORA__DataStruct_8H.html#ad18d1e0933941f14a7dec3d68b783288',1,'REMORA_DataStruct.H']]],
+  ['gridscaletype_1',['GridScaleType',['../REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727',1,'REMORA_DataStruct.H']]]
 ];

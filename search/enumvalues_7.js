@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['k_1002',['k',['../structTracerIntIdx.html#a9688abda7fa3985a400462d7b74c1194a3cd751863b202becad46f43dbe1ca655',1,'TracerIntIdx']]]
+  ['inflow_0',['inflow',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ad37e67db17cfd059f2852e2673b9e8ef',1,'REMORA_IndexDefines.H']]],
+  ['int_5fdir_1',['int_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a223988127b7e8a66aabbc3a1f98dddf0',1,'REMORABCType']]]
 ];

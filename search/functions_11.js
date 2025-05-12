@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['update_5fmassflux_5f3d_774',['update_massflux_3d',['../classREMORA.html#acea9f8015629ed812b0f2a00ab1f1b70',1,'REMORA']]],
-  ['uv3dmix_775',['uv3dmix',['../classREMORA.html#a5e195a7da3e0ada7179455688f4711b5',1,'REMORA']]]
+  ['vert_5fmean_5f3d_0',['vert_mean_3d',['../classREMORA.html#a466d5c5a68c7cfa02247db51bbe74b19',1,'REMORA']]],
+  ['vert_5fvisc_5f3d_1',['vert_visc_3d',['../classREMORA.html#aaed0680a8912bbb8bcf78d3fd3737d56',1,'REMORA']]],
+  ['volwgtsummf_2',['volWgtSumMF',['../classREMORA.html#abeeb495dbfc8b1a3f35556f156d4b3d2',1,'REMORA']]]
 ];

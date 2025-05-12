@@ -25,12 +25,7 @@
 var NAVTREE =
 [
   [ "REMORA", "index.html", [
-    [ "Regional Modeling of Oceans Refined Adaptively (built on AMReX): REMORA", "index.html", [
-      [ "Introduction", "index.html#Introduction", null ],
-      [ "Adaptive Mesh Refinement", "index.html#amr", null ],
-      [ "Getting Started", "index.html#getting_started", null ],
-      [ "Development Model", "index.html#dev_model", null ]
-    ] ],
+    [ "Regional Modeling of Oceans Refined Adaptively (built on AMReX): REMORA", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -46,10 +41,9 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ],
-        [ "Enumerator", "functions_eval.html", null ]
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -68,9 +62,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"BoundaryConditions__cons_8cpp.html",
-"classREMORA.html#a75e6e53bc24b47b664fddcafed41dbd1",
-"globals_func.html"
+"REMORA_8H.html",
+"REMORA__TimeStep_8cpp.html",
+"classREMORA.html#a8386c899de7b3b3feab286c144f15229",
+"hierarchy.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

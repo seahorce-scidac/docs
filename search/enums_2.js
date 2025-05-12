@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['ic_5fbc_5ftype_981',['IC_BC_Type',['../DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36',1,'DataStruct.H']]]
+  ['coord_0',['Coord',['../REMORA__DataStruct_8H.html#a627f1f843904477f763577ad1460de01',1,'REMORA_DataStruct.H']]],
+  ['cor_5ftype_1',['Cor_Type',['../REMORA__DataStruct_8H.html#a70dc28894261645bb2ac2f2eb5c2ac55',1,'REMORA_DataStruct.H']]],
+  ['couplingtype_2',['CouplingType',['../REMORA__DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139b',1,'REMORA_DataStruct.H']]]
 ];

@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['fine_5fmask_826',['fine_mask',['../classREMORA.html#a1767264051aeb1f4463f23304214617e',1,'REMORA']]],
-  ['fixed_5fdt_827',['fixed_dt',['../classREMORA.html#a0c9e94b2bbf3ee8167abb9acd4b86807',1,'REMORA']]],
-  ['fixed_5ffast_5fdt_828',['fixed_fast_dt',['../classREMORA.html#a5cdf62f58282022e2d5f79de304d425f',1,'REMORA']]],
-  ['fixed_5fndtfast_5fratio_829',['fixed_ndtfast_ratio',['../classREMORA.html#acc900ee008729de41eb6aa28a36f6a26',1,'REMORA']]],
-  ['flat_5fbathymetry_830',['flat_bathymetry',['../structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a',1,'SolverChoice']]]
+  ['e00_0',['E00',['../REMORA__Constants_8H.html#ac26a1ee291737e16e3bc749d66ea2788',1,'REMORA_Constants.H']]],
+  ['e01_1',['E01',['../REMORA__Constants_8H.html#adeb28fa2fdcbcbdb20fdaee49907fb26',1,'REMORA_Constants.H']]],
+  ['e02_2',['E02',['../REMORA__Constants_8H.html#a11b8f0b28e455325fb3eb83fc7582ead',1,'REMORA_Constants.H']]],
+  ['e03_3',['E03',['../REMORA__Constants_8H.html#a13dbc5074fc350293cb0e2c7f3483d98',1,'REMORA_Constants.H']]],
+  ['eminusp_4',['eminusp',['../structSolverChoice.html#ad0c284634a2991aa77dec9b8dbb30373',1,'SolverChoice']]],
+  ['eminusp_5fcorrect_5fssh_5',['eminusp_correct_ssh',['../structSolverChoice.html#a65f90912d34e882ba29cb64a20f56ceb',1,'SolverChoice']]],
+  ['emmiss_6',['emmiss',['../REMORA__Constants_8H.html#abc9c124a2d78e72fdc69d32a267c4497',1,'REMORA_Constants.H']]],
+  ['eos_5ftype_7',['eos_type',['../structSolverChoice.html#a48f3f43f3386d6b7dab9e15cfd0db11e',1,'SolverChoice']]],
+  ['eradius_8',['Eradius',['../REMORA__Constants_8H.html#a293dbdde8ae4c8260e4b71203e468134',1,'REMORA_Constants.H']]]
 ];

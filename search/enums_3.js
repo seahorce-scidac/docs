@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mathematicalbndrytypes_982',['mathematicalBndryTypes',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346',1,'REMORABCType']]]
+  ['eostype_0',['EOSType',['../REMORA__DataStruct_8H.html#af1aa2592a3b3a5f297a0310e481a999b',1,'REMORA_DataStruct.H']]]
 ];

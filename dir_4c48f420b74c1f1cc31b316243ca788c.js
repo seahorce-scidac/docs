@@ -1,20 +1,17 @@
 var dir_4c48f420b74c1f1cc31b316243ca788c =
 [
-    [ "Checkpoint.cpp", "Checkpoint_8cpp.html", null ],
-    [ "NCFile.cpp", "NCFile_8cpp.html", "NCFile_8cpp" ],
-    [ "NCFile.H", "NCFile_8H.html", "NCFile_8H" ],
-    [ "NCInterface.cpp", "NCInterface_8cpp.html", "NCInterface_8cpp" ],
-    [ "NCInterface.H", "NCInterface_8H.html", [
-      [ "NCDType", "structncutils_1_1NCDType.html", "structncutils_1_1NCDType" ],
-      [ "NCDim", "structncutils_1_1NCDim.html", "structncutils_1_1NCDim" ],
-      [ "NCVar", "structncutils_1_1NCVar.html", "structncutils_1_1NCVar" ],
-      [ "NCGroup", "classncutils_1_1NCGroup.html", "classncutils_1_1NCGroup" ],
-      [ "NCFile", "classncutils_1_1NCFile.html", "classncutils_1_1NCFile" ]
-    ] ],
-    [ "NCPlotFile.cpp", "NCPlotFile_8cpp.html", null ],
-    [ "NCPlotFile.H", "NCPlotFile_8H.html", "NCPlotFile_8H" ],
-    [ "Plotfile.cpp", "Plotfile_8cpp.html", null ],
-    [ "ReadFromBdryNetcdf.cpp", "ReadFromBdryNetcdf_8cpp.html", null ],
-    [ "ReadFromInitNetcdf.cpp", "ReadFromInitNetcdf_8cpp.html", null ],
-    [ "writeJobInfo.cpp", "writeJobInfo_8cpp.html", "writeJobInfo_8cpp" ]
+    [ "REMORA_Checkpoint.cpp", "REMORA__Checkpoint_8cpp.html", null ],
+    [ "REMORA_console_io.cpp", "REMORA__console__io_8cpp.html", "REMORA__console__io_8cpp" ],
+    [ "REMORA_NCFile.cpp", "REMORA__NCFile_8cpp.html", "REMORA__NCFile_8cpp" ],
+    [ "REMORA_NCFile.H", "REMORA__NCFile_8H.html", "REMORA__NCFile_8H" ],
+    [ "REMORA_NCInterface.cpp", "REMORA__NCInterface_8cpp.html", "REMORA__NCInterface_8cpp" ],
+    [ "REMORA_NCInterface.H", "REMORA__NCInterface_8H.html", "REMORA__NCInterface_8H" ],
+    [ "REMORA_NCPlotFile.cpp", "REMORA__NCPlotFile_8cpp.html", null ],
+    [ "REMORA_NCPlotFile.H", "REMORA__NCPlotFile_8H.html", "REMORA__NCPlotFile_8H" ],
+    [ "REMORA_NCTimeSeries.cpp", "REMORA__NCTimeSeries_8cpp.html", null ],
+    [ "REMORA_NCTimeSeries.H", "REMORA__NCTimeSeries_8H.html", null ],
+    [ "REMORA_Plotfile.cpp", "REMORA__Plotfile_8cpp.html", "REMORA__Plotfile_8cpp" ],
+    [ "REMORA_ReadFromBdryNetcdf.cpp", "REMORA__ReadFromBdryNetcdf_8cpp.html", null ],
+    [ "REMORA_ReadFromInitNetcdf.cpp", "REMORA__ReadFromInitNetcdf_8cpp.html", null ],
+    [ "REMORA_writeJobInfo.cpp", "REMORA__writeJobInfo_8cpp.html", "REMORA__writeJobInfo_8cpp" ]
 ];
