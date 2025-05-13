@@ -41,7 +41,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ]
       ] ]
@@ -63,9 +63,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__TimeStep_8cpp.html",
-"classREMORA.html#a8386c899de7b3b3feab286c144f15229",
-"hierarchy.html"
+"REMORA__SumIQ_8cpp_source.html",
+"classREMORA.html#a66a39d31a3a2f027101cfd4052b913f3",
+"classncutils_1_1NCFile.html#a4c1663f24f84dbc74152d7f040910a22",
+"structSolverChoice.html#a55be5b3388201ee0784d6b6046ab4a06"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

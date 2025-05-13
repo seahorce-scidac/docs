@@ -7,11 +7,13 @@ var searchData=
   ['eminusp_4',['eminusp',['../structSolverChoice.html#ad0c284634a2991aa77dec9b8dbb30373',1,'SolverChoice']]],
   ['eminusp_5fcorrect_5fssh_5',['eminusp_correct_ssh',['../structSolverChoice.html#a65f90912d34e882ba29cb64a20f56ceb',1,'SolverChoice']]],
   ['emmiss_6',['emmiss',['../REMORA__Constants_8H.html#abc9c124a2d78e72fdc69d32a267c4497',1,'REMORA_Constants.H']]],
-  ['eos_5ftype_7',['eos_type',['../structSolverChoice.html#a48f3f43f3386d6b7dab9e15cfd0db11e',1,'SolverChoice']]],
-  ['eostype_8',['EOSType',['../REMORA__DataStruct_8H.html#af1aa2592a3b3a5f297a0310e481a999b',1,'REMORA_DataStruct.H']]],
-  ['eradius_9',['Eradius',['../REMORA__Constants_8H.html#a293dbdde8ae4c8260e4b71203e468134',1,'REMORA_Constants.H']]],
-  ['errorest_10',['ErrorEst',['../classREMORA.html#a783db1b357863608197eccb6fe7d4c52',1,'REMORA']]],
-  ['esttimestep_11',['estTimeStep',['../classREMORA.html#ac71630052015782fce4f20e204e42016',1,'REMORA']]],
-  ['evolve_12',['Evolve',['../classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e',1,'REMORA']]],
-  ['ext_5fdir_13',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]]
+  ['enter_5fdef_5fmode_7',['enter_def_mode',['../classncutils_1_1NCFile.html#a69b90d38b2ac2adf1610a0e8443743fb',1,'ncutils::NCFile']]],
+  ['eos_5ftype_8',['eos_type',['../structSolverChoice.html#a48f3f43f3386d6b7dab9e15cfd0db11e',1,'SolverChoice']]],
+  ['eostype_9',['EOSType',['../REMORA__DataStruct_8H.html#af1aa2592a3b3a5f297a0310e481a999b',1,'REMORA_DataStruct.H']]],
+  ['eradius_10',['Eradius',['../REMORA__Constants_8H.html#a293dbdde8ae4c8260e4b71203e468134',1,'REMORA_Constants.H']]],
+  ['errorest_11',['ErrorEst',['../classREMORA.html#a783db1b357863608197eccb6fe7d4c52',1,'REMORA']]],
+  ['esttimestep_12',['estTimeStep',['../classREMORA.html#ac71630052015782fce4f20e204e42016',1,'REMORA']]],
+  ['evolve_13',['Evolve',['../classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e',1,'REMORA']]],
+  ['exit_5fdef_5fmode_14',['exit_def_mode',['../classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96',1,'ncutils::NCFile']]],
+  ['ext_5fdir_15',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]]
 ];

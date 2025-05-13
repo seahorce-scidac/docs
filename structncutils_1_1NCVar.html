@@ -91,11 +91,15 @@ $(document).ready(function(){initNavTree('structncutils_1_1NCVar.html',''); init
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structncutils_1_1NCVar-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ncutils::NCVar Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Representation of a NetCDF variable.  
+ <a href="structncutils_1_1NCVar.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a>&gt;</code></p>
 <div class="dynheader">
@@ -103,23 +107,2020 @@ Collaboration diagram for ncutils::NCVar:</div>
 <div class="dyncontent">
 <div class="center"><img src="structncutils_1_1NCVar__coll__graph.png" border="0" usemap="#ancutils_1_1NCVar_coll__map" alt="Collaboration graph"/></div>
 <map name="ancutils_1_1NCVar_coll__map" id="ancutils_1_1NCVar_coll__map">
-<area shape="rect" title=" " alt="" coords="5,108,119,133"/>
+<area shape="rect" title="Representation of a NetCDF variable." alt="" coords="5,108,119,133"/>
 <area shape="rect" title=" " alt="" coords="43,5,81,31"/>
 <area shape="poly" title=" " alt="" coords="65,45,65,108,59,108,59,45"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4b34f3722befd10e92d1267bcbd49724" id="r_a4b34f3722befd10e92d1267bcbd49724"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724">name</a> () const</td></tr>
+<tr class="memdesc:a4b34f3722befd10e92d1267bcbd49724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of this variable.  <br /></td></tr>
+<tr class="separator:a4b34f3722befd10e92d1267bcbd49724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ab15dc4c1033271878c3bf5102f911" id="r_ae0ab15dc4c1033271878c3bf5102f911"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#ae0ab15dc4c1033271878c3bf5102f911">ndim</a> () const</td></tr>
+<tr class="memdesc:ae0ab15dc4c1033271878c3bf5102f911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of array dimensions for this variable.  <br /></td></tr>
+<tr class="separator:ae0ab15dc4c1033271878c3bf5102f911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab202435182d346e990c2c7e47740cdad" id="r_ab202435182d346e990c2c7e47740cdad"><td class="memItemLeft" align="right" valign="top">std::vector&lt; MPI_Offset &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#ab202435182d346e990c2c7e47740cdad">shape</a> () const</td></tr>
+<tr class="memdesc:ab202435182d346e990c2c7e47740cdad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the array (size in each array dimension)  <br /></td></tr>
+<tr class="separator:ab202435182d346e990c2c7e47740cdad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8fff402cd5e79f76ac029288756105" id="r_a4e8fff402cd5e79f76ac029288756105"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a4e8fff402cd5e79f76ac029288756105">put</a> (const double *ptr) const</td></tr>
+<tr class="memdesc:a4e8fff402cd5e79f76ac029288756105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out the entire double variable.  <br /></td></tr>
+<tr class="separator:a4e8fff402cd5e79f76ac029288756105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeeb8a9048cf64fcfc5e89fab7217198" id="r_adeeb8a9048cf64fcfc5e89fab7217198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#adeeb8a9048cf64fcfc5e89fab7217198">put</a> (const float *ptr) const</td></tr>
+<tr class="memdesc:adeeb8a9048cf64fcfc5e89fab7217198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out the entire float variable.  <br /></td></tr>
+<tr class="separator:adeeb8a9048cf64fcfc5e89fab7217198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c96c6d8018ddb83f6c2ee9154887ff8" id="r_a7c96c6d8018ddb83f6c2ee9154887ff8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a7c96c6d8018ddb83f6c2ee9154887ff8">put</a> (const int *ptr) const</td></tr>
+<tr class="memdesc:a7c96c6d8018ddb83f6c2ee9154887ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out the entire int variable.  <br /></td></tr>
+<tr class="separator:a7c96c6d8018ddb83f6c2ee9154887ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772e15bd67ced09d02a35c67e122c8d5" id="r_a772e15bd67ced09d02a35c67e122c8d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a772e15bd67ced09d02a35c67e122c8d5">put</a> (const double *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:a772e15bd67ced09d02a35c67e122c8d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data.  <br /></td></tr>
+<tr class="separator:a772e15bd67ced09d02a35c67e122c8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c122dc6aafe9ec0d1845d75797384a" id="r_a85c122dc6aafe9ec0d1845d75797384a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a85c122dc6aafe9ec0d1845d75797384a">put_all</a> (const double *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:a85c122dc6aafe9ec0d1845d75797384a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data, collective.  <br /></td></tr>
+<tr class="separator:a85c122dc6aafe9ec0d1845d75797384a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493ade206e0f39a383ab35aa67f4548c" id="r_a493ade206e0f39a383ab35aa67f4548c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a493ade206e0f39a383ab35aa67f4548c">iput</a> (const double *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, int *request) const</td></tr>
+<tr class="memdesc:a493ade206e0f39a383ab35aa67f4548c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data with with strides (see hyperslab definition in NetCDF)  <br /></td></tr>
+<tr class="separator:a493ade206e0f39a383ab35aa67f4548c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4bc3d6ce3b67154f8c078ad4c9bc2c" id="r_a1f4bc3d6ce3b67154f8c078ad4c9bc2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a1f4bc3d6ce3b67154f8c078ad4c9bc2c">put</a> (const double *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:a1f4bc3d6ce3b67154f8c078ad4c9bc2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data with with strides.  <br /></td></tr>
+<tr class="separator:a1f4bc3d6ce3b67154f8c078ad4c9bc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb50217aecfd6a2dfe79a3a015f298d7" id="r_afb50217aecfd6a2dfe79a3a015f298d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#afb50217aecfd6a2dfe79a3a015f298d7">put_all</a> (const double *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:afb50217aecfd6a2dfe79a3a015f298d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data with with strides , collective.  <br /></td></tr>
+<tr class="separator:afb50217aecfd6a2dfe79a3a015f298d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad28b44a64152bb00f1a7eeb0084845" id="r_a2ad28b44a64152bb00f1a7eeb0084845"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a2ad28b44a64152bb00f1a7eeb0084845">put</a> (const float *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:a2ad28b44a64152bb00f1a7eeb0084845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data.  <br /></td></tr>
+<tr class="separator:a2ad28b44a64152bb00f1a7eeb0084845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e99b3f145c95ca1575f109d2d8f2ba" id="r_ac4e99b3f145c95ca1575f109d2d8f2ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#ac4e99b3f145c95ca1575f109d2d8f2ba">put_all</a> (const float *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:ac4e99b3f145c95ca1575f109d2d8f2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data, collective.  <br /></td></tr>
+<tr class="separator:ac4e99b3f145c95ca1575f109d2d8f2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c43abe9ef8da9b630860e26e0e84663" id="r_a2c43abe9ef8da9b630860e26e0e84663"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a2c43abe9ef8da9b630860e26e0e84663">put</a> (const float *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:a2c43abe9ef8da9b630860e26e0e84663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data with with strides (see hyperslab definition in NetCDF)  <br /></td></tr>
+<tr class="separator:a2c43abe9ef8da9b630860e26e0e84663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb2053db4cb3d37076ef7a687c83f62" id="r_a5cb2053db4cb3d37076ef7a687c83f62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a5cb2053db4cb3d37076ef7a687c83f62">put_all</a> (const float *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:a5cb2053db4cb3d37076ef7a687c83f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data with with strides, collective.  <br /></td></tr>
+<tr class="separator:a5cb2053db4cb3d37076ef7a687c83f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa295aa7ff4f39a52f46074c47d8e42d1" id="r_aa295aa7ff4f39a52f46074c47d8e42d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#aa295aa7ff4f39a52f46074c47d8e42d1">put</a> (const int *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:aa295aa7ff4f39a52f46074c47d8e42d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data.  <br /></td></tr>
+<tr class="separator:aa295aa7ff4f39a52f46074c47d8e42d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b5d9fb431b2c2662e18dc84202c35e" id="r_a86b5d9fb431b2c2662e18dc84202c35e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a86b5d9fb431b2c2662e18dc84202c35e">put_all</a> (const int *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:a86b5d9fb431b2c2662e18dc84202c35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data, collective.  <br /></td></tr>
+<tr class="separator:a86b5d9fb431b2c2662e18dc84202c35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6bcb52703bf6c077304d4a6c3b3b4d2" id="r_af6bcb52703bf6c077304d4a6c3b3b4d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#af6bcb52703bf6c077304d4a6c3b3b4d2">put</a> (const int *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:af6bcb52703bf6c077304d4a6c3b3b4d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data with with strides (see hyperslab definition in NetCDF)  <br /></td></tr>
+<tr class="separator:af6bcb52703bf6c077304d4a6c3b3b4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a21f72754e272750c8fa38c9ad44b6" id="r_a20a21f72754e272750c8fa38c9ad44b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a20a21f72754e272750c8fa38c9ad44b6">put_all</a> (const int *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:a20a21f72754e272750c8fa38c9ad44b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data with with strides, collective.  <br /></td></tr>
+<tr class="separator:a20a21f72754e272750c8fa38c9ad44b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4e1d79fff9264fbca61535328f7ed4" id="r_afb4e1d79fff9264fbca61535328f7ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#afb4e1d79fff9264fbca61535328f7ed4">put</a> (const char **dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:afb4e1d79fff9264fbca61535328f7ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of string data.  <br /></td></tr>
+<tr class="separator:afb4e1d79fff9264fbca61535328f7ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc7b53f3614b8e4bc3e22077fb39f0f" id="r_acbc7b53f3614b8e4bc3e22077fb39f0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#acbc7b53f3614b8e4bc3e22077fb39f0f">put</a> (const char **dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:acbc7b53f3614b8e4bc3e22077fb39f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of string data with stride.  <br /></td></tr>
+<tr class="separator:acbc7b53f3614b8e4bc3e22077fb39f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633d3ddae34f09ce48a114f30a8bffdf" id="r_a633d3ddae34f09ce48a114f30a8bffdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a633d3ddae34f09ce48a114f30a8bffdf">get</a> (double *ptr) const</td></tr>
+<tr class="memdesc:a633d3ddae34f09ce48a114f30a8bffdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the entire variable from file.  <br /></td></tr>
+<tr class="separator:a633d3ddae34f09ce48a114f30a8bffdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac829e900bdd490393d858ae0a1c9f5d1" id="r_ac829e900bdd490393d858ae0a1c9f5d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#ac829e900bdd490393d858ae0a1c9f5d1">get</a> (float *ptr) const</td></tr>
+<tr class="memdesc:ac829e900bdd490393d858ae0a1c9f5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the entire variable from file.  <br /></td></tr>
+<tr class="separator:ac829e900bdd490393d858ae0a1c9f5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedfcb77db4329807658ce6d5636158d4" id="r_aedfcb77db4329807658ce6d5636158d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#aedfcb77db4329807658ce6d5636158d4">get</a> (int *ptr) const</td></tr>
+<tr class="memdesc:aedfcb77db4329807658ce6d5636158d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the entire variable from file.  <br /></td></tr>
+<tr class="separator:aedfcb77db4329807658ce6d5636158d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507a5ebd537ac366cad81ff05fe8c64e" id="r_a507a5ebd537ac366cad81ff05fe8c64e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a507a5ebd537ac366cad81ff05fe8c64e">get</a> (double *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:a507a5ebd537ac366cad81ff05fe8c64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data from the file.  <br /></td></tr>
+<tr class="separator:a507a5ebd537ac366cad81ff05fe8c64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5087bd7d6abbebda59b6b177988519a" id="r_ab5087bd7d6abbebda59b6b177988519a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#ab5087bd7d6abbebda59b6b177988519a">get_all</a> (double *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:ab5087bd7d6abbebda59b6b177988519a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data from the file, collective.  <br /></td></tr>
+<tr class="separator:ab5087bd7d6abbebda59b6b177988519a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c5ae4df6543c938665f39fb09a7d26" id="r_a39c5ae4df6543c938665f39fb09a7d26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a39c5ae4df6543c938665f39fb09a7d26">get</a> (double *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:a39c5ae4df6543c938665f39fb09a7d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data with strides.  <br /></td></tr>
+<tr class="separator:a39c5ae4df6543c938665f39fb09a7d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa8fba1898b0e1907502ec8edfc074c" id="r_a7fa8fba1898b0e1907502ec8edfc074c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a7fa8fba1898b0e1907502ec8edfc074c">get_all</a> (double *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:a7fa8fba1898b0e1907502ec8edfc074c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data with strides, collective.  <br /></td></tr>
+<tr class="separator:a7fa8fba1898b0e1907502ec8edfc074c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c415cd822579a054b811c539457398b" id="r_a8c415cd822579a054b811c539457398b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a8c415cd822579a054b811c539457398b">get</a> (float *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:a8c415cd822579a054b811c539457398b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data from the file.  <br /></td></tr>
+<tr class="separator:a8c415cd822579a054b811c539457398b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0faf29e5bd0e5a89b023dfcf590b86" id="r_a5e0faf29e5bd0e5a89b023dfcf590b86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a5e0faf29e5bd0e5a89b023dfcf590b86">get_all</a> (float *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:a5e0faf29e5bd0e5a89b023dfcf590b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data from file, collective.  <br /></td></tr>
+<tr class="separator:a5e0faf29e5bd0e5a89b023dfcf590b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11de78d13ec2073913bc42501a3e5ac" id="r_ae11de78d13ec2073913bc42501a3e5ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#ae11de78d13ec2073913bc42501a3e5ac">get</a> (float *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:ae11de78d13ec2073913bc42501a3e5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data with strides.  <br /></td></tr>
+<tr class="separator:ae11de78d13ec2073913bc42501a3e5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bea98f3905a4cd57dfe20775a3b410d" id="r_a6bea98f3905a4cd57dfe20775a3b410d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a6bea98f3905a4cd57dfe20775a3b410d">get_all</a> (float *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:a6bea98f3905a4cd57dfe20775a3b410d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data with strides, collective.  <br /></td></tr>
+<tr class="separator:a6bea98f3905a4cd57dfe20775a3b410d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3ed1b4c79a82b6852c7307234d6052" id="r_a8e3ed1b4c79a82b6852c7307234d6052"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a8e3ed1b4c79a82b6852c7307234d6052">get</a> (int *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:a8e3ed1b4c79a82b6852c7307234d6052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data from the file.  <br /></td></tr>
+<tr class="separator:a8e3ed1b4c79a82b6852c7307234d6052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df71e2460217f02a8f4f0617c7a9095" id="r_a5df71e2460217f02a8f4f0617c7a9095"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a5df71e2460217f02a8f4f0617c7a9095">get_all</a> (int *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:a5df71e2460217f02a8f4f0617c7a9095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data from the file, collective.  <br /></td></tr>
+<tr class="separator:a5df71e2460217f02a8f4f0617c7a9095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e593abf9039f34c9515a788e43d001" id="r_a37e593abf9039f34c9515a788e43d001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a37e593abf9039f34c9515a788e43d001">get</a> (int *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:a37e593abf9039f34c9515a788e43d001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data with strides.  <br /></td></tr>
+<tr class="separator:a37e593abf9039f34c9515a788e43d001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3628e6b7e5ea74bf9e69a9aea283c661" id="r_a3628e6b7e5ea74bf9e69a9aea283c661"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a3628e6b7e5ea74bf9e69a9aea283c661">get_all</a> (int *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:a3628e6b7e5ea74bf9e69a9aea283c661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data with strides, collective.  <br /></td></tr>
+<tr class="separator:a3628e6b7e5ea74bf9e69a9aea283c661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846256bf4a81477110ba46082bc3384b" id="r_a846256bf4a81477110ba46082bc3384b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a846256bf4a81477110ba46082bc3384b">get</a> (char *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count) const</td></tr>
+<tr class="memdesc:a846256bf4a81477110ba46082bc3384b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data from the file.  <br /></td></tr>
+<tr class="separator:a846256bf4a81477110ba46082bc3384b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3314e8cfc798a093fe3131c1a7d314" id="r_a9d3314e8cfc798a093fe3131c1a7d314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a9d3314e8cfc798a093fe3131c1a7d314">get</a> (char *dptr, const std::vector&lt; MPI_Offset &gt; &amp;start, const std::vector&lt; MPI_Offset &gt; &amp;count, const std::vector&lt; MPI_Offset &gt; &amp;stride) const</td></tr>
+<tr class="memdesc:a9d3314e8cfc798a093fe3131c1a7d314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a chunk of data with strides.  <br /></td></tr>
+<tr class="separator:a9d3314e8cfc798a093fe3131c1a7d314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4ddce55f60e3accbaf02441b6484cf" id="r_a0a4ddce55f60e3accbaf02441b6484cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a0a4ddce55f60e3accbaf02441b6484cf">has_attr</a> (const std::string &amp;<a class="el" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724">name</a>) const</td></tr>
+<tr class="memdesc:a0a4ddce55f60e3accbaf02441b6484cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a variable has an attribute with name.  <br /></td></tr>
+<tr class="separator:a0a4ddce55f60e3accbaf02441b6484cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f60ebf70762d1d8e0962afb01118a31" id="r_a9f60ebf70762d1d8e0962afb01118a31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a9f60ebf70762d1d8e0962afb01118a31">put_attr</a> (const std::string &amp;<a class="el" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724">name</a>, const std::string &amp;value) const</td></tr>
+<tr class="memdesc:a9f60ebf70762d1d8e0962afb01118a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set attribute "name" to "value".  <br /></td></tr>
+<tr class="separator:a9f60ebf70762d1d8e0962afb01118a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1572a791861a2d297f8f29ba0df8d55" id="r_ac1572a791861a2d297f8f29ba0df8d55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#ac1572a791861a2d297f8f29ba0df8d55">put_attr</a> (const std::string &amp;<a class="el" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724">name</a>, const std::vector&lt; double &gt; &amp;value) const</td></tr>
+<tr class="memdesc:ac1572a791861a2d297f8f29ba0df8d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set attribute "name" to "value".  <br /></td></tr>
+<tr class="separator:ac1572a791861a2d297f8f29ba0df8d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c358988ebdd589d7e465ca6a5f07e9" id="r_a69c358988ebdd589d7e465ca6a5f07e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a69c358988ebdd589d7e465ca6a5f07e9">put_attr</a> (const std::string &amp;<a class="el" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724">name</a>, const std::vector&lt; float &gt; &amp;value) const</td></tr>
+<tr class="memdesc:a69c358988ebdd589d7e465ca6a5f07e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set attribute "name" to "value".  <br /></td></tr>
+<tr class="separator:a69c358988ebdd589d7e465ca6a5f07e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72558ae45f30bed210d68c26ec57cb13" id="r_a72558ae45f30bed210d68c26ec57cb13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a72558ae45f30bed210d68c26ec57cb13">put_attr</a> (const std::string &amp;<a class="el" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724">name</a>, const std::vector&lt; int &gt; &amp;value) const</td></tr>
+<tr class="memdesc:a72558ae45f30bed210d68c26ec57cb13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set attribute "name" to "value".  <br /></td></tr>
+<tr class="separator:a72558ae45f30bed210d68c26ec57cb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774b3bda4e9dc903ecfa35af38e863c6" id="r_a774b3bda4e9dc903ecfa35af38e863c6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a774b3bda4e9dc903ecfa35af38e863c6">get_attr</a> (const std::string &amp;<a class="el" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724">name</a>) const</td></tr>
+<tr class="memdesc:a774b3bda4e9dc903ecfa35af38e863c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read attribute from file.  <br /></td></tr>
+<tr class="separator:a774b3bda4e9dc903ecfa35af38e863c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b83489bee14205286a757e0789ddbd" id="r_aa5b83489bee14205286a757e0789ddbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#aa5b83489bee14205286a757e0789ddbd">get_attr</a> (const std::string &amp;<a class="el" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724">name</a>, std::vector&lt; double &gt; &amp;value) const</td></tr>
+<tr class="memdesc:aa5b83489bee14205286a757e0789ddbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read attribute from file.  <br /></td></tr>
+<tr class="separator:aa5b83489bee14205286a757e0789ddbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af09b0c94dceb8666a7be0d6167bfc4b4" id="r_af09b0c94dceb8666a7be0d6167bfc4b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#af09b0c94dceb8666a7be0d6167bfc4b4">get_attr</a> (const std::string &amp;<a class="el" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724">name</a>, std::vector&lt; float &gt; &amp;value) const</td></tr>
+<tr class="memdesc:af09b0c94dceb8666a7be0d6167bfc4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read attribute from file.  <br /></td></tr>
+<tr class="separator:af09b0c94dceb8666a7be0d6167bfc4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720f935c1949f56e31eb057dbc1e7ea6" id="r_a720f935c1949f56e31eb057dbc1e7ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a720f935c1949f56e31eb057dbc1e7ea6">get_attr</a> (const std::string &amp;<a class="el" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724">name</a>, std::vector&lt; int &gt; &amp;value) const</td></tr>
+<tr class="memdesc:a720f935c1949f56e31eb057dbc1e7ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read attribute from file.  <br /></td></tr>
+<tr class="separator:a720f935c1949f56e31eb057dbc1e7ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a233d94aa3ccbef1cc12565340bcc7218" id="r_a233d94aa3ccbef1cc12565340bcc7218"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218">ncid</a> { -1 }</td></tr>
+<tr class="memitem:a233d94aa3ccbef1cc12565340bcc7218" id="r_a233d94aa3ccbef1cc12565340bcc7218"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218">ncid</a></td></tr>
+<tr class="memdesc:a233d94aa3ccbef1cc12565340bcc7218"><td class="mdescLeft">&#160;</td><td class="mdescRight">File/Group identifier.  <br /></td></tr>
 <tr class="separator:a233d94aa3ccbef1cc12565340bcc7218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dce982c1ddb8f3b89b071bc3bf15532" id="r_a2dce982c1ddb8f3b89b071bc3bf15532"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a2dce982c1ddb8f3b89b071bc3bf15532">varid</a> { -1 }</td></tr>
+<tr class="memitem:a2dce982c1ddb8f3b89b071bc3bf15532" id="r_a2dce982c1ddb8f3b89b071bc3bf15532"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a2dce982c1ddb8f3b89b071bc3bf15532">varid</a></td></tr>
+<tr class="memdesc:a2dce982c1ddb8f3b89b071bc3bf15532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable ID used with NetCDF API.  <br /></td></tr>
 <tr class="separator:a2dce982c1ddb8f3b89b071bc3bf15532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8H_source.html#l00403">403</a> of file <a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<div class="textblock"><p>Representation of a NetCDF variable. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8H_source.html#l00051">51</a> of file <a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a846256bf4a81477110ba46082bc3384b" name="a846256bf4a81477110ba46082bc3384b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a846256bf4a81477110ba46082bc3384b">&#9670;&#160;</a></span>get() <span class="overload">[1/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data from the file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00207">207</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9d3314e8cfc798a093fe3131c1a7d314" name="a9d3314e8cfc798a093fe3131c1a7d314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d3314e8cfc798a093fe3131c1a7d314">&#9670;&#160;</a></span>get() <span class="overload">[2/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data with strides. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00211">211</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a507a5ebd537ac366cad81ff05fe8c64e" name="a507a5ebd537ac366cad81ff05fe8c64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a507a5ebd537ac366cad81ff05fe8c64e">&#9670;&#160;</a></span>get() <span class="overload">[3/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data from the file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00153">153</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a39c5ae4df6543c938665f39fb09a7d26" name="a39c5ae4df6543c938665f39fb09a7d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c5ae4df6543c938665f39fb09a7d26">&#9670;&#160;</a></span>get() <span class="overload">[4/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data with strides. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00161">161</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a633d3ddae34f09ce48a114f30a8bffdf" name="a633d3ddae34f09ce48a114f30a8bffdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a633d3ddae34f09ce48a114f30a8bffdf">&#9670;&#160;</a></span>get() <span class="overload">[5/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the entire variable from file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00141">141</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8c415cd822579a054b811c539457398b" name="a8c415cd822579a054b811c539457398b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c415cd822579a054b811c539457398b">&#9670;&#160;</a></span>get() <span class="overload">[6/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data from the file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00171">171</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae11de78d13ec2073913bc42501a3e5ac" name="ae11de78d13ec2073913bc42501a3e5ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11de78d13ec2073913bc42501a3e5ac">&#9670;&#160;</a></span>get() <span class="overload">[7/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data with strides. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00179">179</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac829e900bdd490393d858ae0a1c9f5d1" name="ac829e900bdd490393d858ae0a1c9f5d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac829e900bdd490393d858ae0a1c9f5d1">&#9670;&#160;</a></span>get() <span class="overload">[8/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the entire variable from file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00145">145</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e3ed1b4c79a82b6852c7307234d6052" name="a8e3ed1b4c79a82b6852c7307234d6052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3ed1b4c79a82b6852c7307234d6052">&#9670;&#160;</a></span>get() <span class="overload">[9/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data from the file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00189">189</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a37e593abf9039f34c9515a788e43d001" name="a37e593abf9039f34c9515a788e43d001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37e593abf9039f34c9515a788e43d001">&#9670;&#160;</a></span>get() <span class="overload">[10/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data with strides. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00197">197</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aedfcb77db4329807658ce6d5636158d4" name="aedfcb77db4329807658ce6d5636158d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedfcb77db4329807658ce6d5636158d4">&#9670;&#160;</a></span>get() <span class="overload">[11/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the entire variable from file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00149">149</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab5087bd7d6abbebda59b6b177988519a" name="ab5087bd7d6abbebda59b6b177988519a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5087bd7d6abbebda59b6b177988519a">&#9670;&#160;</a></span>get_all() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get_all </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data from the file, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00157">157</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7fa8fba1898b0e1907502ec8edfc074c" name="a7fa8fba1898b0e1907502ec8edfc074c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa8fba1898b0e1907502ec8edfc074c">&#9670;&#160;</a></span>get_all() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get_all </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data with strides, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00166">166</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5e0faf29e5bd0e5a89b023dfcf590b86" name="a5e0faf29e5bd0e5a89b023dfcf590b86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0faf29e5bd0e5a89b023dfcf590b86">&#9670;&#160;</a></span>get_all() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get_all </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data from file, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00175">175</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6bea98f3905a4cd57dfe20775a3b410d" name="a6bea98f3905a4cd57dfe20775a3b410d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bea98f3905a4cd57dfe20775a3b410d">&#9670;&#160;</a></span>get_all() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get_all </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data with strides, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00184">184</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5df71e2460217f02a8f4f0617c7a9095" name="a5df71e2460217f02a8f4f0617c7a9095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df71e2460217f02a8f4f0617c7a9095">&#9670;&#160;</a></span>get_all() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get_all </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data from the file, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00193">193</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3628e6b7e5ea74bf9e69a9aea283c661" name="a3628e6b7e5ea74bf9e69a9aea283c661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3628e6b7e5ea74bf9e69a9aea283c661">&#9670;&#160;</a></span>get_all() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get_all </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a chunk of data with strides, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00202">202</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a774b3bda4e9dc903ecfa35af38e863c6" name="a774b3bda4e9dc903ecfa35af38e863c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774b3bda4e9dc903ecfa35af38e863c6">&#9670;&#160;</a></span>get_attr() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ncutils::NCVar::get_attr </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read attribute from file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00239">239</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a774b3bda4e9dc903ecfa35af38e863c6_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a774b3bda4e9dc903ecfa35af38e863c6_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a774b3bda4e9dc903ecfa35af38e863c6_cgraph" id="astructncutils_1_1NCVar_a774b3bda4e9dc903ecfa35af38e863c6_cgraph">
+<area shape="rect" title="Read attribute from file." alt="" coords="5,5,177,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="225,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa5b83489bee14205286a757e0789ddbd" name="aa5b83489bee14205286a757e0789ddbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b83489bee14205286a757e0789ddbd">&#9670;&#160;</a></span>get_attr() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get_attr </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read attribute from file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00248">248</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_aa5b83489bee14205286a757e0789ddbd_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_aa5b83489bee14205286a757e0789ddbd_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_aa5b83489bee14205286a757e0789ddbd_cgraph" id="astructncutils_1_1NCVar_aa5b83489bee14205286a757e0789ddbd_cgraph">
+<area shape="rect" title="Read attribute from file." alt="" coords="5,5,177,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="225,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af09b0c94dceb8666a7be0d6167bfc4b4" name="af09b0c94dceb8666a7be0d6167bfc4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af09b0c94dceb8666a7be0d6167bfc4b4">&#9670;&#160;</a></span>get_attr() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get_attr </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read attribute from file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00255">255</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_af09b0c94dceb8666a7be0d6167bfc4b4_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_af09b0c94dceb8666a7be0d6167bfc4b4_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_af09b0c94dceb8666a7be0d6167bfc4b4_cgraph" id="astructncutils_1_1NCVar_af09b0c94dceb8666a7be0d6167bfc4b4_cgraph">
+<area shape="rect" title="Read attribute from file." alt="" coords="5,5,177,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="225,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a720f935c1949f56e31eb057dbc1e7ea6" name="a720f935c1949f56e31eb057dbc1e7ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720f935c1949f56e31eb057dbc1e7ea6">&#9670;&#160;</a></span>get_attr() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::get_attr </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read attribute from file. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00262">262</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a720f935c1949f56e31eb057dbc1e7ea6_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a720f935c1949f56e31eb057dbc1e7ea6_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a720f935c1949f56e31eb057dbc1e7ea6_cgraph" id="astructncutils_1_1NCVar_a720f935c1949f56e31eb057dbc1e7ea6_cgraph">
+<area shape="rect" title="Read attribute from file." alt="" coords="5,5,177,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="225,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a4ddce55f60e3accbaf02441b6484cf" name="a0a4ddce55f60e3accbaf02441b6484cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a4ddce55f60e3accbaf02441b6484cf">&#9670;&#160;</a></span>has_attr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ncutils::NCVar::has_attr </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether a variable has an attribute with name. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00216">216</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a0a4ddce55f60e3accbaf02441b6484cf_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a0a4ddce55f60e3accbaf02441b6484cf_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a0a4ddce55f60e3accbaf02441b6484cf_cgraph" id="astructncutils_1_1NCVar_a0a4ddce55f60e3accbaf02441b6484cf_cgraph">
+<area shape="rect" title="Whether a variable has an attribute with name." alt="" coords="5,5,180,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="228,5,387,31"/>
+<area shape="poly" title=" " alt="" coords="180,15,214,15,214,21,180,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a493ade206e0f39a383ab35aa67f4548c" name="a493ade206e0f39a383ab35aa67f4548c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493ade206e0f39a383ab35aa67f4548c">&#9670;&#160;</a></span>iput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::iput </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>request</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data with with strides (see hyperslab definition in NetCDF) </p>
+<p>Write out a slice of data, non-blocking. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00081">81</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4b34f3722befd10e92d1267bcbd49724" name="a4b34f3722befd10e92d1267bcbd49724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b34f3722befd10e92d1267bcbd49724">&#9670;&#160;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ncutils::NCVar::name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of this variable. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00034">34</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00239">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00248">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00255">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00262">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00216">has_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00223">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00227">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00231">put_attr()</a>, and <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00235">put_attr()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a4b34f3722befd10e92d1267bcbd49724_icgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a4b34f3722befd10e92d1267bcbd49724_icgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a4b34f3722befd10e92d1267bcbd49724_icgraph" id="astructncutils_1_1NCVar_a4b34f3722befd10e92d1267bcbd49724_icgraph">
+<area shape="rect" title="Name of this variable." alt="" coords="992,203,1151,228"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a774b3bda4e9dc903ecfa35af38e863c6" title="Read attribute from file." alt="" coords="771,5,943,31"/>
+<area shape="poly" title=" " alt="" coords="1056,192,1038,158,1013,118,981,78,942,44,921,33,923,28,946,40,985,74,1017,115,1043,155,1061,189"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#aa5b83489bee14205286a757e0789ddbd" title="Read attribute from file." alt="" coords="771,55,943,80"/>
+<area shape="poly" title=" " alt="" coords="1050,193,1005,143,975,116,943,94,918,83,920,78,945,89,978,112,1008,139,1054,190"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#af09b0c94dceb8666a7be0d6167bfc4b4" title="Read attribute from file." alt="" coords="771,104,943,129"/>
+<area shape="poly" title=" " alt="" coords="1039,197,995,170,943,143,911,132,913,127,945,138,998,165,1042,193"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a720f935c1949f56e31eb057dbc1e7ea6" title="Read attribute from file." alt="" coords="771,153,943,179"/>
+<area shape="poly" title=" " alt="" coords="1001,202,912,181,913,176,1003,197"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a0a4ddce55f60e3accbaf02441b6484cf" title="Whether a variable has an attribute with name." alt="" coords="769,203,944,228"/>
+<area shape="poly" title=" " alt="" coords="978,218,944,218,944,213,978,213"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a9f60ebf70762d1d8e0962afb01118a31" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="771,252,943,277"/>
+<area shape="poly" title=" " alt="" coords="1003,234,913,255,912,249,1001,229"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#ac1572a791861a2d297f8f29ba0df8d55" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="771,301,943,327"/>
+<area shape="poly" title=" " alt="" coords="1041,238,997,265,945,291,910,304,908,299,943,286,994,260,1039,233"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a69c358988ebdd589d7e465ca6a5f07e9" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="771,351,943,376"/>
+<area shape="poly" title=" " alt="" coords="1054,241,1008,291,978,317,945,340,917,353,915,348,943,336,975,313,1004,287,1050,237"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a72558ae45f30bed210d68c26ec57cb13" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="771,400,943,425"/>
+<area shape="poly" title=" " alt="" coords="1061,242,1042,275,1017,315,984,355,946,390,921,402,918,398,942,385,980,352,1013,312,1038,273,1056,239"/>
+<area shape="rect" href="classREMORA.html#a55e66006e64606318a47d37224e5abca" title="Write a particular NetCDF plotfile." alt="" coords="532,245,721,285"/>
+<area shape="poly" title=" " alt="" coords="756,267,721,267,721,262,756,262"/>
+<area shape="rect" href="classREMORA.html#a4c1e5ea64e04f42f83f77290a7f7e2a1" title="Write plotfile using NetCDF (wrapper)" alt="" coords="295,252,484,277"/>
+<area shape="poly" title=" " alt="" coords="519,267,484,267,484,262,519,262"/>
+<area shape="rect" href="classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e" title="Advance solution to final time." alt="" coords="112,227,243,252"/>
+<area shape="poly" title=" " alt="" coords="281,254,243,250,243,244,281,249"/>
+<area shape="rect" href="classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089" title="Initialize multilevel data." alt="" coords="108,276,247,301"/>
+<area shape="poly" title=" " alt="" coords="281,280,247,283,247,278,281,274"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,252,60,277"/>
+<area shape="poly" title=" " alt="" coords="99,256,61,263,60,257,98,251"/>
+<area shape="poly" title=" " alt="" coords="94,278,60,272,61,266,95,272"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0ab15dc4c1033271878c3bf5102f911" name="ae0ab15dc4c1033271878c3bf5102f911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ab15dc4c1033271878c3bf5102f911">&#9670;&#160;</a></span>ndim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ncutils::NCVar::ndim </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of array dimensions for this variable. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00039">39</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00045">shape()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_ae0ab15dc4c1033271878c3bf5102f911_icgraph.png" border="0" usemap="#astructncutils_1_1NCVar_ae0ab15dc4c1033271878c3bf5102f911_icgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_ae0ab15dc4c1033271878c3bf5102f911_icgraph" id="astructncutils_1_1NCVar_ae0ab15dc4c1033271878c3bf5102f911_icgraph">
+<area shape="rect" title="Number of array dimensions for this variable." alt="" coords="213,5,368,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#ab202435182d346e990c2c7e47740cdad" title="Shape of the array (size in each array dimension)" alt="" coords="5,5,165,31"/>
+<area shape="poly" title=" " alt="" coords="200,21,166,21,166,15,200,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afb4e1d79fff9264fbca61535328f7ed4" name="afb4e1d79fff9264fbca61535328f7ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4e1d79fff9264fbca61535328f7ed4">&#9670;&#160;</a></span>put() <span class="overload">[1/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of string data. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00132">132</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acbc7b53f3614b8e4bc3e22077fb39f0f" name="acbc7b53f3614b8e4bc3e22077fb39f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc7b53f3614b8e4bc3e22077fb39f0f">&#9670;&#160;</a></span>put() <span class="overload">[2/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of string data with stride. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00136">136</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a772e15bd67ced09d02a35c67e122c8d5" name="a772e15bd67ced09d02a35c67e122c8d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a772e15bd67ced09d02a35c67e122c8d5">&#9670;&#160;</a></span>put() <span class="overload">[3/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00071">71</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1f4bc3d6ce3b67154f8c078ad4c9bc2c" name="a1f4bc3d6ce3b67154f8c078ad4c9bc2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4bc3d6ce3b67154f8c078ad4c9bc2c">&#9670;&#160;</a></span>put() <span class="overload">[4/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data with with strides. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00086">86</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4e8fff402cd5e79f76ac029288756105" name="a4e8fff402cd5e79f76ac029288756105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8fff402cd5e79f76ac029288756105">&#9670;&#160;</a></span>put() <span class="overload">[5/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out the entire double variable. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00059">59</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00109">REMORA::WriteNCPlotFile_which()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a4e8fff402cd5e79f76ac029288756105_icgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a4e8fff402cd5e79f76ac029288756105_icgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a4e8fff402cd5e79f76ac029288756105_icgraph" id="astructncutils_1_1NCVar_a4e8fff402cd5e79f76ac029288756105_icgraph">
+<area shape="rect" title="Write out the entire double variable." alt="" coords="769,31,912,56"/>
+<area shape="rect" href="classREMORA.html#a55e66006e64606318a47d37224e5abca" title="Write a particular NetCDF plotfile." alt="" coords="532,23,721,63"/>
+<area shape="poly" title=" " alt="" coords="755,46,721,46,721,41,755,41"/>
+<area shape="rect" href="classREMORA.html#a4c1e5ea64e04f42f83f77290a7f7e2a1" title="Write plotfile using NetCDF (wrapper)" alt="" coords="295,31,484,56"/>
+<area shape="poly" title=" " alt="" coords="519,46,484,46,484,41,519,41"/>
+<area shape="rect" href="classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e" title="Advance solution to final time." alt="" coords="112,5,243,31"/>
+<area shape="poly" title=" " alt="" coords="281,33,243,28,243,23,281,28"/>
+<area shape="rect" href="classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089" title="Initialize multilevel data." alt="" coords="108,55,247,80"/>
+<area shape="poly" title=" " alt="" coords="281,58,247,62,247,57,281,53"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="99,34,61,41,60,36,98,29"/>
+<area shape="poly" title=" " alt="" coords="94,56,60,50,61,45,95,51"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2ad28b44a64152bb00f1a7eeb0084845" name="a2ad28b44a64152bb00f1a7eeb0084845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad28b44a64152bb00f1a7eeb0084845">&#9670;&#160;</a></span>put() <span class="overload">[6/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00096">96</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2c43abe9ef8da9b630860e26e0e84663" name="a2c43abe9ef8da9b630860e26e0e84663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c43abe9ef8da9b630860e26e0e84663">&#9670;&#160;</a></span>put() <span class="overload">[7/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data with with strides (see hyperslab definition in NetCDF) </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00104">104</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adeeb8a9048cf64fcfc5e89fab7217198" name="adeeb8a9048cf64fcfc5e89fab7217198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeeb8a9048cf64fcfc5e89fab7217198">&#9670;&#160;</a></span>put() <span class="overload">[8/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out the entire float variable. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00063">63</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa295aa7ff4f39a52f46074c47d8e42d1" name="aa295aa7ff4f39a52f46074c47d8e42d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa295aa7ff4f39a52f46074c47d8e42d1">&#9670;&#160;</a></span>put() <span class="overload">[9/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00114">114</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af6bcb52703bf6c077304d4a6c3b3b4d2" name="af6bcb52703bf6c077304d4a6c3b3b4d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6bcb52703bf6c077304d4a6c3b3b4d2">&#9670;&#160;</a></span>put() <span class="overload">[10/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data with with strides (see hyperslab definition in NetCDF) </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00122">122</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7c96c6d8018ddb83f6c2ee9154887ff8" name="a7c96c6d8018ddb83f6c2ee9154887ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c96c6d8018ddb83f6c2ee9154887ff8">&#9670;&#160;</a></span>put() <span class="overload">[11/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put </td>
+          <td>(</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out the entire int variable. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00067">67</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a85c122dc6aafe9ec0d1845d75797384a" name="a85c122dc6aafe9ec0d1845d75797384a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85c122dc6aafe9ec0d1845d75797384a">&#9670;&#160;</a></span>put_all() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put_all </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00076">76</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afb50217aecfd6a2dfe79a3a015f298d7" name="afb50217aecfd6a2dfe79a3a015f298d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb50217aecfd6a2dfe79a3a015f298d7">&#9670;&#160;</a></span>put_all() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put_all </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data with with strides , collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00091">91</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac4e99b3f145c95ca1575f109d2d8f2ba" name="ac4e99b3f145c95ca1575f109d2d8f2ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e99b3f145c95ca1575f109d2d8f2ba">&#9670;&#160;</a></span>put_all() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put_all </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00100">100</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5cb2053db4cb3d37076ef7a687c83f62" name="a5cb2053db4cb3d37076ef7a687c83f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb2053db4cb3d37076ef7a687c83f62">&#9670;&#160;</a></span>put_all() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put_all </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data with with strides, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00109">109</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a86b5d9fb431b2c2662e18dc84202c35e" name="a86b5d9fb431b2c2662e18dc84202c35e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b5d9fb431b2c2662e18dc84202c35e">&#9670;&#160;</a></span>put_all() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put_all </td>
+          <td>(</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00118">118</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a20a21f72754e272750c8fa38c9ad44b6" name="a20a21f72754e272750c8fa38c9ad44b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a21f72754e272750c8fa38c9ad44b6">&#9670;&#160;</a></span>put_all() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put_all </td>
+          <td>(</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>dptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MPI_Offset &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out a slice of data with with strides, collective. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00127">127</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f60ebf70762d1d8e0962afb01118a31" name="a9f60ebf70762d1d8e0962afb01118a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f60ebf70762d1d8e0962afb01118a31">&#9670;&#160;</a></span>put_attr() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put_attr </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set attribute "name" to "value". </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00223">223</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00109">REMORA::WriteNCPlotFile_which()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a9f60ebf70762d1d8e0962afb01118a31_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a9f60ebf70762d1d8e0962afb01118a31_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a9f60ebf70762d1d8e0962afb01118a31_cgraph" id="astructncutils_1_1NCVar_a9f60ebf70762d1d8e0962afb01118a31_cgraph">
+<area shape="rect" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="5,5,177,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="225,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a9f60ebf70762d1d8e0962afb01118a31_icgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a9f60ebf70762d1d8e0962afb01118a31_icgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a9f60ebf70762d1d8e0962afb01118a31_icgraph" id="astructncutils_1_1NCVar_a9f60ebf70762d1d8e0962afb01118a31_icgraph">
+<area shape="rect" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="769,31,941,56"/>
+<area shape="rect" href="classREMORA.html#a55e66006e64606318a47d37224e5abca" title="Write a particular NetCDF plotfile." alt="" coords="532,23,721,63"/>
+<area shape="poly" title=" " alt="" coords="756,46,722,46,722,41,756,41"/>
+<area shape="rect" href="classREMORA.html#a4c1e5ea64e04f42f83f77290a7f7e2a1" title="Write plotfile using NetCDF (wrapper)" alt="" coords="295,31,484,56"/>
+<area shape="poly" title=" " alt="" coords="519,46,484,46,484,41,519,41"/>
+<area shape="rect" href="classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e" title="Advance solution to final time." alt="" coords="112,5,243,31"/>
+<area shape="poly" title=" " alt="" coords="281,33,243,28,243,23,281,28"/>
+<area shape="rect" href="classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089" title="Initialize multilevel data." alt="" coords="108,55,247,80"/>
+<area shape="poly" title=" " alt="" coords="281,58,247,62,247,57,281,53"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="99,34,61,41,60,36,98,29"/>
+<area shape="poly" title=" " alt="" coords="94,56,60,50,61,45,95,51"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac1572a791861a2d297f8f29ba0df8d55" name="ac1572a791861a2d297f8f29ba0df8d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1572a791861a2d297f8f29ba0df8d55">&#9670;&#160;</a></span>put_attr() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put_attr </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set attribute "name" to "value". </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00227">227</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_ac1572a791861a2d297f8f29ba0df8d55_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_ac1572a791861a2d297f8f29ba0df8d55_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_ac1572a791861a2d297f8f29ba0df8d55_cgraph" id="astructncutils_1_1NCVar_ac1572a791861a2d297f8f29ba0df8d55_cgraph">
+<area shape="rect" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="5,5,177,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="225,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a69c358988ebdd589d7e465ca6a5f07e9" name="a69c358988ebdd589d7e465ca6a5f07e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c358988ebdd589d7e465ca6a5f07e9">&#9670;&#160;</a></span>put_attr() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put_attr </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set attribute "name" to "value". </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00231">231</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a69c358988ebdd589d7e465ca6a5f07e9_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a69c358988ebdd589d7e465ca6a5f07e9_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a69c358988ebdd589d7e465ca6a5f07e9_cgraph" id="astructncutils_1_1NCVar_a69c358988ebdd589d7e465ca6a5f07e9_cgraph">
+<area shape="rect" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="5,5,177,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="225,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a72558ae45f30bed210d68c26ec57cb13" name="a72558ae45f30bed210d68c26ec57cb13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72558ae45f30bed210d68c26ec57cb13">&#9670;&#160;</a></span>put_attr() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ncutils::NCVar::put_attr </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set attribute "name" to "value". </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00235">235</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a72558ae45f30bed210d68c26ec57cb13_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a72558ae45f30bed210d68c26ec57cb13_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a72558ae45f30bed210d68c26ec57cb13_cgraph" id="astructncutils_1_1NCVar_a72558ae45f30bed210d68c26ec57cb13_cgraph">
+<area shape="rect" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="5,5,177,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="225,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab202435182d346e990c2c7e47740cdad" name="ab202435182d346e990c2c7e47740cdad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab202435182d346e990c2c7e47740cdad">&#9670;&#160;</a></span>shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; MPI_Offset &gt; ncutils::NCVar::shape </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shape of the array (size in each array dimension) </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00045">45</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_ab202435182d346e990c2c7e47740cdad_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_ab202435182d346e990c2c7e47740cdad_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_ab202435182d346e990c2c7e47740cdad_cgraph" id="astructncutils_1_1NCVar_ab202435182d346e990c2c7e47740cdad_cgraph">
+<area shape="rect" title="Shape of the array (size in each array dimension)" alt="" coords="5,5,165,31"/>
+<area shape="rect" href="structncutils_1_1NCVar.html#ae0ab15dc4c1033271878c3bf5102f911" title="Number of array dimensions for this variable." alt="" coords="213,5,368,31"/>
+<area shape="poly" title=" " alt="" coords="166,15,199,15,199,21,166,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a233d94aa3ccbef1cc12565340bcc7218" name="a233d94aa3ccbef1cc12565340bcc7218"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a233d94aa3ccbef1cc12565340bcc7218">&#9670;&#160;</a></span>ncid</h2>
 
@@ -127,12 +2128,16 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int ncutils::NCVar::ncid { -1 }</td>
+          <td class="memname">const int ncutils::NCVar::ncid</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8H_source.html#l00404">404</a> of file <a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a>.</p>
+<p>File/Group identifier. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8H_source.html#l00054">54</a> of file <a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00207">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00211">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00153">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00161">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00141">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00171">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00179">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00145">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00189">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00197">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00149">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00157">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00166">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00175">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00184">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00193">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00202">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00239">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00248">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00255">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00262">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00216">has_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00081">iput()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00034">name()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00039">ndim()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00132">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00136">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00071">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00086">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00059">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00096">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00104">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00063">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00114">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00122">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00067">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00076">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00091">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00100">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00109">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00118">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00127">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00223">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00227">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00231">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00235">put_attr()</a>, and <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00045">shape()</a>.</p>
 
 </div>
 </div>
@@ -143,17 +2148,22 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int ncutils::NCVar::varid { -1 }</td>
+          <td class="memname">const int ncutils::NCVar::varid</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8H_source.html#l00405">405</a> of file <a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a>.</p>
+<p>Variable ID used with NetCDF API. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8H_source.html#l00057">57</a> of file <a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00207">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00211">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00153">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00161">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00141">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00171">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00179">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00145">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00189">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00197">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00149">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00157">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00166">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00175">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00184">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00193">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00202">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00239">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00248">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00255">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00262">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00216">has_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00081">iput()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00034">name()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00039">ndim()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00132">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00136">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00071">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00086">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00059">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00096">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00104">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00063">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00114">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00122">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00067">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00076">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00091">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00100">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00109">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00118">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00127">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00223">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00227">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00231">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00235">put_attr()</a>, and <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00045">shape()</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/home/runner/work/REMORA/REMORA/Source/IO/<a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a></li>
+<li>/home/runner/work/REMORA/REMORA/Source/IO/<a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
