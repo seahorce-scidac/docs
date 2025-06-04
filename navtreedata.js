@@ -64,9 +64,9 @@ var NAVTREEINDEX =
 [
 "REMORA_8H.html",
 "REMORA__SumIQ_8cpp_source.html",
-"classREMORA.html#a66a39d31a3a2f027101cfd4052b913f3",
-"classncutils_1_1NCFile.html#a4c1663f24f84dbc74152d7f040910a22",
-"structSolverChoice.html#a55be5b3388201ee0784d6b6046ab4a06"
+"classREMORA.html#a6554e8c3a6e26956493818ff4e9ef1f8",
+"classncutils_1_1NCFile.html#a32f59732fe788fd03b5fe9969eebd3fd",
+"structSolverChoice.html#a4f417f04b0774d82e6659d2b729f7753"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -8,9 +8,10 @@ var searchData=
   ['plot_5ffile_5fname_5',['plot_file_name',['../classREMORA.html#addf7142c4f2b2c18468e6c17d587f9c4',1,'REMORA']]],
   ['plot_5ffile_5fon_5frestart_6',['plot_file_on_restart',['../classREMORA.html#ab9ce060b467505349e57dacf4e5553fd',1,'REMORA']]],
   ['plot_5fint_7',['plot_int',['../classREMORA.html#a789af0d340eb97a35df0d99b0b2517aa',1,'REMORA']]],
-  ['plot_5fvar_5fnames_8',['plot_var_names',['../classREMORA.html#a185f26194b06bcb3f5f29d5032d3ee69',1,'REMORA']]],
-  ['plotfile_5ftype_9',['plotfile_type',['../classREMORA.html#a002524d813441c4b5fe1b223b46389fa',1,'REMORA']]],
-  ['pp_5fprefix_10',['pp_prefix',['../classREMORA.html#a9724f153d0c7a89c5d6aec11605959aa',1,'REMORA::pp_prefix'],['../structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6',1,'SolverChoice::pp_prefix']]],
-  ['previouscputimeused_11',['previousCPUTimeUsed',['../classREMORA.html#a13791ab61c74d1c95a4caa544d9ac3d3',1,'REMORA']]],
-  ['prob_12',['prob',['../classREMORA.html#a26237fa36e5c406e9072dcab254b3866',1,'REMORA']]]
+  ['plot_5fint_5ftime_8',['plot_int_time',['../classREMORA.html#a6593ca61e91349208738b70d3f4bdf90',1,'REMORA']]],
+  ['plot_5fvar_5fnames_9',['plot_var_names',['../classREMORA.html#a185f26194b06bcb3f5f29d5032d3ee69',1,'REMORA']]],
+  ['plotfile_5ftype_10',['plotfile_type',['../classREMORA.html#a002524d813441c4b5fe1b223b46389fa',1,'REMORA']]],
+  ['pp_5fprefix_11',['pp_prefix',['../classREMORA.html#a9724f153d0c7a89c5d6aec11605959aa',1,'REMORA::pp_prefix'],['../structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6',1,'SolverChoice::pp_prefix']]],
+  ['previouscputimeused_12',['previousCPUTimeUsed',['../classREMORA.html#a13791ab61c74d1c95a4caa544d9ac3d3',1,'REMORA']]],
+  ['prob_13',['prob',['../classREMORA.html#a26237fa36e5c406e9072dcab254b3866',1,'REMORA']]]
 ];
