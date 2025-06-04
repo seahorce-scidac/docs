@@ -3,7 +3,7 @@ var searchData=
   ['name_0',['name',['../structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09',1,'NDArray::name'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()'],['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()']]],
   ['nc2d_1',['NC2D',['../REMORA__IndexDefines_8H.html#abfba840d9b9e67c0c03dc933ee8f40f0',1,'REMORA_IndexDefines.H']]],
   ['nc3d_2',['NC3D',['../REMORA__IndexDefines_8H.html#a7113d7d10b05d75151fd21d463b9c763',1,'REMORA_IndexDefines.H']]],
-  ['nc_5fbdry_5ffile_3',['nc_bdry_file',['../classREMORA.html#ade8f2985b433261b76ac1d8f28fa6d0a',1,'REMORA']]],
+  ['nc_5fbdry_5ffile_3',['nc_bdry_file',['../classREMORA.html#a85d26ee3dd0f81a3e59e0b38672967cd',1,'REMORA']]],
   ['nc_5fclim_5fcoeff_5ffile_4',['nc_clim_coeff_file',['../classREMORA.html#a7e036cab1a75c0be9068965a3b7d6cf1',1,'REMORA']]],
   ['nc_5fclim_5fhis_5ffile_5',['nc_clim_his_file',['../classREMORA.html#ac856db864b4c4d7c0165e084388552ca',1,'REMORA']]],
   ['nc_5fdata_5fdims_5ftype_6',['NC_Data_Dims_Type',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06',1,'REMORA_NCFile.H']]],

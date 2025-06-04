@@ -177,7 +177,7 @@ var classREMORA =
     [ "last_plot_file_step", "classREMORA.html#ae5a74953fb4b92c8d80ceeabceab4532", null ],
     [ "m_bc_extdir_vals", "classREMORA.html#aba64e3980ad190c9fa0450f6bbfcf659", null ],
     [ "max_step", "classREMORA.html#a69c542c1c57e6c6532a20eec60b9a0c3", null ],
-    [ "nc_bdry_file", "classREMORA.html#ade8f2985b433261b76ac1d8f28fa6d0a", null ],
+    [ "nc_bdry_file", "classREMORA.html#a85d26ee3dd0f81a3e59e0b38672967cd", null ],
     [ "nc_clim_coeff_file", "classREMORA.html#a7e036cab1a75c0be9068965a3b7d6cf1", null ],
     [ "nc_clim_his_file", "classREMORA.html#ac856db864b4c4d7c0165e084388552ca", null ],
     [ "nc_frc_file", "classREMORA.html#a47f78aa3f33d31e7ad125efe1a76ddce", null ],

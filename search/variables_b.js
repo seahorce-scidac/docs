@@ -1,7 +1,7 @@
 var searchData=
 [
   ['name_0',['name',['../structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09',1,'NDArray']]],
-  ['nc_5fbdry_5ffile_1',['nc_bdry_file',['../classREMORA.html#ade8f2985b433261b76ac1d8f28fa6d0a',1,'REMORA']]],
+  ['nc_5fbdry_5ffile_1',['nc_bdry_file',['../classREMORA.html#a85d26ee3dd0f81a3e59e0b38672967cd',1,'REMORA']]],
   ['nc_5fclim_5fcoeff_5ffile_2',['nc_clim_coeff_file',['../classREMORA.html#a7e036cab1a75c0be9068965a3b7d6cf1',1,'REMORA']]],
   ['nc_5fclim_5fhis_5ffile_3',['nc_clim_his_file',['../classREMORA.html#ac856db864b4c4d7c0165e084388552ca',1,'REMORA']]],
   ['nc_5ffrc_5ffile_4',['nc_frc_file',['../classREMORA.html#a47f78aa3f33d31e7ad125efe1a76ddce',1,'REMORA']]],
