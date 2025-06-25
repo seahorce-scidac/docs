@@ -10,5 +10,11 @@ var searchData=
   ['regrid_5fint_7',['regrid_int',['../classREMORA.html#a5d3ceaf421e5e6ec42b4da2fcb2d610c',1,'REMORA']]],
   ['restart_5fchkfile_8',['restart_chkfile',['../classREMORA.html#ae376daabb97c474de25b283de6bd985d',1,'REMORA']]],
   ['rho0_9',['rho0',['../structSolverChoice.html#a87396b485f47a76010673143372cca17',1,'SolverChoice']]],
-  ['rhow_10',['rhow',['../REMORA__Constants_8H.html#aac834cc142fec1b6d8408a0c4819e015',1,'REMORA_Constants.H']]]
+  ['rhow_10',['rhow',['../REMORA__Constants_8H.html#aac834cc142fec1b6d8408a0c4819e015',1,'REMORA_Constants.H']]],
+  ['riv_5ftime_5fvarname_11',['riv_time_varname',['../classREMORA.html#a02bcb7acf0e5a7de3c70f29027e6e278',1,'REMORA']]],
+  ['river_5fdirection_12',['river_direction',['../classREMORA.html#ab64ce46b4e42cdd5a5804f2eee9b4b63',1,'REMORA']]],
+  ['river_5fsource_5fcons_13',['river_source_cons',['../classREMORA.html#a0ed321f8462af470ce0a6278279a9ac6',1,'REMORA']]],
+  ['river_5fsource_5ftransport_14',['river_source_transport',['../classREMORA.html#aa759360fa2b0c7699d1f04346cc60a35',1,'REMORA']]],
+  ['river_5fsource_5ftransportbar_15',['river_source_transportbar',['../classREMORA.html#a006014a7412ee49a6ed104d0f78f4f16',1,'REMORA']]],
+  ['river_5ftimes_16',['river_times',['../classNCTimeSeriesRiver.html#a680130b9ab77e2a7e974fd3d06c22373',1,'NCTimeSeriesRiver']]]
 ];

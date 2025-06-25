@@ -31,7 +31,7 @@ var searchData=
   ['main_2edox_28',['main.dox',['../main_8dox.html',1,'']]],
   ['makenewlevelfromcoarse_29',['MakeNewLevelFromCoarse',['../classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe',1,'REMORA']]],
   ['makenewlevelfromscratch_30',['MakeNewLevelFromScratch',['../classREMORA.html#ad64e9b244603ae920ed761821753a71f',1,'REMORA']]],
-  ['mask_5farrays_5ffor_5fwrite_31',['mask_arrays_for_write',['../classREMORA.html#a35183d67444a82a01a23b08a0743530b',1,'REMORA']]],
+  ['mask_5farrays_5ffor_5fwrite_31',['mask_arrays_for_write',['../classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb',1,'REMORA']]],
   ['mathematicalbndrytypes_32',['mathematicalBndryTypes',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346',1,'REMORABCType']]],
   ['max_5fstep_33',['max_step',['../classREMORA.html#a69c542c1c57e6c6532a20eec60b9a0c3',1,'REMORA']]],
   ['mesh_20refinement_34',['Adaptive Mesh Refinement',['../index.html#amr',1,'']]],

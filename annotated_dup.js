@@ -7,6 +7,7 @@ var annotated_dup =
       [ "NCVar", "structncutils_1_1NCVar.html", "structncutils_1_1NCVar" ]
     ] ],
     [ "NCTimeSeries", "classNCTimeSeries.html", "classNCTimeSeries" ],
+    [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", "classNCTimeSeriesRiver" ],
     [ "NDArray", "structNDArray.html", "structNDArray" ],
     [ "ProblemBase", "classProblemBase.html", "classProblemBase" ],
     [ "REMORA", "classREMORA.html", "classREMORA" ],

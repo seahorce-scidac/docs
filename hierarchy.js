@@ -7,6 +7,7 @@ var hierarchy =
     [ "ncutils::NCDType", "structncutils_1_1NCDType.html", null ],
     [ "ncutils::NCFile", "classncutils_1_1NCFile.html", null ],
     [ "NCTimeSeries", "classNCTimeSeries.html", null ],
+    [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", null ],
     [ "ncutils::NCVar", "structncutils_1_1NCVar.html", null ],
     [ "NDArray< DataType >", "structNDArray.html", null ],
     [ "ProblemBase", "classProblemBase.html", null ],

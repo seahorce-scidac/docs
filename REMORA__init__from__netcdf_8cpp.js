@@ -7,5 +7,6 @@ var REMORA__init__from__netcdf_8cpp =
     [ "read_coriolis_from_netcdf", "REMORA__init__from__netcdf_8cpp.html#a1dd851a61f8e589599a1e0a7c276e062", null ],
     [ "read_data_from_netcdf", "REMORA__init__from__netcdf_8cpp.html#a2f352bda3d4beb8f6aeb932c46153ddd", null ],
     [ "read_masks_from_netcdf", "REMORA__init__from__netcdf_8cpp.html#a7b728f24fbad6791f280538ce240c523", null ],
+    [ "read_vec_from_netcdf", "REMORA__init__from__netcdf_8cpp.html#a20cd154c1d0b1a48ae6f893cc59a01e8", null ],
     [ "read_zeta_from_netcdf", "REMORA__init__from__netcdf_8cpp.html#a3b79d2046e177b1deb8fcfa247e3e302", null ]
 ];
