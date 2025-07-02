@@ -65,8 +65,8 @@ var NAVTREEINDEX =
 "REMORA_8H.html",
 "REMORA__ReadFromInitNetcdf_8cpp.html#a2f352bda3d4beb8f6aeb932c46153ddd",
 "classREMORA.html#a48c1bf42530780ce02b3655d7cefe592",
-"classREMORAFillPatcher.html#a8c0bb3742efc7d36f7094d9b81f1ab4e",
-"structSolverChoice.html",
+"classREMORAFillPatcher.html#a7c90c7fdd84b99c435f542100e134ef8",
+"structNDArray.html#afb8008f414c4404e3a6b425c12401d9d",
 "structncutils_1_1NCVar.html#afb50217aecfd6a2dfe79a3a015f298d7"
 ];
 

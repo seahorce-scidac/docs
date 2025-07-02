@@ -48,6 +48,7 @@ var classREMORA =
     [ "init_clim_nudg_coeff_from_netcdf", "classREMORA.html#ac0aef7d5a2ff0b707ce3feaee008aea4", null ],
     [ "init_coriolis_from_netcdf", "classREMORA.html#a927ffca3219ad725a74bd4468ef1d196", null ],
     [ "init_data_from_netcdf", "classREMORA.html#a54b7048bd828c4a13fe687d951211fa1", null ],
+    [ "init_flat_bathymetry", "classREMORA.html#a8277ac2ad8eb9a78d54d031bc1516d3b", null ],
     [ "init_gls_vmix", "classREMORA.html#a1539f678cff20cd3b345d7ace65358f5", null ],
     [ "init_masks", "classREMORA.html#a74d4f68e932879f6e0fd5106bb93ac72", null ],
     [ "init_masks_from_netcdf", "classREMORA.html#a56f3f11b335276a5e69e181b91c9798b", null ],

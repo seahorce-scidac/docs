@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classREMORAFillPatcher.html#a7c90c7fdd84b99c435f542100e134ef8":[2,0,6,25],
 "classREMORAFillPatcher.html#a8c0bb3742efc7d36f7094d9b81f1ab4e":[2,0,6,12],
 "classREMORAFillPatcher.html#a96ec275c4647a1dc8b6b11d8859ab904":[2,0,6,19],
 "classREMORAFillPatcher.html#a973ebd5991b01b3920894033811552aa":[2,0,6,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "structNDArray.html#aa1c5762c2de2f4286d4f341b618df1e5":[2,0,3,5],
 "structNDArray.html#aaeaf3990410dcb8868acf91a408b2c2c":[2,0,3,9],
 "structNDArray.html#abc8163390be8642c7b0f9cc366e084a8":[2,0,3,10],
-"structNDArray.html#ae3acda97dcb2f634f84844419483bb17":[2,0,3,7],
-"structNDArray.html#afb8008f414c4404e3a6b425c12401d9d":[2,0,3,4]
+"structNDArray.html#ae3acda97dcb2f634f84844419483bb17":[2,0,3,7]
 };
