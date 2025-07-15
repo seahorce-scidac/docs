@@ -120,16 +120,22 @@ $(document).ready(function(){initNavTree('REMORA__NCFile_8cpp_source.html',''); 
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    ncmpi_begin_indep_data(ncf.ncid);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">if</span> (amrex::ParallelDescriptor::IOProcessor())</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        attr_val = ncf.var(var_name).get_attr(attr_name);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    ncf.close();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">return</span> attr_val;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">if</span> (!ncf.has_var(var_name)) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Trying to read attribute &quot;</span> &lt;&lt; attr_name &lt;&lt; <span class="stringliteral">&quot; from variable &quot;</span> &lt;&lt; var_name &lt;&lt; <span class="stringliteral">&quot; that does not exist!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">if</span> (!ncf.var(var_name).has_attr(attr_name)) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Trying to read attribute &quot;</span> &lt;&lt; attr_name &lt;&lt; <span class="stringliteral">&quot; that does not exist from variable &quot;</span> &lt;&lt; var_name &lt;&lt; <span class="stringliteral">&quot;!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        attr_val = ncf.var(var_name).get_attr(attr_name);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    ncf.close();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">return</span> attr_val;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 </div>
 <div class="ttc" id="aREMORA__NCFile_8H_html"><div class="ttname"><a href="REMORA__NCFile_8H.html">REMORA_NCFile.H</a></div></div>
 <div class="ttc" id="aREMORA__NCFile_8cpp_html_af8eb0b5eb41bbbf48a6dbced8cd0d6ea"><div class="ttname"><a href="REMORA__NCFile_8cpp.html#af8eb0b5eb41bbbf48a6dbced8cd0d6ea">ReadNetCDFVarAttrStr</a></div><div class="ttdeci">std::string ReadNetCDFVarAttrStr(const std::string &amp;fname, const std::string &amp;var_name, const std::string &amp;attr_name)</div><div class="ttdoc">Helper function for reading a single variable attribute.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCFile_8cpp_source.html#l00013">REMORA_NCFile.cpp:13</a></div></div>
 <div class="ttc" id="aREMORA__NCInterface_8H_html"><div class="ttname"><a href="REMORA__NCInterface_8H.html">REMORA_NCInterface.H</a></div></div>
-<div class="ttc" id="aclassncutils_1_1NCFile_html_af2716d5bd568c6b56c0756a593e8378d"><div class="ttname"><a href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d">ncutils::NCFile::open</a></div><div class="ttdeci">static NCFile open(const std::string &amp;name, const int cmode=NC_NOWRITE, MPI_Comm comm=MPI_COMM_WORLD, MPI_Info info=MPI_INFO_NULL)</div><div class="ttdoc">Open an existing file.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCInterface_8cpp_source.html#l00441">REMORA_NCInterface.cpp:441</a></div></div>
+<div class="ttc" id="aclassncutils_1_1NCFile_html_af2716d5bd568c6b56c0756a593e8378d"><div class="ttname"><a href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d">ncutils::NCFile::open</a></div><div class="ttdeci">static NCFile open(const std::string &amp;name, const int cmode=NC_NOWRITE, MPI_Comm comm=MPI_COMM_WORLD, MPI_Info info=MPI_INFO_NULL)</div><div class="ttdoc">Open an existing file.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCInterface_8cpp_source.html#l00442">REMORA_NCInterface.cpp:442</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
