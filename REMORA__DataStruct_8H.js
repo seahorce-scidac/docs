@@ -42,9 +42,9 @@ var REMORA__DataStruct_8H =
       [ "analytic", "REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a0747ffd2ec4a506ee2b993a044b370c9", null ],
       [ "constant", "REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a617ac08757d38a5a7ed91c224f0e90a0", null ]
     ] ],
-    [ "IC_BC_Type", "REMORA__DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36", [
-      [ "analytic", "REMORA__DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36a0747ffd2ec4a506ee2b993a044b370c9", null ],
-      [ "netcdf", "REMORA__DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36ac2e0f73e7b066a47b743d6ce8213e684", null ]
+    [ "IC_Type", "REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034d", [
+      [ "analytic", "REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034da0747ffd2ec4a506ee2b993a044b370c9", null ],
+      [ "netcdf", "REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034dac2e0f73e7b066a47b743d6ce8213e684", null ]
     ] ],
     [ "PlotfileType", "REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9e", [
       [ "amrex", "REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9eabbe17e876cafcbc06d3ea0d2a23854d3", null ],

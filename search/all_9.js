@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i_5ftime_5fbefore_0',['i_time_before',['../classNCTimeSeries.html#a7cd84e642555b80b6aaf9577da2bae4f',1,'NCTimeSeries::i_time_before'],['../classNCTimeSeriesRiver.html#ab3db62bcd9010e2962122aefb5017ab6',1,'NCTimeSeriesRiver::i_time_before']]],
-  ['ic_5fbc_5ftype_1',['ic_bc_type',['../REMORA__DataStruct_8H.html#aa307030d99f8c225e1a1adb20224ed36',1,'IC_BC_Type:&#160;REMORA_DataStruct.H'],['../structSolverChoice.html#a345dba1135888a3a3e422c9b6a010ebf',1,'SolverChoice::ic_bc_type']]],
+  ['ic_5ftype_1',['ic_type',['../REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034d',1,'IC_Type:&#160;REMORA_DataStruct.H'],['../structSolverChoice.html#ab9b74574dbcbef0c488da3a8ec1b8195',1,'SolverChoice::ic_type']]],
   ['impose_5fcons_5fbcs_2',['impose_cons_bcs',['../classREMORAPhysBCFunct.html#a9c70d0e7e327d55146ab9ae25306cdf7',1,'REMORAPhysBCFunct']]],
   ['impose_5fxvel_5fbcs_3',['impose_xvel_bcs',['../classREMORAPhysBCFunct.html#a3922bc0f97d9ce1ffe4a3bd810c1b486',1,'REMORAPhysBCFunct']]],
   ['impose_5fyvel_5fbcs_4',['impose_yvel_bcs',['../classREMORAPhysBCFunct.html#ad2e5e88c0707a1519645c2e88e200e13',1,'REMORAPhysBCFunct']]],

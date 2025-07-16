@@ -24,6 +24,7 @@ var searchData=
   ['blk_5fzt_21',['blk_ZT',['../structSolverChoice.html#a05d52ca9f33733f70e683a25912977c9',1,'SolverChoice']]],
   ['blk_5fzw_22',['blk_ZW',['../structSolverChoice.html#a6247a812f5037d4e66e7ebbda8858b42',1,'SolverChoice']]],
   ['bottom_5fstress_5ftype_23',['bottom_stress_type',['../structSolverChoice.html#a87953245714a80185fceae6fe421a81e',1,'SolverChoice']]],
-  ['boxes_5fat_5flevel_24',['boxes_at_level',['../classREMORA.html#a45b928a121bd6c5e75ec75732a27f774',1,'REMORA']]],
-  ['bulk_5ffluxes_25',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice']]]
+  ['boundary_5ffrom_5fnetcdf_24',['boundary_from_netcdf',['../structSolverChoice.html#a73e08531bdac22cdef52a8511b4fffa5',1,'SolverChoice']]],
+  ['boxes_5fat_5flevel_25',['boxes_at_level',['../classREMORA.html#a45b928a121bd6c5e75ec75732a27f774',1,'REMORA']]],
+  ['bulk_5ffluxes_26',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice']]]
 ];

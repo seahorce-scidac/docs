@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i_5ftime_5fbefore_0',['i_time_before',['../classNCTimeSeries.html#a7cd84e642555b80b6aaf9577da2bae4f',1,'NCTimeSeries::i_time_before'],['../classNCTimeSeriesRiver.html#ab3db62bcd9010e2962122aefb5017ab6',1,'NCTimeSeriesRiver::i_time_before']]],
-  ['ic_5fbc_5ftype_1',['ic_bc_type',['../structSolverChoice.html#a345dba1135888a3a3e422c9b6a010ebf',1,'SolverChoice']]],
+  ['ic_5ftype_1',['ic_type',['../structSolverChoice.html#ab9b74574dbcbef0c488da3a8ec1b8195',1,'SolverChoice']]],
   ['init_5fana_5fh_2',['init_ana_h',['../structSolverChoice.html#adc79ef6544265aa554c0b5db9e63ce1d',1,'SolverChoice']]],
   ['init_5fana_5ft_3',['init_ana_T',['../structSolverChoice.html#a1142b82645ef7d3d2b45f743fc9b7620',1,'SolverChoice']]],
   ['init_5fl0int_5fh_4',['init_l0int_h',['../structSolverChoice.html#ac79b16bbda654e3d108d11517d8077fe',1,'SolverChoice']]],
