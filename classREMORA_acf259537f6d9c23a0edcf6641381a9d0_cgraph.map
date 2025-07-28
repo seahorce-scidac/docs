@@ -1,125 +1,125 @@
 <map id="REMORA::timeStepML" name="REMORA::timeStepML">
-<area shape="rect" id="Node000001" title="advance all levels by dt, loops over finer levels" alt="" coords="5,1497,171,1522"/>
-<area shape="rect" id="Node000002" href="$classREMORA.html#a67b92f7c5b82933e953e447bdfc9074c" title="2D advance, one predictor/corrector step" alt="" coords="241,1092,407,1132"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,1495,302,1143,306,1145,99,1498"/>
-<area shape="rect" id="Node000006" href="$classREMORA.html#a78e197008199d1e51d75d04911d6edf2" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1068,702,1209,727"/>
-<area shape="poly" id="edge31_Node000001_Node000006" title=" " alt="" coords="87,1496,97,1318,120,1017,137,853,159,698,185,566,200,512,216,469,267,373,293,336,320,305,386,247,476,183,609,89,670,50,731,21,792,5,822,3,853,5,885,12,917,24,949,42,983,66,1002,85,1019,112,1049,182,1074,269,1095,366,1124,555,1138,688,1133,689,1119,556,1090,367,1069,271,1044,184,1014,114,998,88,980,70,947,47,914,29,883,17,852,10,822,8,792,10,733,26,673,55,611,93,479,187,390,252,324,308,297,340,272,376,221,472,205,514,190,567,164,699,142,853,125,1017,102,1319,93,1496"/>
-<area shape="rect" id="Node000015" href="$classREMORA.html#a805863a28beceb70cefd0b6f050d8c2d" title="3D advance on a single level" alt="" coords="229,483,419,509"/>
-<area shape="poly" id="edge13_Node000001_Node000015" title=" " alt="" coords="90,1496,314,521,319,522,95,1497"/>
-<area shape="rect" id="Node000023" href="$classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3" title="more flexible version of AverageDown() that lets you average down across multiple levels" alt="" coords="229,1743,419,1769"/>
-<area shape="poly" id="edge30_Node000001_Node000023" title=" " alt="" coords="95,1521,109,1562,134,1618,171,1678,194,1705,220,1728,231,1735,228,1740,217,1733,190,1709,167,1681,129,1621,104,1564,90,1523"/>
-<area shape="rect" id="Node000024" href="$classREMORA.html#a0e52181fc8afcf83ce6c8995eb36f721" title="Scale RHS momentum variables by 1/cell area, needed before FillPatch to different levels." alt="" coords="233,1793,415,1818"/>
-<area shape="poly" id="edge32_Node000001_Node000024" title=" " alt="" coords="94,1522,105,1571,128,1640,145,1678,166,1715,191,1749,220,1778,229,1784,226,1788,217,1782,187,1752,161,1717,140,1680,123,1642,100,1572,89,1523"/>
-<area shape="rect" id="Node000025" href="$classREMORA.html#aa3b43d7e3555ad14b08109b42c4f79d8" title="Scale RHS momentum variables by cell area, needed after FillPatch to different levels." alt="" coords="219,1842,429,1867"/>
-<area shape="poly" id="edge33_Node000001_Node000025" title=" " alt="" coords="93,1522,101,1578,122,1661,138,1706,160,1750,187,1792,220,1827,228,1833,225,1837,217,1831,183,1795,155,1753,133,1708,117,1662,96,1579,88,1522"/>
-<area shape="rect" id="Node000026" href="$classREMORA.html#ad9ee5aba5b9cb8e020e6cbc8ff3cff74" title="Set everything up for a step on a level." alt="" coords="515,1331,674,1357"/>
-<area shape="poly" id="edge34_Node000001_Node000026" title=" " alt="" coords="127,1494,541,1358,542,1363,129,1499"/>
-<area shape="rect" id="Node000044" href="$classREMORA.html#ae2e918864aa8456dabdfeb8e81832374" title="main driver for writing AMReX plotfiles" alt="" coords="239,1694,409,1719"/>
-<area shape="poly" id="edge65_Node000001_Node000044" title=" " alt="" coords="106,1520,299,1683,295,1687,103,1524"/>
-<area shape="rect" id="Node000003" href="$classREMORA.html#ab987b72e13f0dc83db716c5b0decee29" title="Perform a 2D predictor (predictor_2d_step=True) or corrector (predictor_2d_step=False) step." alt="" coords="512,854,677,879"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,1090,568,886,571,890,349,1094"/>
-<area shape="rect" id="Node000004" href="$classREMORA.html#a7c79ff9219e7558d2ddd9fed36eb92d8" title="Apply climatology nudging." alt="" coords="772,854,969,879"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="678,864,758,864,758,869,678,869"/>
-<area shape="rect" id="Node000005" href="$classREMORA.html#af28f51401edd36aa6014d9536e1393da" title="Calculate Coriolis terms." alt="" coords="803,1005,938,1030"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="610,877,672,932,715,963,761,989,791,1001,789,1006,759,994,712,968,669,936,607,881"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="605,852,666,794,710,762,759,737,835,716,913,705,988,702,1054,704,1054,709,988,707,914,711,836,721,761,742,713,767,670,798,609,856"/>
-<area shape="rect" id="Node000008" href="$classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1050,803,1227,829"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="669,851,760,839,905,826,1036,818,1037,823,905,831,760,844,670,856"/>
-<area shape="rect" id="Node000009" href="$classREMORA.html#a08a2748cf44d3e95d08a1b78aef3d15f" title="RHS terms for 2D momentum." alt="" coords="794,753,947,778"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="622,851,759,795,808,779,809,784,761,800,624,856"/>
-<area shape="rect" id="Node000010" href="$classNCTimeSeries.html#ae3a0d8c24cadcc3d80c80cf344a084c6" title="Calculate interpolated values at time, reading in data as necessary." alt="" coords="1055,1197,1222,1237"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="678,876,860,908,939,925,983,940,1013,966,1040,996,1082,1063,1112,1129,1131,1183,1126,1185,1108,1131,1078,1066,1035,999,1009,970,980,945,938,930,859,913,677,882"/>
-<area shape="rect" id="Node000012" href="$classNCTimeSeriesRiver.html#a494caa0f2cb0e78439fb4e1d6d654039" title="Calculate." alt="" coords="793,622,949,677"/>
-<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="603,852,664,779,708,734,758,694,780,681,783,685,762,698,712,738,668,783,607,855"/>
-<area shape="rect" id="Node000014" href="$classREMORA.html#a7c834aec6a6a1e9f0489c0e2c2a6ac38" title="Harmonic viscosity." alt="" coords="799,955,943,981"/>
-<area shape="poly" id="edge12_Node000003_Node000014" title=" " alt="" coords="624,877,761,933,809,949,808,954,759,938,622,882"/>
-<area shape="rect" id="Node000007" href="$classREMORA.html#a83fd2f5d4c8ab7313d3cadeda2db3c62" title="Fill boundary data from netcdf file." alt="" coords="1296,535,1495,561"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1158,700,1362,566,1365,570,1161,704"/>
-<area shape="rect" id="Node000011" href="$classNCTimeSeries.html#a297437358973471709cbec9de11a24bb" title="Read in data from file at time index itime and fill into mf." alt="" coords="1320,1197,1471,1237"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1222,1215,1306,1215,1306,1220,1222,1220"/>
-<area shape="poly" id="edge28_Node000015_Node000006" title=" " alt="" coords="332,481,366,433,423,360,498,275,586,190,634,152,683,119,734,91,785,72,836,62,886,63,936,77,983,106,1001,124,1017,148,1046,214,1071,295,1092,385,1122,562,1137,688,1132,688,1117,563,1087,386,1066,296,1041,215,1012,151,997,127,980,110,933,82,885,69,836,68,786,77,736,96,686,123,637,156,590,194,502,279,428,363,371,436,336,485"/>
-<area shape="poly" id="edge29_Node000015_Node000008" title=" " alt="" coords="419,498,563,509,729,530,809,544,881,562,941,582,983,607,998,622,1006,638,1012,670,1015,703,1021,719,1031,737,1064,769,1101,794,1098,798,1061,773,1027,740,1016,722,1010,704,1006,671,1001,640,993,626,980,611,938,587,880,567,808,549,728,535,562,515,419,503"/>
-<area shape="rect" id="Node000016" href="$classREMORA.html#a28c2e36d1783550310f26d0e9ba8cdca" title="Advance the 3D variables." alt="" coords="512,394,677,419"/>
-<area shape="poly" id="edge14_Node000015_Node000016" title=" " alt="" coords="363,481,541,421,543,426,365,486"/>
-<area shape="poly" id="edge15_Node000016_Node000004" title=" " alt="" coords="601,419,617,481,649,576,697,685,727,738,762,787,796,820,833,845,830,849,793,824,758,791,723,741,692,688,644,578,612,482,596,420"/>
-<area shape="poly" id="edge17_Node000016_Node000006" title=" " alt="" coords="678,406,760,411,848,420,928,434,959,444,983,455,1014,479,1041,508,1084,573,1114,637,1133,688,1128,690,1109,639,1079,575,1036,511,1010,483,980,459,957,449,927,440,848,426,759,417,677,412"/>
-<area shape="poly" id="edge16_Node000016_Node000007" title=" " alt="" coords="677,400,820,400,901,404,982,415,1088,438,1192,469,1352,527,1350,532,1190,474,1087,443,981,420,901,410,820,405,677,405"/>
-<area shape="poly" id="edge23_Node000016_Node000010" title=" " alt="" coords="617,417,680,457,761,504,795,520,826,530,882,543,908,550,933,562,958,581,983,608,1003,637,1015,665,1021,691,1023,717,1023,772,1025,804,1032,839,1085,1035,1129,1183,1124,1185,1080,1036,1027,840,1020,804,1018,773,1018,717,1016,692,1010,666,999,640,979,611,955,585,930,567,906,555,881,548,825,535,793,525,759,509,677,462,614,422"/>
-<area shape="poly" id="edge24_Node000016_Node000012" title=" " alt="" coords="612,417,830,610,826,614,609,421"/>
-<area shape="rect" id="Node000017" href="$classREMORA.html#afded54aef57ded67542a888a911b67b0" title="Corrector step for GLS calculation." alt="" coords="785,470,956,495"/>
-<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="642,417,811,464,810,469,641,422"/>
-<area shape="rect" id="Node000018" href="$classREMORA.html#a28dc08e3b03b17fe032836531bc43d4f" title="RHS terms for tracer." alt="" coords="799,170,942,195"/>
-<area shape="poly" id="edge21_Node000016_Node000018" title=" " alt="" coords="600,392,622,355,656,303,702,250,729,225,759,204,785,192,787,197,761,209,733,229,706,253,660,307,626,358,605,395"/>
-<area shape="rect" id="Node000019" href="$classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5" title="Calculate vertical stretched coordinates." alt="" coords="769,219,972,245"/>
-<area shape="poly" id="edge22_Node000016_Node000019" title=" " alt="" coords="604,392,664,325,709,286,759,254,774,247,777,251,761,258,712,291,668,329,608,395"/>
-<area shape="rect" id="Node000020" href="$classREMORA.html#a917f5357e59152e192de6abd5e6c3491" title="Correct mass flux." alt="" coords="760,269,981,294"/>
-<area shape="poly" id="edge25_Node000016_Node000020" title=" " alt="" coords="611,391,674,348,715,324,759,303,782,295,783,300,761,308,718,328,677,352,614,396"/>
-<area shape="rect" id="Node000021" href="$classREMORA.html#a466d5c5a68c7cfa02247db51bbe74b19" title="Adjust 3D momentum variables based on vertical mean momentum." alt="" coords="781,318,961,343"/>
-<area shape="poly" id="edge26_Node000016_Node000021" title=" " alt="" coords="641,391,810,344,811,349,642,396"/>
-<area shape="rect" id="Node000022" href="$classREMORA.html#aaed0680a8912bbb8bcf78d3fd3737d56" title="Calculate effects of vertical viscosity or diffusivity." alt="" coords="786,121,955,146"/>
-<area shape="poly" id="edge27_Node000016_Node000022" title=" " alt="" coords="598,393,616,347,649,282,697,213,726,182,758,155,772,147,775,152,762,159,729,186,701,216,654,285,621,349,603,395"/>
-<area shape="poly" id="edge19_Node000017_Node000006" title=" " alt="" coords="941,493,983,512,1031,554,1072,602,1104,649,1127,688,1122,691,1100,652,1068,605,1027,557,980,517,939,498"/>
-<area shape="poly" id="edge20_Node000017_Node000008" title=" " alt="" coords="955,493,983,513,1003,541,1013,568,1015,596,1013,623,1011,678,1017,707,1032,737,1062,770,1098,794,1095,799,1059,774,1027,740,1012,708,1005,678,1008,622,1010,596,1008,570,999,543,979,516,952,497"/>
-<area shape="poly" id="edge35_Node000026_Node000004" title=" " alt="" coords="596,1330,611,1266,642,1165,663,1108,690,1049,721,993,758,941,792,908,829,884,832,888,795,912,762,944,726,996,695,1052,668,1110,647,1167,616,1267,601,1332"/>
-<area shape="poly" id="edge39_Node000026_Node000005" title=" " alt="" coords="596,1330,612,1276,642,1197,664,1154,690,1111,722,1072,758,1039,789,1024,791,1028,762,1043,726,1076,695,1114,669,1156,647,1199,617,1278,601,1332"/>
-<area shape="poly" id="edge40_Node000026_Node000006" title=" " alt="" coords="600,1330,622,1292,656,1240,702,1186,729,1161,759,1140,790,1125,821,1120,877,1122,904,1123,929,1120,954,1110,979,1089,1004,1053,1015,1018,1015,983,1010,947,1004,910,1002,872,1008,832,1027,789,1058,756,1094,732,1097,736,1061,760,1032,792,1013,833,1007,872,1010,909,1016,946,1021,982,1020,1018,1009,1055,983,1092,957,1114,930,1125,904,1128,877,1127,821,1125,792,1130,761,1145,733,1166,706,1190,660,1244,626,1295,605,1332"/>
-<area shape="poly" id="edge41_Node000026_Node000008" title=" " alt="" coords="611,1355,672,1405,714,1432,761,1452,824,1473,878,1486,903,1487,927,1483,953,1472,979,1453,994,1433,1004,1404,1015,1327,1020,1247,1027,1185,1080,987,1126,841,1131,843,1086,988,1032,1186,1025,1247,1020,1328,1009,1405,999,1435,983,1456,955,1476,929,1488,903,1493,877,1492,823,1478,759,1457,712,1437,669,1410,607,1359"/>
-<area shape="poly" id="edge63_Node000026_Node000010" title=" " alt="" coords="606,1355,629,1387,664,1427,709,1467,734,1484,761,1497,822,1520,873,1530,898,1529,923,1524,980,1498,1012,1474,1040,1445,1063,1412,1083,1377,1111,1307,1128,1250,1133,1251,1116,1309,1088,1379,1068,1415,1044,1448,1016,1478,983,1502,925,1529,898,1534,873,1535,820,1525,759,1502,731,1489,706,1472,660,1431,625,1390,602,1358"/>
-<area shape="poly" id="edge64_Node000026_Node000014" title=" " alt="" coords="595,1331,608,1269,636,1176,657,1125,684,1076,718,1029,758,990,784,975,787,980,762,994,722,1033,689,1078,662,1128,641,1178,613,1270,600,1332"/>
-<area shape="rect" id="Node000027" href="$classREMORA.html#a8dc8463dc56c931c6b1029d3b0f3b26a" title="Calculate bulk temperature, salinity, wind fluxes." alt="" coords="1315,1595,1475,1621"/>
-<area shape="poly" id="edge36_Node000026_Node000027" title=" " alt="" coords="602,1356,618,1406,649,1476,670,1513,696,1548,726,1579,761,1604,804,1620,861,1629,931,1634,1007,1634,1165,1628,1301,1616,1302,1621,1165,1633,1007,1640,931,1639,861,1634,802,1625,759,1609,723,1583,692,1552,666,1516,644,1479,613,1408,597,1358"/>
-<area shape="rect" id="Node000030" href="$classREMORA.html#a6122490d3208c33fce7fc1896baece42" title="Prestep for GLS calculation." alt="" coords="789,1155,952,1181"/>
-<area shape="poly" id="edge42_Node000026_Node000030" title=" " alt="" coords="604,1329,664,1262,708,1223,759,1190,775,1182,777,1187,761,1194,712,1227,668,1266,608,1333"/>
-<area shape="rect" id="Node000031" href="$classREMORA.html#a707974bad372495d62963171d386b792" title="Wrapper function for prestep." alt="" coords="803,1773,939,1798"/>
-<area shape="poly" id="edge44_Node000026_Node000031" title=" " alt="" coords="602,1356,619,1415,651,1506,698,1609,728,1660,762,1706,796,1738,833,1763,830,1768,793,1743,758,1710,724,1663,693,1612,646,1508,613,1417,597,1358"/>
-<area shape="rect" id="Node000034" href="$classREMORA.html#a0b1612b628cd43af12e4e8ce850fba27" title="Calculate pressure gradient." alt="" coords="807,1671,935,1697"/>
-<area shape="poly" id="edge47_Node000026_Node000034" title=" " alt="" coords="602,1356,617,1410,648,1490,669,1533,695,1576,726,1615,762,1650,794,1668,792,1673,758,1654,722,1619,691,1579,665,1536,643,1492,612,1412,596,1357"/>
-<area shape="rect" id="Node000035" href="$classREMORA.html#a2b8ea8e7b1db929b8a9c3c8180ee0341" title="Wrapper around equation of state calculation." alt="" coords="801,1570,940,1595"/>
-<area shape="poly" id="edge48_Node000026_Node000035" title=" " alt="" coords="605,1356,626,1394,661,1446,707,1501,733,1526,761,1548,790,1563,788,1568,759,1553,729,1530,703,1505,656,1449,622,1396,600,1358"/>
-<area shape="rect" id="Node000038" href="$classREMORA.html#a717b3cb13872e3c7bf83261bc7c5e1b0" title="RHS terms for 3D momentum." alt="" coords="794,1303,947,1329"/>
-<area shape="poly" id="edge52_Node000026_Node000038" title=" " alt="" coords="674,1333,780,1322,781,1328,675,1339"/>
-<area shape="rect" id="Node000039" href="$classREMORA.html#a816b9966899d512c4b24b6955d8ec8fc" title="Set vertical mixing coefficients from analytic." alt="" coords="767,1054,974,1079"/>
-<area shape="poly" id="edge53_Node000026_Node000039" title=" " alt="" coords="598,1330,618,1285,651,1222,698,1155,727,1123,758,1096,785,1082,787,1086,762,1101,730,1127,702,1158,656,1225,623,1288,603,1332"/>
-<area shape="rect" id="Node000040" href="$classREMORA.html#ae32769c0aa47ddd6e15f3b5866f9252a" title="Initialize or calculate surface momentum flux from file or analytic." alt="" coords="791,1254,950,1279"/>
-<area shape="poly" id="edge55_Node000026_Node000040" title=" " alt="" coords="631,1329,759,1288,792,1280,793,1285,761,1293,632,1334"/>
-<area shape="rect" id="Node000041" href="$classREMORA.html#abfa7b60f8d65788c1e3ea8abfa1f437c" title="Initialize or calculate wind speed from file or analytic." alt="" coords="798,1205,943,1230"/>
-<area shape="poly" id="edge58_Node000026_Node000041" title=" " alt="" coords="611,1329,673,1285,715,1260,759,1239,784,1230,785,1235,761,1244,717,1265,676,1289,614,1333"/>
-<area shape="rect" id="Node000042" href="$classREMORA.html#ab937a3a19e419c91e16844f68df6eafe" title="Set zeta components to be equal to time&#45;averaged Zt_avg1." alt="" coords="789,1353,952,1393"/>
-<area shape="poly" id="edge61_Node000026_Node000042" title=" " alt="" coords="675,1350,776,1361,775,1366,674,1355"/>
-<area shape="rect" id="Node000043" href="$classREMORA.html#a4866ca3ef1d3778ea9e0fed284107d88" title="Harmonic diffusivity for tracers." alt="" coords="804,1418,937,1443"/>
-<area shape="poly" id="edge62_Node000026_Node000043" title=" " alt="" coords="627,1354,689,1378,761,1403,796,1412,794,1417,759,1408,687,1383,625,1359"/>
-<area shape="rect" id="Node000028" href="$classREMORA.html#ae574156fa5fb71c8301c3c2e4e99202a" title="Evaluate stability function psi for moisture and heat." alt="" coords="1544,1570,1691,1595"/>
-<area shape="poly" id="edge37_Node000027_Node000028" title=" " alt="" coords="1476,1596,1530,1590,1531,1595,1476,1601"/>
-<area shape="rect" id="Node000029" href="$classREMORA.html#aa288199efe6ff562ce20f1cae3d249b5" title="Evaluate stability function psi for wind speed." alt="" coords="1543,1619,1692,1645"/>
-<area shape="poly" id="edge38_Node000027_Node000029" title=" " alt="" coords="1476,1614,1529,1620,1529,1625,1476,1619"/>
-<area shape="poly" id="edge43_Node000030_Node000006" title=" " alt="" coords="951,1154,967,1145,979,1134,995,1113,1007,1092,1018,1051,1017,1010,1010,969,1003,927,999,884,1006,838,1027,789,1041,771,1058,755,1093,731,1096,736,1061,760,1045,775,1032,792,1011,839,1005,884,1008,927,1016,968,1022,1010,1023,1051,1012,1094,1000,1116,983,1138,970,1150,954,1158"/>
-<area shape="rect" id="Node000032" href="$classREMORA.html#a0dcfa91810e83ac902f4aba8894a49cf" title="Update velocities or tracers with diffusion/viscosity as the last part of the prestep." alt="" coords="1039,1749,1238,1774"/>
-<area shape="poly" id="edge45_Node000031_Node000032" title=" " alt="" coords="939,1776,1026,1769,1026,1774,939,1782"/>
-<area shape="rect" id="Node000033" href="$classREMORA.html#afaab4bf1e0df6da854f3ddfaafb255c0" title="Prestep advection calculations for the tracers." alt="" coords="1029,1798,1248,1823"/>
-<area shape="poly" id="edge46_Node000031_Node000033" title=" " alt="" coords="939,1789,1016,1796,1016,1802,939,1794"/>
-<area shape="rect" id="Node000036" href="$classREMORA.html#a7ef206df9b5d4f71dfe5c57049ffb06e" title="Calculate density and related quantities from linear equation of state." alt="" coords="1072,1521,1205,1546"/>
-<area shape="poly" id="edge49_Node000035_Node000036" title=" " alt="" coords="940,1567,1058,1545,1059,1550,941,1572"/>
-<area shape="rect" id="Node000037" href="$classREMORA.html#addc06a380411d14dc082150b72232548" title="Calculate density and related quantities from nonlinear equation of state." alt="" coords="1060,1570,1217,1595"/>
-<area shape="poly" id="edge50_Node000035_Node000037" title=" " alt="" coords="940,1580,1046,1580,1046,1585,940,1585"/>
-<area shape="poly" id="edge51_Node000037_Node000027" title=" " alt="" coords="1218,1588,1302,1596,1302,1601,1217,1593"/>
-<area shape="poly" id="edge54_Node000039_Node000006" title=" " alt="" coords="963,1052,979,1039,1001,1010,1011,980,1012,951,1009,921,1005,890,1004,858,1010,825,1027,789,1058,756,1094,732,1097,736,1062,760,1032,792,1015,826,1010,859,1011,890,1014,921,1018,951,1016,981,1006,1012,983,1043,966,1056"/>
-<area shape="poly" id="edge56_Node000040_Node000006" title=" " alt="" coords="949,1259,966,1251,979,1239,990,1223,998,1203,1007,1151,1010,1088,1009,1020,1007,887,1013,831,1027,789,1040,771,1057,755,1093,732,1096,736,1060,760,1044,775,1032,792,1018,832,1012,887,1014,1020,1015,1088,1012,1151,1003,1204,995,1226,983,1243,969,1255,951,1263"/>
-<area shape="poly" id="edge57_Node000040_Node000010" title=" " alt="" coords="940,1251,1041,1232,1042,1238,941,1256"/>
-<area shape="poly" id="edge59_Node000041_Node000006" title=" " alt="" coords="942,1211,963,1203,979,1190,998,1166,1012,1141,1020,1118,1024,1094,1022,1047,1013,999,1003,950,997,900,1003,846,1012,818,1027,789,1041,771,1057,755,1093,732,1096,736,1060,760,1045,775,1032,792,1017,820,1008,847,1003,900,1008,950,1018,998,1028,1046,1029,1095,1025,1119,1016,1144,1003,1168,983,1194,965,1208,944,1216"/>
-<area shape="poly" id="edge60_Node000041_Node000010" title=" " alt="" coords="943,1215,1041,1215,1041,1220,943,1220"/>
-<area shape="poly" id="edge67_Node000044_Node000008" title=" " alt="" coords="409,1701,477,1700,595,1697,712,1700,760,1705,795,1710,826,1717,881,1732,905,1736,929,1734,954,1725,979,1706,986,1695,993,1676,1003,1617,1015,1453,1021,1285,1027,1185,1050,1084,1077,986,1125,841,1130,843,1082,987,1055,1085,1032,1186,1026,1286,1020,1453,1008,1618,998,1677,991,1697,983,1710,956,1729,930,1739,905,1741,880,1737,825,1722,794,1715,760,1711,712,1705,595,1703,477,1705,409,1707"/>
-<area shape="rect" id="Node000045" href="$REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67" title=" " alt="" coords="513,1779,676,1805"/>
-<area shape="poly" id="edge66_Node000044_Node000045" title=" " alt="" coords="399,1717,430,1728,445,1737,455,1747,465,1756,479,1764,501,1773,499,1778,476,1769,461,1760,451,1751,442,1741,428,1733,397,1722"/>
-<area shape="rect" id="Node000046" href="$namespacederived.html#a7c72de811cfaa4aac607c1d60b9a0d48" title=" " alt="" coords="505,1829,684,1854"/>
-<area shape="poly" id="edge68_Node000044_Node000046" title=" " alt="" coords="411,1717,431,1728,449,1750,456,1773,462,1794,479,1814,494,1823,491,1827,476,1818,458,1797,451,1774,444,1753,428,1733,408,1722"/>
-<area shape="rect" id="Node000047" href="$namespacederived.html#a9002cc5f73c702e47413c059e94824c0" title=" " alt="" coords="505,1878,685,1903"/>
-<area shape="poly" id="edge69_Node000044_Node000047" title=" " alt="" coords="411,1716,431,1729,445,1745,453,1763,456,1798,459,1832,466,1848,479,1863,494,1873,491,1878,476,1867,461,1851,454,1833,451,1798,448,1764,441,1748,428,1733,408,1720"/>
-<area shape="rect" id="Node000048" href="$classREMORA.html#a331fbdef188eaf70cc72be04b1208020" title="Write job info to stdout." alt="" coords="512,1927,677,1953"/>
-<area shape="poly" id="edge70_Node000044_Node000048" title=" " alt="" coords="411,1715,431,1729,449,1752,456,1775,458,1799,456,1823,454,1846,455,1869,463,1891,479,1913,500,1927,497,1931,476,1916,458,1893,450,1870,449,1846,451,1822,452,1799,451,1776,444,1754,427,1732,408,1719"/>
-<area shape="rect" id="Node000054" href="$classREMORA.html#a8c6fbe147d0a9bc99510fc8ee97aea98" title="write out particular data to an AMReX plotfile" alt="" coords="477,1715,712,1755"/>
-<area shape="poly" id="edge73_Node000044_Node000054" title=" " alt="" coords="410,1713,464,1718,463,1724,409,1718"/>
-<area shape="rect" id="Node000049" href="$namespaceamrex.html#a4722f2802412a1b4759ed3dde96e7004" title=" " alt="" coords="763,1903,979,1929"/>
-<area shape="poly" id="edge71_Node000048_Node000049" title=" " alt="" coords="677,1930,749,1924,749,1929,678,1935"/>
-<area shape="rect" id="Node000050" href="$namespaceamrex.html#a5f81ff33377203a46fb45efb7c30a2e6" title=" " alt="" coords="775,1953,966,1978"/>
-<area shape="poly" id="edge72_Node000048_Node000050" title=" " alt="" coords="678,1945,762,1953,761,1958,677,1950"/>
+<area shape="rect" id="Node000001" title="advance all levels by dt, loops over finer levels" alt="" coords="5,1500,171,1525"/>
+<area shape="rect" id="Node000002" href="$classREMORA.html#a67b92f7c5b82933e953e447bdfc9074c" title="2D advance, one predictor/corrector step" alt="" coords="241,1091,407,1131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,1499,302,1142,306,1145,99,1501"/>
+<area shape="rect" id="Node000006" href="$classREMORA.html#a78e197008199d1e51d75d04911d6edf2" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1068,752,1209,777"/>
+<area shape="poly" id="edge31_Node000001_Node000006" title=" " alt="" coords="87,1499,97,1321,120,1019,137,855,159,699,185,567,200,513,216,470,267,373,293,337,320,305,386,247,476,183,609,88,671,50,732,21,792,5,823,3,854,5,885,12,917,25,950,43,983,67,1003,88,1021,116,1052,192,1078,287,1099,392,1126,596,1138,738,1133,738,1121,597,1093,392,1073,288,1047,194,1016,119,999,91,980,71,947,47,915,29,884,17,853,10,823,8,793,10,733,26,673,54,612,93,479,187,389,251,324,308,297,340,272,376,221,473,205,515,190,568,164,700,142,855,125,1019,102,1322,93,1500"/>
+<area shape="rect" id="Node000015" href="$classREMORA.html#a805863a28beceb70cefd0b6f050d8c2d" title="3D advance on a single level" alt="" coords="229,484,419,509"/>
+<area shape="poly" id="edge13_Node000001_Node000015" title=" " alt="" coords="90,1499,314,522,319,523,95,1500"/>
+<area shape="rect" id="Node000023" href="$classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3" title="more flexible version of AverageDown() that lets you average down across multiple levels" alt="" coords="229,1745,419,1771"/>
+<area shape="poly" id="edge30_Node000001_Node000023" title=" " alt="" coords="95,1525,109,1565,134,1621,171,1681,194,1708,220,1731,231,1738,228,1742,217,1735,190,1711,167,1684,130,1624,104,1567,90,1526"/>
+<area shape="rect" id="Node000024" href="$classREMORA.html#a0e52181fc8afcf83ce6c8995eb36f721" title="Scale RHS momentum variables by 1/cell area, needed before FillPatch to different levels." alt="" coords="233,1795,415,1820"/>
+<area shape="poly" id="edge32_Node000001_Node000024" title=" " alt="" coords="94,1525,105,1574,128,1643,145,1680,166,1717,191,1751,220,1780,229,1786,226,1790,217,1784,187,1754,161,1720,140,1683,123,1645,100,1575,89,1526"/>
+<area shape="rect" id="Node000025" href="$classREMORA.html#aa3b43d7e3555ad14b08109b42c4f79d8" title="Scale RHS momentum variables by cell area, needed after FillPatch to different levels." alt="" coords="219,1844,429,1869"/>
+<area shape="poly" id="edge33_Node000001_Node000025" title=" " alt="" coords="93,1525,101,1581,121,1665,138,1710,160,1754,187,1795,220,1831,226,1835,223,1839,217,1835,183,1799,155,1757,133,1712,116,1666,96,1582,88,1526"/>
+<area shape="rect" id="Node000026" href="$classREMORA.html#ad9ee5aba5b9cb8e020e6cbc8ff3cff74" title="Set everything up for a step on a level." alt="" coords="515,1328,674,1353"/>
+<area shape="poly" id="edge34_Node000001_Node000026" title=" " alt="" coords="126,1497,542,1355,544,1360,128,1502"/>
+<area shape="rect" id="Node000044" href="$classREMORA.html#ae2e918864aa8456dabdfeb8e81832374" title="main driver for writing AMReX plotfiles" alt="" coords="239,1696,409,1721"/>
+<area shape="poly" id="edge65_Node000001_Node000044" title=" " alt="" coords="106,1524,298,1685,295,1689,103,1528"/>
+<area shape="rect" id="Node000003" href="$classREMORA.html#ab987b72e13f0dc83db716c5b0decee29" title="Perform a 2D predictor (predictor_2d_step=True) or corrector (predictor_2d_step=False) step." alt="" coords="512,853,677,879"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,1089,568,886,571,890,349,1093"/>
+<area shape="rect" id="Node000004" href="$classREMORA.html#a7c79ff9219e7558d2ddd9fed36eb92d8" title="Apply climatology nudging." alt="" coords="772,701,969,727"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="608,851,670,800,713,770,759,744,798,728,800,733,761,748,716,774,674,804,612,855"/>
+<area shape="rect" id="Node000005" href="$classREMORA.html#af28f51401edd36aa6014d9536e1393da" title="Calculate Coriolis terms." alt="" coords="803,955,938,980"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="624,876,761,933,809,948,808,954,759,938,622,881"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="616,851,678,818,718,801,759,787,836,772,915,763,1054,759,1055,764,916,769,837,777,761,793,720,806,681,823,618,856"/>
+<area shape="rect" id="Node000008" href="$classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1050,853,1227,879"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="678,863,1036,863,1036,869,678,869"/>
+<area shape="rect" id="Node000009" href="$classREMORA.html#a08a2748cf44d3e95d08a1b78aef3d15f" title="RHS terms for 2D momentum." alt="" coords="794,803,947,828"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="664,851,787,828,788,833,665,856"/>
+<area shape="rect" id="Node000010" href="$classNCTimeSeries.html#ae3a0d8c24cadcc3d80c80cf344a084c6" title="Calculate interpolated values at time, reading in data as necessary." alt="" coords="1055,1295,1222,1335"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="678,871,761,880,850,895,929,914,960,926,983,940,1021,977,1052,1021,1077,1068,1097,1117,1124,1210,1136,1282,1131,1283,1119,1211,1092,1119,1072,1070,1047,1024,1017,981,980,944,958,931,928,920,849,900,760,886,677,876"/>
+<area shape="rect" id="Node000012" href="$classNCTimeSeriesRiver.html#a494caa0f2cb0e78439fb4e1d6d654039" title="Calculate." alt="" coords="793,623,949,677"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="602,852,661,775,707,728,759,687,778,675,781,680,761,691,710,732,665,778,606,855"/>
+<area shape="rect" id="Node000014" href="$classREMORA.html#a7c834aec6a6a1e9f0489c0e2c2a6ac38" title="Harmonic viscosity." alt="" coords="799,1004,943,1029"/>
+<area shape="poly" id="edge12_Node000003_Node000014" title=" " alt="" coords="610,877,672,932,715,963,761,989,786,999,785,1004,759,994,712,967,669,936,607,881"/>
+<area shape="rect" id="Node000007" href="$classREMORA.html#a83fd2f5d4c8ab7313d3cadeda2db3c62" title="Fill boundary data from netcdf file." alt="" coords="1296,561,1495,587"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1155,750,1365,593,1368,597,1159,754"/>
+<area shape="rect" id="Node000011" href="$classNCTimeSeries.html#a297437358973471709cbec9de11a24bb" title="Read in data from file at time index itime and fill into mf." alt="" coords="1320,1295,1471,1335"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1222,1313,1306,1313,1306,1318,1222,1318"/>
+<area shape="poly" id="edge28_Node000015_Node000006" title=" " alt="" coords="332,482,367,434,424,360,499,275,587,190,635,152,684,118,735,91,785,72,836,62,887,64,936,78,983,107,1002,126,1019,153,1050,225,1075,313,1096,411,1124,604,1138,738,1133,739,1119,605,1091,412,1070,315,1045,226,1015,156,998,130,980,111,934,83,886,69,837,68,787,77,737,96,687,123,638,156,591,194,503,279,428,364,371,437,336,485"/>
+<area shape="poly" id="edge29_Node000015_Node000008" title=" " alt="" coords="419,498,564,509,731,528,811,543,883,561,942,582,983,608,1001,629,1010,651,1014,673,1013,695,1013,740,1019,763,1031,787,1063,820,1099,844,1096,849,1059,824,1027,790,1014,765,1008,740,1008,695,1008,673,1005,653,997,632,980,612,939,587,881,566,810,548,730,534,563,514,419,503"/>
+<area shape="rect" id="Node000016" href="$classREMORA.html#a28c2e36d1783550310f26d0e9ba8cdca" title="Advance the 3D variables." alt="" coords="512,395,677,420"/>
+<area shape="poly" id="edge14_Node000015_Node000016" title=" " alt="" coords="363,481,541,422,543,427,365,486"/>
+<area shape="poly" id="edge15_Node000016_Node000004" title=" " alt="" coords="602,420,619,470,650,543,672,583,697,621,727,656,762,687,772,693,769,698,758,691,724,660,693,624,667,585,645,546,614,472,597,421"/>
+<area shape="poly" id="edge17_Node000016_Node000006" title=" " alt="" coords="678,407,760,411,849,420,928,434,960,444,983,456,1017,486,1047,521,1071,560,1091,600,1120,678,1135,738,1130,739,1115,679,1087,602,1067,563,1042,524,1014,489,980,460,958,449,927,439,848,425,760,417,677,412"/>
+<area shape="poly" id="edge16_Node000016_Node000007" title=" " alt="" coords="678,399,820,398,902,404,982,415,1092,444,1198,482,1290,521,1358,553,1356,558,1288,526,1196,487,1090,449,981,421,901,409,820,404,678,405"/>
+<area shape="poly" id="edge23_Node000016_Node000010" title=" " alt="" coords="617,418,680,458,761,505,795,520,826,530,882,543,909,551,934,563,959,581,983,608,1007,645,1020,678,1026,710,1027,741,1024,808,1026,846,1032,890,1086,1114,1131,1282,1125,1283,1080,1115,1027,891,1020,847,1019,808,1022,741,1021,710,1015,680,1002,647,979,612,955,585,931,567,907,556,881,548,825,535,793,525,759,510,677,463,614,422"/>
+<area shape="poly" id="edge24_Node000016_Node000012" title=" " alt="" coords="612,418,830,611,826,615,609,422"/>
+<area shape="rect" id="Node000017" href="$classREMORA.html#afded54aef57ded67542a888a911b67b0" title="Corrector step for GLS calculation." alt="" coords="785,471,956,496"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="642,418,811,464,810,470,641,423"/>
+<area shape="rect" id="Node000018" href="$classREMORA.html#a28dc08e3b03b17fe032836531bc43d4f" title="RHS terms for tracer." alt="" coords="799,121,942,147"/>
+<area shape="poly" id="edge21_Node000016_Node000018" title=" " alt="" coords="598,394,616,348,649,283,697,214,726,183,759,156,785,143,787,147,761,160,729,187,701,217,654,286,621,350,603,396"/>
+<area shape="rect" id="Node000019" href="$classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5" title="Calculate vertical stretched coordinates." alt="" coords="769,171,972,196"/>
+<area shape="poly" id="edge22_Node000016_Node000019" title=" " alt="" coords="600,393,622,356,656,304,702,250,729,226,759,205,770,199,773,204,761,210,733,230,706,254,660,308,626,359,605,396"/>
+<area shape="rect" id="Node000020" href="$classREMORA.html#a917f5357e59152e192de6abd5e6c3491" title="Correct mass flux." alt="" coords="760,220,981,245"/>
+<area shape="poly" id="edge25_Node000016_Node000020" title=" " alt="" coords="604,393,664,326,709,287,759,254,774,247,777,252,761,259,712,291,668,330,608,396"/>
+<area shape="rect" id="Node000021" href="$classREMORA.html#a466d5c5a68c7cfa02247db51bbe74b19" title="Adjust 3D momentum variables based on vertical mean momentum." alt="" coords="781,269,961,295"/>
+<area shape="poly" id="edge26_Node000016_Node000021" title=" " alt="" coords="611,392,674,349,715,324,759,304,782,296,783,301,761,309,718,329,677,353,614,397"/>
+<area shape="rect" id="Node000022" href="$classREMORA.html#aaed0680a8912bbb8bcf78d3fd3737d56" title="Calculate effects of vertical viscosity or diffusivity." alt="" coords="786,319,955,344"/>
+<area shape="poly" id="edge27_Node000016_Node000022" title=" " alt="" coords="641,392,810,345,811,350,642,397"/>
+<area shape="poly" id="edge19_Node000017_Node000006" title=" " alt="" coords="944,494,983,513,1011,538,1037,567,1079,629,1111,689,1131,737,1126,739,1106,692,1075,632,1033,570,1008,542,980,518,942,498"/>
+<area shape="poly" id="edge20_Node000017_Node000008" title=" " alt="" coords="955,494,983,514,1007,548,1017,582,1018,615,1014,648,1010,681,1008,715,1014,750,1032,787,1062,820,1098,845,1095,849,1058,824,1027,790,1009,752,1003,715,1004,680,1009,647,1013,615,1012,583,1002,550,979,517,952,498"/>
+<area shape="poly" id="edge35_Node000026_Node000004" title=" " alt="" coords="596,1327,618,1225,657,1065,706,902,732,836,758,788,791,755,827,731,830,736,794,760,762,792,737,838,711,904,662,1067,623,1226,601,1328"/>
+<area shape="poly" id="edge39_Node000026_Node000005" title=" " alt="" coords="595,1327,608,1266,636,1174,658,1124,685,1074,718,1028,758,989,789,973,791,978,762,994,722,1032,689,1077,663,1126,641,1176,613,1267,601,1328"/>
+<area shape="poly" id="edge40_Node000026_Node000006" title=" " alt="" coords="604,1326,664,1260,709,1222,759,1189,792,1176,822,1171,878,1173,904,1173,930,1170,954,1159,979,1138,1004,1102,1015,1067,1015,1032,1010,996,1004,960,1002,922,1008,882,1027,839,1058,806,1094,782,1097,786,1061,810,1032,842,1013,883,1007,922,1010,959,1016,996,1021,1032,1020,1068,1009,1104,983,1141,957,1163,931,1175,905,1179,878,1178,823,1176,793,1181,761,1194,712,1226,668,1264,608,1330"/>
+<area shape="poly" id="edge41_Node000026_Node000008" title=" " alt="" coords="633,1351,704,1369,795,1381,844,1381,892,1375,938,1361,980,1337,1007,1307,1032,1258,1056,1197,1077,1129,1110,993,1130,892,1135,893,1115,994,1082,1130,1061,1199,1037,1260,1011,1310,983,1341,940,1365,893,1380,844,1386,795,1387,703,1374,632,1356"/>
+<area shape="poly" id="edge63_Node000026_Node000010" title=" " alt="" coords="612,1351,674,1397,716,1421,761,1438,822,1454,871,1460,920,1456,980,1438,1019,1420,1054,1396,1110,1344,1113,1348,1058,1400,1022,1425,982,1443,921,1461,871,1466,821,1459,759,1443,713,1425,671,1401,609,1356"/>
+<area shape="poly" id="edge64_Node000026_Node000014" title=" " alt="" coords="596,1327,612,1273,642,1195,664,1152,691,1110,722,1072,758,1039,784,1025,787,1029,762,1043,726,1075,695,1113,669,1155,647,1197,617,1275,601,1329"/>
+<area shape="rect" id="Node000027" href="$classREMORA.html#a8dc8463dc56c931c6b1029d3b0f3b26a" title="Calculate bulk temperature, salinity, wind fluxes." alt="" coords="1315,1613,1475,1639"/>
+<area shape="poly" id="edge36_Node000026_Node000027" title=" " alt="" coords="610,1351,672,1407,715,1439,761,1466,807,1485,868,1504,1020,1544,1316,1608,1314,1613,1019,1549,867,1510,805,1490,759,1471,712,1443,668,1411,607,1355"/>
+<area shape="rect" id="Node000030" href="$classREMORA.html#a6122490d3208c33fce7fc1896baece42" title="Prestep for GLS calculation." alt="" coords="789,1053,952,1079"/>
+<area shape="poly" id="edge42_Node000026_Node000030" title=" " alt="" coords="598,1327,616,1281,649,1216,696,1146,726,1115,759,1088,775,1079,778,1083,761,1092,729,1119,701,1150,654,1218,621,1283,603,1329"/>
+<area shape="rect" id="Node000031" href="$classREMORA.html#a707974bad372495d62963171d386b792" title="Wrapper function for prestep." alt="" coords="803,1771,939,1796"/>
+<area shape="poly" id="edge44_Node000026_Node000031" title=" " alt="" coords="603,1353,678,1569,726,1691,747,1734,762,1756,791,1772,788,1777,758,1760,742,1736,722,1693,673,1571,598,1354"/>
+<area shape="rect" id="Node000034" href="$classREMORA.html#a0b1612b628cd43af12e4e8ce850fba27" title="Calculate pressure gradient." alt="" coords="807,1253,935,1279"/>
+<area shape="poly" id="edge47_Node000026_Node000034" title=" " alt="" coords="633,1325,759,1288,793,1279,795,1284,761,1293,635,1331"/>
+<area shape="rect" id="Node000035" href="$classREMORA.html#a2b8ea8e7b1db929b8a9c3c8180ee0341" title="Wrapper around equation of state calculation." alt="" coords="801,1721,940,1747"/>
+<area shape="poly" id="edge48_Node000026_Node000035" title=" " alt="" coords="603,1353,621,1405,655,1484,702,1573,730,1616,762,1656,797,1688,834,1712,831,1717,793,1692,758,1660,726,1619,697,1576,650,1486,616,1407,598,1354"/>
+<area shape="rect" id="Node000038" href="$classREMORA.html#a717b3cb13872e3c7bf83261bc7c5e1b0" title="RHS terms for 3D momentum." alt="" coords="794,1556,947,1581"/>
+<area shape="poly" id="edge52_Node000026_Node000038" title=" " alt="" coords="605,1352,627,1388,662,1438,708,1490,761,1535,791,1549,788,1554,759,1539,704,1494,658,1441,623,1391,601,1355"/>
+<area shape="rect" id="Node000039" href="$classREMORA.html#a816b9966899d512c4b24b6955d8ec8fc" title="Set vertical mixing coefficients from analytic." alt="" coords="767,1103,974,1128"/>
+<area shape="poly" id="edge53_Node000026_Node000039" title=" " alt="" coords="601,1326,623,1290,659,1241,704,1190,759,1145,789,1130,791,1135,761,1150,708,1194,663,1245,628,1293,606,1329"/>
+<area shape="rect" id="Node000040" href="$classREMORA.html#ae32769c0aa47ddd6e15f3b5866f9252a" title="Initialize or calculate surface momentum flux from file or analytic." alt="" coords="791,1404,950,1429"/>
+<area shape="poly" id="edge55_Node000026_Node000040" title=" " alt="" coords="642,1351,811,1398,810,1403,641,1356"/>
+<area shape="rect" id="Node000041" href="$classREMORA.html#abfa7b60f8d65788c1e3ea8abfa1f437c" title="Initialize or calculate wind speed from file or analytic." alt="" coords="798,1303,943,1328"/>
+<area shape="poly" id="edge58_Node000026_Node000041" title=" " alt="" coords="674,1331,784,1321,784,1326,675,1336"/>
+<area shape="rect" id="Node000042" href="$classREMORA.html#ab937a3a19e419c91e16844f68df6eafe" title="Set zeta components to be equal to time&#45;averaged Zt_avg1." alt="" coords="789,1606,952,1646"/>
+<area shape="poly" id="edge61_Node000026_Node000042" title=" " alt="" coords="603,1352,622,1398,655,1462,702,1531,730,1563,762,1591,778,1601,775,1605,758,1595,726,1567,698,1534,650,1465,617,1400,598,1354"/>
+<area shape="rect" id="Node000043" href="$classREMORA.html#a4866ca3ef1d3778ea9e0fed284107d88" title="Harmonic diffusivity for tracers." alt="" coords="804,1204,937,1229"/>
+<area shape="poly" id="edge62_Node000026_Node000043" title=" " alt="" coords="611,1326,674,1283,715,1259,759,1238,790,1228,791,1233,761,1243,718,1264,677,1287,614,1330"/>
+<area shape="rect" id="Node000028" href="$classREMORA.html#ae574156fa5fb71c8301c3c2e4e99202a" title="Evaluate stability function psi for moisture and heat." alt="" coords="1544,1588,1691,1613"/>
+<area shape="poly" id="edge37_Node000027_Node000028" title=" " alt="" coords="1476,1614,1530,1608,1531,1613,1476,1620"/>
+<area shape="rect" id="Node000029" href="$classREMORA.html#aa288199efe6ff562ce20f1cae3d249b5" title="Evaluate stability function psi for wind speed." alt="" coords="1543,1637,1692,1663"/>
+<area shape="poly" id="edge38_Node000027_Node000029" title=" " alt="" coords="1476,1632,1529,1638,1529,1643,1476,1637"/>
+<area shape="poly" id="edge43_Node000030_Node000006" title=" " alt="" coords="951,1056,966,1049,979,1039,998,1015,1006,992,1009,969,1008,945,1007,895,1013,868,1027,839,1059,806,1095,782,1098,786,1062,810,1032,842,1018,869,1012,895,1013,945,1014,969,1012,994,1002,1018,983,1043,969,1053,953,1061"/>
+<area shape="rect" id="Node000032" href="$classREMORA.html#a0dcfa91810e83ac902f4aba8894a49cf" title="Update velocities or tracers with diffusion/viscosity as the last part of the prestep." alt="" coords="1039,1820,1238,1845"/>
+<area shape="poly" id="edge45_Node000031_Node000032" title=" " alt="" coords="939,1793,1056,1815,1055,1820,938,1798"/>
+<area shape="rect" id="Node000033" href="$classREMORA.html#afaab4bf1e0df6da854f3ddfaafb255c0" title="Prestep advection calculations for the tracers." alt="" coords="1029,1771,1248,1796"/>
+<area shape="poly" id="edge46_Node000031_Node000033" title=" " alt="" coords="939,1781,1015,1781,1015,1786,939,1786"/>
+<area shape="rect" id="Node000036" href="$classREMORA.html#a7ef206df9b5d4f71dfe5c57049ffb06e" title="Calculate density and related quantities from linear equation of state." alt="" coords="1072,1672,1205,1697"/>
+<area shape="poly" id="edge49_Node000035_Node000036" title=" " alt="" coords="940,1719,1058,1697,1059,1702,941,1724"/>
+<area shape="rect" id="Node000037" href="$classREMORA.html#addc06a380411d14dc082150b72232548" title="Calculate density and related quantities from nonlinear equation of state." alt="" coords="1060,1721,1217,1747"/>
+<area shape="poly" id="edge50_Node000035_Node000037" title=" " alt="" coords="940,1731,1046,1731,1046,1737,940,1737"/>
+<area shape="poly" id="edge51_Node000037_Node000027" title=" " alt="" coords="1207,1719,1247,1706,1310,1676,1363,1644,1366,1649,1313,1681,1249,1711,1209,1724"/>
+<area shape="poly" id="edge54_Node000039_Node000006" title=" " alt="" coords="963,1101,979,1088,1001,1059,1011,1030,1012,1001,1009,971,1005,940,1004,908,1010,875,1027,839,1058,806,1094,782,1097,786,1062,810,1032,842,1015,876,1010,908,1011,940,1014,970,1017,1000,1016,1031,1006,1061,983,1092,966,1105"/>
+<area shape="poly" id="edge56_Node000040_Node000006" title=" " alt="" coords="901,1402,943,1376,963,1359,979,1338,997,1303,1008,1270,1015,1238,1018,1207,1013,1148,1003,1091,992,1033,988,973,990,941,997,909,1009,875,1027,839,1040,821,1057,806,1093,782,1096,786,1060,810,1044,825,1032,842,1014,877,1002,910,996,942,993,973,997,1032,1008,1090,1019,1147,1023,1207,1020,1239,1013,1271,1002,1305,984,1341,967,1362,947,1381,904,1406"/>
+<area shape="poly" id="edge57_Node000040_Node000010" title=" " alt="" coords="920,1401,980,1382,1083,1339,1085,1344,982,1387,922,1406"/>
+<area shape="poly" id="edge59_Node000041_Node000006" title=" " alt="" coords="943,1309,963,1301,979,1288,990,1272,998,1252,1007,1200,1010,1138,1009,1070,1007,937,1013,881,1027,840,1040,821,1057,806,1093,782,1096,786,1060,810,1044,825,1032,842,1018,882,1012,937,1014,1070,1015,1138,1012,1201,1003,1253,995,1275,983,1292,965,1306,945,1314"/>
+<area shape="poly" id="edge60_Node000041_Node000010" title=" " alt="" coords="943,1313,1041,1313,1041,1318,943,1318"/>
+<area shape="poly" id="edge67_Node000044_Node000008" title=" " alt="" coords="374,1693,477,1674,732,1671,898,1666,954,1662,980,1656,998,1628,1010,1587,1017,1536,1020,1480,1021,1369,1027,1283,1052,1168,1080,1055,1127,891,1132,893,1085,1057,1057,1169,1032,1284,1027,1369,1025,1481,1022,1537,1015,1588,1003,1630,983,1660,955,1667,898,1671,732,1676,478,1679,375,1699"/>
+<area shape="rect" id="Node000045" href="$REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67" title=" " alt="" coords="513,1967,676,1992"/>
+<area shape="poly" id="edge66_Node000044_Node000045" title=" " alt="" coords="411,1717,431,1731,451,1759,459,1787,459,1816,456,1844,452,1872,452,1899,460,1926,479,1952,502,1967,499,1972,475,1956,455,1928,447,1900,447,1871,451,1843,454,1815,454,1788,446,1761,427,1735,408,1721"/>
+<area shape="rect" id="Node000046" href="$classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb" title="Mask data arrays before writing output." alt="" coords="509,1689,680,1729"/>
+<area shape="poly" id="edge68_Node000044_Node000046" title=" " alt="" coords="409,1706,495,1706,495,1711,409,1711"/>
+<area shape="rect" id="Node000047" href="$namespacederived.html#a7c72de811cfaa4aac607c1d60b9a0d48" title=" " alt="" coords="505,1753,684,1779"/>
+<area shape="poly" id="edge69_Node000044_Node000047" title=" " alt="" coords="385,1719,521,1748,520,1753,384,1724"/>
+<area shape="rect" id="Node000048" href="$namespacederived.html#a9002cc5f73c702e47413c059e94824c0" title=" " alt="" coords="505,1803,685,1828"/>
+<area shape="poly" id="edge70_Node000044_Node000048" title=" " alt="" coords="406,1719,431,1731,447,1745,456,1760,464,1775,479,1788,493,1795,491,1800,476,1792,460,1778,451,1763,443,1748,428,1735,404,1724"/>
+<area shape="rect" id="Node000049" href="$classREMORA.html#a331fbdef188eaf70cc72be04b1208020" title="Write job info to stdout." alt="" coords="512,1852,677,1877"/>
+<area shape="poly" id="edge71_Node000044_Node000049" title=" " alt="" coords="411,1719,431,1731,444,1744,451,1758,456,1786,461,1814,467,1826,479,1839,500,1851,498,1856,476,1843,463,1830,456,1816,451,1787,446,1760,439,1747,428,1735,408,1723"/>
+<area shape="rect" id="Node000055" href="$classREMORA.html#a8c6fbe147d0a9bc99510fc8ee97aea98" title="write out particular data to an AMReX plotfile" alt="" coords="477,1902,712,1942"/>
+<area shape="poly" id="edge73_Node000044_Node000055" title=" " alt="" coords="411,1717,431,1731,447,1750,455,1771,456,1811,458,1850,465,1869,479,1888,484,1892,480,1896,475,1892,460,1872,453,1852,451,1811,449,1772,442,1753,428,1735,408,1722"/>
+<area shape="rect" id="Node000050" href="$namespaceamrex.html#a4722f2802412a1b4759ed3dde96e7004" title=" " alt="" coords="763,1852,979,1877"/>
+<area shape="poly" id="edge72_Node000049_Node000050" title=" " alt="" coords="678,1862,749,1862,749,1867,678,1867"/>
 </map>

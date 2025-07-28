@@ -14,7 +14,7 @@ var searchData=
   ['fill_5ffab_5ffrom_5farrays_11',['fill_fab_from_arrays',['../REMORA__NCFile_8H.html#abb772948db7cfdf671a036782bed7822',1,'REMORA_NCFile.H']]],
   ['fill_5ffrom_5fbdyfiles_12',['fill_from_bdyfiles',['../classREMORA.html#a83fd2f5d4c8ab7313d3cadeda2db3c62',1,'REMORA']]],
   ['fillbdyccvels_13',['FillBdyCCVels',['../classREMORA.html#a8b638d2163a39005d276bc1ef14d058f',1,'REMORA']]],
-  ['fillcoarsepatch_14',['FillCoarsePatch',['../classREMORA.html#acaa1b128e260eedca635c98f0aa6d58b',1,'REMORA']]],
+  ['fillcoarsepatch_14',['FillCoarsePatch',['../classREMORA.html#ada8c06314105e2238c522fc22472a15f',1,'REMORA']]],
   ['fillpatch_15',['FillPatch',['../classREMORA.html#a78e197008199d1e51d75d04911d6edf2',1,'REMORA']]],
   ['fillpatchnobc_16',['FillPatchNoBC',['../classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b',1,'REMORA']]],
   ['fillrelax_17',['FillRelax',['../classREMORAFillPatcher.html#a3ee6c1ce281bcdb17350baf84a5a5878',1,'REMORAFillPatcher']]],

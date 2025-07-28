@@ -63,11 +63,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__ReadFromInitNetcdf_8cpp.html#a2f352bda3d4beb8f6aeb932c46153ddd",
-"classREMORA.html#a48c1bf42530780ce02b3655d7cefe592",
-"classREMORAFillPatcher.html#a7c90c7fdd84b99c435f542100e134ef8",
-"structNDArray.html#afb8008f414c4404e3a6b425c12401d9d",
-"structncutils_1_1NCVar.html#afb4e1d79fff9264fbca61535328f7ed4"
+"REMORA__ReadFromBdryNetcdf_8cpp.html#a0845b17e91e3859a5e6141e2794e5c35",
+"classREMORA.html#a45b928a121bd6c5e75ec75732a27f774",
+"classREMORAFillPatcher.html#a5177a51aceb8cc0293a855ad71f03bdc",
+"structNDArray.html#a8a0bbff40020f6aea23346ac656bf972",
+"structncutils_1_1NCVar.html#ae11de78d13ec2073913bc42501a3e5ac"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

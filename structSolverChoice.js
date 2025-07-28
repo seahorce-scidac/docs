@@ -70,6 +70,7 @@ var structSolverChoice =
     [ "init_l0int_T", "structSolverChoice.html#aa081dd85bac8141b63dfe948a32810ef", null ],
     [ "init_l1ad_h", "structSolverChoice.html#af73ee7965bd3b56651c275d920de07b9", null ],
     [ "init_l1ad_T", "structSolverChoice.html#a81c2ac3d646ad2a170ba2cac7031688a", null ],
+    [ "mask_type", "structSolverChoice.html#a2e2b940cf2e9f62ffdd0e6ff4713af86", null ],
     [ "my_A1", "structSolverChoice.html#a3085d6f33e903a3016d45d5023740b34", null ],
     [ "my_A2", "structSolverChoice.html#a8ce3dfd5f42a5c698790db5f2d2586f3", null ],
     [ "my_B1", "structSolverChoice.html#acb0493cb642d070f6eb9b48d9930dce6", null ],
