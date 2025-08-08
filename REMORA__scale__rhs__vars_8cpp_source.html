@@ -122,8 +122,8 @@ $(document).ready(function(){initNavTree('REMORA__scale__rhs__vars_8cpp_source.h
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            Box ubx = mfi.grownnodaltilebox(0,IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            Box vbx = mfi.grownnodaltilebox(1,IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            Box ubx2d = ubx; ubx.makeSlab(2,0);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            Box vbx2d = vbx; vbx.makeSlab(2,0);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            Box ubx2d = ubx; ubx2d.makeSlab(2,0);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            Box vbx2d = vbx; vbx2d.makeSlab(2,0);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            ParallelFor(ubx, 2, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            {</div>
@@ -173,8 +173,8 @@ $(document).ready(function(){initNavTree('REMORA__scale__rhs__vars_8cpp_source.h
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            Box ubx = mfi.grownnodaltilebox(0,IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            Box vbx = mfi.grownnodaltilebox(1,IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            Box ubx2d = ubx; ubx.makeSlab(2,0);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            Box vbx2d = vbx; vbx.makeSlab(2,0);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            Box ubx2d = ubx; ubx2d.makeSlab(2,0);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            Box vbx2d = vbx; vbx2d.makeSlab(2,0);</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            ParallelFor(ubx, 2, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            {</div>
