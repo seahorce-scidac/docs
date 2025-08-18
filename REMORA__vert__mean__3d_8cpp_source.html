@@ -127,34 +127,35 @@ $(document).ready(function(){initNavTree('REMORA__vert__mean__3d_8cpp_source.htm
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                     <span class="keyword">const</span> Array4&lt;Real const&gt;&amp; msk,</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                     <span class="keyword">const</span> <span class="keywordtype">int</span> nnew, <span class="keyword">const</span> <span class="keywordtype">int</span> N)</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    ParallelFor(makeSlab(phi_bx,2,0),</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        Real Hzk_on_face = 0.5_rt*(Hz(i-ioff,j-joff,0)+Hz(i,j,0));</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        CF(i,j,-1) =                 Hzk_on_face;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        DC(i,j,-1) = phi(i,j,0,nnew)*Hzk_on_face;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k=1; k&lt;=N; k++) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            Hzk_on_face = 0.5_rt*(Hz(i-ioff,j-joff,k)+Hz(i,j,k));</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            CF(i,j,-1) +=                 Hzk_on_face;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            DC(i,j,-1) += phi(i,j,k,nnew)*Hzk_on_face;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    });</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    ParallelFor(makeSlab(phi_bx,2,0), [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        Real on_u_or_om_v = 2.0_rt / (pm_or_pn(i-ioff,j-joff,0) + pm_or_pn(i,j,0));</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        Real cff1=1.0_rt/(CF(i,j,-1)*(on_u_or_om_v));</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        DC(i,j,-1) = (DC(i,j,-1)*(on_u_or_om_v) - Dphi_avg1(i,j,0))*cff1; <span class="comment">// recursive</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    });</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    ParallelFor(phi_bx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        phi(i,j,k) -= DC(i,j,-1);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        phi(i,j,k) *= msk(i,j,0);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    });</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    BL_PROFILE(<span class="stringliteral">&quot;REMORA::vert_mean_3d()&quot;</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    ParallelFor(makeSlab(phi_bx,2,0),</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        Real Hzk_on_face = 0.5_rt*(Hz(i-ioff,j-joff,0)+Hz(i,j,0));</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        CF(i,j,-1) =                 Hzk_on_face;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        DC(i,j,-1) = phi(i,j,0,nnew)*Hzk_on_face;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k=1; k&lt;=N; k++) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            Hzk_on_face = 0.5_rt*(Hz(i-ioff,j-joff,k)+Hz(i,j,k));</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            CF(i,j,-1) +=                 Hzk_on_face;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            DC(i,j,-1) += phi(i,j,k,nnew)*Hzk_on_face;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    });</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ParallelFor(makeSlab(phi_bx,2,0), [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        Real on_u_or_om_v = 2.0_rt / (pm_or_pn(i-ioff,j-joff,0) + pm_or_pn(i,j,0));</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        Real cff1=1.0_rt/(CF(i,j,-1)*(on_u_or_om_v));</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        DC(i,j,-1) = (DC(i,j,-1)*(on_u_or_om_v) - Dphi_avg1(i,j,0))*cff1; <span class="comment">// recursive</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    });</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    ParallelFor(phi_bx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        phi(i,j,k) -= DC(i,j,-1);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        phi(i,j,k) *= msk(i,j,0);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    });</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
 </div>
 <div class="ttc" id="aREMORA_8H_html"><div class="ttname"><a href="REMORA_8H.html">REMORA.H</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a466d5c5a68c7cfa02247db51bbe74b19"><div class="ttname"><a href="classREMORA.html#a466d5c5a68c7cfa02247db51bbe74b19">REMORA::vert_mean_3d</a></div><div class="ttdeci">void vert_mean_3d(const amrex::Box &amp;bx, const int ioff, const int joff, const amrex::Array4&lt; amrex::Real &gt; &amp;phi, const amrex::Array4&lt; amrex::Real const &gt; &amp;Hz, const amrex::Array4&lt; amrex::Real const &gt; &amp;Dphi_avg1, const amrex::Array4&lt; amrex::Real &gt; &amp;DC, const amrex::Array4&lt; amrex::Real &gt; &amp;CF, const amrex::Array4&lt; amrex::Real const &gt; &amp;pm_or_pn, const amrex::Array4&lt; amrex::Real const &gt; &amp;msk, const int nnew, const int N)</div><div class="ttdoc">Adjust 3D momentum variables based on vertical mean momentum.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__vert__mean__3d_8cpp_source.html#l00019">REMORA_vert_mean_3d.cpp:19</a></div></div>

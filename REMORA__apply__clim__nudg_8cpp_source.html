@@ -128,19 +128,20 @@ $(document).ready(function(){initNavTree('REMORA__apply__clim__nudg_8cpp_source.
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                         <span class="keyword">const</span> Array4&lt;Real const&gt;&amp; pn,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                         <span class="keyword">const</span> Real dt_lev)</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    ParallelFor(bx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        Real cff = 0.5_rt * (clim_coeff(i-ioff,j-joff,k) + clim_coeff(i,j,k));</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">if</span> (ioff==1 || joff==1) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            Real om = 2.0_rt / (pm(i-ioff,j-joff,0)+pm(i,j,0));</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            Real on = 2.0_rt / (pn(i-ioff,j-joff,0)+pn(i,j,0));</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            cff *= 0.5_rt * (Hz(i-ioff,j-joff,k) + Hz(i,j,k)) * om * on;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            cff *= dt_lev;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        var(i,j,k) += cff * (var_clim(i,j,k) - var_old(i,j,k));</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    });</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    BL_PROFILE(<span class="stringliteral">&quot;REMORA::apply_clim_nudg()&quot;</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    ParallelFor(bx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        Real cff = 0.5_rt * (clim_coeff(i-ioff,j-joff,k) + clim_coeff(i,j,k));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">if</span> (ioff==1 || joff==1) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            Real om = 2.0_rt / (pm(i-ioff,j-joff,0)+pm(i,j,0));</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            Real on = 2.0_rt / (pn(i-ioff,j-joff,0)+pn(i,j,0));</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            cff *= 0.5_rt * (Hz(i-ioff,j-joff,k) + Hz(i,j,k)) * om * on;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            cff *= dt_lev;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        var(i,j,k) += cff * (var_clim(i,j,k) - var_old(i,j,k));</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    });</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 </div>
 <div class="ttc" id="aREMORA_8H_html"><div class="ttname"><a href="REMORA_8H.html">REMORA.H</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a7c79ff9219e7558d2ddd9fed36eb92d8"><div class="ttname"><a href="classREMORA.html#a7c79ff9219e7558d2ddd9fed36eb92d8">REMORA::apply_clim_nudg</a></div><div class="ttdeci">void apply_clim_nudg(const amrex::Box &amp;bx, int ioff, int joff, const amrex::Array4&lt; amrex::Real &gt; &amp;var, const amrex::Array4&lt; amrex::Real const &gt; &amp;var_old, const amrex::Array4&lt; amrex::Real const &gt; &amp;var_clim, const amrex::Array4&lt; amrex::Real const &gt; &amp;clim_coeff, const amrex::Array4&lt; amrex::Real const &gt; &amp;Hz, const amrex::Array4&lt; amrex::Real const &gt; &amp;pm, const amrex::Array4&lt; amrex::Real const &gt; &amp;pn, const amrex::Real dt_lev=amrex::Real(0.0))</div><div class="ttdoc">Apply climatology nudging.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__apply__clim__nudg_8cpp_source.html#l00019">REMORA_apply_clim_nudg.cpp:19</a></div></div>

@@ -3,7 +3,7 @@ var searchData=
   ['plotfilename_0',['PlotFileName',['../classREMORA.html#ac4d8c0cbac8976c70668280de6a142c2',1,'REMORA']]],
   ['post_5ftimestep_1',['post_timestep',['../classREMORA.html#a697e9a0fc5d32cd8833f68defaa65467',1,'REMORA']]],
   ['prestep_2',['prestep',['../classREMORA.html#a707974bad372495d62963171d386b792',1,'REMORA']]],
-  ['prestep_5fdiffusion_3',['prestep_diffusion',['../classREMORA.html#a0dcfa91810e83ac902f4aba8894a49cf',1,'REMORA']]],
+  ['prestep_5fdiffusion_3',['prestep_diffusion',['../classREMORA.html#a464f0a5dcf552c0d583ddb195cdc062e',1,'REMORA']]],
   ['prestep_5ft_5fadvection_4',['prestep_t_advection',['../classREMORA.html#ad0bb083a8160b10ba0202729281a9541',1,'REMORA']]],
   ['print_5fbanner_5',['print_banner',['../classREMORA.html#aa2dfec87e25516cbc261ca777dc84b95',1,'REMORA']]],
   ['print_5ferror_6',['print_error',['../classREMORA.html#a1d985e2dcb2668dcba7bb46e568554f6',1,'REMORA']]],

@@ -5,7 +5,7 @@ var searchData=
   ['d02_2',['D02',['../REMORA__Constants_8H.html#a64a31ef7af72a46f448aeed370592d31',1,'REMORA_Constants.H']]],
   ['data_3',['data',['../structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e',1,'NDArray']]],
   ['datalog_4',['datalog',['../classREMORA.html#ad3530fc80b87c25ce728095929a4ea99',1,'REMORA::datalog'],['../classREMORA.html#ad2412b07f92537bc22d058e59d6cf426',1,'REMORA::DataLog(int i)']]],
-  ['datalogname_5',['datalogname',['../classREMORA.html#a8062b4dcb1ea9deba016d427d23480aa',1,'REMORA::DataLogName(int i) const noexcept'],['../classREMORA.html#a39048951d6927086a690d57a53754160',1,'REMORA::datalogname']]],
+  ['datalogname_5',['datalogname',['../classREMORA.html#a39048951d6927086a690d57a53754160',1,'REMORA::datalogname'],['../classREMORA.html#a8062b4dcb1ea9deba016d427d23480aa',1,'REMORA::DataLogName(int i) const noexcept']]],
   ['def_5farray_6',['def_array',['../classncutils_1_1NCFile.html#a32f59732fe788fd03b5fe9969eebd3fd',1,'ncutils::NCFile']]],
   ['def_5farray_5ffill_7',['def_array_fill',['../classncutils_1_1NCFile.html#aff4928d9721da70bb27132bc1a2d59b0',1,'ncutils::NCFile']]],
   ['def_5fdim_8',['def_dim',['../classncutils_1_1NCFile.html#a8cf59bbbf55da997460a610b31bde8a2',1,'ncutils::NCFile']]],
