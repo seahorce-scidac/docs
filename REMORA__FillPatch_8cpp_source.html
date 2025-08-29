@@ -200,16 +200,16 @@ $(document).ready(function(){initNavTree('REMORA__FillPatch_8cpp_source.html',''
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(1,0,0)))</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        mapper = &amp;face_cons_linear_interp;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        mask   = <a class="code hl_variable" href="classREMORA.html#a495638b4cabe139ecdff6a3e8fb7317d">vec_msku</a>[lev].get();</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(0,1,0)))</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    {</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        mapper = &amp;face_cons_linear_interp;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        mask   = <a class="code hl_variable" href="classREMORA.html#a74a4e71cfbac3f7792e1ea70e29cff36">vec_mskv</a>[lev].get();</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        mapper = &amp;face_cons_linear_interp;</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        mask   = <a class="code hl_variable" href="classREMORA.html#a271d86c1e20a76bd279fb2ae3411b17d">vec_mskr</a>[lev].get();</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
@@ -365,16 +365,16 @@ $(document).ready(function(){initNavTree('REMORA__FillPatch_8cpp_source.html',''
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(1,0,0)))</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    {</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        bccomp = <a class="code hl_enumvalue" href="namespaceBCVars.html#aa5bb40192aa03c435b8f7096cb02e16dab1782753c68aaad8632b0a7d575e57f4">BCVars::xvel_bc</a>;</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        mapper = &amp;face_cons_linear_interp;</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    }</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mf_box.ixType() == IndexType(IntVect(0,1,0)))</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    {</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        bccomp = <a class="code hl_enumvalue" href="namespaceBCVars.html#aa5bb40192aa03c435b8f7096cb02e16da98ad22810fdfe9e585bc6481fc12454e">BCVars::yvel_bc</a>;</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        mapper = &amp;face_cons_linear_interp;</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    }</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        bccomp = <a class="code hl_enumvalue" href="namespaceBCVars.html#aa5bb40192aa03c435b8f7096cb02e16da03b35ec9e83f34bb1349a86965d34e34">BCVars::zvel_bc</a>;</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        mapper = &amp;face_linear_interp;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        mapper = &amp;face_cons_linear_interp;</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">if</span> (lev == 0)</div>
@@ -614,15 +614,15 @@ $(document).ready(function(){initNavTree('REMORA__FillPatch_8cpp_source.html',''
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>        }</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(1,0,0)))</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>        {</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>            mapper = &amp;face_linear_interp;</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>            mapper = &amp;face_cons_linear_interp;</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>        }</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(0,1,0)))</div>
 <div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        {</div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>            mapper = &amp;face_linear_interp;</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>            mapper = &amp;face_cons_linear_interp;</div>
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>        }</div>
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (box_mf.ixType() == IndexType(IntVect(0,0,1)))</div>
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>        {</div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>            mapper = &amp;face_linear_interp;</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>            mapper = &amp;face_cons_linear_interp;</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>              amrex::Abort(<span class="stringliteral">&quot;Dont recognize this box type in REMORA_FillPatch&quot;</span>);</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>        }</div>
