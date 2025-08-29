@@ -8,5 +8,6 @@ var searchData=
   ['eminusp_5fcorrect_5fssh_5',['eminusp_correct_ssh',['../structSolverChoice.html#a65f90912d34e882ba29cb64a20f56ceb',1,'SolverChoice']]],
   ['emmiss_6',['emmiss',['../REMORA__Constants_8H.html#abc9c124a2d78e72fdc69d32a267c4497',1,'REMORA_Constants.H']]],
   ['eos_5ftype_7',['eos_type',['../structSolverChoice.html#a48f3f43f3386d6b7dab9e15cfd0db11e',1,'SolverChoice']]],
-  ['eradius_8',['Eradius',['../REMORA__Constants_8H.html#a293dbdde8ae4c8260e4b71203e468134',1,'REMORA_Constants.H']]]
+  ['eradius_8',['Eradius',['../REMORA__Constants_8H.html#a293dbdde8ae4c8260e4b71203e468134',1,'REMORA_Constants.H']]],
+  ['expand_5fplotvars_5fto_5funif_5frr_9',['expand_plotvars_to_unif_rr',['../classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4',1,'REMORA']]]
 ];

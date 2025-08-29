@@ -15,5 +15,6 @@ var searchData=
   ['esttimestep_12',['estTimeStep',['../classREMORA.html#ac71630052015782fce4f20e204e42016',1,'REMORA']]],
   ['evolve_13',['Evolve',['../classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e',1,'REMORA']]],
   ['exit_5fdef_5fmode_14',['exit_def_mode',['../classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96',1,'ncutils::NCFile']]],
-  ['ext_5fdir_15',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]]
+  ['expand_5fplotvars_5fto_5funif_5frr_15',['expand_plotvars_to_unif_rr',['../classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4',1,'REMORA']]],
+  ['ext_5fdir_16',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]]
 ];
