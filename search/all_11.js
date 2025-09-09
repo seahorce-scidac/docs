@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['s_0',['s',['../namespaceBdyVars.html#a880b2c6c83d360e222490c31fa5e4adaa40bfe6bb7d655e928ae9659acd35b8c4',1,'BdyVars']]],
+  ['s_0',['s',['../namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fa40bfe6bb7d655e928ae9659acd35b8c4',1,'BdyVars']]],
   ['s0_1',['S0',['../structSolverChoice.html#af8337b0c99a50300e9880db3e8296d91',1,'SolverChoice']]],
   ['s_5fr_2',['s_r',['../classREMORA.html#a642e97c92cba81e923ad6578c7ad8204',1,'REMORA']]],
   ['s_5fw_3',['s_w',['../classREMORA.html#a2332a1e82502ff4ca9cc157adfe03ff3',1,'REMORA']]],
-  ['salt_5fbc_5fcomp_4',['Salt_bc_comp',['../namespaceBCVars.html#aa5bb40192aa03c435b8f7096cb02e16dab284ea9b749e574cd1d0493de25e459e',1,'BCVars']]],
+  ['salt_5fbc_5fcomp_4',['Salt_bc_comp',['../namespaceBCVars.html#a00367571247ba920989360b94c156f4aab284ea9b749e574cd1d0493de25e459e',1,'BCVars']]],
   ['salt_5fclim_5fdata_5ffrom_5ffile_5',['salt_clim_data_from_file',['../classREMORA.html#aadffb192059b27b514401214644aaded',1,'REMORA']]],
   ['salt_5fcomp_6',['Salt_comp',['../REMORA__IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf',1,'REMORA_IndexDefines.H']]],
   ['save_5finterpolated_7',['save_interpolated',['../classNCTimeSeries.html#a2906c98db6ce85fcd9f099e6534ed165',1,'NCTimeSeries']]],
-  ['scalar_5fbc_5fcomp_8',['Scalar_bc_comp',['../namespaceBCVars.html#aa5bb40192aa03c435b8f7096cb02e16da59e20f7c1b74c9cbdbc9300394bbc335',1,'BCVars']]],
+  ['scalar_5fbc_5fcomp_8',['Scalar_bc_comp',['../namespaceBCVars.html#a00367571247ba920989360b94c156f4aa59e20f7c1b74c9cbdbc9300394bbc335',1,'BCVars']]],
   ['scalar_5fcomp_9',['Scalar_comp',['../REMORA__IndexDefines_8H.html#a4dd1335cac3e63bb654450bb807978a4',1,'REMORA_IndexDefines.H']]],
   ['scale_5frhs_5fvars_10',['scale_rhs_vars',['../classREMORA.html#a0e52181fc8afcf83ce6c8995eb36f721',1,'REMORA']]],
   ['scale_5frhs_5fvars_5finv_11',['scale_rhs_vars_inv',['../classREMORA.html#aa3b43d7e3555ad14b08109b42c4f79d8',1,'REMORA']]],

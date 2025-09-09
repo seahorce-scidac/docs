@@ -1,7 +1,7 @@
 var searchData=
 [
   ['pair_0',['Pair',['../structSolverChoice.html#a278e06d877dc4121d5d59a59095a47d0',1,'SolverChoice']]],
-  ['pcinterp_1',['PCInterp',['../namespaceInterpType.html#a3a0ab7e52e13118c93cdce87deeed9f4a6ece140c8e1d325d1a2b3615064284c3',1,'InterpType']]],
+  ['pcinterp_1',['PCInterp',['../namespaceInterpType.html#ac65aa6d3ffa2549732d15f959cff81aba6ece140c8e1d325d1a2b3615064284c3',1,'InterpType']]],
   ['periodic_2',['periodic',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ae6ffdec5e14fce371eb7ae99edebbbee',1,'REMORA_IndexDefines.H']]],
   ['phys_5fbc_5fneed_5fdata_3',['phys_bc_need_data',['../classREMORA.html#acf943a066a96e5d5926400a5adadc195',1,'REMORA']]],
   ['phys_5fbc_5ftype_4',['phys_bc_type',['../classREMORA.html#a24b59dfb4efe24c524862e0d4375b07f',1,'REMORA']]],

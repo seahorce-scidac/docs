@@ -34,6 +34,5 @@ var namespaces_dup =
         [ "orlanski_rad", "namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a2ab9bbca7b5115df69fb69555ddf79bf", null ],
         [ "orlanski_rad_nudge", "namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346ab304567a78a4ea353b0d646ee13459a8", null ]
       ] ]
-    ] ],
-    [ "REMORABdyTypes", "namespaceREMORABdyTypes.html", null ]
+    ] ]
 ];

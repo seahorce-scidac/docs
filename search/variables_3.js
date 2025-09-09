@@ -21,7 +21,7 @@ var searchData=
   ['do_5fsubstep_18',['do_substep',['../classREMORA.html#a2c050fd7227b627691a3c074eb104c8d',1,'REMORA']]],
   ['do_5ftemp_5fclim_5fnudg_19',['do_temp_clim_nudg',['../structSolverChoice.html#aba3fed4dad7b28dadbfc543196b185c1',1,'SolverChoice']]],
   ['do_5ftemp_5fflux_20',['do_temp_flux',['../structSolverChoice.html#af2536abf9cbf11b259ac3267d8be2105',1,'SolverChoice']]],
-  ['domain_21',['domain',['../classNCTimeSeries.html#a52b1efdb2e35f56ad86df2aa461a0b54',1,'NCTimeSeries']]],
+  ['domain_21',['domain',['../classNCTimeSeries.html#a52b1efdb2e35f56ad86df2aa461a0b54',1,'NCTimeSeries::domain'],['../classNCTimeSeriesBoundary.html#ae24475b0f367f045b3821257bf5f9be7',1,'NCTimeSeriesBoundary::domain']]],
   ['domain_5fbc_5ftype_22',['domain_bc_type',['../classREMORA.html#ac686c83706316dc3388d6c1d6b270a2c',1,'REMORA']]],
   ['domain_5fbcs_5ftype_23',['domain_bcs_type',['../classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f',1,'REMORA']]],
   ['domain_5fbcs_5ftype_5fd_24',['domain_bcs_type_d',['../classREMORA.html#af4c01c1be8a352c96a61e03e08c25121',1,'REMORA']]],

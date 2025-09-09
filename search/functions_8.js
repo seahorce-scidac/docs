@@ -36,7 +36,7 @@ var searchData=
   ['init_5fstuff_33',['init_stuff',['../classREMORA.html#a98ad64e4a964e4748ebae07a26405286',1,'REMORA']]],
   ['init_5fzeta_5ffrom_5fnetcdf_34',['init_zeta_from_netcdf',['../classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0',1,'REMORA']]],
   ['initdata_35',['InitData',['../classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089',1,'REMORA']]],
-  ['initialize_36',['initialize',['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()']]],
+  ['initialize_36',['initialize',['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()'],['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()']]],
   ['initializefromfile_37',['InitializeFromFile',['../classREMORA.html#af25043e75bc350bc40ae56f65649554b',1,'REMORA']]],
   ['initializelevelfromdata_38',['InitializeLevelFromData',['../classREMORA.html#abc5dc3d0306ebb6507e6c702241f07a0',1,'REMORA']]],
   ['interpcell_39',['InterpCell',['../classREMORAFillPatcher.html#a61e471f7848c2e0ba119380c0063b368',1,'REMORAFillPatcher']]],
