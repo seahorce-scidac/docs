@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('REMORA__setup__step_8cpp_source.html',
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    MultiFab&amp; V_new = *<a class="code hl_variable" href="classREMORA.html#a57327a8173b5dd09f9db6ce23f745dd5">yvel_new</a>[lev];</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    MultiFab&amp; W_new = *<a class="code hl_variable" href="classREMORA.html#a3950916f4ed965bcd10f62e28e08fd76">zvel_new</a>[lev];</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">int</span> nvars = S_old.nComp();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    [[maybe_unused]] <span class="keywordtype">int</span> nvars = S_old.nComp();</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// Fill ghost cells/faces at old time</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b">FillPatchNoBC</a>(lev, time, *<a class="code hl_variable" href="classREMORA.html#abc6ebdcc84239b993b12b3c95425fa88">cons_old</a>[lev], <a class="code hl_variable" href="classREMORA.html#abc6ebdcc84239b993b12b3c95425fa88">cons_old</a>, <a class="code hl_enumvalue" href="namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fabd1c55aaa78d7bcedd3a0e21005f2955">BdyVars::t</a>);</div>
