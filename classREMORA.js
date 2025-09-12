@@ -263,7 +263,7 @@ var classREMORA =
     [ "vec_evap", "classREMORA.html#a0cac5202ef990e9e839ce788fef34ec6", null ],
     [ "vec_fcor", "classREMORA.html#a13f9894ec6aca96e68687e7a6762e337", null ],
     [ "vec_gls", "classREMORA.html#a3199f163918597f4654c2a73d4bf9d08", null ],
-    [ "vec_hOfTheConfusingName", "classREMORA.html#a157e7645fedcf8c0b46516dbb625d3bd", null ],
+    [ "vec_h", "classREMORA.html#a16c0ecb29fa9848bdf12fa014753907e", null ],
     [ "vec_Huon", "classREMORA.html#a89f042895cd59cc1a1226f2af2d3e04f", null ],
     [ "vec_Hvom", "classREMORA.html#afd1aab14dfc9155d65e48aad2b34ef42", null ],
     [ "vec_Hz", "classREMORA.html#a488738b1aea61abbbf086a9d22b4f815", null ],

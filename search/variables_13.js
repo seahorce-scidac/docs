@@ -26,7 +26,7 @@ var searchData=
   ['vec_5fevap_23',['vec_evap',['../classREMORA.html#a0cac5202ef990e9e839ce788fef34ec6',1,'REMORA']]],
   ['vec_5ffcor_24',['vec_fcor',['../classREMORA.html#a13f9894ec6aca96e68687e7a6762e337',1,'REMORA']]],
   ['vec_5fgls_25',['vec_gls',['../classREMORA.html#a3199f163918597f4654c2a73d4bf9d08',1,'REMORA']]],
-  ['vec_5fhoftheconfusingname_26',['vec_hOfTheConfusingName',['../classREMORA.html#a157e7645fedcf8c0b46516dbb625d3bd',1,'REMORA']]],
+  ['vec_5fh_26',['vec_h',['../classREMORA.html#a16c0ecb29fa9848bdf12fa014753907e',1,'REMORA']]],
   ['vec_5fhuon_27',['vec_Huon',['../classREMORA.html#a89f042895cd59cc1a1226f2af2d3e04f',1,'REMORA']]],
   ['vec_5fhvom_28',['vec_Hvom',['../classREMORA.html#afd1aab14dfc9155d65e48aad2b34ef42',1,'REMORA']]],
   ['vec_5fhz_29',['vec_Hz',['../classREMORA.html#a488738b1aea61abbbf086a9d22b4f815',1,'REMORA']]],
