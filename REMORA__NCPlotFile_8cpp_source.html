@@ -690,10 +690,10 @@ $(document).ready(function(){initNavTree('REMORA__NCPlotFile_8cpp_source.html','
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                <span class="keywordflow">if</span> (bx.contains(IntVect(0,0,0)))</div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>                {</div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>                    {</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>                        amrex::Gpu::DeviceVector&lt;amrex::Real&gt; tmp_srho(local_nz);</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>                        amrex::Vector&lt;amrex::Real&gt; tmp_srho(local_nz);</div>
 <div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="preprocessor">#ifdef AMREX_USE_GPU</span></div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>                        Gpu::htod_memcpy(tmp_srho.data(), <a class="code hl_variable" href="classREMORA.html#a642e97c92cba81e923ad6578c7ad8204">s_r</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*local_nz);</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>                        Gpu::dtoh_memcpy(tmp_srho.data(), <a class="code hl_variable" href="classREMORA.html#a642e97c92cba81e923ad6578c7ad8204">s_r</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*local_nz);</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>                        std::memcpy(tmp_srho.data(), <a class="code hl_variable" href="classREMORA.html#a642e97c92cba81e923ad6578c7ad8204">s_r</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*local_nz);</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="preprocessor">#endif</span></div>
@@ -704,10 +704,10 @@ $(document).ready(function(){initNavTree('REMORA__NCPlotFile_8cpp_source.html','
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>                        nc_plot_var.<a class="code hl_function" href="structncutils_1_1NCVar.html#a4e8fff402cd5e79f76ac029288756105">put</a>(tmp_srho.data(), { local_start_z }, { local_nz });</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>                    }</div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>                    {</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>                        amrex::Gpu::DeviceVector&lt;amrex::Real&gt; tmp_sw(local_nz+1);</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>                        amrex::Vector&lt;amrex::Real&gt; tmp_sw(local_nz+1);</div>
 <div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span> </div>
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="preprocessor">#ifdef AMREX_USE_GPU</span></div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>                        Gpu::htod_memcpy(tmp_sw.data(), <a class="code hl_variable" href="classREMORA.html#a2332a1e82502ff4ca9cc157adfe03ff3">s_w</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*(local_nz+1));</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>                        Gpu::dtoh_memcpy(tmp_sw.data(), <a class="code hl_variable" href="classREMORA.html#a2332a1e82502ff4ca9cc157adfe03ff3">s_w</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*(local_nz+1));</div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>                        std::memcpy(tmp_sw.data(), <a class="code hl_variable" href="classREMORA.html#a2332a1e82502ff4ca9cc157adfe03ff3">s_w</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*(local_nz+1));</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="preprocessor">#endif</span></div>
@@ -718,10 +718,10 @@ $(document).ready(function(){initNavTree('REMORA__NCPlotFile_8cpp_source.html','
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>                        nc_plot_var.<a class="code hl_function" href="structncutils_1_1NCVar.html#a4e8fff402cd5e79f76ac029288756105">put</a>(tmp_sw.data(), { local_start_z }, { local_nz + 1});</div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>                    }</div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>                    {</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>                        amrex::Gpu::DeviceVector&lt;amrex::Real&gt; tmp_Csrho(local_nz);</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>                        amrex::Vector&lt;amrex::Real&gt; tmp_Csrho(local_nz);</div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span> </div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="preprocessor">#ifdef AMREX_USE_GPU</span></div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>                        Gpu::htod_memcpy(tmp_Csrho.data(), <a class="code hl_variable" href="classREMORA.html#aa5f19e735d73db7c3b44a9858b1f6ad7">Cs_r</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*(local_nz));</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>                        Gpu::dtoh_memcpy(tmp_Csrho.data(), <a class="code hl_variable" href="classREMORA.html#aa5f19e735d73db7c3b44a9858b1f6ad7">Cs_r</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*(local_nz));</div>
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                        std::memcpy(tmp_Csrho.data(), <a class="code hl_variable" href="classREMORA.html#aa5f19e735d73db7c3b44a9858b1f6ad7">Cs_r</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*(local_nz));</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span><span class="preprocessor">#endif</span></div>
@@ -732,10 +732,10 @@ $(document).ready(function(){initNavTree('REMORA__NCPlotFile_8cpp_source.html','
 <div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>                        nc_plot_var.<a class="code hl_function" href="structncutils_1_1NCVar.html#a4e8fff402cd5e79f76ac029288756105">put</a>(tmp_Csrho.data(), { local_start_z }, { local_nz });</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>                    }</div>
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>                    {</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>                        amrex::Gpu::DeviceVector&lt;amrex::Real&gt; tmp_Csw(local_nz+1);</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>                        amrex::Vector&lt;amrex::Real&gt; tmp_Csw(local_nz+1);</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> </div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span><span class="preprocessor">#ifdef AMREX_USE_GPU</span></div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                        Gpu::htod_memcpy(tmp_Csw.data(), <a class="code hl_variable" href="classREMORA.html#ab91481037f0032837c22dbcf45440bef">Cs_w</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*(local_nz+1));</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                        Gpu::dtoh_memcpy(tmp_Csw.data(), <a class="code hl_variable" href="classREMORA.html#ab91481037f0032837c22dbcf45440bef">Cs_w</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*(local_nz+1));</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>                        std::memcpy(tmp_Csw.data(), <a class="code hl_variable" href="classREMORA.html#ab91481037f0032837c22dbcf45440bef">Cs_w</a>.data(), <span class="keyword">sizeof</span>(amrex::Real)*(local_nz+1));</div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span><span class="preprocessor">#endif</span></div>
