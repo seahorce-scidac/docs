@@ -65,9 +65,9 @@ var NAVTREEINDEX =
 "REMORA_8H.html",
 "REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67",
 "classREMORA.html#a2b8ea8e7b1db929b8a9c3c8180ee0341",
-"classREMORA.html#ae32769c0aa47ddd6e15f3b5866f9252a",
-"namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aa8f1b3ad9a76977588e149a0f264e93b",
-"structncutils_1_1NCVar.html#a846256bf4a81477110ba46082bc3384b"
+"classREMORA.html#ae2e918864aa8456dabdfeb8e81832374",
+"namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a9994ccef2f6dcda504622422bd4f0693",
+"structncutils_1_1NCVar.html#a7fa8fba1898b0e1907502ec8edfc074c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
