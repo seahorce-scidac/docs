@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('REMORA__PC__Init_8cpp_source.html','')
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    ParmParse pp(<span class="stringliteral">&quot;remora.&quot;</span>+m_name);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    m_initialization_type = REMORAParticleInitializations::init_box_uniform;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    pp.query(<span class="stringliteral">&quot;initial_distribution_type&quot;</span>, m_initialization_type);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    pp.queryAdd(<span class="stringliteral">&quot;initial_distribution_type&quot;</span>, m_initialization_type);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> (m_initialization_type == REMORAParticleInitializations::init_box_uniform)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
@@ -135,14 +135,14 @@ $(document).ready(function(){initNavTree('REMORA__PC__Init_8cpp_source.html','')
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">// We default to placing the particles randomly within each cell,</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="comment">// but can override this for regression testing</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        place_randomly_in_cells = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        pp.query(<span class="stringliteral">&quot;place_randomly_in_cells&quot;</span>, place_randomly_in_cells);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        pp.queryAdd(<span class="stringliteral">&quot;place_randomly_in_cells&quot;</span>, place_randomly_in_cells);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    m_ppc_init = 1;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    pp.query(<span class="stringliteral">&quot;initial_particles_per_cell&quot;</span>, m_ppc_init);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    pp.queryAdd(<span class="stringliteral">&quot;initial_particles_per_cell&quot;</span>, m_ppc_init);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    m_advect_w_flow = (m_name == REMORAParticleNames::tracers ? true : <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    pp.query(<span class="stringliteral">&quot;advect_with_flow&quot;</span>, m_advect_w_flow);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    pp.queryAdd(<span class="stringliteral">&quot;advect_with_flow&quot;</span>, m_advect_w_flow);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>

@@ -114,8 +114,8 @@ $(document).ready(function(){initNavTree('REMORA__Tracers_8cpp_source.html','');
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    m_use_tracer_particles = 0;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    m_use_hydro_particles = 0;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    pp.query(std::string(<span class="stringliteral">&quot;use_&quot;</span>+REMORAParticleNames::tracers).c_str(), m_use_tracer_particles);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    pp.query(std::string(<span class="stringliteral">&quot;use_&quot;</span>+REMORAParticleNames::hydro).c_str(), m_use_hydro_particles);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    pp.queryAdd(std::string(<span class="stringliteral">&quot;use_&quot;</span>+REMORAParticleNames::tracers).c_str(), m_use_tracer_particles);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    pp.queryAdd(std::string(<span class="stringliteral">&quot;use_&quot;</span>+REMORAParticleNames::hydro).c_str(), m_use_hydro_particles);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">if</span> (m_use_tracer_particles) {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        particleData.addName(REMORAParticleNames::tracers);</div>
