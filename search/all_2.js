@@ -27,7 +27,7 @@ var searchData=
   ['bottom_5fstress_5ftype_24',['bottom_stress_type',['../structSolverChoice.html#a87953245714a80185fceae6fe421a81e',1,'SolverChoice']]],
   ['bottomstresstype_25',['BottomStressType',['../REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4',1,'REMORA_DataStruct.H']]],
   ['boundary_5ffrom_5fnetcdf_26',['boundary_from_netcdf',['../structSolverChoice.html#a73e08531bdac22cdef52a8511b4fffa5',1,'SolverChoice']]],
-  ['boundary_5fseries_27',['boundary_series',['../classREMORA.html#a4c0f445fec741e7333ec154406ca9af0',1,'REMORA']]],
+  ['boundary_5fseries_27',['boundary_series',['../classREMORA.html#ab58ae4f5591bf7a2a7236c64a02cf3aa',1,'REMORA']]],
   ['boxes_5fat_5flevel_28',['boxes_at_level',['../classREMORA.html#a45b928a121bd6c5e75ec75732a27f774',1,'REMORA']]],
   ['bry_5ftimes_29',['bry_times',['../classNCTimeSeriesBoundary.html#a54f9df7dd085febef21cf3e58325ceb5',1,'NCTimeSeriesBoundary']]],
   ['bt_5friv_30',['BT_Riv',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06aa8083b9e3c291a871dd61f9dab9df2af',1,'REMORA_NCFile.H']]],

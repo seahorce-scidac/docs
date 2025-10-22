@@ -1,6 +1,6 @@
 var classNCTimeSeriesBoundary =
 [
-    [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html#a702ebe1447c7bfd735fd78d89ac67da8", null ],
+    [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html#a59a67f5d33e62fe797dbbfee2c5afb86", null ],
     [ "Initialize", "classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63", null ],
     [ "read_in_at_time", "classNCTimeSeriesBoundary.html#aa59234163bfc966da5e57d66865745b4", null ],
     [ "update_interpolated_to_time", "classNCTimeSeriesBoundary.html#ac762fa3a2c74a20a66ddcbabf8e93877", null ],
@@ -13,6 +13,10 @@ var classNCTimeSeriesBoundary =
     [ "i_time_before", "classNCTimeSeriesBoundary.html#a7306bf818fa5c352f3bb63e7c2848d4e", null ],
     [ "index_type", "classNCTimeSeriesBoundary.html#a5ebacba3889b3e83a841b88b94ba74cc", null ],
     [ "is2d", "classNCTimeSeriesBoundary.html#ac04c4f6c08f4b1f5c6b218977275e1c5", null ],
+    [ "m_geom", "classNCTimeSeriesBoundary.html#a8ca78813df73f0645f004c4818293cf7", null ],
+    [ "m_lev", "classNCTimeSeriesBoundary.html#ac92b18b3a9482e01d913021b7eb9a894", null ],
+    [ "m_rx", "classNCTimeSeriesBoundary.html#adf3890ef58e8cf04e68ba2a55d493824", null ],
+    [ "m_ry", "classNCTimeSeriesBoundary.html#a09dbc4ac0f047a57c8d29cefa61f6b0c", null ],
     [ "nc_var_names", "classNCTimeSeriesBoundary.html#a1eaf46471a1304fed218448222bc3580", null ],
     [ "time_after", "classNCTimeSeriesBoundary.html#afa12b155c7bf216b2da04bf626058051", null ],
     [ "time_before", "classNCTimeSeriesBoundary.html#a32da6694727873e733553f55d793920e", null ],
