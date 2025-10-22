@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"namespaceBdyVars.html":[1,0,2],
 "namespaceInterpType.html":[1,0,5],
 "namespaceREMORABCType.html":[1,0,8],
 "namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346":[1,0,8,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "structncutils_1_1NCVar.html#a720f935c1949f56e31eb057dbc1e7ea6":[2,0,0,3,20],
 "structncutils_1_1NCVar.html#a720f935c1949f56e31eb057dbc1e7ea6":[1,0,6,3,20],
 "structncutils_1_1NCVar.html#a72558ae45f30bed210d68c26ec57cb13":[2,0,0,3,45],
-"structncutils_1_1NCVar.html#a72558ae45f30bed210d68c26ec57cb13":[1,0,6,3,45],
-"structncutils_1_1NCVar.html#a772e15bd67ced09d02a35c67e122c8d5":[1,0,6,3,27]
+"structncutils_1_1NCVar.html#a72558ae45f30bed210d68c26ec57cb13":[1,0,6,3,45]
 };

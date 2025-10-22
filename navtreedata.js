@@ -64,9 +64,9 @@ var NAVTREEINDEX =
 [
 "REMORA_8H.html",
 "REMORA__Plotfile_8cpp.html",
-"classREMORA.html#a295ab241204aca35cc4c720392bb3fd2",
-"classREMORA.html#adba780a7c66c2158c914bff64964df60",
-"namespaceInterpType.html",
+"classREMORA.html#a28c2e36d1783550310f26d0e9ba8cdca",
+"classREMORA.html#ad9ee5aba5b9cb8e020e6cbc8ff3cff74",
+"namespaceBdyVars.html",
 "structncutils_1_1NCVar.html#a772e15bd67ced09d02a35c67e122c8d5"
 ];
 
