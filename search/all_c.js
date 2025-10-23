@@ -19,7 +19,7 @@ var searchData=
   ['ncid_16',['ncid',['../structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544',1,'ncutils::NCDim::ncid'],['../structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218',1,'ncutils::NCVar::ncid'],['../classncutils_1_1NCFile.html#a08428af09deb00321229ef4c20587476',1,'ncutils::NCFile::ncid']]],
   ['ncons_17',['NCONS',['../REMORA__IndexDefines_8H.html#ae3f12540307d28407f8d7dd4a169e325',1,'REMORA_IndexDefines.H']]],
   ['nctimeseries_18',['nctimeseries',['../classNCTimeSeries.html',1,'NCTimeSeries'],['../classNCTimeSeries.html#af9edb564b8cf5cf4204624c44eae0866',1,'NCTimeSeries::NCTimeSeries()']]],
-  ['nctimeseriesboundary_19',['nctimeseriesboundary',['../classNCTimeSeriesBoundary.html#a59a67f5d33e62fe797dbbfee2c5afb86',1,'NCTimeSeriesBoundary::NCTimeSeriesBoundary()'],['../classNCTimeSeriesBoundary.html',1,'NCTimeSeriesBoundary']]],
+  ['nctimeseriesboundary_19',['nctimeseriesboundary',['../classNCTimeSeriesBoundary.html#ae05862e7da2ddcf558727c3c370d5fd1',1,'NCTimeSeriesBoundary::NCTimeSeriesBoundary()'],['../classNCTimeSeriesBoundary.html',1,'NCTimeSeriesBoundary']]],
   ['nctimeseriesriver_20',['nctimeseriesriver',['../classNCTimeSeriesRiver.html',1,'NCTimeSeriesRiver'],['../classNCTimeSeriesRiver.html#afa69a102935d2558fa798bb1929b74cb',1,'NCTimeSeriesRiver::NCTimeSeriesRiver()']]],
   ['ncutils_21',['ncutils',['../namespacencutils.html',1,'']]],
   ['ncvar_22',['NCVar',['../structncutils_1_1NCVar.html',1,'ncutils']]],

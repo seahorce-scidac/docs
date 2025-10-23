@@ -1,7 +1,8 @@
 var classNCTimeSeriesBoundary =
 [
-    [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html#a59a67f5d33e62fe797dbbfee2c5afb86", null ],
+    [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html#ae05862e7da2ddcf558727c3c370d5fd1", null ],
     [ "Initialize", "classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63", null ],
+    [ "interp_fab", "classNCTimeSeriesBoundary.html#a0831532ec2874705078026fce481a6b8", null ],
     [ "read_in_at_time", "classNCTimeSeriesBoundary.html#aa59234163bfc966da5e57d66865745b4", null ],
     [ "update_interpolated_to_time", "classNCTimeSeriesBoundary.html#ac762fa3a2c74a20a66ddcbabf8e93877", null ],
     [ "bry_times", "classNCTimeSeriesBoundary.html#a54f9df7dd085febef21cf3e58325ceb5", null ],

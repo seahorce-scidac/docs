@@ -52,7 +52,7 @@ var searchData=
   ['inputs_5fname_49',['inputs_name',['../main_8cpp.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name:&#160;main.cpp'],['../REMORA__writeJobInfo_8cpp.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name:&#160;main.cpp'],['../REMORA__NCPlotFile_8H.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name:&#160;main.cpp']]],
   ['int_50',['Int',['../structncutils_1_1NCDType.html#ac5bfba212db12de3dfde52dc3ae3eb0c',1,'ncutils::NCDType']]],
   ['int_5fdir_51',['int_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a223988127b7e8a66aabbc3a1f98dddf0',1,'REMORABCType']]],
-  ['interp_5ffab_52',['interp_fab',['../REMORA__NCTimeSeriesBoundary_8cpp.html#a1a323b3983696bc5868b5e800aab050d',1,'REMORA_NCTimeSeriesBoundary.cpp']]],
+  ['interp_5ffab_52',['interp_fab',['../classNCTimeSeriesBoundary.html#a0831532ec2874705078026fce481a6b8',1,'NCTimeSeriesBoundary']]],
   ['interpcell_53',['InterpCell',['../classREMORAFillPatcher.html#a61e471f7848c2e0ba119380c0063b368',1,'REMORAFillPatcher']]],
   ['interpface_54',['InterpFace',['../classREMORAFillPatcher.html#aad8d35f93cf74ecc7b2d1a031b5ce890',1,'REMORAFillPatcher']]],
   ['interpolate_5f1d_55',['interpolate_1d',['../REMORA__Math_8H.html#a803d0d35d4ca4791556cbe02bbf51cbb',1,'REMORA_Math.H']]],

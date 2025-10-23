@@ -39,7 +39,7 @@ var searchData=
   ['initialize_36',['initialize',['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()'],['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()']]],
   ['initializefromfile_37',['InitializeFromFile',['../classREMORA.html#af25043e75bc350bc40ae56f65649554b',1,'REMORA']]],
   ['initializelevelfromdata_38',['InitializeLevelFromData',['../classREMORA.html#abc5dc3d0306ebb6507e6c702241f07a0',1,'REMORA']]],
-  ['interp_5ffab_39',['interp_fab',['../REMORA__NCTimeSeriesBoundary_8cpp.html#a1a323b3983696bc5868b5e800aab050d',1,'REMORA_NCTimeSeriesBoundary.cpp']]],
+  ['interp_5ffab_39',['interp_fab',['../classNCTimeSeriesBoundary.html#a0831532ec2874705078026fce481a6b8',1,'NCTimeSeriesBoundary']]],
   ['interpcell_40',['InterpCell',['../classREMORAFillPatcher.html#a61e471f7848c2e0ba119380c0063b368',1,'REMORAFillPatcher']]],
   ['interpface_41',['InterpFace',['../classREMORAFillPatcher.html#aad8d35f93cf74ecc7b2d1a031b5ce890',1,'REMORAFillPatcher']]],
   ['interpolate_5f1d_42',['interpolate_1d',['../REMORA__Math_8H.html#a803d0d35d4ca4791556cbe02bbf51cbb',1,'REMORA_Math.H']]],
