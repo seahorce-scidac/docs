@@ -1,5 +1,5 @@
 var REMORA__Derive_8H =
 [
-    [ "remora_dernull", "REMORA__Derive_8H.html#a7c72de811cfaa4aac607c1d60b9a0d48", null ],
-    [ "remora_dervort", "REMORA__Derive_8H.html#a9002cc5f73c702e47413c059e94824c0", null ]
+    [ "remora_dernull", "REMORA__Derive_8H.html#a2457359b34a83452a2d6d602f9919ae3", null ],
+    [ "remora_dervort", "REMORA__Derive_8H.html#a0e96290f839430c45b60d3bde88696ec", null ]
 ];
