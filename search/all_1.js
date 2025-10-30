@@ -27,8 +27,9 @@ var searchData=
   ['amrex_20_3a_20remora_24',['Regional Modeling of Oceans Refined Adaptively (built on AMReX): REMORA',['../index.html',1,'']]],
   ['amrex_5fprobinit_25',['amrex_probinit',['../REMORA__prob__common_8H.html#ade80d7c09ccacfd7138b8fa7a7e7a62c',1,'REMORA_prob_common.H']]],
   ['analytic_26',['analytic',['../REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034da0747ffd2ec4a506ee2b993a044b370c9',1,'analytic:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a6f9734fca864f135565da5376b5c3e72a0747ffd2ec4a506ee2b993a044b370c9',1,'analytic:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#ab8e8b71b471dbb9aeba77602dcf6240aa0747ffd2ec4a506ee2b993a044b370c9',1,'analytic:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a3c0b9a5b6463511000d925bad1d90256a0747ffd2ec4a506ee2b993a044b370c9',1,'analytic:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727a0747ffd2ec4a506ee2b993a044b370c9',1,'analytic:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a0747ffd2ec4a506ee2b993a044b370c9',1,'analytic:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#ae051a5657a30b61eb6fe9bab09127856a0747ffd2ec4a506ee2b993a044b370c9',1,'analytic:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a70dc28894261645bb2ac2f2eb5c2ac55a0747ffd2ec4a506ee2b993a044b370c9',1,'analytic:&#160;REMORA_DataStruct.H']]],
-  ['appendplotvariables_27',['appendPlotVariables',['../classREMORA.html#ac2bfc41556bb667e8d4d705e2aa13651',1,'REMORA']]],
-  ['apply_5fclim_5fnudg_28',['apply_clim_nudg',['../classREMORA.html#a7c79ff9219e7558d2ddd9fed36eb92d8',1,'REMORA']]],
-  ['averagedown_29',['AverageDown',['../classREMORA.html#acc4cc491f4e1714d3d4999290046c82e',1,'REMORA']]],
-  ['averagedownto_30',['AverageDownTo',['../classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3',1,'REMORA']]]
+  ['append2dplotvariables_27',['append2DPlotVariables',['../classREMORA.html#aed280db496ab7b660c2195fa41cbf5be',1,'REMORA']]],
+  ['append3dplotvariables_28',['append3DPlotVariables',['../classREMORA.html#ad520335720a727807d115d0fb141f65f',1,'REMORA']]],
+  ['apply_5fclim_5fnudg_29',['apply_clim_nudg',['../classREMORA.html#a7c79ff9219e7558d2ddd9fed36eb92d8',1,'REMORA']]],
+  ['averagedown_30',['AverageDown',['../classREMORA.html#acc4cc491f4e1714d3d4999290046c82e',1,'REMORA']]],
+  ['averagedownto_31',['AverageDownTo',['../classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3',1,'REMORA']]]
 ];

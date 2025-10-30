@@ -16,5 +16,6 @@ var dir_4c48f420b74c1f1cc31b316243ca788c =
     [ "REMORA_NCTimeSeriesRiver.H", "REMORA__NCTimeSeriesRiver_8H.html", "REMORA__NCTimeSeriesRiver_8H" ],
     [ "REMORA_Plotfile.cpp", "REMORA__Plotfile_8cpp.html", "REMORA__Plotfile_8cpp" ],
     [ "REMORA_ReadFromInitNetcdf.cpp", "REMORA__ReadFromInitNetcdf_8cpp.html", "REMORA__ReadFromInitNetcdf_8cpp" ],
+    [ "REMORA_SetPlotVars.cpp", "REMORA__SetPlotVars_8cpp.html", "REMORA__SetPlotVars_8cpp" ],
     [ "REMORA_writeJobInfo.cpp", "REMORA__writeJobInfo_8cpp.html", "REMORA__writeJobInfo_8cpp" ]
 ];

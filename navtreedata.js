@@ -64,10 +64,10 @@ var NAVTREEINDEX =
 [
 "REMORA_8H.html",
 "REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67",
-"classREMORA.html#a28c2e36d1783550310f26d0e9ba8cdca",
-"classREMORA.html#ad9ee5aba5b9cb8e020e6cbc8ff3cff74",
-"namespaceBdyVars.html",
-"structncutils_1_1NCVar.html#a772e15bd67ced09d02a35c67e122c8d5"
+"classREMORA.html#a271d86c1e20a76bd279fb2ae3411b17d",
+"classREMORA.html#ad79fc507ca3a599f233565714df2cb08",
+"main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",
+"structncutils_1_1NCVar.html#a6bea98f3905a4cd57dfe20775a3b410d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

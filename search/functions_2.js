@@ -8,7 +8,7 @@ var searchData=
   ['computedt_5',['ComputeDt',['../classREMORA.html#a7671b889b87ca190f7aba7188074efa3',1,'REMORA']]],
   ['computeghostcells_6',['ComputeGhostCells',['../classREMORA.html#a3be29f45efb0b259995c494f6dac2b97',1,'REMORA']]],
   ['construct_5fremorafillpatchers_7',['Construct_REMORAFillPatchers',['../classREMORA.html#a285cd31f3cb51b9746338775a67677e2',1,'REMORA']]],
-  ['containerhaselement_8',['containerHasElement',['../REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'REMORA_Plotfile.cpp']]],
+  ['containerhaselement_8',['containerhaselement',['../REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'containerHasElement(const V &amp;iterable, const T &amp;query):&#160;REMORA_Plotfile.cpp'],['../REMORA__SetPlotVars_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'containerHasElement(const V &amp;iterable, const T &amp;query):&#160;REMORA_SetPlotVars.cpp']]],
   ['convert_5finv_5fdays_5fto_5finv_5fs_9',['convert_inv_days_to_inv_s',['../classREMORA.html#af9f49b7bb02986c3efb85bb25b7dc65a',1,'REMORA']]],
   ['coriolis_10',['coriolis',['../classREMORA.html#af28f51401edd36aa6014d9536e1393da',1,'REMORA']]],
   ['create_11',['create',['../classncutils_1_1NCFile.html#a8e53d3e6af97b5f415caf03c5c3e317b',1,'ncutils::NCFile']]]
