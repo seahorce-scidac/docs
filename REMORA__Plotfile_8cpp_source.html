@@ -181,9 +181,9 @@ $(document).ready(function(){initNavTree('REMORA__Plotfile_8cpp_source.html','')
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            b.setRange(2,0);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        BoxArray ba2d(std::move(bl2d));</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        mf_2d_rho[lev].define(ba2d, dmap[lev], ncomp_mf_2d_rho, ngrow_vars);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>          mf_2d_u[lev].define(ba2d, dmap[lev], ncomp_mf_2d_u  , ngrow_vars);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>          mf_2d_v[lev].define(ba2d, dmap[lev], ncomp_mf_2d_v  , ngrow_vars);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        mf_2d_rho[lev].define(ba2d, dmap[lev], ncomp_mf_2d_rho, IntVect(0,0,0));</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>          mf_2d_u[lev].define(ba2d, dmap[lev], ncomp_mf_2d_u  , IntVect(0,0,0));</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>          mf_2d_v[lev].define(ba2d, dmap[lev], ncomp_mf_2d_v  , IntVect(0,0,0));</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// Array of MultiFabs for nodal data</span></div>
