@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('REMORA__bulk__flux_8cpp_source.html','
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> DistributionMapping&amp; dm = mf_cons-&gt;DistributionMap();</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    MultiFab mf_Taux(ba, dm, 1, IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    MultiFab mf_Tauy(ba, dm, 1, IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// temps: Taux, Tauy,</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">for</span> ( MFIter mfi(*mf_cons, TilingIfNotGPU()); mfi.isValid(); ++mfi) {</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        Array4&lt;Real const&gt; <span class="keyword">const</span>&amp; uwind = mf_uwind-&gt;const_array(mfi);</div>
@@ -391,7 +391,7 @@ $(document).ready(function(){initNavTree('REMORA__bulk__flux_8cpp_source.html','
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            <span class="comment">// Compute transfer coefficients for momentum (Cd).</span></div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            Real Wspeed=std::sqrt(wind_mag*wind_mag+Wgus*Wgus);</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            Cd=Wstar*Wstar/(Wspeed*Wspeed+eps);</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            <span class="comment">// Compute turbulent sensible heat flux (W/m2), Hs.</span></div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            Real Hs=-<a class="code hl_variable" href="REMORA__Constants_8H.html#ad9b87579ccd0c08455b7c196a2617a8d">blk_Cpa</a>*rhoAir*Wstar*Tstar;</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
@@ -410,13 +410,13 @@ $(document).ready(function(){initNavTree('REMORA__bulk__flux_8cpp_source.html','
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            <span class="comment">// Compute turbulent latent heat flux (W/m2), Hl.</span></div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            Real Hl=-Hlv*rhoAir*Wstar*Qstar;</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            <span class="comment">// Compute Webb correction (Webb effect) to latent heat flux, Hlw.</span></div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            Real upvel=-1.61_rt*Wstar*Qstar-</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                        (1.0_rt+1.61_rt*Q)*Wstar*Tstar/TairK;</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            Real Hlw=rhoAir*Hlv*upvel*Q;</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            LHeat=(Hl+Hlw) * mskr(i,j,0);</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            <span class="comment">// Compute momentum flux (N/m2) due to rainfall (kg/m2/s).</span></div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            Taur=0.85_rt*rain(i,j,0)*wind_mag;</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
@@ -428,7 +428,7 @@ $(document).ready(function(){initNavTree('REMORA__bulk__flux_8cpp_source.html','
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            Taux(i,j,0)=(cff*uwind(i,j,0)+Taur*sign_u) * mskr(i,j,0);</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            Tauy(i,j,0)=(cff*vwind(i,j,0)+Taur*sign_v) * mskr(i,j,0);</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            <span class="comment">// amrex::Print() &lt;&lt; &quot;Taux: &quot; &lt;&lt; Taux(i,j,0) &lt;&lt; &quot; Tauy: &quot; &lt;&lt; Tauy(i,j,0) &lt;&lt; &quot;\n&quot;;</span></div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            <span class="comment">//=======================================================================</span></div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            <span class="comment">//  Compute surface net heat flux and surface wind stress.</span></div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            <span class="comment">//=======================================================================</span></div>
