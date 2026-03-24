@@ -28,6 +28,7 @@ var searchData=
   ['tke_5fbc_25',['tke_bc',['../namespaceBCVars.html#a00367571247ba920989360b94c156f4aa8e535710ec383e6585fa5f352ebecdb5',1,'BCVars']]],
   ['tnu2_26',['tnu2',['../structSolverChoice.html#a3619ed466492ce884f56b0770de71c0b',1,'SolverChoice']]],
   ['total_5fnc_5fplot_5ffile_5fstep_27',['total_nc_plot_file_step',['../classREMORA.html#ab001c0ea487d4b30d2e7570665c2e452',1,'REMORA']]],
-  ['tracer_5fhadv_5fscheme_28',['tracer_Hadv_scheme',['../structSolverChoice.html#a525a9c91d6f7e81c921a9967c35ec5b9',1,'SolverChoice']]],
-  ['two_5fway_29',['two_way',['../REMORA__DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba0fa44359808011f346e62d3f6df437f4',1,'REMORA_DataStruct.H']]]
+  ['tracer_5fcomp_28',['Tracer_comp',['../REMORA__IndexDefines_8H.html#a9b3470d187fb5c8b5eb826568bba2617',1,'REMORA_IndexDefines.H']]],
+  ['tracer_5fhadv_5fscheme_29',['tracer_Hadv_scheme',['../structSolverChoice.html#a525a9c91d6f7e81c921a9967c35ec5b9',1,'SolverChoice']]],
+  ['two_5fway_30',['two_way',['../REMORA__DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba0fa44359808011f346e62d3f6df437f4',1,'REMORA_DataStruct.H']]]
 ];

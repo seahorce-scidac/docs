@@ -11,5 +11,6 @@ var searchData=
   ['containerhaselement_8',['containerhaselement',['../REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'containerHasElement(const V &amp;iterable, const T &amp;query):&#160;REMORA_Plotfile.cpp'],['../REMORA__SetPlotVars_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'containerHasElement(const V &amp;iterable, const T &amp;query):&#160;REMORA_SetPlotVars.cpp']]],
   ['convert_5finv_5fdays_5fto_5finv_5fs_9',['convert_inv_days_to_inv_s',['../classREMORA.html#af9f49b7bb02986c3efb85bb25b7dc65a',1,'REMORA']]],
   ['coriolis_10',['coriolis',['../classREMORA.html#af28f51401edd36aa6014d9536e1393da',1,'REMORA']]],
-  ['create_11',['create',['../classncutils_1_1NCFile.html#a8e53d3e6af97b5f415caf03c5c3e317b',1,'ncutils::NCFile']]]
+  ['create_11',['create',['../classncutils_1_1NCFile.html#a8e53d3e6af97b5f415caf03c5c3e317b',1,'ncutils::NCFile']]],
+  ['cumulative_5fref_5fratio_12',['cumulative_ref_ratio',['../classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8',1,'NCTimeSeries']]]
 ];

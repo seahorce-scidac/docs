@@ -6,8 +6,8 @@ var REMORA__IndexDefines_8H =
     [ "NCONS", "REMORA__IndexDefines_8H.html#ae3f12540307d28407f8d7dd4a169e325", null ],
     [ "NGROW", "REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38", null ],
     [ "Salt_comp", "REMORA__IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf", null ],
-    [ "Scalar_comp", "REMORA__IndexDefines_8H.html#a4dd1335cac3e63bb654450bb807978a4", null ],
     [ "Temp_comp", "REMORA__IndexDefines_8H.html#a2439ff23f4449b8ffa90ddc5bcb36173", null ],
+    [ "Tracer_comp", "REMORA__IndexDefines_8H.html#a9b3470d187fb5c8b5eb826568bba2617", null ],
     [ "mathematicalBndryTypes", "REMORA__IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346", [
       [ "bogus", "REMORA__IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346aa8f1b3ad9a76977588e149a0f264e93b", null ],
       [ "reflect_odd", "REMORA__IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346a9d34de510d9acde35ba5ebe70aa11cde", null ],

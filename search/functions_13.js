@@ -7,7 +7,7 @@ var searchData=
   ['writejobinfo_4',['writeJobInfo',['../classREMORA.html#a331fbdef188eaf70cc72be04b1208020',1,'REMORA']]],
   ['writemultilevelplotfilewithbathymetry_5',['WriteMultiLevelPlotfileWithBathymetry',['../classREMORA.html#a80f8805ec54ede636cb7c9492233e6ab',1,'REMORA']]],
   ['writencmultifab_6',['WriteNCMultiFab',['../classREMORA.html#a07cdefc2810863920747b6eac934a045',1,'REMORA']]],
-  ['writencplotfile_7',['WriteNCPlotFile',['../classREMORA.html#a4c1e5ea64e04f42f83f77290a7f7e2a1',1,'REMORA']]],
-  ['writencplotfile_5fwhich_8',['WriteNCPlotFile_which',['../classREMORA.html#a55e66006e64606318a47d37224e5abca',1,'REMORA']]],
-  ['writeplotfile_9',['WritePlotFile',['../classREMORA.html#ae2e918864aa8456dabdfeb8e81832374',1,'REMORA']]]
+  ['writencplotfile_7',['WriteNCPlotFile',['../classREMORA.html#aa159916f33b19463c184aafa7dbb3706',1,'REMORA']]],
+  ['writencplotfile_5fwhich_8',['WriteNCPlotFile_which',['../classREMORA.html#ac75370ff14d8a68d5d6f45491af115c2',1,'REMORA']]],
+  ['writeplotfile_9',['WritePlotFile',['../classREMORA.html#ae34c7e436b23f9c528aaa8589804b196',1,'REMORA']]]
 ];
