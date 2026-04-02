@@ -6,5 +6,7 @@ var searchData=
   ['last_5fplot_5ffile_5ftime_3',['last_plot_file_time',['../classREMORA.html#a0d747ec8e2dd3a40475ce19fffa31355',1,'REMORA']]],
   ['longwave_5fdown_4',['longwave_down',['../structSolverChoice.html#a6b3e7341df0067d86754eed591bc1399',1,'SolverChoice']]],
   ['longwave_5fdown_5fdata_5ffrom_5ffile_5',['longwave_down_data_from_file',['../classREMORA.html#a48ff66f51a9e0e4f39cbb6cb20c94f84',1,'REMORA']]],
-  ['longwave_5fdown_5ffrom_5fnetcdf_6',['longwave_down_from_netcdf',['../structSolverChoice.html#a31b12f96383a335d8d1ceb529a63fb9a',1,'SolverChoice']]]
+  ['longwave_5fdown_5ffrom_5fnetcdf_6',['longwave_down_from_netcdf',['../structSolverChoice.html#a31b12f96383a335d8d1ceb529a63fb9a',1,'SolverChoice']]],
+  ['longwave_5fnetcdf_5fis_5fnet_7',['longwave_netcdf_is_net',['../structSolverChoice.html#a6199609ec32fa32ce1809ced5ed97d54',1,'SolverChoice']]],
+  ['longwave_5fnetcdf_5fvarname_8',['longwave_netcdf_varname',['../structSolverChoice.html#a3aa75ac02590ba155d7fa0d1df503b65',1,'SolverChoice']]]
 ];

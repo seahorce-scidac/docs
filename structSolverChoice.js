@@ -74,6 +74,8 @@ var structSolverChoice =
     [ "init_l1ad_T", "structSolverChoice.html#a81c2ac3d646ad2a170ba2cac7031688a", null ],
     [ "longwave_down", "structSolverChoice.html#a6b3e7341df0067d86754eed591bc1399", null ],
     [ "longwave_down_from_netcdf", "structSolverChoice.html#a31b12f96383a335d8d1ceb529a63fb9a", null ],
+    [ "longwave_netcdf_is_net", "structSolverChoice.html#a6199609ec32fa32ce1809ced5ed97d54", null ],
+    [ "longwave_netcdf_varname", "structSolverChoice.html#a3aa75ac02590ba155d7fa0d1df503b65", null ],
     [ "mask_type", "structSolverChoice.html#a2e2b940cf2e9f62ffdd0e6ff4713af86", null ],
     [ "my_A1", "structSolverChoice.html#a3085d6f33e903a3016d45d5023740b34", null ],
     [ "my_A2", "structSolverChoice.html#a8ce3dfd5f42a5c698790db5f2d2586f3", null ],
