@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('REMORA__t3dmix_8cpp_source.html',''); 
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">const</span> Real pmon_u = (pm(i-1,j,0)+pm(i,j,0))/(pn(i-1,j,0)+pn(i,j,0));</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">const</span> Real cff = 0.25_rt * (diff2(i,j,n) + diff2(i-1,j,n)) * pmon_u;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">const</span> Real cff = 0.25_rt * (diff2(i,j,0,n) + diff2(i-1,j,0,n)) * pmon_u;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        FX(i,j,k,n) = cff * (Hz(i,j,k) + Hz(i-1,j,k)) * (state_rhs(i,j,k,n)-state_rhs(i-1,j,k,n));</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        FX(i,j,k,n) *= msku(i,j,0);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    });</div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('REMORA__t3dmix_8cpp_source.html',''); 
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">const</span> Real pnom_v = (pn(i,j-1,0)+pn(i,j,0))/(pm(i,j-1,0)+pm(i,j,0));</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">const</span> Real cff = 0.25_rt*(diff2(i,j,n)+diff2(i,j-1,n)) * pnom_v;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">const</span> Real cff = 0.25_rt*(diff2(i,j,0,n)+diff2(i,j-1,0,n)) * pnom_v;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        FE(i,j,k,n) = cff * (Hz(i,j,k) + Hz(i,j-1,k)) * (state_rhs(i,j,k,n) - state_rhs(i,j-1,k,n));</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        FE(i,j,k,n) *= mskv(i,j,0);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    });</div>
