@@ -67,7 +67,7 @@ var NAVTREEINDEX =
 "classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5",
 "classREMORA.html#acf04622fbc873b1bbd5ad18f06369d56",
 "functions_vars_x.html",
-"structncutils_1_1NCVar.html#a20a21f72754e272750c8fa38c9ad44b6"
+"structncutils_1_1NCVar.html#a2ad28b44a64152bb00f1a7eeb0084845"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

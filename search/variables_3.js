@@ -3,7 +3,7 @@ var searchData=
   ['d00_0',['D00',['../REMORA__Constants_8H.html#afe9ed20aba3dc847a5963297788af9cd',1,'REMORA_Constants.H']]],
   ['d01_1',['D01',['../REMORA__Constants_8H.html#af7c8cfa80cf0399c602b3ebced8fb7b0',1,'REMORA_Constants.H']]],
   ['d02_2',['D02',['../REMORA__Constants_8H.html#a64a31ef7af72a46f448aeed370592d31',1,'REMORA_Constants.H']]],
-  ['data_3',['data',['../structNDArray.html#a9d3679c95b5bf1813a7edaedf221837e',1,'NDArray']]],
+  ['data_3',['data',['../structNDArray.html#a197526556d3850037e560585740b9074',1,'NDArray']]],
   ['datalog_4',['datalog',['../classREMORA.html#ad3530fc80b87c25ce728095929a4ea99',1,'REMORA']]],
   ['datalogname_5',['datalogname',['../classREMORA.html#a39048951d6927086a690d57a53754160',1,'REMORA']]],
   ['derived_5fnames_6',['derived_names',['../classREMORA.html#ae91017557bdacda7d14418c7f15967e2',1,'REMORA']]],
