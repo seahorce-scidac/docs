@@ -9,7 +9,7 @@ var searchData=
   ['linear_6',['linear',['../REMORA__DataStruct_8H.html#af1aa2592a3b3a5f297a0310e481a999ba9a932b3cb396238423eb2f33ec17d6aa',1,'linear:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4a9a932b3cb396238423eb2f33ec17d6aa',1,'linear:&#160;REMORA_DataStruct.H']]],
   ['logarithmic_7',['logarithmic',['../REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4a7304832fd4fb6edc031f981f8ff12a47',1,'REMORA_DataStruct.H']]],
   ['longwave_5fdown_8',['longwave_down',['../structSolverChoice.html#a6b3e7341df0067d86754eed591bc1399',1,'SolverChoice']]],
-  ['longwave_5fdown_5fdata_5ffrom_5ffile_9',['longwave_down_data_from_file',['../classREMORA.html#a48ff66f51a9e0e4f39cbb6cb20c94f84',1,'REMORA']]],
+  ['longwave_5fdown_5fdata_5ffrom_5ffile_9',['longwave_down_data_from_file',['../classREMORA.html#a3761efb6d3ba019732d126d111eebb93',1,'REMORA']]],
   ['longwave_5fdown_5ffrom_5fnetcdf_10',['longwave_down_from_netcdf',['../structSolverChoice.html#a31b12f96383a335d8d1ceb529a63fb9a',1,'SolverChoice']]],
   ['longwave_5fnetcdf_5fis_5fnet_11',['longwave_netcdf_is_net',['../structSolverChoice.html#a6199609ec32fa32ce1809ced5ed97d54',1,'SolverChoice']]],
   ['longwave_5fnetcdf_5fvarname_12',['longwave_netcdf_varname',['../structSolverChoice.html#a3aa75ac02590ba155d7fa0d1df503b65',1,'SolverChoice']]]

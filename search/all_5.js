@@ -6,7 +6,7 @@ var searchData=
   ['e03_3',['E03',['../REMORA__Constants_8H.html#a13dbc5074fc350293cb0e2c7f3483d98',1,'REMORA_Constants.H']]],
   ['eminusp_4',['eminusp',['../structSolverChoice.html#ad0c284634a2991aa77dec9b8dbb30373',1,'SolverChoice']]],
   ['eminusp_5fcorrect_5fssh_5',['eminusp_correct_ssh',['../structSolverChoice.html#a65f90912d34e882ba29cb64a20f56ceb',1,'SolverChoice']]],
-  ['eminusp_5fdata_5ffrom_5ffile_6',['EminusP_data_from_file',['../classREMORA.html#a937e3729546a68dd6cf0779c5a132328',1,'REMORA']]],
+  ['eminusp_5fdata_5ffrom_5ffile_6',['EminusP_data_from_file',['../classREMORA.html#a7723e6a25f311c63a5c9379e6db7843d',1,'REMORA']]],
   ['eminusp_5ffrom_5fnetcdf_7',['EminusP_from_netcdf',['../structSolverChoice.html#a3d9fa497113eea90ecdddcab582eb7b0',1,'SolverChoice']]],
   ['emmiss_8',['emmiss',['../REMORA__Constants_8H.html#abc9c124a2d78e72fdc69d32a267c4497',1,'REMORA_Constants.H']]],
   ['enter_5fdef_5fmode_9',['enter_def_mode',['../classncutils_1_1NCFile.html#a69b90d38b2ac2adf1610a0e8443743fb',1,'ncutils::NCFile']]],
