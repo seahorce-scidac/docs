@@ -106,6 +106,7 @@ var structSolverChoice =
     [ "rdrag2", "structSolverChoice.html#a276a75afbc3aa0e75227cb60c6901d31", null ],
     [ "rho0", "structSolverChoice.html#a87396b485f47a76010673143372cca17", null ],
     [ "S0", "structSolverChoice.html#af8337b0c99a50300e9880db3e8296d91", null ],
+    [ "scaled_to_grid_amr_scaling", "structSolverChoice.html#a4827a78004232f8d0e166e5ded8e637c", null ],
     [ "Scoef", "structSolverChoice.html#ae8dbad91ad7a9be8eb4c2db5a62f5c47", null ],
     [ "smflux_type", "structSolverChoice.html#aabcae60d32fc2d0b5739bf5ac1fcf1cb", null ],
     [ "spatial_order", "structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44", null ],

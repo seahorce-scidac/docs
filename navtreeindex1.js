@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"REMORA__PhysBCFunct_8H_source.html":[3,0,0,0,9],
+"REMORA__PhysBCFunct_8cpp.html":[3,0,0,0,8],
+"REMORA__PhysBCFunct_8cpp_source.html":[3,0,0,0,8],
+"REMORA__Plotfile_8cpp.html":[3,0,0,2,14],
 "REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67":[3,0,0,2,14,0],
 "REMORA__Plotfile_8cpp.html#aeb56b4bca6dfa0e3b81d3f983926e8a2":[3,0,0,2,14,1],
 "REMORA__Plotfile_8cpp_source.html":[3,0,0,2,14],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "classREMORA.html#a1b2cc0f2f617e846c6261df12aefd110":[2,0,6,271],
 "classREMORA.html#a1b4e042621a04298a71cf5137f36f40b":[2,0,6,284],
 "classREMORA.html#a1d1af5c800173a4b4238aeba7ccae30d":[2,0,6,335],
-"classREMORA.html#a1d985e2dcb2668dcba7bb46e568554f6":[2,0,6,79],
-"classREMORA.html#a1e6bb5ba18bc44344e75066721820ed5":[2,0,6,159],
-"classREMORA.html#a1eef83c89b5b470bac43eaff53860fe0":[2,0,6,344],
-"classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe":[2,0,6,68],
-"classREMORA.html#a205629b836e04e176602a8291569ccad":[2,0,6,33]
+"classREMORA.html#a1d985e2dcb2668dcba7bb46e568554f6":[2,0,6,79]
 };

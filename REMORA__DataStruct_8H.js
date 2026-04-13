@@ -40,7 +40,8 @@ var REMORA__DataStruct_8H =
     ] ],
     [ "HorizMixingType", "REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578", [
       [ "analytic", "REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a0747ffd2ec4a506ee2b993a044b370c9", null ],
-      [ "constant", "REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a617ac08757d38a5a7ed91c224f0e90a0", null ]
+      [ "constant", "REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a617ac08757d38a5a7ed91c224f0e90a0", null ],
+      [ "scaled_to_grid", "REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a3b9d24a493d7d6bbd862c426d7d4a7bb", null ]
     ] ],
     [ "IC_Type", "REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034d", [
       [ "analytic", "REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034da0747ffd2ec4a506ee2b993a044b370c9", null ],
@@ -55,6 +56,10 @@ var REMORA__DataStruct_8H =
       [ "amrex", "REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9eabbe17e876cafcbc06d3ea0d2a23854d3", null ],
       [ "netcdf", "REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9eac2e0f73e7b066a47b743d6ce8213e684", null ],
       [ "hdf5", "REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9ead12072103bcd8a3e062dd7bc9124d354", null ]
+    ] ],
+    [ "ScaledToGridAMRScaling", "REMORA__DataStruct_8H.html#a7090eccc5e33690f648fa0f61cd5e4f7", [
+      [ "none", "REMORA__DataStruct_8H.html#a7090eccc5e33690f648fa0f61cd5e4f7a334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
+      [ "linear", "REMORA__DataStruct_8H.html#a7090eccc5e33690f648fa0f61cd5e4f7a9a932b3cb396238423eb2f33ec17d6aa", null ]
     ] ],
     [ "SMFluxType", "REMORA__DataStruct_8H.html#a3c0b9a5b6463511000d925bad1d90256", [
       [ "analytic", "REMORA__DataStruct_8H.html#a3c0b9a5b6463511000d925bad1d90256a0747ffd2ec4a506ee2b993a044b370c9", null ],
