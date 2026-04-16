@@ -54,8 +54,7 @@ var REMORA__DataStruct_8H =
     ] ],
     [ "PlotfileType", "REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9e", [
       [ "amrex", "REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9eabbe17e876cafcbc06d3ea0d2a23854d3", null ],
-      [ "netcdf", "REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9eac2e0f73e7b066a47b743d6ce8213e684", null ],
-      [ "hdf5", "REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9ead12072103bcd8a3e062dd7bc9124d354", null ]
+      [ "netcdf", "REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9eac2e0f73e7b066a47b743d6ce8213e684", null ]
     ] ],
     [ "ScaledToGridAMRScaling", "REMORA__DataStruct_8H.html#a7090eccc5e33690f648fa0f61cd5e4f7", [
       [ "none", "REMORA__DataStruct_8H.html#a7090eccc5e33690f648fa0f61cd5e4f7a334c4a4c42fdb79d7ebc3e73b517e6f8", null ],

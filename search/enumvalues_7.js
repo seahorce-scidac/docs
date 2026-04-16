@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['inflow_0',['inflow',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ad37e67db17cfd059f2852e2673b9e8ef',1,'REMORA_IndexDefines.H']]],
-  ['int_5fdir_1',['int_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a223988127b7e8a66aabbc3a1f98dddf0',1,'REMORABCType']]]
+  ['linear_0',['linear',['../REMORA__DataStruct_8H.html#a7090eccc5e33690f648fa0f61cd5e4f7a9a932b3cb396238423eb2f33ec17d6aa',1,'linear:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#af1aa2592a3b3a5f297a0310e481a999ba9a932b3cb396238423eb2f33ec17d6aa',1,'linear:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4a9a932b3cb396238423eb2f33ec17d6aa',1,'linear:&#160;REMORA_DataStruct.H']]],
+  ['logarithmic_1',['logarithmic',['../REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4a7304832fd4fb6edc031f981f8ff12a47',1,'REMORA_DataStruct.H']]]
 ];

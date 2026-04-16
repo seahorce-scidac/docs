@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"REMORA__PhysBCFunct_8H_source.html":[3,0,0,0,9],
 "REMORA__PhysBCFunct_8cpp.html":[3,0,0,0,8],
 "REMORA__PhysBCFunct_8cpp_source.html":[3,0,0,0,8],
 "REMORA__Plotfile_8cpp.html":[3,0,0,2,14],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classREMORA.html#a1b2cc0f2f617e846c6261df12aefd110":[2,0,6,271],
 "classREMORA.html#a1b4e042621a04298a71cf5137f36f40b":[2,0,6,284],
 "classREMORA.html#a1d1af5c800173a4b4238aeba7ccae30d":[2,0,6,335],
-"classREMORA.html#a1d985e2dcb2668dcba7bb46e568554f6":[2,0,6,79]
+"classREMORA.html#a1d985e2dcb2668dcba7bb46e568554f6":[2,0,6,79],
+"classREMORA.html#a1e6bb5ba18bc44344e75066721820ed5":[2,0,6,159]
 };
