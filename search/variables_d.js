@@ -4,7 +4,7 @@ var searchData=
   ['pair_5fdata_5ffrom_5ffile_1',['Pair_data_from_file',['../classREMORA.html#aa61c02ff5ae57f27a67d5d82b0b151db',1,'REMORA']]],
   ['pair_5ffrom_5fnetcdf_2',['Pair_from_netcdf',['../structSolverChoice.html#ace8709bb85dd09bea45cea2038dacddd',1,'SolverChoice']]],
   ['phys_5fbc_5fneed_5fdata_3',['phys_bc_need_data',['../classREMORA.html#acf943a066a96e5d5926400a5adadc195',1,'REMORA']]],
-  ['phys_5fbc_5ftype_4',['phys_bc_type',['../classREMORA.html#a24b59dfb4efe24c524862e0d4375b07f',1,'REMORA']]],
+  ['phys_5fbc_5ftype_4',['phys_bc_type',['../classREMORA.html#a631708a5ce958c03ca8e881d846d89e0',1,'REMORA']]],
   ['physbcs_5',['physbcs',['../classREMORA.html#a75e6e53bc24b47b664fddcafed41dbd1',1,'REMORA']]],
   ['pi_6',['PI',['../REMORA__Constants_8H.html#a988c4efd6fd0d855e241e77a73191428',1,'REMORA_Constants.H']]],
   ['plot_5ffile_5fname_7',['plot_file_name',['../classREMORA.html#addf7142c4f2b2c18468e6c17d587f9c4',1,'REMORA']]],

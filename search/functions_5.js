@@ -12,6 +12,8 @@ var searchData=
   ['fillpatchnobc_9',['FillPatchNoBC',['../classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b',1,'REMORA']]],
   ['fillrelax_10',['FillRelax',['../classREMORAFillPatcher.html#a3ee6c1ce281bcdb17350baf84a5a5878',1,'REMORAFillPatcher']]],
   ['fillset_11',['FillSet',['../classREMORAFillPatcher.html#af18e2df46a9b80a67e7e3ca2fc87fadc',1,'REMORAFillPatcher']]],
-  ['funwave_5fadvance_5f2d_12',['funwave_advance_2d',['../namespacefunwave__advance__module.html#a695777be7d7a99b46ca87f35368b9e73',1,'funwave_advance_module']]],
-  ['funwave_5fadvance_5fc_13',['funwave_advance_c',['../REMORA__funwave__Fortran__Interface_8H.html#a62e3267d4d5ca510f211059d61bb040e',1,'funwave_advance_c():&#160;REMORA_funwave_Fortran_Interface.H'],['../namespaceremora__funwave__isohelper.html#a4bc9eb5a9804814b13ff0070912a2440',1,'remora_funwave_isohelper::funwave_advance_c()']]]
+  ['foextrap_5fbc_12',['foextrap_bc',['../classREMORA.html#a44172f86da9fc423ca901f87b052f0d7',1,'REMORA::foextrap_bc()'],['../namespaceBCVars.html#a8e86c2c491901bd3883145763ad6cada',1,'BCVars::foextrap_bc()']]],
+  ['foextrap_5fperiodic_5fbc_13',['foextrap_periodic_bc',['../classREMORA.html#a03be3174da2fcf83a5b9f695556a0454',1,'REMORA::foextrap_periodic_bc()'],['../namespaceBCVars.html#ada877ef4d960f81bda3b10d2c5ba73d9',1,'BCVars::foextrap_periodic_bc()']]],
+  ['funwave_5fadvance_5f2d_14',['funwave_advance_2d',['../namespacefunwave__advance__module.html#a695777be7d7a99b46ca87f35368b9e73',1,'funwave_advance_module']]],
+  ['funwave_5fadvance_5fc_15',['funwave_advance_c',['../REMORA__funwave__Fortran__Interface_8H.html#a62e3267d4d5ca510f211059d61bb040e',1,'funwave_advance_c():&#160;REMORA_funwave_Fortran_Interface.H'],['../namespaceremora__funwave__isohelper.html#a4bc9eb5a9804814b13ff0070912a2440',1,'remora_funwave_isohelper::funwave_advance_c()']]]
 ];

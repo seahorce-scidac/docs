@@ -5,6 +5,6 @@ var searchData=
   ['nodebilinear_2',['NodeBilinear',['../namespaceInterpType.html#ac65aa6d3ffa2549732d15f959cff81abaa8e5f7bd547098a67d20537514465dd9',1,'InterpType']]],
   ['none_3',['none',['../REMORA__DataStruct_8H.html#a7090eccc5e33690f648fa0f61cd5e4f7a334c4a4c42fdb79d7ebc3e73b517e6f8',1,'none:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a6f9734fca864f135565da5376b5c3e72a334c4a4c42fdb79d7ebc3e73b517e6f8',1,'none:&#160;REMORA_DataStruct.H']]],
   ['nonlinear_4',['nonlinear',['../REMORA__DataStruct_8H.html#af1aa2592a3b3a5f297a0310e481a999ba06de001201911c5c9361c398bd7e9a79',1,'REMORA_DataStruct.H']]],
-  ['null_5',['null',['../namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fab738c65b8fa93b2166002dce928aca27',1,'BdyVars']]],
-  ['numtypes_6',['numtypes',['../namespaceBCVars.html#a00367571247ba920989360b94c156f4aa0b88b0a3a03a3e787a7b27717ec64de7',1,'BCVars::NumTypes'],['../namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fae8976e37b454253c3ce1e065ff1f6102',1,'BdyVars::NumTypes']]]
+  ['null_5',['null',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ab738c65b8fa93b2166002dce928aca27',1,'BdyVars']]],
+  ['numtypes_6',['NumTypes',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102',1,'BdyVars']]]
 ];

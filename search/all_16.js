@@ -7,7 +7,7 @@ var searchData=
   ['xlo_5fdat_5fafter_4',['xlo_dat_after',['../classNCTimeSeriesBoundary.html#a19c67734ba33864401e8144f2242b087',1,'NCTimeSeriesBoundary']]],
   ['xlo_5fdat_5fbefore_5',['xlo_dat_before',['../classNCTimeSeriesBoundary.html#ae84faba9185e4fce68c70abad76d1943',1,'NCTimeSeriesBoundary']]],
   ['xlo_5fdat_5finterp_6',['xlo_dat_interp',['../classNCTimeSeriesBoundary.html#a49672ca82bc94ed48cdb19e39d8af180',1,'NCTimeSeriesBoundary']]],
-  ['xvel_5fbc_7',['xvel_bc',['../namespaceBCVars.html#a00367571247ba920989360b94c156f4aab1782753c68aaad8632b0a7d575e57f4',1,'BCVars']]],
+  ['xvel_5fbc_7',['xvel_bc',['../classREMORA.html#a111674546154c538b2b89b028d80d789',1,'REMORA::xvel_bc()'],['../namespaceBCVars.html#a283b6280cf03e137da14e4b5a7200098',1,'BCVars::xvel_bc()']]],
   ['xvel_5fnew_8',['xvel_new',['../classREMORA.html#a6d4e5271a8d00e497c4bce0a51dbe63c',1,'REMORA']]],
   ['xvel_5fold_9',['xvel_old',['../classREMORA.html#a51594dd103a7eee0f4e0c6e366d9f0ce',1,'REMORA']]]
 ];

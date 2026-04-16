@@ -11,6 +11,5 @@ var searchData=
   ['centered4_8',['centered4',['../REMORA__DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca6d779455e4a7eebf97d6bcb893dd5235',1,'REMORA_DataStruct.H']]],
   ['chapman_9',['chapman',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346ab9e7e22a79a81b6f51d3362e2dc2a547',1,'REMORABCType::chapman'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325aac3d3c98c89dcbf5e7ef9f934233f1bd',1,'chapman:&#160;REMORA_IndexDefines.H']]],
   ['clamped_10',['clamped',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aea4ae070ce07bfe352f3c5ac8e82a00e',1,'REMORABCType::clamped'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a48d7d3c7878090d92994ab974cb29653',1,'clamped:&#160;REMORA_IndexDefines.H']]],
-  ['cons_5fbc_11',['cons_bc',['../namespaceBCVars.html#a00367571247ba920989360b94c156f4aaaf601346b01655b32acf66d07b856aec',1,'BCVars']]],
-  ['constant_12',['constant',['../REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a617ac08757d38a5a7ed91c224f0e90a0',1,'constant:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727a617ac08757d38a5a7ed91c224f0e90a0',1,'constant:&#160;REMORA_DataStruct.H']]]
+  ['constant_11',['constant',['../REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a617ac08757d38a5a7ed91c224f0e90a0',1,'constant:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727a617ac08757d38a5a7ed91c224f0e90a0',1,'constant:&#160;REMORA_DataStruct.H']]]
 ];

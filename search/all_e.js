@@ -6,7 +6,7 @@ var searchData=
   ['pcinterp_3',['PCInterp',['../namespaceInterpType.html#ac65aa6d3ffa2549732d15f959cff81aba6ece140c8e1d325d1a2b3615064284c3',1,'InterpType']]],
   ['periodic_4',['periodic',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ae6ffdec5e14fce371eb7ae99edebbbee',1,'REMORA_IndexDefines.H']]],
   ['phys_5fbc_5fneed_5fdata_5',['phys_bc_need_data',['../classREMORA.html#acf943a066a96e5d5926400a5adadc195',1,'REMORA']]],
-  ['phys_5fbc_5ftype_6',['phys_bc_type',['../classREMORA.html#a24b59dfb4efe24c524862e0d4375b07f',1,'REMORA']]],
+  ['phys_5fbc_5ftype_6',['phys_bc_type',['../classREMORA.html#a631708a5ce958c03ca8e881d846d89e0',1,'REMORA']]],
   ['physbcs_7',['physbcs',['../classREMORA.html#a75e6e53bc24b47b664fddcafed41dbd1',1,'REMORA']]],
   ['pi_8',['PI',['../REMORA__Constants_8H.html#a988c4efd6fd0d855e241e77a73191428',1,'REMORA_Constants.H']]],
   ['planevector_9',['planevector',['../REMORA__PhysBCFunct_8H.html#a60014a8d74bed0d5ae984e600c68dc85',1,'PlaneVector:&#160;REMORA_PhysBCFunct.H'],['../REMORA__NCFile_8H.html#a60014a8d74bed0d5ae984e600c68dc85',1,'PlaneVector:&#160;REMORA_NCFile.H']]],

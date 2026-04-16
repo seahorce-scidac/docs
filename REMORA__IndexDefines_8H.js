@@ -3,7 +3,6 @@ var REMORA__IndexDefines_8H =
     [ "NC2D", "REMORA__IndexDefines_8H.html#abfba840d9b9e67c0c03dc933ee8f40f0", null ],
     [ "NC3D", "REMORA__IndexDefines_8H.html#a7113d7d10b05d75151fd21d463b9c763", null ],
     [ "NCH2D", "REMORA__IndexDefines_8H.html#ac5babe7e8b94ad6093eb7a366ac88ad5", null ],
-    [ "NCONS", "REMORA__IndexDefines_8H.html#ae3f12540307d28407f8d7dd4a169e325", null ],
     [ "NGROW", "REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38", null ],
     [ "Salt_comp", "REMORA__IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf", null ],
     [ "Temp_comp", "REMORA__IndexDefines_8H.html#a2439ff23f4449b8ffa90ddc5bcb36173", null ],
@@ -34,5 +33,21 @@ var REMORA__IndexDefines_8H =
       [ "orlanski_rad", "REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a1ac3f5e31a6cb1a044373ce1b133d560", null ],
       [ "orlanski_rad_nudge", "REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325af25c3ea7c3e73452e6b9963cb67c9981", null ],
       [ "undefined", "REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74", null ]
-    ] ]
+    ] ],
+    [ "foextrap_bc", "REMORA__IndexDefines_8H.html#a8e86c2c491901bd3883145763ad6cada", null ],
+    [ "foextrap_periodic_bc", "REMORA__IndexDefines_8H.html#ada877ef4d960f81bda3b10d2c5ba73d9", null ],
+    [ "NumTypes", "REMORA__IndexDefines_8H.html#a11669734493fff525248ddfa64866370", null ],
+    [ "tke_bc", "REMORA__IndexDefines_8H.html#acb6a409721d6814ef5f897b37584f61e", null ],
+    [ "u2d_simple_bc", "REMORA__IndexDefines_8H.html#aaa7b8a81e61961cbac8081a95f5e4b7b", null ],
+    [ "ubar_bc", "REMORA__IndexDefines_8H.html#ab6d4935713a7eb0c2b848430d7fdbbb5", null ],
+    [ "v2d_simple_bc", "REMORA__IndexDefines_8H.html#aa84a708de5cfbebd3d93c811a9ce1f94", null ],
+    [ "vbar_bc", "REMORA__IndexDefines_8H.html#a8dcbbf2e4270729cc954c73a9d050483", null ],
+    [ "xvel_bc", "REMORA__IndexDefines_8H.html#a283b6280cf03e137da14e4b5a7200098", null ],
+    [ "yvel_bc", "REMORA__IndexDefines_8H.html#a7fae82d9515fc9ee5461831e233e6a81", null ],
+    [ "zeta_bc", "REMORA__IndexDefines_8H.html#ab158e12c033e394ac7b9974865395fa1", null ],
+    [ "zvel_bc", "REMORA__IndexDefines_8H.html#a522f8ff10745e0030bc4b65246bc7e6d", null ],
+    [ "cons_bc", "REMORA__IndexDefines_8H.html#a223f9ac753216f526a8dcd2a1454b54a", null ],
+    [ "Salt_bc_comp", "REMORA__IndexDefines_8H.html#a2e3ca9e7be83ce63b6e3715abb80b1ae", null ],
+    [ "Scalar_bc_comp", "REMORA__IndexDefines_8H.html#ad4001f729c68fb206d41a41ed4208cc6", null ],
+    [ "Temp_bc_comp", "REMORA__IndexDefines_8H.html#a783242d2f8ade7bba97dcf8a64b56c1b", null ]
 ];

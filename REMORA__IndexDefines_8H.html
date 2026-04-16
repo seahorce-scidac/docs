@@ -93,7 +93,9 @@ $(document).ready(function(){initNavTree('REMORA__IndexDefines_8H.html',''); ini
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">REMORA_IndexDefines.H File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -257,8 +259,6 @@ Macros</h2></td></tr>
 <tr class="separator:ab84ceec196f4b00670dab4fa7794d1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b3470d187fb5c8b5eb826568bba2617" id="r_a9b3470d187fb5c8b5eb826568bba2617"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__IndexDefines_8H.html#a9b3470d187fb5c8b5eb826568bba2617">Tracer_comp</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a9b3470d187fb5c8b5eb826568bba2617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3f12540307d28407f8d7dd4a169e325" id="r_ae3f12540307d28407f8d7dd4a169e325"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__IndexDefines_8H.html#ae3f12540307d28407f8d7dd4a169e325">NCONS</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:ae3f12540307d28407f8d7dd4a169e325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a124da9e47fb1b1f3debaf49368f42e38" id="r_a124da9e47fb1b1f3debaf49368f42e38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a124da9e47fb1b1f3debaf49368f42e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7113d7d10b05d75151fd21d463b9c763" id="r_a7113d7d10b05d75151fd21d463b9c763"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__IndexDefines_8H.html#a7113d7d10b05d75151fd21d463b9c763">NC3D</a>&#160;&#160;&#160;5</td></tr>
@@ -270,44 +270,21 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a00367571247ba920989360b94c156f4a" id="r_a00367571247ba920989360b94c156f4a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aaaf601346b01655b32acf66d07b856aec">BCVars::cons_bc</a> = 0
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aa0d8c9f8308d3e1a0dedf68c3765d2205">BCVars::Temp_bc_comp</a> = 0
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aab284ea9b749e574cd1d0493de25e459e">BCVars::Salt_bc_comp</a>
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aa59e20f7c1b74c9cbdbc9300394bbc335">BCVars::Scalar_bc_comp</a>
+<tr class="memitem:a0860568d9ad7e1487cd6567de76e0325" id="r_a0860568d9ad7e1487cd6567de76e0325"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ab738c65b8fa93b2166002dce928aca27">BdyVars::null</a> = -1
+, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a2e6ad92071d7c5eed4b6ab6ddccb9d16">BdyVars::u</a> = 0
+, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a5d1dca5f1979361c8219d60c365ca922">BdyVars::v</a> = 1
+, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325abd1c55aaa78d7bcedd3a0e21005f2955">BdyVars::t</a> = 2
 , <br />
-&#160;&#160;<a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aab1782753c68aaad8632b0a7d575e57f4">BCVars::xvel_bc</a> = NCONS
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aa98ad22810fdfe9e585bc6481fc12454e">BCVars::yvel_bc</a>
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aa03b35ec9e83f34bb1349a86965d34e34">BCVars::zvel_bc</a>
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aa2c960afcb5bf368d9c4aa40be1b4c7dd">BCVars::ubar_bc</a>
+&#160;&#160;<a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a40bfe6bb7d655e928ae9659acd35b8c4">BdyVars::s</a> = 3
+, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a6336bc425d2abd84d90f925fc32d358a">BdyVars::ubar</a>
+, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a21bc8b125d8054e031f2dab527df5945">BdyVars::vbar</a>
+, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a63be12014785e028dafaa0104fad32fc">BdyVars::zeta</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aafedcbbfabe905983b51002c0f9e908de">BCVars::vbar_bc</a>
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aa688c87a95a2fc653f2a7e4e3dee1e3cb">BCVars::zeta_bc</a>
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aa8e535710ec383e6585fa5f352ebecdb5">BCVars::tke_bc</a>
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aa00f5be79aedf5bef91dafd288a64934c">BCVars::foextrap_periodic_bc</a>
-, <br />
-&#160;&#160;<a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aac3c52ca7e7f3251de2e3293db8e95874">BCVars::foextrap_bc</a>
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aa17c58372d9122064dd57047317f9c666">BCVars::u2d_simple_bc</a>
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aae38f469435ac66e9e0fedcd499055661">BCVars::v2d_simple_bc</a>
-, <a class="el" href="namespaceBCVars.html#a00367571247ba920989360b94c156f4aa0b88b0a3a03a3e787a7b27717ec64de7">BCVars::NumTypes</a>
+&#160;&#160;<a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102">BdyVars::NumTypes</a>
 <br />
  }</td></tr>
-<tr class="separator:a00367571247ba920989360b94c156f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab411ec867ba0ca2ffb1db717d8b8bf9f" id="r_ab411ec867ba0ca2ffb1db717d8b8bf9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fab738c65b8fa93b2166002dce928aca27">BdyVars::null</a> = -1
-, <a class="el" href="namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fa2e6ad92071d7c5eed4b6ab6ddccb9d16">BdyVars::u</a> = 0
-, <a class="el" href="namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fa5d1dca5f1979361c8219d60c365ca922">BdyVars::v</a> = 1
-, <a class="el" href="namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fabd1c55aaa78d7bcedd3a0e21005f2955">BdyVars::t</a> = 2
-, <br />
-&#160;&#160;<a class="el" href="namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fa40bfe6bb7d655e928ae9659acd35b8c4">BdyVars::s</a> = 3
-, <a class="el" href="namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fa6336bc425d2abd84d90f925fc32d358a">BdyVars::ubar</a>
-, <a class="el" href="namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fa21bc8b125d8054e031f2dab527df5945">BdyVars::vbar</a>
-, <a class="el" href="namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fa63be12014785e028dafaa0104fad32fc">BdyVars::zeta</a>
-, <br />
-&#160;&#160;<a class="el" href="namespaceBdyVars.html#ab411ec867ba0ca2ffb1db717d8b8bf9fae8976e37b454253c3ce1e065ff1f6102">BdyVars::NumTypes</a>
-<br />
- }</td></tr>
-<tr class="separator:ab411ec867ba0ca2ffb1db717d8b8bf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0860568d9ad7e1487cd6567de76e0325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a23ce64320a8ee19b456144f4deb325" id="r_a4a23ce64320a8ee19b456144f4deb325"><td class="memItemLeft" align="right" valign="top">enum struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325">REMORA_BC</a> { <br />
 &#160;&#160;<a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a40e712f30d56083318ab20a2402921d2">symmetry</a>
 , <a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ad37e67db17cfd059f2852e2673b9e8ef">inflow</a>
@@ -343,6 +320,44 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ac0d18d4bb218d5950db1000ef1abf346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a283b6280cf03e137da14e4b5a7200098" id="r_a283b6280cf03e137da14e4b5a7200098"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#a283b6280cf03e137da14e4b5a7200098">BCVars::xvel_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:a283b6280cf03e137da14e4b5a7200098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fae82d9515fc9ee5461831e233e6a81" id="r_a7fae82d9515fc9ee5461831e233e6a81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#a7fae82d9515fc9ee5461831e233e6a81">BCVars::yvel_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:a7fae82d9515fc9ee5461831e233e6a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522f8ff10745e0030bc4b65246bc7e6d" id="r_a522f8ff10745e0030bc4b65246bc7e6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#a522f8ff10745e0030bc4b65246bc7e6d">BCVars::zvel_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:a522f8ff10745e0030bc4b65246bc7e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d4935713a7eb0c2b848430d7fdbbb5" id="r_ab6d4935713a7eb0c2b848430d7fdbbb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#ab6d4935713a7eb0c2b848430d7fdbbb5">BCVars::ubar_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:ab6d4935713a7eb0c2b848430d7fdbbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dcbbf2e4270729cc954c73a9d050483" id="r_a8dcbbf2e4270729cc954c73a9d050483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#a8dcbbf2e4270729cc954c73a9d050483">BCVars::vbar_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:a8dcbbf2e4270729cc954c73a9d050483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab158e12c033e394ac7b9974865395fa1" id="r_ab158e12c033e394ac7b9974865395fa1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#ab158e12c033e394ac7b9974865395fa1">BCVars::zeta_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:ab158e12c033e394ac7b9974865395fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6a409721d6814ef5f897b37584f61e" id="r_acb6a409721d6814ef5f897b37584f61e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#acb6a409721d6814ef5f897b37584f61e">BCVars::tke_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:acb6a409721d6814ef5f897b37584f61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada877ef4d960f81bda3b10d2c5ba73d9" id="r_ada877ef4d960f81bda3b10d2c5ba73d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#ada877ef4d960f81bda3b10d2c5ba73d9">BCVars::foextrap_periodic_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:ada877ef4d960f81bda3b10d2c5ba73d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e86c2c491901bd3883145763ad6cada" id="r_a8e86c2c491901bd3883145763ad6cada"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#a8e86c2c491901bd3883145763ad6cada">BCVars::foextrap_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:a8e86c2c491901bd3883145763ad6cada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7b8a81e61961cbac8081a95f5e4b7b" id="r_aaa7b8a81e61961cbac8081a95f5e4b7b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#aaa7b8a81e61961cbac8081a95f5e4b7b">BCVars::u2d_simple_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:aaa7b8a81e61961cbac8081a95f5e4b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84a708de5cfbebd3d93c811a9ce1f94" id="r_aa84a708de5cfbebd3d93c811a9ce1f94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#aa84a708de5cfbebd3d93c811a9ce1f94">BCVars::v2d_simple_bc</a> (int ncons) noexcept</td></tr>
+<tr class="separator:aa84a708de5cfbebd3d93c811a9ce1f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11669734493fff525248ddfa64866370" id="r_a11669734493fff525248ddfa64866370"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#a11669734493fff525248ddfa64866370">BCVars::NumTypes</a> (int ncons) noexcept</td></tr>
+<tr class="separator:a11669734493fff525248ddfa64866370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a223f9ac753216f526a8dcd2a1454b54a" id="r_a223f9ac753216f526a8dcd2a1454b54a"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#a223f9ac753216f526a8dcd2a1454b54a">BCVars::cons_bc</a> = 0</td></tr>
+<tr class="separator:a223f9ac753216f526a8dcd2a1454b54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783242d2f8ade7bba97dcf8a64b56c1b" id="r_a783242d2f8ade7bba97dcf8a64b56c1b"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#a783242d2f8ade7bba97dcf8a64b56c1b">BCVars::Temp_bc_comp</a> = 0</td></tr>
+<tr class="separator:a783242d2f8ade7bba97dcf8a64b56c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3ca9e7be83ce63b6e3715abb80b1ae" id="r_a2e3ca9e7be83ce63b6e3715abb80b1ae"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#a2e3ca9e7be83ce63b6e3715abb80b1ae">BCVars::Salt_bc_comp</a> = 1</td></tr>
+<tr class="separator:a2e3ca9e7be83ce63b6e3715abb80b1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4001f729c68fb206d41a41ed4208cc6" id="r_ad4001f729c68fb206d41a41ed4208cc6"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html#ad4001f729c68fb206d41a41ed4208cc6">BCVars::Scalar_bc_comp</a> = 2</td></tr>
+<tr class="separator:ad4001f729c68fb206d41a41ed4208cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="abfba840d9b9e67c0c03dc933ee8f40f0" name="abfba840d9b9e67c0c03dc933ee8f40f0"></a>
@@ -357,7 +372,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00017">17</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00016">16</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
 
 </div>
 </div>
@@ -373,7 +388,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00016">16</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00015">15</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
 
 </div>
 </div>
@@ -389,23 +404,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00019">19</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
-
-</div>
-</div>
-<a id="ae3f12540307d28407f8d7dd4a169e325" name="ae3f12540307d28407f8d7dd4a169e325"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3f12540307d28407f8d7dd4a169e325">&#9670;&#160;</a></span>NCONS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NCONS&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00011">11</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00018">18</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
 
 </div>
 </div>
@@ -421,7 +420,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00013">13</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00012">12</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
 
 </div>
 </div>
@@ -508,7 +507,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74" name="a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00065">65</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00063">63</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
 
 </div>
 </div>

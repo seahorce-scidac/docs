@@ -1,7 +1,7 @@
 var structSolverChoice =
 [
     [ "display", "structSolverChoice.html#abb95d84167308078ce369b4196ef979c", null ],
-    [ "init_params", "structSolverChoice.html#a4829661b558b213e32970a02e147077f", null ],
+    [ "init_params", "structSolverChoice.html#a7e412fdd762e78ec7f0ad012f170300d", null ],
     [ "Akk_bak", "structSolverChoice.html#a55be5b3388201ee0784d6b6046ab4a06", null ],
     [ "Akp_bak", "structSolverChoice.html#af0ca1aeea6102be5e81b27738b926418", null ],
     [ "Akt_bak", "structSolverChoice.html#a70006d61f65f9e2774b513f5f5cec896", null ],

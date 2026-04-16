@@ -6,7 +6,24 @@ var namespaces_dup =
       [ "buildInfoGetCompVersion", "namespaceamrex.html#a51d56426424c3c4103a45c273a3abf97", null ],
       [ "buildInfoGetGitHash", "namespaceamrex.html#a215b1ed21dbb8f453201c6dc72ab3d1c", null ]
     ] ],
-    [ "BCVars", "namespaceBCVars.html", null ],
+    [ "BCVars", "namespaceBCVars.html", [
+      [ "foextrap_bc", "namespaceBCVars.html#a8e86c2c491901bd3883145763ad6cada", null ],
+      [ "foextrap_periodic_bc", "namespaceBCVars.html#ada877ef4d960f81bda3b10d2c5ba73d9", null ],
+      [ "NumTypes", "namespaceBCVars.html#a11669734493fff525248ddfa64866370", null ],
+      [ "tke_bc", "namespaceBCVars.html#acb6a409721d6814ef5f897b37584f61e", null ],
+      [ "u2d_simple_bc", "namespaceBCVars.html#aaa7b8a81e61961cbac8081a95f5e4b7b", null ],
+      [ "ubar_bc", "namespaceBCVars.html#ab6d4935713a7eb0c2b848430d7fdbbb5", null ],
+      [ "v2d_simple_bc", "namespaceBCVars.html#aa84a708de5cfbebd3d93c811a9ce1f94", null ],
+      [ "vbar_bc", "namespaceBCVars.html#a8dcbbf2e4270729cc954c73a9d050483", null ],
+      [ "xvel_bc", "namespaceBCVars.html#a283b6280cf03e137da14e4b5a7200098", null ],
+      [ "yvel_bc", "namespaceBCVars.html#a7fae82d9515fc9ee5461831e233e6a81", null ],
+      [ "zeta_bc", "namespaceBCVars.html#ab158e12c033e394ac7b9974865395fa1", null ],
+      [ "zvel_bc", "namespaceBCVars.html#a522f8ff10745e0030bc4b65246bc7e6d", null ],
+      [ "cons_bc", "namespaceBCVars.html#a223f9ac753216f526a8dcd2a1454b54a", null ],
+      [ "Salt_bc_comp", "namespaceBCVars.html#a2e3ca9e7be83ce63b6e3715abb80b1ae", null ],
+      [ "Scalar_bc_comp", "namespaceBCVars.html#ad4001f729c68fb206d41a41ed4208cc6", null ],
+      [ "Temp_bc_comp", "namespaceBCVars.html#a783242d2f8ade7bba97dcf8a64b56c1b", null ]
+    ] ],
     [ "BdyVars", "namespaceBdyVars.html", null ],
     [ "derived", "namespacederived.html", [
       [ "remora_dernull", "namespacederived.html#a2457359b34a83452a2d6d602f9919ae3", null ],

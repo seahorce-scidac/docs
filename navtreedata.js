@@ -31,6 +31,7 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
@@ -63,11 +64,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__PhysBCFunct_8cpp.html",
-"classREMORA.html#a1eef83c89b5b470bac43eaff53860fe0",
-"classREMORA.html#acd47875b523c3280a22f6598ab40c87a",
-"functions_vars_v.html",
-"structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218"
+"REMORA__NCTimeSeries_8cpp.html",
+"classREMORA.html#a0fb1bee6b7c41edde86f488eeb440478",
+"classREMORA.html#ab9ce060b467505349e57dacf4e5553fd",
+"functions_func_x.html",
+"structSolverChoice.html#ae81ccefced9f97b10e286ccd74209f6b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

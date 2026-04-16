@@ -1,6 +1,6 @@
 var classNCTimeSeries =
 [
-    [ "NCTimeSeries", "classNCTimeSeries.html#af9edb564b8cf5cf4204624c44eae0866", null ],
+    [ "NCTimeSeries", "classNCTimeSeries.html#a9db811fa721ed79a08c08ebb405e7484", null ],
     [ "cumulative_ref_ratio", "classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8", null ],
     [ "get_interpolated_mf", "classNCTimeSeries.html#ade407058a6b4aca90273b1ed867a8f73", null ],
     [ "Initialize", "classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9", null ],
@@ -8,7 +8,9 @@ var classNCTimeSeries =
     [ "update_interpolated_to_time", "classNCTimeSeries.html#a26bcb4a884fe56b3d55d2d297030b0ef", null ],
     [ "domain", "classNCTimeSeries.html#a52b1efdb2e35f56ad86df2aa461a0b54", null ],
     [ "field_name", "classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b", null ],
-    [ "file_name", "classNCTimeSeries.html#ac6bca6cff4c9f8d5b17004961484e93b", null ],
+    [ "file_for_time", "classNCTimeSeries.html#ad563c6adfd00dae5588ce2882fbb7d8d", null ],
+    [ "file_itime_offset", "classNCTimeSeries.html#a2b76bfa7cb8dabde8d24b623da0045f4", null ],
+    [ "file_names", "classNCTimeSeries.html#aa0713de8176b7b8a4bde155bc561970b", null ],
     [ "i_time_before", "classNCTimeSeries.html#a7cd84e642555b80b6aaf9577da2bae4f", null ],
     [ "is2d", "classNCTimeSeries.html#a1fa969bceaf0c79f6b70ebaf9d93c113", null ],
     [ "mf_after", "classNCTimeSeries.html#aa4c57df258189f4bb3e6b5e9675c8ffd", null ],
