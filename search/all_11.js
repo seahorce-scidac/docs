@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s_0',['s',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a40bfe6bb7d655e928ae9659acd35b8c4',1,'BdyVars']]],
+  ['s_0',['s',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a40bfe6bb7d655e928ae9659acd35b8c4',1,'BdyVars::s'],['../REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833aa03c7c0ace395d80182db07ae2c30f034',1,'s:&#160;REMORA_DataStruct.H']]],
   ['s0_1',['S0',['../structSolverChoice.html#af8337b0c99a50300e9880db3e8296d91',1,'SolverChoice']]],
   ['s_5fr_2',['s_r',['../classREMORA.html#a642e97c92cba81e923ad6578c7ad8204',1,'REMORA']]],
   ['s_5fw_3',['s_w',['../classREMORA.html#a2332a1e82502ff4ca9cc157adfe03ff3',1,'REMORA']]],

@@ -64,6 +64,7 @@ var structSolverChoice =
     [ "gls_stability_type", "structSolverChoice.html#a01e4bdce2918d0f3b9fb31c69c9f63d4", null ],
     [ "grid_scale_type", "structSolverChoice.html#ad9e492a86d9c69d92530dfbcd15626f3", null ],
     [ "Hair", "structSolverChoice.html#ad543d5441b4ea9d4ecba199d220671d7", null ],
+    [ "harmonic_mixing_type", "structSolverChoice.html#aefa757413322421a85f6f74774d63968", null ],
     [ "horiz_mixing_type", "structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7", null ],
     [ "ic_type", "structSolverChoice.html#ab9b74574dbcbef0c488da3a8ec1b8195", null ],
     [ "init_ana_h", "structSolverChoice.html#adc79ef6544265aa554c0b5db9e63ce1d", null ],

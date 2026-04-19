@@ -38,6 +38,10 @@ var REMORA__DataStruct_8H =
       [ "constant", "REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727a617ac08757d38a5a7ed91c224f0e90a0", null ],
       [ "analytic", "REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727a0747ffd2ec4a506ee2b993a044b370c9", null ]
     ] ],
+    [ "HarmonicMixingType", "REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833a", [
+      [ "s", "REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833aa03c7c0ace395d80182db07ae2c30f034", null ],
+      [ "geopotential", "REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833aac16ac34df8a5bd813261a064fda07838", null ]
+    ] ],
     [ "HorizMixingType", "REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578", [
       [ "analytic", "REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a0747ffd2ec4a506ee2b993a044b370c9", null ],
       [ "constant", "REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a617ac08757d38a5a7ed91c224f0e90a0", null ],
