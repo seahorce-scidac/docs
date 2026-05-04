@@ -6,6 +6,7 @@ var searchData=
   ['hair_3',['Hair',['../structSolverChoice.html#ad543d5441b4ea9d4ecba199d220671d7',1,'SolverChoice']]],
   ['harmonic_5fmixing_5ftype_4',['harmonic_mixing_type',['../structSolverChoice.html#aefa757413322421a85f6f74774d63968',1,'SolverChoice']]],
   ['has_5fz_5',['has_z',['../classNCTimeSeriesRiver.html#afbf28d73c655104adcc6766e5e09ea98',1,'NCTimeSeriesRiver']]],
-  ['history_5fcount_6',['history_count',['../classREMORA.html#a296bed166ddc9b98d606f3959ca6bfda',1,'REMORA']]],
-  ['horiz_5fmixing_5ftype_7',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]]
+  ['hires_5fgrid_5flevel_6',['hires_grid_level',['../classREMORA.html#af6613911799ddebd00cff330cf5c5f76',1,'REMORA']]],
+  ['history_5fcount_7',['history_count',['../classREMORA.html#a296bed166ddc9b98d606f3959ca6bfda',1,'REMORA']]],
+  ['horiz_5fmixing_5ftype_8',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]]
 ];

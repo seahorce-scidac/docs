@@ -221,151 +221,176 @@ $(document).ready(function(){initNavTree('REMORA__ReadFromInitNetcdf_8cpp_source
 </div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"></span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * @param lev             level of data to read</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> * @param domain          simulation domain</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> * @param fname           file name to read from</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * @param NC_fcor_fab     container for Coriolis parameter data</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * @param domain          simulation domain at nc_hires_grid_level</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> * @param fname           file name to read from</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> * @param NC_h_fab        container for bathymetry data</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * @param ngrow           number of grow cells to read in, if not default</span></div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="REMORA__init__from__netcdf_8cpp.html#a1dd851a61f8e589599a1e0a7c276e062">  124</a></span><a class="code hl_function" href="REMORA__ReadFromInitNetcdf_8cpp.html#a7a6597f4ecb34b220dd5aa257d91a7cb">read_coriolis_from_netcdf</a> (<span class="keywordtype">int</span> <span class="comment">/*lev*/</span>,</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                           <span class="keyword">const</span> Box&amp; domain,</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                           <span class="keyword">const</span> std::string&amp; fname,</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                           FArrayBox&amp; NC_fcor_fab)</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Loading initial coriolis from NetCDF file &quot;</span> &lt;&lt; fname &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    Vector&lt;FArrayBox*&gt; NC_fabs;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    Vector&lt;std::string&gt; NC_names;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    Vector&lt;enum NC_Data_Dims_Type&gt; NC_dim_types;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    NC_fabs.push_back(&amp;NC_fcor_fab )   ; NC_names.push_back(<span class="stringliteral">&quot;f&quot;</span>)    ; NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>); <span class="comment">// 0</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="comment">// Read the netcdf file and fill these FABs</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    BuildFABsFromNetCDFFile&lt;FArrayBox,Real&gt;(domain, fname, NC_names, NC_dim_types, NC_fabs);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="REMORA__init__from__netcdf_8cpp.html#a6c189eca2928ce27b82e38ae0505fed6">  124</a></span><a class="code hl_function" href="REMORA__ReadFromInitNetcdf_8cpp.html#a6c189eca2928ce27b82e38ae0505fed6">read_bathymetry_full_domain_from_netcdf</a> (<span class="keyword">const</span> Box&amp; domain,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                                         <span class="keyword">const</span> std::string&amp; fname,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                                         FArrayBox&amp; NC_h_fab, IntVect ngrow)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>{</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Loading high resolution bathymetry from NetCDF file &quot;</span> &lt;&lt; fname &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    Vector&lt;FArrayBox*&gt; NC_fabs;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    Vector&lt;std::string&gt; NC_names;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    Vector&lt;enum NC_Data_Dims_Type&gt; NC_dim_types;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    NC_fabs.push_back(&amp;NC_h_fab )   ; NC_names.push_back(<span class="stringliteral">&quot;h&quot;</span>)     ; NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>); <span class="comment">// 0</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">// Read the netcdf file and fill these FABs</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    BuildFABsFromNetCDFFile&lt;FArrayBox,Real&gt;(domain, fname, NC_names, NC_dim_types, NC_fabs, <span class="keyword">false</span>, 0, ngrow);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
 </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"></span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> * @param lev             level of data to read</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> * @param domain          simulation domain</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment"> * @param fname           file name to read from</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> * @param NC_mskr_fab     container for rho-point land/sea mask data</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"> * @param NC_msku_fab     container for u-point land/sea mask data</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"> * @param NC_mskv_fab     container for v-point land/sea mask data</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="REMORA__init__from__netcdf_8cpp.html#a7b728f24fbad6791f280538ce240c523">  150</a></span><a class="code hl_function" href="REMORA__ReadFromInitNetcdf_8cpp.html#a7b728f24fbad6791f280538ce240c523">read_masks_from_netcdf</a> (<span class="keywordtype">int</span> <span class="comment">/*lev*/</span>,</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                        <span class="keyword">const</span> Box&amp; domain,</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                        <span class="keyword">const</span> std::string&amp; fname,</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                        FArrayBox&amp; NC_mskr_fab,</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                        FArrayBox&amp; NC_msku_fab,</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                        FArrayBox&amp; NC_mskv_fab)</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>{</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Loading masks from NetCDF file &quot;</span> &lt;&lt; fname &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    Vector&lt;FArrayBox*&gt; NC_fabs;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    Vector&lt;std::string&gt; NC_names;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    Vector&lt;enum NC_Data_Dims_Type&gt; NC_dim_types;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    NC_fabs.push_back(&amp;NC_mskr_fab )   ; NC_names.push_back(<span class="stringliteral">&quot;mask_rho&quot;</span>)  ; NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>); <span class="comment">// 0</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    NC_fabs.push_back(&amp;NC_msku_fab )   ; NC_names.push_back(<span class="stringliteral">&quot;mask_u&quot;</span>)    ; NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>); <span class="comment">// 1</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    NC_fabs.push_back(&amp;NC_mskv_fab )   ; NC_names.push_back(<span class="stringliteral">&quot;mask_v&quot;</span>)    ; NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>); <span class="comment">// 2</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="comment">// Read the netcdf file and fill these FABs</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    BuildFABsFromNetCDFFile&lt;FArrayBox,Real&gt;(domain, fname, NC_names, NC_dim_types, NC_fabs);</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"></span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * @param lev             level of data to read</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> * @param domain          simulation domain</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> * @param fname           file name to read from</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment"> * @param NC_fcor_fab     container for Coriolis parameter data</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00147" data-start="{" data-end="}">
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="REMORA__init__from__netcdf_8cpp.html#a1dd851a61f8e589599a1e0a7c276e062">  147</a></span><a class="code hl_function" href="REMORA__ReadFromInitNetcdf_8cpp.html#a7a6597f4ecb34b220dd5aa257d91a7cb">read_coriolis_from_netcdf</a> (<span class="keywordtype">int</span> <span class="comment">/*lev*/</span>,</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                           <span class="keyword">const</span> Box&amp; domain,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                           <span class="keyword">const</span> std::string&amp; fname,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                           FArrayBox&amp; NC_fcor_fab)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>{</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Loading initial coriolis from NetCDF file &quot;</span> &lt;&lt; fname &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    Vector&lt;FArrayBox*&gt; NC_fabs;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    Vector&lt;std::string&gt; NC_names;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    Vector&lt;enum NC_Data_Dims_Type&gt; NC_dim_types;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    NC_fabs.push_back(&amp;NC_fcor_fab )   ; NC_names.push_back(<span class="stringliteral">&quot;f&quot;</span>)    ; NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>); <span class="comment">// 0</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="comment">// Read the netcdf file and fill these FABs</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    BuildFABsFromNetCDFFile&lt;FArrayBox,Real&gt;(domain, fname, NC_names, NC_dim_types, NC_fabs);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}</div>
 </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment"></span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment"> * @param lev                 level of data to read</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment"> * @param domain              simulation domain</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment"> * @param fname               file name to read from</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment"> * @param do_m2_clim_nudg     whether to do 2d momentum climatology nudging</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment"> * @param do_m3_clim_nudg     whether to do 3d momentum climatology nudging</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment"> * @param do_temp_clim_nudg   whether to do temperature climatology nudging</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment"> * @param do_salt_clim_nudg   whether to do salinity climatology nudging</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment"> * @param NC_M2NC_fab         container for 2d momentum climatology data</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"> * @param NC_M3NC_fab         container for 3d momentum climatology data</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment"> * @param NC_TempNC_fab       container for temperature climatology data</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment"> * @param NC_SaltNC_fab       container for salinity climatology data</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="REMORA__init__from__netcdf_8cpp.html#aecad0b5bf985735512bd1d136cfeeee9">  185</a></span><a class="code hl_function" href="REMORA__ReadFromInitNetcdf_8cpp.html#a1dd1792ec69cc31433b1c49e8f35761c">read_clim_nudg_coeff_from_netcdf</a> (<span class="keywordtype">int</span> <span class="comment">/*lev*/</span>,</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                        <span class="keyword">const</span> Box&amp; domain,</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                        <span class="keyword">const</span> std::string&amp; fname,</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                        <span class="keywordtype">bool</span> do_m2_clim_nudg,</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                        <span class="keywordtype">bool</span> do_m3_clim_nudg,</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                        <span class="keywordtype">bool</span> do_temp_clim_nudg,</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                        <span class="keywordtype">bool</span> do_salt_clim_nudg,</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                        FArrayBox&amp; NC_M2NC_fab,</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                        FArrayBox&amp; NC_M3NC_fab,</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                        FArrayBox&amp; NC_TempNC_fab,</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                        FArrayBox&amp; NC_SaltNC_fab)</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>{</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Loading nudging coefficients from NetCDF file &quot;</span> &lt;&lt; fname &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    Vector&lt;FArrayBox*&gt; NC_fabs;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    Vector&lt;std::string&gt; NC_names;</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    Vector&lt;enum NC_Data_Dims_Type&gt; NC_dim_types;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">if</span> (do_m3_clim_nudg) {</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        NC_fabs.push_back(&amp;NC_M3NC_fab ); NC_names.push_back(<span class="stringliteral">&quot;M3_NudgeCoef&quot;</span>); NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4">NC_Data_Dims_Type::BT_SN_WE</a>);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    }</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordflow">if</span> (do_m2_clim_nudg) {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        NC_fabs.push_back(&amp;NC_M2NC_fab ); NC_names.push_back(<span class="stringliteral">&quot;M2_NudgeCoef&quot;</span>); NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordflow">if</span> (do_temp_clim_nudg) {</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        NC_fabs.push_back(&amp;NC_TempNC_fab ); NC_names.push_back(<span class="stringliteral">&quot;temp_NudgeCoef&quot;</span>); NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4">NC_Data_Dims_Type::BT_SN_WE</a>);</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordflow">if</span> (do_salt_clim_nudg) {</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        NC_fabs.push_back(&amp;NC_SaltNC_fab ); NC_names.push_back(<span class="stringliteral">&quot;salt_NudgeCoef&quot;</span>); NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4">NC_Data_Dims_Type::BT_SN_WE</a>);</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    }</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="comment">// Read the netcdf file and fill these FABs</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    BuildFABsFromNetCDFFile&lt;FArrayBox,Real&gt;(domain, fname, NC_names, NC_dim_types, NC_fabs);</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment"></span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment"> * @param lev             level of data to read</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment"> * @param domain          simulation domain</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment"> * @param fname           file name to read from</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment"> * @param NC_mskr_fab     container for rho-point land/sea mask data</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment"> * @param NC_msku_fab     container for u-point land/sea mask data</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment"> * @param NC_mskv_fab     container for v-point land/sea mask data</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00173" data-start="{" data-end="}">
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="REMORA__init__from__netcdf_8cpp.html#a7b728f24fbad6791f280538ce240c523">  173</a></span><a class="code hl_function" href="REMORA__ReadFromInitNetcdf_8cpp.html#a7b728f24fbad6791f280538ce240c523">read_masks_from_netcdf</a> (<span class="keywordtype">int</span> <span class="comment">/*lev*/</span>,</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                        <span class="keyword">const</span> Box&amp; domain,</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                        <span class="keyword">const</span> std::string&amp; fname,</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                        FArrayBox&amp; NC_mskr_fab,</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                        FArrayBox&amp; NC_msku_fab,</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                        FArrayBox&amp; NC_mskv_fab)</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>{</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Loading masks from NetCDF file &quot;</span> &lt;&lt; fname &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    Vector&lt;FArrayBox*&gt; NC_fabs;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    Vector&lt;std::string&gt; NC_names;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    Vector&lt;enum NC_Data_Dims_Type&gt; NC_dim_types;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    NC_fabs.push_back(&amp;NC_mskr_fab )   ; NC_names.push_back(<span class="stringliteral">&quot;mask_rho&quot;</span>)  ; NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>); <span class="comment">// 0</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    NC_fabs.push_back(&amp;NC_msku_fab )   ; NC_names.push_back(<span class="stringliteral">&quot;mask_u&quot;</span>)    ; NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>); <span class="comment">// 1</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    NC_fabs.push_back(&amp;NC_mskv_fab )   ; NC_names.push_back(<span class="stringliteral">&quot;mask_v&quot;</span>)    ; NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>); <span class="comment">// 2</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="comment">// Read the netcdf file and fill these FABs</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    BuildFABsFromNetCDFFile&lt;FArrayBox,Real&gt;(domain, fname, NC_names, NC_dim_types, NC_fabs);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>}</div>
 </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment"></span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment"> * @param lev            level of data to read</span></div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment"> * @param fnames         file name(s) to read from</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment"> * @param field_name     field name to read</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment"> * @param vec_dat        vector to fill data</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">//template &lt;typename DType&gt;</span></div>
-<div class="foldopen" id="foldopen00226" data-start="{" data-end="}">
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="REMORA__init__from__netcdf_8cpp.html#a137cd9c9888645dff2f751f8f1eb34a1">  226</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="REMORA__ReadFromInitNetcdf_8cpp.html#a3da36b397933adf369b4577e633d75ad">read_vec_from_netcdf</a> (<span class="keywordtype">int</span> <span class="comment">/*lev*/</span>, <span class="keyword">const</span> amrex::Vector&lt;std::string&gt;&amp; fnames, <span class="keyword">const</span> std::string&amp; field_name, amrex::Vector&lt;int&gt;&amp; vec_dat)</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>{</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    AMREX_ALWAYS_ASSERT(!fnames.empty());</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keyword">const</span> std::string&amp; fname = fnames[0];</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Reading &quot;</span> &lt;&lt; field_name &lt;&lt; <span class="stringliteral">&quot; from NetCDF file&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="comment">// get x-positions and put in array</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keyword">using </span>ARRAY = <a class="code hl_struct" href="structNDArray.html">NDArray&lt;int&gt;</a>;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    amrex::Vector&lt;ARRAY&gt; array_dat(1);</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <a class="code hl_function" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871">ReadNetCDFFile</a>(fname, {field_name}, array_dat); <span class="comment">// filled only on proc 0</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordflow">if</span> (amrex::ParallelDescriptor::IOProcessor())</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    {</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="keywordtype">int</span> n = array_dat[0].get_vshape()[0];</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i(0); i &lt; n; i++)</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        {</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            vec_dat.push_back((*(array_dat[0].get_data() + i)));</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        }</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    }</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keywordtype">int</span> nvals = vec_dat.size();</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordtype">int</span> ioproc = amrex::ParallelDescriptor::IOProcessorNumber();</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    amrex::ParallelDescriptor::Bcast(&amp;nvals,1,ioproc);</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordflow">if</span> (!(amrex::ParallelDescriptor::IOProcessor())) {</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        vec_dat.resize(nvals);</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    }</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    amrex::ParallelDescriptor::Bcast(vec_dat.data(), vec_dat.size(), ioproc);</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>}</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment"></span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"> * @param lev                 level of data to read</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment"> * @param domain              simulation domain</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"> * @param fname               file name to read from</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment"> * @param do_m2_clim_nudg     whether to do 2d momentum climatology nudging</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment"> * @param do_m3_clim_nudg     whether to do 3d momentum climatology nudging</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment"> * @param do_temp_clim_nudg   whether to do temperature climatology nudging</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment"> * @param do_salt_clim_nudg   whether to do salinity climatology nudging</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment"> * @param NC_M2NC_fab         container for 2d momentum climatology data</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment"> * @param NC_M3NC_fab         container for 3d momentum climatology data</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"> * @param NC_TempNC_fab       container for temperature climatology data</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"> * @param NC_SaltNC_fab       container for salinity climatology data</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00208" data-start="{" data-end="}">
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="REMORA__init__from__netcdf_8cpp.html#aecad0b5bf985735512bd1d136cfeeee9">  208</a></span><a class="code hl_function" href="REMORA__ReadFromInitNetcdf_8cpp.html#a1dd1792ec69cc31433b1c49e8f35761c">read_clim_nudg_coeff_from_netcdf</a> (<span class="keywordtype">int</span> <span class="comment">/*lev*/</span>,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                        <span class="keyword">const</span> Box&amp; domain,</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                        <span class="keyword">const</span> std::string&amp; fname,</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                        <span class="keywordtype">bool</span> do_m2_clim_nudg,</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                        <span class="keywordtype">bool</span> do_m3_clim_nudg,</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                        <span class="keywordtype">bool</span> do_temp_clim_nudg,</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                        <span class="keywordtype">bool</span> do_salt_clim_nudg,</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                        FArrayBox&amp; NC_M2NC_fab,</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                        FArrayBox&amp; NC_M3NC_fab,</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                        FArrayBox&amp; NC_TempNC_fab,</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                        FArrayBox&amp; NC_SaltNC_fab)</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>{</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Loading nudging coefficients from NetCDF file &quot;</span> &lt;&lt; fname &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    Vector&lt;FArrayBox*&gt; NC_fabs;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    Vector&lt;std::string&gt; NC_names;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    Vector&lt;enum NC_Data_Dims_Type&gt; NC_dim_types;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordflow">if</span> (do_m3_clim_nudg) {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        NC_fabs.push_back(&amp;NC_M3NC_fab ); NC_names.push_back(<span class="stringliteral">&quot;M3_NudgeCoef&quot;</span>); NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4">NC_Data_Dims_Type::BT_SN_WE</a>);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    }</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keywordflow">if</span> (do_m2_clim_nudg) {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        NC_fabs.push_back(&amp;NC_M2NC_fab ); NC_names.push_back(<span class="stringliteral">&quot;M2_NudgeCoef&quot;</span>); NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a>);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">if</span> (do_temp_clim_nudg) {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        NC_fabs.push_back(&amp;NC_TempNC_fab ); NC_names.push_back(<span class="stringliteral">&quot;temp_NudgeCoef&quot;</span>); NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4">NC_Data_Dims_Type::BT_SN_WE</a>);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordflow">if</span> (do_salt_clim_nudg) {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        NC_fabs.push_back(&amp;NC_SaltNC_fab ); NC_names.push_back(<span class="stringliteral">&quot;salt_NudgeCoef&quot;</span>); NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4">NC_Data_Dims_Type::BT_SN_WE</a>);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    }</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="comment">// Read the netcdf file and fill these FABs</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    BuildFABsFromNetCDFFile&lt;FArrayBox,Real&gt;(domain, fname, NC_names, NC_dim_types, NC_fabs);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>}</div>
 </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment"></span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment"> * @param lev            level of data to read</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment"> * @param fnames         file name(s) to read from</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment"> * @param field_name     field name to read</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment"> * @param vec_dat        vector to fill data</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">//template &lt;typename DType&gt;</span></div>
+<div class="foldopen" id="foldopen00249" data-start="{" data-end="}">
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="REMORA__init__from__netcdf_8cpp.html#a137cd9c9888645dff2f751f8f1eb34a1">  249</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="REMORA__ReadFromInitNetcdf_8cpp.html#a3da36b397933adf369b4577e633d75ad">read_vec_from_netcdf</a> (<span class="keywordtype">int</span> <span class="comment">/*lev*/</span>, <span class="keyword">const</span> amrex::Vector&lt;std::string&gt;&amp; fnames, <span class="keyword">const</span> std::string&amp; field_name, amrex::Vector&lt;int&gt;&amp; vec_dat)</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>{</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    AMREX_ALWAYS_ASSERT(!fnames.empty());</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keyword">const</span> std::string&amp; fname = fnames[0];</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="preprocessor">#endif </span><span class="comment">// ROMSX_USE_NETCDF</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Reading &quot;</span> &lt;&lt; field_name &lt;&lt; <span class="stringliteral">&quot; from NetCDF file&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="comment">// get x-positions and put in array</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keyword">using </span>ARRAY = <a class="code hl_struct" href="structNDArray.html">NDArray&lt;int&gt;</a>;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    amrex::Vector&lt;ARRAY&gt; array_dat(1);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <a class="code hl_function" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871">ReadNetCDFFile</a>(fname, {field_name}, array_dat); <span class="comment">// filled only on proc 0</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keywordflow">if</span> (amrex::ParallelDescriptor::IOProcessor())</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordtype">int</span> n = array_dat[0].get_vshape()[0];</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i(0); i &lt; n; i++)</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        {</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            vec_dat.push_back((*(array_dat[0].get_data() + i)));</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        }</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    }</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keywordtype">int</span> nvals = vec_dat.size();</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keywordtype">int</span> ioproc = amrex::ParallelDescriptor::IOProcessorNumber();</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    amrex::ParallelDescriptor::Bcast(&amp;nvals,1,ioproc);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordflow">if</span> (!(amrex::ParallelDescriptor::IOProcessor())) {</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        vec_dat.resize(nvals);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    amrex::ParallelDescriptor::Bcast(vec_dat.data(), vec_dat.size(), ioproc);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>}</div>
+</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="preprocessor">#endif </span><span class="comment">// ROMSX_USE_NETCDF</span></div>
 <div class="ttc" id="aREMORA__DataStruct_8H_html"><div class="ttname"><a href="REMORA__DataStruct_8H.html">REMORA_DataStruct.H</a></div></div>
 <div class="ttc" id="aREMORA__NCFile_8H_html"><div class="ttname"><a href="REMORA__NCFile_8H.html">REMORA_NCFile.H</a></div></div>
 <div class="ttc" id="aREMORA__NCFile_8H_html_a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4"><div class="ttname"><a href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4">NC_Data_Dims_Type::BT_SN_WE</a></div><div class="ttdeci">@ BT_SN_WE</div></div>
@@ -373,11 +398,12 @@ $(document).ready(function(){initNavTree('REMORA__ReadFromInitNetcdf_8cpp_source
 <div class="ttc" id="aREMORA__NCFile_8H_html_a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb"><div class="ttname"><a href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb">NC_Data_Dims_Type::SN_WE</a></div><div class="ttdeci">@ SN_WE</div></div>
 <div class="ttc" id="aREMORA__NCFile_8H_html_a147911bcb83952a10f7560fd4e9d8f06aa3968158227ea04595d4003503cca22b"><div class="ttname"><a href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06aa3968158227ea04595d4003503cca22b">NC_Data_Dims_Type::Time_BT_SN_WE</a></div><div class="ttdeci">@ Time_BT_SN_WE</div></div>
 <div class="ttc" id="aREMORA__NCFile_8H_html_a3e720d7f1573b1b0c7cb9a0b7b8bb871"><div class="ttname"><a href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871">ReadNetCDFFile</a></div><div class="ttdeci">void ReadNetCDFFile(const std::string &amp;fname, amrex::Vector&lt; std::string &gt; names, amrex::Vector&lt; NDArray&lt; DType &gt; &gt; &amp;arrays, bool one_time=false, int fill_time=0)</div><div class="ttdoc">Read in data from netcdf file and save to data arrays.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCFile_8H_source.html#l00091">REMORA_NCFile.H:91</a></div></div>
-<div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a1dd1792ec69cc31433b1c49e8f35761c"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a1dd1792ec69cc31433b1c49e8f35761c">read_clim_nudg_coeff_from_netcdf</a></div><div class="ttdeci">void read_clim_nudg_coeff_from_netcdf(int, const Box &amp;domain, const std::string &amp;fname, bool do_m2_clim_nudg, bool do_m3_clim_nudg, bool do_temp_clim_nudg, bool do_salt_clim_nudg, FArrayBox &amp;NC_M2NC_fab, FArrayBox &amp;NC_M3NC_fab, FArrayBox &amp;NC_TempNC_fab, FArrayBox &amp;NC_SaltNC_fab)</div><div class="ttdoc">helper function to read climatology nudging from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00185">REMORA_ReadFromInitNetcdf.cpp:185</a></div></div>
+<div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a1dd1792ec69cc31433b1c49e8f35761c"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a1dd1792ec69cc31433b1c49e8f35761c">read_clim_nudg_coeff_from_netcdf</a></div><div class="ttdeci">void read_clim_nudg_coeff_from_netcdf(int, const Box &amp;domain, const std::string &amp;fname, bool do_m2_clim_nudg, bool do_m3_clim_nudg, bool do_temp_clim_nudg, bool do_salt_clim_nudg, FArrayBox &amp;NC_M2NC_fab, FArrayBox &amp;NC_M3NC_fab, FArrayBox &amp;NC_TempNC_fab, FArrayBox &amp;NC_SaltNC_fab)</div><div class="ttdoc">helper function to read climatology nudging from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00208">REMORA_ReadFromInitNetcdf.cpp:208</a></div></div>
 <div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a2f352bda3d4beb8f6aeb932c46153ddd"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a2f352bda3d4beb8f6aeb932c46153ddd">read_data_from_netcdf</a></div><div class="ttdeci">void read_data_from_netcdf(int, const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_temp_fab, FArrayBox &amp;NC_salt_fab, FArrayBox &amp;NC_xvel_fab, FArrayBox &amp;NC_yvel_fab, FArrayBox &amp;NC_ubar_fab, FArrayBox &amp;NC_vbar_fab)</div><div class="ttdoc">helper function for reading in initial state data from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00020">REMORA_ReadFromInitNetcdf.cpp:20</a></div></div>
-<div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a3da36b397933adf369b4577e633d75ad"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a3da36b397933adf369b4577e633d75ad">read_vec_from_netcdf</a></div><div class="ttdeci">void read_vec_from_netcdf(int, const amrex::Vector&lt; std::string &gt; &amp;fnames, const std::string &amp;field_name, amrex::Vector&lt; int &gt; &amp;vec_dat)</div><div class="ttdoc">helper function to read in vector of data from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00226">REMORA_ReadFromInitNetcdf.cpp:226</a></div></div>
-<div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a7a6597f4ecb34b220dd5aa257d91a7cb"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a7a6597f4ecb34b220dd5aa257d91a7cb">read_coriolis_from_netcdf</a></div><div class="ttdeci">void read_coriolis_from_netcdf(int, const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_fcor_fab)</div><div class="ttdoc">helper function to read coriolis factor from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00124">REMORA_ReadFromInitNetcdf.cpp:124</a></div></div>
-<div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a7b728f24fbad6791f280538ce240c523"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a7b728f24fbad6791f280538ce240c523">read_masks_from_netcdf</a></div><div class="ttdeci">void read_masks_from_netcdf(int, const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_mskr_fab, FArrayBox &amp;NC_msku_fab, FArrayBox &amp;NC_mskv_fab)</div><div class="ttdoc">helper function for reading in land-sea masks from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00150">REMORA_ReadFromInitNetcdf.cpp:150</a></div></div>
+<div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a3da36b397933adf369b4577e633d75ad"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a3da36b397933adf369b4577e633d75ad">read_vec_from_netcdf</a></div><div class="ttdeci">void read_vec_from_netcdf(int, const amrex::Vector&lt; std::string &gt; &amp;fnames, const std::string &amp;field_name, amrex::Vector&lt; int &gt; &amp;vec_dat)</div><div class="ttdoc">helper function to read in vector of data from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00249">REMORA_ReadFromInitNetcdf.cpp:249</a></div></div>
+<div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a6c189eca2928ce27b82e38ae0505fed6"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a6c189eca2928ce27b82e38ae0505fed6">read_bathymetry_full_domain_from_netcdf</a></div><div class="ttdeci">void read_bathymetry_full_domain_from_netcdf(const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_h_fab, IntVect ngrow)</div><div class="ttdoc">helper function to read full-domain high resolution bathymetry from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00124">REMORA_ReadFromInitNetcdf.cpp:124</a></div></div>
+<div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a7a6597f4ecb34b220dd5aa257d91a7cb"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a7a6597f4ecb34b220dd5aa257d91a7cb">read_coriolis_from_netcdf</a></div><div class="ttdeci">void read_coriolis_from_netcdf(int, const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_fcor_fab)</div><div class="ttdoc">helper function to read coriolis factor from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00147">REMORA_ReadFromInitNetcdf.cpp:147</a></div></div>
+<div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a7b728f24fbad6791f280538ce240c523"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a7b728f24fbad6791f280538ce240c523">read_masks_from_netcdf</a></div><div class="ttdeci">void read_masks_from_netcdf(int, const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_mskr_fab, FArrayBox &amp;NC_msku_fab, FArrayBox &amp;NC_mskv_fab)</div><div class="ttdoc">helper function for reading in land-sea masks from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00173">REMORA_ReadFromInitNetcdf.cpp:173</a></div></div>
 <div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_a93abfd752f08163f171e4aae8649b6c1"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#a93abfd752f08163f171e4aae8649b6c1">read_zeta_from_netcdf</a></div><div class="ttdeci">void read_zeta_from_netcdf(int, const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_zeta_fab)</div><div class="ttdoc">helper function to read sea surface height from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00051">REMORA_ReadFromInitNetcdf.cpp:51</a></div></div>
 <div class="ttc" id="aREMORA__ReadFromInitNetcdf_8cpp_html_ab1d6367e91f422936f23044c66b52ccc"><div class="ttname"><a href="REMORA__ReadFromInitNetcdf_8cpp.html#ab1d6367e91f422936f23044c66b52ccc">read_bathymetry_from_netcdf</a></div><div class="ttdeci">void read_bathymetry_from_netcdf(int, const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_h_fab, FArrayBox &amp;NC_pm_fab, FArrayBox &amp;NC_pn_fab, FArrayBox &amp;NC_xr_fab, FArrayBox &amp;NC_yr_fab, FArrayBox &amp;NC_xu_fab, FArrayBox &amp;NC_yu_fab, FArrayBox &amp;NC_xv_fab, FArrayBox &amp;NC_yv_fab, FArrayBox &amp;NC_xp_fab, FArrayBox &amp;NC_yp_fab)</div><div class="ttdoc">helper function to read bathymetry from netcdf</div><div class="ttdef"><b>Definition</b> <a href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00085">REMORA_ReadFromInitNetcdf.cpp:85</a></div></div>
 <div class="ttc" id="anamespaceamrex_html"><div class="ttname"><a href="namespaceamrex.html">amrex</a></div><div class="ttdef"><b>Definition</b> <a href="REMORA__console__io_8cpp_source.html#l00011">REMORA_console_io.cpp:11</a></div></div>

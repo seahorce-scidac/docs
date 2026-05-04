@@ -30,5 +30,6 @@ var searchData=
   ['cp_27',['Cp',['../REMORA__Constants_8H.html#acc9b56aa8386937a703d58529c6bc0a6',1,'REMORA_Constants.H']]],
   ['cs_5fr_28',['Cs_r',['../classREMORA.html#aa5f19e735d73db7c3b44a9858b1f6ad7',1,'REMORA']]],
   ['cs_5fw_29',['Cs_w',['../classREMORA.html#ab91481037f0032837c22dbcf45440bef',1,'REMORA']]],
-  ['csolar_30',['Csolar',['../REMORA__Constants_8H.html#ad1dc2049479f56da5194d7a18f8b3a07',1,'REMORA_Constants.H']]]
+  ['csolar_30',['Csolar',['../REMORA__Constants_8H.html#ad1dc2049479f56da5194d7a18f8b3a07',1,'REMORA_Constants.H']]],
+  ['cum_5fref_5fratios_31',['cum_ref_ratios',['../classREMORA.html#a6471d89974cbe65ab3ebdb95c775913f',1,'REMORA']]]
 ];

@@ -256,6 +256,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5de2e3aaf74ee399903806dde95bde5" id="r_ac5de2e3aaf74ee399903806dde95bde5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__init__from__netcdf_8cpp.html#ac5de2e3aaf74ee399903806dde95bde5">read_bathymetry_from_netcdf</a> (int lev, const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_h_fab, FArrayBox &amp;NC_pm_fab, FArrayBox &amp;NC_pn_fab, FArrayBox &amp;NC_xr_fab, FArrayBox &amp;NC_yr_fab, FArrayBox &amp;NC_xu_fab, FArrayBox &amp;NC_yu_fab, FArrayBox &amp;NC_xv_fab, FArrayBox &amp;NC_yv_fab, FArrayBox &amp;NC_xp_fab, FArrayBox &amp;NC_yp_fab)</td></tr>
 <tr class="memdesc:ac5de2e3aaf74ee399903806dde95bde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to read bathymetry from netcdf  <br /></td></tr>
 <tr class="separator:ac5de2e3aaf74ee399903806dde95bde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c189eca2928ce27b82e38ae0505fed6" id="r_a6c189eca2928ce27b82e38ae0505fed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__init__from__netcdf_8cpp.html#a6c189eca2928ce27b82e38ae0505fed6">read_bathymetry_full_domain_from_netcdf</a> (const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_h_fab, IntVect ngrow)</td></tr>
+<tr class="memdesc:a6c189eca2928ce27b82e38ae0505fed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to read full-domain high resolution bathymetry from netcdf  <br /></td></tr>
+<tr class="separator:a6c189eca2928ce27b82e38ae0505fed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dd851a61f8e589599a1e0a7c276e062" id="r_a1dd851a61f8e589599a1e0a7c276e062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__init__from__netcdf_8cpp.html#a1dd851a61f8e589599a1e0a7c276e062">read_coriolis_from_netcdf</a> (int lev, const Box &amp;domain, const std::string &amp;fname, FArrayBox &amp;NC_fcor_fab)</td></tr>
 <tr class="memdesc:a1dd851a61f8e589599a1e0a7c276e062"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to read coriolis factor from netcdf  <br /></td></tr>
 <tr class="separator:a1dd851a61f8e589599a1e0a7c276e062"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -386,9 +389,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00494">494</a> of file <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html">REMORA_init_from_netcdf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00499">499</a> of file <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html">REMORA_init_from_netcdf.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00089">REMORA::init_data_from_netcdf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00094">REMORA::init_data_from_netcdf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -535,7 +538,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00085">85</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00194">REMORA::init_bathymetry_from_netcdf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00199">REMORA::init_bathymetry_from_netcdf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -546,6 +549,83 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1658,28,1624,28,1624,23,1658,23"/>
 <area shape="rect" href="classREMORA.html#a97de693d117772818b80fb566720d4c1" title="Initialize bathymetry from file or analytic." alt="" coords="1195,13,1385,38"/>
 <area shape="poly" title=" " alt="" coords="1419,28,1385,28,1385,23,1419,23"/>
+<area shape="rect" href="classREMORA.html#a4010e1137df2630bdd56327fad98e4a1" title="Init (NOT restart or regrid)" alt="" coords="1004,13,1147,38"/>
+<area shape="poly" title=" " alt="" coords="1181,28,1147,28,1147,23,1181,23"/>
+<area shape="rect" href="classREMORA.html#ad64e9b244603ae920ed761821753a71f" title="Make a new level from scratch using provided BoxArray and DistributionMapping. Only used during initi..." alt="" coords="737,5,956,45"/>
+<area shape="poly" title=" " alt="" coords="990,28,956,28,956,23,990,23"/>
+<area shape="rect" href="classREMORA.html#a316a6db4c0b9a218e834c054d8c8f437" title="read checkpoint file from disk" alt="" coords="473,13,689,38"/>
+<area shape="poly" title=" " alt="" coords="723,28,690,28,690,23,723,23"/>
+<area shape="rect" href="classREMORA.html#af82928444cae433cc744c0cf7427e8eb" title=" " alt="" coords="295,13,425,38"/>
+<area shape="poly" title=" " alt="" coords="460,28,426,28,426,23,460,23"/>
+<area shape="rect" href="classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089" title="Initialize multilevel data." alt="" coords="108,13,247,38"/>
+<area shape="poly" title=" " alt="" coords="281,28,247,28,247,23,281,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6c189eca2928ce27b82e38ae0505fed6" name="a6c189eca2928ce27b82e38ae0505fed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c189eca2928ce27b82e38ae0505fed6">&#9670;&#160;</a></span>read_bathymetry_full_domain_from_netcdf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read_bathymetry_full_domain_from_netcdf </td>
+          <td>(</td>
+          <td class="paramtype">const Box &amp;&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FArrayBox &amp;&#160;</td>
+          <td class="paramname"><em>NC_h_fab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntVect&#160;</td>
+          <td class="paramname"><em>ngrow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>helper function to read full-domain high resolution bathymetry from netcdf </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>simulation domain at nc_hires_grid_level </td></tr>
+    <tr><td class="paramname">fname</td><td>file name to read from </td></tr>
+    <tr><td class="paramname">NC_h_fab</td><td>container for bathymetry data </td></tr>
+    <tr><td class="paramname">ngrow</td><td>number of grow cells to read in, if not default </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00124">124</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00670">REMORA::init_bathymetry_full_domain_from_netcdf()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="REMORA__init__from__netcdf_8cpp_a6c189eca2928ce27b82e38ae0505fed6_icgraph.png" border="0" usemap="#aREMORA__init__from__netcdf_8cpp_a6c189eca2928ce27b82e38ae0505fed6_icgraph" alt=""/></div>
+<map name="aREMORA__init__from__netcdf_8cpp_a6c189eca2928ce27b82e38ae0505fed6_icgraph" id="aREMORA__init__from__netcdf_8cpp_a6c189eca2928ce27b82e38ae0505fed6_icgraph">
+<area shape="rect" title="helper function to read full&#45;domain high resolution bathymetry from netcdf" alt="" coords="1435,5,1599,45"/>
+<area shape="rect" href="classREMORA.html#ac5a5a4afe0cef11dd2474adf224c7c00" title="Full domain bathymetry data initialization from NetCDF file." alt="" coords="1195,5,1387,45"/>
+<area shape="poly" title=" " alt="" coords="1421,28,1387,28,1387,23,1421,23"/>
 <area shape="rect" href="classREMORA.html#a4010e1137df2630bdd56327fad98e4a1" title="Init (NOT restart or regrid)" alt="" coords="1004,13,1147,38"/>
 <area shape="poly" title=" " alt="" coords="1181,28,1147,28,1147,23,1181,23"/>
 <area shape="rect" href="classREMORA.html#ad64e9b244603ae920ed761821753a71f" title="Make a new level from scratch using provided BoxArray and DistributionMapping. Only used during initi..." alt="" coords="737,5,956,45"/>
@@ -739,9 +819,9 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00185">185</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00208">208</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00525">REMORA::init_clim_nudg_coeff_from_netcdf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00530">REMORA::init_clim_nudg_coeff_from_netcdf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -818,9 +898,9 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00124">124</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00147">147</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00361">REMORA::init_coriolis_from_netcdf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00366">REMORA::init_coriolis_from_netcdf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -938,7 +1018,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00020">20</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00089">REMORA::init_data_from_netcdf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00094">REMORA::init_data_from_netcdf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1027,9 +1107,9 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00150">150</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00173">173</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00396">REMORA::init_masks_from_netcdf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00401">REMORA::init_masks_from_netcdf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1106,9 +1186,9 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00226">226</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00249">249</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00601">REMORA::init_riv_pos_from_netcdf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00606">REMORA::init_riv_pos_from_netcdf()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1197,7 +1277,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00051">51</a> of file <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html">REMORA_ReadFromInitNetcdf.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00144">REMORA::init_zeta_from_netcdf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00149">REMORA::init_zeta_from_netcdf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

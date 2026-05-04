@@ -9,5 +9,6 @@ var searchData=
   ['qair_5fdata_5ffrom_5ffile_6',['qair_data_from_file',['../classREMORA.html#a1369a3a8622d37575cc6d4e64cfde69e',1,'REMORA']]],
   ['qair_5ffrom_5fnetcdf_7',['qair_from_netcdf',['../structSolverChoice.html#af07ac3a577900094fdf1f86907cb9697',1,'SolverChoice']]],
   ['qair_5fis_5fpercent_8',['qair_is_percent',['../structSolverChoice.html#ac169ba909b87d9a0ce9411de3375620b',1,'SolverChoice']]],
-  ['quadratic_9',['quadratic',['../REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4ad2ac8798d82192d415e5a4d797dda30a',1,'REMORA_DataStruct.H']]]
+  ['quadratic_9',['quadratic',['../REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4ad2ac8798d82192d415e5a4d797dda30a',1,'REMORA_DataStruct.H']]],
+  ['querynetcdfvarattrstr_10',['querynetcdfvarattrstr',['../REMORA__NCFile_8cpp.html#aa6354e0acb3f047d2772642bc3d5c06f',1,'QueryNetCDFVarAttrStr(const std::string &amp;fname, const std::string &amp;var_name, const std::string &amp;attr_name):&#160;REMORA_NCFile.cpp'],['../REMORA__NCFile_8H.html#aa6354e0acb3f047d2772642bc3d5c06f',1,'QueryNetCDFVarAttrStr(const std::string &amp;fname, const std::string &amp;var_name, const std::string &amp;attr_name):&#160;REMORA_NCFile.cpp']]]
 ];

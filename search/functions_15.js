@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yvel_5fbc_0',['yvel_bc',['../classREMORA.html#a371163db23112360ff23b6693215e773',1,'REMORA::yvel_bc()'],['../namespaceBCVars.html#a7fae82d9515fc9ee5461831e233e6a81',1,'BCVars::yvel_bc()']]]
+  ['xvel_5fbc_0',['xvel_bc',['../classREMORA.html#a111674546154c538b2b89b028d80d789',1,'REMORA::xvel_bc()'],['../namespaceBCVars.html#a283b6280cf03e137da14e4b5a7200098',1,'BCVars::xvel_bc()']]]
 ];

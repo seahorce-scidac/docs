@@ -11,8 +11,9 @@ var REMORA__NCFile_8H =
       [ "Time_Riv", "REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06af35d2b32ef2f8a78ff5f899dbb9cf0a5", null ],
       [ "BT_Riv", "REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06aa8083b9e3c291a871dd61f9dab9df2af", null ]
     ] ],
-    [ "BuildFABsFromNetCDFFile", "REMORA__NCFile_8H.html#a6bc357aa187e5588c44ddaa534c67540", null ],
-    [ "fill_fab_from_arrays", "REMORA__NCFile_8H.html#abb772948db7cfdf671a036782bed7822", null ],
+    [ "BuildFABsFromNetCDFFile", "REMORA__NCFile_8H.html#a41ff4f048600ccc17103500c9cc273bf", null ],
+    [ "fill_fab_from_arrays", "REMORA__NCFile_8H.html#aec6b89e9ef60018dca2f1a9e5b281241", null ],
+    [ "QueryNetCDFVarAttrStr", "REMORA__NCFile_8H.html#aa6354e0acb3f047d2772642bc3d5c06f", null ],
     [ "ReadNetCDFFile", "REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871", null ],
     [ "ReadNetCDFVarAttrStr", "REMORA__NCFile_8H.html#af8eb0b5eb41bbbf48a6dbced8cd0d6ea", null ]
 ];
