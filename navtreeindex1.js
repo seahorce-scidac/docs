@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"REMORA__NCTimeSeriesRiver_8H.html":[3,0,0,2,13],
 "REMORA__NCTimeSeriesRiver_8H_source.html":[3,0,0,2,13],
 "REMORA__NCTimeSeriesRiver_8cpp.html":[3,0,0,2,12],
 "REMORA__NCTimeSeriesRiver_8cpp_source.html":[3,0,0,2,12],
@@ -41,10 +42,10 @@ var NAVTREEINDEX1 =
 "REMORA__SetPlotVars_8cpp.html":[3,0,0,2,16],
 "REMORA__SetPlotVars_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67":[3,0,0,2,16,0],
 "REMORA__SetPlotVars_8cpp_source.html":[3,0,0,2,16],
-"REMORA__SumIQ_8cpp.html":[3,0,0,16],
-"REMORA__SumIQ_8cpp_source.html":[3,0,0,16],
-"REMORA__Tagging_8cpp.html":[3,0,0,17],
-"REMORA__Tagging_8cpp_source.html":[3,0,0,17],
+"REMORA__SumIQ_8cpp.html":[3,0,0,17],
+"REMORA__SumIQ_8cpp_source.html":[3,0,0,17],
+"REMORA__Tagging_8cpp.html":[3,0,0,18],
+"REMORA__Tagging_8cpp_source.html":[3,0,0,18],
 "REMORA__TimeInterpolatedData_8H.html":[3,0,0,0,10],
 "REMORA__TimeInterpolatedData_8H_source.html":[3,0,0,0,10],
 "REMORA__TimeStepML_8cpp.html":[3,0,0,4,24],
@@ -241,13 +242,12 @@ var NAVTREEINDEX1 =
 "classProblemBase.html#ae885e3ba865389fbc93c81ca60b49602":[2,0,5,7],
 "classProblemBase.html#aeb76967b7fa42cb5e29d0be55fac98c8":[2,0,5,1],
 "classREMORA.html":[2,0,6],
-"classREMORA.html#a002524d813441c4b5fe1b223b46389fa":[2,0,6,248],
-"classREMORA.html#a00b41b9e18e62c68fd1ab8fb3ee173f5":[2,0,6,225],
-"classREMORA.html#a018dd62f35c8bfa32b48fbab0c4f99c0":[2,0,6,37],
-"classREMORA.html#a01cb58b5788bc95bc9870768f2be27da":[2,0,6,304],
-"classREMORA.html#a01fc217cc104c92d184106400c4054b6":[2,0,6,228],
-"classREMORA.html#a026f1db4725425f90217b0369cde8f77":[2,0,6,118],
-"classREMORA.html#a02bcb7acf0e5a7de3c70f29027e6e278":[2,0,6,257],
-"classREMORA.html#a03be3174da2fcf83a5b9f695556a0454":[2,0,6,41],
-"classREMORA.html#a03e3346471b528f47454cd969393786d":[2,0,6,47]
+"classREMORA.html#a002524d813441c4b5fe1b223b46389fa":[2,0,6,250],
+"classREMORA.html#a00b41b9e18e62c68fd1ab8fb3ee173f5":[2,0,6,227],
+"classREMORA.html#a018dd62f35c8bfa32b48fbab0c4f99c0":[2,0,6,38],
+"classREMORA.html#a01cb58b5788bc95bc9870768f2be27da":[2,0,6,306],
+"classREMORA.html#a01fc217cc104c92d184106400c4054b6":[2,0,6,230],
+"classREMORA.html#a026f1db4725425f90217b0369cde8f77":[2,0,6,120],
+"classREMORA.html#a02bcb7acf0e5a7de3c70f29027e6e278":[2,0,6,259],
+"classREMORA.html#a033c5119a688522720cbb0765c65b69e":[2,0,6,84]
 };

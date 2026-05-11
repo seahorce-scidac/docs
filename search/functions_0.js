@@ -14,7 +14,8 @@ var searchData=
   ['append2dplotvariables_11',['append2DPlotVariables',['../classREMORA.html#aed280db496ab7b660c2195fa41cbf5be',1,'REMORA']]],
   ['append3dplotvariables_12',['append3DPlotVariables',['../classREMORA.html#ad520335720a727807d115d0fb141f65f',1,'REMORA']]],
   ['apply_5fclim_5fnudg_13',['apply_clim_nudg',['../classREMORA.html#a7c79ff9219e7558d2ddd9fed36eb92d8',1,'REMORA']]],
-  ['average_5fdown_5fwith_5fgrow_5fcells_14',['average_down_with_grow_cells',['../classREMORA.html#aa4cb17875b73325f811c580eea499c66',1,'REMORA']]],
-  ['averagedown_15',['AverageDown',['../classREMORA.html#acc4cc491f4e1714d3d4999290046c82e',1,'REMORA']]],
-  ['averagedownto_16',['AverageDownTo',['../classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3',1,'REMORA']]]
+  ['applyatmosphericstates_14',['ApplyAtmosphericStates',['../classREMORA.html#aa8d92cad90026002f74faa5da3b4d09a',1,'REMORA']]],
+  ['average_5fdown_5fwith_5fgrow_5fcells_15',['average_down_with_grow_cells',['../classREMORA.html#aa4cb17875b73325f811c580eea499c66',1,'REMORA']]],
+  ['averagedown_16',['AverageDown',['../classREMORA.html#acc4cc491f4e1714d3d4999290046c82e',1,'REMORA']]],
+  ['averagedownto_17',['AverageDownTo',['../classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3',1,'REMORA']]]
 ];
