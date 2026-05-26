@@ -25,5 +25,6 @@ var searchData=
   ['domain_5fbc_5ftype_22',['domain_bc_type',['../classREMORA.html#ac686c83706316dc3388d6c1d6b270a2c',1,'REMORA']]],
   ['domain_5fbcs_5ftype_23',['domain_bcs_type',['../classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f',1,'REMORA']]],
   ['domain_5fbcs_5ftype_5fd_24',['domain_bcs_type_d',['../classREMORA.html#af4c01c1be8a352c96a61e03e08c25121',1,'REMORA']]],
-  ['dt_25',['dt',['../classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb',1,'REMORA']]]
+  ['driver_5fatmos_5fstate_5ffrom_5fdriver_25',['driver_atmos_state_from_driver',['../classREMORA.html#a49bdd9456164a2a69bc8765b8fcd1eb6',1,'REMORA']]],
+  ['dt_26',['dt',['../classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb',1,'REMORA']]]
 ];

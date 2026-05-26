@@ -7,7 +7,7 @@ var searchData=
   ['t3dmix2_5fs_4',['t3dmix2_s',['../classREMORA.html#ae8c03c1ee05e8c0b0d8583225cdd741d',1,'REMORA']]],
   ['t_5fnew_5',['t_new',['../classREMORA.html#aa726a41ea5c80773654850a9444bf7fe',1,'REMORA']]],
   ['t_5fold_6',['t_old',['../classREMORA.html#ae94018d43dcebc3cd70293e6c621c46a',1,'REMORA']]],
-  ['tair_7',['Tair',['../structSolverChoice.html#a3538bf4a83768202b603717d42bd2916',1,'SolverChoice']]],
+  ['tair_7',['tair',['../structSolverChoice.html#a3538bf4a83768202b603717d42bd2916',1,'SolverChoice::Tair'],['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4aecf95aa2d2e49e57ec90b8df4598bab2',1,'AtmosState::Tair']]],
   ['tair_5fdata_5ffrom_5ffile_8',['Tair_data_from_file',['../classREMORA.html#aa1957ad32683b1c41471a91d7e272724',1,'REMORA']]],
   ['tair_5ffrom_5fnetcdf_9',['Tair_from_netcdf',['../structSolverChoice.html#a137eefab55894edb8e2c3dbc5caab83e',1,'SolverChoice']]],
   ['tcline_10',['tcline',['../structSolverChoice.html#a8567bc83a2159c88c5372ea30770725e',1,'SolverChoice']]],

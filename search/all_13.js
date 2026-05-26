@@ -9,10 +9,10 @@ var searchData=
   ['u2d_5fsimple_5fbc_6',['u2d_simple_bc',['../namespaceBCVars.html#aaa7b8a81e61961cbac8081a95f5e4b7b',1,'BCVars::u2d_simple_bc()'],['../classREMORA.html#a6dd3a92c05a981549c50fa1f2cde9486',1,'REMORA::u2d_simple_bc() const noexcept']]],
   ['u_5fclim_5fdata_5ffrom_5ffile_7',['u_clim_data_from_file',['../classREMORA.html#a4c140e17127717fe2e110634ed24dad5',1,'REMORA']]],
   ['ubar_8',['ubar',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a6336bc425d2abd84d90f925fc32d358a',1,'BdyVars']]],
-  ['ubar_5fbc_9',['ubar_bc',['../namespaceBCVars.html#ab6d4935713a7eb0c2b848430d7fdbbb5',1,'BCVars::ubar_bc()'],['../classREMORA.html#ab6290a7bfb1ed514ba7c8a3097fb1890',1,'REMORA::ubar_bc() const noexcept']]],
+  ['ubar_5fbc_9',['ubar_bc',['../classREMORA.html#ab6290a7bfb1ed514ba7c8a3097fb1890',1,'REMORA::ubar_bc()'],['../namespaceBCVars.html#ab6d4935713a7eb0c2b848430d7fdbbb5',1,'BCVars::ubar_bc()']]],
   ['ubar_5fclim_5fdata_5ffrom_5ffile_10',['ubar_clim_data_from_file',['../classREMORA.html#a98a16ae538d25fd532d4fbb12d4d0806',1,'REMORA']]],
   ['undefined_11',['undefined',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74',1,'REMORA_IndexDefines.H']]],
-  ['update_5finterpolated_5fto_5ftime_12',['update_interpolated_to_time',['../classNCTimeSeriesRiver.html#a494caa0f2cb0e78439fb4e1d6d654039',1,'NCTimeSeriesRiver::update_interpolated_to_time()'],['../classNCTimeSeriesBoundary.html#ac762fa3a2c74a20a66ddcbabf8e93877',1,'NCTimeSeriesBoundary::update_interpolated_to_time()'],['../classNCTimeSeries.html#a26bcb4a884fe56b3d55d2d297030b0ef',1,'NCTimeSeries::update_interpolated_to_time()']]],
+  ['update_5finterpolated_5fto_5ftime_12',['update_interpolated_to_time',['../classNCTimeSeries.html#a26bcb4a884fe56b3d55d2d297030b0ef',1,'NCTimeSeries::update_interpolated_to_time()'],['../classNCTimeSeriesRiver.html#a494caa0f2cb0e78439fb4e1d6d654039',1,'NCTimeSeriesRiver::update_interpolated_to_time()'],['../classNCTimeSeriesBoundary.html#ac762fa3a2c74a20a66ddcbabf8e93877',1,'NCTimeSeriesBoundary::update_interpolated_to_time()']]],
   ['update_5fmassflux_5f3d_13',['update_massflux_3d',['../classREMORA.html#a0dad365c76c280f858e71ccf9e267bc3',1,'REMORA']]],
   ['update_5fmskp_14',['update_mskp',['../classREMORA.html#a87579645d88831e18fabb5813bfb090b',1,'REMORA']]],
   ['upstream3_15',['upstream3',['../REMORA__DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca5b2d34872c0b46cfbabc832368e6ec7d',1,'REMORA_DataStruct.H']]],
@@ -25,5 +25,6 @@ var searchData=
   ['use_5fvert_5finteg_22',['use_vert_integ',['../classNCTimeSeriesRiver.html#ac2d336b34285ab54521f0220c9449507',1,'NCTimeSeriesRiver']]],
   ['uv3dmix_23',['uv3dmix',['../classREMORA.html#a7c834aec6a6a1e9f0489c0e2c2a6ac38',1,'REMORA']]],
   ['uv_5fhadv_5fscheme_24',['uv_Hadv_scheme',['../structSolverChoice.html#a4171d60125b56fa53204a2e7bf8d32b1',1,'SolverChoice']]],
-  ['uwind_5fdata_5ffrom_5ffile_25',['Uwind_data_from_file',['../classREMORA.html#aa601e1a642f48348267d29fd510645cf',1,'REMORA']]]
+  ['uwind_25',['Uwind',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4ace44688abc1d064a95c55ac3fe880cde',1,'AtmosState']]],
+  ['uwind_5fdata_5ffrom_5ffile_26',['Uwind_data_from_file',['../classREMORA.html#aa601e1a642f48348267d29fd510645cf',1,'REMORA']]]
 ];

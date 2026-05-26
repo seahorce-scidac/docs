@@ -12,5 +12,6 @@ var searchData=
   ['longwave_5fdown_5fdata_5ffrom_5ffile_9',['longwave_down_data_from_file',['../classREMORA.html#a3761efb6d3ba019732d126d111eebb93',1,'REMORA']]],
   ['longwave_5fdown_5ffrom_5fnetcdf_10',['longwave_down_from_netcdf',['../structSolverChoice.html#a31b12f96383a335d8d1ceb529a63fb9a',1,'SolverChoice']]],
   ['longwave_5fnetcdf_5fis_5fnet_11',['longwave_netcdf_is_net',['../structSolverChoice.html#a6199609ec32fa32ce1809ced5ed97d54',1,'SolverChoice']]],
-  ['longwave_5fnetcdf_5fvarname_12',['longwave_netcdf_varname',['../structSolverChoice.html#a3aa75ac02590ba155d7fa0d1df503b65',1,'SolverChoice']]]
+  ['longwave_5fnetcdf_5fvarname_12',['longwave_netcdf_varname',['../structSolverChoice.html#a3aa75ac02590ba155d7fa0d1df503b65',1,'SolverChoice']]],
+  ['lwrad_13',['LWrad',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4abe5478d762a4cfa0d288a8f9befa4b8d',1,'AtmosState']]]
 ];

@@ -1,6 +1,7 @@
 var classREMORA =
 [
     [ "REMORA", "classREMORA.html#a8a16e552c794ae05498e4cb0a65399af", null ],
+    [ "REMORA", "classREMORA.html#a2e6c44c76a0dca92869a64f7f8d06fac", null ],
     [ "~REMORA", "classREMORA.html#af5750f77cb36737ece9e118a321a52da", null ],
     [ "Advance", "classREMORA.html#a9a67a95c1bc1f744268a245f4ca4c446", null ],
     [ "advance_2d", "classREMORA.html#ab987b72e13f0dc83db716c5b0decee29", null ],
@@ -33,6 +34,7 @@ var classREMORA =
     [ "ErrorEst", "classREMORA.html#a783db1b357863608197eccb6fe7d4c52", null ],
     [ "estTimeStep", "classREMORA.html#ac71630052015782fce4f20e204e42016", null ],
     [ "Evolve", "classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e", null ],
+    [ "EvolveOneStep", "classREMORA.html#a429a2087fc3b9b964e573b672b4e17f2", null ],
     [ "fill_3d_masks", "classREMORA.html#a76e34895632b3a7d83882ddf38c92a23", null ],
     [ "fill_from_bdyfiles", "classREMORA.html#a96c0de21f48434c335abca9b9ef896b6", null ],
     [ "FillBdyCCVels", "classREMORA.html#a8b638d2163a39005d276bc1ef14d058f", null ],
@@ -197,6 +199,7 @@ var classREMORA =
     [ "domain_bc_type", "classREMORA.html#ac686c83706316dc3388d6c1d6b270a2c", null ],
     [ "domain_bcs_type", "classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f", null ],
     [ "domain_bcs_type_d", "classREMORA.html#af4c01c1be8a352c96a61e03e08c25121", null ],
+    [ "driver_atmos_state_from_driver", "classREMORA.html#a49bdd9456164a2a69bc8765b8fcd1eb6", null ],
     [ "dt", "classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb", null ],
     [ "EminusP_data_from_file", "classREMORA.html#a7723e6a25f311c63a5c9379e6db7843d", null ],
     [ "expand_plotvars_to_unif_rr", "classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4", null ],

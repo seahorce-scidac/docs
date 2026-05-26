@@ -16,7 +16,8 @@ var searchData=
   ['errorest_13',['ErrorEst',['../classREMORA.html#a783db1b357863608197eccb6fe7d4c52',1,'REMORA']]],
   ['esttimestep_14',['estTimeStep',['../classREMORA.html#ac71630052015782fce4f20e204e42016',1,'REMORA']]],
   ['evolve_15',['Evolve',['../classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e',1,'REMORA']]],
-  ['exit_5fdef_5fmode_16',['exit_def_mode',['../classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96',1,'ncutils::NCFile']]],
-  ['expand_5fplotvars_5fto_5funif_5frr_17',['expand_plotvars_to_unif_rr',['../classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4',1,'REMORA']]],
-  ['ext_5fdir_18',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]]
+  ['evolveonestep_16',['EvolveOneStep',['../classREMORA.html#a429a2087fc3b9b964e573b672b4e17f2',1,'REMORA']]],
+  ['exit_5fdef_5fmode_17',['exit_def_mode',['../classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96',1,'ncutils::NCFile']]],
+  ['expand_5fplotvars_5fto_5funif_5frr_18',['expand_plotvars_to_unif_rr',['../classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4',1,'REMORA']]],
+  ['ext_5fdir_19',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]]
 ];

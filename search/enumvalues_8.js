@@ -6,5 +6,5 @@ var searchData=
   ['none_3',['none',['../REMORA__DataStruct_8H.html#a7090eccc5e33690f648fa0f61cd5e4f7a334c4a4c42fdb79d7ebc3e73b517e6f8',1,'none:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a6f9734fca864f135565da5376b5c3e72a334c4a4c42fdb79d7ebc3e73b517e6f8',1,'none:&#160;REMORA_DataStruct.H']]],
   ['nonlinear_4',['nonlinear',['../REMORA__DataStruct_8H.html#af1aa2592a3b3a5f297a0310e481a999ba06de001201911c5c9361c398bd7e9a79',1,'REMORA_DataStruct.H']]],
   ['null_5',['null',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ab738c65b8fa93b2166002dce928aca27',1,'BdyVars']]],
-  ['numtypes_6',['NumTypes',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102',1,'BdyVars']]]
+  ['numtypes_6',['numtypes',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102',1,'BdyVars::NumTypes'],['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4aae2f525eb9b6db40a2d89c4fec0e0c4c',1,'AtmosState::NumTypes']]]
 ];

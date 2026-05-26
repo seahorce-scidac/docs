@@ -62,5 +62,6 @@ var searchData=
   ['sum_5fper_59',['sum_per',['../classREMORA.html#aee90bf7b804b280c88a65dd354d97ee5',1,'REMORA']]],
   ['sustr_5fdata_5ffrom_5ffile_60',['sustr_data_from_file',['../classREMORA.html#a13f76d1bb7409a59c4cae3e92c79a23d',1,'REMORA']]],
   ['svstr_5fdata_5ffrom_5ffile_61',['svstr_data_from_file',['../classREMORA.html#a6aa02b80fd70c17979b71aba21bf29ed',1,'REMORA']]],
-  ['symmetry_62',['symmetry',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a40e712f30d56083318ab20a2402921d2',1,'REMORA_IndexDefines.H']]]
+  ['swrad_62',['SWrad',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4aa3da6c7380dda7f096cf3d58dd506328',1,'AtmosState']]],
+  ['symmetry_63',['symmetry',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a40e712f30d56083318ab20a2402921d2',1,'REMORA_IndexDefines.H']]]
 ];
