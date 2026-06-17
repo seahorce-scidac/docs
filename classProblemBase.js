@@ -6,7 +6,7 @@ var classProblemBase =
     [ "init_analytic_grid_scale", "classProblemBase.html#a9ae1790470889e08d9a2bd59fd37947b", null ],
     [ "init_analytic_hmix", "classProblemBase.html#a45a7d5b91618f41b13278abd82b42632", null ],
     [ "init_analytic_masks", "classProblemBase.html#ad3167beba6eef6799681e5fa64e15082", null ],
-    [ "init_analytic_prob", "classProblemBase.html#a18d97546b6c9df10ce1c724b6d8020d2", null ],
+    [ "init_analytic_prob", "classProblemBase.html#a1e8d7a0391abd7cb4eb1ea8dc343e953", null ],
     [ "init_analytic_smflux", "classProblemBase.html#ae885e3ba865389fbc93c81ca60b49602", null ],
     [ "init_analytic_vmix", "classProblemBase.html#ac2ba3f467135bc5cb1d0c742c58353e1", null ],
     [ "init_analytic_wind", "classProblemBase.html#a39b9a7110d490e83ba3a35921d3c4333", null ],
