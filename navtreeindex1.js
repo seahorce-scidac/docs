@@ -246,8 +246,8 @@ var NAVTREEINDEX1 =
 "classProblemBase.html#ae885e3ba865389fbc93c81ca60b49602":[2,0,5,7],
 "classProblemBase.html#aeb76967b7fa42cb5e29d0be55fac98c8":[2,0,5,1],
 "classREMORA.html":[2,0,6],
-"classREMORA.html#a002524d813441c4b5fe1b223b46389fa":[2,0,6,263],
-"classREMORA.html#a00b41b9e18e62c68fd1ab8fb3ee173f5":[2,0,6,238],
+"classREMORA.html#a002524d813441c4b5fe1b223b46389fa":[2,0,6,265],
+"classREMORA.html#a00b41b9e18e62c68fd1ab8fb3ee173f5":[2,0,6,240],
 "classREMORA.html#a018dd62f35c8bfa32b48fbab0c4f99c0":[2,0,6,41],
-"classREMORA.html#a01cb58b5788bc95bc9870768f2be27da":[2,0,6,320]
+"classREMORA.html#a01cb58b5788bc95bc9870768f2be27da":[2,0,6,322]
 };

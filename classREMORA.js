@@ -158,6 +158,8 @@ var classREMORA =
     [ "vert_mean_3d", "classREMORA.html#a466d5c5a68c7cfa02247db51bbe74b19", null ],
     [ "vert_visc_3d", "classREMORA.html#aaed0680a8912bbb8bcf78d3fd3737d56", null ],
     [ "volWgtSumMF", "classREMORA.html#abeeb495dbfc8b1a3f35556f156d4b3d2", null ],
+    [ "WriteAtFinalTime", "classREMORA.html#a7bf8182c12763c249e140a18cf023b1e", null ],
+    [ "WriteAtIntermediateTime", "classREMORA.html#a3fb48fd829dfe74252bb0af4597a2775", null ],
     [ "writeBuildInfo", "classREMORA.html#a7714f7f51b35f7a425da770fdae443c6", null ],
     [ "WriteCheckpointFile", "classREMORA.html#a7caca09160ec6dadae1485327a5ae4cc", null ],
     [ "WriteGenericPlotfileHeaderWithBathymetry", "classREMORA.html#aaec1baa6e78d91db427285627c4afaa6", null ],

@@ -1,21 +1,23 @@
 var NAVTREEINDEX4 =
 {
-"classncutils_1_1NCFile.html#adf2e247cf67cdf35f141a136a87acabc":[1,0,7,2,17],
+"classncutils_1_1NCFile.html#adeac7a33722ae294cf1f6bfc0cf45b28":[1,0,7,2,18],
+"classncutils_1_1NCFile.html#adeac7a33722ae294cf1f6bfc0cf45b28":[2,0,0,2,18],
 "classncutils_1_1NCFile.html#adf2e247cf67cdf35f141a136a87acabc":[2,0,0,2,17],
+"classncutils_1_1NCFile.html#adf2e247cf67cdf35f141a136a87acabc":[1,0,7,2,17],
 "classncutils_1_1NCFile.html#ae053dd821f75d4655cc4f23e669effb8":[1,0,7,2,28],
 "classncutils_1_1NCFile.html#ae053dd821f75d4655cc4f23e669effb8":[2,0,0,2,28],
-"classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423":[1,0,7,2,1],
 "classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423":[2,0,0,2,1],
-"classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d":[2,0,0,2,25],
+"classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423":[1,0,7,2,1],
 "classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d":[1,0,7,2,25],
+"classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d":[2,0,0,2,25],
 "classncutils_1_1NCFile.html#af2c4a20c38edb3fae69087a80875b8b9":[2,0,0,2,4],
 "classncutils_1_1NCFile.html#af2c4a20c38edb3fae69087a80875b8b9":[1,0,7,2,4],
 "classncutils_1_1NCFile.html#af3b0f96840a58464b5f5b2ae8576d3ac":[1,0,7,2,30],
 "classncutils_1_1NCFile.html#af3b0f96840a58464b5f5b2ae8576d3ac":[2,0,0,2,30],
 "classncutils_1_1NCFile.html#afb8a21bdc82bc45c7a12cc0323535708":[2,0,0,2,11],
 "classncutils_1_1NCFile.html#afb8a21bdc82bc45c7a12cc0323535708":[1,0,7,2,11],
-"classncutils_1_1NCFile.html#aff4928d9721da70bb27132bc1a2d59b0":[1,0,7,2,7],
 "classncutils_1_1NCFile.html#aff4928d9721da70bb27132bc1a2d59b0":[2,0,0,2,7],
+"classncutils_1_1NCFile.html#aff4928d9721da70bb27132bc1a2d59b0":[1,0,7,2,7],
 "dir_4c48f420b74c1f1cc31b316243ca788c.html":[3,0,0,2],
 "dir_528efc400cc48bc5f175d9531879efeb.html":[3,0,0,0],
 "dir_5c09e96eccedf512ae411d636afd2712.html":[3,0,0,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "structSolverChoice.html#a6715ff804c539605346eb7d385b37e2b":[2,0,9,81],
 "structSolverChoice.html#a6786b75dd4075e026fe7af9310a664be":[2,0,9,56],
 "structSolverChoice.html#a6b3e7341df0067d86754eed591bc1399":[2,0,9,70],
-"structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5":[2,0,9,115],
-"structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017":[2,0,9,116],
-"structSolverChoice.html#a70006d61f65f9e2774b513f5f5cec896":[2,0,9,4]
+"structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5":[2,0,9,115]
 };
