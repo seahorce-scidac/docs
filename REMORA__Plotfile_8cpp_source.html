@@ -715,350 +715,352 @@ $(document).ready(function(){initNavTree('REMORA__Plotfile_8cpp_source.html','')
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>            boxArrays[level] = mf[level]-&gt;boxArray();</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>        }</div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span> </div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        <span class="keyword">auto</span> f = [=]() {</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>            VisMF::IO_Buffer io_buffer(VisMF::IO_Buffer_Size);</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>            std::string HeaderFileName(plotfilename + <span class="stringliteral">&quot;/Header&quot;</span>);</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>            std::ofstream HeaderFile;</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>            HeaderFile.rdbuf()-&gt;pubsetbuf(io_buffer.dataPtr(), io_buffer.size());</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>            HeaderFile.open(HeaderFileName.c_str(), std::ofstream::out   |</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>                                                    std::ofstream::trunc |</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>                                                    std::ofstream::binary);</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>            <span class="keywordflow">if</span>( ! HeaderFile.good()) FileOpenFailed(HeaderFileName);</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>            <a class="code hl_function" href="classREMORA.html#aaec1baa6e78d91db427285627c4afaa6">WriteGenericPlotfileHeaderWithBathymetry</a>(HeaderFile, nlevels, boxArrays, varnames_3d,</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                                                     varnames_2d_rho, varnames_2d_u, varnames_2d_v,</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>                                                     my_geom, time, level_steps, rr, versionName,</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>                                                     levelPrefix, mfPrefix);</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>        };</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>        <span class="keywordflow">if</span> (AsyncOut::UseAsyncOut()) {</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>            AsyncOut::Submit(std::move(f));</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>            f();</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>        }</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    }</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    std::string mf_nodal_prefix = <span class="stringliteral">&quot;Nu_nd&quot;</span>;</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    std::string mf_uface_prefix = <span class="stringliteral">&quot;UFace&quot;</span>;</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    std::string mf_vface_prefix = <span class="stringliteral">&quot;VFace&quot;</span>;</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    std::string mf_wface_prefix = <span class="stringliteral">&quot;WFace&quot;</span>;</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    std::string mf_2d_rho_prefix = <span class="stringliteral">&quot;rho2d&quot;</span>;</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    std::string mf_2d_u_prefix   = <span class="stringliteral">&quot;u2d&quot;</span>;</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    std::string mf_2d_v_prefix   = <span class="stringliteral">&quot;v2d&quot;</span>;</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level)</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    {</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        <span class="keywordflow">if</span> (AsyncOut::UseAsyncOut()) {</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>            VisMF::AsyncWrite(*mf[level],</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>                              MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mfPrefix),</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>                              <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>            VisMF::AsyncWrite(*mf_nd[level],</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>                              MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_nodal_prefix),</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>                              <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classREMORA.html#ab3a68e129dd3a9c440c24872f9b5cdda">plot_staggered_vels</a>) {</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>                VisMF::AsyncWrite(*mf_u[level],</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_uface_prefix),</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>                                  <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>                VisMF::AsyncWrite(*mf_v[level],</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_vface_prefix),</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>                                  <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>                VisMF::AsyncWrite(*mf_w[level],</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_wface_prefix),</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>                                  <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>            }</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>            <span class="keywordflow">if</span> (mf_2d_rho[level]-&gt;nComp() &gt; 0) {</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>                VisMF::AsyncWrite(*mf_2d_rho[level],</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_rho_prefix),</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>                                  <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>            }</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>            <span class="keywordflow">if</span> (mf_2d_u[level]-&gt;nComp() &gt; 0) {</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>                VisMF::AsyncWrite(*mf_2d_u[level],</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_u_prefix),</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>                                  <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>            }</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>            <span class="keywordflow">if</span> (mf_2d_v[level]-&gt;nComp() &gt; 0) {</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>                VisMF::AsyncWrite(*mf_2d_v[level],</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_v_prefix),</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>                                  <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>            }</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>            <span class="keyword">const</span> MultiFab* data;</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>            std::unique_ptr&lt;MultiFab&gt; mf_tmp;</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>            <span class="keywordflow">if</span> (mf[level]-&gt;nGrowVect() != 0) {</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>                mf_tmp = std::make_unique&lt;MultiFab&gt;(mf[level]-&gt;boxArray(),</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>                                                    mf[level]-&gt;DistributionMap(),</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>                                                    mf[level]-&gt;nComp(), 0, MFInfo(),</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>                                                    mf[level]-&gt;Factory());</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>                MultiFab::Copy(*mf_tmp, *mf[level], 0, 0, mf[level]-&gt;nComp(), 0);</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>                data = mf_tmp.get();</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>                data = mf[level];</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            }</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>            VisMF::Write(*data       , MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mfPrefix));</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>            VisMF::Write(*mf_nd[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_nodal_prefix));</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classREMORA.html#ab3a68e129dd3a9c440c24872f9b5cdda">plot_staggered_vels</a>) {</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>                VisMF::Write(*mf_u[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_uface_prefix));</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>                VisMF::Write(*mf_v[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_vface_prefix));</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>                VisMF::Write(*mf_w[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_wface_prefix));</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>            }</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>            <span class="keywordflow">if</span> (mf_2d_rho[level]-&gt;nComp() &gt; 0) {</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>                VisMF::Write(*mf_2d_rho[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_rho_prefix));</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>            }</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>            <span class="keywordflow">if</span> (mf_2d_u[level]-&gt;nComp() &gt; 0) {</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>                VisMF::Write(*mf_2d_u[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_u_prefix));</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>            }</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>            <span class="keywordflow">if</span> (mf_2d_v[level]-&gt;nComp() &gt; 0) {</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>                VisMF::Write(*mf_2d_v[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_v_prefix));</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>            }</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        }</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>    } <span class="comment">// level</span></div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>}</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        <span class="keyword">auto</span> f = [<span class="keyword">this</span>, plotfilename, nlevels, boxArrays, varnames_3d,</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>                  varnames_2d_rho, varnames_2d_u, varnames_2d_v, my_geom,</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>                  time, level_steps, rr, versionName, levelPrefix, mfPrefix]() {</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>            VisMF::IO_Buffer io_buffer(VisMF::IO_Buffer_Size);</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>            std::string HeaderFileName(plotfilename + <span class="stringliteral">&quot;/Header&quot;</span>);</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>            std::ofstream HeaderFile;</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>            HeaderFile.rdbuf()-&gt;pubsetbuf(io_buffer.dataPtr(), io_buffer.size());</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>            HeaderFile.open(HeaderFileName.c_str(), std::ofstream::out   |</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>                                                    std::ofstream::trunc |</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>                                                    std::ofstream::binary);</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>            <span class="keywordflow">if</span>( ! HeaderFile.good()) FileOpenFailed(HeaderFileName);</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            <a class="code hl_function" href="classREMORA.html#aaec1baa6e78d91db427285627c4afaa6">WriteGenericPlotfileHeaderWithBathymetry</a>(HeaderFile, nlevels, boxArrays, varnames_3d,</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>                                                     varnames_2d_rho, varnames_2d_u, varnames_2d_v,</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>                                                     my_geom, time, level_steps, rr, versionName,</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>                                                     levelPrefix, mfPrefix);</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>        };</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span> </div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        <span class="keywordflow">if</span> (AsyncOut::UseAsyncOut()) {</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>            AsyncOut::Submit(std::move(f));</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>            f();</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>        }</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    }</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    std::string mf_nodal_prefix = <span class="stringliteral">&quot;Nu_nd&quot;</span>;</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    std::string mf_uface_prefix = <span class="stringliteral">&quot;UFace&quot;</span>;</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    std::string mf_vface_prefix = <span class="stringliteral">&quot;VFace&quot;</span>;</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    std::string mf_wface_prefix = <span class="stringliteral">&quot;WFace&quot;</span>;</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    std::string mf_2d_rho_prefix = <span class="stringliteral">&quot;rho2d&quot;</span>;</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    std::string mf_2d_u_prefix   = <span class="stringliteral">&quot;u2d&quot;</span>;</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    std::string mf_2d_v_prefix   = <span class="stringliteral">&quot;v2d&quot;</span>;</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level)</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    {</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        <span class="keywordflow">if</span> (AsyncOut::UseAsyncOut()) {</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>            VisMF::AsyncWrite(*mf[level],</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>                              MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mfPrefix),</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>                              <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>            VisMF::AsyncWrite(*mf_nd[level],</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>                              MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_nodal_prefix),</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>                              <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classREMORA.html#ab3a68e129dd3a9c440c24872f9b5cdda">plot_staggered_vels</a>) {</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>                VisMF::AsyncWrite(*mf_u[level],</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_uface_prefix),</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>                                  <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>                VisMF::AsyncWrite(*mf_v[level],</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_vface_prefix),</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>                                  <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>                VisMF::AsyncWrite(*mf_w[level],</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_wface_prefix),</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>                                  <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>            }</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>            <span class="keywordflow">if</span> (mf_2d_rho[level]-&gt;nComp() &gt; 0) {</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>                VisMF::AsyncWrite(*mf_2d_rho[level],</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_rho_prefix),</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>                                  <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>            }</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>            <span class="keywordflow">if</span> (mf_2d_u[level]-&gt;nComp() &gt; 0) {</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>                VisMF::AsyncWrite(*mf_2d_u[level],</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_u_prefix),</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>                                  <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>            }</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>            <span class="keywordflow">if</span> (mf_2d_v[level]-&gt;nComp() &gt; 0) {</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>                VisMF::AsyncWrite(*mf_2d_v[level],</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>                                  MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_v_prefix),</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>                                  <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>            }</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>            <span class="keyword">const</span> MultiFab* data;</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>            std::unique_ptr&lt;MultiFab&gt; mf_tmp;</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>            <span class="keywordflow">if</span> (mf[level]-&gt;nGrowVect() != 0) {</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>                mf_tmp = std::make_unique&lt;MultiFab&gt;(mf[level]-&gt;boxArray(),</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>                                                    mf[level]-&gt;DistributionMap(),</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>                                                    mf[level]-&gt;nComp(), 0, MFInfo(),</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>                                                    mf[level]-&gt;Factory());</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>                MultiFab::Copy(*mf_tmp, *mf[level], 0, 0, mf[level]-&gt;nComp(), 0);</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>                data = mf_tmp.get();</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>                data = mf[level];</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>            }</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>            VisMF::Write(*data       , MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mfPrefix));</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>            VisMF::Write(*mf_nd[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_nodal_prefix));</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classREMORA.html#ab3a68e129dd3a9c440c24872f9b5cdda">plot_staggered_vels</a>) {</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>                VisMF::Write(*mf_u[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_uface_prefix));</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>                VisMF::Write(*mf_v[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_vface_prefix));</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>                VisMF::Write(*mf_w[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_wface_prefix));</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>            }</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>            <span class="keywordflow">if</span> (mf_2d_rho[level]-&gt;nComp() &gt; 0) {</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>                VisMF::Write(*mf_2d_rho[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_rho_prefix));</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>            }</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>            <span class="keywordflow">if</span> (mf_2d_u[level]-&gt;nComp() &gt; 0) {</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>                VisMF::Write(*mf_2d_u[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_u_prefix));</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>            }</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>            <span class="keywordflow">if</span> (mf_2d_v[level]-&gt;nComp() &gt; 0) {</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>                VisMF::Write(*mf_2d_v[level], MultiFabFileFullPrefix(level, plotfilename, levelPrefix, mf_2d_v_prefix));</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>            }</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>        }</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    } <span class="comment">// level</span></div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>}</div>
 </div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span><span class="comment"></span> </div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span><span class="comment"> * @param HeaderFile      output stream for header</span></div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span><span class="comment"> * @param nlevels         number of levels to write out</span></div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span><span class="comment"> * @param bArray          vector over levels of BoxArrays</span></div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span><span class="comment"> * @param varnames_3d     3D variable names to write out</span></div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span><span class="comment"> * @param varnames_2d     2D variable names to write out</span></div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span><span class="comment"> * @param my_geom         geometry to use for writing plotfile</span></div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span><span class="comment"> * @param time            time at which to output</span></div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span><span class="comment"> * @param level_steps     vector over level of iterations</span></div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span><span class="comment"> * @param my_ref_ratio    refinement ratio to use for writing plotfile</span></div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span><span class="comment"> * @param versionName     version string for VisIt</span></div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span><span class="comment"> * @param levelPrefix     string to prepend to level number</span></div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span><span class="comment"> * @param mfPrefix        subdirectory for multifab data</span></div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00726" data-start="{" data-end="}">
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno"><a class="line" href="classREMORA.html#aaec1baa6e78d91db427285627c4afaa6">  726</a></span><a class="code hl_function" href="classREMORA.html#aaec1baa6e78d91db427285627c4afaa6">REMORA::WriteGenericPlotfileHeaderWithBathymetry</a> (std::ostream &amp;HeaderFile,</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>                                                 [[maybe_unused]] <span class="keywordtype">int</span> nlevels,</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>                                                 <span class="keyword">const</span> Vector&lt;BoxArray&gt; &amp;bArray,</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>                                                 <span class="keyword">const</span> Vector&lt;std::string&gt; &amp;varnames_3d,</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>                                                 <span class="keyword">const</span> Vector&lt;std::string&gt; &amp;varnames_2d_rho,</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>                                                 <span class="keyword">const</span> Vector&lt;std::string&gt; &amp;varnames_2d_u,</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>                                                 <span class="keyword">const</span> Vector&lt;std::string&gt; &amp;varnames_2d_v,</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>                                                 <span class="keyword">const</span> Vector&lt;Geometry&gt;&amp; my_geom,</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>                                                 Real time,</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>                                                 <span class="keyword">const</span> Vector&lt;int&gt; &amp;level_steps,</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>                                                 <span class="keyword">const</span> Vector&lt;IntVect&gt;&amp; my_ref_ratio,</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>                                                 <span class="keyword">const</span> std::string &amp;versionName,</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>                                                 <span class="keyword">const</span> std::string &amp;levelPrefix,</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>                                                 <span class="keyword">const</span> std::string &amp;mfPrefix)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    AMREX_ASSERT(nlevels &lt;= bArray.size());</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    AMREX_ASSERT(nlevels &lt;= ref_ratio.size()+1);</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    AMREX_ASSERT(nlevels &lt;= level_steps.size());</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span> </div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="keywordtype">int</span> num_extra_mfs = 1; <span class="comment">// for nodal, which is always on</span></div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classREMORA.html#ab3a68e129dd3a9c440c24872f9b5cdda">plot_staggered_vels</a>) {</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        num_extra_mfs += 3; <span class="comment">// for nodal, which is always on</span></div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    }</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span> </div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    HeaderFile.precision(17);</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span><span class="comment"></span> </div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span><span class="comment"> * @param HeaderFile      output stream for header</span></div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span><span class="comment"> * @param nlevels         number of levels to write out</span></div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span><span class="comment"> * @param bArray          vector over levels of BoxArrays</span></div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span><span class="comment"> * @param varnames_3d     3D variable names to write out</span></div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span><span class="comment"> * @param varnames_2d     2D variable names to write out</span></div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span><span class="comment"> * @param my_geom         geometry to use for writing plotfile</span></div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span><span class="comment"> * @param time            time at which to output</span></div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span><span class="comment"> * @param level_steps     vector over level of iterations</span></div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span><span class="comment"> * @param my_ref_ratio    refinement ratio to use for writing plotfile</span></div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span><span class="comment"> * @param versionName     version string for VisIt</span></div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span><span class="comment"> * @param levelPrefix     string to prepend to level number</span></div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span><span class="comment"> * @param mfPrefix        subdirectory for multifab data</span></div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00728" data-start="{" data-end="}">
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno"><a class="line" href="classREMORA.html#aaec1baa6e78d91db427285627c4afaa6">  728</a></span><a class="code hl_function" href="classREMORA.html#aaec1baa6e78d91db427285627c4afaa6">REMORA::WriteGenericPlotfileHeaderWithBathymetry</a> (std::ostream &amp;HeaderFile,</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>                                                 [[maybe_unused]] <span class="keywordtype">int</span> nlevels,</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>                                                 <span class="keyword">const</span> Vector&lt;BoxArray&gt; &amp;bArray,</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>                                                 <span class="keyword">const</span> Vector&lt;std::string&gt; &amp;varnames_3d,</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>                                                 <span class="keyword">const</span> Vector&lt;std::string&gt; &amp;varnames_2d_rho,</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>                                                 <span class="keyword">const</span> Vector&lt;std::string&gt; &amp;varnames_2d_u,</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>                                                 <span class="keyword">const</span> Vector&lt;std::string&gt; &amp;varnames_2d_v,</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>                                                 <span class="keyword">const</span> Vector&lt;Geometry&gt;&amp; my_geom,</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>                                                 Real time,</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>                                                 <span class="keyword">const</span> Vector&lt;int&gt; &amp;level_steps,</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>                                                 <span class="keyword">const</span> Vector&lt;IntVect&gt;&amp; my_ref_ratio,</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>                                                 <span class="keyword">const</span> std::string &amp;versionName,</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>                                                 <span class="keyword">const</span> std::string &amp;levelPrefix,</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>                                                 <span class="keyword">const</span> std::string &amp;mfPrefix)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    AMREX_ASSERT(nlevels &lt;= bArray.size());</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    AMREX_ASSERT(nlevels &lt;= ref_ratio.size()+1);</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    AMREX_ASSERT(nlevels &lt;= level_steps.size());</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    <span class="keywordtype">int</span> num_extra_mfs = 1; <span class="comment">// for nodal, which is always on</span></div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classREMORA.html#ab3a68e129dd3a9c440c24872f9b5cdda">plot_staggered_vels</a>) {</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>        num_extra_mfs += 3; <span class="comment">// for nodal, which is always on</span></div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    }</div>
 <div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span> </div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    <span class="comment">// ---- this is the generic plot file type name</span></div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    HeaderFile &lt;&lt; versionName &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span> </div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    HeaderFile &lt;&lt; varnames_3d.size() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    HeaderFile.precision(17);</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span> </div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    <span class="comment">// ---- this is the generic plot file type name</span></div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    HeaderFile &lt;&lt; versionName &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span> </div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ivar = 0; ivar &lt; varnames_3d.size(); ++ivar) {</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>        HeaderFile &lt;&lt; varnames_3d[ivar] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    }</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    HeaderFile &lt;&lt; AMREX_SPACEDIM &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    HeaderFile &lt;&lt; time &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    HeaderFile &lt;&lt; finest_level &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; AMREX_SPACEDIM; ++i) {</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>        HeaderFile &lt;&lt; my_geom[0].ProbLo(i) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    }</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; AMREX_SPACEDIM; ++i) {</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>        HeaderFile &lt;&lt; my_geom[0].ProbHi(i) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    }</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; finest_level; ++i) {</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>        HeaderFile &lt;&lt; my_ref_ratio[i][0] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>        }</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= finest_level; ++i) {</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>        HeaderFile &lt;&lt; my_geom[i].Domain() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    }</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= finest_level; ++i) {</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>            HeaderFile &lt;&lt; level_steps[i] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    }</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= finest_level; ++i) {</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; AMREX_SPACEDIM; ++k) {</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>            HeaderFile &lt;&lt; my_geom[i].CellSize()[k] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>        }</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>        HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    }</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    HeaderFile &lt;&lt; (int) my_geom[0].<a class="code hl_enumeration" href="REMORA__DataStruct_8H.html#a627f1f843904477f763577ad1460de01">Coord</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    HeaderFile &lt;&lt; <span class="stringliteral">&quot;0\n&quot;</span>;</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span> </div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>        HeaderFile &lt;&lt; level &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; bArray[level].size() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; time &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>        HeaderFile &lt;&lt; level_steps[level] &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span> </div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>        <span class="keyword">const</span> IntVect&amp; domain_lo = my_geom[level].Domain().smallEnd();</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; bArray[level].size(); ++i)</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>        {</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>            <span class="comment">// Need to shift because the RealBox ctor we call takes the</span></div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>            <span class="comment">// physical location of index (0,0,0).  This does not affect</span></div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>            <span class="comment">// the usual cases where the domain index starts with 0.</span></div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>            <span class="keyword">const</span> Box&amp; b = shift(bArray[level][i], -domain_lo);</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>            RealBox loc = RealBox(b, my_geom[level].CellSize(), my_geom[level].ProbLo());</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; AMREX_SPACEDIM; ++n) {</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>                HeaderFile &lt;&lt; loc.lo(n) &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; loc.hi(n) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>            }</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>        }</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span> </div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mfPrefix) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    }</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>        HeaderFile &lt;&lt; num_extra_mfs &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>        HeaderFile &lt;&lt; <span class="stringliteral">&quot;3&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>        HeaderFile &lt;&lt; <span class="stringliteral">&quot;amrexvec_nu_x&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>        HeaderFile &lt;&lt; <span class="stringliteral">&quot;amrexvec_nu_y&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        HeaderFile &lt;&lt; <span class="stringliteral">&quot;amrexvec_nu_z&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>        std::string mf_nodal_prefix = <span class="stringliteral">&quot;Nu_nd&quot;</span>;</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>            HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_nodal_prefix) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>        }</div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classREMORA.html#ab3a68e129dd3a9c440c24872f9b5cdda">plot_staggered_vels</a>) {</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;1&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// number of components in the multifab</span></div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;u_vel&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>            std::string mf_uface_prefix = <span class="stringliteral">&quot;UFace&quot;</span>;</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_uface_prefix) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>            }</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;1&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;v_vel&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>            std::string mf_vface_prefix = <span class="stringliteral">&quot;VFace&quot;</span>;</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_vface_prefix) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>            }</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;1&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;w_vel&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>            std::string mf_wface_prefix = <span class="stringliteral">&quot;WFace&quot;</span>;</div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_wface_prefix) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>            }</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>        }</div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span> </div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>        <span class="keywordflow">if</span> (varnames_2d_rho.size() &gt; 0) {</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>            HeaderFile &lt;&lt; varnames_2d_rho.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// number of components in the 2D rho multifab</span></div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ivar = 0; ivar &lt; varnames_2d_rho.size(); ++ivar) {</div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>                HeaderFile &lt;&lt; varnames_2d_rho[ivar] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>            }</div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>            std::string mf_2d_rho_prefix = <span class="stringliteral">&quot;rho2d&quot;</span>;</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_2d_rho_prefix) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>            }</div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>        }</div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span> </div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>        <span class="keywordflow">if</span> (varnames_2d_u.size() &gt; 0) {</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>            HeaderFile &lt;&lt; varnames_2d_u.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// number of components in the 2D rho multifab</span></div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ivar = 0; ivar &lt; varnames_2d_u.size(); ++ivar) {</div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>                HeaderFile &lt;&lt; varnames_2d_u[ivar] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>            }</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>            std::string mf_2d_u_prefix = <span class="stringliteral">&quot;u2d&quot;</span>;</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_2d_u_prefix) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>            }</div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>        }</div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span> </div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>        <span class="keywordflow">if</span> (varnames_2d_v.size() &gt; 0) {</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>            HeaderFile &lt;&lt; varnames_2d_v.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// number of components in the 2D v multifab</span></div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ivar = 0; ivar &lt; varnames_2d_v.size(); ++ivar) {</div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>                HeaderFile &lt;&lt; varnames_2d_v[ivar] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>            }</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>            std::string mf_2d_v_prefix = <span class="stringliteral">&quot;v2d&quot;</span>;</div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_2d_v_prefix) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>            }</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>        }</div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>}</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    HeaderFile &lt;&lt; varnames_3d.size() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span> </div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ivar = 0; ivar &lt; varnames_3d.size(); ++ivar) {</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>        HeaderFile &lt;&lt; varnames_3d[ivar] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    }</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    HeaderFile &lt;&lt; AMREX_SPACEDIM &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    HeaderFile &lt;&lt; time &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    HeaderFile &lt;&lt; finest_level &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; AMREX_SPACEDIM; ++i) {</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>        HeaderFile &lt;&lt; my_geom[0].ProbLo(i) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    }</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; AMREX_SPACEDIM; ++i) {</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        HeaderFile &lt;&lt; my_geom[0].ProbHi(i) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    }</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>    HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; finest_level; ++i) {</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>        HeaderFile &lt;&lt; my_ref_ratio[i][0] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>        }</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= finest_level; ++i) {</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>        HeaderFile &lt;&lt; my_geom[i].Domain() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    }</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= finest_level; ++i) {</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>            HeaderFile &lt;&lt; level_steps[i] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    }</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= finest_level; ++i) {</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; AMREX_SPACEDIM; ++k) {</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>            HeaderFile &lt;&lt; my_geom[i].CellSize()[k] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>        }</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>        HeaderFile &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    }</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    HeaderFile &lt;&lt; (int) my_geom[0].<a class="code hl_enumeration" href="REMORA__DataStruct_8H.html#a627f1f843904477f763577ad1460de01">Coord</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    HeaderFile &lt;&lt; <span class="stringliteral">&quot;0\n&quot;</span>;</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span> </div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>        HeaderFile &lt;&lt; level &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; bArray[level].size() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; time &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>        HeaderFile &lt;&lt; level_steps[level] &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span> </div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>        <span class="keyword">const</span> IntVect&amp; domain_lo = my_geom[level].Domain().smallEnd();</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; bArray[level].size(); ++i)</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>        {</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>            <span class="comment">// Need to shift because the RealBox ctor we call takes the</span></div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>            <span class="comment">// physical location of index (0,0,0).  This does not affect</span></div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>            <span class="comment">// the usual cases where the domain index starts with 0.</span></div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>            <span class="keyword">const</span> Box&amp; b = shift(bArray[level][i], -domain_lo);</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>            RealBox loc = RealBox(b, my_geom[level].CellSize(), my_geom[level].ProbLo());</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; AMREX_SPACEDIM; ++n) {</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>                HeaderFile &lt;&lt; loc.lo(n) &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; loc.hi(n) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>            }</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        }</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span> </div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>        HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mfPrefix) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    }</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>        HeaderFile &lt;&lt; num_extra_mfs &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>        HeaderFile &lt;&lt; <span class="stringliteral">&quot;3&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        HeaderFile &lt;&lt; <span class="stringliteral">&quot;amrexvec_nu_x&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>        HeaderFile &lt;&lt; <span class="stringliteral">&quot;amrexvec_nu_y&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>        HeaderFile &lt;&lt; <span class="stringliteral">&quot;amrexvec_nu_z&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>        std::string mf_nodal_prefix = <span class="stringliteral">&quot;Nu_nd&quot;</span>;</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>            HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_nodal_prefix) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>        }</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classREMORA.html#ab3a68e129dd3a9c440c24872f9b5cdda">plot_staggered_vels</a>) {</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;1&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// number of components in the multifab</span></div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;u_vel&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>            std::string mf_uface_prefix = <span class="stringliteral">&quot;UFace&quot;</span>;</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_uface_prefix) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>            }</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;1&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;v_vel&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>            std::string mf_vface_prefix = <span class="stringliteral">&quot;VFace&quot;</span>;</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_vface_prefix) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>            }</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;1&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>            HeaderFile &lt;&lt; <span class="stringliteral">&quot;w_vel&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>            std::string mf_wface_prefix = <span class="stringliteral">&quot;WFace&quot;</span>;</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_wface_prefix) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>            }</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>        }</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>        <span class="keywordflow">if</span> (varnames_2d_rho.size() &gt; 0) {</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>            HeaderFile &lt;&lt; varnames_2d_rho.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// number of components in the 2D rho multifab</span></div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ivar = 0; ivar &lt; varnames_2d_rho.size(); ++ivar) {</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>                HeaderFile &lt;&lt; varnames_2d_rho[ivar] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>            }</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>            std::string mf_2d_rho_prefix = <span class="stringliteral">&quot;rho2d&quot;</span>;</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_2d_rho_prefix) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>            }</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>        }</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span> </div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>        <span class="keywordflow">if</span> (varnames_2d_u.size() &gt; 0) {</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>            HeaderFile &lt;&lt; varnames_2d_u.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// number of components in the 2D rho multifab</span></div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ivar = 0; ivar &lt; varnames_2d_u.size(); ++ivar) {</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>                HeaderFile &lt;&lt; varnames_2d_u[ivar] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>            }</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>            std::string mf_2d_u_prefix = <span class="stringliteral">&quot;u2d&quot;</span>;</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_2d_u_prefix) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>            }</div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>        }</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span> </div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>        <span class="keywordflow">if</span> (varnames_2d_v.size() &gt; 0) {</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>            HeaderFile &lt;&lt; varnames_2d_v.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// number of components in the 2D v multifab</span></div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ivar = 0; ivar &lt; varnames_2d_v.size(); ++ivar) {</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>                HeaderFile &lt;&lt; varnames_2d_v[ivar] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>            }</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>            std::string mf_2d_v_prefix = <span class="stringliteral">&quot;v2d&quot;</span>;</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt;= finest_level; ++level) {</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>                HeaderFile &lt;&lt; MultiFabHeaderPath(level, levelPrefix, mf_2d_v_prefix) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>            }</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>        }</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>}</div>
 </div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span><span class="comment"></span> </div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span><span class="comment"> * @param lev          level to mask</span></div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span><span class="comment"> * @param fill_value   fill value to mask with</span></div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span><span class="comment"> * @param fill_where   value at cells where we will apply the mask. This is necessary because rivers</span></div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00881" data-start="{" data-end="}">
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno"><a class="line" href="classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb">  881</a></span><a class="code hl_function" href="classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb">REMORA::mask_arrays_for_write</a>(<span class="keywordtype">int</span> lev, Real fill_value, Real fill_where)</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>{</div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>    <span class="keywordflow">for</span> (MFIter mfi(*<a class="code hl_variable" href="classREMORA.html#a1e6bb5ba18bc44344e75066721820ed5">cons_new</a>[lev],<span class="keyword">false</span>); mfi.isValid(); ++mfi) {</div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>        Box gbx1 = mfi.growntilebox(IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>+1,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>+1,0));</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>        Box gbx_coeff = mfi.growntilebox(IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>        Box ubx = mfi.grownnodaltilebox(0,IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>        Box vbx = mfi.grownnodaltilebox(1,IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span> </div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; Zt_avg1 = <a class="code hl_variable" href="classREMORA.html#adeb60c66ba4665f07c57fbf3b3b8909a">vec_Zt_avg1</a>[lev]-&gt;array(mfi);</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; ubar = <a class="code hl_variable" href="classREMORA.html#abb214b8bab178b72c44907f5e2aeead8">vec_ubar</a>[lev]-&gt;array(mfi);</div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; vbar = <a class="code hl_variable" href="classREMORA.html#ab70c8d3ac0d8a5f7ac51365571905874">vec_vbar</a>[lev]-&gt;array(mfi);</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; xvel = <a class="code hl_variable" href="classREMORA.html#a6d4e5271a8d00e497c4bce0a51dbe63c">xvel_new</a>[lev]-&gt;array(mfi);</div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; yvel = <a class="code hl_variable" href="classREMORA.html#a57327a8173b5dd09f9db6ce23f745dd5">yvel_new</a>[lev]-&gt;array(mfi);</div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; visc2 = <a class="code hl_variable" href="classREMORA.html#a86f0a2458c28f42d5be178d7bc5d104b">vec_visc2_r</a>[lev]-&gt;array(mfi);</div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; diff2 = <a class="code hl_variable" href="classREMORA.html#afdf4b75f0ec12caf3648dbee5ec7f653">vec_diff2</a>[lev]-&gt;array(mfi);</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; temp = <a class="code hl_variable" href="classREMORA.html#a1e6bb5ba18bc44344e75066721820ed5">cons_new</a>[lev]-&gt;array(mfi,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a2439ff23f4449b8ffa90ddc5bcb36173">Temp_comp</a>);</div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; salt = <a class="code hl_variable" href="classREMORA.html#a1e6bb5ba18bc44344e75066721820ed5">cons_new</a>[lev]-&gt;array(mfi,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf">Salt_comp</a>);</div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span> </div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>        Array4&lt;Real const&gt; <span class="keyword">const</span>&amp; mskr = <a class="code hl_variable" href="classREMORA.html#a271d86c1e20a76bd279fb2ae3411b17d">vec_mskr</a>[lev]-&gt;array(mfi);</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>        Array4&lt;Real const&gt; <span class="keyword">const</span>&amp; msku = <a class="code hl_variable" href="classREMORA.html#a495638b4cabe139ecdff6a3e8fb7317d">vec_msku</a>[lev]-&gt;array(mfi);</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>        Array4&lt;Real const&gt; <span class="keyword">const</span>&amp; mskv = <a class="code hl_variable" href="classREMORA.html#a74a4e71cfbac3f7792e1ea70e29cff36">vec_mskv</a>[lev]-&gt;array(mfi);</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> ncons_local = <a class="code hl_variable" href="classREMORA.html#a0614aa1826c2b48b2ec5942acf522285">ncons</a>;</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span> </div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>        ParallelFor(makeSlab(gbx1,2,0), [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>        {</div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>            <span class="keywordflow">if</span> (mskr(i,j,0) == 0.0) {  <span class="comment">// Explicitly compare to 0.0</span></div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>                Zt_avg1(i,j,0) = fill_value;</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>            }</div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>        });</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>        ParallelFor(gbx1, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>        {</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>            <span class="keywordflow">if</span> (mskr(i,j,0) == 0.0) {  <span class="comment">// Explicitly compare to 0.0</span></div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>                temp(i,j,k) = fill_value;</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>                salt(i,j,k) = fill_value;</div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>            }</div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>        });</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>        ParallelFor(makeSlab(gbx_coeff,2,0), [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        {</div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>            <span class="keywordflow">if</span> (mskr(i,j,0) == 0.0) {  <span class="comment">// Explicitly compare to 0.0</span></div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>                visc2(i,j,0) = fill_value;</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; ncons_local; ++n) {</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>                    diff2(i,j,0,n) = fill_value;</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>                }</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>            }</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        });</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        ParallelFor(makeSlab(ubx,2,0), 3, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> , <span class="keywordtype">int</span> n)</div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>        {</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>            <span class="keywordflow">if</span> (msku(i,j,0) == 0.0 &amp;&amp; ubar(i,j,0)==fill_where) {  <span class="comment">// Explicitly compare to 0.0</span></div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>                ubar(i,j,0,n) = fill_value;</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>            }</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>        });</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>        ParallelFor(makeSlab(vbx,2,0), 3, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> , <span class="keywordtype">int</span> n)</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>        {</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>            <span class="keywordflow">if</span> (mskv(i,j,0) == 0.0 &amp;&amp; vbar(i,j,0)==fill_where) {  <span class="comment">// Explicitly compare to 0.0</span></div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>                vbar(i,j,0,n) = fill_value;</div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>            }</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>        });</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>        ParallelFor(ubx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>        {</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>            <span class="keywordflow">if</span> (msku(i,j,0) == 0.0 &amp;&amp; xvel(i,j,k)==fill_where) {  <span class="comment">// Explicitly compare to 0.0</span></div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>                xvel(i,j,k) = fill_value;</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>            }</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>        });</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>        ParallelFor(vbx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>        {</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>            <span class="keywordflow">if</span> (mskv(i,j,0) == 0.0 &amp;&amp; yvel(i,j,k)==fill_where) {  <span class="comment">// Explicitly compare to 0.0</span></div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>                yvel(i,j,k) = fill_value;</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>            }</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>        });</div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>    } <span class="comment">// mfi</span></div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>    Gpu::streamSynchronize();</div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>}</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span><span class="comment"></span> </div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span><span class="comment"> * @param lev          level to mask</span></div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span><span class="comment"> * @param fill_value   fill value to mask with</span></div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span><span class="comment"> * @param fill_where   value at cells where we will apply the mask. This is necessary because rivers</span></div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00883" data-start="{" data-end="}">
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno"><a class="line" href="classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb">  883</a></span><a class="code hl_function" href="classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb">REMORA::mask_arrays_for_write</a>(<span class="keywordtype">int</span> lev, Real fill_value, Real fill_where)</div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>{</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>    <span class="keywordflow">for</span> (MFIter mfi(*<a class="code hl_variable" href="classREMORA.html#a1e6bb5ba18bc44344e75066721820ed5">cons_new</a>[lev],<span class="keyword">false</span>); mfi.isValid(); ++mfi) {</div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>        Box gbx1 = mfi.growntilebox(IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>+1,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>+1,0));</div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>        Box gbx_coeff = mfi.growntilebox(IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>        Box ubx = mfi.grownnodaltilebox(0,IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>        Box vbx = mfi.grownnodaltilebox(1,IntVect(<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a>,0));</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span> </div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; Zt_avg1 = <a class="code hl_variable" href="classREMORA.html#adeb60c66ba4665f07c57fbf3b3b8909a">vec_Zt_avg1</a>[lev]-&gt;array(mfi);</div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; ubar = <a class="code hl_variable" href="classREMORA.html#abb214b8bab178b72c44907f5e2aeead8">vec_ubar</a>[lev]-&gt;array(mfi);</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; vbar = <a class="code hl_variable" href="classREMORA.html#ab70c8d3ac0d8a5f7ac51365571905874">vec_vbar</a>[lev]-&gt;array(mfi);</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; xvel = <a class="code hl_variable" href="classREMORA.html#a6d4e5271a8d00e497c4bce0a51dbe63c">xvel_new</a>[lev]-&gt;array(mfi);</div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; yvel = <a class="code hl_variable" href="classREMORA.html#a57327a8173b5dd09f9db6ce23f745dd5">yvel_new</a>[lev]-&gt;array(mfi);</div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; visc2 = <a class="code hl_variable" href="classREMORA.html#a86f0a2458c28f42d5be178d7bc5d104b">vec_visc2_r</a>[lev]-&gt;array(mfi);</div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; diff2 = <a class="code hl_variable" href="classREMORA.html#afdf4b75f0ec12caf3648dbee5ec7f653">vec_diff2</a>[lev]-&gt;array(mfi);</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; temp = <a class="code hl_variable" href="classREMORA.html#a1e6bb5ba18bc44344e75066721820ed5">cons_new</a>[lev]-&gt;array(mfi,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#a2439ff23f4449b8ffa90ddc5bcb36173">Temp_comp</a>);</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>        Array4&lt;Real&gt; <span class="keyword">const</span>&amp; salt = <a class="code hl_variable" href="classREMORA.html#a1e6bb5ba18bc44344e75066721820ed5">cons_new</a>[lev]-&gt;array(mfi,<a class="code hl_define" href="REMORA__IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf">Salt_comp</a>);</div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span> </div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>        Array4&lt;Real const&gt; <span class="keyword">const</span>&amp; mskr = <a class="code hl_variable" href="classREMORA.html#a271d86c1e20a76bd279fb2ae3411b17d">vec_mskr</a>[lev]-&gt;array(mfi);</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        Array4&lt;Real const&gt; <span class="keyword">const</span>&amp; msku = <a class="code hl_variable" href="classREMORA.html#a495638b4cabe139ecdff6a3e8fb7317d">vec_msku</a>[lev]-&gt;array(mfi);</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>        Array4&lt;Real const&gt; <span class="keyword">const</span>&amp; mskv = <a class="code hl_variable" href="classREMORA.html#a74a4e71cfbac3f7792e1ea70e29cff36">vec_mskv</a>[lev]-&gt;array(mfi);</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> ncons_local = <a class="code hl_variable" href="classREMORA.html#a0614aa1826c2b48b2ec5942acf522285">ncons</a>;</div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span> </div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>        ParallelFor(makeSlab(gbx1,2,0), [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>        {</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>            <span class="keywordflow">if</span> (mskr(i,j,0) == 0.0) {  <span class="comment">// Explicitly compare to 0.0</span></div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>                Zt_avg1(i,j,0) = fill_value;</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>            }</div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>        });</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>        ParallelFor(gbx1, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>        {</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>            <span class="keywordflow">if</span> (mskr(i,j,0) == 0.0) {  <span class="comment">// Explicitly compare to 0.0</span></div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>                temp(i,j,k) = fill_value;</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>                salt(i,j,k) = fill_value;</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>            }</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        });</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>        ParallelFor(makeSlab(gbx_coeff,2,0), [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>        {</div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>            <span class="keywordflow">if</span> (mskr(i,j,0) == 0.0) {  <span class="comment">// Explicitly compare to 0.0</span></div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>                visc2(i,j,0) = fill_value;</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; ncons_local; ++n) {</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>                    diff2(i,j,0,n) = fill_value;</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>                }</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>            }</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>        });</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>        ParallelFor(makeSlab(ubx,2,0), 3, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> , <span class="keywordtype">int</span> n)</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>        {</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>            <span class="keywordflow">if</span> (msku(i,j,0) == 0.0 &amp;&amp; ubar(i,j,0)==fill_where) {  <span class="comment">// Explicitly compare to 0.0</span></div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>                ubar(i,j,0,n) = fill_value;</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>            }</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>        });</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>        ParallelFor(makeSlab(vbx,2,0), 3, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> , <span class="keywordtype">int</span> n)</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>        {</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>            <span class="keywordflow">if</span> (mskv(i,j,0) == 0.0 &amp;&amp; vbar(i,j,0)==fill_where) {  <span class="comment">// Explicitly compare to 0.0</span></div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>                vbar(i,j,0,n) = fill_value;</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>            }</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>        });</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>        ParallelFor(ubx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>        {</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>            <span class="keywordflow">if</span> (msku(i,j,0) == 0.0 &amp;&amp; xvel(i,j,k)==fill_where) {  <span class="comment">// Explicitly compare to 0.0</span></div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>                xvel(i,j,k) = fill_value;</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>            }</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>        });</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>        ParallelFor(vbx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>        {</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>            <span class="keywordflow">if</span> (mskv(i,j,0) == 0.0 &amp;&amp; yvel(i,j,k)==fill_where) {  <span class="comment">// Explicitly compare to 0.0</span></div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>                yvel(i,j,k) = fill_value;</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>            }</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>        });</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    } <span class="comment">// mfi</span></div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    Gpu::streamSynchronize();</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>}</div>
 </div>
 <div class="ttc" id="aREMORA_8H_html"><div class="ttname"><a href="REMORA_8H.html">REMORA.H</a></div></div>
 <div class="ttc" id="aREMORA__DataStruct_8H_html_a4036964f680afc43cfce078311111a9eabbe17e876cafcbc06d3ea0d2a23854d3"><div class="ttname"><a href="REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9eabbe17e876cafcbc06d3ea0d2a23854d3">PlotfileType::amrex</a></div><div class="ttdeci">@ amrex</div></div>
@@ -1090,14 +1092,14 @@ $(document).ready(function(){initNavTree('REMORA__Plotfile_8cpp_source.html','')
 <div class="ttc" id="aclassREMORA_html_a74a4e71cfbac3f7792e1ea70e29cff36"><div class="ttname"><a href="classREMORA.html#a74a4e71cfbac3f7792e1ea70e29cff36">REMORA::vec_mskv</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_mskv</div><div class="ttdoc">land/sea mask at y-faces (2D)</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l00469">REMORA.H:469</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a7c44493fe1a5743c92f272c91c3aa558"><div class="ttname"><a href="classREMORA.html#a7c44493fe1a5743c92f272c91c3aa558">REMORA::istep</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; istep</div><div class="ttdoc">which step?</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l01366">REMORA.H:1366</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a80f8805ec54ede636cb7c9492233e6ab"><div class="ttname"><a href="classREMORA.html#a80f8805ec54ede636cb7c9492233e6ab">REMORA::WriteMultiLevelPlotfileWithBathymetry</a></div><div class="ttdeci">void WriteMultiLevelPlotfileWithBathymetry(const std::string &amp;plotfilename, int nlevels, const amrex::Vector&lt; const amrex::MultiFab * &gt; &amp;mf, const amrex::Vector&lt; const amrex::MultiFab * &gt; &amp;mf_nd, const amrex::Vector&lt; const amrex::MultiFab * &gt; &amp;mf_u, const amrex::Vector&lt; const amrex::MultiFab * &gt; &amp;mf_v, const amrex::Vector&lt; const amrex::MultiFab * &gt; &amp;mf_w, const amrex::Vector&lt; const amrex::MultiFab * &gt; &amp;mf_2d_rho, const amrex::Vector&lt; const amrex::MultiFab * &gt; &amp;mf_2d_u, const amrex::Vector&lt; const amrex::MultiFab * &gt; &amp;mf_2d_v, const amrex::Vector&lt; std::string &gt; &amp;varnames_3d, const amrex::Vector&lt; std::string &gt; &amp;varnames_2d_rho, const amrex::Vector&lt; std::string &gt; &amp;varnames_2d_u, const amrex::Vector&lt; std::string &gt; &amp;varnames_2d_v, const amrex::Vector&lt; amrex::Geometry &gt; &amp;my_geom, amrex::Real time, const amrex::Vector&lt; int &gt; &amp;level_steps, const amrex::Vector&lt; amrex::IntVect &gt; &amp;rr, const std::string &amp;versionName=&quot;HyperCLaw-V1.1&quot;, const std::string &amp;levelPrefix=&quot;Level_&quot;, const std::string &amp;mfPrefix=&quot;Cell&quot;, const amrex::Vector&lt; std::string &gt; &amp;extra_dirs=amrex::Vector&lt; std::string &gt;()) const</div><div class="ttdoc">write out particular data to an AMReX plotfile</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Plotfile_8cpp_source.html#l00567">REMORA_Plotfile.cpp:567</a></div></div>
-<div class="ttc" id="aclassREMORA_html_a81cc67c1d9d130d134ec352df04b99bb"><div class="ttname"><a href="classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb">REMORA::mask_arrays_for_write</a></div><div class="ttdeci">void mask_arrays_for_write(int lev, amrex::Real fill_value, amrex::Real fill_where)</div><div class="ttdoc">Mask data arrays before writing output.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Plotfile_8cpp_source.html#l00881">REMORA_Plotfile.cpp:881</a></div></div>
+<div class="ttc" id="aclassREMORA_html_a81cc67c1d9d130d134ec352df04b99bb"><div class="ttname"><a href="classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb">REMORA::mask_arrays_for_write</a></div><div class="ttdeci">void mask_arrays_for_write(int lev, amrex::Real fill_value, amrex::Real fill_where)</div><div class="ttdoc">Mask data arrays before writing output.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Plotfile_8cpp_source.html#l00883">REMORA_Plotfile.cpp:883</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a84df70f21edd11cb1df1d3e5b96ba754"><div class="ttname"><a href="classREMORA.html#a84df70f21edd11cb1df1d3e5b96ba754">REMORA::file_min_digits</a></div><div class="ttdeci">static int file_min_digits</div><div class="ttdoc">Minimum number of digits in plotfile name or chunked history file.</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l01544">REMORA.H:1544</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a86f0a2458c28f42d5be178d7bc5d104b"><div class="ttname"><a href="classREMORA.html#a86f0a2458c28f42d5be178d7bc5d104b">REMORA::vec_visc2_r</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_visc2_r</div><div class="ttdoc">Harmonic viscosity defined on the rho points (centers)</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l00350">REMORA.H:350</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a88a26701f7276ea04f5c9ede4ae46981"><div class="ttname"><a href="classREMORA.html#a88a26701f7276ea04f5c9ede4ae46981">REMORA::vec_svstr</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_svstr</div><div class="ttdoc">Surface stress in the v direction.</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l00383">REMORA.H:383</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a9e0560b2f68b9c541583c9c1ff6c87ec"><div class="ttname"><a href="classREMORA.html#a9e0560b2f68b9c541583c9c1ff6c87ec">REMORA::vec_DV_avg1</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_DV_avg1</div><div class="ttdoc">time average of barotropic y velocity flux</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l00445">REMORA.H:445</a></div></div>
 <div class="ttc" id="aclassREMORA_html_aa159916f33b19463c184aafa7dbb3706"><div class="ttname"><a href="classREMORA.html#aa159916f33b19463c184aafa7dbb3706">REMORA::WriteNCPlotFile</a></div><div class="ttdeci">void WriteNCPlotFile(int istep, amrex::MultiFab const *plotMF)</div><div class="ttdoc">Write plotfile using NetCDF (wrapper)</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCPlotFile_8cpp_source.html#l00024">REMORA_NCPlotFile.cpp:24</a></div></div>
 <div class="ttc" id="aclassREMORA_html_aa726a41ea5c80773654850a9444bf7fe"><div class="ttname"><a href="classREMORA.html#aa726a41ea5c80773654850a9444bf7fe">REMORA::t_new</a></div><div class="ttdeci">amrex::Vector&lt; amrex::Real &gt; t_new</div><div class="ttdoc">new time at each level</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l01370">REMORA.H:1370</a></div></div>
-<div class="ttc" id="aclassREMORA_html_aaec1baa6e78d91db427285627c4afaa6"><div class="ttname"><a href="classREMORA.html#aaec1baa6e78d91db427285627c4afaa6">REMORA::WriteGenericPlotfileHeaderWithBathymetry</a></div><div class="ttdeci">void WriteGenericPlotfileHeaderWithBathymetry(std::ostream &amp;HeaderFile, int nlevels, const amrex::Vector&lt; amrex::BoxArray &gt; &amp;bArray, const amrex::Vector&lt; std::string &gt; &amp;varnames_3d, const amrex::Vector&lt; std::string &gt; &amp;varnames_2d_rho, const amrex::Vector&lt; std::string &gt; &amp;varnames_2d_u, const amrex::Vector&lt; std::string &gt; &amp;varnames_2d_v, const amrex::Vector&lt; amrex::Geometry &gt; &amp;my_geom, amrex::Real time, const amrex::Vector&lt; int &gt; &amp;level_steps, const amrex::Vector&lt; amrex::IntVect &gt; &amp;rr, const std::string &amp;versionName, const std::string &amp;levelPrefix, const std::string &amp;mfPrefix) const</div><div class="ttdoc">write out header data for an AMReX plotfile</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Plotfile_8cpp_source.html#l00726">REMORA_Plotfile.cpp:726</a></div></div>
+<div class="ttc" id="aclassREMORA_html_aaec1baa6e78d91db427285627c4afaa6"><div class="ttname"><a href="classREMORA.html#aaec1baa6e78d91db427285627c4afaa6">REMORA::WriteGenericPlotfileHeaderWithBathymetry</a></div><div class="ttdeci">void WriteGenericPlotfileHeaderWithBathymetry(std::ostream &amp;HeaderFile, int nlevels, const amrex::Vector&lt; amrex::BoxArray &gt; &amp;bArray, const amrex::Vector&lt; std::string &gt; &amp;varnames_3d, const amrex::Vector&lt; std::string &gt; &amp;varnames_2d_rho, const amrex::Vector&lt; std::string &gt; &amp;varnames_2d_u, const amrex::Vector&lt; std::string &gt; &amp;varnames_2d_v, const amrex::Vector&lt; amrex::Geometry &gt; &amp;my_geom, amrex::Real time, const amrex::Vector&lt; int &gt; &amp;level_steps, const amrex::Vector&lt; amrex::IntVect &gt; &amp;rr, const std::string &amp;versionName, const std::string &amp;levelPrefix, const std::string &amp;mfPrefix) const</div><div class="ttdoc">write out header data for an AMReX plotfile</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Plotfile_8cpp_source.html#l00728">REMORA_Plotfile.cpp:728</a></div></div>
 <div class="ttc" id="aclassREMORA_html_ab3a68e129dd3a9c440c24872f9b5cdda"><div class="ttname"><a href="classREMORA.html#ab3a68e129dd3a9c440c24872f9b5cdda">REMORA::plot_staggered_vels</a></div><div class="ttdeci">static int plot_staggered_vels</div><div class="ttdoc">Whether to write the staggered velocities (not averaged to cell centers)</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l01547">REMORA.H:1547</a></div></div>
 <div class="ttc" id="aclassREMORA_html_ab70c8d3ac0d8a5f7ac51365571905874"><div class="ttname"><a href="classREMORA.html#ab70c8d3ac0d8a5f7ac51365571905874">REMORA::vec_vbar</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_vbar</div><div class="ttdoc">barotropic y velocity (2D)</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l00457">REMORA.H:457</a></div></div>
 <div class="ttc" id="aclassREMORA_html_ab8e2ff918dcaf20a807b37e88f9fdbb0"><div class="ttname"><a href="classREMORA.html#ab8e2ff918dcaf20a807b37e88f9fdbb0">REMORA::vec_DU_avg1</a></div><div class="ttdeci">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt; vec_DU_avg1</div><div class="ttdoc">time average of barotropic x velocity flux (2D)</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l00441">REMORA.H:441</a></div></div>

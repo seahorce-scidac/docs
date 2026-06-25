@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('REMORA__init__bcs_8cpp_source.html',''
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> bcvar_type == xvel_bc_idx || bcvar_type == yvel_bc_idx || bcvar_type == zvel_bc_idx;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    };</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">auto</span> uses_scalar_input = [=] (<span class="keywordtype">int</span> bcvar_type) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">auto</span> uses_scalar_input = [<span class="keyword">this</span>] (<span class="keywordtype">int</span> bcvar_type) <span class="keyword">noexcept</span> {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> bcvar_type &gt;= <a class="code hl_define" href="REMORA__IndexDefines_8H.html#a9b3470d187fb5c8b5eb826568bba2617">Tracer_comp</a> &amp;&amp; bcvar_type &lt; <a class="code hl_variable" href="classREMORA.html#a0614aa1826c2b48b2ec5942acf522285">ncons</a>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    };</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
