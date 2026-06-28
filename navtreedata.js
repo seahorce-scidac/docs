@@ -66,9 +66,9 @@ var NAVTREEINDEX =
 "REMORA_8H.html",
 "REMORA__NCTimeSeriesRiver_8H.html",
 "classREMORA.html#a01fc217cc104c92d184106400c4054b6",
-"classREMORA.html#aa397de8a5e0dd4df43b450c8fd581162",
-"classncutils_1_1NCFile.html#adeac7a33722ae294cf1f6bfc0cf45b28",
-"structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017"
+"classREMORA.html#aa2dfec87e25516cbc261ca777dc84b95",
+"classncutils_1_1NCFile.html#ace4a49831a5dc61e09b8c1e9f0a75f85",
+"structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
