@@ -21,10 +21,12 @@ var searchData=
   ['do_5fsubstep_18',['do_substep',['../classREMORA.html#a2c050fd7227b627691a3c074eb104c8d',1,'REMORA']]],
   ['do_5ftemp_5fclim_5fnudg_19',['do_temp_clim_nudg',['../structSolverChoice.html#aba3fed4dad7b28dadbfc543196b185c1',1,'SolverChoice']]],
   ['do_5ftemp_5fflux_20',['do_temp_flux',['../structSolverChoice.html#af2536abf9cbf11b259ac3267d8be2105',1,'SolverChoice']]],
-  ['domain_21',['domain',['../classNCTimeSeries.html#a52b1efdb2e35f56ad86df2aa461a0b54',1,'NCTimeSeries::domain'],['../classNCTimeSeriesBoundary.html#ae24475b0f367f045b3821257bf5f9be7',1,'NCTimeSeriesBoundary::domain']]],
+  ['domain_21',['domain',['../classNCTimeSeriesBoundary.html#ae24475b0f367f045b3821257bf5f9be7',1,'NCTimeSeriesBoundary::domain'],['../classNCTimeSeries.html#a52b1efdb2e35f56ad86df2aa461a0b54',1,'NCTimeSeries::domain']]],
   ['domain_5fbc_5ftype_22',['domain_bc_type',['../classREMORA.html#ac686c83706316dc3388d6c1d6b270a2c',1,'REMORA']]],
   ['domain_5fbcs_5ftype_23',['domain_bcs_type',['../classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f',1,'REMORA']]],
   ['domain_5fbcs_5ftype_5fd_24',['domain_bcs_type_d',['../classREMORA.html#af4c01c1be8a352c96a61e03e08c25121',1,'REMORA']]],
   ['driver_5fatmos_5fstate_5ffrom_5fdriver_25',['driver_atmos_state_from_driver',['../classREMORA.html#a49bdd9456164a2a69bc8765b8fcd1eb6',1,'REMORA']]],
-  ['dt_26',['dt',['../classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb',1,'REMORA']]]
+  ['dstart_26',['dstart',['../REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_ChannelTest.H'],['../REMORA__InitAnalyticSMFlux__DoublyPeriodic_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_DoublyPeriodic.H'],['../REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_ParticlesOverSeamount.H'],['../REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_Upwelling.H'],['../REMORA__InitAnalyticSMFlux__UpwellingML_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_UpwellingML.H'],['../REMORA__InitAnalyticWind__BoundaryLayer_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticWind_BoundaryLayer.H']]],
+  ['dt_27',['dt',['../classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb',1,'REMORA']]],
+  ['dxi_28',['dxi',['../REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#aa6d5415aa0b20515949a772e4f86176e',1,'REMORA_InitAnalyticGridScale_BoundaryLayer.H']]]
 ];

@@ -38,6 +38,8 @@ var searchData=
   ['domain_5fbcs_5ftype_35',['domain_bcs_type',['../classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f',1,'REMORA']]],
   ['domain_5fbcs_5ftype_5fd_36',['domain_bcs_type_d',['../classREMORA.html#af4c01c1be8a352c96a61e03e08c25121',1,'REMORA']]],
   ['driver_5fatmos_5fstate_5ffrom_5fdriver_37',['driver_atmos_state_from_driver',['../classREMORA.html#a49bdd9456164a2a69bc8765b8fcd1eb6',1,'REMORA']]],
-  ['dt_38',['dt',['../classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb',1,'REMORA']]],
-  ['dtype_39',['DType',['../structNDArray.html#a96033b69f69ea0ae537a24288715752d',1,'NDArray']]]
+  ['dstart_38',['dstart',['../REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_ChannelTest.H'],['../REMORA__InitAnalyticSMFlux__DoublyPeriodic_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_DoublyPeriodic.H'],['../REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_ParticlesOverSeamount.H'],['../REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_Upwelling.H'],['../REMORA__InitAnalyticSMFlux__UpwellingML_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_UpwellingML.H'],['../REMORA__InitAnalyticWind__BoundaryLayer_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticWind_BoundaryLayer.H']]],
+  ['dt_39',['dt',['../classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb',1,'REMORA']]],
+  ['dtype_40',['DType',['../structNDArray.html#a96033b69f69ea0ae537a24288715752d',1,'NDArray']]],
+  ['dxi_41',['dxi',['../REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#aa6d5415aa0b20515949a772e4f86176e',1,'REMORA_InitAnalyticGridScale_BoundaryLayer.H']]]
 ];

@@ -1,13 +1,21 @@
 var searchData=
 [
-  ['x_0',['x',['../REMORA__DataStruct_8H.html#a627f1f843904477f763577ad1460de01a9dd4e461268c8034f5c8564e155c67a6',1,'REMORA_DataStruct.H']]],
-  ['xhi_5fdat_5fafter_1',['xhi_dat_after',['../classNCTimeSeriesBoundary.html#a8f7bc5f1935b73d6e364f14d9b54b00f',1,'NCTimeSeriesBoundary']]],
-  ['xhi_5fdat_5fbefore_2',['xhi_dat_before',['../classNCTimeSeriesBoundary.html#aba4a0b240edae0c0cec301ad3600e89a',1,'NCTimeSeriesBoundary']]],
-  ['xhi_5fdat_5finterp_3',['xhi_dat_interp',['../classNCTimeSeriesBoundary.html#a5dcbd9d5af3f9cfaa6f3a16f4ebe8132',1,'NCTimeSeriesBoundary']]],
-  ['xlo_5fdat_5fafter_4',['xlo_dat_after',['../classNCTimeSeriesBoundary.html#a19c67734ba33864401e8144f2242b087',1,'NCTimeSeriesBoundary']]],
-  ['xlo_5fdat_5fbefore_5',['xlo_dat_before',['../classNCTimeSeriesBoundary.html#ae84faba9185e4fce68c70abad76d1943',1,'NCTimeSeriesBoundary']]],
-  ['xlo_5fdat_5finterp_6',['xlo_dat_interp',['../classNCTimeSeriesBoundary.html#a49672ca82bc94ed48cdb19e39d8af180',1,'NCTimeSeriesBoundary']]],
-  ['xvel_5fbc_7',['xvel_bc',['../classREMORA.html#a111674546154c538b2b89b028d80d789',1,'REMORA::xvel_bc()'],['../namespaceBCVars.html#a283b6280cf03e137da14e4b5a7200098',1,'BCVars::xvel_bc()']]],
-  ['xvel_5fnew_8',['xvel_new',['../classREMORA.html#a6d4e5271a8d00e497c4bce0a51dbe63c',1,'REMORA']]],
-  ['xvel_5fold_9',['xvel_old',['../classREMORA.html#a51594dd103a7eee0f4e0c6e366d9f0ce',1,'REMORA']]]
+  ['w00_0',['W00',['../REMORA__Constants_8H.html#a13d8685abbbf65429305a0ad4abaf573',1,'REMORA_Constants.H']]],
+  ['wait_5fall_1',['wait_all',['../classncutils_1_1NCFile.html#aa5d2e2ef82e9b36f11ea665352d7c484',1,'ncutils::NCFile']]],
+  ['wind_5ftype_2',['wind_type',['../structSolverChoice.html#ae6a63553633955dec12073057622d1db',1,'SolverChoice']]],
+  ['windamp_3',['windamp',['../REMORA__InitAnalyticSMFlux__UpwellingML_8H.html#a454034ba6a7f00d0cdff201b065b9f89',1,'windamp:&#160;REMORA_InitAnalyticSMFlux_UpwellingML.H'],['../REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a454034ba6a7f00d0cdff201b065b9f89',1,'windamp:&#160;REMORA_InitAnalyticSMFlux_Upwelling.H'],['../REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html#a454034ba6a7f00d0cdff201b065b9f89',1,'windamp:&#160;REMORA_InitAnalyticSMFlux_ParticlesOverSeamount.H'],['../REMORA__InitAnalyticSMFlux__DoublyPeriodic_8H.html#a454034ba6a7f00d0cdff201b065b9f89',1,'windamp:&#160;REMORA_InitAnalyticSMFlux_DoublyPeriodic.H'],['../REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#ad098e045a6e76817ad6cfda4f29e1d3a',1,'windamp:&#160;REMORA_InitAnalyticSMFlux_DoubleGyre.H']]],
+  ['windamp_5fu_4',['windamp_u',['../REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a4d913aefc5cd3273cf810d3e54619036',1,'REMORA_InitAnalyticSMFlux_ChannelTest.H']]],
+  ['windtype_5',['WindType',['../REMORA__DataStruct_8H.html#ab8e8b71b471dbb9aeba77602dcf6240a',1,'REMORA_DataStruct.H']]],
+  ['write_5fhistory_5ffile_6',['write_history_file',['../classREMORA.html#a1eef83c89b5b470bac43eaff53860fe0',1,'REMORA']]],
+  ['writeatfinaltime_7',['WriteAtFinalTime',['../classREMORA.html#a7bf8182c12763c249e140a18cf023b1e',1,'REMORA']]],
+  ['writeatintermediatetime_8',['WriteAtIntermediateTime',['../classREMORA.html#a3fb48fd829dfe74252bb0af4597a2775',1,'REMORA']]],
+  ['writebuildinfo_9',['writeBuildInfo',['../classREMORA.html#a7714f7f51b35f7a425da770fdae443c6',1,'REMORA']]],
+  ['writecheckpointfile_10',['WriteCheckpointFile',['../classREMORA.html#a7caca09160ec6dadae1485327a5ae4cc',1,'REMORA']]],
+  ['writegenericplotfileheaderwithbathymetry_11',['WriteGenericPlotfileHeaderWithBathymetry',['../classREMORA.html#aaec1baa6e78d91db427285627c4afaa6',1,'REMORA']]],
+  ['writejobinfo_12',['writeJobInfo',['../classREMORA.html#a331fbdef188eaf70cc72be04b1208020',1,'REMORA']]],
+  ['writemultilevelplotfilewithbathymetry_13',['WriteMultiLevelPlotfileWithBathymetry',['../classREMORA.html#a80f8805ec54ede636cb7c9492233e6ab',1,'REMORA']]],
+  ['writencmultifab_14',['WriteNCMultiFab',['../classREMORA.html#a07cdefc2810863920747b6eac934a045',1,'REMORA']]],
+  ['writencplotfile_15',['WriteNCPlotFile',['../classREMORA.html#aa159916f33b19463c184aafa7dbb3706',1,'REMORA']]],
+  ['writencplotfile_5fwhich_16',['WriteNCPlotFile_which',['../classREMORA.html#ac75370ff14d8a68d5d6f45491af115c2',1,'REMORA']]],
+  ['writeplotfile_17',['WritePlotFile',['../classREMORA.html#ae34c7e436b23f9c528aaa8589804b196',1,'REMORA']]]
 ];

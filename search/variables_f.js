@@ -1,21 +1,12 @@
 var searchData=
 [
-  ['r0_0',['R0',['../structSolverChoice.html#a7f081843ab68cd0a410afd74a27dfc30',1,'SolverChoice']]],
-  ['rain_1',['rain',['../structSolverChoice.html#a9ac46247923ff034df732112a0815522',1,'SolverChoice']]],
-  ['rain_5fdata_5ffrom_5ffile_2',['rain_data_from_file',['../classREMORA.html#a21b0d6d04d3efc4e4171dadea7513c4f',1,'REMORA']]],
-  ['rain_5ffrom_5fnetcdf_3',['rain_from_netcdf',['../structSolverChoice.html#a654d5efcac388481844f55888eaf83d9',1,'SolverChoice']]],
-  ['rdrag_4',['rdrag',['../structSolverChoice.html#ab32c6e7161ddf37e8051743fae717cf5',1,'SolverChoice']]],
-  ['rdrag2_5',['rdrag2',['../structSolverChoice.html#a276a75afbc3aa0e75227cb60c6901d31',1,'SolverChoice']]],
-  ['real_6',['Real',['../structncutils_1_1NCDType.html#a7a5be35daa7dbb2cc72507cc4b5a422c',1,'ncutils::NCDType']]],
-  ['ref_5ftags_7',['ref_tags',['../classREMORA.html#a476b854ad74dd35ec1bf21cd9ea1f0b0',1,'REMORA']]],
-  ['regrid_5fint_8',['regrid_int',['../classREMORA.html#a5d3ceaf421e5e6ec42b4da2fcb2d610c',1,'REMORA']]],
-  ['restart_5fchkfile_9',['restart_chkfile',['../classREMORA.html#ae376daabb97c474de25b283de6bd985d',1,'REMORA']]],
-  ['rho0_10',['rho0',['../structSolverChoice.html#a87396b485f47a76010673143372cca17',1,'SolverChoice']]],
-  ['rhow_11',['rhow',['../REMORA__Constants_8H.html#aac834cc142fec1b6d8408a0c4819e015',1,'REMORA_Constants.H']]],
-  ['riv_5ftime_5fvarname_12',['riv_time_varname',['../classREMORA.html#a02bcb7acf0e5a7de3c70f29027e6e278',1,'REMORA']]],
-  ['river_5fdirection_13',['river_direction',['../classREMORA.html#ab64ce46b4e42cdd5a5804f2eee9b4b63',1,'REMORA']]],
-  ['river_5fsource_5fcons_14',['river_source_cons',['../classREMORA.html#ac6b0d3e21b4045578c42233d55713775',1,'REMORA']]],
-  ['river_5fsource_5ftransport_15',['river_source_transport',['../classREMORA.html#ac94183c2a93ae17dd452df1b32c10adb',1,'REMORA']]],
-  ['river_5fsource_5ftransportbar_16',['river_source_transportbar',['../classREMORA.html#a495d8e3b3344e97ce392a99ed7ab9ab0',1,'REMORA']]],
-  ['river_5ftimes_17',['river_times',['../classNCTimeSeriesRiver.html#a680130b9ab77e2a7e974fd3d06c22373',1,'NCTimeSeriesRiver']]]
+  ['q00_0',['Q00',['../REMORA__Constants_8H.html#a8e0841f122fc83b9e08b32b55e7f33c5',1,'REMORA_Constants.H']]],
+  ['q01_1',['Q01',['../REMORA__Constants_8H.html#aa231639da9fd73b9be24afad82497ad0',1,'REMORA_Constants.H']]],
+  ['q02_2',['Q02',['../REMORA__Constants_8H.html#a99f847c32263e2aeeec665a56f4e2a97',1,'REMORA_Constants.H']]],
+  ['q03_3',['Q03',['../REMORA__Constants_8H.html#ab26a0f5c68d9f199dc24254151873cb3',1,'REMORA_Constants.H']]],
+  ['q04_4',['Q04',['../REMORA__Constants_8H.html#a2549145b8b7aab6b7d49ee1da2778459',1,'REMORA_Constants.H']]],
+  ['q05_5',['Q05',['../REMORA__Constants_8H.html#ac341187acb1b842e0ce85cc12ab900ce',1,'REMORA_Constants.H']]],
+  ['qair_5fdata_5ffrom_5ffile_6',['qair_data_from_file',['../classREMORA.html#a1369a3a8622d37575cc6d4e64cfde69e',1,'REMORA']]],
+  ['qair_5ffrom_5fnetcdf_7',['qair_from_netcdf',['../structSolverChoice.html#af07ac3a577900094fdf1f86907cb9697',1,'SolverChoice']]],
+  ['qair_5fis_5fpercent_8',['qair_is_percent',['../structSolverChoice.html#ac169ba909b87d9a0ce9411de3375620b',1,'SolverChoice']]]
 ];

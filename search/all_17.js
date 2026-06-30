@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['y_0',['y',['../REMORA__DataStruct_8H.html#a627f1f843904477f763577ad1460de01a415290769594460e2e485922904f345d',1,'REMORA_DataStruct.H']]],
-  ['yhi_5fdat_5fafter_1',['yhi_dat_after',['../classNCTimeSeriesBoundary.html#a0511e572ed52e53d1bd635a07122577c',1,'NCTimeSeriesBoundary']]],
-  ['yhi_5fdat_5fbefore_2',['yhi_dat_before',['../classNCTimeSeriesBoundary.html#a041ede4e250cc4e393e8b37b53242736',1,'NCTimeSeriesBoundary']]],
-  ['yhi_5fdat_5finterp_3',['yhi_dat_interp',['../classNCTimeSeriesBoundary.html#a40c64044790bd04c0c3dd7b62c4edc89',1,'NCTimeSeriesBoundary']]],
-  ['ylo_5fdat_5fafter_4',['ylo_dat_after',['../classNCTimeSeriesBoundary.html#a24472bc6bf3f9b48a6258d65d6f994cd',1,'NCTimeSeriesBoundary']]],
-  ['ylo_5fdat_5fbefore_5',['ylo_dat_before',['../classNCTimeSeriesBoundary.html#a1892a80ec8380590ff38c7a73ed68eaf',1,'NCTimeSeriesBoundary']]],
-  ['ylo_5fdat_5finterp_6',['ylo_dat_interp',['../classNCTimeSeriesBoundary.html#a7b08c2afc1dd5cd42a48aad4f68f6d91',1,'NCTimeSeriesBoundary']]],
-  ['yvel_5fbc_7',['yvel_bc',['../classREMORA.html#a371163db23112360ff23b6693215e773',1,'REMORA::yvel_bc()'],['../namespaceBCVars.html#a7fae82d9515fc9ee5461831e233e6a81',1,'BCVars::yvel_bc()']]],
-  ['yvel_5fnew_8',['yvel_new',['../classREMORA.html#a57327a8173b5dd09f9db6ce23f745dd5',1,'REMORA']]],
-  ['yvel_5fold_9',['yvel_old',['../classREMORA.html#a9861cf91ee53fb2125f5f49c5cf73155',1,'REMORA']]]
+  ['x_0',['x',['../REMORA__DataStruct_8H.html#a627f1f843904477f763577ad1460de01a9dd4e461268c8034f5c8564e155c67a6',1,'REMORA_DataStruct.H']]],
+  ['xhi_5fdat_5fafter_1',['xhi_dat_after',['../classNCTimeSeriesBoundary.html#a8f7bc5f1935b73d6e364f14d9b54b00f',1,'NCTimeSeriesBoundary']]],
+  ['xhi_5fdat_5fbefore_2',['xhi_dat_before',['../classNCTimeSeriesBoundary.html#aba4a0b240edae0c0cec301ad3600e89a',1,'NCTimeSeriesBoundary']]],
+  ['xhi_5fdat_5finterp_3',['xhi_dat_interp',['../classNCTimeSeriesBoundary.html#a5dcbd9d5af3f9cfaa6f3a16f4ebe8132',1,'NCTimeSeriesBoundary']]],
+  ['xlo_5fdat_5fafter_4',['xlo_dat_after',['../classNCTimeSeriesBoundary.html#a19c67734ba33864401e8144f2242b087',1,'NCTimeSeriesBoundary']]],
+  ['xlo_5fdat_5fbefore_5',['xlo_dat_before',['../classNCTimeSeriesBoundary.html#ae84faba9185e4fce68c70abad76d1943',1,'NCTimeSeriesBoundary']]],
+  ['xlo_5fdat_5finterp_6',['xlo_dat_interp',['../classNCTimeSeriesBoundary.html#a49672ca82bc94ed48cdb19e39d8af180',1,'NCTimeSeriesBoundary']]],
+  ['xvel_5fbc_7',['xvel_bc',['../classREMORA.html#a111674546154c538b2b89b028d80d789',1,'REMORA::xvel_bc()'],['../namespaceBCVars.html#a283b6280cf03e137da14e4b5a7200098',1,'BCVars::xvel_bc()']]],
+  ['xvel_5fnew_8',['xvel_new',['../classREMORA.html#a6d4e5271a8d00e497c4bce0a51dbe63c',1,'REMORA']]],
+  ['xvel_5fold_9',['xvel_old',['../classREMORA.html#a51594dd103a7eee0f4e0c6e366d9f0ce',1,'REMORA']]]
 ];

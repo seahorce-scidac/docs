@@ -1,17 +1,4 @@
 var searchData=
 [
-  ['last_5fcheck_5ffile_5fstep_0',['last_check_file_step',['../classREMORA.html#a70585b0129bfb5d405b1e10ea97020c5',1,'REMORA']]],
-  ['last_5fcheck_5ffile_5ftime_1',['last_check_file_time',['../classREMORA.html#aec4672b6d0b92fd2a42d2b88dfc9813b',1,'REMORA']]],
-  ['last_5fplot_5ffile_5fstep_2',['last_plot_file_step',['../classREMORA.html#ae5a74953fb4b92c8d80ceeabceab4532',1,'REMORA']]],
-  ['last_5fplot_5ffile_5ftime_3',['last_plot_file_time',['../classREMORA.html#a0d747ec8e2dd3a40475ce19fffa31355',1,'REMORA']]],
-  ['len_4',['len',['../structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338',1,'ncutils::NCDim']]],
-  ['lin_5feos_5',['lin_eos',['../classREMORA.html#a7ef206df9b5d4f71dfe5c57049ffb06e',1,'REMORA']]],
-  ['linear_6',['linear',['../REMORA__DataStruct_8H.html#a7090eccc5e33690f648fa0f61cd5e4f7a9a932b3cb396238423eb2f33ec17d6aa',1,'linear:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#af1aa2592a3b3a5f297a0310e481a999ba9a932b3cb396238423eb2f33ec17d6aa',1,'linear:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4a9a932b3cb396238423eb2f33ec17d6aa',1,'linear:&#160;REMORA_DataStruct.H']]],
-  ['logarithmic_7',['logarithmic',['../REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4a7304832fd4fb6edc031f981f8ff12a47',1,'REMORA_DataStruct.H']]],
-  ['longwave_5fdown_8',['longwave_down',['../structSolverChoice.html#a6b3e7341df0067d86754eed591bc1399',1,'SolverChoice']]],
-  ['longwave_5fdown_5fdata_5ffrom_5ffile_9',['longwave_down_data_from_file',['../classREMORA.html#a3761efb6d3ba019732d126d111eebb93',1,'REMORA']]],
-  ['longwave_5fdown_5ffrom_5fnetcdf_10',['longwave_down_from_netcdf',['../structSolverChoice.html#a31b12f96383a335d8d1ceb529a63fb9a',1,'SolverChoice']]],
-  ['longwave_5fnetcdf_5fis_5fnet_11',['longwave_netcdf_is_net',['../structSolverChoice.html#a6199609ec32fa32ce1809ced5ed97d54',1,'SolverChoice']]],
-  ['longwave_5fnetcdf_5fvarname_12',['longwave_netcdf_varname',['../structSolverChoice.html#a3aa75ac02590ba155d7fa0d1df503b65',1,'SolverChoice']]],
-  ['lwrad_13',['LWrad',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4abe5478d762a4cfa0d288a8f9befa4b8d',1,'AtmosState']]]
+  ['khi_0',['khi',['../REMORA__InitAnalyticProb__Advection_8H.html#a0e309d9162590f5d8287ae33be5c24ff',1,'khi:&#160;REMORA_InitAnalyticProb_Advection.H'],['../REMORA__InitAnalyticProb__BoundaryLayer_8H.html#a0e309d9162590f5d8287ae33be5c24ff',1,'khi:&#160;REMORA_InitAnalyticProb_BoundaryLayer.H'],['../REMORA__InitAnalyticProb__ChannelTest_8H.html#a0e309d9162590f5d8287ae33be5c24ff',1,'khi:&#160;REMORA_InitAnalyticProb_ChannelTest.H'],['../REMORA__InitAnalyticProb__DogboneAnalytic_8H.html#a0e309d9162590f5d8287ae33be5c24ff',1,'khi:&#160;REMORA_InitAnalyticProb_DogboneAnalytic.H'],['../REMORA__InitAnalyticProb__DoubleGyre_8H.html#a0e309d9162590f5d8287ae33be5c24ff',1,'khi:&#160;REMORA_InitAnalyticProb_DoubleGyre.H'],['../REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a0e309d9162590f5d8287ae33be5c24ff',1,'khi:&#160;REMORA_InitAnalyticProb_DoublyPeriodic.H'],['../REMORA__InitAnalyticProb__ParticlesOverSeamount_8H.html#a0e309d9162590f5d8287ae33be5c24ff',1,'khi:&#160;REMORA_InitAnalyticProb_ParticlesOverSeamount.H'],['../REMORA__InitAnalyticProb__Seamount_8H.html#a0e309d9162590f5d8287ae33be5c24ff',1,'khi:&#160;REMORA_InitAnalyticProb_Seamount.H'],['../REMORA__InitAnalyticProb__Upwelling_8H.html#a0e309d9162590f5d8287ae33be5c24ff',1,'khi:&#160;REMORA_InitAnalyticProb_Upwelling.H'],['../REMORA__InitAnalyticProb__Upwelling__Coupling_8H.html#a0e309d9162590f5d8287ae33be5c24ff',1,'khi:&#160;REMORA_InitAnalyticProb_Upwelling_Coupling.H']]]
 ];

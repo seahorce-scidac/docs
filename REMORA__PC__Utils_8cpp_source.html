@@ -122,9 +122,9 @@ $(document).ready(function(){initNavTree('REMORA__PC__Utils_8cpp_source.html',''
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; geom = Geom(a_lev);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">const</span> <span class="keyword">auto</span> plo = geom.ProbLoArray();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">const</span> <span class="keyword">auto</span> dxi = geom.InvCellSizeArray();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_variable" href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#aa6d5415aa0b20515949a772e4f86176e">dxi</a> = geom.InvCellSizeArray();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">const</span> Real inv_cell_volume = dxi[0]*dxi[1]*dxi[2];</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">const</span> Real inv_cell_volume = <a class="code hl_variable" href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#aa6d5415aa0b20515949a772e4f86176e">dxi</a>[0]*<a class="code hl_variable" href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#aa6d5415aa0b20515949a772e4f86176e">dxi</a>[1]*<a class="code hl_variable" href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#aa6d5415aa0b20515949a772e4f86176e">dxi</a>[2];</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    a_mf.setVal(0.0);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    ParticleToMesh( *<span class="keyword">this</span>, a_mf, a_lev,</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('REMORA__PC__Utils_8cpp_source.html',''
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                                <span class="keywordtype">int</span> i, Array4&lt;Real&gt; <span class="keyword">const</span>&amp; rho)</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keyword">auto</span> p = ptd.m_aos[i];</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            ParticleInterpolator::Linear interp(p, plo, dxi);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            ParticleInterpolator::Linear interp(p, plo, <a class="code hl_variable" href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#aa6d5415aa0b20515949a772e4f86176e">dxi</a>);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            interp.ParticleToMesh ( p, rho, 0, a_comp, 1,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                [=] AMREX_GPU_DEVICE ( <span class="keyword">const</span> REMORAPC::ParticleType&amp;, <span class="keywordtype">int</span>)</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                {</div>
@@ -146,6 +146,7 @@ $(document).ready(function(){initNavTree('REMORA__PC__Utils_8cpp_source.html',''
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aREMORA__Constants_8H_html"><div class="ttname"><a href="REMORA__Constants_8H.html">REMORA_Constants.H</a></div></div>
+<div class="ttc" id="aREMORA__InitAnalyticGridScale__BoundaryLayer_8H_html_aa6d5415aa0b20515949a772e4f86176e"><div class="ttname"><a href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#aa6d5415aa0b20515949a772e4f86176e">dxi</a></div><div class="ttdeci">const auto dxi</div><div class="ttdef"><b>Definition</b> <a href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H_source.html#l00004">REMORA_InitAnalyticGridScale_BoundaryLayer.H:4</a></div></div>
 <div class="ttc" id="aREMORA__PC_8H_html"><div class="ttname"><a href="REMORA__PC_8H.html">REMORA_PC.H</a></div></div>
 <div class="ttc" id="anamespaceamrex_html"><div class="ttname"><a href="namespaceamrex.html">amrex</a></div><div class="ttdef"><b>Definition</b> <a href="REMORA__console__io_8cpp_source.html#l00011">REMORA_console_io.cpp:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -50,7 +50,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -64,11 +64,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__NCTimeSeriesRiver_8H.html",
-"classREMORA.html#a01fc217cc104c92d184106400c4054b6",
-"classREMORA.html#aa2dfec87e25516cbc261ca777dc84b95",
-"classncutils_1_1NCFile.html#ace4a49831a5dc61e09b8c1e9f0a75f85",
-"structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5"
+"REMORA__InitAnalyticBathymetry__Seamount_8H_source.html",
+"REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a454034ba6a7f00d0cdff201b065b9f89",
+"classNCTimeSeries.html#a297437358973471709cbec9de11a24bb",
+"classREMORA.html#a66a39d31a3a2f027101cfd4052b913f3",
+"classREMORAFillPatcher.html#a350e4b15d395506050608810cd1cc827",
+"namespaceBCVars.html#a7fae82d9515fc9ee5461831e233e6a81",
+"structncutils_1_1NCVar.html#a507a5ebd537ac366cad81ff05fe8c64e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

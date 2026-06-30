@@ -390,7 +390,7 @@ $(document).ready(function(){initNavTree('REMORA__NCFile_8H_source.html',''); in
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keyword">auto</span> num_pts_in_src = nsx*nsy*nsz;</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="comment">// amrex::Print() &lt;&lt;&quot; NUM PTS IN BOX &quot; &lt;&lt; num_pts_in_box &lt;&lt; std::endl;</span></div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="comment">// amrex::Print() &lt;&lt;&quot; NUM PTS IN SRC &quot; &lt;&lt; num_pts_in_src &lt;&lt; std::endl;</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    AMREX_ALWAYS_ASSERT(num_pts_in_box &gt;= num_pts_in_src);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(num_pts_in_box &gt;= num_pts_in_src);</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n(0); n &lt; num_pts_in_src; ++n) {</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        <span class="keywordtype">int</span> nplane = nsx*nsy;</div>
@@ -473,6 +473,7 @@ $(document).ready(function(){initNavTree('REMORA__NCFile_8H_source.html',''); in
 </div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aREMORA__InitAnalyticBathymetry__BoundaryLayer_8H_html_af7f3ba67c009067c556a82938120fbdd"><div class="ttname"><a href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a></div><div class="ttdeci">AMREX_ALWAYS_ASSERT(!NSPeriodic||!EWPeriodic)</div></div>
 <div class="ttc" id="aREMORA__NCFile_8H_html_a147911bcb83952a10f7560fd4e9d8f06"><div class="ttname"><a href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a></div><div class="ttdeci">NC_Data_Dims_Type</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCFile_8H_source.html#l00016">REMORA_NCFile.H:16</a></div></div>
 <div class="ttc" id="aREMORA__NCFile_8H_html_a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4"><div class="ttname"><a href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4">NC_Data_Dims_Type::BT_SN_WE</a></div><div class="ttdeci">@ BT_SN_WE</div></div>
 <div class="ttc" id="aREMORA__NCFile_8H_html_a147911bcb83952a10f7560fd4e9d8f06a5f93bace93896872075eae75770cadc4"><div class="ttname"><a href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a5f93bace93896872075eae75770cadc4">NC_Data_Dims_Type::Time_SN_WE</a></div><div class="ttdeci">@ Time_SN_WE</div></div>

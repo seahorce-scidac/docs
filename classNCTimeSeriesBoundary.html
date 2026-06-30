@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a400f64bcc3115eace7b06ecabb321f63" id="r_a400f64bcc3115eace7b06ecabb321f63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63">Initialize</a> ()</td></tr>
 <tr class="memdesc:a400f64bcc3115eace7b06ecabb321f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in time array from file and allocate data arrays.  <br /></td></tr>
 <tr class="separator:a400f64bcc3115eace7b06ecabb321f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac762fa3a2c74a20a66ddcbabf8e93877" id="r_ac762fa3a2c74a20a66ddcbabf8e93877"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNCTimeSeriesBoundary.html#ac762fa3a2c74a20a66ddcbabf8e93877">update_interpolated_to_time</a> (amrex::Real time)</td></tr>
+<tr class="memitem:ac762fa3a2c74a20a66ddcbabf8e93877" id="r_ac762fa3a2c74a20a66ddcbabf8e93877"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNCTimeSeriesBoundary.html#ac762fa3a2c74a20a66ddcbabf8e93877">update_interpolated_to_time</a> (amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a33447f96f00d708dd345d6eb79c95d41">time</a>)</td></tr>
 <tr class="memdesc:ac762fa3a2c74a20a66ddcbabf8e93877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate interpolated values at time, reading in data as necessary.  <br /></td></tr>
 <tr class="separator:ac762fa3a2c74a20a66ddcbabf8e93877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0831532ec2874705078026fce481a6b8" id="r_a0831532ec2874705078026fce481a6b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNCTimeSeriesBoundary.html#a0831532ec2874705078026fce481a6b8">interp_fab</a> (amrex::FArrayBox &amp;dat_crse, amrex::FArrayBox &amp;dat_fine)</td></tr>
@@ -519,11 +519,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNCTimeSeriesBoundary_aa59234163bfc966da5e57d66865745b4_cgraph.png" border="0" usemap="#aclassNCTimeSeriesBoundary_aa59234163bfc966da5e57d66865745b4_cgraph" alt=""/></div>
 <map name="aclassNCTimeSeriesBoundary_aa59234163bfc966da5e57d66865745b4_cgraph" id="aclassNCTimeSeriesBoundary_aa59234163bfc966da5e57d66865745b4_cgraph">
-<area shape="rect" title="Read in data from file at time index itime and fill into mf." alt="" coords="5,5,181,45"/>
-<area shape="rect" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="229,13,357,38"/>
-<area shape="poly" title=" " alt="" coords="182,23,215,23,215,28,182,28"/>
-<area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="405,13,560,38"/>
-<area shape="poly" title=" " alt="" coords="357,23,391,23,391,28,357,28"/>
+<area shape="rect" title="Read in data from file at time index itime and fill into mf." alt="" coords="5,23,181,63"/>
+<area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="229,5,412,31"/>
+<area shape="poly" title=" " alt="" coords="181,31,215,27,216,32,182,36"/>
+<area shape="rect" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="257,55,385,80"/>
+<area shape="poly" title=" " alt="" coords="182,50,243,57,243,62,181,55"/>
+<area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="460,55,615,80"/>
+<area shape="poly" title=" " alt="" coords="385,65,446,65,446,70,385,70"/>
 </map>
 </div>
 <div class="dynheader">
@@ -574,10 +576,12 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="181,42,215,37,216,42,182,47"/>
 <area shape="rect" href="classNCTimeSeriesBoundary.html#aa59234163bfc966da5e57d66865745b4" title="Read in data from file at time index itime and fill into mf." alt="" coords="229,69,405,109"/>
 <area shape="poly" title=" " alt="" coords="182,67,216,72,215,77,181,73"/>
-<area shape="rect" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="453,77,581,102"/>
-<area shape="poly" title=" " alt="" coords="406,87,439,87,439,92,406,92"/>
-<area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="629,77,784,102"/>
-<area shape="poly" title=" " alt="" coords="581,87,615,87,615,92,581,92"/>
+<area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="453,51,636,77"/>
+<area shape="poly" title=" " alt="" coords="405,77,439,73,440,78,406,82"/>
+<area shape="rect" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="481,101,609,126"/>
+<area shape="poly" title=" " alt="" coords="406,96,467,103,467,108,405,101"/>
+<area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="684,101,839,126"/>
+<area shape="poly" title=" " alt="" coords="609,111,670,111,670,116,609,116"/>
 </map>
 </div>
 

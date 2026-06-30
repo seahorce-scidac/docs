@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('REMORA__FillPatcher_8cpp_source.html',
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      m_fgeom(fgeom),</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      m_cgeom(cgeom)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    AMREX_ALWAYS_ASSERT(fba.ixType() == cba.ixType());</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(fba.ixType() == cba.ixType());</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// Vector to hold times for coarse data</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_variable" href="classREMORAFillPatcher.html#aa96006b16cc0fa6fa209e7732259022e">m_crse_times</a>.resize(2);</div>
@@ -160,9 +160,9 @@ $(document).ready(function(){initNavTree('REMORA__FillPatcher_8cpp_source.html',
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                             <span class="keywordtype">int</span> nghost, <span class="keywordtype">int</span> nghost_set,</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                             <span class="keywordtype">int</span> ncomp, InterpBase* interp)</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    AMREX_ALWAYS_ASSERT(nghost &lt;= 0);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    AMREX_ALWAYS_ASSERT(nghost_set &lt;= 0);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    AMREX_ALWAYS_ASSERT(nghost &lt;= nghost_set);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(nghost &lt;= 0);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(nghost_set &lt;= 0);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(nghost &lt;= nghost_set);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// Set data members</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_variable" href="classREMORAFillPatcher.html#a973ebd5991b01b3920894033811552aa">m_fba</a> = fba; <a class="code hl_variable" href="classREMORAFillPatcher.html#a8c0bb3742efc7d36f7094d9b81f1ab4e">m_cba</a> = cba;</div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('REMORA__FillPatcher_8cpp_source.html',
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    fba.complementIn(com_bl,fba_bnd);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="comment">// com_bl cannot be null since we grew with halo cells</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    AMREX_ALWAYS_ASSERT(com_bl.size() &gt; 0);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(com_bl.size() &gt; 0);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    IntVect box_grow_vect(-nghost,-nghost,0);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
@@ -287,8 +287,8 @@ $(document).ready(function(){initNavTree('REMORA__FillPatcher_8cpp_source.html',
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="classREMORAFillPatcher.html#a5177a51aceb8cc0293a855ad71f03bdc">  180</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classREMORAFillPatcher.html#a5177a51aceb8cc0293a855ad71f03bdc">REMORAFillPatcher::RegisterCoarseData</a> (Vector&lt;MultiFab const*&gt; <span class="keyword">const</span>&amp; crse_data,</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                                         Vector&lt;Real&gt; <span class="keyword">const</span>&amp; crse_time)</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>{</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    AMREX_ALWAYS_ASSERT(crse_data.size() == 2); <span class="comment">// old and new</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    AMREX_ALWAYS_ASSERT(crse_time[1] &gt;= crse_time[0]);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(crse_data.size() == 2); <span class="comment">// old and new</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(crse_time[1] &gt;= crse_time[0]);</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="comment">// NOTE: CoarseBox with CellConsLinear interpolation grows the</span></div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="comment">//       box by 1 in all directions. This pushes the domain for</span></div>
@@ -497,6 +497,7 @@ $(document).ready(function(){initNavTree('REMORA__FillPatcher_8cpp_source.html',
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>}</div>
 </div>
 <div class="ttc" id="aREMORA__FillPatcher_8H_html"><div class="ttname"><a href="REMORA__FillPatcher_8H.html">REMORA_FillPatcher.H</a></div></div>
+<div class="ttc" id="aREMORA__InitAnalyticBathymetry__BoundaryLayer_8H_html_af7f3ba67c009067c556a82938120fbdd"><div class="ttname"><a href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a></div><div class="ttdeci">AMREX_ALWAYS_ASSERT(!NSPeriodic||!EWPeriodic)</div></div>
 <div class="ttc" id="aclassREMORAFillPatcher_html_a17d1f03244c3ecaabefff1cdf006d578"><div class="ttname"><a href="classREMORAFillPatcher.html#a17d1f03244c3ecaabefff1cdf006d578">REMORAFillPatcher::m_set_mask</a></div><div class="ttdeci">int m_set_mask</div><div class="ttdef"><b>Definition</b> <a href="REMORA__FillPatcher_8H_source.html#l00083">REMORA_FillPatcher.H:83</a></div></div>
 <div class="ttc" id="aclassREMORAFillPatcher_html_a213497683199b8245c4c8a6a430f9c02"><div class="ttname"><a href="classREMORAFillPatcher.html#a213497683199b8245c4c8a6a430f9c02">REMORAFillPatcher::m_interp</a></div><div class="ttdeci">amrex::InterpBase * m_interp</div><div class="ttdef"><b>Definition</b> <a href="REMORA__FillPatcher_8H_source.html#l00076">REMORA_FillPatcher.H:76</a></div></div>
 <div class="ttc" id="aclassREMORAFillPatcher_html_a4e0c33086d84670f9741fbfe66e85166"><div class="ttname"><a href="classREMORAFillPatcher.html#a4e0c33086d84670f9741fbfe66e85166">REMORAFillPatcher::m_ncomp</a></div><div class="ttdeci">int m_ncomp</div><div class="ttdef"><b>Definition</b> <a href="REMORA__FillPatcher_8H_source.html#l00075">REMORA_FillPatcher.H:75</a></div></div>
