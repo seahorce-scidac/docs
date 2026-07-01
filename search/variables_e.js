@@ -21,5 +21,6 @@ var searchData=
   ['previouscputimeused_18',['previousCPUTimeUsed',['../classREMORA.html#a13791ab61c74d1c95a4caa544d9ac3d3',1,'REMORA']]],
   ['prob_19',['prob',['../classREMORA.html#a26237fa36e5c406e9072dcab254b3866',1,'REMORA']]],
   ['prob_5fhi_20',['prob_hi',['../REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#ae130889f2d9b097b11dacc77d5f1db69',1,'REMORA_InitAnalyticSMFlux_DoubleGyre.H']]],
-  ['prob_5flo_21',['prob_lo',['../REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#a831edc3141288c83d302cfba10ef7f31',1,'REMORA_InitAnalyticSMFlux_DoubleGyre.H']]]
+  ['prob_5flo_21',['prob_lo',['../REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#a831edc3141288c83d302cfba10ef7f31',1,'REMORA_InitAnalyticSMFlux_DoubleGyre.H']]],
+  ['prob_5flo_5fy_22',['prob_lo_y',['../REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#a1298ab2d36f0e928bf26dfcdc928de4a',1,'REMORA_InitAnalyticSMFlux_DoubleGyre.H']]]
 ];

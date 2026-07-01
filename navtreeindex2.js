@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"REMORA__InitAnalyticSMFlux__Upwelling_8H.html":[3,0,0,4,39],
+"REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a22ab10df0b4333a2cba3baf7aff4aa03":[3,0,0,4,39,5],
+"REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a2d95aacaae2c21a1f40f674f9812d18c":[3,0,0,4,39,1],
 "REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a454034ba6a7f00d0cdff201b065b9f89":[3,0,0,4,39,6],
 "REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73":[3,0,0,4,39,3],
 "REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a748671ab6e36b6b6be3fb85adb8908be":[3,0,0,4,39,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "REMORA__writeJobInfo_8cpp_source.html":[3,0,0,2,17],
 "annotated.html":[2,0],
 "classNCTimeSeries.html":[2,0,1],
-"classNCTimeSeries.html#a083bee2988c704eb313e4ca9ba56da69":[2,0,1,16],
-"classNCTimeSeries.html#a1fa969bceaf0c79f6b70ebaf9d93c113":[2,0,1,12],
-"classNCTimeSeries.html#a26bcb4a884fe56b3d55d2d297030b0ef":[2,0,1,5],
-"classNCTimeSeries.html#a2906c98db6ce85fcd9f099e6534ed165":[2,0,1,19]
+"classNCTimeSeries.html#a083bee2988c704eb313e4ca9ba56da69":[2,0,1,16]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"classREMORA.html#a6554e8c3a6e26956493818ff4e9ef1f8":[2,0,6,124],
+"classREMORA.html#a6577b0c143b8fc44c6f68cad8dec5fd6":[2,0,6,17],
+"classREMORA.html#a6593ca61e91349208738b70d3f4bdf90":[2,0,6,260],
 "classREMORA.html#a66a39d31a3a2f027101cfd4052b913f3":[2,0,6,360],
 "classREMORA.html#a66ad489788fb8d0913833d3d6c89b9dd":[2,0,6,252],
 "classREMORA.html#a67b92f7c5b82933e953e447bdfc9074c":[2,0,6,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "classREMORA.html#afd1aab14dfc9155d65e48aad2b34ef42":[2,0,6,330],
 "classREMORA.html#afdc5b98bf397fe9dc4bc530e27b10c11":[2,0,6,306],
 "classREMORA.html#afded54aef57ded67542a888a911b67b0":[2,0,6,49],
-"classREMORA.html#afdf4b75f0ec12caf3648dbee5ec7f653":[2,0,6,318],
-"classREMORAFillPatcher.html":[2,0,7],
-"classREMORAFillPatcher.html#a17d1f03244c3ecaabefff1cdf006d578":[2,0,7,29],
-"classREMORAFillPatcher.html#a213497683199b8245c4c8a6a430f9c02":[2,0,7,23]
+"classREMORA.html#afdf4b75f0ec12caf3648dbee5ec7f653":[2,0,6,318]
 };
