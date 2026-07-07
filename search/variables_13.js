@@ -12,11 +12,12 @@ var searchData=
   ['use_5fbaroclinic_9',['use_baroclinic',['../structSolverChoice.html#a092beaf56ca711be832b219044efcba6',1,'SolverChoice']]],
   ['use_5fbarotropic_10',['use_barotropic',['../structSolverChoice.html#a2a6fbf7ebea6ac5d9faddcbfe36771bd',1,'SolverChoice']]],
   ['use_5fcoriolis_11',['use_coriolis',['../structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606',1,'SolverChoice']]],
-  ['use_5fprestep_12',['use_prestep',['../structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6',1,'SolverChoice']]],
-  ['use_5fsalt_13',['use_salt',['../structSolverChoice.html#afc652006d7343f1e01f5b9967604a0aa',1,'SolverChoice']]],
-  ['use_5fuv3dmix_14',['use_uv3dmix',['../structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba',1,'SolverChoice']]],
-  ['use_5fvert_5finteg_15',['use_vert_integ',['../classNCTimeSeriesRiver.html#ac2d336b34285ab54521f0220c9449507',1,'NCTimeSeriesRiver']]],
-  ['userval_16',['userval',['../REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a4465e330978f4494a770c83c5a836640',1,'REMORA_InitAnalyticSMFlux_ChannelTest.H']]],
-  ['uv_5fhadv_5fscheme_17',['uv_Hadv_scheme',['../structSolverChoice.html#a4171d60125b56fa53204a2e7bf8d32b1',1,'SolverChoice']]],
-  ['uwind_5fdata_5ffrom_5ffile_18',['Uwind_data_from_file',['../classREMORA.html#aa601e1a642f48348267d29fd510645cf',1,'REMORA']]]
+  ['use_5fcurvilinear_5fgrid_12',['use_curvilinear_grid',['../structSolverChoice.html#a12cb5e194a8b749cd0bb50c698153c38',1,'SolverChoice']]],
+  ['use_5fprestep_13',['use_prestep',['../structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6',1,'SolverChoice']]],
+  ['use_5fsalt_14',['use_salt',['../structSolverChoice.html#afc652006d7343f1e01f5b9967604a0aa',1,'SolverChoice']]],
+  ['use_5fuv3dmix_15',['use_uv3dmix',['../structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba',1,'SolverChoice']]],
+  ['use_5fvert_5finteg_16',['use_vert_integ',['../classNCTimeSeriesRiver.html#ac2d336b34285ab54521f0220c9449507',1,'NCTimeSeriesRiver']]],
+  ['userval_17',['userval',['../REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a4465e330978f4494a770c83c5a836640',1,'REMORA_InitAnalyticSMFlux_ChannelTest.H']]],
+  ['uv_5fhadv_5fscheme_18',['uv_Hadv_scheme',['../structSolverChoice.html#a4171d60125b56fa53204a2e7bf8d32b1',1,'SolverChoice']]],
+  ['uwind_5fdata_5ffrom_5ffile_19',['Uwind_data_from_file',['../classREMORA.html#aa601e1a642f48348267d29fd510645cf',1,'REMORA']]]
 ];

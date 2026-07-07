@@ -122,6 +122,7 @@ var structSolverChoice =
     [ "use_baroclinic", "structSolverChoice.html#a092beaf56ca711be832b219044efcba6", null ],
     [ "use_barotropic", "structSolverChoice.html#a2a6fbf7ebea6ac5d9faddcbfe36771bd", null ],
     [ "use_coriolis", "structSolverChoice.html#a9e86533aa6df5bf6408d91f0dfd23606", null ],
+    [ "use_curvilinear_grid", "structSolverChoice.html#a12cb5e194a8b749cd0bb50c698153c38", null ],
     [ "use_prestep", "structSolverChoice.html#aef43f702963efac7f3e0c2b43249fbb6", null ],
     [ "use_salt", "structSolverChoice.html#afc652006d7343f1e01f5b9967604a0aa", null ],
     [ "use_uv3dmix", "structSolverChoice.html#a11fa6da1900fa3ad034197da861432ba", null ],
