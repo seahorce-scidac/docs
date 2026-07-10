@@ -251,6 +251,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceAtmosState" id="r_namespaceAtmosState"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAtmosState.html">AtmosState</a></td></tr>
 <tr class="memdesc:namespaceAtmosState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index constants for driver_atmos_state_from_driver and the matching atmospheric forcing MultiFab vector passed to <a class="el" href="classREMORA.html#aa8d92cad90026002f74faa5da3b4d09a" title="Receives atmospheric states from the driver and applies unit conversions.">REMORA::ApplyAtmosphericStates</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceAtmosFluxes" id="r_namespaceAtmosFluxes"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAtmosFluxes.html">AtmosFluxes</a></td></tr>
+<tr class="memdesc:namespaceAtmosFluxes"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index constants for the driver ATM-&gt;OCN flux-passing active view. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceREMORABCType" id="r_namespaceREMORABCType"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABCType.html">REMORABCType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -304,6 +307,21 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a76dbeb33da17baebacf9ce7e18db2dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6ee76ebe32c695b424978425a74f70" id="r_a6d6ee76ebe32c695b424978425a74f70"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a98459fa37f3f3215eee5d26e34869f40">AtmosFluxes::TauX</a> = 0
+, <a class="el" href="namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a9af6c572674080f6c77db30e8269712e">AtmosFluxes::TauY</a>
+, <a class="el" href="namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a8e555ee18e679e5ac87f5164e97b9d79">AtmosFluxes::SHflux</a>
+, <a class="el" href="namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a3d8f926404bf97cadd8b68c26e7c1211">AtmosFluxes::LHflux</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a9b8274aac1c0e32aa896edb0a8fe9a29">AtmosFluxes::SWrad</a>
+, <a class="el" href="namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a2065f94f112fc183d711a793df34cc2c">AtmosFluxes::LWrad</a>
+, <a class="el" href="namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a65abad4445aa6739d93a760407ffa235">AtmosFluxes::Rain</a>
+, <a class="el" href="namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a77ce1f8024b0ae66a87a147434c0f62e">AtmosFluxes::Evap</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70ae1c32b36fefe591e742d40d1294272c4">AtmosFluxes::NumTypes</a>
+<br />
+ }</td></tr>
+<tr class="separator:a6d6ee76ebe32c695b424978425a74f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a23ce64320a8ee19b456144f4deb325" id="r_a4a23ce64320a8ee19b456144f4deb325"><td class="memItemLeft" align="right" valign="top">enum struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325">REMORA_BC</a> { <br />
 &#160;&#160;<a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a40e712f30d56083318ab20a2402921d2">symmetry</a>
 , <a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ad37e67db17cfd059f2852e2673b9e8ef">inflow</a>
@@ -526,7 +544,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74" name="a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00087">87</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00108">108</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
 
 </div>
 </div>

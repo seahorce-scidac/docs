@@ -13,6 +13,7 @@ var classREMORA =
     [ "append2DPlotVariables", "classREMORA.html#aed280db496ab7b660c2195fa41cbf5be", null ],
     [ "append3DPlotVariables", "classREMORA.html#ad520335720a727807d115d0fb141f65f", null ],
     [ "apply_clim_nudg", "classREMORA.html#a7c79ff9219e7558d2ddd9fed36eb92d8", null ],
+    [ "ApplyAtmosphericFluxes", "classREMORA.html#a343cd579393296f6bd5f1d5ee33e7a7a", null ],
     [ "ApplyAtmosphericStates", "classREMORA.html#aa8d92cad90026002f74faa5da3b4d09a", null ],
     [ "average_down_with_grow_cells", "classREMORA.html#aa4cb17875b73325f811c580eea499c66", null ],
     [ "AverageDown", "classREMORA.html#acc4cc491f4e1714d3d4999290046c82e", null ],

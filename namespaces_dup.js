@@ -6,6 +6,7 @@ var namespaces_dup =
       [ "buildInfoGetCompVersion", "namespaceamrex.html#a51d56426424c3c4103a45c273a3abf97", null ],
       [ "buildInfoGetGitHash", "namespaceamrex.html#a215b1ed21dbb8f453201c6dc72ab3d1c", null ]
     ] ],
+    [ "AtmosFluxes", "namespaceAtmosFluxes.html", null ],
     [ "AtmosState", "namespaceAtmosState.html", null ],
     [ "BCVars", "namespaceBCVars.html", [
       [ "foextrap_bc", "namespaceBCVars.html#a8e86c2c491901bd3883145763ad6cada", null ],

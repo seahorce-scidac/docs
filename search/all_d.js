@@ -55,7 +55,7 @@ var searchData=
   ['num_5fvariables_52',['num_variables',['../classncutils_1_1NCFile.html#ace4a49831a5dc61e09b8c1e9f0a75f85',1,'ncutils::NCFile']]],
   ['num_5fvars_53',['num_vars',['../structTimeInterpolatedData.html#a69fdc01eabf8ded65ff6cac13e59c0c0',1,'TimeInterpolatedData']]],
   ['numdatalogs_54',['NumDataLogs',['../classREMORA.html#abe6c7702fc1edcb5bb7d9a1a56d007a9',1,'REMORA']]],
-  ['numtypes_55',['numtypes',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4aae2f525eb9b6db40a2d89c4fec0e0c4c',1,'AtmosState::NumTypes'],['../namespaceBCVars.html#a11669734493fff525248ddfa64866370',1,'BCVars::NumTypes()'],['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102',1,'BdyVars::NumTypes']]],
+  ['numtypes_55',['numtypes',['../namespaceBCVars.html#a11669734493fff525248ddfa64866370',1,'BCVars::NumTypes()'],['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4aae2f525eb9b6db40a2d89c4fec0e0c4c',1,'AtmosState::NumTypes'],['../namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70ae1c32b36fefe591e742d40d1294272c4',1,'AtmosFluxes::NumTypes'],['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102',1,'BdyVars::NumTypes']]],
   ['nz_56',['nz',['../classNCTimeSeriesRiver.html#ad7bb579c630c113de798f847417bf6cd',1,'NCTimeSeriesRiver']]],
   ['nzbox_57',['nzbox',['../classNCTimeSeriesRiver.html#a351be9339152e48e75c8d93ad5942d3a',1,'NCTimeSeriesRiver']]]
 ];

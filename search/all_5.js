@@ -16,11 +16,12 @@ var searchData=
   ['eradius_13',['Eradius',['../REMORA__Constants_8H.html#a293dbdde8ae4c8260e4b71203e468134',1,'REMORA_Constants.H']]],
   ['errorest_14',['ErrorEst',['../classREMORA.html#a783db1b357863608197eccb6fe7d4c52',1,'REMORA']]],
   ['esttimestep_15',['estTimeStep',['../classREMORA.html#ac71630052015782fce4f20e204e42016',1,'REMORA']]],
-  ['evolve_16',['Evolve',['../classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e',1,'REMORA']]],
-  ['evolveonestep_17',['EvolveOneStep',['../classREMORA.html#a429a2087fc3b9b964e573b672b4e17f2',1,'REMORA']]],
-  ['ewperiodic_18',['ewperiodic',['../REMORA__InitAnalyticProb__Upwelling_8H.html#a90afb84e87ef8a811e4afff30a9f2db3',1,'EWPeriodic:&#160;REMORA_InitAnalyticProb_Upwelling.H'],['../REMORA__InitAnalyticProb__ChannelTest_8H.html#a90afb84e87ef8a811e4afff30a9f2db3',1,'EWPeriodic:&#160;REMORA_InitAnalyticProb_ChannelTest.H']]],
-  ['exit_5fdef_5fmode_19',['exit_def_mode',['../classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96',1,'ncutils::NCFile']]],
-  ['expand_5fplotvars_5fto_5funif_5frr_20',['expand_plotvars_to_unif_rr',['../classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4',1,'REMORA']]],
-  ['ext_5fdir_21',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]],
-  ['extrapolate_5fmetric_5fto_5fphysical_5fboundaries_22',['extrapolate_metric_to_physical_boundaries',['../classREMORA.html#a4a25b256aabbffa91da49c1b48a372bf',1,'REMORA']]]
+  ['evap_16',['Evap',['../namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a77ce1f8024b0ae66a87a147434c0f62e',1,'AtmosFluxes']]],
+  ['evolve_17',['Evolve',['../classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e',1,'REMORA']]],
+  ['evolveonestep_18',['EvolveOneStep',['../classREMORA.html#a429a2087fc3b9b964e573b672b4e17f2',1,'REMORA']]],
+  ['ewperiodic_19',['ewperiodic',['../REMORA__InitAnalyticProb__Upwelling_8H.html#a90afb84e87ef8a811e4afff30a9f2db3',1,'EWPeriodic:&#160;REMORA_InitAnalyticProb_Upwelling.H'],['../REMORA__InitAnalyticProb__ChannelTest_8H.html#a90afb84e87ef8a811e4afff30a9f2db3',1,'EWPeriodic:&#160;REMORA_InitAnalyticProb_ChannelTest.H']]],
+  ['exit_5fdef_5fmode_20',['exit_def_mode',['../classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96',1,'ncutils::NCFile']]],
+  ['expand_5fplotvars_5fto_5funif_5frr_21',['expand_plotvars_to_unif_rr',['../classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4',1,'REMORA']]],
+  ['ext_5fdir_22',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]],
+  ['extrapolate_5fmetric_5fto_5fphysical_5fboundaries_23',['extrapolate_metric_to_physical_boundaries',['../classREMORA.html#a4a25b256aabbffa91da49c1b48a372bf',1,'REMORA']]]
 ];

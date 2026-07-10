@@ -6,6 +6,7 @@ var structSolverChoice =
     [ "Akp_bak", "structSolverChoice.html#af0ca1aeea6102be5e81b27738b926418", null ],
     [ "Akt_bak", "structSolverChoice.html#a70006d61f65f9e2774b513f5f5cec896", null ],
     [ "Akv_bak", "structSolverChoice.html#a04b27a3f48ecc0b7e626eb7ec0fe194e", null ],
+    [ "atm2ocn_flux_mode", "structSolverChoice.html#a63e045b9a8569a191f584057e240eddd", null ],
     [ "blk_ZQ", "structSolverChoice.html#acb3390afad4e4bd62a9c9879ebd8caa2", null ],
     [ "blk_ZT", "structSolverChoice.html#a05d52ca9f33733f70e683a25912977c9", null ],
     [ "blk_ZW", "structSolverChoice.html#a6247a812f5037d4e66e7ebbda8858b42", null ],
