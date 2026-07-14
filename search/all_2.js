@@ -39,7 +39,10 @@ var searchData=
   ['buildinfogetgithash_36',['buildInfoGetGitHash',['../namespaceamrex.html#a215b1ed21dbb8f453201c6dc72ab3d1c',1,'amrex']]],
   ['buildmask_37',['BuildMask',['../classREMORAFillPatcher.html#abcf51d6e55f66e3bc1d3bc9945087551',1,'REMORAFillPatcher']]],
   ['built_20on_20amrex_20_3a_20remora_38',['Regional Modeling of Oceans Refined Adaptively (built on AMReX): REMORA',['../index.html',1,'']]],
-  ['bulk_5ffluxes_39',['bulk_fluxes',['../classREMORA.html#ae7b7cf1dcfaa0a4603267a722437acd7',1,'REMORA::bulk_fluxes()'],['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice::bulk_fluxes']]],
-  ['bulk_5fpsit_40',['bulk_psit',['../classREMORA.html#ae574156fa5fb71c8301c3c2e4e99202a',1,'REMORA']]],
-  ['bulk_5fpsiu_41',['bulk_psiu',['../classREMORA.html#aa288199efe6ff562ce20f1cae3d249b5',1,'REMORA']]]
+  ['bulk_5fflux_5ftype_39',['bulk_flux_type',['../structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b',1,'SolverChoice']]],
+  ['bulk_5ffluxes_40',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice::bulk_fluxes'],['../classREMORA.html#ae7b7cf1dcfaa0a4603267a722437acd7',1,'REMORA::bulk_fluxes(int lev, amrex::MultiFab *mf_cons, amrex::MultiFab *mf_uwind, amrex::MultiFab *mf_vwind, amrex::MultiFab *mf_Tair, amrex::MultiFab *mf_qair, amrex::MultiFab *mf_Pair, amrex::MultiFab *mf_srflx, amrex::MultiFab *mf_longwave_down, amrex::MultiFab *mf_evap, amrex::MultiFab *mf_sustr, amrex::MultiFab *mf_svstr, amrex::MultiFab *mf_stflux, amrex::MultiFab *mf_lrflx, amrex::MultiFab *mf_lhflx, amrex::MultiFab *mf_shflx, const int N)']]],
+  ['bulk_5fpsit_41',['bulk_psit',['../classREMORA.html#ae574156fa5fb71c8301c3c2e4e99202a',1,'REMORA']]],
+  ['bulk_5fpsiu_42',['bulk_psiu',['../classREMORA.html#aa288199efe6ff562ce20f1cae3d249b5',1,'REMORA']]],
+  ['bulkflux_43',['BulkFlux',['../namespaceBulkFlux.html',1,'']]],
+  ['bulkforcingtype_44',['BulkForcingType',['../REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903',1,'REMORA_IndexDefines.H']]]
 ];

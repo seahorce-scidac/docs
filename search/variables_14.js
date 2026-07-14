@@ -109,5 +109,6 @@ var searchData=
   ['vert_5fmixing_5ftype_106',['vert_mixing_type',['../structSolverChoice.html#ab7a9f7f152b29002c3cb2331447dc30e',1,'SolverChoice']]],
   ['visc2_107',['visc2',['../structSolverChoice.html#a7deb8e04b24645d163a6572b0cd7e4b0',1,'SolverChoice']]],
   ['vonkar_108',['vonKar',['../REMORA__Constants_8H.html#a934831690680a688447d10a6862da9f3',1,'REMORA_Constants.H']]],
-  ['vwind_5fdata_5ffrom_5ffile_109',['Vwind_data_from_file',['../classREMORA.html#ac31cbfde839fff6db4114b2a92a1a98e',1,'REMORA']]]
+  ['vwind_109',['Vwind',['../structSolverChoice.html#a47390167b004c6a33dadf3dd20f162e3',1,'SolverChoice']]],
+  ['vwind_5fdata_5ffrom_5ffile_110',['Vwind_data_from_file',['../classREMORA.html#ac31cbfde839fff6db4114b2a92a1a98e',1,'REMORA']]]
 ];

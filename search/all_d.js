@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()'],['../structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09',1,'NDArray::name']]],
+  ['name_0',['name',['../structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09',1,'NDArray::name'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()'],['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()']]],
   ['nc2d_1',['NC2D',['../REMORA__IndexDefines_8H.html#abfba840d9b9e67c0c03dc933ee8f40f0',1,'REMORA_IndexDefines.H']]],
   ['nc3d_2',['NC3D',['../REMORA__IndexDefines_8H.html#a7113d7d10b05d75151fd21d463b9c763',1,'REMORA_IndexDefines.H']]],
   ['nc_5fbdry_5ffile_3',['nc_bdry_file',['../classREMORA.html#a85d26ee3dd0f81a3e59e0b38672967cd',1,'REMORA']]],
@@ -18,7 +18,7 @@ var searchData=
   ['nc_5fvar_5fnames_15',['nc_var_names',['../classNCTimeSeriesBoundary.html#a1eaf46471a1304fed218448222bc3580',1,'NCTimeSeriesBoundary']]],
   ['ncdim_16',['NCDim',['../structncutils_1_1NCDim.html',1,'ncutils']]],
   ['ncdtype_17',['NCDType',['../structncutils_1_1NCDType.html',1,'ncutils']]],
-  ['ncfile_18',['ncfile',['../classncutils_1_1NCFile.html',1,'ncutils::NCFile'],['../classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423',1,'ncutils::NCFile::NCFile()']]],
+  ['ncfile_18',['ncfile',['../classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423',1,'ncutils::NCFile::NCFile()'],['../classncutils_1_1NCFile.html',1,'ncutils::NCFile']]],
   ['nch2d_19',['NCH2D',['../REMORA__IndexDefines_8H.html#ac5babe7e8b94ad6093eb7a366ac88ad5',1,'REMORA_IndexDefines.H']]],
   ['ncid_20',['ncid',['../structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544',1,'ncutils::NCDim::ncid'],['../structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218',1,'ncutils::NCVar::ncid'],['../classncutils_1_1NCFile.html#a08428af09deb00321229ef4c20587476',1,'ncutils::NCFile::ncid']]],
   ['ncons_21',['ncons',['../classREMORA.html#a0614aa1826c2b48b2ec5942acf522285',1,'REMORA']]],
@@ -27,9 +27,9 @@ var searchData=
   ['nctimeseriesriver_24',['nctimeseriesriver',['../classNCTimeSeriesRiver.html#a7b2e650cbe6ae7352d4b8dea792fa1c1',1,'NCTimeSeriesRiver::NCTimeSeriesRiver()'],['../classNCTimeSeriesRiver.html',1,'NCTimeSeriesRiver']]],
   ['ncutils_25',['ncutils',['../namespacencutils.html',1,'']]],
   ['ncvar_26',['NCVar',['../structncutils_1_1NCVar.html',1,'ncutils']]],
-  ['ndarray_27',['ndarray',['../structNDArray.html#a896e27f1238a68d5221aa00bbf9fd2f0',1,'NDArray::NDArray(const std::string vname, const std::vector&lt; MPI_Offset &gt; &amp;vshape)'],['../structNDArray.html#a1f33dbd861944bc1494f4790f4f8543d',1,'NDArray::NDArray()'],['../structNDArray.html',1,'NDArray&lt; DataType &gt;']]],
-  ['ndim_28',['ndim',['../structNDArray.html#a1b3ece1ab109568fcb919d1af8f14eee',1,'NDArray::ndim()'],['../structncutils_1_1NCVar.html#ae0ab15dc4c1033271878c3bf5102f911',1,'ncutils::NCVar::ndim()']]],
-  ['netcdf_29',['netcdf',['../REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034dac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a70dc28894261645bb2ac2f2eb5c2ac55ac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9eac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a6f9734fca864f135565da5376b5c3e72ac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#ab8e8b71b471dbb9aeba77602dcf6240aac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a3c0b9a5b6463511000d925bad1d90256ac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H']]],
+  ['ndarray_27',['ndarray',['../structNDArray.html',1,'NDArray&lt; DataType &gt;'],['../structNDArray.html#a896e27f1238a68d5221aa00bbf9fd2f0',1,'NDArray::NDArray(const std::string vname, const std::vector&lt; MPI_Offset &gt; &amp;vshape)'],['../structNDArray.html#a1f33dbd861944bc1494f4790f4f8543d',1,'NDArray::NDArray()']]],
+  ['ndim_28',['ndim',['../structncutils_1_1NCVar.html#ae0ab15dc4c1033271878c3bf5102f911',1,'ncutils::NCVar::ndim()'],['../structNDArray.html#a1b3ece1ab109568fcb919d1af8f14eee',1,'NDArray::ndim()']]],
+  ['netcdf_29',['netcdf',['../REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034dac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a70dc28894261645bb2ac2f2eb5c2ac55ac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9eac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#a3c0b9a5b6463511000d925bad1d90256ac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__DataStruct_8H.html#ab8e8b71b471dbb9aeba77602dcf6240aac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H'],['../REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903ac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_IndexDefines.H'],['../REMORA__DataStruct_8H.html#a6f9734fca864f135565da5376b5c3e72ac2e0f73e7b066a47b743d6ce8213e684',1,'netcdf:&#160;REMORA_DataStruct.H']]],
   ['netcdf_5ffill_5fvalue_30',['netcdf_fill_value',['../classREMORA.html#acd47875b523c3280a22f6598ab40c87a',1,'REMORA']]],
   ['nfast_31',['nfast',['../classREMORA.html#a05d2c2f58537f7fdae1bb5088f50e149',1,'REMORA']]],
   ['ngrow_32',['NGROW',['../REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38',1,'REMORA_IndexDefines.H']]],
@@ -55,7 +55,7 @@ var searchData=
   ['num_5fvariables_52',['num_variables',['../classncutils_1_1NCFile.html#ace4a49831a5dc61e09b8c1e9f0a75f85',1,'ncutils::NCFile']]],
   ['num_5fvars_53',['num_vars',['../structTimeInterpolatedData.html#a69fdc01eabf8ded65ff6cac13e59c0c0',1,'TimeInterpolatedData']]],
   ['numdatalogs_54',['NumDataLogs',['../classREMORA.html#abe6c7702fc1edcb5bb7d9a1a56d007a9',1,'REMORA']]],
-  ['numtypes_55',['numtypes',['../namespaceBCVars.html#a11669734493fff525248ddfa64866370',1,'BCVars::NumTypes()'],['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4aae2f525eb9b6db40a2d89c4fec0e0c4c',1,'AtmosState::NumTypes'],['../namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70ae1c32b36fefe591e742d40d1294272c4',1,'AtmosFluxes::NumTypes'],['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102',1,'BdyVars::NumTypes']]],
+  ['numtypes_55',['numtypes',['../namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70ae1c32b36fefe591e742d40d1294272c4',1,'AtmosFluxes::NumTypes'],['../namespaceBCVars.html#a11669734493fff525248ddfa64866370',1,'BCVars::NumTypes()'],['../namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ad9b77f657530efa4862d67cc4dbf2616',1,'BulkFlux::NumTypes'],['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4aae2f525eb9b6db40a2d89c4fec0e0c4c',1,'AtmosState::NumTypes'],['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102',1,'BdyVars::NumTypes']]],
   ['nz_56',['nz',['../classNCTimeSeriesRiver.html#ad7bb579c630c113de798f847417bf6cd',1,'NCTimeSeriesRiver']]],
   ['nzbox_57',['nzbox',['../classNCTimeSeriesRiver.html#a351be9339152e48e75c8d93ad5942d3a',1,'NCTimeSeriesRiver']]]
 ];

@@ -7,6 +7,12 @@ var REMORA__IndexDefines_8H =
     [ "Salt_comp", "REMORA__IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf", null ],
     [ "Temp_comp", "REMORA__IndexDefines_8H.html#a2439ff23f4449b8ffa90ddc5bcb36173", null ],
     [ "Tracer_comp", "REMORA__IndexDefines_8H.html#a9b3470d187fb5c8b5eb826568bba2617", null ],
+    [ "BulkForcingType", "REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903", [
+      [ "constant", "REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903a617ac08757d38a5a7ed91c224f0e90a0", null ],
+      [ "analytic", "REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903a0747ffd2ec4a506ee2b993a044b370c9", null ],
+      [ "netcdf", "REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903ac2e0f73e7b066a47b743d6ce8213e684", null ],
+      [ "computed", "REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903a5a317d3dd3f7a2f675975a6d0c11c629", null ]
+    ] ],
     [ "mathematicalBndryTypes", "REMORA__IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346", [
       [ "bogus", "REMORA__IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346aa8f1b3ad9a76977588e149a0f264e93b", null ],
       [ "reflect_odd", "REMORA__IndexDefines_8H.html#ac0d18d4bb218d5950db1000ef1abf346a9d34de510d9acde35ba5ebe70aa11cde", null ],

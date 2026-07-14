@@ -118,6 +118,6 @@ var searchData=
   ['visc2_115',['visc2',['../structSolverChoice.html#a7deb8e04b24645d163a6572b0cd7e4b0',1,'SolverChoice']]],
   ['volwgtsummf_116',['volWgtSumMF',['../classREMORA.html#abeeb495dbfc8b1a3f35556f156d4b3d2',1,'REMORA']]],
   ['vonkar_117',['vonKar',['../REMORA__Constants_8H.html#a934831690680a688447d10a6862da9f3',1,'REMORA_Constants.H']]],
-  ['vwind_118',['Vwind',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4a6f42830ec5d86daba977fcfd387d24d8',1,'AtmosState']]],
+  ['vwind_118',['vwind',['../structSolverChoice.html#a47390167b004c6a33dadf3dd20f162e3',1,'SolverChoice::Vwind'],['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4a6f42830ec5d86daba977fcfd387d24d8',1,'AtmosState::Vwind'],['../namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6a18f3853776f18da69fd85cad7e9613f4',1,'BulkFlux::Vwind']]],
   ['vwind_5fdata_5ffrom_5ffile_119',['Vwind_data_from_file',['../classREMORA.html#ac31cbfde839fff6db4114b2a92a1a98e',1,'REMORA']]]
 ];

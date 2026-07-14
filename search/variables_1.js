@@ -24,5 +24,6 @@ var searchData=
   ['boundary_5fseries_21',['boundary_series',['../classREMORA.html#aabc81937db98cbe8897d832a08d70ce9',1,'REMORA']]],
   ['boxes_5fat_5flevel_22',['boxes_at_level',['../classREMORA.html#a45b928a121bd6c5e75ec75732a27f774',1,'REMORA']]],
   ['bry_5ftimes_23',['bry_times',['../classNCTimeSeriesBoundary.html#a54f9df7dd085febef21cf3e58325ceb5',1,'NCTimeSeriesBoundary']]],
-  ['bulk_5ffluxes_24',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice']]]
+  ['bulk_5fflux_5ftype_24',['bulk_flux_type',['../structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b',1,'SolverChoice']]],
+  ['bulk_5ffluxes_25',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice']]]
 ];

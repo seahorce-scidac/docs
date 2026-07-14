@@ -254,6 +254,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceAtmosFluxes" id="r_namespaceAtmosFluxes"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAtmosFluxes.html">AtmosFluxes</a></td></tr>
 <tr class="memdesc:namespaceAtmosFluxes"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index constants for the driver ATM-&gt;OCN flux-passing active view. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceBulkFlux" id="r_namespaceBulkFlux"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBulkFlux.html">BulkFlux</a></td></tr>
+<tr class="memdesc:namespaceBulkFlux"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index constants for <a class="el" href="structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b">SolverChoice::bulk_flux_type</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceREMORABCType" id="r_namespaceREMORABCType"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABCType.html">REMORABCType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -322,6 +325,30 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a6d6ee76ebe32c695b424978425a74f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60c648f46c84bf0dd5dc30d399d55903" id="r_a60c648f46c84bf0dd5dc30d399d55903"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903">BulkForcingType</a> { <a class="el" href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903a617ac08757d38a5a7ed91c224f0e90a0">constant</a>
+, <a class="el" href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903a0747ffd2ec4a506ee2b993a044b370c9">analytic</a>
+, <a class="el" href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903ac2e0f73e7b066a47b743d6ce8213e684">netcdf</a>
+, <a class="el" href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903a5a317d3dd3f7a2f675975a6d0c11c629">computed</a>
+ }</td></tr>
+<tr class="memdesc:a60c648f46c84bf0dd5dc30d399d55903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source type for bulk-flux atmospheric forcing variables.  <a href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903">More...</a><br /></td></tr>
+<tr class="separator:a60c648f46c84bf0dd5dc30d399d55903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d128d48937af9f6d31b232964b1fbe6" id="r_a3d128d48937af9f6d31b232964b1fbe6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ab903a1809f855b363a48979c69aca552">BulkFlux::Uwind</a> = 0
+, <a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6a18f3853776f18da69fd85cad7e9613f4">BulkFlux::Vwind</a>
+, <a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6a3117816ccd9024f8b23d6e8baba17433">BulkFlux::Pair</a>
+, <a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ac7191f5b0bad6348fad4b26fa4858398">BulkFlux::Qair</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ac678ecbe2429f7e7a2f6d444780cbe89">BulkFlux::Tair</a>
+, <a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ac887110b13f25ee64ddb39b39d9df3a2">BulkFlux::Cloud</a>
+, <a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6af2b8d1353e858319dcc1bb5471d962a4">BulkFlux::Rain</a>
+, <a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6aeed646dd2a40fece711a6ec6b8a9361e">BulkFlux::SWrad</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ac5ac9ca2dbe65eec4182f8b15a578fc3">BulkFlux::LWrad</a>
+, <a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6afc0eba01188316c7903dd4d981a212ca">BulkFlux::EminusP</a>
+, <a class="el" href="namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ad9b77f657530efa4862d67cc4dbf2616">BulkFlux::NumTypes</a>
+<br />
+ }</td></tr>
+<tr class="separator:a3d128d48937af9f6d31b232964b1fbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a23ce64320a8ee19b456144f4deb325" id="r_a4a23ce64320a8ee19b456144f4deb325"><td class="memItemLeft" align="right" valign="top">enum struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325">REMORA_BC</a> { <br />
 &#160;&#160;<a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a40e712f30d56083318ab20a2402921d2">symmetry</a>
 , <a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ad37e67db17cfd059f2852e2673b9e8ef">inflow</a>
@@ -510,6 +537,39 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a60c648f46c84bf0dd5dc30d399d55903" name="a60c648f46c84bf0dd5dc30d399d55903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c648f46c84bf0dd5dc30d399d55903">&#9670;&#160;</a></span>BulkForcingType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903">BulkForcingType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Source type for bulk-flux atmospheric forcing variables. </p>
+<p>computed is used for diagnostics/parameterizations that are evaluated by <a class="el" href="classREMORA.html" title="Class that stores all relevant simulation state data with methods for time stepping.">REMORA</a> rather than prescribed as an input field, e.g. Berliand longwave or bulk evaporation minus precipitation. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a60c648f46c84bf0dd5dc30d399d55903a617ac08757d38a5a7ed91c224f0e90a0" name="a60c648f46c84bf0dd5dc30d399d55903a617ac08757d38a5a7ed91c224f0e90a0"></a>constant&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a60c648f46c84bf0dd5dc30d399d55903a0747ffd2ec4a506ee2b993a044b370c9" name="a60c648f46c84bf0dd5dc30d399d55903a0747ffd2ec4a506ee2b993a044b370c9"></a>analytic&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a60c648f46c84bf0dd5dc30d399d55903ac2e0f73e7b066a47b743d6ce8213e684" name="a60c648f46c84bf0dd5dc30d399d55903ac2e0f73e7b066a47b743d6ce8213e684"></a>netcdf&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a60c648f46c84bf0dd5dc30d399d55903a5a317d3dd3f7a2f675975a6d0c11c629" name="a60c648f46c84bf0dd5dc30d399d55903a5a317d3dd3f7a2f675975a6d0c11c629"></a>computed&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00115">115</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+</div>
+</div>
 <a id="a4a23ce64320a8ee19b456144f4deb325" name="a4a23ce64320a8ee19b456144f4deb325"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a23ce64320a8ee19b456144f4deb325">&#9670;&#160;</a></span>REMORA_BC</h2>
 
@@ -544,7 +604,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74" name="a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00108">108</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00141">141</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
 
 </div>
 </div>

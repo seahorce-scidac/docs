@@ -8,7 +8,7 @@ var classProblemBase =
     [ "init_analytic_masks", "classProblemBase.html#ad3167beba6eef6799681e5fa64e15082", null ],
     [ "init_analytic_prob", "classProblemBase.html#a1e8d7a0391abd7cb4eb1ea8dc343e953", null ],
     [ "init_analytic_smflux", "classProblemBase.html#ae885e3ba865389fbc93c81ca60b49602", null ],
+    [ "init_analytic_surface_var", "classProblemBase.html#ac71583e0c56f41509812ce960c8db20a", null ],
     [ "init_analytic_vmix", "classProblemBase.html#ac2ba3f467135bc5cb1d0c742c58353e1", null ],
-    [ "init_analytic_wind", "classProblemBase.html#a39b9a7110d490e83ba3a35921d3c4333", null ],
     [ "init_analytic_zeta", "classProblemBase.html#aba36d1f412e1932447d9aee6fb0bbb18", null ]
 ];

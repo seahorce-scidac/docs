@@ -1,7 +1,7 @@
 var searchData=
 [
   ['t_0',['t',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325abd1c55aaa78d7bcedd3a0e21005f2955',1,'BdyVars']]],
-  ['tair_1',['Tair',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4aecf95aa2d2e49e57ec90b8df4598bab2',1,'AtmosState']]],
+  ['tair_1',['tair',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4aecf95aa2d2e49e57ec90b8df4598bab2',1,'AtmosState::Tair'],['../namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ac678ecbe2429f7e7a2f6d444780cbe89',1,'BulkFlux::Tair']]],
   ['taux_2',['TauX',['../namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a98459fa37f3f3215eee5d26e34869f40',1,'AtmosFluxes']]],
   ['tauy_3',['TauY',['../namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a9af6c572674080f6c77db30e8269712e',1,'AtmosFluxes']]],
   ['time_5fbt_5friv_4',['Time_BT_Riv',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a78b86e3930cf70fdd9d8ec7e98d232da',1,'REMORA_NCFile.H']]],

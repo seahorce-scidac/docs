@@ -10,7 +10,7 @@ var searchData=
   ['u_5f0_7',['u_0',['../REMORA__InitAnalyticProb__Upwelling__ML_8H.html#a6c0bc42d46657bc132aba83440019983',1,'u_0:&#160;REMORA_InitAnalyticProb_Upwelling_ML.H'],['../REMORA__InitAnalyticProb__ParticlesOverSeamount_8H.html#a6c0bc42d46657bc132aba83440019983',1,'u_0:&#160;REMORA_InitAnalyticProb_ParticlesOverSeamount.H'],['../REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a6c0bc42d46657bc132aba83440019983',1,'u_0:&#160;REMORA_InitAnalyticProb_DoublyPeriodic.H'],['../REMORA__InitAnalyticProb__Advection_8H.html#a6c0bc42d46657bc132aba83440019983',1,'u_0:&#160;REMORA_InitAnalyticProb_Advection.H']]],
   ['u_5fclim_5fdata_5ffrom_5ffile_8',['u_clim_data_from_file',['../classREMORA.html#a4c140e17127717fe2e110634ed24dad5',1,'REMORA']]],
   ['ubar_9',['ubar',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a6336bc425d2abd84d90f925fc32d358a',1,'BdyVars']]],
-  ['ubar_5fbc_10',['ubar_bc',['../namespaceBCVars.html#ab6d4935713a7eb0c2b848430d7fdbbb5',1,'BCVars::ubar_bc()'],['../classREMORA.html#ab6290a7bfb1ed514ba7c8a3097fb1890',1,'REMORA::ubar_bc() const noexcept']]],
+  ['ubar_5fbc_10',['ubar_bc',['../classREMORA.html#ab6290a7bfb1ed514ba7c8a3097fb1890',1,'REMORA::ubar_bc()'],['../namespaceBCVars.html#ab6d4935713a7eb0c2b848430d7fdbbb5',1,'BCVars::ubar_bc()']]],
   ['ubar_5fclim_5fdata_5ffrom_5ffile_11',['ubar_clim_data_from_file',['../classREMORA.html#a98a16ae538d25fd532d4fbb12d4d0806',1,'REMORA']]],
   ['undefined_12',['undefined',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74',1,'REMORA_IndexDefines.H']]],
   ['update_5finterpolated_5fto_5ftime_13',['update_interpolated_to_time',['../classNCTimeSeries.html#a26bcb4a884fe56b3d55d2d297030b0ef',1,'NCTimeSeries::update_interpolated_to_time()'],['../classNCTimeSeriesRiver.html#a494caa0f2cb0e78439fb4e1d6d654039',1,'NCTimeSeriesRiver::update_interpolated_to_time()'],['../classNCTimeSeriesBoundary.html#ac762fa3a2c74a20a66ddcbabf8e93877',1,'NCTimeSeriesBoundary::update_interpolated_to_time()']]],
@@ -29,6 +29,6 @@ var searchData=
   ['userval_26',['userval',['../REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a4465e330978f4494a770c83c5a836640',1,'REMORA_InitAnalyticSMFlux_ChannelTest.H']]],
   ['uv3dmix_27',['uv3dmix',['../classREMORA.html#a7c834aec6a6a1e9f0489c0e2c2a6ac38',1,'REMORA']]],
   ['uv_5fhadv_5fscheme_28',['uv_Hadv_scheme',['../structSolverChoice.html#a4171d60125b56fa53204a2e7bf8d32b1',1,'SolverChoice']]],
-  ['uwind_29',['Uwind',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4ace44688abc1d064a95c55ac3fe880cde',1,'AtmosState']]],
+  ['uwind_29',['uwind',['../namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ab903a1809f855b363a48979c69aca552',1,'BulkFlux::Uwind'],['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4ace44688abc1d064a95c55ac3fe880cde',1,'AtmosState::Uwind'],['../structSolverChoice.html#a5974242f789ee1a20d9e6581214d2fb4',1,'SolverChoice::Uwind']]],
   ['uwind_5fdata_5ffrom_5ffile_30',['Uwind_data_from_file',['../classREMORA.html#aa601e1a642f48348267d29fd510645cf',1,'REMORA']]]
 ];

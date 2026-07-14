@@ -41,6 +41,7 @@ var dir_451f984cbae2157dc09f494ce6fda815 =
     [ "REMORA_InitAnalyticSMFlux_ParticlesOverSeamount.H", "REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html", "REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H" ],
     [ "REMORA_InitAnalyticSMFlux_Upwelling.H", "REMORA__InitAnalyticSMFlux__Upwelling_8H.html", "REMORA__InitAnalyticSMFlux__Upwelling_8H" ],
     [ "REMORA_InitAnalyticSMFlux_UpwellingML.H", "REMORA__InitAnalyticSMFlux__UpwellingML_8H.html", "REMORA__InitAnalyticSMFlux__UpwellingML_8H" ],
+    [ "REMORA_InitAnalyticSurfaceVar_BoundaryLayer.H", "REMORA__InitAnalyticSurfaceVar__BoundaryLayer_8H.html", "REMORA__InitAnalyticSurfaceVar__BoundaryLayer_8H" ],
     [ "REMORA_InitAnalyticVMix_Advection.H", "REMORA__InitAnalyticVMix__Advection_8H.html", "REMORA__InitAnalyticVMix__Advection_8H" ],
     [ "REMORA_InitAnalyticVMix_BoundaryLayer.H", "REMORA__InitAnalyticVMix__BoundaryLayer_8H.html", "REMORA__InitAnalyticVMix__BoundaryLayer_8H" ],
     [ "REMORA_InitAnalyticVMix_ChannelTest.H", "REMORA__InitAnalyticVMix__ChannelTest_8H.html", "REMORA__InitAnalyticVMix__ChannelTest_8H" ],
@@ -53,6 +54,5 @@ var dir_451f984cbae2157dc09f494ce6fda815 =
     [ "REMORA_InitAnalyticVMix_Upwelling.H", "REMORA__InitAnalyticVMix__Upwelling_8H.html", "REMORA__InitAnalyticVMix__Upwelling_8H" ],
     [ "REMORA_InitAnalyticVMix_Upwelling_ML.H", "REMORA__InitAnalyticVMix__Upwelling__ML_8H.html", "REMORA__InitAnalyticVMix__Upwelling__ML_8H" ],
     [ "REMORA_InitAnalyticVMix_UpwellingML.H", "REMORA__InitAnalyticVMix__UpwellingML_8H.html", "REMORA__InitAnalyticVMix__UpwellingML_8H" ],
-    [ "REMORA_InitAnalyticWind_BoundaryLayer.H", "REMORA__InitAnalyticWind__BoundaryLayer_8H.html", "REMORA__InitAnalyticWind__BoundaryLayer_8H" ],
     [ "REMORA_InitAnalyticZeta_DogboneAnalytic.H", "REMORA__InitAnalyticZeta__DogboneAnalytic_8H.html", "REMORA__InitAnalyticZeta__DogboneAnalytic_8H" ]
 ];

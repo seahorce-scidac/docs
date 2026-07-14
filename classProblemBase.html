@@ -120,8 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a45a7d5b91618f41b13278abd82b42632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae885e3ba865389fbc93c81ca60b49602" id="r_ae885e3ba865389fbc93c81ca60b49602"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProblemBase.html#ae885e3ba865389fbc93c81ca60b49602">init_analytic_smflux</a> (int, const amrex::Geometry &amp;, <a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;, <a class="el" href="classREMORA.html">REMORA</a> const &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;)</td></tr>
 <tr class="separator:ae885e3ba865389fbc93c81ca60b49602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b9a7110d490e83ba3a35921d3c4333" id="r_a39b9a7110d490e83ba3a35921d3c4333"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProblemBase.html#a39b9a7110d490e83ba3a35921d3c4333">init_analytic_wind</a> (int, const amrex::Geometry &amp;, <a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;, <a class="el" href="classREMORA.html">REMORA</a> const &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;)</td></tr>
-<tr class="separator:a39b9a7110d490e83ba3a35921d3c4333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71583e0c56f41509812ce960c8db20a" id="r_ac71583e0c56f41509812ce960c8db20a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProblemBase.html#ac71583e0c56f41509812ce960c8db20a">init_analytic_surface_var</a> (int, const amrex::Geometry &amp;, <a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;, <a class="el" href="classREMORA.html">REMORA</a> const &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;, amrex::MultiFab &amp;)</td></tr>
+<tr class="separator:ac71583e0c56f41509812ce960c8db20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3167beba6eef6799681e5fa64e15082" id="r_ad3167beba6eef6799681e5fa64e15082"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProblemBase.html#ad3167beba6eef6799681e5fa64e15082">init_analytic_masks</a> (int, const amrex::Geometry &amp;, <a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;, <a class="el" href="classREMORA.html">REMORA</a> const &amp;, amrex::MultiFab &amp;)</td></tr>
 <tr class="separator:ad3167beba6eef6799681e5fa64e15082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -452,7 +452,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__prob__common_8H_source.html#l00114">114</a> of file <a class="el" href="REMORA__prob__common_8H_source.html">REMORA_prob_common.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__prob__common_8H_source.html#l00122">122</a> of file <a class="el" href="REMORA__prob__common_8H_source.html">REMORA_prob_common.H</a>.</p>
 
 </div>
 </div>
@@ -586,6 +586,116 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac71583e0c56f41509812ce960c8db20a" name="ac71583e0c56f41509812ce960c8db20a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71583e0c56f41509812ce960c8db20a">&#9670;&#160;</a></span>init_analytic_surface_var()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ProblemBase::init_analytic_surface_var </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const amrex::Geometry &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classREMORA.html">REMORA</a> const &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA__prob__common_8H_source.html#l00104">104</a> of file <a class="el" href="REMORA__prob__common_8H_source.html">REMORA_prob_common.H</a>.</p>
+
+</div>
+</div>
 <a id="ac2ba3f467135bc5cb1d0c742c58353e1" name="ac2ba3f467135bc5cb1d0c742c58353e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2ba3f467135bc5cb1d0c742c58353e1">&#9670;&#160;</a></span>init_analytic_vmix()</h2>
 
@@ -645,68 +755,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="REMORA__prob__common_8H_source.html#l00073">73</a> of file <a class="el" href="REMORA__prob__common_8H_source.html">REMORA_prob_common.H</a>.</p>
-
-</div>
-</div>
-<a id="a39b9a7110d490e83ba3a35921d3c4333" name="a39b9a7110d490e83ba3a35921d3c4333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39b9a7110d490e83ba3a35921d3c4333">&#9670;&#160;</a></span>init_analytic_wind()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void ProblemBase::init_analytic_wind </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const amrex::Geometry &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structSolverChoice.html">SolverChoice</a> const &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classREMORA.html">REMORA</a> const &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">amrex::MultiFab &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="REMORA__prob__common_8H_source.html#l00104">104</a> of file <a class="el" href="REMORA__prob__common_8H_source.html">REMORA_prob_common.H</a>.</p>
 
 </div>
 </div>

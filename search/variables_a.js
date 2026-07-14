@@ -8,7 +8,7 @@ var searchData=
   ['lm_5',['lm',['../REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#a7f3d9858239ed84ed0266a07195c29fd',1,'Lm:&#160;REMORA_InitAnalyticBathymetry_BoundaryLayer.H'],['../REMORA__InitAnalyticBathymetry__DoublyPeriodic_8H.html#a7f3d9858239ed84ed0266a07195c29fd',1,'Lm:&#160;REMORA_InitAnalyticBathymetry_DoublyPeriodic.H'],['../REMORA__InitAnalyticBathymetry__ParticlesOverSeamount_8H.html#a7f3d9858239ed84ed0266a07195c29fd',1,'Lm:&#160;REMORA_InitAnalyticBathymetry_ParticlesOverSeamount.H'],['../REMORA__InitAnalyticBathymetry__Upwelling_8H.html#a7f3d9858239ed84ed0266a07195c29fd',1,'Lm:&#160;REMORA_InitAnalyticBathymetry_Upwelling.H'],['../REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a7f3d9858239ed84ed0266a07195c29fd',1,'Lm:&#160;REMORA_InitAnalyticGridScale_BoundaryLayer.H']]],
   ['longwave_5fdown_6',['longwave_down',['../structSolverChoice.html#a6b3e7341df0067d86754eed591bc1399',1,'SolverChoice']]],
   ['longwave_5fdown_5fdata_5ffrom_5ffile_7',['longwave_down_data_from_file',['../classREMORA.html#a3761efb6d3ba019732d126d111eebb93',1,'REMORA']]],
-  ['longwave_5fdown_5ffrom_5fnetcdf_8',['longwave_down_from_netcdf',['../structSolverChoice.html#a31b12f96383a335d8d1ceb529a63fb9a',1,'SolverChoice']]],
-  ['longwave_5fnetcdf_5fis_5fnet_9',['longwave_netcdf_is_net',['../structSolverChoice.html#a6199609ec32fa32ce1809ced5ed97d54',1,'SolverChoice']]],
-  ['longwave_5fnetcdf_5fvarname_10',['longwave_netcdf_varname',['../structSolverChoice.html#a3aa75ac02590ba155d7fa0d1df503b65',1,'SolverChoice']]]
+  ['longwave_5fis_5fnet_8',['longwave_is_net',['../structSolverChoice.html#a8f944322956ed63724190ce9d2fa5b34',1,'SolverChoice']]],
+  ['longwave_5fnetcdf_5fvarname_9',['longwave_netcdf_varname',['../structSolverChoice.html#a3aa75ac02590ba155d7fa0d1df503b65',1,'SolverChoice']]],
+  ['longwave_5frad_10',['longwave_rad',['../structSolverChoice.html#aa319aac7190458268d5b107e772b5d94',1,'SolverChoice']]]
 ];

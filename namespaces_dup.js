@@ -27,6 +27,7 @@ var namespaces_dup =
       [ "Temp_bc_comp", "namespaceBCVars.html#a783242d2f8ade7bba97dcf8a64b56c1b", null ]
     ] ],
     [ "BdyVars", "namespaceBdyVars.html", null ],
+    [ "BulkFlux", "namespaceBulkFlux.html", null ],
     [ "derived", "namespacederived.html", [
       [ "remora_dernull", "namespacederived.html#a2457359b34a83452a2d6d602f9919ae3", null ],
       [ "remora_dervort", "namespacederived.html#a0e96290f839430c45b60d3bde88696ec", null ]

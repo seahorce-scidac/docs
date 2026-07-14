@@ -4,5 +4,5 @@ var searchData=
   ['ubar_1',['ubar',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a6336bc425d2abd84d90f925fc32d358a',1,'BdyVars']]],
   ['undefined_2',['undefined',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74',1,'REMORA_IndexDefines.H']]],
   ['upstream3_3',['upstream3',['../REMORA__DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca5b2d34872c0b46cfbabc832368e6ec7d',1,'REMORA_DataStruct.H']]],
-  ['uwind_4',['Uwind',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4ace44688abc1d064a95c55ac3fe880cde',1,'AtmosState']]]
+  ['uwind_4',['uwind',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4ace44688abc1d064a95c55ac3fe880cde',1,'AtmosState::Uwind'],['../namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ab903a1809f855b363a48979c69aca552',1,'BulkFlux::Uwind']]]
 ];
