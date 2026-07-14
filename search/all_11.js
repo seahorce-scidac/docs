@@ -203,5 +203,6 @@ var searchData=
   ['river_5ftimes_200',['river_times',['../classNCTimeSeriesRiver.html#a680130b9ab77e2a7e974fd3d06c22373',1,'NCTimeSeriesRiver']]],
   ['rrx_201',['rrx',['../REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#ae51ba4c9a85750213ff0251cc415cf33',1,'REMORA_InitAnalyticBathymetry_Upwelling_ML.H']]],
   ['rry_202',['rry',['../REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#a90eb3e53bf0fc4d87f666beea4e94179',1,'REMORA_InitAnalyticBathymetry_Upwelling_ML.H']]],
-  ['rtype_203',['RType',['../structncutils_1_1NCDType.html#a079bbf4314ad09362b5c8124670c821f',1,'ncutils::NCDType']]]
+  ['rtype_203',['RType',['../structncutils_1_1NCDType.html#a079bbf4314ad09362b5c8124670c821f',1,'ncutils::NCDType']]],
+  ['running_5fwith_5fcoupling_5fdriver_204',['running_with_coupling_driver',['../classREMORA.html#a13ee4ac976520b8bf4132619ebcb3ad1',1,'REMORA']]]
 ];

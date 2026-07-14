@@ -18,5 +18,6 @@ var searchData=
   ['river_5fsource_5ftransportbar_15',['river_source_transportbar',['../classREMORA.html#a495d8e3b3344e97ce392a99ed7ab9ab0',1,'REMORA']]],
   ['river_5ftimes_16',['river_times',['../classNCTimeSeriesRiver.html#a680130b9ab77e2a7e974fd3d06c22373',1,'NCTimeSeriesRiver']]],
   ['rrx_17',['rrx',['../REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#ae51ba4c9a85750213ff0251cc415cf33',1,'REMORA_InitAnalyticBathymetry_Upwelling_ML.H']]],
-  ['rry_18',['rry',['../REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#a90eb3e53bf0fc4d87f666beea4e94179',1,'REMORA_InitAnalyticBathymetry_Upwelling_ML.H']]]
+  ['rry_18',['rry',['../REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#a90eb3e53bf0fc4d87f666beea4e94179',1,'REMORA_InitAnalyticBathymetry_Upwelling_ML.H']]],
+  ['running_5fwith_5fcoupling_5fdriver_19',['running_with_coupling_driver',['../classREMORA.html#a13ee4ac976520b8bf4132619ebcb3ad1',1,'REMORA']]]
 ];

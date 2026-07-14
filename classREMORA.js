@@ -1,5 +1,9 @@
 var classREMORA =
 [
+    [ "DriverAtmosForcingMode", "classREMORA.html#a448226572176d2410e51ad3d7c0dcb0a", [
+      [ "State", "classREMORA.html#a448226572176d2410e51ad3d7c0dcb0aa46a2a41cc6e552044816a2d04634545d", null ],
+      [ "Flux", "classREMORA.html#a448226572176d2410e51ad3d7c0dcb0aa1c30b35b12895df175ccd44dbb6f5ace", null ]
+    ] ],
     [ "REMORA", "classREMORA.html#a8a16e552c794ae05498e4cb0a65399af", null ],
     [ "REMORA", "classREMORA.html#a2e6c44c76a0dca92869a64f7f8d06fac", null ],
     [ "~REMORA", "classREMORA.html#af5750f77cb36737ece9e118a321a52da", null ],
@@ -34,6 +38,7 @@ var classREMORA =
     [ "DataLog", "classREMORA.html#ad2412b07f92537bc22d058e59d6cf426", null ],
     [ "DataLogName", "classREMORA.html#a8062b4dcb1ea9deba016d427d23480aa", null ],
     [ "Define_REMORAFillPatchers", "classREMORA.html#a6436d9b8e7993f9d893010237fda4b88", null ],
+    [ "DriverUsesStateForcing", "classREMORA.html#ac32e17d62815028618a2d45a31f6cd0e", null ],
     [ "ErrorEst", "classREMORA.html#a783db1b357863608197eccb6fe7d4c52", null ],
     [ "estTimeStep", "classREMORA.html#ac71630052015782fce4f20e204e42016", null ],
     [ "Evolve", "classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e", null ],
@@ -212,6 +217,7 @@ var classREMORA =
     [ "domain_bc_type", "classREMORA.html#ac686c83706316dc3388d6c1d6b270a2c", null ],
     [ "domain_bcs_type", "classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f", null ],
     [ "domain_bcs_type_d", "classREMORA.html#af4c01c1be8a352c96a61e03e08c25121", null ],
+    [ "driver_atmos_forcing_mode", "classREMORA.html#a5e047c74d6da1b1a546fb757960da6d8", null ],
     [ "driver_atmos_state_from_driver", "classREMORA.html#a49bdd9456164a2a69bc8765b8fcd1eb6", null ],
     [ "dt", "classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb", null ],
     [ "EminusP_data_from_file", "classREMORA.html#a7723e6a25f311c63a5c9379e6db7843d", null ],
@@ -284,6 +290,7 @@ var classREMORA =
     [ "river_source_cons", "classREMORA.html#ac6b0d3e21b4045578c42233d55713775", null ],
     [ "river_source_transport", "classREMORA.html#ac94183c2a93ae17dd452df1b32c10adb", null ],
     [ "river_source_transportbar", "classREMORA.html#a495d8e3b3344e97ce392a99ed7ab9ab0", null ],
+    [ "running_with_coupling_driver", "classREMORA.html#a13ee4ac976520b8bf4132619ebcb3ad1", null ],
     [ "s_r", "classREMORA.html#a642e97c92cba81e923ad6578c7ad8204", null ],
     [ "s_w", "classREMORA.html#a2332a1e82502ff4ca9cc157adfe03ff3", null ],
     [ "salt_clim_data_from_file", "classREMORA.html#adfa7607227b5d310ffebf60345171296", null ],

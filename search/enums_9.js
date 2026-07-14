@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plotfiletype_0',['PlotfileType',['../REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9e',1,'REMORA_DataStruct.H']]]
+  ['nc_5fdata_5fdims_5ftype_0',['NC_Data_Dims_Type',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06',1,'REMORA_NCFile.H']]]
 ];

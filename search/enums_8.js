@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['nc_5fdata_5fdims_5ftype_0',['NC_Data_Dims_Type',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06',1,'REMORA_NCFile.H']]]
+  ['masktype_0',['MaskType',['../REMORA__DataStruct_8H.html#a6f9734fca864f135565da5376b5c3e72',1,'REMORA_DataStruct.H']]],
+  ['mathematicalbndrytypes_1',['mathematicalBndryTypes',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346',1,'REMORABCType']]]
 ];

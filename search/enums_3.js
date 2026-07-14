@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['eostype_0',['EOSType',['../REMORA__DataStruct_8H.html#af1aa2592a3b3a5f297a0310e481a999b',1,'REMORA_DataStruct.H']]]
+  ['driveratmosforcingmode_0',['DriverAtmosForcingMode',['../classREMORA.html#a448226572176d2410e51ad3d7c0dcb0a',1,'REMORA']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['harmonicmixingtype_0',['HarmonicMixingType',['../REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833a',1,'REMORA_DataStruct.H']]],
-  ['horizmixingtype_1',['HorizMixingType',['../REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578',1,'REMORA_DataStruct.H']]]
+  ['gls_5fstabilitytype_0',['GLS_StabilityType',['../REMORA__DataStruct_8H.html#ad18d1e0933941f14a7dec3d68b783288',1,'REMORA_DataStruct.H']]],
+  ['gridscaletype_1',['GridScaleType',['../REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727',1,'REMORA_DataStruct.H']]]
 ];
