@@ -68,10 +68,10 @@ var NAVTREEINDEX =
 "REMORA__InitAnalyticBathymetry__ParticlesOverSeamount_8H.html#a7f3d9858239ed84ed0266a07195c29fd",
 "REMORA__InitAnalyticSMFlux__UpwellingML_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73",
 "REMORA__vert__visc__3d_8cpp_source.html",
-"classREMORA.html#a5d947f9e639a7692686da8ed5544412b",
-"classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb",
-"globals_w.html",
-"structncutils_1_1NCVar.html#a0a4ddce55f60e3accbaf02441b6484cf"
+"classREMORA.html#a5ccf503f0ff065e74ab8c03ad70e0f88",
+"classREMORA.html#aebc6188e047b1f48326a5b67c1e104fd",
+"globals_s.html",
+"structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

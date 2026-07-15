@@ -1,5 +1,11 @@
 var NAVTREEINDEX6 =
 {
+"globals_s.html":[3,1,0,16],
+"globals_t.html":[3,1,0,17],
+"globals_type.html":[3,1,3],
+"globals_u.html":[3,1,0,18],
+"globals_v.html":[3,1,0,19],
+"globals_vars.html":[3,1,2],
 "globals_w.html":[3,1,0,20],
 "globals_y.html":[3,1,0,21],
 "globals_z.html":[3,1,0,22],
@@ -243,11 +249,5 @@ var NAVTREEINDEX6 =
 "structncutils_1_1NCDim.html#a1c5560c95be35dbcedaf1390972175f8":[1,0,9,0,2],
 "structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544":[1,0,9,0,3],
 "structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544":[2,0,0,0,3],
-"structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338":[2,0,0,0,0],
-"structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338":[1,0,9,0,0],
-"structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6":[2,0,0,0,1],
-"structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6":[1,0,9,0,1],
-"structncutils_1_1NCVar.html":[2,0,0,3],
-"structncutils_1_1NCVar.html":[1,0,9,3],
-"structncutils_1_1NCVar.html#a0a4ddce55f60e3accbaf02441b6484cf":[1,0,9,3,21]
+"structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338":[2,0,0,0,0]
 };

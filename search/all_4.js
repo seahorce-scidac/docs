@@ -39,12 +39,13 @@ var searchData=
   ['domain_5fbcs_5ftype_5fd_36',['domain_bcs_type_d',['../classREMORA.html#af4c01c1be8a352c96a61e03e08c25121',1,'REMORA']]],
   ['driver_5fatmos_5fforcing_5fmode_37',['driver_atmos_forcing_mode',['../classREMORA.html#a5e047c74d6da1b1a546fb757960da6d8',1,'REMORA']]],
   ['driver_5fatmos_5fstate_5ffrom_5fdriver_38',['driver_atmos_state_from_driver',['../classREMORA.html#a49bdd9456164a2a69bc8765b8fcd1eb6',1,'REMORA']]],
-  ['driveratmosforcingmode_39',['DriverAtmosForcingMode',['../classREMORA.html#a448226572176d2410e51ad3d7c0dcb0a',1,'REMORA']]],
-  ['driverusesstateforcing_40',['DriverUsesStateForcing',['../classREMORA.html#ac32e17d62815028618a2d45a31f6cd0e',1,'REMORA']]],
-  ['dstart_41',['dstart',['../REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_ChannelTest.H'],['../REMORA__InitAnalyticSMFlux__DoublyPeriodic_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_DoublyPeriodic.H'],['../REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_ParticlesOverSeamount.H'],['../REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_Upwelling.H'],['../REMORA__InitAnalyticSMFlux__UpwellingML_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_UpwellingML.H'],['../REMORA__InitAnalyticSurfaceVar__BoundaryLayer_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSurfaceVar_BoundaryLayer.H']]],
-  ['dt_42',['dt',['../classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb',1,'REMORA']]],
-  ['dtype_43',['DType',['../structNDArray.html#a96033b69f69ea0ae537a24288715752d',1,'NDArray']]],
-  ['dx_44',['dx',['../REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#aada30199a52709bfe69b46aa5a2b9731',1,'REMORA_InitAnalyticSMFlux_DoubleGyre.H']]],
-  ['dxi_45',['dxi',['../REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#aa6d5415aa0b20515949a772e4f86176e',1,'REMORA_InitAnalyticGridScale_BoundaryLayer.H']]],
-  ['dy_46',['dy',['../REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#a3d480c71a8d13543a4a79124b1b694e5',1,'REMORA_InitAnalyticSMFlux_DoubleGyre.H']]]
+  ['driver_5fuses_5ftwo_5fway_5fcoupling_39',['driver_uses_two_way_coupling',['../classREMORA.html#aabb13033f3306c145c32e108d31b10b4',1,'REMORA']]],
+  ['driveratmosforcingmode_40',['DriverAtmosForcingMode',['../classREMORA.html#a448226572176d2410e51ad3d7c0dcb0a',1,'REMORA']]],
+  ['driverusesstateforcing_41',['DriverUsesStateForcing',['../classREMORA.html#ac32e17d62815028618a2d45a31f6cd0e',1,'REMORA']]],
+  ['dstart_42',['dstart',['../REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_ChannelTest.H'],['../REMORA__InitAnalyticSMFlux__DoublyPeriodic_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_DoublyPeriodic.H'],['../REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_ParticlesOverSeamount.H'],['../REMORA__InitAnalyticSMFlux__Upwelling_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_Upwelling.H'],['../REMORA__InitAnalyticSMFlux__UpwellingML_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSMFlux_UpwellingML.H'],['../REMORA__InitAnalyticSurfaceVar__BoundaryLayer_8H.html#a6b4b3c3bbc747baf0edbd43bf6a89c73',1,'dstart:&#160;REMORA_InitAnalyticSurfaceVar_BoundaryLayer.H']]],
+  ['dt_43',['dt',['../classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb',1,'REMORA']]],
+  ['dtype_44',['DType',['../structNDArray.html#a96033b69f69ea0ae537a24288715752d',1,'NDArray']]],
+  ['dx_45',['dx',['../REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#aada30199a52709bfe69b46aa5a2b9731',1,'REMORA_InitAnalyticSMFlux_DoubleGyre.H']]],
+  ['dxi_46',['dxi',['../REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#aa6d5415aa0b20515949a772e4f86176e',1,'REMORA_InitAnalyticGridScale_BoundaryLayer.H']]],
+  ['dy_47',['dy',['../REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#a3d480c71a8d13543a4a79124b1b694e5',1,'REMORA_InitAnalyticSMFlux_DoubleGyre.H']]]
 ];

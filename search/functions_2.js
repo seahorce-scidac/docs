@@ -7,11 +7,12 @@ var searchData=
   ['close_4',['close',['../classncutils_1_1NCFile.html#af2c4a20c38edb3fae69087a80875b8b9',1,'ncutils::NCFile']]],
   ['computedt_5',['ComputeDt',['../classREMORA.html#a7671b889b87ca190f7aba7188074efa3',1,'REMORA']]],
   ['computeghostcells_6',['ComputeGhostCells',['../classREMORA.html#a3be29f45efb0b259995c494f6dac2b97',1,'REMORA']]],
-  ['construct_5fremorafillpatchers_7',['Construct_REMORAFillPatchers',['../classREMORA.html#a285cd31f3cb51b9746338775a67677e2',1,'REMORA']]],
-  ['containerhaselement_8',['containerhaselement',['../REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'containerHasElement(const V &amp;iterable, const T &amp;query):&#160;REMORA_Plotfile.cpp'],['../REMORA__SetPlotVars_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'containerHasElement(const V &amp;iterable, const T &amp;query):&#160;REMORA_SetPlotVars.cpp']]],
-  ['convert_5finv_5fdays_5fto_5finv_5fs_9',['convert_inv_days_to_inv_s',['../classREMORA.html#af9f49b7bb02986c3efb85bb25b7dc65a',1,'REMORA']]],
-  ['coriolis_10',['coriolis',['../classREMORA.html#af28f51401edd36aa6014d9536e1393da',1,'REMORA']]],
-  ['create_11',['create',['../classncutils_1_1NCFile.html#a8e53d3e6af97b5f415caf03c5c3e317b',1,'ncutils::NCFile']]],
-  ['cumulative_5fref_5fratio_12',['cumulative_ref_ratio',['../classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8',1,'NCTimeSeries']]],
-  ['curvilinear_13',['curvilinear',['../classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0',1,'REMORA']]]
+  ['configuredriveratmostooceancoupling_7',['ConfigureDriverAtmosToOceanCoupling',['../classREMORA.html#a05c4950669c2a8bd013562a7292a59a9',1,'REMORA']]],
+  ['construct_5fremorafillpatchers_8',['Construct_REMORAFillPatchers',['../classREMORA.html#a285cd31f3cb51b9746338775a67677e2',1,'REMORA']]],
+  ['containerhaselement_9',['containerhaselement',['../REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'containerHasElement(const V &amp;iterable, const T &amp;query):&#160;REMORA_Plotfile.cpp'],['../REMORA__SetPlotVars_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'containerHasElement(const V &amp;iterable, const T &amp;query):&#160;REMORA_SetPlotVars.cpp']]],
+  ['convert_5finv_5fdays_5fto_5finv_5fs_10',['convert_inv_days_to_inv_s',['../classREMORA.html#af9f49b7bb02986c3efb85bb25b7dc65a',1,'REMORA']]],
+  ['coriolis_11',['coriolis',['../classREMORA.html#af28f51401edd36aa6014d9536e1393da',1,'REMORA']]],
+  ['create_12',['create',['../classncutils_1_1NCFile.html#a8e53d3e6af97b5f415caf03c5c3e317b',1,'ncutils::NCFile']]],
+  ['cumulative_5fref_5fratio_13',['cumulative_ref_ratio',['../classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8',1,'NCTimeSeries']]],
+  ['curvilinear_14',['curvilinear',['../classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0',1,'REMORA']]]
 ];
