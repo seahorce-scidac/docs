@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('REMORA__InitAnalyticBathymetry__Channe
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="REMORA__InitAnalyticBathymetry__ChannelTest_8H.html#aa55343a26bdba4f70b3c25a168e9d972">    4</a></span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__ChannelTest_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>( !m_solverChoice.flat_bathymetry);</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">// mf_h.setVal(geomdata.ProbHi(2));</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="REMORA__InitAnalyticBathymetry__ChannelTest_8H.html#a6969f31f9aae800015f2b1aafe235fbb">    7</a></span>    mf_h.setVal(50.0_rt);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="REMORA__InitAnalyticBathymetry__ChannelTest_8H.html#a8bd0252da68c3743fdacf81b4bf74caa">    7</a></span>    mf_h.setVal(Real(50.0));</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="REMORA__InitAnalyticBathymetry__ChannelTest_8H.html#a66adf2fe2df8c7e124123e3e0327213a">    9</a></span>    <span class="keywordflow">for</span> ( MFIter mfi(mf_h, TilingIfNotGPU()); mfi.isValid(); ++mfi )</div>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('REMORA__InitAnalyticBathymetry__Channe
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        ParallelForRNG(bxD, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> , <span class="keyword">auto</span> <span class="comment">/*engine*/</span>)</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            h(i,j,0) = 50.0_rt;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            h(i,j,0) = Real(50.0);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        });</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    } <span class="comment">// mfi</span></div>

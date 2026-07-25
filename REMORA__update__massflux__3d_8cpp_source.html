@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('REMORA__update__massflux__3d_8cpp_sour
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    bxD.makeSlab(2,0);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    bx_g1z.grow(IntVect(0,0,1));</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    FArrayBox fab_CF(bxD,1,amrex::The_Async_Arena()); fab_CF.template setVal&lt;RunOn::Device&gt;(0.);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    FArrayBox fab_CF(bxD,1,amrex::The_Async_Arena()); fab_CF.template setVal&lt;RunOn::Device&gt;(<a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">auto</span> CF=fab_CF.array();</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">//Copied depth of water column calculation from DepthStretchTransform</span></div>
@@ -166,9 +166,9 @@ $(document).ready(function(){initNavTree('REMORA__update__massflux__3d_8cpp_sour
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">//This takes advantage of Hz being an extra grow cell size</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    ParallelFor(bx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        Real om_v_or_on_u = 2.0_rt / (pm_or_pn(i,j,0) + pm_or_pn(i-ioff,j-joff,0));</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        Real om_v_or_on_u = <a class="code hl_variable" href="REMORA__Constants_8H.html#a2d515b2cda500f9935528386cf6c707a">two</a> / (pm_or_pn(i,j,0) + pm_or_pn(i-ioff,j-joff,0));</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        DC(i,j,k) = 0.5_rt * om_v_or_on_u * (Hz(i,j,k)+Hz(i-ioff,j-joff,k));</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        DC(i,j,k) = Real(0.5) * om_v_or_on_u * (Hz(i,j,k)+Hz(i-ioff,j-joff,k));</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    });</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    ParallelFor(bxD, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('REMORA__update__massflux__3d_8cpp_sour
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            CF(i,j,0) += DC(i,j,k) * phi(i,j,k,nnew);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        DC(i,j,-1) = 1.0_rt / DC(i,j,-1);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        DC(i,j,-1) = <a class="code hl_variable" href="REMORA__Constants_8H.html#a473379dfb979d62b5ecd9ca0a9c24baf">one</a> / DC(i,j,-1);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        CF(i,j,0)  = DC(i,j,-1) * (CF(i,j,0) - Dphi_avg1(i,j,0));</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k=0; k&lt;=N; k++) {</div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('REMORA__update__massflux__3d_8cpp_sour
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k=0; k&lt;=N; k++) {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            Hphi(i,j,k) = 0.5_rt * (Hphi(i,j,k)+phi(i,j,k,nnew)*DC(i,j,k));</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            Hphi(i,j,k) = Real(0.5) * (Hphi(i,j,k)+phi(i,j,k,nnew)*DC(i,j,k));</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            FC(i,j,0)  += Hphi(i,j,k);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        } <span class="comment">// k</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
@@ -219,6 +219,9 @@ $(document).ready(function(){initNavTree('REMORA__update__massflux__3d_8cpp_sour
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
 </div>
 <div class="ttc" id="aREMORA_8H_html"><div class="ttname"><a href="REMORA_8H.html">REMORA.H</a></div></div>
+<div class="ttc" id="aREMORA__Constants_8H_html_a2d515b2cda500f9935528386cf6c707a"><div class="ttname"><a href="REMORA__Constants_8H.html#a2d515b2cda500f9935528386cf6c707a">two</a></div><div class="ttdeci">constexpr amrex::Real two</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Constants_8H_source.html#l00008">REMORA_Constants.H:8</a></div></div>
+<div class="ttc" id="aREMORA__Constants_8H_html_a473379dfb979d62b5ecd9ca0a9c24baf"><div class="ttname"><a href="REMORA__Constants_8H.html#a473379dfb979d62b5ecd9ca0a9c24baf">one</a></div><div class="ttdeci">constexpr amrex::Real one</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Constants_8H_source.html#l00007">REMORA_Constants.H:7</a></div></div>
+<div class="ttc" id="aREMORA__Constants_8H_html_a6b7c73c34b8e65d792a04602474f08b5"><div class="ttname"><a href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a></div><div class="ttdeci">constexpr amrex::Real zero</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Constants_8H_source.html#l00006">REMORA_Constants.H:6</a></div></div>
 <div class="ttc" id="aREMORA__InitAnalyticGridScale__BoundaryLayer_8H_html_a055aef9870fdf5d505cc9ad2d0d861c4"><div class="ttname"><a href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a055aef9870fdf5d505cc9ad2d0d861c4">geomdata</a></div><div class="ttdeci">auto geomdata</div><div class="ttdef"><b>Definition</b> <a href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H_source.html#l00002">REMORA_InitAnalyticGridScale_BoundaryLayer.H:2</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a0dad365c76c280f858e71ccf9e267bc3"><div class="ttname"><a href="classREMORA.html#a0dad365c76c280f858e71ccf9e267bc3">REMORA::update_massflux_3d</a></div><div class="ttdeci">void update_massflux_3d(int lev, const amrex::Box &amp;bx, const int ioff, const int joff, const amrex::Array4&lt; amrex::Real &gt; &amp;phi, const amrex::Array4&lt; amrex::Real &gt; &amp;phibar, const amrex::Array4&lt; amrex::Real &gt; &amp;Hphi, const amrex::Array4&lt; amrex::Real const &gt; &amp;Hz, const amrex::Array4&lt; amrex::Real const &gt; &amp;pm_or_pn, const amrex::Array4&lt; amrex::Real const &gt; &amp;Dphi1, const amrex::Array4&lt; amrex::Real const &gt; &amp;Dphi2, const amrex::Array4&lt; amrex::Real &gt; &amp;DC, const amrex::Array4&lt; amrex::Real &gt; &amp;FC, const amrex::Array4&lt; amrex::Real const &gt; &amp;msk, const int nnew)</div><div class="ttdoc">Correct mass flux.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__update__massflux__3d_8cpp_source.html#l00023">REMORA_update_massflux_3d.cpp:23</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a111674546154c538b2b89b028d80d789"><div class="ttname"><a href="classREMORA.html#a111674546154c538b2b89b028d80d789">REMORA::xvel_bc</a></div><div class="ttdeci">int xvel_bc() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="REMORA_8H_source.html#l01210">REMORA.H:1210</a></div></div>

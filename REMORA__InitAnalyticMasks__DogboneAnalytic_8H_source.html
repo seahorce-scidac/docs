@@ -110,13 +110,14 @@ $(document).ready(function(){initNavTree('REMORA__InitAnalyticMasks__DogboneAnal
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="comment">// mskr is 1 everywhere already</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        ParallelFor(bx, [=] AMREX_GPU_DEVICE(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> ) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keywordflow">if</span> ((x_r(i,j,0) &gt; 2800.0_rt &amp;&amp; x_r(i,j,0) &lt; 5600.0_rt) &amp;&amp;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                (y_r(i,j,0) &lt; 250.0_rt || y_r(i,j,0) &gt; 500.0_rt)) {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                mskr(i,j,0) = 0.0_rt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keywordflow">if</span> ((x_r(i,j,0) &gt; Real(2800.0) &amp;&amp; x_r(i,j,0) &lt; Real(5600.0)) &amp;&amp;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                (y_r(i,j,0) &lt; Real(250.0) || y_r(i,j,0) &gt; Real(500.0))) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                mskr(i,j,0) = <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            }</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        });</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
 </div>
+<div class="ttc" id="aREMORA__Constants_8H_html_a6b7c73c34b8e65d792a04602474f08b5"><div class="ttname"><a href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a></div><div class="ttdeci">constexpr amrex::Real zero</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Constants_8H_source.html#l00006">REMORA_Constants.H:6</a></div></div>
 <div class="ttc" id="aREMORA__IndexDefines_8H_html_a124da9e47fb1b1f3debaf49368f42e38"><div class="ttname"><a href="REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38">NGROW</a></div><div class="ttdeci">#define NGROW</div><div class="ttdef"><b>Definition</b> <a href="REMORA__IndexDefines_8H_source.html#l00012">REMORA_IndexDefines.H:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

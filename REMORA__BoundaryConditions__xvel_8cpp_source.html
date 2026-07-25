@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('REMORA__BoundaryConditions__xvel_8cpp_
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    GeometryData <span class="keyword">const</span>&amp; <a class="code hl_variable" href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a055aef9870fdf5d505cc9ad2d0d861c4">geomdata</a> = <a class="code hl_variable" href="classREMORAPhysBCFunct.html#aa908f5a017f82a511905b364b5758614">m_geom</a>.data();</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> is_periodic_in_x = <a class="code hl_variable" href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a055aef9870fdf5d505cc9ad2d0d861c4">geomdata</a>.isPeriodic(0);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">bool</span> is_periodic_in_y = <a class="code hl_variable" href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a055aef9870fdf5d505cc9ad2d0d861c4">geomdata</a>.isPeriodic(1);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> Real eps= 1.0e-20_rt;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> Real eps= Real(1.0e-20);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    Box dest_arr_box = growHi(convert(Box(dest_arr),IntVect(1,0,0)),0,-1);</div>
@@ -172,8 +172,8 @@ $(document).ready(function(){initNavTree('REMORA__BoundaryConditions__xvel_8cpp_
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    Real grad_lo_ijp1 = calc_arr(dom_lo.x+1,j+1,k) - calc_arr(dom_lo.x+1,j  ,k);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    Real dUdt = calc_arr(dom_lo.x+1,j,k) - dest_arr(dom_lo.x+1,j,k);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                    Real dUdx = dest_arr(dom_lo.x+1,j,k) - dest_arr(dom_lo.x+2,j,k);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    <span class="keywordflow">if</span> (dUdt * dUdx &lt; 0.0_rt) dUdt = 0.0_rt;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    Real dUde = (dUdt * (grad_lo_ip1 + grad_lo_ijp1) &gt; 0.0_rt) ? grad_lo_ip1 : grad_lo_ijp1;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    <span class="keywordflow">if</span> (dUdt * dUdx &lt; <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>) dUdt = <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    Real dUde = (dUdt * (grad_lo_ip1 + grad_lo_ijp1) &gt; <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>) ? grad_lo_ip1 : grad_lo_ijp1;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    Real cff = std::max(dUdx*dUdx+dUde*dUde,eps);</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    Real Cx = dUdt*dUdx;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    dest_arr(i,j,k) = (cff * calc_arr(i,j,k) + Cx * dest_arr(dom_lo.x+1,j,k)) * msku(i,j,0) / (cff+Cx);</div>
@@ -206,8 +206,8 @@ $(document).ready(function(){initNavTree('REMORA__BoundaryConditions__xvel_8cpp_
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                    Real grad_hi_jp1  = calc_arr(dom_hi.x  ,j+1,k) - calc_arr(dom_hi.x  ,j  ,k);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    Real dUdt = calc_arr(dom_hi.x,j,k) - dest_arr(dom_hi.x  ,j,k);</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    Real dUdx = dest_arr(dom_hi.x,j,k) - dest_arr(dom_hi.x-1,j,k);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    <span class="keywordflow">if</span> (dUdt * dUdx &lt; 0.0_rt) dUdt = 0.0_rt;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    Real dUde = (dUdt * (grad_hi + grad_hi_jp1) &gt; 0.0_rt) ? grad_hi : grad_hi_jp1;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    <span class="keywordflow">if</span> (dUdt * dUdx &lt; <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>) dUdt = <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    Real dUde = (dUdt * (grad_hi + grad_hi_jp1) &gt; <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>) ? grad_hi : grad_hi_jp1;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    Real cff = std::max(dUdx*dUdx+dUde*dUde,eps);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    Real Cx = dUdt * dUdx;</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                    dest_arr(i,j,k) = (cff * calc_arr(dom_hi.x+1,j,k) + Cx * dest_arr(dom_hi.x,j,k)) * msku(i,j,0) / (cff + Cx);</div>
@@ -247,8 +247,8 @@ $(document).ready(function(){initNavTree('REMORA__BoundaryConditions__xvel_8cpp_
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                    Real grad_lo_im1  = calc_arr(i  ,dom_lo.y  ,k) - calc_arr(i-1,dom_lo.y  ,k);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                    Real dUdt = calc_arr(i,dom_lo.y,k) - dest_arr(i,dom_lo.y  ,k);</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                    Real dUde = dest_arr(i,dom_lo.y,k) - dest_arr(i,dom_lo.y+1,k);</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                    <span class="keywordflow">if</span> (dUdt * dUde &lt; 0.0_rt) dUdt = 0.0_rt;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                    Real dUdx = (dUdt * (grad_lo_im1 + grad_lo) &gt; 0.0_rt) ? grad_lo_im1 : grad_lo;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                    <span class="keywordflow">if</span> (dUdt * dUde &lt; <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>) dUdt = <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                    Real dUdx = (dUdt * (grad_lo_im1 + grad_lo) &gt; <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>) ? grad_lo_im1 : grad_lo;</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                    Real cff = std::max(dUdx * dUdx + dUde * dUde, eps);</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                    Real Ce = dUdt * dUde;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                    dest_arr(i,j,k) = (cff * calc_arr(i,dom_lo.y-1,k) + Ce * dest_arr(i,dom_lo.y,k)) * msku(i,j,0) / (cff + Ce);</div>
@@ -269,8 +269,8 @@ $(document).ready(function(){initNavTree('REMORA__BoundaryConditions__xvel_8cpp_
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                    Real grad_hi_im1   = calc_arr(i  ,dom_hi.y  ,k) - calc_arr(i-1,dom_hi.y  ,k);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                    Real dUdt = calc_arr(i,dom_hi.y,k) - dest_arr(i,dom_hi.y  ,k);</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                    Real dUde = dest_arr(i,dom_hi.y,k) - dest_arr(i,dom_hi.y-1,k);</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                    <span class="keywordflow">if</span> (dUdt * dUde &lt; 0.0_rt) dUdt = 0.0_rt;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                    Real dUdx = (dUdt * (grad_hi_im1 + grad_hi) &gt; 0.0_rt) ? grad_hi_im1 : grad_hi;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                    <span class="keywordflow">if</span> (dUdt * dUde &lt; <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>) dUdt = <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                    Real dUdx = (dUdt * (grad_hi_im1 + grad_hi) &gt; <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>) ? grad_hi_im1 : grad_hi;</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                    Real cff = std::max(dUdx*dUdx+dUde*dUde,eps);</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                    Real Ce = dUdt * dUde;</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    dest_arr(i,j,k) = (cff * calc_arr(i,dom_hi.y+1,k) + Ce * dest_arr(i,dom_hi.y,k)) * msku(i,j,0) / (cff+Ce);</div>
@@ -334,25 +334,25 @@ $(document).ready(function(){initNavTree('REMORA__BoundaryConditions__xvel_8cpp_
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <span class="keywordflow">if</span> (!clamp_west &amp;&amp; !clamp_south) {</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            ParallelFor(xlo_ylo &amp; dest_arr_box, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            {</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                dest_arr(i,j,k) = 0.5 * (dest_arr(i,dom_lo.y,k) + dest_arr(dom_lo.x+1,j,k));</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                dest_arr(i,j,k) = Real(0.5) * (dest_arr(i,dom_lo.y,k) + dest_arr(dom_lo.x+1,j,k));</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            });</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        }</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="keywordflow">if</span> (!clamp_west &amp;&amp; !clamp_north) {</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            ParallelFor(xlo_yhi &amp; dest_arr_box, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            {</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                dest_arr(i,j,k) = 0.5 * (dest_arr(i,dom_hi.y,k) + dest_arr(dom_lo.x+1,j,k));</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                dest_arr(i,j,k) = Real(0.5) * (dest_arr(i,dom_hi.y,k) + dest_arr(dom_lo.x+1,j,k));</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            });</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        }</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">if</span> (!clamp_east &amp;&amp; !clamp_south) {</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            ParallelFor(xhi_ylo &amp; dest_arr_box, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            {</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                dest_arr(i,j,k) = 0.5 * (dest_arr(i,dom_lo.y,k) + dest_arr(dom_hi.x,j,k));</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                dest_arr(i,j,k) = Real(0.5) * (dest_arr(i,dom_lo.y,k) + dest_arr(dom_hi.x,j,k));</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            });</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        }</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">if</span> (!clamp_east &amp;&amp; !clamp_north) {</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            ParallelFor(xhi_yhi &amp; dest_arr_box, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            {</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                dest_arr(i,j,k) = 0.5 * (dest_arr(i,dom_hi.y,k) + dest_arr(dom_hi.x,j,k));</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                dest_arr(i,j,k) = Real(0.5) * (dest_arr(i,dom_hi.y,k) + dest_arr(dom_hi.x,j,k));</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            });</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        }</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    }</div>
@@ -361,6 +361,7 @@ $(document).ready(function(){initNavTree('REMORA__BoundaryConditions__xvel_8cpp_
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    Gpu::streamSynchronize();</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>}</div>
 </div>
+<div class="ttc" id="aREMORA__Constants_8H_html_a6b7c73c34b8e65d792a04602474f08b5"><div class="ttname"><a href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a></div><div class="ttdeci">constexpr amrex::Real zero</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Constants_8H_source.html#l00006">REMORA_Constants.H:6</a></div></div>
 <div class="ttc" id="aREMORA__InitAnalyticGridScale__BoundaryLayer_8H_html_a055aef9870fdf5d505cc9ad2d0d861c4"><div class="ttname"><a href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a055aef9870fdf5d505cc9ad2d0d861c4">geomdata</a></div><div class="ttdeci">auto geomdata</div><div class="ttdef"><b>Definition</b> <a href="REMORA__InitAnalyticGridScale__BoundaryLayer_8H_source.html#l00002">REMORA_InitAnalyticGridScale_BoundaryLayer.H:2</a></div></div>
 <div class="ttc" id="aREMORA__PhysBCFunct_8H_html"><div class="ttname"><a href="REMORA__PhysBCFunct_8H.html">REMORA_PhysBCFunct.H</a></div></div>
 <div class="ttc" id="aclassREMORAPhysBCFunct_html_a3922bc0f97d9ce1ffe4a3bd810c1b486"><div class="ttname"><a href="classREMORAPhysBCFunct.html#a3922bc0f97d9ce1ffe4a3bd810c1b486">REMORAPhysBCFunct::impose_xvel_bcs</a></div><div class="ttdeci">void impose_xvel_bcs(const amrex::Array4&lt; amrex::Real &gt; &amp;dest_arr, const amrex::Box &amp;bx, const amrex::Box &amp;domain, const amrex::GpuArray&lt; amrex::Real, AMREX_SPACEDIM &gt; dxInv, const amrex::Array4&lt; const amrex::Real &gt; &amp;msku, const amrex::Array4&lt; const amrex::Real &gt; &amp;calc_arr, amrex::Real time, int bccomp)</div><div class="ttdoc">apply x-velocity type boundary conditions</div><div class="ttdef"><b>Definition</b> <a href="REMORA__BoundaryConditions__xvel_8cpp_source.html#l00016">REMORA_BoundaryConditions_xvel.cpp:16</a></div></div>

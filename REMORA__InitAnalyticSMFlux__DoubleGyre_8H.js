@@ -1,7 +1,7 @@
 var REMORA__InitAnalyticSMFlux__DoubleGyre_8H =
 [
     [ "for", "REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#ab592707a6c284e1fc3270d0284bb239e", null ],
-    [ "setVal", "REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#ad1d910c0ff7be3ed3fa17f97e55337ba", null ],
+    [ "setVal", "REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#a0ec6c7dc246d4555d185e69255b8189d", null ],
     [ "dx", "REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#aada30199a52709bfe69b46aa5a2b9731", null ],
     [ "dy", "REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#a3d480c71a8d13543a4a79124b1b694e5", null ],
     [ "pi", "REMORA__InitAnalyticSMFlux__DoubleGyre_8H.html#a748671ab6e36b6b6be3fb85adb8908be", null ],

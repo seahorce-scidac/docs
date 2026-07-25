@@ -112,11 +112,11 @@ $(document).ready(function(){initNavTree('REMORA__InitAnalyticHMix__DoubleGyre_8
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>      ParallelFor(makeSlab(bx,2,0), [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>      {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        visc2_p(i,j,0) = 1280.0_rt;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        visc2_r(i,j,0) = 1280.0_rt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        visc2_p(i,j,0) = Real(1280.0);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        visc2_r(i,j,0) = Real(1280.0);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; ncomp; n++) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            diff2(i,j,0,n) = 1280.0_rt;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            diff2(i,j,0,n) = Real(1280.0);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        }</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>      });</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>

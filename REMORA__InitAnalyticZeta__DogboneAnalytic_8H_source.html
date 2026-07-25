@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('REMORA__InitAnalyticZeta__DogboneAnaly
   <div class="headertitle"><div class="title">REMORA_InitAnalyticZeta_DogboneAnalytic.H</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="REMORA__InitAnalyticZeta__DogboneAnalytic_8H.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="REMORA__InitAnalyticZeta__DogboneAnalytic_8H.html#aaa6b9e2f1b97c28e6fa917fb2364fc1b">    1</a></span>    mf_zeta.setVal(0.0_rt);</div>
+<a href="REMORA__InitAnalyticZeta__DogboneAnalytic_8H.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="REMORA__InitAnalyticZeta__DogboneAnalytic_8H.html#a7b36f9fd9df18d90f49e50d6ed9bb4af">    1</a></span>    mf_zeta.setVal(<a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>);</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="REMORA__InitAnalyticZeta__DogboneAnalytic_8H.html#a171bf62ee6bd41eeee63a5416068fec9">    3</a></span>    <span class="keywordflow">for</span> (MFIter mfi(mf_zeta, TilingIfNotGPU()); mfi.isValid(); ++mfi)</div>
@@ -110,12 +110,13 @@ $(document).ready(function(){initNavTree('REMORA__InitAnalyticZeta__DogboneAnaly
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        ParallelFor(bx, 3, [=] AMREX_GPU_DEVICE(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> , <span class="keywordtype">int</span> n) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keywordflow">if</span> (x_r(i,j,0) &lt; 1100.0_rt) {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                zeta(i,j,0,n) = -0.00125_rt * (x_r(i,j,0) - 100.0_rt) + 1.25_rt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keywordflow">if</span> (x_r(i,j,0) &lt; Real(1100.0)) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                zeta(i,j,0,n) = Real(-0.00125) * (x_r(i,j,0) - Real(100.0)) + Real(1.25);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            }</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        });</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
 </div>
+<div class="ttc" id="aREMORA__Constants_8H_html_a6b7c73c34b8e65d792a04602474f08b5"><div class="ttname"><a href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a></div><div class="ttdeci">constexpr amrex::Real zero</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Constants_8H_source.html#l00006">REMORA_Constants.H:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

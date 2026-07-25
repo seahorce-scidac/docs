@@ -132,12 +132,12 @@ $(document).ready(function(){initNavTree('REMORA__vert__mean__3d_8cpp_source.htm
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    ParallelFor(makeSlab(phi_bx,2,0),</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        Real Hzk_on_face = 0.5_rt*(Hz(i-ioff,j-joff,0)+Hz(i,j,0));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        Real Hzk_on_face = Real(0.5)*(Hz(i-ioff,j-joff,0)+Hz(i,j,0));</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        CF(i,j,-1) =                 Hzk_on_face;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        DC(i,j,-1) = phi(i,j,0,nnew)*Hzk_on_face;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k=1; k&lt;=N; k++) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            Hzk_on_face = 0.5_rt*(Hz(i-ioff,j-joff,k)+Hz(i,j,k));</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            Hzk_on_face = Real(0.5)*(Hz(i-ioff,j-joff,k)+Hz(i,j,k));</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            CF(i,j,-1) +=                 Hzk_on_face;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            DC(i,j,-1) += phi(i,j,k,nnew)*Hzk_on_face;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
@@ -145,8 +145,8 @@ $(document).ready(function(){initNavTree('REMORA__vert__mean__3d_8cpp_source.htm
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ParallelFor(makeSlab(phi_bx,2,0), [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> )</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        Real on_u_or_om_v = 2.0_rt / (pm_or_pn(i-ioff,j-joff,0) + pm_or_pn(i,j,0));</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        Real cff1=1.0_rt/(CF(i,j,-1)*(on_u_or_om_v));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        Real on_u_or_om_v = <a class="code hl_variable" href="REMORA__Constants_8H.html#a2d515b2cda500f9935528386cf6c707a">two</a> / (pm_or_pn(i-ioff,j-joff,0) + pm_or_pn(i,j,0));</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        Real cff1=<a class="code hl_variable" href="REMORA__Constants_8H.html#a473379dfb979d62b5ecd9ca0a9c24baf">one</a>/(CF(i,j,-1)*(on_u_or_om_v));</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        DC(i,j,-1) = (DC(i,j,-1)*(on_u_or_om_v) - Dphi_avg1(i,j,0))*cff1; <span class="comment">// recursive</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    });</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
@@ -158,6 +158,8 @@ $(document).ready(function(){initNavTree('REMORA__vert__mean__3d_8cpp_source.htm
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
 </div>
 <div class="ttc" id="aREMORA_8H_html"><div class="ttname"><a href="REMORA_8H.html">REMORA.H</a></div></div>
+<div class="ttc" id="aREMORA__Constants_8H_html_a2d515b2cda500f9935528386cf6c707a"><div class="ttname"><a href="REMORA__Constants_8H.html#a2d515b2cda500f9935528386cf6c707a">two</a></div><div class="ttdeci">constexpr amrex::Real two</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Constants_8H_source.html#l00008">REMORA_Constants.H:8</a></div></div>
+<div class="ttc" id="aREMORA__Constants_8H_html_a473379dfb979d62b5ecd9ca0a9c24baf"><div class="ttname"><a href="REMORA__Constants_8H.html#a473379dfb979d62b5ecd9ca0a9c24baf">one</a></div><div class="ttdeci">constexpr amrex::Real one</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Constants_8H_source.html#l00007">REMORA_Constants.H:7</a></div></div>
 <div class="ttc" id="aclassREMORA_html_a466d5c5a68c7cfa02247db51bbe74b19"><div class="ttname"><a href="classREMORA.html#a466d5c5a68c7cfa02247db51bbe74b19">REMORA::vert_mean_3d</a></div><div class="ttdeci">void vert_mean_3d(const amrex::Box &amp;bx, const int ioff, const int joff, const amrex::Array4&lt; amrex::Real &gt; &amp;phi, const amrex::Array4&lt; amrex::Real const &gt; &amp;Hz, const amrex::Array4&lt; amrex::Real const &gt; &amp;Dphi_avg1, const amrex::Array4&lt; amrex::Real &gt; &amp;DC, const amrex::Array4&lt; amrex::Real &gt; &amp;CF, const amrex::Array4&lt; amrex::Real const &gt; &amp;pm_or_pn, const amrex::Array4&lt; amrex::Real const &gt; &amp;msk, const int nnew, const int N)</div><div class="ttdoc">Adjust 3D momentum variables based on vertical mean momentum.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__vert__mean__3d_8cpp_source.html#l00019">REMORA_vert_mean_3d.cpp:19</a></div></div>
 <div class="ttc" id="anamespaceamrex_html"><div class="ttname"><a href="namespaceamrex.html">amrex</a></div><div class="ttdef"><b>Definition</b> <a href="REMORA__console__io_8cpp_source.html#l00011">REMORA_console_io.cpp:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

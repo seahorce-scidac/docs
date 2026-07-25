@@ -150,8 +150,8 @@ $(document).ready(function(){initNavTree('REMORA__curvilinear_8cpp_source.html',
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    ParallelFor(grow(bx,IntVect(1,1,0)),</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        Real cff1 = 0.5_rt * (vold(i,j,k,nrhs) + vold(i  ,j+1,k,nrhs));</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        Real cff2 = 0.5_rt * (uold(i,j,k,nrhs) + uold(i+1,j  ,k,nrhs));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        Real cff1 = Real(0.5) * (vold(i,j,k,nrhs) + vold(i  ,j+1,k,nrhs));</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        Real cff2 = Real(0.5) * (uold(i,j,k,nrhs) + uold(i+1,j  ,k,nrhs));</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        Real cff3 = cff1 * dndx(i,j,0);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        Real cff4 = cff2 * dmde(i,j,0);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        Real cff = Hz(i,j,k) * (cff3 - cff4);</div>
@@ -162,13 +162,13 @@ $(document).ready(function(){initNavTree('REMORA__curvilinear_8cpp_source.html',
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    ParallelFor(xbx,</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        ru(i,j,k,nr) += 0.5_rt * (UFx(i,j,k) + UFx(i-1,j,k));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        ru(i,j,k,nr) += Real(0.5) * (UFx(i,j,k) + UFx(i-1,j,k));</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    });</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    ParallelFor(ybx,</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        rv(i,j,k,nr) -= 0.5_rt * (VFe(i,j,k) + VFe(i,j-1,k));</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        rv(i,j,k,nr) -= Real(0.5) * (VFe(i,j,k) + VFe(i,j-1,k));</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    });</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
 </div>

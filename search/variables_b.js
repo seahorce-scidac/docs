@@ -52,5 +52,6 @@ var searchData=
   ['my_5fgh0_49',['my_Gh0',['../structSolverChoice.html#a2e4608cf661fd2ea488dcfdd4c8f1269',1,'SolverChoice']]],
   ['my_5flmax_50',['my_lmax',['../structSolverChoice.html#a298eb69e5b721c9836a688d79670a9fe',1,'SolverChoice']]],
   ['my_5fqmin_51',['my_qmin',['../structSolverChoice.html#adc44195f8e660aec4a682353fc7f6e0c',1,'SolverChoice']]],
-  ['my_5fsq_52',['my_Sq',['../structSolverChoice.html#af6358ebbbbf468632897be7fb3fa57b9',1,'SolverChoice']]]
+  ['my_5fsq_52',['my_Sq',['../structSolverChoice.html#af6358ebbbbf468632897be7fb3fa57b9',1,'SolverChoice']]],
+  ['myhalf_53',['myhalf',['../REMORA__Constants_8H.html#a85c9f06fb84cd004c8d9e084b72855dd',1,'REMORA_Constants.H']]]
 ];

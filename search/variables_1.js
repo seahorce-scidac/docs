@@ -19,11 +19,12 @@ var searchData=
   ['blk_5fzq_16',['blk_ZQ',['../structSolverChoice.html#acb3390afad4e4bd62a9c9879ebd8caa2',1,'SolverChoice']]],
   ['blk_5fzt_17',['blk_ZT',['../structSolverChoice.html#a05d52ca9f33733f70e683a25912977c9',1,'SolverChoice']]],
   ['blk_5fzw_18',['blk_ZW',['../structSolverChoice.html#a6247a812f5037d4e66e7ebbda8858b42',1,'SolverChoice']]],
-  ['bottom_5fstress_5ftype_19',['bottom_stress_type',['../structSolverChoice.html#a87953245714a80185fceae6fe421a81e',1,'SolverChoice']]],
-  ['boundary_5ffrom_5fnetcdf_20',['boundary_from_netcdf',['../structSolverChoice.html#a73e08531bdac22cdef52a8511b4fffa5',1,'SolverChoice']]],
-  ['boundary_5fseries_21',['boundary_series',['../classREMORA.html#aabc81937db98cbe8897d832a08d70ce9',1,'REMORA']]],
-  ['boxes_5fat_5flevel_22',['boxes_at_level',['../classREMORA.html#a45b928a121bd6c5e75ec75732a27f774',1,'REMORA']]],
-  ['bry_5ftimes_23',['bry_times',['../classNCTimeSeriesBoundary.html#a54f9df7dd085febef21cf3e58325ceb5',1,'NCTimeSeriesBoundary']]],
-  ['bulk_5fflux_5ftype_24',['bulk_flux_type',['../structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b',1,'SolverChoice']]],
-  ['bulk_5ffluxes_25',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice']]]
+  ['bogus_5flarge_5fvalue_19',['bogus_large_value',['../REMORA__Constants_8H.html#a319ff1c970342978d83ed3795c78afa7',1,'REMORA_Constants.H']]],
+  ['bottom_5fstress_5ftype_20',['bottom_stress_type',['../structSolverChoice.html#a87953245714a80185fceae6fe421a81e',1,'SolverChoice']]],
+  ['boundary_5ffrom_5fnetcdf_21',['boundary_from_netcdf',['../structSolverChoice.html#a73e08531bdac22cdef52a8511b4fffa5',1,'SolverChoice']]],
+  ['boundary_5fseries_22',['boundary_series',['../classREMORA.html#aabc81937db98cbe8897d832a08d70ce9',1,'REMORA']]],
+  ['boxes_5fat_5flevel_23',['boxes_at_level',['../classREMORA.html#a45b928a121bd6c5e75ec75732a27f774',1,'REMORA']]],
+  ['bry_5ftimes_24',['bry_times',['../classNCTimeSeriesBoundary.html#a54f9df7dd085febef21cf3e58325ceb5',1,'NCTimeSeriesBoundary']]],
+  ['bulk_5fflux_5ftype_25',['bulk_flux_type',['../structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b',1,'SolverChoice']]],
+  ['bulk_5ffluxes_26',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice']]]
 ];

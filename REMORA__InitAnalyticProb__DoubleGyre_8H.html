@@ -114,9 +114,9 @@ Variables</h2></td></tr>
 <tr class="separator:a0e309d9162590f5d8287ae33be5c24ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a014260d1becf055937af59cff1b4b773" id="r_a014260d1becf055937af59cff1b4b773"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__InitAnalyticProb__DoubleGyre_8H.html#a014260d1becf055937af59cff1b4b773">T0</a> = m_solverChoice.T0</td></tr>
 <tr class="separator:a014260d1becf055937af59cff1b4b773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2e10f8de3f3514831677e5e3e0021c5" id="r_ae2e10f8de3f3514831677e5e3e0021c5"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__InitAnalyticProb__DoubleGyre_8H.html#ae2e10f8de3f3514831677e5e3e0021c5">val1</a> = (44.69_rt / 39.382_rt) * (44.69_rt / 39.382_rt)</td></tr>
+<tr class="memitem:ae2e10f8de3f3514831677e5e3e0021c5" id="r_ae2e10f8de3f3514831677e5e3e0021c5"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__InitAnalyticProb__DoubleGyre_8H.html#ae2e10f8de3f3514831677e5e3e0021c5">val1</a> = (Real(44.69) / Real(39.382)) * (Real(44.69) / Real(39.382))</td></tr>
 <tr class="separator:ae2e10f8de3f3514831677e5e3e0021c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a528a17952edc4a9ec0c759b3ce800c62" id="r_a528a17952edc4a9ec0c759b3ce800c62"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__InitAnalyticProb__DoubleGyre_8H.html#a528a17952edc4a9ec0c759b3ce800c62">val2</a> = <a class="el" href="REMORA__InitAnalyticProb__DoubleGyre_8H.html#ae2e10f8de3f3514831677e5e3e0021c5">val1</a> * (<a class="el" href="REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html#ab8e36533c29290d98a91375f7bdbf726">m_solverChoice.rho0</a> * 100.0_rt/<a class="el" href="REMORA__Constants_8H.html#a837c5e89fda6bfcbff2005080b5efde0">g</a>) * (5.0e-5_rt/((42.689_rt/44.69_rt) * (42.689_rt/44.69_rt)))</td></tr>
+<tr class="memitem:a528a17952edc4a9ec0c759b3ce800c62" id="r_a528a17952edc4a9ec0c759b3ce800c62"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__InitAnalyticProb__DoubleGyre_8H.html#a528a17952edc4a9ec0c759b3ce800c62">val2</a> = <a class="el" href="REMORA__InitAnalyticProb__DoubleGyre_8H.html#ae2e10f8de3f3514831677e5e3e0021c5">val1</a> * (<a class="el" href="REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html#ab8e36533c29290d98a91375f7bdbf726">m_solverChoice.rho0</a> * Real(100.0)/<a class="el" href="REMORA__Constants_8H.html#a837c5e89fda6bfcbff2005080b5efde0">g</a>) * (Real(5.0e-5)/((Real(42.689)/Real(44.69)) * (Real(42.689)/Real(44.69))))</td></tr>
 <tr class="separator:a528a17952edc4a9ec0c759b3ce800c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -230,7 +230,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Real val1 = (44.69_rt / 39.382_rt) * (44.69_rt / 39.382_rt)</td>
+          <td class="memname">Real val1 = (Real(44.69) / Real(39.382)) * (Real(44.69) / Real(39.382))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -248,7 +248,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Real val2 = <a class="el" href="REMORA__InitAnalyticProb__DoubleGyre_8H.html#ae2e10f8de3f3514831677e5e3e0021c5">val1</a> * (<a class="el" href="REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html#ab8e36533c29290d98a91375f7bdbf726">m_solverChoice.rho0</a> * 100.0_rt/<a class="el" href="REMORA__Constants_8H.html#a837c5e89fda6bfcbff2005080b5efde0">g</a>) * (5.0e-5_rt/((42.689_rt/44.69_rt) * (42.689_rt/44.69_rt)))</td>
+          <td class="memname">Real val2 = <a class="el" href="REMORA__InitAnalyticProb__DoubleGyre_8H.html#ae2e10f8de3f3514831677e5e3e0021c5">val1</a> * (<a class="el" href="REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html#ab8e36533c29290d98a91375f7bdbf726">m_solverChoice.rho0</a> * Real(100.0)/<a class="el" href="REMORA__Constants_8H.html#a837c5e89fda6bfcbff2005080b5efde0">g</a>) * (Real(5.0e-5)/((Real(42.689)/Real(44.69)) * (Real(42.689)/Real(44.69))))</td>
         </tr>
       </table>
 </div><div class="memdoc">

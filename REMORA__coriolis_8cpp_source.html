@@ -136,17 +136,17 @@ $(document).ready(function(){initNavTree('REMORA__coriolis_8cpp_source.html','')
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    ParallelFor(xbx,</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        Real UFx_i   = 0.5_rt * Hz(i  ,j,k) * fomn(i  ,j,0) * (vold(i  ,j,k,nrhs)+vold(i  ,j+1,k,nrhs));</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        Real UFx_im1 = 0.5_rt * Hz(i-1,j,k) * fomn(i-1,j,0) * (vold(i-1,j,k,nrhs)+vold(i-1,j+1,k,nrhs));</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        ru(i,j,k,nr) += 0.5_rt*(UFx_i + UFx_im1);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        Real UFx_i   = Real(0.5) * Hz(i  ,j,k) * fomn(i  ,j,0) * (vold(i  ,j,k,nrhs)+vold(i  ,j+1,k,nrhs));</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        Real UFx_im1 = Real(0.5) * Hz(i-1,j,k) * fomn(i-1,j,0) * (vold(i-1,j,k,nrhs)+vold(i-1,j+1,k,nrhs));</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        ru(i,j,k,nr) += Real(0.5)*(UFx_i + UFx_im1);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    });</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    ParallelFor(ybx,</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        Real VFe_j   = 0.5_rt * Hz(i,j  ,k) * fomn(i,j  ,0) * (uold(i,j  ,k,nrhs)+uold(i+1,j  ,k,nrhs));</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        Real VFe_jm1 = 0.5_rt * Hz(i,j-1,k) * fomn(i,j-1,0) * (uold(i,j-1,k,nrhs)+uold(i+1,j-1,k,nrhs));</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        rv(i,j,k,nr) -= 0.5_rt*(VFe_j + VFe_jm1);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        Real VFe_j   = Real(0.5) * Hz(i,j  ,k) * fomn(i,j  ,0) * (uold(i,j  ,k,nrhs)+uold(i+1,j  ,k,nrhs));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        Real VFe_jm1 = Real(0.5) * Hz(i,j-1,k) * fomn(i,j-1,0) * (uold(i,j-1,k,nrhs)+uold(i+1,j-1,k,nrhs));</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        rv(i,j,k,nr) -= Real(0.5)*(VFe_j + VFe_jm1);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    });</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 </div>
