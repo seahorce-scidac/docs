@@ -523,12 +523,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b638d2163a39005d276bc1ef14d058f" id="r_a8b638d2163a39005d276bc1ef14d058f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#a8b638d2163a39005d276bc1ef14d058f">FillBdyCCVels</a> (int lev, amrex::MultiFab &amp;mf_cc_vel)</td></tr>
 <tr class="memdesc:a8b638d2163a39005d276bc1ef14d058f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the physical boundary conditions for cell-centered velocity (diagnostic only)  <br /></td></tr>
 <tr class="separator:a8b638d2163a39005d276bc1ef14d058f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a8fb91ab7304e5a8d9cd2ae6b037751" id="r_a7a8fb91ab7304e5a8d9cd2ae6b037751"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751">FillPatch</a> (int lev, amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a33447f96f00d708dd345d6eb79c95d41">time</a>, amrex::MultiFab &amp;mf_to_be_filled, amrex::Vector&lt; amrex::MultiFab * &gt; const &amp;mfs, const int bccomp, const int bdy_var_type=<a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ab738c65b8fa93b2166002dce928aca27">BdyVars::null</a>, const int icomp=0, const bool fill_all=true, const bool fill_set=true, const int n_not_fill=0, const int icomp_calc=0, const amrex::Real <a class="el" href="classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb">dt</a>=<a class="el" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>, const amrex::MultiFab &amp;mf_calc=amrex::MultiFab())</td></tr>
-<tr class="memdesc:a7a8fb91ab7304e5a8d9cd2ae6b037751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a new MultiFab by copying in phi from valid region and filling ghost cells.  <br /></td></tr>
-<tr class="separator:a7a8fb91ab7304e5a8d9cd2ae6b037751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d312d7f420cd4fc7b037de77d9abd2b" id="r_a4d312d7f420cd4fc7b037de77d9abd2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b">FillPatchNoBC</a> (int lev, amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a33447f96f00d708dd345d6eb79c95d41">time</a>, amrex::MultiFab &amp;mf_to_be_filled, amrex::Vector&lt; amrex::MultiFab * &gt; const &amp;mfs, const int bdy_var_type=<a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ab738c65b8fa93b2166002dce928aca27">BdyVars::null</a>, const int icomp=0, const bool fill_all=true, const bool fill_set=true)</td></tr>
-<tr class="memdesc:a4d312d7f420cd4fc7b037de77d9abd2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boundary conditions.  <br /></td></tr>
-<tr class="separator:a4d312d7f420cd4fc7b037de77d9abd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ee946de4d49c570c828fb2fada51e0" id="r_ac1ee946de4d49c570c828fb2fada51e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0">FillPatch</a> (int lev, amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a33447f96f00d708dd345d6eb79c95d41">time</a>, amrex::MultiFab &amp;mf_to_be_filled, amrex::Vector&lt; amrex::MultiFab * &gt; const &amp;mfs, const int bccomp, const int bdy_var_type=<a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ab738c65b8fa93b2166002dce928aca27">BdyVars::null</a>, const int icomp=0, const bool fill_all=true, const bool fill_set=false, const int n_not_fill=0, const int icomp_calc=0, const amrex::Real <a class="el" href="classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb">dt</a>=<a class="el" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>, const amrex::MultiFab &amp;mf_calc=amrex::MultiFab())</td></tr>
+<tr class="memdesc:ac1ee946de4d49c570c828fb2fada51e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a new MultiFab by copying in phi from valid region and filling ghost cells.  <br /></td></tr>
+<tr class="separator:ac1ee946de4d49c570c828fb2fada51e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e158049355306c77d0dc1e66c2e6afb" id="r_a6e158049355306c77d0dc1e66c2e6afb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb">FillPatchNoBC</a> (int lev, amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a33447f96f00d708dd345d6eb79c95d41">time</a>, amrex::MultiFab &amp;mf_to_be_filled, amrex::Vector&lt; amrex::MultiFab * &gt; const &amp;mfs, const int bdy_var_type=<a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ab738c65b8fa93b2166002dce928aca27">BdyVars::null</a>, const int icomp=0, const bool fill_all=true, const bool fill_set=false)</td></tr>
+<tr class="memdesc:a6e158049355306c77d0dc1e66c2e6afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boundary conditions.  <br /></td></tr>
+<tr class="separator:a6e158049355306c77d0dc1e66c2e6afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a425c2c168db69fb8ba98c6221bc1ddc2" id="r_a425c2c168db69fb8ba98c6221bc1ddc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#a425c2c168db69fb8ba98c6221bc1ddc2">fill_from_bdyfiles</a> (int lev, amrex::MultiFab &amp;mf_to_fill, const amrex::MultiFab &amp;mf_mask, const amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a33447f96f00d708dd345d6eb79c95d41">time</a>, const int bccomp, const int bdy_var_type, const int icomp_to_fill, const int icomp_calc=0, const amrex::MultiFab &amp;mf_calc=amrex::MultiFab(), const amrex::Real=<a class="el" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>)</td></tr>
 <tr class="memdesc:a425c2c168db69fb8ba98c6221bc1ddc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill boundary data from netcdf file.  <br /></td></tr>
 <tr class="separator:a425c2c168db69fb8ba98c6221bc1ddc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1807,7 +1807,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="771,821,827,853,898,885,937,896,936,901,896,890,825,858,768,826"/>
 <area shape="rect" href="classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0" title="Calculate curvilinear advection terms." alt="" coords="939,849,1095,874"/>
 <area shape="poly" title=" " alt="" coords="817,821,936,844,935,849,816,826"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1226,984,1367,1009"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1226,984,1367,1009"/>
 <area shape="poly" title=" " alt="" coords="831,798,899,795,978,797,1060,809,1100,820,1139,835,1185,864,1225,900,1258,938,1282,970,1278,974,1254,941,1221,904,1182,868,1136,840,1099,826,1059,815,978,802,899,800,831,803"/>
 <area shape="rect" href="classREMORA.html#ab6290a7bfb1ed514ba7c8a3097fb1890" title=" " alt="" coords="1708,570,1847,596"/>
 <area shape="poly" title=" " alt="" coords="776,796,884,751,1049,689,1145,657,1247,627,1352,601,1456,582,1518,575,1581,572,1694,574,1694,580,1581,578,1518,580,1456,587,1353,606,1249,632,1147,662,1050,694,886,756,779,801"/>
@@ -1815,7 +1815,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="759,796,815,742,854,711,896,683,1002,632,1113,587,1225,549,1337,517,1540,469,1694,441,1695,447,1541,474,1338,522,1227,554,1115,592,1004,637,899,688,857,715,818,746,763,800"/>
 <area shape="rect" href="classREMORA.html#a62e507e1575fd9edf395e417e0befb73" title=" " alt="" coords="1709,645,1846,670"/>
 <area shape="poly" title=" " alt="" coords="830,796,1695,667,1695,673,831,802"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="929,292,1106,317"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="929,292,1106,317"/>
 <area shape="poly" title=" " alt="" coords="752,797,793,688,847,530,854,500,856,473,857,426,859,403,865,381,876,358,895,335,915,320,918,324,899,338,881,361,870,383,864,404,862,426,862,474,859,501,852,532,798,690,757,799"/>
 <area shape="rect" href="classREMORA.html#a84a902c6ed5d0956e188d21c2a864e28" title="RHS terms for 2D momentum." alt="" coords="941,190,1094,216"/>
 <area shape="poly" title=" " alt="" coords="752,797,795,688,822,611,847,530,855,492,858,459,858,400,860,372,865,343,876,313,895,279,911,260,930,244,969,219,972,224,933,248,915,264,900,282,881,315,870,345,865,373,863,400,863,459,860,493,852,532,827,612,800,690,757,799"/>
@@ -2216,7 +2216,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="94,229,140,162,175,122,217,89,236,80,238,85,220,94,179,126,144,165,99,232"/>
 <area shape="rect" href="classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0" title="Calculate curvilinear advection terms." alt="" coords="239,104,395,129"/>
 <area shape="poly" title=" " alt="" coords="102,229,151,189,217,146,253,131,255,136,220,151,154,193,105,233"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="247,205,388,231"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="247,205,388,231"/>
 <area shape="poly" title=" " alt="" coords="171,232,233,225,233,230,171,237"/>
 <area shape="rect" href="classREMORA.html#ab6290a7bfb1ed514ba7c8a3097fb1890" title=" " alt="" coords="733,156,871,181"/>
 <area shape="poly" title=" " alt="" coords="113,228,161,208,218,190,355,169,492,160,618,158,719,161,719,166,618,163,492,165,355,174,219,195,163,213,115,233"/>
@@ -2224,7 +2224,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="171,244,719,263,719,268,171,249"/>
 <area shape="rect" href="classREMORA.html#a62e507e1575fd9edf395e417e0befb73" title=" " alt="" coords="733,305,871,331"/>
 <area shape="poly" title=" " alt="" coords="171,252,219,258,494,287,720,308,719,314,493,292,218,263,170,257"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="229,407,406,432"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="229,407,406,432"/>
 <area shape="poly" title=" " alt="" coords="99,255,144,322,179,360,220,393,232,399,229,404,217,398,175,364,140,325,94,258"/>
 <area shape="rect" href="classREMORA.html#a84a902c6ed5d0956e188d21c2a864e28" title="RHS terms for 2D momentum." alt="" coords="241,357,394,383"/>
 <area shape="poly" title=" " alt="" coords="105,254,154,294,220,336,255,351,253,355,217,340,151,298,102,258"/>
@@ -2360,7 +2360,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="308,229,353,162,388,122,431,89,449,80,452,85,433,94,392,126,357,165,312,232"/>
 <area shape="rect" href="classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0" title="Calculate curvilinear advection terms." alt="" coords="453,104,609,129"/>
 <area shape="poly" title=" " alt="" coords="315,229,364,189,431,146,467,131,469,136,433,151,367,193,318,233"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="460,205,601,231"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="460,205,601,231"/>
 <area shape="poly" title=" " alt="" coords="384,232,446,225,447,230,385,237"/>
 <area shape="rect" href="classREMORA.html#ab6290a7bfb1ed514ba7c8a3097fb1890" title=" " alt="" coords="946,156,1085,181"/>
 <area shape="poly" title=" " alt="" coords="327,228,374,208,431,190,568,169,705,160,831,158,933,161,932,166,831,163,706,165,569,174,433,195,376,213,329,233"/>
@@ -2368,7 +2368,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="384,244,932,263,932,268,384,249"/>
 <area shape="rect" href="classREMORA.html#a62e507e1575fd9edf395e417e0befb73" title=" " alt="" coords="947,305,1084,331"/>
 <area shape="poly" title=" " alt="" coords="384,252,432,258,707,287,933,308,932,314,707,292,432,263,384,257"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="442,407,619,432"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="442,407,619,432"/>
 <area shape="poly" title=" " alt="" coords="312,255,357,322,392,360,433,393,445,399,442,404,431,398,388,364,353,325,308,258"/>
 <area shape="rect" href="classREMORA.html#a84a902c6ed5d0956e188d21c2a864e28" title="RHS terms for 2D momentum." alt="" coords="454,357,607,383"/>
 <area shape="poly" title=" " alt="" coords="318,254,367,294,433,336,469,351,467,355,431,340,364,298,315,258"/>
@@ -2652,7 +2652,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="87,458,90,388,106,278,122,217,145,156,176,99,217,48,235,35,238,39,221,52,181,102,150,158,128,219,112,279,95,388,92,459"/>
 <area shape="rect" href="classREMORA.html#a425c2c168db69fb8ba98c6221bc1ddc2" title="Fill boundary data from netcdf file." alt="" coords="739,81,937,107"/>
 <area shape="poly" title=" " alt="" coords="89,458,102,410,126,340,163,264,188,228,217,196,274,152,339,119,408,96,480,81,551,73,620,71,738,77,738,83,620,77,551,79,481,86,410,101,341,124,277,156,220,200,192,231,168,267,131,342,107,411,95,459"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="509,107,651,132"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="509,107,651,132"/>
 <area shape="poly" title=" " alt="" coords="92,457,109,421,136,371,172,317,217,268,279,219,334,189,393,167,469,141,495,133,497,138,470,146,394,172,336,193,282,223,220,272,177,320,141,374,114,424,97,459"/>
 <area shape="rect" href="classREMORA.html#afded54aef57ded67542a888a911b67b0" title="Corrector step for GLS calculation." alt="" coords="235,281,405,307"/>
 <area shape="poly" title=" " alt="" coords="104,456,290,313,293,317,107,461"/>
@@ -2686,7 +2686,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1146,17,1202,17,1202,22,1146,22"/>
 <area shape="poly" title=" " alt="" coords="651,110,725,102,725,108,651,115"/>
 <area shape="poly" title=" " alt="" coords="338,279,377,250,419,211,433,192,441,174,450,157,468,141,495,128,497,133,471,146,454,161,446,177,438,194,423,214,381,254,342,283"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="491,307,669,332"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="491,307,669,332"/>
 <area shape="poly" title=" " alt="" coords="406,300,478,307,477,312,405,305"/>
 <area shape="poly" title=" " alt="" coords="336,305,392,350,430,376,470,397,544,423,620,442,692,455,756,463,755,468,692,460,618,447,542,428,468,402,427,380,389,355,333,309"/>
 <area shape="poly" title=" " alt="" coords="356,304,470,342,621,379,756,405,755,410,620,384,469,347,354,309"/>
@@ -2785,9 +2785,9 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="3D advance on a single level" alt="" coords="5,483,195,508"/>
 <area shape="rect" href="classREMORA.html#a28c2e36d1783550310f26d0e9ba8cdca" title="Advance the 3D variables." alt="" coords="243,332,408,357"/>
 <area shape="poly" title=" " alt="" coords="119,480,292,363,295,367,122,485"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="747,105,888,131"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="747,105,888,131"/>
 <area shape="poly" title=" " alt="" coords="105,481,146,409,179,357,220,301,269,244,324,190,387,142,455,106,494,93,534,86,616,81,693,88,757,100,756,105,692,93,616,87,535,91,495,99,457,111,389,147,328,194,273,247,224,304,183,360,150,412,110,484"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="729,559,906,584"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="729,559,906,584"/>
 <area shape="poly" title=" " alt="" coords="136,506,275,551,364,574,456,591,513,597,557,598,658,591,730,583,730,589,659,597,557,604,513,603,456,597,363,579,273,556,135,511"/>
 <area shape="rect" href="classREMORA.html#a0e864b31bb0f6f26dc4d8ad93ce13324" title=" " alt="" coords="1007,609,1143,635"/>
 <area shape="poly" title=" " alt="" coords="117,506,170,548,205,570,244,587,345,616,450,635,556,646,659,650,758,650,849,645,993,631,994,637,849,651,758,655,659,656,555,651,449,640,343,621,242,593,203,575,167,553,114,510"/>
@@ -4824,7 +4824,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="144,123,192,120,437,106,437,112,192,126,144,128"/>
 <area shape="rect" href="classREMORA.html#a0e864b31bb0f6f26dc4d8ad93ce13324" title=" " alt="" coords="451,141,587,166"/>
 <area shape="poly" title=" " alt="" coords="144,131,438,147,438,152,144,136"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="211,242,353,268"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="211,242,353,268"/>
 <area shape="poly" title=" " alt="" coords="89,140,132,183,161,207,193,227,211,235,209,240,191,232,158,211,129,187,85,144"/>
 <area shape="rect" href="namespacederived.html#a0e96290f839430c45b60d3bde88696ec" title=" " alt="" coords="192,193,372,218"/>
 <area shape="poly" title=" " alt="" coords="110,140,193,171,233,186,231,191,191,176,109,145"/>
@@ -4986,9 +4986,9 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1078,735,1132,766,1200,797,1239,808,1237,813,1198,802,1129,771,1076,740"/>
 <area shape="rect" href="classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0" title="Calculate curvilinear advection terms." alt="" coords="1241,712,1397,737"/>
 <area shape="poly" title=" " alt="" coords="1139,722,1227,722,1227,727,1139,727"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1517,611,1659,636"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1517,611,1659,636"/>
 <area shape="poly" title=" " alt="" coords="1123,709,1506,636,1507,641,1124,715"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1230,459,1407,484"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1230,459,1407,484"/>
 <area shape="poly" title=" " alt="" coords="1069,710,1107,669,1148,615,1162,584,1167,555,1175,528,1197,501,1218,487,1221,492,1200,505,1180,531,1173,557,1167,585,1153,618,1111,673,1073,714"/>
 <area shape="rect" href="classREMORA.html#a7c834aec6a6a1e9f0489c0e2c2a6ac38" title="Harmonic viscosity." alt="" coords="1247,761,1391,787"/>
 <area shape="poly" title=" " alt="" coords="1125,735,1237,756,1236,761,1124,740"/>
@@ -5171,9 +5171,9 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1180,353,1293,332,1294,337,1181,359"/>
 <area shape="rect" href="classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0" title="Calculate curvilinear advection terms." alt="" coords="1297,356,1453,381"/>
 <area shape="poly" title=" " alt="" coords="1195,366,1283,366,1283,371,1195,371"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1573,1205,1715,1231"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1573,1205,1715,1231"/>
 <area shape="poly" title=" " alt="" coords="1131,354,1197,314,1243,292,1294,273,1347,260,1400,257,1451,267,1474,278,1497,294,1504,308,1513,336,1532,427,1576,699,1642,1191,1637,1192,1571,700,1527,428,1508,337,1499,310,1493,297,1472,282,1449,272,1400,262,1348,265,1295,278,1245,297,1200,319,1133,358"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1286,1585,1463,1611"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1286,1585,1463,1611"/>
 <area shape="poly" title=" " alt="" coords="1119,381,1160,565,1187,704,1209,848,1214,915,1214,998,1212,1193,1214,1291,1220,1383,1234,1462,1244,1494,1257,1521,1271,1539,1288,1554,1326,1577,1323,1582,1284,1558,1267,1542,1252,1523,1239,1496,1229,1463,1215,1384,1208,1292,1207,1193,1209,998,1209,915,1204,849,1181,705,1155,566,1114,382"/>
 <area shape="rect" href="classREMORA.html#a7c834aec6a6a1e9f0489c0e2c2a6ac38" title="Harmonic viscosity." alt="" coords="1303,405,1447,431"/>
 <area shape="poly" title=" " alt="" coords="1181,379,1293,400,1292,405,1180,384"/>
@@ -5506,7 +5506,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="2388,923,2355,789,2324,694,2283,591,2229,485,2198,433,2163,383,2124,337,2082,294,2036,256,1985,223,1918,191,1887,182,1858,178,1829,180,1799,188,1769,202,1736,223,1719,238,1710,254,1702,288,1700,327,1697,349,1689,372,1639,475,1597,549,1592,546,1634,473,1684,370,1692,347,1695,326,1697,287,1705,252,1715,235,1733,219,1766,197,1798,183,1828,174,1858,172,1889,176,1920,186,1988,218,2039,251,2085,290,2128,333,2167,380,2202,430,2234,482,2288,588,2329,693,2360,788,2393,922"/>
 <area shape="rect" href="classREMORA.html#a17b145e55ffc268dc25b512ee0312a93" title="fill an entire multifab by interpolating from the coarser level, explicitly specifying interpolator t..." alt="" coords="2035,1224,2249,1249"/>
 <area shape="poly" title=" " alt="" coords="2377,973,2157,1225,2153,1222,2373,970"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="2071,673,2213,699"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="2071,673,2213,699"/>
 <area shape="poly" title=" " alt="" coords="2372,928,2154,701,2158,697,2376,924"/>
 <area shape="rect" href="classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0" title="Sea&#45;surface height data initialization from NetCDF file." alt="" coords="1770,1375,1951,1415"/>
 <area shape="poly" title=" " alt="" coords="2393,975,2377,1034,2350,1110,2309,1191,2282,1229,2251,1263,2218,1290,2181,1313,2103,1349,2023,1373,1952,1388,1951,1383,2022,1368,2101,1344,2179,1308,2215,1285,2248,1259,2278,1226,2304,1188,2345,1108,2372,1032,2387,974"/>
@@ -6304,8 +6304,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a7a8fb91ab7304e5a8d9cd2ae6b037751" name="a7a8fb91ab7304e5a8d9cd2ae6b037751"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a8fb91ab7304e5a8d9cd2ae6b037751">&#9670;&#160;</a></span>FillPatch()</h2>
+<a id="ac1ee946de4d49c570c828fb2fada51e0" name="ac1ee946de4d49c570c828fb2fada51e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ee946de4d49c570c828fb2fada51e0">&#9670;&#160;</a></span>FillPatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6362,7 +6362,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>fill_set</em> = <code>true</code>, </td>
+          <td class="paramname"><em>fill_set</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -6422,8 +6422,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classREMORA_a7a8fb91ab7304e5a8d9cd2ae6b037751_cgraph.png" border="0" usemap="#aclassREMORA_a7a8fb91ab7304e5a8d9cd2ae6b037751_cgraph" alt=""/></div>
-<map name="aclassREMORA_a7a8fb91ab7304e5a8d9cd2ae6b037751_cgraph" id="aclassREMORA_a7a8fb91ab7304e5a8d9cd2ae6b037751_cgraph">
+<div class="center"><img src="classREMORA_ac1ee946de4d49c570c828fb2fada51e0_cgraph.png" border="0" usemap="#aclassREMORA_ac1ee946de4d49c570c828fb2fada51e0_cgraph" alt=""/></div>
+<map name="aclassREMORA_ac1ee946de4d49c570c828fb2fada51e0_cgraph" id="aclassREMORA_ac1ee946de4d49c570c828fb2fada51e0_cgraph">
 <area shape="rect" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="5,80,147,105"/>
 <area shape="rect" href="classREMORA.html#a425c2c168db69fb8ba98c6221bc1ddc2" title="Fill boundary data from netcdf file." alt="" coords="195,80,393,105"/>
 <area shape="poly" title=" " alt="" coords="147,90,181,90,181,95,147,95"/>
@@ -6446,8 +6446,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classREMORA_a7a8fb91ab7304e5a8d9cd2ae6b037751_icgraph.png" border="0" usemap="#aclassREMORA_a7a8fb91ab7304e5a8d9cd2ae6b037751_icgraph" alt=""/></div>
-<map name="aclassREMORA_a7a8fb91ab7304e5a8d9cd2ae6b037751_icgraph" id="aclassREMORA_a7a8fb91ab7304e5a8d9cd2ae6b037751_icgraph">
+<div class="center"><img src="classREMORA_ac1ee946de4d49c570c828fb2fada51e0_icgraph.png" border="0" usemap="#aclassREMORA_ac1ee946de4d49c570c828fb2fada51e0_icgraph" alt=""/></div>
+<map name="aclassREMORA_ac1ee946de4d49c570c828fb2fada51e0_icgraph" id="aclassREMORA_ac1ee946de4d49c570c828fb2fada51e0_icgraph">
 <area shape="rect" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="2023,601,2164,627"/>
 <area shape="rect" href="classREMORA.html#ab987b72e13f0dc83db716c5b0decee29" title="Perform a 2D predictor (predictor_2d_step=True) or corrector (predictor_2d_step=False) step." alt="" coords="1766,493,1931,519"/>
 <area shape="poly" title=" " alt="" coords="2064,595,2022,567,1974,541,1915,521,1917,516,1976,536,2025,562,2067,591"/>
@@ -6571,8 +6571,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a4d312d7f420cd4fc7b037de77d9abd2b" name="a4d312d7f420cd4fc7b037de77d9abd2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d312d7f420cd4fc7b037de77d9abd2b">&#9670;&#160;</a></span>FillPatchNoBC()</h2>
+<a id="a6e158049355306c77d0dc1e66c2e6afb" name="a6e158049355306c77d0dc1e66c2e6afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e158049355306c77d0dc1e66c2e6afb">&#9670;&#160;</a></span>FillPatchNoBC()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6623,7 +6623,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>fill_set</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>fill_set</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -6655,8 +6655,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classREMORA_a4d312d7f420cd4fc7b037de77d9abd2b_cgraph.png" border="0" usemap="#aclassREMORA_a4d312d7f420cd4fc7b037de77d9abd2b_cgraph" alt=""/></div>
-<map name="aclassREMORA_a4d312d7f420cd4fc7b037de77d9abd2b_cgraph" id="aclassREMORA_a4d312d7f420cd4fc7b037de77d9abd2b_cgraph">
+<div class="center"><img src="classREMORA_a6e158049355306c77d0dc1e66c2e6afb_cgraph.png" border="0" usemap="#aclassREMORA_a6e158049355306c77d0dc1e66c2e6afb_cgraph" alt=""/></div>
+<map name="aclassREMORA_a6e158049355306c77d0dc1e66c2e6afb_cgraph" id="aclassREMORA_a6e158049355306c77d0dc1e66c2e6afb_cgraph">
 <area shape="rect" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="5,55,183,80"/>
 <area shape="rect" href="classREMORA.html#a111674546154c538b2b89b028d80d789" title=" " alt="" coords="231,5,368,31"/>
 <area shape="poly" title=" " alt="" coords="147,52,232,31,233,37,148,57"/>
@@ -6675,8 +6675,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classREMORA_a4d312d7f420cd4fc7b037de77d9abd2b_icgraph.png" border="0" usemap="#aclassREMORA_a4d312d7f420cd4fc7b037de77d9abd2b_icgraph" alt=""/></div>
-<map name="aclassREMORA_a4d312d7f420cd4fc7b037de77d9abd2b_icgraph" id="aclassREMORA_a4d312d7f420cd4fc7b037de77d9abd2b_icgraph">
+<div class="center"><img src="classREMORA_a6e158049355306c77d0dc1e66c2e6afb_icgraph.png" border="0" usemap="#aclassREMORA_a6e158049355306c77d0dc1e66c2e6afb_icgraph" alt=""/></div>
+<map name="aclassREMORA_a6e158049355306c77d0dc1e66c2e6afb_icgraph" id="aclassREMORA_a6e158049355306c77d0dc1e66c2e6afb_icgraph">
 <area shape="rect" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1532,139,1709,165"/>
 <area shape="rect" href="classREMORA.html#ab987b72e13f0dc83db716c5b0decee29" title="Perform a 2D predictor (predictor_2d_step=True) or corrector (predictor_2d_step=False) step." alt="" coords="1316,13,1481,38"/>
 <area shape="poly" title=" " alt="" coords="1592,133,1542,97,1483,60,1438,40,1440,36,1485,55,1545,92,1595,129"/>
@@ -7387,9 +7387,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_afded54aef57ded67542a888a911b67b0_cgraph.png" border="0" usemap="#aclassREMORA_afded54aef57ded67542a888a911b67b0_cgraph" alt=""/></div>
 <map name="aclassREMORA_afded54aef57ded67542a888a911b67b0_cgraph" id="aclassREMORA_afded54aef57ded67542a888a911b67b0_cgraph">
 <area shape="rect" title="Corrector step for GLS calculation." alt="" coords="5,255,176,280"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="242,103,383,128"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="242,103,383,128"/>
 <area shape="poly" title=" " alt="" coords="101,253,151,201,185,172,223,145,252,131,255,135,225,150,188,176,154,205,105,256"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="224,255,401,280"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="224,255,401,280"/>
 <area shape="poly" title=" " alt="" coords="176,265,210,265,210,270,176,270"/>
 <area shape="rect" href="classREMORA.html#a111674546154c538b2b89b028d80d789" title=" " alt="" coords="480,204,617,229"/>
 <area shape="poly" title=" " alt="" coords="119,252,167,233,223,218,287,210,351,206,466,208,466,213,351,211,287,215,225,223,168,238,121,257"/>
@@ -7574,7 +7574,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_a6122490d3208c33fce7fc1896baece42_cgraph.png" border="0" usemap="#aclassREMORA_a6122490d3208c33fce7fc1896baece42_cgraph" alt=""/></div>
 <map name="aclassREMORA_a6122490d3208c33fce7fc1896baece42_cgraph" id="aclassREMORA_a6122490d3208c33fce7fc1896baece42_cgraph">
 <area shape="rect" title="Prestep for GLS calculation." alt="" coords="5,153,168,179"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="216,79,357,104"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="216,79,357,104"/>
 <area shape="poly" title=" " alt="" coords="118,151,215,113,234,106,236,111,217,118,120,156"/>
 <area shape="rect" href="classREMORA.html#a111674546154c538b2b89b028d80d789" title=" " alt="" coords="218,128,355,153"/>
 <area shape="poly" title=" " alt="" coords="168,153,204,148,205,154,169,158"/>
@@ -7771,7 +7771,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="609,402,639,415,654,427,663,439,672,450,687,460,707,469,705,474,684,465,669,454,659,442,650,430,636,420,607,407"/>
 <area shape="rect" href="classREMORA.html#a4a25b256aabbffa91da49c1b48a372bf" title="Extrapolate grid metrics to edge of MultiFab." alt="" coords="715,331,878,386"/>
 <area shape="poly" title=" " alt="" coords="630,340,702,347,701,352,630,346"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="726,233,867,258"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="726,233,867,258"/>
 <area shape="poly" title=" " alt="" coords="609,312,636,300,660,283,684,267,712,257,714,262,687,272,663,288,639,305,611,317"/>
 <area shape="rect" href="classREMORA.html#a03be3174da2fcf83a5b9f695556a0454" title=" " alt="" coords="685,282,908,307"/>
 <area shape="poly" title=" " alt="" coords="630,318,702,307,702,312,631,324"/>
@@ -7840,7 +7840,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_a0ef7e1a0115224b728f17587feeebe9f_cgraph.png" border="0" usemap="#aclassREMORA_a0ef7e1a0115224b728f17587feeebe9f_cgraph" alt=""/></div>
 <map name="aclassREMORA_a0ef7e1a0115224b728f17587feeebe9f_cgraph" id="aclassREMORA_a0ef7e1a0115224b728f17587feeebe9f_cgraph">
 <area shape="rect" title="Bathymetry data initialization from NetCDF file." alt="" coords="5,122,196,162"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="285,80,426,105"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="285,80,426,105"/>
 <area shape="poly" title=" " alt="" coords="196,121,275,105,276,111,197,126"/>
 <area shape="rect" href="classREMORA.html#a03be3174da2fcf83a5b9f695556a0454" title=" " alt="" coords="244,129,467,155"/>
 <area shape="poly" title=" " alt="" coords="196,139,230,139,230,145,196,145"/>
@@ -8794,7 +8794,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Grid variable initialization from NetCDF file." alt="" coords="5,102,180,142"/>
 <area shape="rect" href="classREMORA.html#a4a25b256aabbffa91da49c1b48a372bf" title="Extrapolate grid metrics to edge of MultiFab." alt="" coords="258,5,421,60"/>
 <area shape="poly" title=" " alt="" coords="145,99,227,69,245,62,247,67,229,74,147,104"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="269,84,410,109"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="269,84,410,109"/>
 <area shape="poly" title=" " alt="" coords="180,110,255,103,255,108,180,116"/>
 <area shape="rect" href="classREMORA.html#a03be3174da2fcf83a5b9f695556a0454" title=" " alt="" coords="228,133,451,159"/>
 <area shape="poly" title=" " alt="" coords="180,128,215,131,214,136,180,133"/>
@@ -9195,7 +9195,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="395,800,475,805,475,810,395,805"/>
 <area shape="rect" href="classREMORA.html#a816b9966899d512c4b24b6955d8ec8fc" title="Set vertical mixing coefficients from analytic." alt="" coords="473,850,679,875"/>
 <area shape="poly" title=" " alt="" coords="359,807,467,835,507,844,506,849,466,840,357,813"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="756,675,897,701"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="756,675,897,701"/>
 <area shape="poly" title=" " alt="" coords="655,848,684,835,723,807,757,774,808,711,812,714,761,777,726,811,687,840,657,852"/>
 <area shape="poly" title=" " alt="" coords="649,873,686,884,745,911,795,940,793,945,743,916,684,889,647,878"/>
 <area shape="poly" title=" " alt="" coords="392,1373,417,1357,430,1341,437,1324,440,1290,444,1256,451,1238,465,1221,471,1215,475,1219,469,1225,455,1241,449,1257,445,1291,442,1326,434,1343,420,1361,395,1378"/>
@@ -9385,7 +9385,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="180,82,230,77,230,82,180,87"/>
 <area shape="rect" href="classREMORA.html#a816b9966899d512c4b24b6955d8ec8fc" title="Set vertical mixing coefficients from analytic." alt="" coords="228,105,435,131"/>
 <area shape="poly" title=" " alt="" coords="180,100,214,104,214,109,180,105"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="483,80,624,105"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="483,80,624,105"/>
 <area shape="poly" title=" " alt="" coords="435,104,469,100,470,105,436,109"/>
 <area shape="rect" href="classREMORA.html#a0e864b31bb0f6f26dc4d8ad93ce13324" title=" " alt="" coords="485,129,621,155"/>
 <area shape="poly" title=" " alt="" coords="436,127,472,131,471,136,435,132"/>
@@ -9610,7 +9610,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="139,118,184,101,234,87,287,80,340,77,441,78,441,84,340,82,287,86,235,93,186,106,141,123"/>
 <area shape="rect" href="classREMORA.html#a62e507e1575fd9edf395e417e0befb73" title=" " alt="" coords="724,153,861,179"/>
 <area shape="poly" title=" " alt="" coords="187,141,710,160,710,166,187,147"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="250,103,391,128"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="250,103,391,128"/>
 <area shape="poly" title=" " alt="" coords="187,128,236,122,237,127,187,133"/>
 <area shape="rect" href="REMORA__ReadFromInitNetcdf_8cpp.html#a93abfd752f08163f171e4aae8649b6c1" title="helper function to read sea surface height from netcdf" alt="" coords="235,204,407,229"/>
 <area shape="poly" title=" " alt="" coords="157,158,270,197,269,202,155,163"/>
@@ -9749,7 +9749,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="87,859,128,912,159,942,193,968,208,975,205,980,191,972,155,946,125,915,82,862"/>
 <area shape="rect" href="classREMORA.html#ac32e17d62815028618a2d45a31f6cd0e" title=" " alt="" coords="192,1048,432,1073"/>
 <area shape="poly" title=" " alt="" coords="82,859,96,895,118,942,151,992,171,1014,194,1033,205,1040,202,1045,190,1038,167,1018,147,995,114,945,91,897,77,861"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="241,227,383,252"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="241,227,383,252"/>
 <area shape="poly" title=" " alt="" coords="75,834,86,731,109,570,125,485,143,407,165,341,190,295,216,271,247,255,249,259,219,276,194,298,170,343,148,408,130,486,114,571,91,731,80,834"/>
 <area shape="rect" href="classREMORA.html#a0fb1bee6b7c41edde86f488eeb440478" title="Read in boundary parameters from input file and set up data structures." alt="" coords="529,303,666,328"/>
 <area shape="poly" title=" " alt="" coords="74,834,84,737,105,589,120,511,140,441,163,383,176,361,190,345,229,319,272,300,318,289,365,284,457,286,534,297,533,302,456,291,366,289,319,294,274,305,232,323,194,349,180,365,167,386,145,442,126,513,110,590,89,738,80,835"/>
@@ -9833,7 +9833,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="320,460,370,379,401,322,430,262,438,237,442,214,444,173,451,134,461,114,478,93,502,77,505,81,482,97,466,117,456,135,449,173,447,215,443,238,434,264,406,324,375,381,324,463"/>
 <area shape="poly" title=" " alt="" coords="319,460,368,378,430,262,441,226,446,195,454,166,464,152,479,137,518,122,591,106,768,78,769,84,592,112,520,127,481,142,468,155,459,168,451,196,446,227,434,264,373,380,324,462"/>
 <area shape="poly" title=" " alt="" coords="318,460,340,424,375,375,422,326,449,305,479,288,516,273,554,261,633,248,710,246,779,249,778,254,710,251,634,254,555,266,517,278,481,292,452,309,426,330,379,379,344,427,322,463"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="509,404,686,429"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="509,404,686,429"/>
 <area shape="poly" title=" " alt="" coords="376,459,519,429,520,435,377,464"/>
 <area shape="rect" href="classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb" title="Mask data arrays before writing output." alt="" coords="512,454,683,494"/>
 <area shape="poly" title=" " alt="" coords="397,471,498,471,498,477,397,477"/>
@@ -10286,7 +10286,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="460,434,537,424,538,429,461,439"/>
 <area shape="rect" href="classREMORA.html#a816b9966899d512c4b24b6955d8ec8fc" title="Set vertical mixing coefficients from analytic." alt="" coords="535,450,742,475"/>
 <area shape="poly" title=" " alt="" coords="461,450,522,454,522,459,461,455"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="843,890,985,915"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="843,890,985,915"/>
 <area shape="poly" title=" " alt="" coords="674,473,718,498,739,516,757,537,778,585,785,630,781,673,773,715,766,755,766,795,777,835,788,855,805,875,817,886,831,893,829,898,814,890,801,879,784,858,772,837,761,796,761,755,768,714,776,672,779,630,773,586,752,540,736,520,715,502,672,478"/>
 <area shape="poly" title=" " alt="" coords="728,447,753,435,780,415,804,392,845,340,877,289,899,247,904,250,882,292,850,344,808,396,783,419,756,440,730,452"/>
 <area shape="poly" title=" " alt="" coords="984,890,1024,875,1065,849,1101,819,1157,760,1161,764,1105,822,1068,854,1027,880,986,895"/>
@@ -12548,7 +12548,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="93,731,106,631,132,478,150,398,172,325,197,265,211,243,226,226,273,192,316,172,359,163,402,162,494,173,547,179,607,181,885,181,1001,186,1117,196,1311,224,1310,229,1116,201,1001,191,885,187,607,187,547,184,494,178,402,167,360,168,318,177,275,196,230,230,216,246,202,268,177,327,155,399,137,479,111,632,98,732"/>
 <area shape="rect" href="classREMORA.html#a62e507e1575fd9edf395e417e0befb73" title=" " alt="" coords="1325,850,1463,875"/>
 <area shape="poly" title=" " alt="" coords="98,757,108,871,131,1049,149,1142,171,1227,198,1295,213,1321,230,1339,260,1356,303,1366,354,1371,410,1372,607,1364,885,1364,995,1371,1085,1378,1125,1376,1166,1366,1208,1346,1253,1313,1296,1266,1330,1211,1354,1151,1371,1089,1382,1029,1388,973,1391,889,1396,889,1394,973,1387,1029,1376,1090,1359,1152,1334,1213,1301,1269,1256,1317,1211,1350,1168,1371,1126,1381,1085,1384,995,1376,885,1369,607,1369,410,1377,354,1376,302,1371,258,1361,226,1343,209,1324,193,1298,166,1228,144,1143,126,1050,102,871,92,757"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="813,861,954,886"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="813,861,954,886"/>
 <area shape="poly" title=" " alt="" coords="181,745,290,752,427,766,576,787,725,817,837,853,836,858,723,823,575,792,426,771,290,758,180,750"/>
 <area shape="rect" href="classREMORA.html#a44172f86da9fc423ca901f87b052f0d7" title=" " alt="" coords="526,681,690,706"/>
 <area shape="poly" title=" " alt="" coords="109,729,159,695,192,678,227,665,270,657,313,652,400,653,480,662,547,675,546,680,479,667,400,658,313,658,270,662,229,671,194,683,162,700,112,733"/>
@@ -13914,7 +13914,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_ab9d2fbd8ac171ab10eb09ff189cbb69b_cgraph.png" border="0" usemap="#aclassREMORA_ab9d2fbd8ac171ab10eb09ff189cbb69b_cgraph" alt=""/></div>
 <map name="aclassREMORA_ab9d2fbd8ac171ab10eb09ff189cbb69b_cgraph" id="aclassREMORA_ab9d2fbd8ac171ab10eb09ff189cbb69b_cgraph">
 <area shape="rect" title="Set 2D momentum arrays from 3D momentum." alt="" coords="5,104,176,129"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="224,53,365,79"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="224,53,365,79"/>
 <area shape="poly" title=" " alt="" coords="142,101,229,79,231,85,143,106"/>
 <area shape="rect" href="classREMORA.html#ab6290a7bfb1ed514ba7c8a3097fb1890" title=" " alt="" coords="682,104,821,129"/>
 <area shape="poly" title=" " alt="" coords="176,114,668,114,668,119,176,119"/>
@@ -13992,7 +13992,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_a816b9966899d512c4b24b6955d8ec8fc_cgraph.png" border="0" usemap="#aclassREMORA_a816b9966899d512c4b24b6955d8ec8fc_cgraph" alt=""/></div>
 <map name="aclassREMORA_a816b9966899d512c4b24b6955d8ec8fc_cgraph" id="aclassREMORA_a816b9966899d512c4b24b6955d8ec8fc_cgraph">
 <area shape="rect" title="Set vertical mixing coefficients from analytic." alt="" coords="5,105,212,131"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="260,80,401,105"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="260,80,401,105"/>
 <area shape="poly" title=" " alt="" coords="212,104,246,100,247,105,213,109"/>
 <area shape="rect" href="classREMORA.html#a0e864b31bb0f6f26dc4d8ad93ce13324" title=" " alt="" coords="263,129,399,155"/>
 <area shape="poly" title=" " alt="" coords="213,127,249,131,249,136,212,132"/>
@@ -14138,7 +14138,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1189,123,1275,106,1276,111,1190,129"/>
 <area shape="rect" href="structTimeInterpolatedData.html#a0d6dcefbf7407a24669d2a37c7f558d4" title=" " alt="" coords="1289,133,1454,173"/>
 <area shape="poly" title=" " alt="" coords="1220,142,1275,145,1275,150,1220,147"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="790,247,931,273"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="790,247,931,273"/>
 <area shape="poly" title=" " alt="" coords="687,213,797,241,795,246,686,219"/>
 <area shape="rect" href="classREMORA.html#a03be3174da2fcf83a5b9f695556a0454" title=" " alt="" coords="749,297,972,322"/>
 <area shape="poly" title=" " alt="" coords="681,214,703,226,718,241,727,256,736,270,751,283,762,289,760,294,748,288,732,273,723,259,714,244,700,230,679,219"/>
@@ -14226,7 +14226,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_aed6a5027f2c5437fc36513e666e387b3_cgraph.png" border="0" usemap="#aclassREMORA_aed6a5027f2c5437fc36513e666e387b3_cgraph" alt=""/></div>
 <map name="aclassREMORA_aed6a5027f2c5437fc36513e666e387b3_cgraph" id="aclassREMORA_aed6a5027f2c5437fc36513e666e387b3_cgraph">
 <area shape="rect" title="Copy over bathymetry data that has been averaged down from high resolution input netcdf file." alt="" coords="5,98,196,138"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="285,80,426,105"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="285,80,426,105"/>
 <area shape="poly" title=" " alt="" coords="196,106,271,98,271,104,196,111"/>
 <area shape="rect" href="classREMORA.html#a03be3174da2fcf83a5b9f695556a0454" title=" " alt="" coords="244,129,467,155"/>
 <area shape="poly" title=" " alt="" coords="196,124,231,128,230,133,196,130"/>
@@ -14314,7 +14314,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Initialize Coriolis factor from file or analytic." alt="" coords="5,295,167,321"/>
 <area shape="rect" href="classREMORA.html#a783d5be4d993d2ae820e412a9d7b43f1" title="fill an entire multifab by interpolating from the coarser level" alt="" coords="215,191,401,217"/>
 <area shape="poly" title=" " alt="" coords="107,293,214,236,256,219,258,224,216,241,110,298"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="486,245,627,270"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="486,245,627,270"/>
 <area shape="poly" title=" " alt="" coords="143,293,214,280,350,266,472,258,473,263,351,271,215,285,144,298"/>
 <area shape="rect" href="classREMORA.html#a44172f86da9fc423ca901f87b052f0d7" title=" " alt="" coords="226,295,390,321"/>
 <area shape="poly" title=" " alt="" coords="167,305,212,305,212,311,167,311"/>
@@ -14611,7 +14611,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="394,402,424,415,439,427,449,439,458,450,472,460,493,469,490,474,469,465,454,454,444,442,435,430,421,420,392,407"/>
 <area shape="rect" href="classREMORA.html#a4a25b256aabbffa91da49c1b48a372bf" title="Extrapolate grid metrics to edge of MultiFab." alt="" coords="501,331,663,386"/>
 <area shape="poly" title=" " alt="" coords="416,340,487,347,487,352,415,346"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="511,233,653,258"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="511,233,653,258"/>
 <area shape="poly" title=" " alt="" coords="394,312,421,300,445,283,469,267,497,257,499,262,472,272,448,288,424,305,397,317"/>
 <area shape="rect" href="classREMORA.html#a03be3174da2fcf83a5b9f695556a0454" title=" " alt="" coords="471,282,693,307"/>
 <area shape="poly" title=" " alt="" coords="415,318,487,307,488,312,416,324"/>
@@ -14690,7 +14690,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_a026f1db4725425f90217b0369cde8f77_cgraph.png" border="0" usemap="#aclassREMORA_a026f1db4725425f90217b0369cde8f77_cgraph" alt=""/></div>
 <map name="aclassREMORA_a026f1db4725425f90217b0369cde8f77_cgraph" id="aclassREMORA_a026f1db4725425f90217b0369cde8f77_cgraph">
 <area shape="rect" title="Set pm/pn by averaging down from higher&#45;resolution grid." alt="" coords="5,98,180,138"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="269,80,410,105"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="269,80,410,105"/>
 <area shape="poly" title=" " alt="" coords="180,106,255,99,255,104,180,112"/>
 <area shape="rect" href="classREMORA.html#a03be3174da2fcf83a5b9f695556a0454" title=" " alt="" coords="228,129,451,155"/>
 <area shape="poly" title=" " alt="" coords="180,124,215,127,214,132,180,129"/>
@@ -14783,7 +14783,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_ac61ff34983f1636e08e957c5a2a0ddbc_cgraph.png" border="0" usemap="#aclassREMORA_ac61ff34983f1636e08e957c5a2a0ddbc_cgraph" alt=""/></div>
 <map name="aclassREMORA_ac61ff34983f1636e08e957c5a2a0ddbc_cgraph" id="aclassREMORA_ac61ff34983f1636e08e957c5a2a0ddbc_cgraph">
 <area shape="rect" title="Initialize horizontal mixing coefficients." alt="" coords="5,105,180,131"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="269,80,410,105"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="269,80,410,105"/>
 <area shape="poly" title=" " alt="" coords="180,106,255,99,255,104,180,112"/>
 <area shape="rect" href="classREMORA.html#a03be3174da2fcf83a5b9f695556a0454" title=" " alt="" coords="228,129,451,155"/>
 <area shape="poly" title=" " alt="" coords="180,124,215,127,214,132,180,129"/>
@@ -14867,7 +14867,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_ad8fd2803f421897e69c9085a62c565a3_cgraph.png" border="0" usemap="#aclassREMORA_ad8fd2803f421897e69c9085a62c565a3_cgraph" alt=""/></div>
 <map name="aclassREMORA_ad8fd2803f421897e69c9085a62c565a3_cgraph" id="aclassREMORA_ad8fd2803f421897e69c9085a62c565a3_cgraph">
 <area shape="rect" title="Problem initialization from averaged&#45;down high resolution data." alt="" coords="5,121,176,161"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="224,79,365,104"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="224,79,365,104"/>
 <area shape="poly" title=" " alt="" coords="173,118,228,105,229,110,175,123"/>
 <area shape="rect" href="classREMORA.html#a111674546154c538b2b89b028d80d789" title=" " alt="" coords="226,128,363,153"/>
 <area shape="poly" title=" " alt="" coords="176,138,212,138,212,143,176,143"/>
@@ -15057,7 +15057,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_ae32769c0aa47ddd6e15f3b5866f9252a_cgraph.png" border="0" usemap="#aclassREMORA_ae32769c0aa47ddd6e15f3b5866f9252a_cgraph" alt=""/></div>
 <map name="aclassREMORA_ae32769c0aa47ddd6e15f3b5866f9252a_cgraph" id="aclassREMORA_ae32769c0aa47ddd6e15f3b5866f9252a_cgraph">
 <area shape="rect" title="Initialize or calculate surface momentum flux from file or analytic." alt="" coords="5,105,164,131"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="253,80,394,105"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="253,80,394,105"/>
 <area shape="poly" title=" " alt="" coords="164,107,239,99,239,104,165,112"/>
 <area shape="rect" href="classREMORA.html#a03be3174da2fcf83a5b9f695556a0454" title=" " alt="" coords="212,129,435,155"/>
 <area shape="poly" title=" " alt="" coords="165,123,199,127,198,132,164,129"/>
@@ -15142,7 +15142,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_a3a15e957a8ef57501e2fd6c09c86995b_cgraph.png" border="0" usemap="#aclassREMORA_a3a15e957a8ef57501e2fd6c09c86995b_cgraph" alt=""/></div>
 <map name="aclassREMORA_a3a15e957a8ef57501e2fd6c09c86995b_cgraph" id="aclassREMORA_a3a15e957a8ef57501e2fd6c09c86995b_cgraph">
 <area shape="rect" title="Initialize or calculate wind speed and other surface state vars from file or analytic." alt="" coords="5,98,168,138"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="257,80,398,105"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="257,80,398,105"/>
 <area shape="poly" title=" " alt="" coords="168,107,243,99,243,104,169,112"/>
 <area shape="rect" href="classREMORA.html#a03be3174da2fcf83a5b9f695556a0454" title=" " alt="" coords="216,129,439,155"/>
 <area shape="poly" title=" " alt="" coords="169,123,203,127,202,132,168,129"/>
@@ -15321,7 +15321,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="924,117,1001,132,1000,137,923,122"/>
 <area shape="poly" title=" " alt="" coords="361,304,423,277,495,256,559,247,624,243,745,246,745,251,625,249,560,253,497,261,425,282,363,309"/>
 <area shape="poly" title=" " alt="" coords="413,328,1014,353,1014,358,413,333"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="533,371,674,397"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="533,371,674,397"/>
 <area shape="poly" title=" " alt="" coords="414,343,528,366,527,371,413,348"/>
 <area shape="rect" href="REMORA__ReadFromInitNetcdf_8cpp.html#a93abfd752f08163f171e4aae8649b6c1" title="helper function to read sea surface height from netcdf" alt="" coords="517,270,689,295"/>
 <area shape="poly" title=" " alt="" coords="413,310,508,295,508,300,413,315"/>
@@ -15438,7 +15438,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classREMORA_a12983b13c375ea6f63393c3b41afe98a_cgraph.png" border="0" usemap="#aclassREMORA_a12983b13c375ea6f63393c3b41afe98a_cgraph" alt=""/></div>
 <map name="aclassREMORA_a12983b13c375ea6f63393c3b41afe98a_cgraph" id="aclassREMORA_a12983b13c375ea6f63393c3b41afe98a_cgraph">
 <area shape="rect" title="Copy over zeta data that has been averaged down from high res." alt="" coords="5,128,257,153"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="305,103,447,128"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="305,103,447,128"/>
 <area shape="poly" title=" " alt="" coords="254,125,291,121,292,127,254,131"/>
 <area shape="rect" href="classREMORA.html#a62e507e1575fd9edf395e417e0befb73" title=" " alt="" coords="764,153,901,179"/>
 <area shape="poly" title=" " alt="" coords="258,143,750,160,750,166,257,148"/>
@@ -15689,9 +15689,9 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="85,505,95,455,116,382,133,343,154,305,179,270,210,240,240,224,242,229,214,244,183,274,158,308,138,346,121,384,100,456,90,506"/>
 <area shape="rect" href="classREMORA.html#ac32e17d62815028618a2d45a31f6cd0e" title=" " alt="" coords="212,255,452,280"/>
 <area shape="poly" title=" " alt="" coords="87,504,99,462,123,404,160,341,183,313,210,289,218,284,221,288,214,293,187,317,164,345,128,406,104,464,92,506"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="541,505,682,531"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="541,505,682,531"/>
 <area shape="poly" title=" " alt="" coords="164,515,527,515,527,521,164,521"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="243,304,421,329"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="243,304,421,329"/>
 <area shape="poly" title=" " alt="" coords="89,504,104,470,130,425,166,378,187,357,211,338,229,329,231,334,213,343,190,361,170,381,134,428,109,473,93,506"/>
 <area shape="rect" href="classREMORA.html#a0e864b31bb0f6f26dc4d8ad93ce13324" title=" " alt="" coords="543,403,679,428"/>
 <area shape="poly" title=" " alt="" coords="100,503,147,470,178,453,211,439,294,420,380,410,460,406,529,407,529,412,460,411,380,415,295,425,213,445,181,458,150,474,103,507"/>
@@ -16474,7 +16474,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1048,1201,1161,1166,1200,1157,1201,1162,1162,1171,1050,1206"/>
 <area shape="rect" href="classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0" title="Calculate curvilinear advection terms." alt="" coords="1203,1181,1359,1207"/>
 <area shape="poly" title=" " alt="" coords="1095,1207,1190,1199,1190,1204,1095,1212"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1488,1108,1629,1133"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1488,1108,1629,1133"/>
 <area shape="poly" title=" " alt="" coords="1091,1227,1158,1233,1237,1236,1320,1231,1401,1215,1438,1201,1474,1181,1531,1140,1534,1144,1477,1186,1441,1206,1402,1221,1320,1236,1237,1241,1158,1239,1090,1232"/>
 <area shape="rect" href="classREMORA.html#ab6290a7bfb1ed514ba7c8a3097fb1890" title=" " alt="" coords="1963,949,2101,975"/>
 <area shape="poly" title=" " alt="" coords="1012,1203,1028,1104,1058,952,1078,874,1102,802,1129,745,1144,723,1160,708,1182,695,1212,683,1292,664,1392,652,1504,647,1620,651,1733,664,1834,690,1878,707,1916,728,1942,748,1964,773,1997,830,2018,888,2029,935,2024,936,2012,889,1992,833,1959,776,1938,752,1913,732,1876,712,1833,695,1732,670,1620,656,1504,652,1392,657,1293,670,1214,689,1184,700,1163,712,1148,727,1134,748,1107,804,1083,875,1063,954,1033,1105,1018,1204"/>
@@ -16482,7 +16482,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1077,1227,1162,1242,1438,1288,1559,1303,1716,1317,1838,1321,1949,1321,1949,1326,1838,1326,1716,1322,1559,1309,1437,1293,1161,1247,1076,1232"/>
 <area shape="rect" href="classREMORA.html#a62e507e1575fd9edf395e417e0befb73" title=" " alt="" coords="1963,1357,2101,1383"/>
 <area shape="poly" title=" " alt="" coords="1035,1227,1091,1258,1162,1287,1270,1315,1381,1335,1493,1350,1602,1360,1800,1370,1949,1370,1949,1375,1800,1375,1602,1366,1493,1355,1381,1340,1269,1320,1161,1293,1088,1263,1032,1232"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1193,1435,1370,1460"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1193,1435,1370,1460"/>
 <area shape="poly" title=" " alt="" coords="1025,1228,1163,1413,1191,1428,1189,1432,1160,1417,1021,1231"/>
 <area shape="rect" href="classREMORA.html#a84a902c6ed5d0956e188d21c2a864e28" title="RHS terms for 2D momentum." alt="" coords="1205,1688,1358,1713"/>
 <area shape="poly" title=" " alt="" coords="1023,1228,1269,1675,1264,1677,1018,1231"/>
@@ -16658,9 +16658,9 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="advance all levels by dt, loops over finer levels" alt="" coords="5,713,171,738"/>
 <area shape="rect" href="classREMORA.html#a67b92f7c5b82933e953e447bdfc9074c" title="2D advance, one predictor/corrector step" alt="" coords="241,451,407,491"/>
 <area shape="poly" title=" " alt="" coords="95,711,144,641,178,596,217,553,282,497,285,501,221,557,183,600,148,644,100,714"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1033,763,1175,789"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1033,763,1175,789"/>
 <area shape="poly" title=" " alt="" coords="171,727,1019,769,1019,775,171,732"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="746,586,923,611"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="746,586,923,611"/>
 <area shape="poly" title=" " alt="" coords="97,711,145,661,179,635,218,614,288,591,361,575,435,566,508,563,645,568,754,581,753,587,644,574,508,568,435,572,362,580,289,596,220,619,182,639,149,665,101,715"/>
 <area shape="rect" href="classREMORA.html#a111674546154c538b2b89b028d80d789" title=" " alt="" coords="1035,287,1173,313"/>
 <area shape="poly" title=" " alt="" coords="88,712,95,648,115,550,132,495,154,440,182,387,217,340,275,283,303,264,332,250,395,230,477,211,516,207,577,206,735,210,955,223,1020,248,1074,278,1071,283,1018,253,954,228,735,215,577,211,516,212,478,216,397,235,334,255,306,269,279,287,221,343,186,390,158,443,137,497,120,552,100,649,93,713"/>
@@ -17006,7 +17006,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="2378,713,2317,657,2227,584,2173,547,2115,512,2055,482,1993,459,1923,440,1867,432,1811,438,1742,459,1698,482,1659,513,1627,545,1605,571,1601,567,1623,541,1655,509,1695,478,1740,454,1809,433,1867,427,1924,434,1994,454,2057,477,2118,508,2176,543,2230,580,2321,653,2382,709"/>
 <area shape="rect" href="classREMORA.html#a17b145e55ffc268dc25b512ee0312a93" title="fill an entire multifab by interpolating from the coarser level, explicitly specifying interpolator t..." alt="" coords="2041,1017,2256,1042"/>
 <area shape="poly" title=" " alt="" coords="2384,759,2163,1019,2159,1015,2380,755"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="2078,721,2219,746"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="2078,721,2219,746"/>
 <area shape="poly" title=" " alt="" coords="2291,736,2219,736,2219,731,2291,731"/>
 <area shape="rect" href="classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0" title="Sea&#45;surface height data initialization from NetCDF file." alt="" coords="1777,1354,1958,1394"/>
 <area shape="poly" title=" " alt="" coords="2396,760,2345,891,2305,975,2258,1056,2198,1150,2147,1221,2118,1252,2085,1282,2045,1312,1995,1344,1959,1360,1957,1355,1992,1339,2042,1308,2082,1278,2115,1248,2142,1217,2193,1147,2254,1054,2301,973,2340,889,2391,759"/>
@@ -17676,7 +17676,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="2378,713,2317,657,2227,584,2173,547,2115,512,2055,482,1993,459,1923,440,1867,432,1811,438,1742,459,1698,482,1659,513,1627,545,1605,571,1601,567,1623,541,1655,509,1695,478,1740,454,1809,433,1867,427,1924,434,1994,454,2057,477,2118,508,2176,543,2230,580,2321,653,2382,709"/>
 <area shape="rect" href="classREMORA.html#a17b145e55ffc268dc25b512ee0312a93" title="fill an entire multifab by interpolating from the coarser level, explicitly specifying interpolator t..." alt="" coords="2041,1017,2256,1042"/>
 <area shape="poly" title=" " alt="" coords="2384,759,2163,1019,2159,1015,2380,755"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="2078,721,2219,746"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="2078,721,2219,746"/>
 <area shape="poly" title=" " alt="" coords="2291,736,2219,736,2219,731,2291,731"/>
 <area shape="rect" href="classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0" title="Sea&#45;surface height data initialization from NetCDF file." alt="" coords="1777,1354,1958,1394"/>
 <area shape="poly" title=" " alt="" coords="2396,760,2345,891,2305,975,2258,1056,2198,1150,2147,1221,2118,1252,2085,1282,2045,1312,1995,1344,1959,1360,1957,1355,1992,1339,2042,1308,2082,1278,2115,1248,2142,1217,2193,1147,2254,1054,2301,973,2340,889,2391,759"/>
@@ -18219,7 +18219,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="447,277,470,265,486,247,493,228,500,208,519,190,544,181,578,177,662,177,754,187,840,199,839,204,754,192,661,183,578,182,545,187,521,195,505,211,498,229,491,250,474,269,449,282"/>
 <area shape="rect" href="REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67" title=" " alt="" coords="556,31,719,56"/>
 <area shape="poly" title=" " alt="" coords="447,280,470,265,486,245,494,224,495,181,495,136,503,113,518,90,539,71,564,59,566,63,542,76,522,93,507,115,501,137,500,181,499,225,491,247,474,269,450,285"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="549,104,726,129"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="549,104,726,129"/>
 <area shape="poly" title=" " alt="" coords="447,279,470,265,483,252,489,238,494,208,498,177,505,162,518,147,539,133,542,137,522,151,510,165,503,179,499,209,494,239,487,255,474,269,449,284"/>
 <area shape="rect" href="classREMORA.html#a44172f86da9fc423ca901f87b052f0d7" title=" " alt="" coords="555,255,719,280"/>
 <area shape="poly" title=" " alt="" coords="448,282,541,273,542,279,448,287"/>
@@ -18362,7 +18362,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="500,277,524,265,539,247,546,228,554,208,572,190,598,181,631,177,715,177,808,187,893,199,892,204,807,192,715,183,632,182,599,187,575,195,558,211,551,229,544,250,527,269,503,282"/>
 <area shape="rect" href="REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67" title=" " alt="" coords="609,31,772,56"/>
 <area shape="poly" title=" " alt="" coords="500,280,524,265,540,245,547,224,548,181,549,136,556,113,571,90,593,71,617,59,620,63,596,76,575,93,561,115,554,137,554,181,553,225,544,247,527,269,503,285"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="602,104,779,129"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="602,104,779,129"/>
 <area shape="poly" title=" " alt="" coords="500,279,524,265,536,252,543,238,547,208,551,177,559,162,572,147,592,133,595,137,575,151,563,165,557,179,552,209,548,239,540,255,527,269,503,284"/>
 <area shape="rect" href="classREMORA.html#a44172f86da9fc423ca901f87b052f0d7" title=" " alt="" coords="609,255,773,280"/>
 <area shape="poly" title=" " alt="" coords="501,282,594,273,595,279,502,287"/>
@@ -19350,7 +19350,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="101,278,150,232,185,208,223,190,287,175,340,175,392,182,459,190,540,199,539,205,458,195,392,187,339,180,288,180,225,195,187,213,154,236,105,282"/>
 <area shape="rect" href="REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67" title=" " alt="" coords="260,31,423,56"/>
 <area shape="poly" title=" " alt="" coords="95,279,111,242,139,192,176,138,222,89,249,72,278,58,280,63,252,76,226,93,180,141,143,195,116,245,100,281"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="253,104,430,129"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="253,104,430,129"/>
 <area shape="poly" title=" " alt="" coords="98,278,145,215,181,178,223,146,255,131,258,136,225,151,185,182,149,218,102,281"/>
 <area shape="rect" href="classREMORA.html#a44172f86da9fc423ca901f87b052f0d7" title=" " alt="" coords="259,255,423,280"/>
 <area shape="poly" title=" " alt="" coords="176,281,246,274,246,280,177,287"/>
@@ -19512,7 +19512,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1989,365,1986,299,1970,211,1956,165,1936,122,1909,83,1874,51,1834,29,1789,15,1742,9,1695,9,1606,21,1537,39,1536,34,1605,15,1695,4,1743,4,1790,10,1836,24,1878,47,1913,80,1940,119,1961,163,1976,210,1991,298,1995,365"/>
 <area shape="rect" href="classREMORA.html#a8b638d2163a39005d276bc1ef14d058f" title="Fill the physical boundary conditions for cell&#45;centered velocity (diagnostic only)" alt="" coords="1679,62,1855,87"/>
 <area shape="poly" title=" " alt="" coords="1986,366,1976,312,1956,242,1941,206,1923,170,1901,137,1874,108,1842,89,1845,85,1878,104,1905,134,1928,167,1946,203,1961,240,1981,310,1991,365"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1678,428,1855,454"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1678,428,1855,454"/>
 <area shape="poly" title=" " alt="" coords="1921,410,1826,431,1825,426,1920,405"/>
 <area shape="rect" href="classREMORA.html#afded54aef57ded67542a888a911b67b0" title="Corrector step for GLS calculation." alt="" coords="1413,643,1584,668"/>
 <area shape="poly" title=" " alt="" coords="1990,419,1979,466,1958,526,1925,585,1904,611,1878,632,1839,654,1798,668,1754,677,1710,682,1627,680,1557,671,1558,666,1627,675,1710,676,1753,672,1796,663,1837,649,1874,628,1900,607,1921,582,1953,523,1974,465,1985,417"/>
@@ -19644,7 +19644,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1989,365,1986,299,1970,211,1956,165,1936,122,1909,83,1874,51,1834,29,1789,15,1742,9,1695,9,1606,21,1537,39,1536,34,1605,15,1695,4,1743,4,1790,10,1836,24,1878,47,1913,80,1940,119,1961,163,1976,210,1991,298,1995,365"/>
 <area shape="rect" href="classREMORA.html#a8b638d2163a39005d276bc1ef14d058f" title="Fill the physical boundary conditions for cell&#45;centered velocity (diagnostic only)" alt="" coords="1679,62,1855,87"/>
 <area shape="poly" title=" " alt="" coords="1986,366,1976,312,1956,242,1941,206,1923,170,1901,137,1874,108,1842,89,1845,85,1878,104,1905,134,1928,167,1946,203,1961,240,1981,310,1991,365"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1678,428,1855,454"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1678,428,1855,454"/>
 <area shape="poly" title=" " alt="" coords="1921,410,1826,431,1825,426,1920,405"/>
 <area shape="rect" href="classREMORA.html#afded54aef57ded67542a888a911b67b0" title="Corrector step for GLS calculation." alt="" coords="1413,643,1584,668"/>
 <area shape="poly" title=" " alt="" coords="1990,419,1979,466,1958,526,1925,585,1904,611,1878,632,1839,654,1798,668,1754,677,1710,682,1627,680,1557,671,1558,666,1627,675,1710,676,1753,672,1796,663,1837,649,1874,628,1900,607,1921,582,1953,523,1974,465,1985,417"/>
@@ -19801,7 +19801,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="2395,1036,2363,902,2332,808,2291,706,2238,602,2206,552,2171,504,2132,460,2089,419,2043,384,1992,355,1957,340,1926,331,1898,327,1871,327,1813,337,1742,355,1704,368,1669,384,1613,418,1610,413,1666,380,1702,363,1741,350,1812,332,1870,322,1898,321,1927,325,1959,335,1995,350,2046,380,2093,415,2136,456,2175,501,2211,549,2242,599,2296,703,2337,806,2368,901,2400,1035"/>
 <area shape="rect" href="classREMORA.html#a17b145e55ffc268dc25b512ee0312a93" title="fill an entire multifab by interpolating from the coarser level, explicitly specifying interpolator t..." alt="" coords="2041,1049,2256,1075"/>
 <area shape="poly" title=" " alt="" coords="2290,1065,2256,1065,2256,1059,2290,1059"/>
-<area shape="rect" href="classREMORA.html#a7a8fb91ab7304e5a8d9cd2ae6b037751" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="2078,707,2219,732"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="2078,707,2219,732"/>
 <area shape="poly" title=" " alt="" coords="2382,1039,2157,734,2162,731,2386,1036"/>
 <area shape="poly" title=" " alt="" coords="2372,1084,2213,1177,2106,1234,1994,1286,1943,1304,1941,1299,1992,1281,2103,1229,2210,1173,2369,1079"/>
 <area shape="rect" href="classREMORA.html#a805863a28beceb70cefd0b6f050d8c2d" title="3D advance on a single level" alt="" coords="1239,365,1428,391"/>
@@ -19971,7 +19971,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1984,618,1973,666,1952,727,1920,789,1898,816,1872,840,1852,852,1823,861,1752,877,1672,887,1598,894,1598,889,1671,882,1751,872,1822,856,1849,847,1869,836,1894,813,1915,786,1948,725,1968,665,1979,617"/>
 <area shape="rect" href="classREMORA.html#a8b638d2163a39005d276bc1ef14d058f" title="Fill the physical boundary conditions for cell&#45;centered velocity (diagnostic only)" alt="" coords="1679,908,1855,933"/>
 <area shape="poly" title=" " alt="" coords="1985,618,1976,674,1957,747,1942,786,1923,824,1900,859,1872,891,1840,910,1838,906,1869,887,1896,856,1919,821,1937,784,1952,746,1971,673,1980,617"/>
-<area shape="rect" href="classREMORA.html#a4d312d7f420cd4fc7b037de77d9abd2b" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1679,300,1856,325"/>
+<area shape="rect" href="classREMORA.html#a6e158049355306c77d0dc1e66c2e6afb" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells without applying boun..." alt="" coords="1679,300,1856,325"/>
 <area shape="poly" title=" " alt="" coords="1978,565,1966,518,1945,459,1913,399,1893,371,1869,347,1836,328,1838,323,1872,343,1897,368,1917,396,1950,457,1971,517,1983,564"/>
 <area shape="rect" href="classREMORA.html#afded54aef57ded67542a888a911b67b0" title="Corrector step for GLS calculation." alt="" coords="1443,351,1614,376"/>
 <area shape="poly" title=" " alt="" coords="1976,566,1963,527,1941,480,1910,434,1891,414,1869,398,1840,382,1808,369,1741,355,1674,351,1614,354,1614,348,1675,346,1742,350,1809,364,1842,377,1872,393,1894,410,1914,431,1945,478,1967,525,1981,565"/>
