@@ -9,6 +9,7 @@ var REMORA__ReadFromInitNetcdf_8cpp =
     [ "read_grid_vars_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a5ee5c7322b2ce0c02e202994ca8833da", null ],
     [ "read_grid_vars_full_domain_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#aec1c389b9822a484c2fc252d290b8deb", null ],
     [ "read_masks_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a7b728f24fbad6791f280538ce240c523", null ],
+    [ "read_spherical_grid_vars_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#aa564069a43b5e2da32ffb41552b5495b", null ],
     [ "read_vec_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a3da36b397933adf369b4577e633d75ad", null ],
     [ "read_zeta_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a93abfd752f08163f171e4aae8649b6c1", null ],
     [ "read_zeta_full_domain_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a1fb3cc10225716b9d1d2578b35ba2951", null ]

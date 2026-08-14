@@ -193,6 +193,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa6354e0acb3f047d2772642bc3d5c06f" id="r_aa6354e0acb3f047d2772642bc3d5c06f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#aa6354e0acb3f047d2772642bc3d5c06f">QueryNetCDFVarAttrStr</a> (const std::string &amp;fname, const std::string &amp;var_name, const std::string &amp;attr_name)</td></tr>
 <tr class="memdesc:aa6354e0acb3f047d2772642bc3d5c06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for testing for the presence of a single variable attribute.  <br /></td></tr>
 <tr class="separator:aa6354e0acb3f047d2772642bc3d5c06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4249e844e315ed3cb1e750d3798a7baf" id="r_a4249e844e315ed3cb1e750d3798a7baf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#a4249e844e315ed3cb1e750d3798a7baf">QueryNetCDFHasVars</a> (const std::string &amp;fname, const amrex::Vector&lt; std::string &gt; &amp;var_names)</td></tr>
+<tr class="memdesc:a4249e844e315ed3cb1e750d3798a7baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for testing whether a file carries every named variable.  <br /></td></tr>
+<tr class="separator:a4249e844e315ed3cb1e750d3798a7baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6b89e9ef60018dca2f1a9e5b281241" id="r_aec6b89e9ef60018dca2f1a9e5b281241"><td class="memTemplParams" colspan="2">template&lt;class FAB , typename DType &gt; </td></tr>
 <tr class="memitem:aec6b89e9ef60018dca2f1a9e5b281241"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#aec6b89e9ef60018dca2f1a9e5b281241">fill_fab_from_arrays</a> (int iv, amrex::Vector&lt; <a class="el" href="structNDArray.html">NDArray</a>&lt; amrex::Real &gt; &gt; &amp;nc_arrays, const std::string &amp;var_name, <a class="el" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a> &amp;NC_dim_type, FAB &amp;temp, amrex::IntVect custom_ngrow)</td></tr>
 <tr class="memdesc:aec6b89e9ef60018dca2f1a9e5b281241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for reading data from NetCDF file into a provided FAB.  <br /></td></tr>
@@ -332,7 +335,7 @@ template&lt;class FAB , typename DType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCFile_8H_source.html#l00298">298</a> of file <a class="el" href="REMORA__NCFile_8H_source.html">REMORA_NCFile.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCFile_8H_source.html#l00308">308</a> of file <a class="el" href="REMORA__NCFile_8H_source.html">REMORA_NCFile.H</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -413,7 +416,7 @@ template&lt;class FAB , typename DType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCFile_8H_source.html#l00178">178</a> of file <a class="el" href="REMORA__NCFile_8H_source.html">REMORA_NCFile.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCFile_8H_source.html#l00187">187</a> of file <a class="el" href="REMORA__NCFile_8H_source.html">REMORA_NCFile.H</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -422,6 +425,97 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Helper function for reading data from NetCDF file into a provided FAB." alt="" coords="5,5,157,31"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="205,5,388,31"/>
 <area shape="poly" title=" " alt="" coords="158,15,192,15,192,21,158,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4249e844e315ed3cb1e750d3798a7baf" name="a4249e844e315ed3cb1e750d3798a7baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4249e844e315ed3cb1e750d3798a7baf">&#9670;&#160;</a></span>QueryNetCDFHasVars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QueryNetCDFHasVars </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const amrex::Vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>var_names</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function for testing whether a file carries every named variable. </p>
+<p>Call this before reading optional variables: <a class="el" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays.">ReadNetCDFFile()</a> dereferences ncf.var(name) unconditionally, so a missing name is a hard failure.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fname</td><td>Name of NetCDF file </td></tr>
+    <tr><td class="paramname">var_names</td><td>Names of the variables to test for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether every named variable is present in the file</dd></dl>
+<p>Use this before calling <a class="el" href="REMORA__NCFile_8H.html#a41ff4f048600ccc17103500c9cc273bf" title="Function to read NetCDF variables and fill the corresponding Array4&#39;s.">BuildFABsFromNetCDFFile()</a> on optional variables: <a class="el" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays.">ReadNetCDFFile()</a> calls ncf.var(name) unconditionally, so a missing variable is a hard failure rather than a recoverable one. The answer is broadcast so every rank agrees before any collective read is attempted. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCFile_8cpp_source.html#l00065">65</a> of file <a class="el" href="REMORA__NCFile_8cpp_source.html">REMORA_NCFile.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00207">read_spherical_grid_vars_from_netcdf()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="REMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_cgraph.png" border="0" usemap="#aREMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_cgraph" alt=""/></div>
+<map name="aREMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_cgraph" id="aREMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_cgraph">
+<area shape="rect" title="Helper function for testing whether a file carries every named variable." alt="" coords="5,5,169,31"/>
+<area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="217,5,372,31"/>
+<area shape="poly" title=" " alt="" coords="170,15,203,15,203,21,170,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="REMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_icgraph.png" border="0" usemap="#aREMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_icgraph" alt=""/></div>
+<map name="aREMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_icgraph" id="aREMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_icgraph">
+<area shape="rect" title="Helper function for testing whether a file carries every named variable." alt="" coords="2109,56,2273,81"/>
+<area shape="rect" href="REMORA__ReadFromInitNetcdf_8cpp.html#aa564069a43b5e2da32ffb41552b5495b" title="helper function to read optional spherical psi coordinates from netcdf" alt="" coords="1912,49,2061,89"/>
+<area shape="poly" title=" " alt="" coords="2095,71,2062,71,2062,66,2095,66"/>
+<area shape="rect" href="classREMORA.html#a28ead55a72d9a23865ce34637ec1fd22" title="Grid variable initialization from NetCDF file." alt="" coords="1689,49,1864,89"/>
+<area shape="poly" title=" " alt="" coords="1898,71,1864,71,1864,66,1898,66"/>
+<area shape="rect" href="classREMORA.html#a97de693d117772818b80fb566720d4c1" title="Initialize bathymetry from file or analytic." alt="" coords="1209,5,1399,31"/>
+<area shape="poly" title=" " alt="" coords="1676,61,1399,31,1400,25,1676,55"/>
+<area shape="rect" href="classREMORA.html#a439f8f03125dcd44558f1d34e9c45d4b" title="Set pm and pn arrays and x/y coords on level lev." alt="" coords="1461,81,1641,107"/>
+<area shape="poly" title=" " alt="" coords="1676,83,1642,87,1641,81,1676,77"/>
+<area shape="rect" href="classREMORA.html#a4010e1137df2630bdd56327fad98e4a1" title="Init (NOT restart or regrid)" alt="" coords="1004,56,1147,81"/>
+<area shape="poly" title=" " alt="" coords="1233,36,1134,59,1133,53,1232,31"/>
+<area shape="rect" href="classREMORA.html#ad64e9b244603ae920ed761821753a71f" title="Make a new level from scratch using provided BoxArray and DistributionMapping. Only used during initi..." alt="" coords="737,49,956,89"/>
+<area shape="poly" title=" " alt="" coords="990,71,956,71,956,66,990,66"/>
+<area shape="rect" href="classREMORA.html#a316a6db4c0b9a218e834c054d8c8f437" title="read checkpoint file from disk" alt="" coords="473,56,689,81"/>
+<area shape="poly" title=" " alt="" coords="723,71,690,71,690,66,723,66"/>
+<area shape="rect" href="classREMORA.html#af82928444cae433cc744c0cf7427e8eb" title=" " alt="" coords="295,56,425,81"/>
+<area shape="poly" title=" " alt="" coords="460,71,426,71,426,66,460,66"/>
+<area shape="rect" href="classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089" title="Initialize multilevel data." alt="" coords="108,56,247,81"/>
+<area shape="poly" title=" " alt="" coords="281,71,247,71,247,66,281,66"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,56,60,81"/>
+<area shape="poly" title=" " alt="" coords="94,71,60,71,60,66,94,66"/>
+<area shape="poly" title=" " alt="" coords="1498,80,1413,53,1348,33,1350,28,1414,47,1499,75"/>
+<area shape="poly" title=" " alt="" coords="1447,91,1147,75,1147,70,1447,86"/>
+<area shape="rect" href="classREMORA.html#abaf362ee14357b8dc0091e3ac3e98cef" title="Initialize initial problem data from analytic functions." alt="" coords="1221,107,1387,132"/>
+<area shape="poly" title=" " alt="" coords="1448,107,1388,113,1387,108,1447,102"/>
+<area shape="rect" href="classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe" title="Make a new level using provided BoxArray and DistributionMapping and fill with interpolated coarse le..." alt="" coords="1195,157,1413,197"/>
+<area shape="poly" title=" " alt="" coords="1504,114,1414,146,1373,159,1372,154,1412,141,1502,109"/>
+<area shape="rect" href="classREMORA.html#a73eb64a4ad24a247692981eae835caf2" title="Remake an existing level using provided BoxArray and DistributionMapping and fill with existing fine ..." alt="" coords="1217,221,1391,247"/>
+<area shape="poly" title=" " alt="" coords="1531,119,1481,166,1449,190,1414,211,1381,224,1379,219,1412,206,1446,186,1478,162,1528,115"/>
+<area shape="poly" title=" " alt="" coords="1232,106,1133,84,1134,79,1233,101"/>
 </map>
 </div>
 
@@ -556,7 +650,7 @@ template&lt;typename DType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCFile_8H_source.html#l00091">91</a> of file <a class="el" href="REMORA__NCFile_8H_source.html">REMORA_NCFile.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCFile_8H_source.html#l00298">BuildFABsFromNetCDFFile()</a>, <a class="el" href="REMORA__NCTimeSeries_8cpp_source.html#l00034">NCTimeSeries::Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00041">NCTimeSeriesBoundary::Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesRiver_8cpp_source.html#l00027">NCTimeSeriesRiver::Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00327">NCTimeSeriesBoundary::read_in_at_time()</a>, and <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00350">read_vec_from_netcdf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCFile_8H_source.html#l00308">BuildFABsFromNetCDFFile()</a>, <a class="el" href="REMORA__NCTimeSeries_8cpp_source.html#l00034">NCTimeSeries::Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00041">NCTimeSeriesBoundary::Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesRiver_8cpp_source.html#l00027">NCTimeSeriesRiver::Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00327">NCTimeSeriesBoundary::read_in_at_time()</a>, and <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00392">read_vec_from_netcdf()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -13,6 +13,7 @@ var REMORA__NCFile_8H =
     ] ],
     [ "BuildFABsFromNetCDFFile", "REMORA__NCFile_8H.html#a41ff4f048600ccc17103500c9cc273bf", null ],
     [ "fill_fab_from_arrays", "REMORA__NCFile_8H.html#aec6b89e9ef60018dca2f1a9e5b281241", null ],
+    [ "QueryNetCDFHasVars", "REMORA__NCFile_8H.html#a4249e844e315ed3cb1e750d3798a7baf", null ],
     [ "QueryNetCDFVarAttrStr", "REMORA__NCFile_8H.html#aa6354e0acb3f047d2772642bc3d5c06f", null ],
     [ "ReadNetCDFFile", "REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871", null ],
     [ "ReadNetCDFVarAttrStr", "REMORA__NCFile_8H.html#af8eb0b5eb41bbbf48a6dbced8cd0d6ea", null ]
