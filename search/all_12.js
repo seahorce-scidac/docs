@@ -39,7 +39,7 @@ var searchData=
   ['set_5fzeta_36',['set_zeta',['../classREMORA.html#a8bea1c2033283ac78b162e0de2d11c7e',1,'REMORA']]],
   ['set_5fzeta_5faverage_37',['set_zeta_average',['../classREMORA.html#a9160ef8108ebab79704a59ab70608f2b',1,'REMORA']]],
   ['set_5fzeta_5faveraged_5fdown_38',['set_zeta_averaged_down',['../classREMORA.html#a12983b13c375ea6f63393c3b41afe98a',1,'REMORA']]],
-  ['set_5fzeta_5fto_5fztavg_39',['set_zeta_to_Ztavg',['../classREMORA.html#ab937a3a19e419c91e16844f68df6eafe',1,'REMORA']]],
+  ['set_5fzeta_5fto_5fztavg_39',['set_zeta_to_Ztavg',['../classREMORA.html#aaa99745ed83eb54208f66c7c8c8a233b',1,'REMORA']]],
   ['setdriveratmostooceanforcingmode_40',['SetDriverAtmosToOceanForcingMode',['../classREMORA.html#aba2b0c06ebf9016178b9cc42c84b2563',1,'REMORA']]],
   ['setrecorddatainfo_41',['setRecordDataInfo',['../classREMORA.html#a7f4ee77d07b875ac526da57e8f0f1e98',1,'REMORA']]],
   ['setstarttime_42',['SetStartTime',['../classREMORA.html#a0abc7c570d790166139521258c342284',1,'REMORA']]],
