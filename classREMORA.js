@@ -155,6 +155,7 @@ var classREMORA =
     [ "set_zeta_averaged_down", "classREMORA.html#a12983b13c375ea6f63393c3b41afe98a", null ],
     [ "set_zeta_to_Ztavg", "classREMORA.html#aaa99745ed83eb54208f66c7c8c8a233b", null ],
     [ "SetDriverAtmosToOceanForcingMode", "classREMORA.html#aba2b0c06ebf9016178b9cc42c84b2563", null ],
+    [ "SetLongwaveFromDriver", "classREMORA.html#aaba1088e5c7f03aaab186228087098f1", null ],
     [ "setRecordDataInfo", "classREMORA.html#a7f4ee77d07b875ac526da57e8f0f1e98", null ],
     [ "SetStartTime", "classREMORA.html#a0abc7c570d790166139521258c342284", null ],
     [ "setup_step", "classREMORA.html#ad9ee5aba5b9cb8e020e6cbc8ff3cff74", null ],
