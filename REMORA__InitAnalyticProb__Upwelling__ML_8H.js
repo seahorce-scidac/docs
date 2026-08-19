@@ -7,6 +7,7 @@ var REMORA__InitAnalyticProb__Upwelling__ML_8H =
     [ "query", "REMORA__InitAnalyticProb__Upwelling__ML_8H.html#a43811841c1a8e839bb1743c1ac3c48b9", null ],
     [ "query", "REMORA__InitAnalyticProb__Upwelling__ML_8H.html#aab5ba1436421aa92c988ae5a3ad9d9ea", null ],
     [ "query", "REMORA__InitAnalyticProb__Upwelling__ML_8H.html#a030282eee99c8d4edae8d18fe6de0dc4", null ],
+    [ "l_do_dye", "REMORA__InitAnalyticProb__Upwelling__ML_8H.html#ade2a0e6d3b4be87f76ca850f1f594add", null ],
     [ "l_use_salt", "REMORA__InitAnalyticProb__Upwelling__ML_8H.html#a75f9d7f9e2a71a0135a9a729ce2f2d6c", null ],
     [ "S0", "REMORA__InitAnalyticProb__Upwelling__ML_8H.html#a5fa1183e12f797d3066d16aac374862d", null ],
     [ "T0", "REMORA__InitAnalyticProb__Upwelling__ML_8H.html#a014260d1becf055937af59cff1b4b773", null ],

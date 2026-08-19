@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['flather_0',['flather',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a9994ccef2f6dcda504622422bd4f0693',1,'REMORABCType::flather'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a3a97f95842e4dd873740b83d31ed038d',1,'flather:&#160;REMORA_IndexDefines.H']]],
-  ['flux_1',['Flux',['../classREMORA.html#a448226572176d2410e51ad3d7c0dcb0aa1c30b35b12895df175ccd44dbb6f5ace',1,'REMORA']]],
-  ['foextrap_2',['foextrap',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346af756bb6d63add06a5624fa131cc82407',1,'REMORABCType']]]
+  ['eminusp_0',['EminusP',['../namespaceBulkFlux.html#ab4d324d7d6b4886cca281114c64ba588afc0eba01188316c7903dd4d981a212ca',1,'BulkFlux']]],
+  ['evap_1',['Evap',['../namespaceAtmosFluxes.html#ac91c9b5d225271b3908b098cf63ed9e6a77ce1f8024b0ae66a87a147434c0f62e',1,'AtmosFluxes']]],
+  ['ext_5fdir_2',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]]
 ];

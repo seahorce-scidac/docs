@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['timeinterpolateddata_0',['TimeInterpolatedData',['../structTimeInterpolatedData.html',1,'']]]
+  ['remora_0',['REMORA',['../classREMORA.html',1,'']]],
+  ['remorafillpatcher_1',['REMORAFillPatcher',['../classREMORAFillPatcher.html',1,'']]],
+  ['remoraphysbcfunct_2',['REMORAPhysBCFunct',['../classREMORAPhysBCFunct.html',1,'']]]
 ];

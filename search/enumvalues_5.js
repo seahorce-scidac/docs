@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['galperin_0',['Galperin',['../REMORA__DataStruct_8H.html#ad18d1e0933941f14a7dec3d68b783288a906096b93eb21be35f6004c5f97e257a',1,'REMORA_DataStruct.H']]],
-  ['geopotential_1',['geopotential',['../REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833aac16ac34df8a5bd813261a064fda07838',1,'REMORA_DataStruct.H']]],
-  ['gls_2',['GLS',['../REMORA__DataStruct_8H.html#ae051a5657a30b61eb6fe9bab09127856a07351bfe713bfebc506f0660ff44b7bf',1,'REMORA_DataStruct.H']]]
+  ['fennel_0',['fennel',['../namespaceREMORABiology.html#a0c31a8fb3574d0c5c6d90991251c76b9a14fc15095b2e0565e32a55721a0fe8bf',1,'REMORABiology']]],
+  ['flather_1',['flather',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a9994ccef2f6dcda504622422bd4f0693',1,'REMORABCType::flather'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a3a97f95842e4dd873740b83d31ed038d',1,'flather:&#160;REMORA_IndexDefines.H']]],
+  ['flux_2',['Flux',['../classREMORA.html#a448226572176d2410e51ad3d7c0dcb0aa1c30b35b12895df175ccd44dbb6f5ace',1,'REMORA']]],
+  ['foextrap_3',['foextrap',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346af756bb6d63add06a5624fa131cc82407',1,'REMORABCType']]],
+  ['follow_5fic_5ftype_4',['follow_ic_type',['../namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73a31da927b57c9fa15695f5b78a263112f',1,'REMORABiology']]]
 ];

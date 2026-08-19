@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['windtype_0',['WindType',['../REMORA__DataStruct_8H.html#ab8e8b71b471dbb9aeba77602dcf6240a',1,'REMORA_DataStruct.H']]]
+  ['vertmixingtype_0',['VertMixingType',['../REMORA__DataStruct_8H.html#ae051a5657a30b61eb6fe9bab09127856',1,'REMORA_DataStruct.H']]]
 ];

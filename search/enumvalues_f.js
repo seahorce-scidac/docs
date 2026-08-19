@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['u_0',['u',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a2e6ad92071d7c5eed4b6ab6ddccb9d16',1,'BdyVars']]],
-  ['ubar_1',['ubar',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a6336bc425d2abd84d90f925fc32d358a',1,'BdyVars']]],
-  ['undefined_2',['undefined',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74',1,'REMORA_IndexDefines.H']]],
-  ['upstream3_3',['upstream3',['../REMORA__DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca5b2d34872c0b46cfbabc832368e6ec7d',1,'REMORA_DataStruct.H']]],
-  ['uwind_4',['uwind',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4ace44688abc1d064a95c55ac3fe880cde',1,'AtmosState::Uwind'],['../namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ab903a1809f855b363a48979c69aca552',1,'BulkFlux::Uwind']]]
+  ['tair_0',['tair',['../namespaceAtmosState.html#a76d13f6889b52b16bc3d9680db35206eaecf95aa2d2e49e57ec90b8df4598bab2',1,'AtmosState::Tair'],['../namespaceBulkFlux.html#ab4d324d7d6b4886cca281114c64ba588ac678ecbe2429f7e7a2f6d444780cbe89',1,'BulkFlux::Tair']]],
+  ['taux_1',['TauX',['../namespaceAtmosFluxes.html#ac91c9b5d225271b3908b098cf63ed9e6a98459fa37f3f3215eee5d26e34869f40',1,'AtmosFluxes']]],
+  ['tauy_2',['TauY',['../namespaceAtmosFluxes.html#ac91c9b5d225271b3908b098cf63ed9e6a9af6c572674080f6c77db30e8269712e',1,'AtmosFluxes']]],
+  ['time_5fbt_5friv_3',['Time_BT_Riv',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a78b86e3930cf70fdd9d8ec7e98d232da',1,'REMORA_NCFile.H']]],
+  ['time_5fbt_5fsn_5fwe_4',['Time_BT_SN_WE',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06aa3968158227ea04595d4003503cca22b',1,'REMORA_NCFile.H']]],
+  ['time_5friv_5',['Time_Riv',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06af35d2b32ef2f8a78ff5f899dbb9cf0a5',1,'REMORA_NCFile.H']]],
+  ['time_5fsn_5fwe_6',['Time_SN_WE',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a5f93bace93896872075eae75770cadc4',1,'REMORA_NCFile.H']]],
+  ['two_5fway_7',['two_way',['../REMORA__DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba0fa44359808011f346e62d3f6df437f4',1,'REMORA_DataStruct.H']]]
 ];

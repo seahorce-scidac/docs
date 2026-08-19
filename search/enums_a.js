@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plotfiletype_0',['PlotfileType',['../REMORA__DataStruct_8H.html#a4036964f680afc43cfce078311111a9e',1,'REMORA_DataStruct.H']]]
+  ['o2schmidttype_0',['O2SchmidtType',['../namespaceREMORABiology.html#a5f60d692a2fc85488d7b9078b382ba01',1,'REMORABiology']]]
 ];

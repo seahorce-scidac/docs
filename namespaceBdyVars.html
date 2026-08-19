@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('namespaceBdyVars.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">BdyVars Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -99,52 +100,827 @@ $(document).ready(function(){initNavTree('namespaceBdyVars.html',''); initResiza
 <p>These are only for the variables read in from netcdf boundary condition files.  
 <a href="namespaceBdyVars.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a0860568d9ad7e1487cd6567de76e0325" id="r_a0860568d9ad7e1487cd6567de76e0325"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ab738c65b8fa93b2166002dce928aca27">null</a> = -1
-, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a2e6ad92071d7c5eed4b6ab6ddccb9d16">u</a> = 0
-, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a5d1dca5f1979361c8219d60c365ca922">v</a> = 1
-, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325abd1c55aaa78d7bcedd3a0e21005f2955">t</a> = 2
-, <br />
-&#160;&#160;<a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a40bfe6bb7d655e928ae9659acd35b8c4">s</a> = 3
-, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a6336bc425d2abd84d90f925fc32d358a">ubar</a>
-, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a21bc8b125d8054e031f2dab527df5945">vbar</a>
-, <a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325a63be12014785e028dafaa0104fad32fc">zeta</a>
-, <br />
-&#160;&#160;<a class="el" href="namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102">NumTypes</a>
-<br />
- }</td></tr>
-<tr class="separator:a0860568d9ad7e1487cd6567de76e0325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9c5ab74bf70d010c8f5be9b5da996142" id="r_a9c5ab74bf70d010c8f5be9b5da996142"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBdyVars.html#a9c5ab74bf70d010c8f5be9b5da996142">cons</a> (int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">icomp</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="separator:a9c5ab74bf70d010c8f5be9b5da996142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59fd7497b3057d5c15fea9c2b950d8c" id="r_af59fd7497b3057d5c15fea9c2b950d8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBdyVars.html#af59fd7497b3057d5c15fea9c2b950d8c">ubar</a> (int ncons) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="separator:af59fd7497b3057d5c15fea9c2b950d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c8cae1fd45b4fed7bbb41914dcb8fa" id="r_a92c8cae1fd45b4fed7bbb41914dcb8fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBdyVars.html#a92c8cae1fd45b4fed7bbb41914dcb8fa">vbar</a> (int ncons) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="separator:a92c8cae1fd45b4fed7bbb41914dcb8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabae76684c0900a7caf5a2b855b72be" id="r_acabae76684c0900a7caf5a2b855b72be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBdyVars.html#acabae76684c0900a7caf5a2b855b72be">zeta</a> (int ncons) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="separator:acabae76684c0900a7caf5a2b855b72be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a55be366629e968c68d69bdecf0511" id="r_a32a55be366629e968c68d69bdecf0511"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBdyVars.html#a32a55be366629e968c68d69bdecf0511">NumTypes</a> (int ncons) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="separator:a32a55be366629e968c68d69bdecf0511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abf968958bfb760157019898d4a9c89f5" id="r_abf968958bfb760157019898d4a9c89f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">static</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">constexpr</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBdyVars.html#abf968958bfb760157019898d4a9c89f5">null</a> = -1</td></tr>
+<tr class="separator:abf968958bfb760157019898d4a9c89f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e35fe055c193e7553b0c7bd14431d43" id="r_a0e35fe055c193e7553b0c7bd14431d43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">static</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">constexpr</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBdyVars.html#a0e35fe055c193e7553b0c7bd14431d43">u</a> = 0</td></tr>
+<tr class="separator:a0e35fe055c193e7553b0c7bd14431d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8b096afed3b8316768766e0b7b9716" id="r_a6b8b096afed3b8316768766e0b7b9716"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">static</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">constexpr</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBdyVars.html#a6b8b096afed3b8316768766e0b7b9716">v</a> = 1</td></tr>
+<tr class="separator:a6b8b096afed3b8316768766e0b7b9716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039d70d5f559cc987f7b872f83187877" id="r_a039d70d5f559cc987f7b872f83187877"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">static</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">constexpr</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBdyVars.html#a039d70d5f559cc987f7b872f83187877">t</a> = 2</td></tr>
+<tr class="memdesc:a039d70d5f559cc987f7b872f83187877"><td class="mdescLeft">&#160;</td><td class="mdescRight">cons component Temp_comp  <br /></td></tr>
+<tr class="separator:a039d70d5f559cc987f7b872f83187877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a763ff9ff4742613e7675726266783" id="r_ab3a763ff9ff4742613e7675726266783"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">static</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">constexpr</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBdyVars.html#ab3a763ff9ff4742613e7675726266783">s</a> = 3</td></tr>
+<tr class="memdesc:ab3a763ff9ff4742613e7675726266783"><td class="mdescLeft">&#160;</td><td class="mdescRight">cons component Salt_comp  <br /></td></tr>
+<tr class="separator:ab3a763ff9ff4742613e7675726266783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>These are only for the variables read in from netcdf boundary condition files. </p>
-<p>Note that the salt component must be one greater than the temp component for the logic in fill_from_bdyfiles to work </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a0860568d9ad7e1487cd6567de76e0325" name="a0860568d9ad7e1487cd6567de76e0325"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0860568d9ad7e1487cd6567de76e0325">&#9670;&#160;</a></span>anonymous enum</h2>
+<p>The cell-centered tracers occupy a contiguous block of slots starting at t, laid out in the same order as the components of the cons MultiFab. So slot t is temp, slot t+1 is salt, and slot t+n is cons component n for every additional scalar (passive tracers, biology tracers). Use cons(icomp) rather than hardcoding this, and note that the logic in fill_from_bdyfiles relies on the block being contiguous and in component order.</p>
+<p>Like <a class="el" href="namespaceBCVars.html" title="Boundary fill types.">BCVars</a>, everything above the tracer block is a function of ncons rather than a compile-time constant. With ncons == 2 these reduce to the historical fixed values (ubar 4, vbar 5, zeta 6, NumTypes 7). </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a9c5ab74bf70d010c8f5be9b5da996142" name="a9c5ab74bf70d010c8f5be9b5da996142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5ab74bf70d010c8f5be9b5da996142">&#9670;&#160;</a></span>cons()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">int BdyVars::cons </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>icomp</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0860568d9ad7e1487cd6567de76e0325ab738c65b8fa93b2166002dce928aca27" name="a0860568d9ad7e1487cd6567de76e0325ab738c65b8fa93b2166002dce928aca27"></a>null&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0860568d9ad7e1487cd6567de76e0325a2e6ad92071d7c5eed4b6ab6ddccb9d16" name="a0860568d9ad7e1487cd6567de76e0325a2e6ad92071d7c5eed4b6ab6ddccb9d16"></a>u&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0860568d9ad7e1487cd6567de76e0325a5d1dca5f1979361c8219d60c365ca922" name="a0860568d9ad7e1487cd6567de76e0325a5d1dca5f1979361c8219d60c365ca922"></a>v&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0860568d9ad7e1487cd6567de76e0325abd1c55aaa78d7bcedd3a0e21005f2955" name="a0860568d9ad7e1487cd6567de76e0325abd1c55aaa78d7bcedd3a0e21005f2955"></a>t&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0860568d9ad7e1487cd6567de76e0325a40bfe6bb7d655e928ae9659acd35b8c4" name="a0860568d9ad7e1487cd6567de76e0325a40bfe6bb7d655e928ae9659acd35b8c4"></a>s&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0860568d9ad7e1487cd6567de76e0325a6336bc425d2abd84d90f925fc32d358a" name="a0860568d9ad7e1487cd6567de76e0325a6336bc425d2abd84d90f925fc32d358a"></a>ubar&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0860568d9ad7e1487cd6567de76e0325a21bc8b125d8054e031f2dab527df5945" name="a0860568d9ad7e1487cd6567de76e0325a21bc8b125d8054e031f2dab527df5945"></a>vbar&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0860568d9ad7e1487cd6567de76e0325a63be12014785e028dafaa0104fad32fc" name="a0860568d9ad7e1487cd6567de76e0325a63be12014785e028dafaa0104fad32fc"></a>zeta&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102" name="a0860568d9ad7e1487cd6567de76e0325ae8976e37b454253c3ce1e065ff1f6102"></a>NumTypes&#160;</td><td class="fielddoc"></td></tr>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
 </table>
+</div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00050">50</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00082">82</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00035">REMORA::advance_3d()</a>, <a class="el" href="REMORA_8H_source.html#l01303">REMORA::bdy_cons()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">REMORA::fill_from_bdyfiles()</a>, <a class="el" href="REMORA__init__bcs_8cpp_source.html#l00009">REMORA::init_bcs()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00794">REMORA::init_bdry_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00276">REMORA::init_clim_nudg_coeff()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00927">REMORA::init_clim_nudg_coeff_from_netcdf()</a>, <a class="el" href="REMORA__DataStruct_8H_source.html#l00128">SolverChoice::init_params()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00570">REMORA::init_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l01665">REMORA::ReadParameters()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00419">REMORA::resize_stuff()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceBdyVars_a9c5ab74bf70d010c8f5be9b5da996142_cgraph.png" border="0" usemap="#anamespaceBdyVars_a9c5ab74bf70d010c8f5be9b5da996142_cgraph" alt=""/></div>
+<map name="anamespaceBdyVars_a9c5ab74bf70d010c8f5be9b5da996142_cgraph" id="anamespaceBdyVars_a9c5ab74bf70d010c8f5be9b5da996142_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,119,31"/>
+<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="167,5,229,31"/>
+<area shape="poly" title=" " alt="" coords="119,15,153,15,153,21,119,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceBdyVars_a9c5ab74bf70d010c8f5be9b5da996142_icgraph.png" border="0" usemap="#anamespaceBdyVars_a9c5ab74bf70d010c8f5be9b5da996142_icgraph" alt=""/></div>
+<map name="anamespaceBdyVars_a9c5ab74bf70d010c8f5be9b5da996142_icgraph" id="anamespaceBdyVars_a9c5ab74bf70d010c8f5be9b5da996142_icgraph">
+<area shape="rect" title=" " alt="" coords="2097,425,2211,450"/>
+<area shape="rect" href="classREMORA.html#a28c2e36d1783550310f26d0e9ba8cdca" title="Advance the 3D variables." alt="" coords="1056,1437,1221,1462"/>
+<area shape="poly" title=" " alt="" coords="2155,464,2151,532,2142,633,2124,758,2094,899,2050,1048,2022,1123,1989,1196,1951,1267,1908,1334,1859,1397,1804,1454,1743,1505,1684,1540,1626,1560,1566,1569,1505,1568,1439,1559,1287,1526,1250,1514,1213,1497,1157,1465,1160,1460,1216,1493,1251,1509,1289,1521,1440,1554,1505,1563,1566,1564,1624,1555,1682,1535,1740,1501,1801,1450,1855,1394,1904,1331,1947,1264,1984,1194,2017,1121,2045,1046,2089,898,2118,757,2136,632,2146,531,2149,464"/>
+<area shape="rect" href="classREMORA.html#ace424ba48e0499469edc920ab2da2200" title="Accessors for the ncons&#45;dependent entries of BdyVars." alt="" coords="1876,209,2024,234"/>
+<area shape="poly" title=" " alt="" coords="2142,413,2129,378,2109,335,2082,293,2048,256,2013,237,2015,232,2051,252,2086,289,2114,333,2134,376,2147,411"/>
+<area shape="rect" href="classREMORA.html#a425c2c168db69fb8ba98c6221bc1ddc2" title="Fill boundary data from netcdf file." alt="" coords="1851,476,2049,501"/>
+<area shape="poly" title=" " alt="" coords="2090,456,2002,478,2001,473,2088,451"/>
+<area shape="rect" href="classREMORA.html#a0fb1bee6b7c41edde86f488eeb440478" title="Read in boundary parameters from input file and set up data structures." alt="" coords="1881,1589,2019,1614"/>
+<area shape="poly" title=" " alt="" coords="2155,464,2147,692,2128,1044,2115,1223,2097,1382,2077,1504,2065,1545,2051,1571,2037,1585,2020,1593,2018,1589,2034,1580,2047,1568,2060,1543,2071,1503,2092,1382,2109,1223,2123,1044,2141,692,2149,464"/>
+<area shape="rect" href="classREMORA.html#aa7e9745d31b7b0e00a5eaeab4ecce17c" title="Boundary data initialization from NetCDF file." alt="" coords="1604,148,1787,188"/>
+<area shape="poly" title=" " alt="" coords="2136,415,2100,364,2075,337,2048,315,1997,287,1953,275,1907,266,1850,248,1732,191,1734,186,1852,243,1908,261,1954,270,1999,282,2051,310,2079,334,2104,361,2141,412"/>
+<area shape="rect" href="classREMORA.html#ae3f7a29a7dddee62d1ecd454a8b29d7e" title="Wrapper to initialize climatology nudging coefficient." alt="" coords="1604,303,1787,343"/>
+<area shape="poly" title=" " alt="" coords="2132,416,2096,381,2073,364,2048,351,1983,330,1914,320,1847,316,1787,317,1787,312,1847,311,1914,314,1984,325,2050,346,2076,359,2099,377,2135,412"/>
+<area shape="rect" href="classREMORA.html#ac0aef7d5a2ff0b707ce3feaee008aea4" title="Climatology nudging coefficient initialization from NetCDF file." alt="" coords="1859,360,2041,400"/>
+<area shape="poly" title=" " alt="" coords="2094,424,2021,403,2022,398,2096,419"/>
+<area shape="rect" href="structSolverChoice.html#a990b46996841ced5a04de68c208a20ba" title="read in and initialize parameters" alt="" coords="1882,1639,2018,1679"/>
+<area shape="poly" title=" " alt="" coords="2155,464,2147,703,2130,1072,2116,1261,2099,1428,2077,1556,2065,1600,2051,1627,2037,1641,2019,1650,2017,1646,2034,1637,2047,1624,2060,1598,2072,1555,2093,1427,2111,1260,2124,1072,2142,702,2149,464"/>
+<area shape="rect" href="classREMORA.html#aae1b7a86e03c93dd71e2d68c700d2512" title="read in some parameters from inputs file" alt="" coords="1598,1672,1793,1697"/>
+<area shape="poly" title=" " alt="" coords="2155,464,2152,717,2138,1111,2126,1311,2107,1488,2096,1561,2083,1621,2068,1666,2051,1693,2014,1719,1971,1733,1926,1739,1880,1738,1834,1731,1793,1721,1726,1700,1728,1695,1794,1716,1835,1726,1880,1732,1925,1734,1970,1728,2011,1714,2047,1689,2063,1664,2078,1620,2091,1560,2102,1487,2120,1311,2133,1110,2147,717,2150,464"/>
+<area shape="rect" href="classREMORA.html#a98ad64e4a964e4748ebae07a26405286" title="Allocate MultiFabs for state and evolution variables." alt="" coords="1067,530,1211,556"/>
+<area shape="poly" title=" " alt="" coords="2084,441,1862,446,1726,454,1588,466,1480,480,1372,498,1198,533,1197,528,1371,493,1479,475,1588,460,1725,448,1862,441,2083,435"/>
+<area shape="rect" href="classREMORA.html#aa91decb04550c58b177e6a18b9d70f0d" title="Resize variable containers to accommodate data on levels 0 to max_lev." alt="" coords="1057,8,1220,33"/>
+<area shape="poly" title=" " alt="" coords="2147,412,2137,366,2119,308,2090,248,2070,222,2048,198,2000,162,1950,131,1896,104,1841,81,1725,46,1608,24,1494,12,1389,8,1296,10,1220,14,1220,9,1295,4,1389,3,1495,7,1609,19,1726,41,1842,76,1898,99,1952,126,2003,158,2051,194,2075,218,2094,246,2124,306,2142,364,2152,411"/>
+<area shape="rect" href="classREMORA.html#a805863a28beceb70cefd0b6f050d8c2d" title="3D advance on a single level" alt="" coords="785,1324,975,1349"/>
+<area shape="poly" title=" " alt="" coords="1095,1434,909,1352,911,1347,1097,1429"/>
+<area shape="rect" href="classREMORA.html#a9a67a95c1bc1f744268a245f4ca4c446" title="advance a single level for a single time step" alt="" coords="542,1257,685,1282"/>
+<area shape="poly" title=" " alt="" coords="815,1323,665,1285,666,1280,816,1318"/>
+<area shape="rect" href="classREMORA.html#acf259537f6d9c23a0edcf6641381a9d0" title="advance all levels by dt, loops over finer levels" alt="" coords="531,1189,696,1214"/>
+<area shape="poly" title=" " alt="" coords="846,1318,789,1283,722,1247,650,1217,652,1212,724,1242,792,1279,849,1314"/>
+<area shape="rect" href="classREMORA.html#ac88ed7a3bf97eec4dca7f70126a0600d" title="advance a level by dt, includes a recursive call for finer levels" alt="" coords="275,1257,421,1282"/>
+<area shape="poly" title=" " alt="" coords="529,1272,421,1272,421,1267,529,1267"/>
+<area shape="poly" title=" " alt="" coords="392,1248,389,1243,382,1239,348,1236,321,1238,307,1243,304,1248,312,1255,308,1259,299,1249,304,1239,320,1233,348,1230,383,1234,393,1239,397,1245"/>
+<area shape="rect" href="classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e" title="Advance solution to final time." alt="" coords="33,1282,164,1308"/>
+<area shape="poly" title=" " alt="" coords="262,1281,164,1291,164,1286,261,1276"/>
+<area shape="rect" href="classREMORA.html#a429a2087fc3b9b964e573b672b4e17f2" title=" " alt="" coords="5,1233,192,1258"/>
+<area shape="poly" title=" " alt="" coords="261,1264,192,1257,193,1252,261,1259"/>
+<area shape="poly" title=" " alt="" coords="556,1221,506,1247,492,1259,483,1272,474,1285,457,1296,418,1310,378,1318,296,1324,220,1320,156,1310,157,1305,220,1315,296,1319,377,1313,417,1304,455,1291,470,1281,479,1269,488,1256,502,1242,554,1217"/>
+<area shape="poly" title=" " alt="" coords="517,1206,385,1211,240,1223,161,1236,160,1230,240,1218,385,1206,517,1200"/>
+<area shape="poly" title=" " alt="" coords="1951,515,1946,586,1935,691,1913,821,1879,965,1855,1039,1827,1113,1795,1186,1756,1256,1712,1322,1662,1383,1605,1437,1541,1484,1493,1506,1441,1518,1388,1519,1334,1514,1284,1504,1238,1491,1167,1465,1169,1460,1239,1486,1285,1499,1335,1509,1388,1514,1441,1512,1491,1501,1539,1479,1602,1433,1658,1379,1708,1319,1752,1253,1790,1183,1823,1111,1850,1037,1874,963,1908,820,1930,691,1941,586,1945,515"/>
+<area shape="rect" href="classREMORA.html#a17b145e55ffc268dc25b512ee0312a93" title="fill an entire multifab by interpolating from the coarser level, explicitly specifying interpolator t..." alt="" coords="1588,476,1803,501"/>
+<area shape="poly" title=" " alt="" coords="1837,491,1803,491,1803,486,1837,486"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1625,896,1766,921"/>
+<area shape="poly" title=" " alt="" coords="1936,514,1707,897,1702,894,1932,512"/>
+<area shape="rect" href="classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0" title="Sea&#45;surface height data initialization from NetCDF file." alt="" coords="1323,159,1505,199"/>
+<area shape="poly" title=" " alt="" coords="1885,475,1806,452,1717,423,1638,391,1608,374,1586,357,1572,338,1565,319,1562,282,1559,247,1552,230,1538,213,1522,201,1504,193,1506,188,1525,197,1542,209,1557,227,1564,246,1568,282,1570,318,1577,336,1590,353,1611,369,1641,386,1719,418,1807,447,1886,470"/>
+<area shape="rect" href="classREMORA.html#a783d5be4d993d2ae820e412a9d7b43f1" title="fill an entire multifab by interpolating from the coarser level" alt="" coords="1321,273,1507,298"/>
+<area shape="poly" title=" " alt="" coords="1647,470,1615,445,1586,415,1571,392,1564,370,1556,351,1538,332,1519,320,1498,312,1456,301,1457,296,1500,307,1522,315,1542,328,1560,348,1569,368,1576,389,1590,412,1619,441,1650,466"/>
+<area shape="rect" href="classREMORA.html#ab842fb8ede1422c9cb99d2f7c1848986" title="fill an entire multifab by interpolating from the coarser level using the piecewise constant interpol..." alt="" coords="1037,580,1240,605"/>
+<area shape="poly" title=" " alt="" coords="1613,506,1208,582,1207,577,1612,501"/>
+<area shape="poly" title=" " alt="" coords="1522,292,1542,304,1560,324,1569,344,1576,365,1590,388,1642,437,1686,474,1683,478,1638,441,1586,391,1571,368,1564,346,1556,327,1538,308,1519,296"/>
+<area shape="rect" href="classREMORA.html#a4010e1137df2630bdd56327fad98e4a1" title="Init (NOT restart or regrid)" alt="" coords="809,272,951,297"/>
+<area shape="poly" title=" " alt="" coords="1324,274,1240,264,1139,260,1038,264,952,275,951,269,1037,259,1139,254,1240,259,1325,268"/>
+<area shape="rect" href="classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe" title="Make a new level using provided BoxArray and DistributionMapping and fill with interpolated coarse le..." alt="" coords="771,464,989,504"/>
+<area shape="poly" title=" " alt="" coords="1322,274,1257,270,1184,272,1109,283,1073,294,1039,308,1013,323,989,342,948,385,916,429,894,466,889,463,911,426,944,382,985,338,1010,319,1036,303,1071,289,1108,278,1183,267,1257,265,1323,269"/>
+<area shape="rect" href="classREMORA.html#a43ebfe013ec1e2d1d0a8faaba3ebbbb6" title="Initialize Coriolis factor from file or analytic." alt="" coords="1058,432,1219,457"/>
+<area shape="poly" title=" " alt="" coords="1392,310,1328,366,1286,396,1241,421,1207,434,1206,429,1239,417,1283,391,1324,362,1389,306"/>
+<area shape="rect" href="classREMORA.html#a8bea1c2033283ac78b162e0de2d11c7e" title="Initialize zeta from file or analytic." alt="" coords="1067,166,1210,192"/>
+<area shape="poly" title=" " alt="" coords="1306,272,1287,263,1271,251,1262,238,1253,225,1239,213,1195,194,1197,189,1241,209,1257,222,1266,235,1275,247,1289,258,1309,267"/>
+<area shape="rect" href="classREMORA.html#ad64e9b244603ae920ed761821753a71f" title="Make a new level from scratch using provided BoxArray and DistributionMapping. Only used during initi..." alt="" coords="504,264,723,304"/>
+<area shape="poly" title=" " alt="" coords="795,287,723,287,723,282,795,282"/>
+<area shape="rect" href="classREMORA.html#a316a6db4c0b9a218e834c054d8c8f437" title="read checkpoint file from disk" alt="" coords="240,272,456,297"/>
+<area shape="poly" title=" " alt="" coords="490,287,456,287,456,282,490,282"/>
+<area shape="poly" title=" " alt="" coords="1055,430,1036,421,990,392,949,358,891,299,894,296,952,354,993,388,1039,417,1057,425"/>
+<area shape="poly" title=" " alt="" coords="1045,462,990,470,989,465,1044,456"/>
+<area shape="rect" href="classREMORA.html#a73eb64a4ad24a247692981eae835caf2" title="Remake an existing level using provided BoxArray and DistributionMapping and fill with existing fine ..." alt="" coords="793,580,967,605"/>
+<area shape="poly" title=" " alt="" coords="1052,464,1039,471,1024,481,1014,492,991,518,945,554,903,582,900,577,941,550,988,514,1010,489,1020,477,1036,466,1050,459"/>
+<area shape="poly" title=" " alt="" coords="1081,199,1038,214,966,245,907,274,905,269,964,240,1036,209,1079,194"/>
+<area shape="poly" title=" " alt="" coords="1063,579,1036,570,969,539,912,507,915,502,972,534,1038,565,1065,573"/>
+<area shape="poly" title=" " alt="" coords="1024,595,968,595,968,590,1024,590"/>
+<area shape="poly" title=" " alt="" coords="1693,935,1674,1043,1642,1191,1621,1267,1597,1334,1571,1389,1557,1410,1542,1425,1500,1451,1454,1469,1406,1479,1357,1483,1264,1478,1188,1465,1189,1460,1264,1473,1357,1478,1405,1474,1453,1464,1498,1447,1538,1421,1553,1406,1566,1386,1593,1332,1616,1265,1637,1190,1669,1042,1688,934"/>
+<area shape="poly" title=" " alt="" coords="1696,935,1688,1012,1679,1062,1665,1116,1645,1171,1619,1224,1585,1271,1541,1311,1498,1331,1438,1345,1365,1353,1285,1357,1118,1356,975,1347,975,1342,1119,1350,1285,1352,1365,1348,1437,1340,1496,1326,1539,1306,1581,1268,1614,1221,1640,1169,1660,1115,1673,1061,1683,1012,1690,935"/>
+<area shape="poly" title=" " alt="" coords="1611,916,1460,931,1374,944,1289,962,1191,988,1092,1018,904,1084,747,1147,644,1191,642,1187,745,1142,902,1079,1090,1013,1189,982,1287,956,1373,939,1460,926,1611,911"/>
+<area shape="poly" title=" " alt="" coords="1688,882,1675,815,1649,724,1629,676,1605,629,1575,585,1538,548,1502,521,1463,500,1421,483,1378,470,1294,454,1219,447,1220,442,1294,448,1380,465,1423,478,1465,495,1505,517,1542,544,1579,582,1609,626,1634,673,1654,722,1681,813,1693,881"/>
+<area shape="poly" title=" " alt="" coords="1611,914,1540,912,1458,905,1371,891,1287,867,1222,840,1159,806,1044,731,952,659,894,608,897,604,955,654,1047,726,1162,802,1225,835,1289,862,1372,885,1458,899,1540,906,1611,908"/>
+<area shape="rect" href="classREMORA.html#ab987b72e13f0dc83db716c5b0decee29" title="Perform a 2D predictor (predictor_2d_step=True) or corrector (predictor_2d_step=False) step." alt="" coords="1331,1021,1497,1046"/>
+<area shape="poly" title=" " alt="" coords="1670,932,1613,972,1578,993,1541,1011,1498,1024,1496,1019,1539,1006,1575,989,1610,968,1666,928"/>
+<area shape="rect" href="classREMORA.html#a783db1b357863608197eccb6fe7d4c52" title="Tag cells for refinement." alt="" coords="1345,1070,1483,1096"/>
+<area shape="poly" title=" " alt="" coords="1679,934,1623,998,1584,1032,1541,1060,1513,1072,1484,1079,1483,1074,1512,1067,1539,1055,1581,1028,1619,994,1675,931"/>
+<area shape="rect" href="classREMORA.html#afded54aef57ded67542a888a911b67b0" title="Corrector step for GLS calculation." alt="" coords="1329,1386,1499,1412"/>
+<area shape="poly" title=" " alt="" coords="1696,935,1689,1019,1680,1075,1667,1136,1647,1199,1621,1261,1586,1319,1542,1369,1522,1383,1501,1392,1499,1387,1520,1378,1538,1365,1582,1316,1616,1258,1642,1197,1662,1134,1675,1074,1684,1018,1691,935"/>
+<area shape="rect" href="classREMORA.html#a6122490d3208c33fce7fc1896baece42" title="Prestep for GLS calculation." alt="" coords="1333,1234,1495,1260"/>
+<area shape="poly" title=" " alt="" coords="1692,936,1677,996,1649,1074,1629,1116,1604,1156,1576,1192,1542,1224,1520,1236,1497,1244,1495,1239,1518,1232,1538,1220,1572,1189,1600,1153,1624,1113,1644,1072,1672,994,1687,934"/>
+<area shape="rect" href="classREMORA.html#ad9ee5aba5b9cb8e020e6cbc8ff3cff74" title="Set everything up for a step on a level." alt="" coords="1059,1189,1218,1214"/>
+<area shape="poly" title=" " alt="" coords="1695,935,1685,1006,1661,1101,1641,1150,1615,1197,1582,1239,1542,1273,1517,1287,1491,1296,1437,1305,1381,1302,1326,1290,1274,1273,1227,1253,1159,1217,1162,1212,1230,1248,1276,1268,1328,1285,1382,1297,1437,1300,1490,1291,1515,1282,1538,1269,1578,1235,1610,1194,1636,1148,1655,1099,1680,1005,1690,934"/>
+<area shape="rect" href="classREMORA.html#a0ef7e1a0115224b728f17587feeebe9f" title="Bathymetry data initialization from NetCDF file." alt="" coords="1319,627,1509,667"/>
+<area shape="poly" title=" " alt="" coords="1682,884,1661,839,1631,784,1589,728,1565,703,1539,681,1509,666,1511,661,1541,677,1569,699,1594,725,1635,781,1666,837,1687,882"/>
+<area shape="rect" href="classREMORA.html#a28ead55a72d9a23865ce34637ec1fd22" title="Grid variable initialization from NetCDF file." alt="" coords="1327,691,1501,731"/>
+<area shape="poly" title=" " alt="" coords="1676,885,1621,815,1582,777,1539,745,1501,729,1503,724,1541,741,1586,773,1625,812,1680,882"/>
+<area shape="poly" title=" " alt="" coords="1683,883,1639,727,1585,513,1578,445,1573,356,1562,271,1552,237,1538,213,1522,200,1504,191,1506,186,1525,195,1542,209,1557,235,1567,269,1578,355,1584,444,1591,512,1644,726,1689,882"/>
+<area shape="rect" href="classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089" title="Initialize multilevel data." alt="" coords="1345,1589,1483,1614"/>
+<area shape="poly" title=" " alt="" coords="1694,935,1681,1028,1654,1163,1634,1240,1609,1319,1579,1396,1542,1470,1517,1507,1487,1542,1434,1591,1430,1587,1483,1538,1513,1504,1538,1467,1574,1394,1604,1317,1629,1239,1649,1162,1676,1027,1689,935"/>
+<area shape="rect" href="classREMORA.html#ab9d2fbd8ac171ab10eb09ff189cbb69b" title="Set 2D momentum arrays from 3D momentum." alt="" coords="1053,382,1224,408"/>
+<area shape="poly" title=" " alt="" coords="1690,882,1682,803,1673,751,1659,695,1640,636,1614,580,1580,527,1538,482,1504,457,1465,437,1424,421,1382,409,1299,396,1224,393,1224,388,1299,391,1383,404,1426,416,1467,432,1506,452,1542,478,1584,524,1618,577,1644,634,1664,693,1678,750,1687,802,1696,882"/>
+<area shape="rect" href="classREMORA.html#a816b9966899d512c4b24b6955d8ec8fc" title="Set vertical mixing coefficients from analytic." alt="" coords="1311,1120,1517,1145"/>
+<area shape="poly" title=" " alt="" coords="1684,935,1663,974,1631,1022,1591,1070,1541,1109,1514,1122,1512,1117,1539,1105,1587,1066,1627,1018,1658,971,1680,932"/>
+<area shape="rect" href="classREMORA.html#aed6a5027f2c5437fc36513e666e387b3" title="Copy over bathymetry data that has been averaged down from high resolution input netcdf file." alt="" coords="1043,630,1234,670"/>
+<area shape="poly" title=" " alt="" coords="1638,894,1539,867,1467,854,1409,849,1353,839,1322,827,1287,809,1243,778,1204,740,1151,672,1155,669,1208,737,1246,774,1289,805,1324,822,1354,834,1410,844,1468,849,1541,862,1640,889"/>
+<area shape="rect" href="classREMORA.html#a026f1db4725425f90217b0369cde8f77" title="Set pm/pn by averaging down from higher&#45;resolution grid." alt="" coords="1327,755,1501,795"/>
+<area shape="poly" title=" " alt="" coords="1664,890,1607,853,1539,816,1490,798,1492,793,1541,811,1610,848,1666,885"/>
+<area shape="rect" href="classREMORA.html#ac61ff34983f1636e08e957c5a2a0ddbc" title="Initialize horizontal mixing coefficients." alt="" coords="1051,481,1226,506"/>
+<area shape="poly" title=" " alt="" coords="1685,883,1668,828,1638,756,1596,681,1569,647,1538,617,1503,591,1464,569,1382,536,1299,515,1226,503,1227,498,1300,509,1383,531,1467,564,1506,587,1542,613,1573,644,1600,679,1643,754,1673,826,1690,882"/>
+<area shape="rect" href="classREMORA.html#ad8fd2803f421897e69c9085a62c565a3" title="Problem initialization from averaged&#45;down high resolution data." alt="" coords="1053,318,1224,358"/>
+<area shape="poly" title=" " alt="" coords="1685,883,1615,627,1572,492,1553,446,1538,421,1504,395,1466,375,1425,359,1383,348,1299,336,1224,334,1224,329,1299,331,1384,343,1427,354,1468,370,1507,391,1542,417,1558,443,1577,491,1621,625,1690,881"/>
+<area shape="rect" href="classREMORA.html#ae32769c0aa47ddd6e15f3b5866f9252a" title="Initialize or calculate surface momentum flux from file or analytic." alt="" coords="1335,972,1493,997"/>
+<area shape="poly" title=" " alt="" coords="1638,928,1541,955,1467,974,1466,969,1539,950,1637,922"/>
+<area shape="rect" href="classREMORA.html#a3a15e957a8ef57501e2fd6c09c86995b" title="Initialize or calculate wind speed and other surface state vars from file or analytic." alt="" coords="1333,1170,1495,1210"/>
+<area shape="poly" title=" " alt="" coords="1688,936,1668,984,1638,1044,1595,1106,1570,1134,1542,1159,1520,1171,1497,1180,1495,1175,1518,1166,1538,1154,1566,1130,1591,1103,1633,1041,1663,982,1683,934"/>
+<area shape="rect" href="classREMORA.html#a12983b13c375ea6f63393c3b41afe98a" title="Copy over zeta data that has been averaged down from high res." alt="" coords="1288,224,1540,249"/>
+<area shape="poly" title=" " alt="" coords="1684,883,1640,727,1585,513,1579,473,1578,437,1582,375,1581,347,1575,319,1562,291,1538,262,1524,251,1527,247,1542,258,1566,288,1580,317,1587,346,1587,375,1584,438,1585,473,1591,512,1645,726,1689,882"/>
+<area shape="poly" title=" " alt="" coords="1331,1417,1209,1440,1208,1434,1330,1412"/>
+<area shape="poly" title=" " alt="" coords="1322,1235,1216,1217,1217,1212,1323,1230"/>
+<area shape="poly" title=" " alt="" coords="1046,1216,685,1263,685,1258,1045,1211"/>
+<area shape="poly" title=" " alt="" coords="1046,1204,696,1204,696,1199,1046,1199"/>
+<area shape="poly" title=" " alt="" coords="1309,182,1210,182,1210,176,1309,176"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="1111,1589,1166,1614"/>
+<area shape="poly" title=" " alt="" coords="1331,1604,1166,1604,1166,1599,1331,1599"/>
+<area shape="poly" title=" " alt="" coords="1063,381,1036,372,959,335,899,299,902,295,962,330,1038,367,1065,376"/>
+<area shape="poly" title=" " alt="" coords="1332,1150,1289,1160,1180,1192,1179,1186,1287,1155,1331,1145"/>
+<area shape="poly" title=" " alt="" coords="1050,626,1036,619,1020,607,1010,595,987,569,909,507,912,503,991,565,1014,592,1024,603,1039,614,1053,622"/>
+<area shape="poly" title=" " alt="" coords="1034,629,937,608,939,603,1035,624"/>
+<area shape="poly" title=" " alt="" coords="1051,478,1036,471,984,429,941,380,907,334,886,299,891,296,912,331,945,377,988,425,1039,466,1053,474"/>
+<area shape="poly" title=" " alt="" coords="1037,493,989,491,990,486,1037,487"/>
+<area shape="poly" title=" " alt="" coords="1063,513,1038,520,964,552,905,582,903,577,962,547,1036,515,1061,507"/>
+<area shape="poly" title=" " alt="" coords="1039,320,942,300,943,295,1040,315"/>
+<area shape="poly" title=" " alt="" coords="1322,996,1289,1011,1263,1030,1239,1053,1197,1104,1167,1153,1148,1190,1143,1188,1162,1151,1193,1101,1235,1049,1259,1026,1287,1006,1320,992"/>
+<area shape="poly" title=" " alt="" coords="1319,1197,1218,1201,1218,1196,1319,1191"/>
+<area shape="poly" title=" " alt="" coords="1336,224,1287,214,1197,194,1199,189,1289,208,1337,218"/>
+<area shape="poly" title=" " alt="" coords="1867,1604,1484,1604,1484,1599,1867,1599"/>
+<area shape="poly" title=" " alt="" coords="1634,146,1517,107,1443,88,1363,75,1280,69,1196,72,1115,89,1076,103,1039,121,1021,137,1013,154,1005,174,991,197,945,241,902,274,898,270,941,237,987,193,1001,172,1008,152,1017,133,1036,117,1074,98,1113,84,1196,67,1280,63,1364,70,1444,83,1518,102,1635,141"/>
+<area shape="poly" title=" " alt="" coords="1665,294,1539,149,1493,135,1433,126,1364,121,1290,121,1216,124,1146,132,1085,143,1038,156,1023,164,1013,173,991,197,899,274,895,269,988,193,1010,170,1020,160,1036,151,1084,137,1145,127,1215,119,1290,115,1364,116,1433,120,1494,130,1541,145,1669,291"/>
+<area shape="poly" title=" " alt="" coords="1847,360,1784,346,1785,341,1848,355"/>
+<area shape="poly" title=" " alt="" coords="1869,1670,1793,1677,1793,1672,1868,1664"/>
+<area shape="rect" href="classREMORA.html#a8a16e552c794ae05498e4cb0a65399af" title=" " alt="" coords="1342,1696,1486,1721"/>
+<area shape="poly" title=" " alt="" coords="1584,1697,1486,1705,1486,1700,1584,1691"/>
+<area shape="rect" href="classREMORA.html#a2e6c44c76a0dca92869a64f7f8d06fac" title=" " alt="" coords="1342,1646,1486,1672"/>
+<area shape="poly" title=" " alt="" coords="1584,1677,1486,1668,1486,1663,1584,1672"/>
+<area shape="poly" title=" " alt="" coords="1053,560,988,564,914,561,839,548,803,535,769,519,739,497,712,471,668,411,637,351,619,305,624,303,642,349,673,408,716,467,742,493,772,514,805,530,841,542,915,556,988,559,1053,554"/>
+<area shape="poly" title=" " alt="" coords="1068,530,968,507,970,502,1069,525"/>
+<area shape="poly" title=" " alt="" coords="1059,561,948,582,947,577,1058,556"/>
+<area shape="poly" title=" " alt="" coords="1079,40,1038,55,923,109,812,169,648,266,645,262,809,164,921,105,1036,50,1078,35"/>
+<area shape="poly" title=" " alt="" coords="1118,45,1079,94,1040,155,1023,197,1015,231,1007,266,992,310,943,398,898,466,894,463,939,395,987,307,1002,265,1010,230,1018,195,1035,153,1074,91,1114,42"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a32a55be366629e968c68d69bdecf0511" name="a32a55be366629e968c68d69bdecf0511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a55be366629e968c68d69bdecf0511">&#9670;&#160;</a></span>NumTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BdyVars::NumTypes </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncons</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00086">86</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__DataStruct_8H_source.html#l00128">SolverChoice::init_params()</a>, <a class="el" href="REMORA_8H_source.html#l01307">REMORA::num_bdy_vars()</a>, and <a class="el" href="REMORA_8cpp_source.html#l01665">REMORA::ReadParameters()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceBdyVars_a32a55be366629e968c68d69bdecf0511_icgraph.png" border="0" usemap="#anamespaceBdyVars_a32a55be366629e968c68d69bdecf0511_icgraph" alt=""/></div>
+<map name="anamespaceBdyVars_a32a55be366629e968c68d69bdecf0511_icgraph" id="anamespaceBdyVars_a32a55be366629e968c68d69bdecf0511_icgraph">
+<area shape="rect" title=" " alt="" coords="1744,112,1895,137"/>
+<area shape="rect" href="structSolverChoice.html#a990b46996841ced5a04de68c208a20ba" title="read in and initialize parameters" alt="" coords="1537,47,1673,87"/>
+<area shape="poly" title=" " alt="" coords="1757,111,1672,88,1674,83,1759,106"/>
+<area shape="rect" href="classREMORA.html#aae1b7a86e03c93dd71e2d68c700d2512" title="read in some parameters from inputs file" alt="" coords="1271,55,1465,80"/>
+<area shape="poly" title=" " alt="" coords="1730,123,1626,115,1513,102,1418,83,1420,78,1514,97,1626,110,1731,118"/>
+<area shape="rect" href="classREMORA.html#a643af97dc825a2bf8445487935d5b53d" title=" " alt="" coords="1513,163,1696,188"/>
+<area shape="poly" title=" " alt="" coords="1752,143,1660,165,1658,160,1751,138"/>
+<area shape="poly" title=" " alt="" coords="1523,70,1466,70,1466,65,1523,65"/>
+<area shape="rect" href="classREMORA.html#a8a16e552c794ae05498e4cb0a65399af" title=" " alt="" coords="1041,5,1185,31"/>
+<area shape="poly" title=" " alt="" coords="1288,55,1179,33,1180,28,1289,49"/>
+<area shape="rect" href="classREMORA.html#a2e6c44c76a0dca92869a64f7f8d06fac" title=" " alt="" coords="1041,55,1185,80"/>
+<area shape="poly" title=" " alt="" coords="1257,70,1185,70,1185,65,1257,65"/>
+<area shape="rect" href="classREMORA.html#a0fb1bee6b7c41edde86f488eeb440478" title="Read in boundary parameters from input file and set up data structures." alt="" coords="778,105,915,131"/>
+<area shape="poly" title=" " alt="" coords="1545,162,1465,146,1311,130,1159,122,915,119,916,114,1159,117,1312,125,1466,141,1546,157"/>
+<area shape="rect" href="classREMORA.html#aa7e9745d31b7b0e00a5eaeab4ecce17c" title="Boundary data initialization from NetCDF file." alt="" coords="1277,155,1459,195"/>
+<area shape="poly" title=" " alt="" coords="1500,178,1459,178,1459,173,1500,173"/>
+<area shape="rect" href="classREMORA.html#aa91decb04550c58b177e6a18b9d70f0d" title="Resize variable containers to accommodate data on levels 0 to max_lev." alt="" coords="1287,220,1449,245"/>
+<area shape="poly" title=" " alt="" coords="1539,194,1422,223,1420,217,1538,189"/>
+<area shape="rect" href="classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089" title="Initialize multilevel data." alt="" coords="108,133,247,159"/>
+<area shape="poly" title=" " alt="" coords="764,124,247,146,247,140,764,119"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,133,60,159"/>
+<area shape="poly" title=" " alt="" coords="94,149,60,149,60,143,94,143"/>
+<area shape="rect" href="classREMORA.html#a4010e1137df2630bdd56327fad98e4a1" title="Init (NOT restart or regrid)" alt="" coords="1042,163,1185,188"/>
+<area shape="poly" title=" " alt="" coords="1263,178,1185,178,1185,173,1263,173"/>
+<area shape="rect" href="classREMORA.html#ad64e9b244603ae920ed761821753a71f" title="Make a new level from scratch using provided BoxArray and DistributionMapping. Only used during initi..." alt="" coords="737,155,956,195"/>
+<area shape="poly" title=" " alt="" coords="1028,178,956,178,956,173,1028,173"/>
+<area shape="rect" href="classREMORA.html#a316a6db4c0b9a218e834c054d8c8f437" title="read checkpoint file from disk" alt="" coords="473,160,689,185"/>
+<area shape="poly" title=" " alt="" coords="723,177,689,176,690,171,723,171"/>
+<area shape="rect" href="classREMORA.html#af82928444cae433cc744c0cf7427e8eb" title=" " alt="" coords="295,159,425,184"/>
+<area shape="poly" title=" " alt="" coords="460,175,426,174,426,169,460,169"/>
+<area shape="poly" title=" " alt="" coords="280,163,247,158,247,153,281,158"/>
+<area shape="poly" title=" " alt="" coords="1273,228,1004,202,956,195,956,190,1004,197,1274,223"/>
+<area shape="rect" href="classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe" title="Make a new level using provided BoxArray and DistributionMapping and fill with interpolated coarse le..." alt="" coords="1004,263,1223,303"/>
+<area shape="poly" title=" " alt="" coords="1290,251,1215,266,1214,261,1289,246"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af59fd7497b3057d5c15fea9c2b950d8c" name="af59fd7497b3057d5c15fea9c2b950d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59fd7497b3057d5c15fea9c2b950d8c">&#9670;&#160;</a></span>ubar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BdyVars::ubar </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncons</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00083">83</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l01304">REMORA::bdy_ubar()</a>, <a class="el" href="REMORA__DataStruct_8H_source.html#l00128">SolverChoice::init_params()</a>, and <a class="el" href="REMORA_8cpp_source.html#l01665">REMORA::ReadParameters()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceBdyVars_af59fd7497b3057d5c15fea9c2b950d8c_icgraph.png" border="0" usemap="#anamespaceBdyVars_af59fd7497b3057d5c15fea9c2b950d8c_icgraph" alt=""/></div>
+<map name="anamespaceBdyVars_af59fd7497b3057d5c15fea9c2b950d8c_icgraph" id="anamespaceBdyVars_af59fd7497b3057d5c15fea9c2b950d8c_icgraph">
+<area shape="rect" title=" " alt="" coords="1905,588,2017,613"/>
+<area shape="rect" href="classREMORA.html#ab1e1515a18ca5a6efb8a29537d9e76ea" title=" " alt="" coords="1711,340,1857,365"/>
+<area shape="poly" title=" " alt="" coords="1941,578,1792,367,1797,364,1945,575"/>
+<area shape="rect" href="structSolverChoice.html#a990b46996841ced5a04de68c208a20ba" title="read in and initialize parameters" alt="" coords="1716,638,1852,678"/>
+<area shape="poly" title=" " alt="" coords="1909,620,1847,641,1845,635,1907,615"/>
+<area shape="rect" href="classREMORA.html#aae1b7a86e03c93dd71e2d68c700d2512" title="read in some parameters from inputs file" alt="" coords="1468,645,1663,671"/>
+<area shape="poly" title=" " alt="" coords="1892,608,1805,616,1711,629,1618,648,1616,643,1710,623,1805,611,1891,603"/>
+<area shape="rect" href="classREMORA.html#ab987b72e13f0dc83db716c5b0decee29" title="Perform a 2D predictor (predictor_2d_step=True) or corrector (predictor_2d_step=False) step." alt="" coords="1483,107,1648,132"/>
+<area shape="poly" title=" " alt="" coords="1771,328,1755,290,1732,244,1700,197,1661,156,1642,144,1621,135,1623,130,1644,139,1664,152,1704,194,1736,241,1760,288,1776,326"/>
+<area shape="rect" href="classREMORA.html#a805863a28beceb70cefd0b6f050d8c2d" title="3D advance on a single level" alt="" coords="1216,45,1405,71"/>
+<area shape="poly" title=" " alt="" coords="1776,327,1766,276,1745,212,1730,179,1711,148,1688,120,1661,96,1630,78,1597,64,1525,48,1454,44,1391,48,1390,43,1454,39,1526,43,1598,59,1633,73,1664,92,1692,116,1715,145,1734,177,1750,210,1771,275,1782,326"/>
+<area shape="rect" href="classREMORA.html#a0fb1bee6b7c41edde86f488eeb440478" title="Read in boundary parameters from input file and set up data structures." alt="" coords="295,164,432,189"/>
+<area shape="poly" title=" " alt="" coords="1769,329,1752,298,1728,263,1698,229,1661,203,1613,181,1571,168,1532,162,1494,162,1414,169,1312,175,852,175,432,178,432,173,852,170,1312,170,1413,164,1494,156,1533,157,1572,163,1615,176,1664,198,1701,226,1732,260,1756,295,1773,326"/>
+<area shape="rect" href="classREMORA.html#aa7e9745d31b7b0e00a5eaeab4ecce17c" title="Boundary data initialization from NetCDF file." alt="" coords="1474,581,1657,621"/>
+<area shape="poly" title=" " alt="" coords="1778,379,1763,421,1739,472,1707,525,1664,571,1646,583,1643,578,1661,567,1703,522,1735,470,1758,419,1773,377"/>
+<area shape="rect" href="classREMORA.html#ae3f7a29a7dddee62d1ecd454a8b29d7e" title="Wrapper to initialize climatology nudging coefficient." alt="" coords="1219,477,1402,517"/>
+<area shape="poly" title=" " alt="" coords="1765,378,1722,419,1694,440,1664,456,1598,479,1529,493,1462,500,1402,502,1402,497,1462,495,1528,488,1596,474,1662,452,1691,435,1718,415,1761,374"/>
+<area shape="rect" href="classREMORA.html#ac0aef7d5a2ff0b707ce3feaee008aea4" title="Climatology nudging coefficient initialization from NetCDF file." alt="" coords="1474,517,1657,557"/>
+<area shape="poly" title=" " alt="" coords="1770,379,1727,438,1698,471,1664,500,1631,519,1628,514,1661,496,1694,467,1723,435,1766,375"/>
+<area shape="rect" href="classREMORA.html#a98ad64e4a964e4748ebae07a26405286" title="Allocate MultiFabs for state and evolution variables." alt="" coords="1493,315,1637,340"/>
+<area shape="poly" title=" " alt="" coords="1696,345,1637,338,1638,333,1697,340"/>
+<area shape="rect" href="classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe" title="Make a new level using provided BoxArray and DistributionMapping and fill with interpolated coarse le..." alt="" coords="1201,261,1420,301"/>
+<area shape="poly" title=" " alt="" coords="1746,336,1706,319,1662,305,1601,293,1537,286,1420,281,1420,275,1538,280,1601,288,1663,299,1708,314,1748,331"/>
+<area shape="rect" href="classREMORA.html#a73eb64a4ad24a247692981eae835caf2" title="Remake an existing level using provided BoxArray and DistributionMapping and fill with existing fine ..." alt="" coords="1223,376,1398,401"/>
+<area shape="poly" title=" " alt="" coords="1697,362,1398,385,1398,379,1696,357"/>
+<area shape="rect" href="classREMORA.html#aa91decb04550c58b177e6a18b9d70f0d" title="Resize variable containers to accommodate data on levels 0 to max_lev." alt="" coords="1484,213,1647,239"/>
+<area shape="poly" title=" " alt="" coords="1758,333,1715,296,1661,260,1615,241,1617,236,1664,256,1718,292,1761,328"/>
+<area shape="rect" href="classREMORA.html#ab9d2fbd8ac171ab10eb09ff189cbb69b" title="Set 2D momentum arrays from 3D momentum." alt="" coords="1480,416,1651,441"/>
+<area shape="poly" title=" " alt="" coords="1736,373,1664,399,1607,418,1605,413,1662,394,1735,368"/>
+<area shape="rect" href="classREMORA.html#a67b92f7c5b82933e953e447bdfc9074c" title="2D advance, one predictor/corrector step" alt="" coords="1228,95,1393,135"/>
+<area shape="poly" title=" " alt="" coords="1469,120,1394,119,1394,114,1469,115"/>
+<area shape="rect" href="classREMORA.html#a9a67a95c1bc1f744268a245f4ca4c446" title="advance a single level for a single time step" alt="" coords="1011,56,1153,81"/>
+<area shape="poly" title=" " alt="" coords="1214,98,1144,84,1145,79,1215,93"/>
+<area shape="rect" href="classREMORA.html#acf259537f6d9c23a0edcf6641381a9d0" title="advance all levels by dt, loops over finer levels" alt="" coords="771,5,936,31"/>
+<area shape="poly" title=" " alt="" coords="1214,128,1166,128,1113,124,1060,113,1009,95,993,83,984,70,976,56,961,44,935,33,937,28,964,40,980,53,989,67,997,79,1012,90,1061,108,1114,118,1166,123,1214,122"/>
+<area shape="rect" href="classREMORA.html#ac88ed7a3bf97eec4dca7f70126a0600d" title="advance a level by dt, includes a recursive call for finer levels" alt="" coords="780,79,927,104"/>
+<area shape="poly" title=" " alt="" coords="997,80,927,87,927,81,997,74"/>
+<area shape="poly" title=" " alt="" coords="894,69,883,61,853,57,829,59,816,64,814,70,820,77,816,80,808,70,813,60,828,54,853,52,885,56,897,65"/>
+<area shape="rect" href="classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e" title="Advance solution to final time." alt="" coords="523,73,653,99"/>
+<area shape="poly" title=" " alt="" coords="766,92,654,90,654,85,766,87"/>
+<area shape="rect" href="classREMORA.html#a429a2087fc3b9b964e573b672b4e17f2" title=" " alt="" coords="495,12,681,37"/>
+<area shape="poly" title=" " alt="" coords="788,78,639,40,640,35,790,73"/>
+<area shape="poly" title=" " alt="" coords="779,36,745,45,633,76,631,71,743,39,778,31"/>
+<area shape="poly" title=" " alt="" coords="757,23,682,25,681,20,757,18"/>
+<area shape="poly" title=" " alt="" coords="1202,66,1154,68,1153,63,1202,60"/>
+<area shape="poly" title=" " alt="" coords="1202,50,1153,46,936,27,937,22,1154,41,1202,45"/>
+<area shape="rect" href="classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089" title="Initialize multilevel data." alt="" coords="108,189,247,215"/>
+<area shape="poly" title=" " alt="" coords="281,191,247,195,246,190,281,185"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,189,60,215"/>
+<area shape="poly" title=" " alt="" coords="94,205,60,205,60,199,94,199"/>
+<area shape="rect" href="classREMORA.html#a4010e1137df2630bdd56327fad98e4a1" title="Init (NOT restart or regrid)" alt="" coords="1011,455,1153,480"/>
+<area shape="poly" title=" " alt="" coords="1460,591,1334,568,1267,552,1200,531,1146,507,1102,482,1105,478,1149,502,1202,526,1268,546,1336,563,1461,585"/>
+<area shape="rect" href="classREMORA.html#ad64e9b244603ae920ed761821753a71f" title="Make a new level from scratch using provided BoxArray and DistributionMapping. Only used during initi..." alt="" coords="744,263,963,303"/>
+<area shape="poly" title=" " alt="" coords="1052,448,878,306,881,302,1056,444"/>
+<area shape="rect" href="classREMORA.html#a316a6db4c0b9a218e834c054d8c8f437" title="read checkpoint file from disk" alt="" coords="480,213,696,239"/>
+<area shape="poly" title=" " alt="" coords="746,263,647,241,648,236,747,258"/>
+<area shape="rect" href="classREMORA.html#af82928444cae433cc744c0cf7427e8eb" title=" " alt="" coords="298,213,429,239"/>
+<area shape="poly" title=" " alt="" coords="466,229,429,229,429,223,466,223"/>
+<area shape="poly" title=" " alt="" coords="284,218,246,214,247,208,285,213"/>
+<area shape="poly" title=" " alt="" coords="1205,486,1153,479,1154,474,1206,481"/>
+<area shape="poly" title=" " alt="" coords="1460,523,1402,514,1402,508,1461,518"/>
+<area shape="poly" title=" " alt="" coords="1479,328,1201,315,962,296,963,291,1201,310,1479,322"/>
+<area shape="poly" title=" " alt="" coords="1481,315,1420,303,1421,298,1482,309"/>
+<area shape="poly" title=" " alt="" coords="1499,346,1365,379,1364,373,1498,341"/>
+<area shape="poly" title=" " alt="" coords="1470,234,1202,251,963,274,962,269,1201,246,1470,228"/>
+<area shape="poly" title=" " alt="" coords="1493,244,1405,263,1404,258,1492,239"/>
+<area shape="poly" title=" " alt="" coords="1467,439,1154,464,1153,459,1466,434"/>
+<area shape="poly" title=" " alt="" coords="1702,661,1663,661,1663,655,1702,655"/>
+<area shape="rect" href="classREMORA.html#a8a16e552c794ae05498e4cb0a65399af" title=" " alt="" coords="1239,620,1383,645"/>
+<area shape="poly" title=" " alt="" coords="1454,650,1383,642,1383,637,1455,644"/>
+<area shape="rect" href="classREMORA.html#a2e6c44c76a0dca92869a64f7f8d06fac" title=" " alt="" coords="1239,669,1383,695"/>
+<area shape="poly" title=" " alt="" coords="1455,671,1383,678,1383,673,1454,666"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a92c8cae1fd45b4fed7bbb41914dcb8fa" name="a92c8cae1fd45b4fed7bbb41914dcb8fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92c8cae1fd45b4fed7bbb41914dcb8fa">&#9670;&#160;</a></span>vbar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BdyVars::vbar </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncons</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00084">84</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l01305">REMORA::bdy_vbar()</a>, <a class="el" href="REMORA__DataStruct_8H_source.html#l00128">SolverChoice::init_params()</a>, and <a class="el" href="REMORA_8cpp_source.html#l01665">REMORA::ReadParameters()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceBdyVars_a92c8cae1fd45b4fed7bbb41914dcb8fa_icgraph.png" border="0" usemap="#anamespaceBdyVars_a92c8cae1fd45b4fed7bbb41914dcb8fa_icgraph" alt=""/></div>
+<map name="anamespaceBdyVars_a92c8cae1fd45b4fed7bbb41914dcb8fa_icgraph" id="anamespaceBdyVars_a92c8cae1fd45b4fed7bbb41914dcb8fa_icgraph">
+<area shape="rect" title=" " alt="" coords="1905,588,2017,613"/>
+<area shape="rect" href="classREMORA.html#aa1bc52b128c9e926bf0ef9da217fb23b" title=" " alt="" coords="1711,340,1857,365"/>
+<area shape="poly" title=" " alt="" coords="1941,578,1792,367,1797,364,1945,575"/>
+<area shape="rect" href="structSolverChoice.html#a990b46996841ced5a04de68c208a20ba" title="read in and initialize parameters" alt="" coords="1716,638,1852,678"/>
+<area shape="poly" title=" " alt="" coords="1909,620,1847,641,1845,635,1907,615"/>
+<area shape="rect" href="classREMORA.html#aae1b7a86e03c93dd71e2d68c700d2512" title="read in some parameters from inputs file" alt="" coords="1468,645,1663,671"/>
+<area shape="poly" title=" " alt="" coords="1892,608,1805,616,1711,629,1618,648,1616,643,1710,623,1805,611,1891,603"/>
+<area shape="rect" href="classREMORA.html#ab987b72e13f0dc83db716c5b0decee29" title="Perform a 2D predictor (predictor_2d_step=True) or corrector (predictor_2d_step=False) step." alt="" coords="1483,107,1648,132"/>
+<area shape="poly" title=" " alt="" coords="1771,328,1755,290,1732,244,1700,197,1661,156,1642,144,1621,135,1623,130,1644,139,1664,152,1704,194,1736,241,1760,288,1776,326"/>
+<area shape="rect" href="classREMORA.html#a805863a28beceb70cefd0b6f050d8c2d" title="3D advance on a single level" alt="" coords="1216,45,1405,71"/>
+<area shape="poly" title=" " alt="" coords="1776,327,1766,276,1745,212,1730,179,1711,148,1688,120,1661,96,1630,78,1597,64,1525,48,1454,44,1391,48,1390,43,1454,39,1526,43,1598,59,1633,73,1664,92,1692,116,1715,145,1734,177,1750,210,1771,275,1782,326"/>
+<area shape="rect" href="classREMORA.html#a0fb1bee6b7c41edde86f488eeb440478" title="Read in boundary parameters from input file and set up data structures." alt="" coords="295,164,432,189"/>
+<area shape="poly" title=" " alt="" coords="1769,329,1752,298,1728,263,1698,229,1661,203,1613,181,1571,168,1532,162,1494,162,1414,169,1312,175,852,175,432,178,432,173,852,170,1312,170,1413,164,1494,156,1533,157,1572,163,1615,176,1664,198,1701,226,1732,260,1756,295,1773,326"/>
+<area shape="rect" href="classREMORA.html#aa7e9745d31b7b0e00a5eaeab4ecce17c" title="Boundary data initialization from NetCDF file." alt="" coords="1474,581,1657,621"/>
+<area shape="poly" title=" " alt="" coords="1778,379,1763,421,1739,472,1707,525,1664,571,1646,583,1643,578,1661,567,1703,522,1735,470,1758,419,1773,377"/>
+<area shape="rect" href="classREMORA.html#ae3f7a29a7dddee62d1ecd454a8b29d7e" title="Wrapper to initialize climatology nudging coefficient." alt="" coords="1219,477,1402,517"/>
+<area shape="poly" title=" " alt="" coords="1765,378,1722,419,1694,440,1664,456,1598,479,1529,493,1462,500,1402,502,1402,497,1462,495,1528,488,1596,474,1662,452,1691,435,1718,415,1761,374"/>
+<area shape="rect" href="classREMORA.html#ac0aef7d5a2ff0b707ce3feaee008aea4" title="Climatology nudging coefficient initialization from NetCDF file." alt="" coords="1474,517,1657,557"/>
+<area shape="poly" title=" " alt="" coords="1770,379,1727,438,1698,471,1664,500,1631,519,1628,514,1661,496,1694,467,1723,435,1766,375"/>
+<area shape="rect" href="classREMORA.html#a98ad64e4a964e4748ebae07a26405286" title="Allocate MultiFabs for state and evolution variables." alt="" coords="1493,315,1637,340"/>
+<area shape="poly" title=" " alt="" coords="1696,345,1637,338,1638,333,1697,340"/>
+<area shape="rect" href="classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe" title="Make a new level using provided BoxArray and DistributionMapping and fill with interpolated coarse le..." alt="" coords="1201,261,1420,301"/>
+<area shape="poly" title=" " alt="" coords="1746,336,1706,319,1662,305,1601,293,1537,286,1420,281,1420,275,1538,280,1601,288,1663,299,1708,314,1748,331"/>
+<area shape="rect" href="classREMORA.html#a73eb64a4ad24a247692981eae835caf2" title="Remake an existing level using provided BoxArray and DistributionMapping and fill with existing fine ..." alt="" coords="1223,376,1398,401"/>
+<area shape="poly" title=" " alt="" coords="1697,362,1398,385,1398,379,1696,357"/>
+<area shape="rect" href="classREMORA.html#aa91decb04550c58b177e6a18b9d70f0d" title="Resize variable containers to accommodate data on levels 0 to max_lev." alt="" coords="1484,213,1647,239"/>
+<area shape="poly" title=" " alt="" coords="1758,333,1715,296,1661,260,1615,241,1617,236,1664,256,1718,292,1761,328"/>
+<area shape="rect" href="classREMORA.html#ab9d2fbd8ac171ab10eb09ff189cbb69b" title="Set 2D momentum arrays from 3D momentum." alt="" coords="1480,416,1651,441"/>
+<area shape="poly" title=" " alt="" coords="1736,373,1664,399,1607,418,1605,413,1662,394,1735,368"/>
+<area shape="rect" href="classREMORA.html#a67b92f7c5b82933e953e447bdfc9074c" title="2D advance, one predictor/corrector step" alt="" coords="1228,95,1393,135"/>
+<area shape="poly" title=" " alt="" coords="1469,120,1394,119,1394,114,1469,115"/>
+<area shape="rect" href="classREMORA.html#a9a67a95c1bc1f744268a245f4ca4c446" title="advance a single level for a single time step" alt="" coords="1011,56,1153,81"/>
+<area shape="poly" title=" " alt="" coords="1214,98,1144,84,1145,79,1215,93"/>
+<area shape="rect" href="classREMORA.html#acf259537f6d9c23a0edcf6641381a9d0" title="advance all levels by dt, loops over finer levels" alt="" coords="771,5,936,31"/>
+<area shape="poly" title=" " alt="" coords="1214,128,1166,128,1113,124,1060,113,1009,95,993,83,984,70,976,56,961,44,935,33,937,28,964,40,980,53,989,67,997,79,1012,90,1061,108,1114,118,1166,123,1214,122"/>
+<area shape="rect" href="classREMORA.html#ac88ed7a3bf97eec4dca7f70126a0600d" title="advance a level by dt, includes a recursive call for finer levels" alt="" coords="780,79,927,104"/>
+<area shape="poly" title=" " alt="" coords="997,80,927,87,927,81,997,74"/>
+<area shape="poly" title=" " alt="" coords="894,69,883,61,853,57,829,59,816,64,814,70,820,77,816,80,808,70,813,60,828,54,853,52,885,56,897,65"/>
+<area shape="rect" href="classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e" title="Advance solution to final time." alt="" coords="523,73,653,99"/>
+<area shape="poly" title=" " alt="" coords="766,92,654,90,654,85,766,87"/>
+<area shape="rect" href="classREMORA.html#a429a2087fc3b9b964e573b672b4e17f2" title=" " alt="" coords="495,12,681,37"/>
+<area shape="poly" title=" " alt="" coords="788,78,639,40,640,35,790,73"/>
+<area shape="poly" title=" " alt="" coords="779,36,745,45,633,76,631,71,743,39,778,31"/>
+<area shape="poly" title=" " alt="" coords="757,23,682,25,681,20,757,18"/>
+<area shape="poly" title=" " alt="" coords="1202,66,1154,68,1153,63,1202,60"/>
+<area shape="poly" title=" " alt="" coords="1202,50,1153,46,936,27,937,22,1154,41,1202,45"/>
+<area shape="rect" href="classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089" title="Initialize multilevel data." alt="" coords="108,189,247,215"/>
+<area shape="poly" title=" " alt="" coords="281,191,247,195,246,190,281,185"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,189,60,215"/>
+<area shape="poly" title=" " alt="" coords="94,205,60,205,60,199,94,199"/>
+<area shape="rect" href="classREMORA.html#a4010e1137df2630bdd56327fad98e4a1" title="Init (NOT restart or regrid)" alt="" coords="1011,455,1153,480"/>
+<area shape="poly" title=" " alt="" coords="1460,591,1334,568,1267,552,1200,531,1146,507,1102,482,1105,478,1149,502,1202,526,1268,546,1336,563,1461,585"/>
+<area shape="rect" href="classREMORA.html#ad64e9b244603ae920ed761821753a71f" title="Make a new level from scratch using provided BoxArray and DistributionMapping. Only used during initi..." alt="" coords="744,263,963,303"/>
+<area shape="poly" title=" " alt="" coords="1052,448,878,306,881,302,1056,444"/>
+<area shape="rect" href="classREMORA.html#a316a6db4c0b9a218e834c054d8c8f437" title="read checkpoint file from disk" alt="" coords="480,213,696,239"/>
+<area shape="poly" title=" " alt="" coords="746,263,647,241,648,236,747,258"/>
+<area shape="rect" href="classREMORA.html#af82928444cae433cc744c0cf7427e8eb" title=" " alt="" coords="298,213,429,239"/>
+<area shape="poly" title=" " alt="" coords="466,229,429,229,429,223,466,223"/>
+<area shape="poly" title=" " alt="" coords="284,218,246,214,247,208,285,213"/>
+<area shape="poly" title=" " alt="" coords="1205,486,1153,479,1154,474,1206,481"/>
+<area shape="poly" title=" " alt="" coords="1460,523,1402,514,1402,508,1461,518"/>
+<area shape="poly" title=" " alt="" coords="1479,328,1201,315,962,296,963,291,1201,310,1479,322"/>
+<area shape="poly" title=" " alt="" coords="1481,315,1420,303,1421,298,1482,309"/>
+<area shape="poly" title=" " alt="" coords="1499,346,1365,379,1364,373,1498,341"/>
+<area shape="poly" title=" " alt="" coords="1470,234,1202,251,963,274,962,269,1201,246,1470,228"/>
+<area shape="poly" title=" " alt="" coords="1493,244,1405,263,1404,258,1492,239"/>
+<area shape="poly" title=" " alt="" coords="1467,439,1154,464,1153,459,1466,434"/>
+<area shape="poly" title=" " alt="" coords="1702,661,1663,661,1663,655,1702,655"/>
+<area shape="rect" href="classREMORA.html#a8a16e552c794ae05498e4cb0a65399af" title=" " alt="" coords="1239,620,1383,645"/>
+<area shape="poly" title=" " alt="" coords="1454,650,1383,642,1383,637,1455,644"/>
+<area shape="rect" href="classREMORA.html#a2e6c44c76a0dca92869a64f7f8d06fac" title=" " alt="" coords="1239,669,1383,695"/>
+<area shape="poly" title=" " alt="" coords="1455,671,1383,678,1383,673,1454,666"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acabae76684c0900a7caf5a2b855b72be" name="acabae76684c0900a7caf5a2b855b72be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acabae76684c0900a7caf5a2b855b72be">&#9670;&#160;</a></span>zeta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BdyVars::zeta </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncons</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00085">85</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l01306">REMORA::bdy_zeta()</a>, <a class="el" href="REMORA__DataStruct_8H_source.html#l00128">SolverChoice::init_params()</a>, and <a class="el" href="REMORA_8cpp_source.html#l01665">REMORA::ReadParameters()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceBdyVars_acabae76684c0900a7caf5a2b855b72be_icgraph.png" border="0" usemap="#anamespaceBdyVars_acabae76684c0900a7caf5a2b855b72be_icgraph" alt=""/></div>
+<map name="anamespaceBdyVars_acabae76684c0900a7caf5a2b855b72be_icgraph" id="anamespaceBdyVars_acabae76684c0900a7caf5a2b855b72be_icgraph">
+<area shape="rect" title=" " alt="" coords="2292,1541,2403,1567"/>
+<area shape="rect" href="classREMORA.html#a706f3910bb434dad8edab0f9ae657d7d" title=" " alt="" coords="2097,1344,2244,1369"/>
+<area shape="poly" title=" " alt="" coords="2324,1533,2181,1371,2185,1368,2328,1529"/>
+<area shape="rect" href="structSolverChoice.html#a990b46996841ced5a04de68c208a20ba" title="read in and initialize parameters" alt="" coords="2103,1534,2239,1574"/>
+<area shape="poly" title=" " alt="" coords="2278,1557,2239,1557,2239,1551,2278,1551"/>
+<area shape="rect" href="classREMORA.html#aae1b7a86e03c93dd71e2d68c700d2512" title="read in some parameters from inputs file" alt="" coords="1853,1599,2047,1624"/>
+<area shape="poly" title=" " alt="" coords="2300,1574,2245,1589,2143,1603,2048,1611,2047,1606,2143,1598,2243,1583,2298,1569"/>
+<area shape="rect" href="classREMORA.html#ab987b72e13f0dc83db716c5b0decee29" title="Perform a 2D predictor (predictor_2d_step=True) or corrector (predictor_2d_step=False) step." alt="" coords="1331,56,1497,81"/>
+<area shape="poly" title=" " alt="" coords="2159,1332,2116,1194,2084,1104,2047,1014,1985,864,1939,732,1899,614,1859,505,1810,403,1781,354,1746,305,1705,256,1658,206,1602,155,1538,103,1518,91,1496,82,1498,77,1521,86,1542,98,1606,151,1662,202,1709,252,1750,302,1785,351,1815,401,1864,503,1904,612,1944,731,1990,863,2052,1012,2089,1102,2121,1192,2165,1330"/>
+<area shape="rect" href="classREMORA.html#a425c2c168db69fb8ba98c6221bc1ddc2" title="Fill boundary data from netcdf file." alt="" coords="1851,1217,2049,1243"/>
+<area shape="poly" title=" " alt="" coords="2134,1339,1972,1245,1975,1241,2137,1335"/>
+<area shape="rect" href="classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0" title="Sea&#45;surface height data initialization from NetCDF file." alt="" coords="1323,1322,1505,1362"/>
+<area shape="poly" title=" " alt="" coords="2084,1358,1505,1346,1505,1341,2084,1352"/>
+<area shape="rect" href="classREMORA.html#a12983b13c375ea6f63393c3b41afe98a" title="Copy over zeta data that has been averaged down from high res." alt="" coords="1288,1387,1540,1412"/>
+<area shape="poly" title=" " alt="" coords="2084,1364,1540,1395,1540,1390,2083,1359"/>
+<area shape="rect" href="classREMORA.html#a0fb1bee6b7c41edde86f488eeb440478" title="Read in boundary parameters from input file and set up data structures." alt="" coords="1627,44,1764,69"/>
+<area shape="poly" title=" " alt="" coords="2167,1330,2163,1132,2148,825,2133,663,2112,512,2084,385,2066,335,2047,295,2015,252,1977,213,1935,178,1890,148,1803,101,1733,72,1735,67,1805,97,1893,144,1938,174,1981,209,2019,248,2052,293,2071,333,2089,384,2117,512,2138,663,2153,825,2168,1132,2172,1330"/>
+<area shape="rect" href="classREMORA.html#aa7e9745d31b7b0e00a5eaeab4ecce17c" title="Boundary data initialization from NetCDF file." alt="" coords="1859,1483,2041,1523"/>
+<area shape="poly" title=" " alt="" coords="2153,1382,2109,1428,2081,1452,2051,1474,2026,1486,2024,1481,2048,1469,2078,1448,2105,1424,2149,1378"/>
+<area shape="rect" href="classREMORA.html#ae3f7a29a7dddee62d1ecd454a8b29d7e" title="Wrapper to initialize climatology nudging coefficient." alt="" coords="1859,1419,2041,1459"/>
+<area shape="poly" title=" " alt="" coords="2124,1377,2005,1422,2004,1417,2122,1372"/>
+<area shape="rect" href="classREMORA.html#a98ad64e4a964e4748ebae07a26405286" title="Allocate MultiFabs for state and evolution variables." alt="" coords="1067,887,1211,912"/>
+<area shape="poly" title=" " alt="" coords="2154,1333,2111,1270,2082,1236,2048,1207,1940,1140,1825,1083,1706,1035,1588,996,1475,965,1371,941,1210,911,1211,906,1372,936,1476,960,1589,991,1708,1030,1827,1078,1943,1135,2051,1203,2086,1232,2116,1267,2158,1330"/>
+<area shape="rect" href="classREMORA.html#aa91decb04550c58b177e6a18b9d70f0d" title="Resize variable containers to accommodate data on levels 0 to max_lev." alt="" coords="1057,1539,1220,1564"/>
+<area shape="poly" title=" " alt="" coords="2163,1384,2148,1420,2124,1463,2092,1505,2073,1523,2051,1538,2020,1551,1982,1562,1888,1577,1776,1584,1655,1585,1412,1576,1220,1562,1220,1557,1412,1571,1655,1580,1776,1579,1887,1571,1981,1557,2018,1546,2048,1533,2069,1519,2088,1501,2120,1460,2143,1418,2158,1382"/>
+<area shape="rect" href="classREMORA.html#a67b92f7c5b82933e953e447bdfc9074c" title="2D advance, one predictor/corrector step" alt="" coords="797,233,963,273"/>
+<area shape="poly" title=" " alt="" coords="1363,89,940,235,939,230,1362,83"/>
+<area shape="rect" href="classREMORA.html#a9a67a95c1bc1f744268a245f4ca4c446" title="advance a single level for a single time step" alt="" coords="542,297,685,323"/>
+<area shape="poly" title=" " alt="" coords="784,276,674,300,673,295,783,271"/>
+<area shape="rect" href="classREMORA.html#acf259537f6d9c23a0edcf6641381a9d0" title="advance all levels by dt, loops over finer levels" alt="" coords="531,203,696,228"/>
+<area shape="poly" title=" " alt="" coords="784,242,696,230,697,224,784,237"/>
+<area shape="rect" href="classREMORA.html#ac88ed7a3bf97eec4dca7f70126a0600d" title="advance a level by dt, includes a recursive call for finer levels" alt="" coords="275,297,421,323"/>
+<area shape="poly" title=" " alt="" coords="529,313,421,313,421,307,529,307"/>
+<area shape="poly" title=" " alt="" coords="392,288,389,283,382,280,348,276,321,278,307,283,304,288,312,295,308,299,299,289,304,279,320,273,348,271,383,275,393,279,397,285"/>
+<area shape="rect" href="classREMORA.html#a2ea86fcd6c7d853a6c0110cf40f9cb1e" title="Advance solution to final time." alt="" coords="33,192,164,217"/>
+<area shape="poly" title=" " alt="" coords="303,294,129,220,131,215,305,289"/>
+<area shape="rect" href="classREMORA.html#a429a2087fc3b9b964e573b672b4e17f2" title=" " alt="" coords="5,260,192,285"/>
+<area shape="poly" title=" " alt="" coords="261,300,183,288,184,283,262,294"/>
+<area shape="poly" title=" " alt="" coords="517,216,164,209,164,203,517,211"/>
+<area shape="poly" title=" " alt="" coords="517,229,193,265,192,260,517,223"/>
+<area shape="rect" href="classREMORA.html#a28c2e36d1783550310f26d0e9ba8cdca" title="Advance the 3D variables." alt="" coords="1056,740,1221,765"/>
+<area shape="poly" title=" " alt="" coords="1914,1213,1160,768,1163,763,1917,1208"/>
+<area shape="rect" href="classREMORA.html#a17b145e55ffc268dc25b512ee0312a93" title="fill an entire multifab by interpolating from the coarser level, explicitly specifying interpolator t..." alt="" coords="1588,1217,1803,1243"/>
+<area shape="poly" title=" " alt="" coords="1837,1233,1803,1233,1803,1227,1837,1227"/>
+<area shape="rect" href="classREMORA.html#ac1ee946de4d49c570c828fb2fada51e0" title="Fill a new MultiFab by copying in phi from valid region and filling ghost cells." alt="" coords="1625,625,1766,651"/>
+<area shape="poly" title=" " alt="" coords="1935,1206,1700,652,1705,650,1940,1204"/>
+<area shape="poly" title=" " alt="" coords="1875,1248,1505,1326,1504,1321,1874,1243"/>
+<area shape="rect" href="classREMORA.html#a805863a28beceb70cefd0b6f050d8c2d" title="3D advance on a single level" alt="" coords="785,397,975,423"/>
+<area shape="poly" title=" " alt="" coords="1117,730,889,425,893,421,1121,727"/>
+<area shape="poly" title=" " alt="" coords="831,395,648,325,649,320,833,390"/>
+<area shape="poly" title=" " alt="" coords="851,390,793,342,721,287,635,230,638,226,724,282,796,337,855,386"/>
+<area shape="rect" href="classREMORA.html#a783d5be4d993d2ae820e412a9d7b43f1" title="fill an entire multifab by interpolating from the coarser level" alt="" coords="1321,1272,1507,1297"/>
+<area shape="poly" title=" " alt="" coords="1648,1249,1508,1278,1507,1272,1647,1244"/>
+<area shape="rect" href="classREMORA.html#ab842fb8ede1422c9cb99d2f7c1848986" title="fill an entire multifab by interpolating from the coarser level using the piecewise constant interpol..." alt="" coords="1037,1001,1240,1027"/>
+<area shape="poly" title=" " alt="" coords="1589,1217,1518,1201,1440,1178,1360,1145,1286,1103,1270,1087,1262,1070,1254,1055,1238,1040,1216,1029,1218,1024,1242,1036,1258,1051,1267,1068,1275,1083,1290,1099,1362,1141,1441,1173,1519,1196,1590,1212"/>
+<area shape="poly" title=" " alt="" coords="1462,1266,1587,1239,1588,1245,1463,1271"/>
+<area shape="rect" href="classREMORA.html#a4010e1137df2630bdd56327fad98e4a1" title="Init (NOT restart or regrid)" alt="" coords="809,1285,951,1311"/>
+<area shape="poly" title=" " alt="" coords="1307,1300,1240,1305,1139,1307,1037,1305,952,1303,952,1298,1037,1299,1139,1301,1240,1299,1307,1294"/>
+<area shape="rect" href="classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe" title="Make a new level using provided BoxArray and DistributionMapping and fill with interpolated coarse le..." alt="" coords="771,1043,989,1083"/>
+<area shape="poly" title=" " alt="" coords="1352,1271,1239,1241,1182,1228,1136,1221,1091,1211,1036,1188,995,1165,958,1137,899,1085,903,1081,961,1133,998,1160,1039,1184,1092,1206,1137,1216,1183,1223,1241,1235,1354,1266"/>
+<area shape="rect" href="classREMORA.html#a43ebfe013ec1e2d1d0a8faaba3ebbbb6" title="Initialize Coriolis factor from file or analytic." alt="" coords="1058,1100,1219,1125"/>
+<area shape="poly" title=" " alt="" coords="1307,1268,1286,1255,1273,1240,1266,1225,1261,1195,1257,1166,1250,1152,1238,1139,1218,1126,1221,1122,1242,1135,1255,1149,1262,1164,1267,1194,1271,1223,1278,1237,1290,1251,1310,1264"/>
+<area shape="rect" href="classREMORA.html#a8bea1c2033283ac78b162e0de2d11c7e" title="Initialize zeta from file or analytic." alt="" coords="1067,1365,1210,1391"/>
+<area shape="poly" title=" " alt="" coords="1313,1304,1289,1312,1275,1321,1265,1330,1241,1348,1192,1368,1190,1363,1239,1344,1262,1325,1272,1316,1287,1308,1311,1299"/>
+<area shape="rect" href="classREMORA.html#ad64e9b244603ae920ed761821753a71f" title="Make a new level from scratch using provided BoxArray and DistributionMapping. Only used during initi..." alt="" coords="504,1278,723,1318"/>
+<area shape="poly" title=" " alt="" coords="795,1301,723,1301,723,1295,795,1295"/>
+<area shape="rect" href="classREMORA.html#a316a6db4c0b9a218e834c054d8c8f437" title="read checkpoint file from disk" alt="" coords="240,1285,456,1311"/>
+<area shape="poly" title=" " alt="" coords="490,1301,456,1301,456,1295,490,1295"/>
+<area shape="poly" title=" " alt="" coords="1051,1133,1039,1139,990,1174,948,1216,892,1287,888,1284,944,1212,987,1170,1036,1134,1049,1128"/>
+<area shape="poly" title=" " alt="" coords="1058,1100,985,1086,986,1081,1059,1095"/>
+<area shape="rect" href="classREMORA.html#a73eb64a4ad24a247692981eae835caf2" title="Remake an existing level using provided BoxArray and DistributionMapping and fill with existing fine ..." alt="" coords="793,969,967,995"/>
+<area shape="poly" title=" " alt="" coords="1051,1097,1036,1090,1020,1076,1010,1062,1002,1048,988,1033,953,1013,918,997,921,992,956,1008,991,1029,1006,1044,1015,1059,1024,1072,1039,1085,1053,1093"/>
+<area shape="poly" title=" " alt="" coords="1083,1364,921,1313,923,1308,1085,1359"/>
+<area shape="poly" title=" " alt="" coords="1059,1032,986,1046,985,1041,1058,1027"/>
+<area shape="poly" title=" " alt="" coords="1023,1002,967,995,968,990,1024,997"/>
+<area shape="poly" title=" " alt="" coords="1681,614,1637,493,1585,332,1578,296,1576,263,1578,207,1577,181,1572,155,1559,130,1538,103,1519,88,1496,78,1498,73,1521,83,1542,99,1564,127,1577,154,1582,180,1583,207,1582,263,1584,295,1591,331,1642,491,1686,612"/>
+<area shape="poly" title=" " alt="" coords="1679,614,1634,514,1608,449,1585,383,1578,345,1576,311,1581,250,1581,223,1576,197,1563,172,1538,147,1509,129,1470,116,1424,108,1371,104,1250,106,1118,119,983,139,857,163,666,205,665,200,856,158,983,134,1117,114,1250,101,1371,99,1425,103,1472,111,1511,124,1542,143,1567,169,1581,195,1586,222,1586,250,1582,311,1583,345,1591,381,1613,448,1639,512,1684,612"/>
+<area shape="poly" title=" " alt="" coords="1658,659,1603,683,1541,705,1457,723,1371,737,1222,751,1221,746,1371,731,1456,718,1539,699,1602,678,1656,654"/>
+<area shape="poly" title=" " alt="" coords="1679,614,1657,578,1626,536,1586,494,1539,462,1494,446,1433,433,1280,418,1116,412,975,411,975,406,1116,406,1281,412,1434,428,1495,441,1541,457,1589,490,1630,532,1661,575,1683,612"/>
+<area shape="poly" title=" " alt="" coords="1691,665,1674,725,1645,804,1602,889,1574,928,1542,964,1506,994,1466,1020,1380,1060,1295,1087,1220,1104,1219,1099,1294,1082,1379,1055,1463,1015,1503,990,1538,960,1570,925,1597,886,1640,802,1669,723,1686,663"/>
+<area shape="poly" title=" " alt="" coords="1681,664,1658,697,1626,736,1587,774,1541,804,1470,834,1407,848,1348,851,1292,849,1236,845,1177,845,1112,854,1038,876,995,898,955,924,897,971,893,967,952,919,993,893,1036,872,1110,849,1176,840,1236,840,1293,843,1348,846,1406,843,1469,829,1539,800,1583,770,1622,732,1654,694,1677,661"/>
+<area shape="rect" href="classREMORA.html#a783db1b357863608197eccb6fe7d4c52" title="Tag cells for refinement." alt="" coords="1345,472,1483,497"/>
+<area shape="poly" title=" " alt="" coords="1672,617,1615,563,1578,536,1539,512,1512,502,1483,495,1485,490,1513,497,1541,508,1581,531,1619,559,1675,613"/>
+<area shape="rect" href="classREMORA.html#afded54aef57ded67542a888a911b67b0" title="Corrector step for GLS calculation." alt="" coords="1329,765,1499,791"/>
+<area shape="poly" title=" " alt="" coords="1671,662,1614,706,1578,729,1541,748,1484,768,1483,763,1539,744,1576,724,1611,701,1667,658"/>
+<area shape="rect" href="classREMORA.html#a6122490d3208c33fce7fc1896baece42" title="Prestep for GLS calculation." alt="" coords="1333,157,1495,183"/>
+<area shape="poly" title=" " alt="" coords="1683,613,1538,196,1518,183,1495,175,1496,170,1520,178,1542,192,1688,611"/>
+<area shape="rect" href="classREMORA.html#ad9ee5aba5b9cb8e020e6cbc8ff3cff74" title="Set everything up for a step on a level." alt="" coords="1059,256,1218,281"/>
+<area shape="poly" title=" " alt="" coords="1681,613,1661,570,1630,516,1589,462,1565,438,1539,418,1505,399,1475,388,1446,383,1418,381,1359,379,1325,373,1287,360,1212,322,1156,284,1159,279,1215,317,1289,356,1326,368,1359,373,1418,376,1447,378,1476,383,1507,394,1541,413,1568,434,1593,459,1634,513,1666,567,1686,611"/>
+<area shape="rect" href="classREMORA.html#a0ef7e1a0115224b728f17587feeebe9f" title="Bathymetry data initialization from NetCDF file." alt="" coords="1319,522,1509,562"/>
+<area shape="poly" title=" " alt="" coords="1653,622,1539,577,1500,565,1501,560,1541,571,1655,617"/>
+<area shape="rect" href="classREMORA.html#a28ead55a72d9a23865ce34637ec1fd22" title="Grid variable initialization from NetCDF file." alt="" coords="1327,586,1501,626"/>
+<area shape="poly" title=" " alt="" coords="1611,631,1501,619,1502,613,1611,626"/>
+<area shape="poly" title=" " alt="" coords="1692,665,1667,809,1627,1013,1583,1205,1561,1273,1542,1310,1525,1324,1506,1333,1504,1328,1522,1319,1538,1307,1556,1271,1578,1204,1622,1012,1662,808,1687,664"/>
+<area shape="rect" href="classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089" title="Initialize multilevel data." alt="" coords="1345,7,1483,32"/>
+<area shape="poly" title=" " alt="" coords="1688,612,1671,491,1640,319,1619,232,1595,152,1568,88,1554,63,1538,45,1513,29,1483,22,1484,16,1515,25,1542,41,1558,60,1573,85,1600,151,1625,230,1645,318,1677,490,1694,611"/>
+<area shape="rect" href="classREMORA.html#ab9d2fbd8ac171ab10eb09ff189cbb69b" title="Set 2D momentum arrays from 3D momentum." alt="" coords="1053,1149,1224,1175"/>
+<area shape="poly" title=" " alt="" coords="1696,665,1690,749,1682,805,1669,866,1649,929,1622,990,1587,1046,1542,1095,1519,1109,1486,1121,1404,1140,1311,1152,1225,1160,1224,1155,1310,1147,1403,1135,1485,1116,1516,1104,1538,1091,1583,1043,1618,987,1644,927,1664,865,1677,804,1685,749,1691,664"/>
+<area shape="rect" href="classREMORA.html#a816b9966899d512c4b24b6955d8ec8fc" title="Set vertical mixing coefficients from analytic." alt="" coords="1311,207,1517,232"/>
+<area shape="poly" title=" " alt="" coords="1683,613,1611,406,1569,301,1551,264,1538,245,1516,232,1519,227,1542,241,1556,262,1574,299,1616,405,1688,611"/>
+<area shape="rect" href="classREMORA.html#aed6a5027f2c5437fc36513e666e387b3" title="Copy over bathymetry data that has been averaged down from high resolution input netcdf file." alt="" coords="1043,937,1234,977"/>
+<area shape="poly" title=" " alt="" coords="1685,665,1664,705,1632,756,1591,807,1542,849,1507,870,1477,883,1420,894,1361,900,1289,914,1204,939,1202,934,1287,909,1360,895,1419,889,1475,878,1505,865,1538,845,1587,803,1628,753,1659,703,1680,662"/>
+<area shape="rect" href="classREMORA.html#a026f1db4725425f90217b0369cde8f77" title="Set pm/pn by averaging down from higher&#45;resolution grid." alt="" coords="1327,650,1501,690"/>
+<area shape="poly" title=" " alt="" coords="1611,650,1502,663,1501,657,1611,645"/>
+<area shape="rect" href="classREMORA.html#ac61ff34983f1636e08e957c5a2a0ddbc" title="Initialize horizontal mixing coefficients." alt="" coords="1051,1051,1226,1076"/>
+<area shape="poly" title=" " alt="" coords="1690,665,1673,718,1643,786,1600,855,1573,887,1542,914,1507,933,1475,941,1444,942,1414,940,1385,938,1354,939,1323,946,1290,964,1273,982,1266,1001,1259,1021,1242,1040,1218,1053,1215,1048,1238,1036,1254,1018,1261,999,1269,979,1286,960,1321,941,1354,934,1385,933,1415,935,1444,937,1474,936,1505,928,1538,909,1569,883,1596,852,1638,783,1668,716,1685,663"/>
+<area shape="rect" href="classREMORA.html#ad8fd2803f421897e69c9085a62c565a3" title="Problem initialization from averaged&#45;down high resolution data." alt="" coords="1053,1250,1224,1290"/>
+<area shape="poly" title=" " alt="" coords="1697,664,1693,758,1686,821,1674,891,1654,963,1627,1034,1590,1101,1542,1160,1519,1176,1487,1192,1405,1219,1312,1242,1225,1259,1224,1254,1311,1237,1404,1214,1485,1187,1517,1172,1538,1156,1586,1098,1622,1032,1649,961,1668,889,1681,820,1688,757,1692,664"/>
+<area shape="rect" href="classREMORA.html#ae32769c0aa47ddd6e15f3b5866f9252a" title="Initialize or calculate surface momentum flux from file or analytic." alt="" coords="1335,256,1493,281"/>
+<area shape="poly" title=" " alt="" coords="1688,612,1675,547,1648,461,1628,415,1604,371,1574,331,1538,296,1517,283,1493,275,1494,270,1519,279,1542,292,1578,327,1608,368,1633,413,1653,459,1680,546,1693,611"/>
+<area shape="rect" href="classREMORA.html#a3a15e957a8ef57501e2fd6c09c86995b" title="Initialize or calculate wind speed and other surface state vars from file or analytic." alt="" coords="1333,306,1495,346"/>
+<area shape="poly" title=" " alt="" coords="1684,613,1666,561,1636,494,1594,426,1568,394,1538,367,1518,353,1495,344,1497,339,1520,349,1542,363,1572,391,1598,423,1641,492,1671,559,1689,611"/>
+<area shape="poly" title=" " alt="" coords="1692,665,1619,1058,1574,1271,1556,1342,1542,1376,1525,1389,1522,1384,1538,1372,1550,1340,1569,1270,1613,1057,1687,664"/>
+<area shape="poly" title=" " alt="" coords="1315,772,1221,763,1222,758,1315,766"/>
+<area shape="poly" title=" " alt="" coords="1320,188,1289,197,1218,227,1162,258,1159,254,1216,222,1287,191,1319,182"/>
+<area shape="poly" title=" " alt="" coords="1046,282,990,287,685,309,685,303,989,282,1045,277"/>
+<area shape="poly" title=" " alt="" coords="1093,253,1044,236,989,223,912,214,834,210,696,212,696,207,834,205,912,209,990,218,1045,231,1095,248"/>
+<area shape="poly" title=" " alt="" coords="1310,1358,1211,1371,1210,1366,1309,1353"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="1111,5,1166,31"/>
+<area shape="poly" title=" " alt="" coords="1331,22,1166,21,1166,15,1331,16"/>
+<area shape="poly" title=" " alt="" coords="1103,1183,907,1287,904,1283,1100,1179"/>
+<area shape="poly" title=" " alt="" coords="1330,237,1211,259,1210,253,1329,232"/>
+<area shape="poly" title=" " alt="" coords="1058,984,1038,991,921,1046,919,1041,1036,986,1056,979"/>
+<area shape="poly" title=" " alt="" coords="1030,970,968,976,967,971,1029,965"/>
+<area shape="poly" title=" " alt="" coords="1049,1084,1039,1090,1010,1111,985,1137,941,1194,909,1247,889,1286,885,1284,904,1245,936,1191,981,1134,1007,1107,1036,1085,1046,1079"/>
+<area shape="poly" title=" " alt="" coords="1037,1066,990,1066,990,1061,1037,1061"/>
+<area shape="poly" title=" " alt="" coords="1069,1050,1037,1041,913,997,915,992,1038,1035,1071,1045"/>
+<area shape="poly" title=" " alt="" coords="1040,1283,952,1293,951,1288,1040,1278"/>
+<area shape="poly" title=" " alt="" coords="1321,271,1218,271,1218,266,1321,266"/>
+<area shape="poly" title=" " alt="" coords="1319,309,1200,284,1201,279,1320,304"/>
+<area shape="poly" title=" " alt="" coords="1274,1391,1210,1386,1211,1381,1274,1386"/>
+<area shape="poly" title=" " alt="" coords="1613,48,1483,31,1484,26,1613,43"/>
+<area shape="poly" title=" " alt="" coords="1846,1525,1683,1543,1583,1549,1476,1549,1364,1542,1252,1525,1141,1498,1088,1480,1036,1458,1002,1432,960,1391,890,1312,894,1309,964,1388,1005,1428,1039,1453,1090,1475,1143,1493,1253,1520,1365,1536,1476,1543,1583,1543,1682,1538,1845,1519"/>
+<area shape="poly" title=" " alt="" coords="1845,1457,1685,1471,1586,1475,1480,1475,1369,1469,1256,1457,1144,1436,1036,1405,993,1385,952,1359,893,1313,897,1309,955,1355,995,1380,1038,1399,1145,1430,1257,1451,1370,1464,1480,1470,1586,1470,1684,1466,1844,1452"/>
+<area shape="poly" title=" " alt="" coords="1053,894,987,894,913,902,839,922,804,938,772,959,735,994,704,1035,679,1080,659,1127,632,1215,620,1278,615,1277,627,1213,654,1125,674,1078,699,1032,731,990,769,955,802,934,837,917,912,897,986,889,1053,888"/>
+<area shape="poly" title=" " alt="" coords="1055,917,1039,927,1022,945,1015,965,1007,986,991,1008,964,1029,934,1045,932,1041,961,1025,987,1004,1003,983,1010,963,1018,943,1036,923,1053,913"/>
+<area shape="poly" title=" " alt="" coords="1070,918,1038,927,914,972,912,967,1037,922,1069,913"/>
+<area shape="poly" title=" " alt="" coords="1078,1537,1036,1522,922,1470,812,1413,647,1320,650,1316,814,1408,924,1465,1038,1517,1080,1532"/>
+<area shape="poly" title=" " alt="" coords="1117,1529,1077,1473,1035,1403,1019,1368,1010,1339,987,1274,935,1167,891,1085,895,1082,940,1164,992,1272,1015,1337,1024,1366,1040,1401,1081,1470,1121,1526"/>
+<area shape="poly" title=" " alt="" coords="2090,1578,2000,1601,1999,1596,2088,1573"/>
+<area shape="rect" href="classREMORA.html#a8a16e552c794ae05498e4cb0a65399af" title=" " alt="" coords="1623,1599,1767,1624"/>
+<area shape="poly" title=" " alt="" coords="1839,1614,1767,1614,1767,1609,1839,1609"/>
+<area shape="rect" href="classREMORA.html#a2e6c44c76a0dca92869a64f7f8d06fac" title=" " alt="" coords="1623,1648,1767,1673"/>
+<area shape="poly" title=" " alt="" coords="1871,1629,1762,1651,1761,1645,1870,1624"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="abf968958bfb760157019898d4a9c89f5" name="abf968958bfb760157019898d4a9c89f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf968958bfb760157019898d4a9c89f5">&#9670;&#160;</a></span>null</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">constexpr</a> int BdyVars::null = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00076">76</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">REMORA::advance_3d_ml()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00015">REMORA::ErrorEst()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00445">REMORA::FillCoarsePatchMap()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00030">REMORA::FillPatch()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00247">REMORA::gls_corrector()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00020">REMORA::gls_prestep()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00665">REMORA::init_bathymetry_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00526">REMORA::init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l01331">REMORA::init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00406">REMORA::InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00024">REMORA::MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00166">REMORA::RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00836">REMORA::set_analytic_vmix()</a>, <a class="el" href="REMORA_8cpp_source.html#l00666">REMORA::set_bathymetry()</a>, <a class="el" href="REMORA_8cpp_source.html#l00727">REMORA::set_bathymetry_averaged_down()</a>, <a class="el" href="REMORA_8cpp_source.html#l00744">REMORA::set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA_8cpp_source.html#l00880">REMORA::set_hmixcoef()</a>, <a class="el" href="REMORA_8cpp_source.html#l01175">REMORA::set_smflux()</a>, <a class="el" href="REMORA_8cpp_source.html#l01194">REMORA::set_surface_state()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">REMORA::setup_step()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">REMORA::timeStepML()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00016">REMORA::WritePlotFile()</a>.</p>
+
+</div>
+</div>
+<a id="ab3a763ff9ff4742613e7675726266783" name="ab3a763ff9ff4742613e7675726266783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a763ff9ff4742613e7675726266783">&#9670;&#160;</a></span>s</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">constexpr</a> int BdyVars::s = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cons component Salt_comp </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00080">80</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+</div>
+</div>
+<a id="a039d70d5f559cc987f7b872f83187877" name="a039d70d5f559cc987f7b872f83187877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039d70d5f559cc987f7b872f83187877">&#9670;&#160;</a></span>t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">constexpr</a> int BdyVars::t = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cons component Temp_comp </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00079">79</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00035">REMORA::advance_3d()</a>, <a class="el" href="REMORA__IndexDefines_8H_source.html#l00082">cons()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00015">REMORA::ErrorEst()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">REMORA::fill_from_bdyfiles()</a>, <a class="el" href="REMORA_8cpp_source.html#l01331">REMORA::init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00406">REMORA::InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00024">REMORA::MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__IndexDefines_8H_source.html#l00086">NumTypes()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00166">REMORA::RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00773">REMORA::set_init_data_averaged_down()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">REMORA::setup_step()</a>, <a class="el" href="REMORA__IndexDefines_8H_source.html#l00083">ubar()</a>, <a class="el" href="REMORA__IndexDefines_8H_source.html#l00084">vbar()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00016">REMORA::WritePlotFile()</a>, and <a class="el" href="REMORA__IndexDefines_8H_source.html#l00085">zeta()</a>.</p>
+
+</div>
+</div>
+<a id="a0e35fe055c193e7553b0c7bd14431d43" name="a0e35fe055c193e7553b0c7bd14431d43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e35fe055c193e7553b0c7bd14431d43">&#9670;&#160;</a></span>u</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">constexpr</a> int BdyVars::u = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00077">77</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00035">REMORA::advance_3d()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00015">REMORA::ErrorEst()</a>, <a class="el" href="REMORA__init__bcs_8cpp_source.html#l00009">REMORA::init_bcs()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00794">REMORA::init_bdry_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00276">REMORA::init_clim_nudg_coeff()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00927">REMORA::init_clim_nudg_coeff_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l01331">REMORA::init_only()</a>, <a class="el" href="REMORA__DataStruct_8H_source.html#l00128">SolverChoice::init_params()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00570">REMORA::init_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l00406">REMORA::InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00024">REMORA::MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA_8cpp_source.html#l01665">REMORA::ReadParameters()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00166">REMORA::RemakeLevel()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00419">REMORA::resize_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l00773">REMORA::set_init_data_averaged_down()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">REMORA::setup_step()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">REMORA::timeStepML()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00016">REMORA::WritePlotFile()</a>.</p>
+
+</div>
+</div>
+<a id="a6b8b096afed3b8316768766e0b7b9716" name="a6b8b096afed3b8316768766e0b7b9716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8b096afed3b8316768766e0b7b9716">&#9670;&#160;</a></span>v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">constexpr</a> int BdyVars::v = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00078">78</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00035">REMORA::advance_3d()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00015">REMORA::ErrorEst()</a>, <a class="el" href="REMORA__init__bcs_8cpp_source.html#l00009">REMORA::init_bcs()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00794">REMORA::init_bdry_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00276">REMORA::init_clim_nudg_coeff()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00927">REMORA::init_clim_nudg_coeff_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l01331">REMORA::init_only()</a>, <a class="el" href="REMORA__DataStruct_8H_source.html#l00128">SolverChoice::init_params()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00570">REMORA::init_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l00406">REMORA::InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00024">REMORA::MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA_8cpp_source.html#l01665">REMORA::ReadParameters()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00166">REMORA::RemakeLevel()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00419">REMORA::resize_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l00773">REMORA::set_init_data_averaged_down()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">REMORA::setup_step()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">REMORA::timeStepML()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00016">REMORA::WritePlotFile()</a>.</p>
 
 </div>
 </div>

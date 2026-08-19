@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['t_0',['t',['../namespaceBdyVars.html#a0860568d9ad7e1487cd6567de76e0325abd1c55aaa78d7bcedd3a0e21005f2955',1,'BdyVars']]],
-  ['tair_1',['tair',['../namespaceAtmosState.html#a76dbeb33da17baebacf9ce7e18db2dc4aecf95aa2d2e49e57ec90b8df4598bab2',1,'AtmosState::Tair'],['../namespaceBulkFlux.html#a3d128d48937af9f6d31b232964b1fbe6ac678ecbe2429f7e7a2f6d444780cbe89',1,'BulkFlux::Tair']]],
-  ['taux_2',['TauX',['../namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a98459fa37f3f3215eee5d26e34869f40',1,'AtmosFluxes']]],
-  ['tauy_3',['TauY',['../namespaceAtmosFluxes.html#a6d6ee76ebe32c695b424978425a74f70a9af6c572674080f6c77db30e8269712e',1,'AtmosFluxes']]],
-  ['time_5fbt_5friv_4',['Time_BT_Riv',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a78b86e3930cf70fdd9d8ec7e98d232da',1,'REMORA_NCFile.H']]],
-  ['time_5fbt_5fsn_5fwe_5',['Time_BT_SN_WE',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06aa3968158227ea04595d4003503cca22b',1,'REMORA_NCFile.H']]],
-  ['time_5friv_6',['Time_Riv',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06af35d2b32ef2f8a78ff5f899dbb9cf0a5',1,'REMORA_NCFile.H']]],
-  ['time_5fsn_5fwe_7',['Time_SN_WE',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a5f93bace93896872075eae75770cadc4',1,'REMORA_NCFile.H']]],
-  ['two_5fway_8',['two_way',['../REMORA__DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139ba0fa44359808011f346e62d3f6df437f4',1,'REMORA_DataStruct.H']]]
+  ['s_0',['s',['../REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833aa03c7c0ace395d80182db07ae2c30f034',1,'REMORA_DataStruct.H']]],
+  ['scaled_5fto_5fgrid_1',['scaled_to_grid',['../REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a3b9d24a493d7d6bbd862c426d7d4a7bb',1,'REMORA_DataStruct.H']]],
+  ['secular_2',['secular',['../namespaceREMORABiology.html#aa77892264812710f1c33d8b2a1ce3f03a3766bada067efa00a0ea7aa2f8725c56',1,'REMORABiology']]],
+  ['shflux_3',['SHflux',['../namespaceAtmosFluxes.html#ac91c9b5d225271b3908b098cf63ed9e6a8e555ee18e679e5ac87f5164e97b9d79',1,'AtmosFluxes']]],
+  ['slip_5fwall_4',['slip_wall',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a03ee6de9fd100444c5c0567ea01bd538',1,'REMORA_IndexDefines.H']]],
+  ['sn_5fwe_5',['SN_WE',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a6d24059efd6f8399a1f327f1d86a47cb',1,'REMORA_NCFile.H']]],
+  ['state_6',['State',['../classREMORA.html#a448226572176d2410e51ad3d7c0dcb0aa46a2a41cc6e552044816a2d04634545d',1,'REMORA']]],
+  ['swrad_7',['swrad',['../namespaceAtmosState.html#a76d13f6889b52b16bc3d9680db35206eaa3da6c7380dda7f096cf3d58dd506328',1,'AtmosState::SWrad'],['../namespaceAtmosFluxes.html#ac91c9b5d225271b3908b098cf63ed9e6a9b8274aac1c0e32aa896edb0a8fe9a29',1,'AtmosFluxes::SWrad'],['../namespaceBulkFlux.html#ab4d324d7d6b4886cca281114c64ba588aeed646dd2a40fece711a6ec6b8a9361e',1,'BulkFlux::SWrad']]],
+  ['symmetry_8',['symmetry',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a40e712f30d56083318ab20a2402921d2',1,'REMORA_IndexDefines.H']]]
 ];

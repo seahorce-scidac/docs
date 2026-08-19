@@ -10,6 +10,7 @@ var dir_451f984cbae2157dc09f494ce6fda815 =
     [ "REMORA_InitAnalyticBathymetry_Upwelling.H", "REMORA__InitAnalyticBathymetry__Upwelling_8H.html", "REMORA__InitAnalyticBathymetry__Upwelling_8H" ],
     [ "REMORA_InitAnalyticBathymetry_Upwelling_Coupling.H", "REMORA__InitAnalyticBathymetry__Upwelling__Coupling_8H.html", "REMORA__InitAnalyticBathymetry__Upwelling__Coupling_8H" ],
     [ "REMORA_InitAnalyticBathymetry_Upwelling_ML.H", "REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html", "REMORA__InitAnalyticBathymetry__Upwelling__ML_8H" ],
+    [ "REMORA_InitAnalyticBiology_BioToy.H", "REMORA__InitAnalyticBiology__BioToy_8H.html", "REMORA__InitAnalyticBiology__BioToy_8H" ],
     [ "REMORA_InitAnalyticGridScale_BoundaryLayer.H", "REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html", "REMORA__InitAnalyticGridScale__BoundaryLayer_8H" ],
     [ "REMORA_InitAnalyticHMix_Advection.H", "REMORA__InitAnalyticHMix__Advection_8H.html", "REMORA__InitAnalyticHMix__Advection_8H" ],
     [ "REMORA_InitAnalyticHMix_BoundaryLayer.H", "REMORA__InitAnalyticHMix__BoundaryLayer_8H.html", "REMORA__InitAnalyticHMix__BoundaryLayer_8H" ],

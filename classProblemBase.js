@@ -2,6 +2,7 @@ var classProblemBase =
 [
     [ "~ProblemBase", "classProblemBase.html#ac7201619fcd9464f851b0cae82dfbcd1", null ],
     [ "init_analytic_bathymetry", "classProblemBase.html#aeb76967b7fa42cb5e29d0be55fac98c8", null ],
+    [ "init_analytic_biology", "classProblemBase.html#adc12e9596aac251603c2b17a244a5cfe", null ],
     [ "init_analytic_coriolis", "classProblemBase.html#a8927bf96fa2a65addf0186c2a268bca8", null ],
     [ "init_analytic_grid_scale", "classProblemBase.html#a9ae1790470889e08d9a2bd59fd37947b", null ],
     [ "init_analytic_hmix", "classProblemBase.html#a45a7d5b91618f41b13278abd82b42632", null ],

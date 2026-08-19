@@ -96,7 +96,10 @@ $(document).ready(function(){initNavTree('REMORA__NCInterface_8cpp.html',''); in
   <div class="headertitle"><div class="title">REMORA_NCInterface.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstdio&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cctype&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a>&quot;</code><br />
 <code>#include &lt;AMReX.H&gt;</code><br />
 <code>#include &lt;AMReX_Print.H&gt;</code><br />
@@ -105,23 +108,28 @@ Include dependency graph for REMORA_NCInterface.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__NCInterface_8cpp__incl.png" border="0" usemap="#a_2home_2runner_2work_2REMORA_2REMORA_2Source_2IO_2REMORA__NCInterface_8cpp" alt=""/></div>
 <map name="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2IO_2REMORA__NCInterface_8cpp" id="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2IO_2REMORA__NCInterface_8cpp">
-<area shape="rect" title=" " alt="" coords="181,5,392,60"/>
-<area shape="rect" title=" " alt="" coords="35,108,96,133"/>
-<area shape="poly" title=" " alt="" coords="220,63,109,105,107,100,218,58"/>
-<area shape="rect" href="REMORA__NCInterface_8H.html" title=" " alt="" coords="121,108,298,133"/>
-<area shape="poly" title=" " alt="" coords="265,62,231,99,227,96,261,58"/>
-<area shape="rect" title=" " alt="" coords="323,108,405,133"/>
-<area shape="poly" title=" " alt="" coords="312,58,346,96,342,99,308,62"/>
-<area shape="rect" title=" " alt="" coords="429,108,549,133"/>
-<area shape="poly" title=" " alt="" coords="350,58,451,100,449,105,348,63"/>
-<area shape="rect" title=" " alt="" coords="5,181,64,207"/>
-<area shape="poly" title=" " alt="" coords="182,136,77,178,75,174,180,131"/>
-<area shape="rect" title=" " alt="" coords="89,181,213,207"/>
-<area shape="poly" title=" " alt="" coords="202,135,171,173,167,169,198,132"/>
-<area shape="rect" title=" " alt="" coords="237,181,299,207"/>
-<area shape="poly" title=" " alt="" coords="221,132,252,169,248,173,217,135"/>
-<area shape="rect" title=" " alt="" coords="324,181,407,207"/>
-<area shape="poly" title=" " alt="" coords="235,131,328,173,326,178,233,136"/>
+<area shape="rect" title=" " alt="" coords="199,5,409,60"/>
+<area shape="rect" title=" " alt="" coords="5,108,91,133"/>
+<area shape="poly" title=" " alt="" coords="227,63,96,106,94,101,225,58"/>
+<area shape="rect" title=" " alt="" coords="115,108,181,133"/>
+<area shape="poly" title=" " alt="" coords="258,62,182,104,180,99,255,58"/>
+<area shape="rect" title=" " alt="" coords="205,108,267,133"/>
+<area shape="poly" title=" " alt="" coords="285,62,256,99,252,95,281,58"/>
+<area shape="rect" title=" " alt="" coords="275,181,333,207"/>
+<area shape="poly" title=" " alt="" coords="307,60,307,168,301,168,301,60"/>
+<area shape="rect" href="REMORA__NCInterface_8H.html" title=" " alt="" coords="342,108,519,133"/>
+<area shape="poly" title=" " alt="" coords="344,58,404,98,401,102,341,62"/>
+<area shape="rect" title=" " alt="" coords="544,108,627,133"/>
+<area shape="poly" title=" " alt="" coords="391,58,536,102,534,107,389,63"/>
+<area shape="rect" title=" " alt="" coords="651,108,771,133"/>
+<area shape="poly" title=" " alt="" coords="410,54,644,103,642,108,409,59"/>
+<area shape="poly" title=" " alt="" coords="412,136,338,177,335,172,409,131"/>
+<area shape="rect" title=" " alt="" coords="358,181,482,207"/>
+<area shape="poly" title=" " alt="" coords="432,134,426,168,421,167,426,133"/>
+<area shape="rect" title=" " alt="" coords="506,181,569,207"/>
+<area shape="poly" title=" " alt="" coords="449,131,510,171,507,176,446,136"/>
+<area shape="rect" title=" " alt="" coords="593,181,676,207"/>
+<area shape="poly" title=" " alt="" coords="464,131,590,174,588,179,463,136"/>
 </map>
 </div>
 </div>
@@ -134,7 +142,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa67f9bcab4a9da3e92f2e2f3b4ec5979" id="r_aa67f9bcab4a9da3e92f2e2f3b4ec5979"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCInterface_8cpp.html#aa67f9bcab4a9da3e92f2e2f3b4ec5979">abort_func</a>&#160;&#160;&#160;amrex::Abort</td></tr>
+<tr class="memitem:aa67f9bcab4a9da3e92f2e2f3b4ec5979" id="r_aa67f9bcab4a9da3e92f2e2f3b4ec5979"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCInterface_8cpp.html#aa67f9bcab4a9da3e92f2e2f3b4ec5979">abort_func</a>&#160;&#160;&#160;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Abort</a></td></tr>
 <tr class="separator:aa67f9bcab4a9da3e92f2e2f3b4ec5979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -145,12 +153,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define abort_func&#160;&#160;&#160;amrex::Abort</td>
+          <td class="memname">#<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">define</a> abort_func&#160;&#160;&#160;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Abort</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00007">7</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00010">10</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 
 </div>
 </div>

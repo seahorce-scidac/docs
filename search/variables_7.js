@@ -9,5 +9,6 @@ var searchData=
   ['hires_5fgrid_5flevel_6',['hires_grid_level',['../classREMORA.html#af6613911799ddebd00cff330cf5c5f76',1,'REMORA']]],
   ['hires_5finit_5flevel_7',['hires_init_level',['../classREMORA.html#aa0f93b5eb692df3d7ba897ebe09507ae',1,'REMORA']]],
   ['history_5fcount_8',['history_count',['../classREMORA.html#a296bed166ddc9b98d606f3959ca6bfda',1,'REMORA']]],
-  ['horiz_5fmixing_5ftype_9',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]]
+  ['horiz_5fmixing_5ftype_9',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]],
+  ['hz_10',['hz',['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid']]]
 ];

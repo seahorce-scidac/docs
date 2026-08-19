@@ -53,7 +53,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
+        [ "Variables", "globals_vars.html", "globals_vars" ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
@@ -65,13 +65,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__InitAnalyticBathymetry__DoublyPeriodic_8H.html",
-"REMORA__InitAnalyticSMFlux__ParticlesOverSeamount_8H.html#a454034ba6a7f00d0cdff201b065b9f89",
-"REMORA__rhs__uv__3d_8cpp_source.html",
-"classREMORA.html#a495d8e3b3344e97ce392a99ed7ab9ab0",
-"classREMORA.html#addf7142c4f2b2c18468e6c17d587f9c4",
-"functions_y.html",
-"structTimeInterpolatedData.html#a68d1abba77684ee584ba484a185a44e2"
+"REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903a5a317d3dd3f7a2f675975a6d0c11c629",
+"REMORA__InitAnalyticProb__ParticlesOverSeamount_8H.html#ac4c4116a86fc50f40ef9815982d9267d",
+"REMORA__Tagging_8cpp_source.html",
+"classProblemBase.html#aba36d1f412e1932447d9aee6fb0bbb18",
+"classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb",
+"classREMORAPhysBCFunct.html#a74c61939fd45d56cc0bfcc6756806b65",
+"namespaceBCVars.html#a8dcbbf2e4270729cc954c73a9d050483",
+"structREMORABiology_1_1FennelParameters.html#aed8e1519246b1a44d87675af7054f44f",
+"structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -99,53 +99,61 @@ $(document).ready(function(){initNavTree('REMORA__NCTimeSeries_8cpp.html',''); i
 <code>#include &quot;AMReX_FillPatchUtil.H&quot;</code><br />
 <code>#include &quot;AMReX_Interpolater.H&quot;</code><br />
 <code>#include &quot;AMReX_ParallelDescriptor.H&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for REMORA_NCTimeSeries.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__NCTimeSeries_8cpp__incl.png" border="0" usemap="#a_2home_2runner_2work_2REMORA_2REMORA_2Source_2IO_2REMORA__NCTimeSeries_8cpp" alt=""/></div>
 <map name="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2IO_2REMORA__NCTimeSeries_8cpp" id="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2IO_2REMORA__NCTimeSeries_8cpp">
-<area shape="rect" title=" " alt="" coords="539,5,749,60"/>
+<area shape="rect" title=" " alt="" coords="1172,5,1383,60"/>
 <area shape="rect" href="REMORA__Constants_8H.html" title=" " alt="" coords="5,108,171,133"/>
-<area shape="poly" title=" " alt="" coords="539,53,176,109,175,103,538,48"/>
-<area shape="rect" href="REMORA__NCTimeSeries_8H.html" title=" " alt="" coords="347,108,539,133"/>
-<area shape="poly" title=" " alt="" coords="584,63,483,105,481,100,581,58"/>
-<area shape="rect" title=" " alt="" coords="337,255,396,280"/>
-<area shape="poly" title=" " alt="" coords="539,45,489,53,437,67,385,85,336,110,305,131,281,152,274,164,270,176,271,190,277,205,299,230,327,248,324,253,295,234,272,208,266,191,265,176,269,162,277,149,302,126,333,106,382,80,435,61,488,48,538,40"/>
-<area shape="rect" href="REMORA__NCFile_8H.html" title=" " alt="" coords="573,108,715,133"/>
-<area shape="poly" title=" " alt="" coords="647,60,647,94,641,94,641,60"/>
-<area shape="rect" title=" " alt="" coords="739,108,906,133"/>
-<area shape="poly" title=" " alt="" coords="700,58,788,100,785,104,697,62"/>
-<area shape="rect" title=" " alt="" coords="931,108,1096,133"/>
-<area shape="poly" title=" " alt="" coords="750,56,952,102,950,108,749,61"/>
-<area shape="rect" title=" " alt="" coords="1121,108,1325,133"/>
-<area shape="poly" title=" " alt="" coords="750,47,1133,103,1132,109,749,52"/>
+<area shape="poly" title=" " alt="" coords="1172,42,743,68,190,111,184,111,184,106,189,105,742,63,1172,37"/>
+<area shape="rect" href="REMORA__NCTimeSeries_8H.html" title=" " alt="" coords="341,108,533,133"/>
+<area shape="poly" title=" " alt="" coords="1172,47,547,111,546,106,1172,42"/>
+<area shape="rect" title=" " alt="" coords="396,255,455,280"/>
+<area shape="poly" title=" " alt="" coords="1172,40,953,49,691,64,459,84,377,97,330,110,300,130,276,152,269,164,267,177,268,191,276,205,297,227,325,243,354,254,383,260,382,265,353,259,322,248,294,232,271,208,263,192,261,177,264,163,272,149,296,126,328,106,376,91,459,79,691,58,953,44,1172,35"/>
+<area shape="rect" href="REMORA__NCFile_8H.html" title=" " alt="" coords="833,108,975,133"/>
+<area shape="poly" title=" " alt="" coords="1172,61,968,107,967,102,1171,56"/>
+<area shape="rect" title=" " alt="" coords="1123,255,1186,280"/>
+<area shape="poly" title=" " alt="" coords="1259,61,1242,97,1241,115,1246,132,1261,146,1280,156,1323,168,1341,173,1355,181,1360,192,1353,208,1338,225,1320,238,1280,256,1238,266,1200,269,1199,264,1238,260,1279,251,1318,233,1334,221,1348,205,1355,192,1351,184,1339,178,1321,173,1278,161,1257,151,1242,135,1235,116,1237,95,1254,59"/>
+<area shape="rect" title=" " alt="" coords="1255,108,1422,133"/>
+<area shape="poly" title=" " alt="" coords="1298,59,1324,95,1320,98,1294,62"/>
+<area shape="rect" title=" " alt="" coords="1447,108,1612,133"/>
+<area shape="poly" title=" " alt="" coords="1355,58,1483,101,1482,106,1353,63"/>
+<area shape="rect" title=" " alt="" coords="1637,108,1841,133"/>
+<area shape="poly" title=" " alt="" coords="1384,51,1664,103,1663,108,1383,56"/>
+<area shape="rect" title=" " alt="" coords="1865,108,1951,133"/>
+<area shape="poly" title=" " alt="" coords="1383,42,1596,68,1852,105,1851,111,1595,73,1382,48"/>
+<area shape="rect" title=" " alt="" coords="1975,108,2038,133"/>
+<area shape="poly" title=" " alt="" coords="1383,38,1643,61,1801,80,1962,106,1961,111,1800,86,1642,66,1383,43"/>
 <area shape="rect" title=" " alt="" coords="27,181,149,207"/>
 <area shape="poly" title=" " alt="" coords="91,134,91,168,85,168,85,134"/>
-<area shape="poly" title=" " alt="" coords="361,136,319,153,301,166,286,183,282,192,282,200,290,217,308,232,330,246,327,250,305,237,286,220,277,201,277,190,282,180,297,162,316,149,359,131"/>
+<area shape="poly" title=" " alt="" coords="360,136,319,153,301,166,286,183,281,196,283,208,291,219,305,228,342,245,383,256,381,261,340,250,302,233,287,223,278,210,275,196,282,180,297,162,316,149,358,131"/>
 <area shape="rect" title=" " alt="" coords="467,181,544,207"/>
-<area shape="poly" title=" " alt="" coords="455,132,488,169,484,173,451,135"/>
+<area shape="poly" title=" " alt="" coords="450,132,487,169,483,173,447,136"/>
 <area shape="rect" title=" " alt="" coords="296,181,443,207"/>
-<area shape="poly" title=" " alt="" coords="432,136,393,174,389,170,429,132"/>
-<area shape="poly" title=" " alt="" coords="637,135,604,171,582,191,557,209,520,228,481,242,410,261,409,256,480,237,518,223,555,204,579,187,601,168,633,132"/>
-<area shape="poly" title=" " alt="" coords="623,136,541,177,539,173,621,131"/>
+<area shape="poly" title=" " alt="" coords="428,136,392,173,388,169,424,132"/>
+<area shape="poly" title=" " alt="" coords="833,133,725,152,666,166,608,184,582,195,557,209,465,251,463,247,555,204,580,191,606,179,664,161,724,147,832,128"/>
+<area shape="poly" title=" " alt="" coords="836,136,563,184,558,185,557,180,562,179,835,131"/>
 <area shape="rect" title=" " alt="" coords="821,181,896,207"/>
-<area shape="poly" title=" " alt="" coords="679,131,812,174,810,179,678,136"/>
+<area shape="poly" title=" " alt="" coords="899,135,876,171,871,168,894,132"/>
 <area shape="rect" title=" " alt="" coords="920,181,979,207"/>
-<area shape="poly" title=" " alt="" coords="699,131,907,178,906,184,698,136"/>
+<area shape="poly" title=" " alt="" coords="914,132,937,168,932,171,909,135"/>
 <area shape="rect" title=" " alt="" coords="1003,181,1159,207"/>
-<area shape="poly" title=" " alt="" coords="715,131,998,176,997,182,714,136"/>
+<area shape="poly" title=" " alt="" coords="933,131,1041,174,1039,179,932,136"/>
 <area shape="rect" title=" " alt="" coords="1184,181,1339,207"/>
-<area shape="poly" title=" " alt="" coords="716,129,728,131,1171,179,1170,184,728,136,715,134"/>
+<area shape="poly" title=" " alt="" coords="962,131,1191,176,1190,181,961,136"/>
 <area shape="rect" href="REMORA__NCInterface_8H.html" title=" " alt="" coords="619,181,797,207"/>
-<area shape="poly" title=" " alt="" coords="657,132,691,169,687,173,653,135"/>
-<area shape="poly" title=" " alt="" coords="654,209,410,260,409,255,653,204"/>
-<area shape="rect" title=" " alt="" coords="529,255,653,280"/>
-<area shape="poly" title=" " alt="" coords="691,209,623,250,620,245,688,204"/>
-<area shape="rect" title=" " alt="" coords="677,255,739,280"/>
-<area shape="poly" title=" " alt="" coords="711,207,711,241,705,241,705,207"/>
-<area shape="rect" title=" " alt="" coords="764,255,847,280"/>
-<area shape="poly" title=" " alt="" coords="725,205,780,244,777,248,722,209"/>
+<area shape="poly" title=" " alt="" coords="873,136,754,179,752,174,872,131"/>
+<area shape="poly" title=" " alt="" coords="663,209,469,258,468,253,662,204"/>
+<area shape="rect" title=" " alt="" coords="582,255,706,280"/>
+<area shape="poly" title=" " alt="" coords="699,209,665,246,661,243,695,205"/>
+<area shape="poly" title=" " alt="" coords="780,204,1110,256,1109,261,779,209"/>
+<area shape="rect" title=" " alt="" coords="731,255,813,280"/>
+<area shape="poly" title=" " alt="" coords="721,205,755,243,751,246,717,209"/>
 </map>
 </div>
 </div>

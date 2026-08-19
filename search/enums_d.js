@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vertmixingtype_0',['VertMixingType',['../REMORA__DataStruct_8H.html#ae051a5657a30b61eb6fe9bab09127856',1,'REMORA_DataStruct.H']]]
+  ['scaledtogridamrscaling_0',['ScaledToGridAMRScaling',['../REMORA__DataStruct_8H.html#a7090eccc5e33690f648fa0f61cd5e4f7',1,'REMORA_DataStruct.H']]],
+  ['smfluxtype_1',['SMFluxType',['../REMORA__DataStruct_8H.html#a3c0b9a5b6463511000d925bad1d90256',1,'REMORA_DataStruct.H']]]
 ];

@@ -60,6 +60,7 @@ var searchData=
   ['gls_5fstability_5ftype_57',['gls_stability_type',['../structSolverChoice.html#a01e4bdce2918d0f3b9fb31c69c9f63d4',1,'SolverChoice']]],
   ['gls_5fstabilitytype_58',['GLS_StabilityType',['../REMORA__DataStruct_8H.html#ad18d1e0933941f14a7dec3d68b783288',1,'REMORA_DataStruct.H']]],
   ['gotonextline_59',['GotoNextLine',['../classREMORA.html#a03e3346471b528f47454cd969393786d',1,'REMORA']]],
-  ['grid_5fscale_5ftype_60',['grid_scale_type',['../structSolverChoice.html#ad9e492a86d9c69d92530dfbcd15626f3',1,'SolverChoice']]],
-  ['gridscaletype_61',['GridScaleType',['../REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727',1,'REMORA_DataStruct.H']]]
+  ['grid_60',['grid',['../namespacemod__grid.html#a2853b5a43c7662cfb1dbdae79ebe48d7',1,'mod_grid']]],
+  ['grid_5fscale_5ftype_61',['grid_scale_type',['../structSolverChoice.html#ad9e492a86d9c69d92530dfbcd15626f3',1,'SolverChoice']]],
+  ['gridscaletype_62',['GridScaleType',['../REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727',1,'REMORA_DataStruct.H']]]
 ];
