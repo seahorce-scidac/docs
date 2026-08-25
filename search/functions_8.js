@@ -55,13 +55,12 @@ var searchData=
   ['init_5fzeta_5ffrom_5fnetcdf_52',['init_zeta_from_netcdf',['../classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0',1,'REMORA']]],
   ['init_5fzeta_5ffull_5fdomain_5ffrom_5fnetcdf_53',['init_zeta_full_domain_from_netcdf',['../classREMORA.html#a1c1ee9da7ff66b36615f16f068f7f5bd',1,'REMORA']]],
   ['initdata_54',['InitData',['../classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089',1,'REMORA']]],
-  ['initialize_55',['initialize',['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()']]],
+  ['initialize_55',['initialize',['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()'],['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()']]],
   ['initializefromfile_56',['InitializeFromFile',['../classREMORA.html#af25043e75bc350bc40ae56f65649554b',1,'REMORA']]],
   ['initializelevelfromdata_57',['InitializeLevelFromData',['../classREMORA.html#abc5dc3d0306ebb6507e6c702241f07a0',1,'REMORA']]],
   ['interp_5ffab_58',['interp_fab',['../classNCTimeSeriesBoundary.html#a0831532ec2874705078026fce481a6b8',1,'NCTimeSeriesBoundary']]],
   ['interpcell_59',['InterpCell',['../classREMORAFillPatcher.html#a61e471f7848c2e0ba119380c0063b368',1,'REMORAFillPatcher']]],
   ['interpface_60',['InterpFace',['../classREMORAFillPatcher.html#aad8d35f93cf74ecc7b2d1a031b5ce890',1,'REMORAFillPatcher']]],
-  ['interpolate_5f1d_61',['interpolate_1d',['../REMORA__Math_8H.html#a803d0d35d4ca4791556cbe02bbf51cbb',1,'REMORA_Math.H']]],
-  ['iput_62',['iput',['../structncutils_1_1NCVar.html#a493ade206e0f39a383ab35aa67f4548c',1,'ncutils::NCVar']]],
-  ['is_5fit_5ftime_5ffor_5faction_63',['is_it_time_for_action',['../classREMORA.html#ac1343ee03c1a0119736b4afe199019f3',1,'REMORA']]]
+  ['iput_61',['iput',['../structncutils_1_1NCVar.html#a493ade206e0f39a383ab35aa67f4548c',1,'ncutils::NCVar']]],
+  ['is_5fit_5ftime_5ffor_5faction_62',['is_it_time_for_action',['../classREMORA.html#ac1343ee03c1a0119736b4afe199019f3',1,'REMORA']]]
 ];

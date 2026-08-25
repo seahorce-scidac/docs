@@ -2,7 +2,7 @@ var searchData=
 [
   ['n_0',['n',['../namespacemod__param.html#afb993e73109b51996772143004feb33d',1,'mod_param']]],
   ['name_1',['name',['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()'],['../structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09',1,'NDArray::name']]],
-  ['nat_2',['nat',['../namespacemod__param.html#a8e180e438cebc09f369f9a995d48da82',1,'mod_param::nat'],['../REMORA__IndexDefines_8H.html#a581c6a0de9efb13c2fa90ec339efd720',1,'NAT:&#160;REMORA_IndexDefines.H']]],
+  ['nat_2',['nat',['../REMORA__IndexDefines_8H.html#a581c6a0de9efb13c2fa90ec339efd720',1,'NAT:&#160;REMORA_IndexDefines.H'],['../namespacemod__param.html#a8e180e438cebc09f369f9a995d48da82',1,'mod_param::nat']]],
   ['nbio_3',['nbio',['../classREMORA.html#a7b79b15b3444d138afc8abb5112e33ce',1,'REMORA']]],
   ['nbt_4',['nbt',['../namespacemod__param.html#a64e98e8be2aca5c6f6fb5cf4a1b8236a',1,'mod_param']]],
   ['nc2d_5',['NC2D',['../REMORA__IndexDefines_8H.html#abfba840d9b9e67c0c03dc933ee8f40f0',1,'REMORA_IndexDefines.H']]],

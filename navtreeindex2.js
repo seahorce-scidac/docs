@@ -158,9 +158,6 @@ var NAVTREEINDEX2 =
 "REMORA__MOAB_8H_source.html":[3,0,0,18],
 "REMORA__MOAB_8cpp.html":[3,0,0,17],
 "REMORA__MOAB_8cpp_source.html":[3,0,0,17],
-"REMORA__Math_8H.html":[3,0,0,7,2],
-"REMORA__Math_8H.html#a803d0d35d4ca4791556cbe02bbf51cbb":[3,0,0,7,2,0],
-"REMORA__Math_8H_source.html":[3,0,0,7,2],
 "REMORA__NCFile_8H.html":[3,0,0,3,3],
 "REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06":[3,0,0,3,3,2],
 "REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4":[3,0,0,3,3,2,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX2 =
 "REMORA__SetPlotVars_8cpp_source.html":[3,0,0,3,16],
 "REMORA__SumIQ_8cpp.html":[3,0,0,19],
 "REMORA__SumIQ_8cpp_source.html":[3,0,0,19],
-"REMORA__Tagging_8cpp.html":[3,0,0,20]
+"REMORA__Tagging_8cpp.html":[3,0,0,20],
+"REMORA__Tagging_8cpp_source.html":[3,0,0,20],
+"REMORA__TimeInterpolatedData_8H.html":[3,0,0,1,10],
+"REMORA__TimeInterpolatedData_8H_source.html":[3,0,0,1,10]
 };

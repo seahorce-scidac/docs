@@ -1,8 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338":[1,0,21,0,0],
-"structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6":[2,0,4,0,1],
-"structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6":[1,0,21,0,1],
 "structncutils_1_1NCVar.html":[2,0,4,3],
 "structncutils_1_1NCVar.html":[1,0,21,3],
 "structncutils_1_1NCVar.html#a0a4ddce55f60e3accbaf02441b6484cf":[2,0,4,3,21],
