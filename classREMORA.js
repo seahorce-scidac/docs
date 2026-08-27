@@ -90,7 +90,6 @@ var classREMORA =
     [ "init_coriolis_from_netcdf", "classREMORA.html#a927ffca3219ad725a74bd4468ef1d196", null ],
     [ "init_data_from_netcdf", "classREMORA.html#a54b7048bd828c4a13fe687d951211fa1", null ],
     [ "init_data_full_domain_from_netcdf", "classREMORA.html#a9ababbae753b6ed201f21c2213bc424a", null ],
-    [ "init_flat_bathymetry", "classREMORA.html#a8277ac2ad8eb9a78d54d031bc1516d3b", null ],
     [ "init_full_domain_from_analytic", "classREMORA.html#a997124593f51976bc6af0a401ecb72aa", null ],
     [ "init_full_domain_zeta_from_analytic", "classREMORA.html#a0ec5f693171e009e71bf96696d47a5b3", null ],
     [ "init_gls_vmix", "classREMORA.html#a1539f678cff20cd3b345d7ace65358f5", null ],

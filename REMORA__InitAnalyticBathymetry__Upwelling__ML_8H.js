@@ -1,6 +1,5 @@
 var REMORA__InitAnalyticBathymetry__Upwelling__ML_8H =
 [
-    [ "AMREX_ALWAYS_ASSERT", "REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#aa55343a26bdba4f70b3c25a168e9d972", null ],
     [ "for", "REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#a66adf2fe2df8c7e124123e3e0327213a", null ],
     [ "if", "REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#a2e92414781f6e7e29bf10adad5c5c96a", null ],
     [ "setVal", "REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#a8a679062f388e820893598db05e40897", null ],

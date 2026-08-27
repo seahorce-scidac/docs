@@ -3,6 +3,7 @@ var dir_451f984cbae2157dc09f494ce6fda815 =
     [ "REMORA_InitAnalyticBathymetry_Advection.H", "REMORA__InitAnalyticBathymetry__Advection_8H.html", "REMORA__InitAnalyticBathymetry__Advection_8H" ],
     [ "REMORA_InitAnalyticBathymetry_BoundaryLayer.H", "REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html", "REMORA__InitAnalyticBathymetry__BoundaryLayer_8H" ],
     [ "REMORA_InitAnalyticBathymetry_ChannelTest.H", "REMORA__InitAnalyticBathymetry__ChannelTest_8H.html", "REMORA__InitAnalyticBathymetry__ChannelTest_8H" ],
+    [ "REMORA_InitAnalyticBathymetry_CoupleToERF.H", "REMORA__InitAnalyticBathymetry__CoupleToERF_8H.html", "REMORA__InitAnalyticBathymetry__CoupleToERF_8H" ],
     [ "REMORA_InitAnalyticBathymetry_DogboneAnalytic.H", "REMORA__InitAnalyticBathymetry__DogboneAnalytic_8H.html", "REMORA__InitAnalyticBathymetry__DogboneAnalytic_8H" ],
     [ "REMORA_InitAnalyticBathymetry_DoublyPeriodic.H", "REMORA__InitAnalyticBathymetry__DoublyPeriodic_8H.html", "REMORA__InitAnalyticBathymetry__DoublyPeriodic_8H" ],
     [ "REMORA_InitAnalyticBathymetry_ParticlesOverSeamount.H", "REMORA__InitAnalyticBathymetry__ParticlesOverSeamount_8H.html", "REMORA__InitAnalyticBathymetry__ParticlesOverSeamount_8H" ],

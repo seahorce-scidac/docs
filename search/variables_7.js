@@ -3,12 +3,13 @@ var searchData=
   ['h00_0',['H00',['../REMORA__Constants_8H.html#a154eea4d34664a1988845271e63691df',1,'REMORA_Constants.H']]],
   ['h01_1',['H01',['../REMORA__Constants_8H.html#a3c57cd2d2425ad965bbd558f6082012b',1,'REMORA_Constants.H']]],
   ['h02_2',['H02',['../REMORA__Constants_8H.html#a9f34e98bbb1d4bc4882f1089912f8a1c',1,'REMORA_Constants.H']]],
-  ['hair_3',['Hair',['../structSolverChoice.html#ad543d5441b4ea9d4ecba199d220671d7',1,'SolverChoice']]],
-  ['harmonic_5fmixing_5ftype_4',['harmonic_mixing_type',['../structSolverChoice.html#aefa757413322421a85f6f74774d63968',1,'SolverChoice']]],
-  ['has_5fz_5',['has_z',['../classNCTimeSeriesRiver.html#afbf28d73c655104adcc6766e5e09ea98',1,'NCTimeSeriesRiver']]],
-  ['hires_5fgrid_5flevel_6',['hires_grid_level',['../classREMORA.html#af6613911799ddebd00cff330cf5c5f76',1,'REMORA']]],
-  ['hires_5finit_5flevel_7',['hires_init_level',['../classREMORA.html#aa0f93b5eb692df3d7ba897ebe09507ae',1,'REMORA']]],
-  ['history_5fcount_8',['history_count',['../classREMORA.html#a296bed166ddc9b98d606f3959ca6bfda',1,'REMORA']]],
-  ['horiz_5fmixing_5ftype_9',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]],
-  ['hz_10',['hz',['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid']]]
+  ['h_5fncomp_3',['h_ncomp',['../REMORA__InitAnalyticBathymetry__Advection_8H.html#a080157b623900f009235b6841003d229',1,'h_ncomp:&#160;REMORA_InitAnalyticBathymetry_Advection.H'],['../REMORA__InitAnalyticBathymetry__CoupleToERF_8H.html#a080157b623900f009235b6841003d229',1,'h_ncomp:&#160;REMORA_InitAnalyticBathymetry_CoupleToERF.H']]],
+  ['hair_4',['Hair',['../structSolverChoice.html#ad543d5441b4ea9d4ecba199d220671d7',1,'SolverChoice']]],
+  ['harmonic_5fmixing_5ftype_5',['harmonic_mixing_type',['../structSolverChoice.html#aefa757413322421a85f6f74774d63968',1,'SolverChoice']]],
+  ['has_5fz_6',['has_z',['../classNCTimeSeriesRiver.html#afbf28d73c655104adcc6766e5e09ea98',1,'NCTimeSeriesRiver']]],
+  ['hires_5fgrid_5flevel_7',['hires_grid_level',['../classREMORA.html#af6613911799ddebd00cff330cf5c5f76',1,'REMORA']]],
+  ['hires_5finit_5flevel_8',['hires_init_level',['../classREMORA.html#aa0f93b5eb692df3d7ba897ebe09507ae',1,'REMORA']]],
+  ['history_5fcount_9',['history_count',['../classREMORA.html#a296bed166ddc9b98d606f3959ca6bfda',1,'REMORA']]],
+  ['horiz_5fmixing_5ftype_10',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]],
+  ['hz_11',['hz',['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid']]]
 ];

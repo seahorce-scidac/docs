@@ -39,7 +39,6 @@ var structSolverChoice =
     [ "EminusP", "structSolverChoice.html#a7df31e004bdd9abb419f8095514db644", null ],
     [ "eminusp_correct_ssh", "structSolverChoice.html#a65f90912d34e882ba29cb64a20f56ceb", null ],
     [ "eos_type", "structSolverChoice.html#a48f3f43f3386d6b7dab9e15cfd0db11e", null ],
-    [ "flat_bathymetry", "structSolverChoice.html#a57e1d7e053fa63774c4c44980272031a", null ],
     [ "gls_c1", "structSolverChoice.html#a961488d3435e26092359beb4ac12293b", null ],
     [ "gls_c2", "structSolverChoice.html#ae81ccefced9f97b10e286ccd74209f6b", null ],
     [ "gls_c3m", "structSolverChoice.html#a8716c769dae03013ecefeea8281a0837", null ],
