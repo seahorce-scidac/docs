@@ -1,6 +1,6 @@
 var classNCTimeSeriesRiver =
 [
-    [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html#a7b2e650cbe6ae7352d4b8dea792fa1c1", null ],
+    [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html#a08c913f75309016cbf5f01f3797a89d9", null ],
     [ "Initialize", "classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3", null ],
     [ "read_in_at_time", "classNCTimeSeriesRiver.html#abf586562cf93e68e604212666f66bf31", null ],
     [ "update_interpolated_to_time", "classNCTimeSeriesRiver.html#a494caa0f2cb0e78439fb4e1d6d654039", null ],
@@ -14,6 +14,7 @@ var classNCTimeSeriesRiver =
     [ "file_names", "classNCTimeSeriesRiver.html#a4f85b815852ebb03ac5bf7dc4aaeda23", null ],
     [ "has_z", "classNCTimeSeriesRiver.html#afbf28d73c655104adcc6766e5e09ea98", null ],
     [ "i_time_before", "classNCTimeSeriesRiver.html#ab3db62bcd9010e2962122aefb5017ab6", null ],
+    [ "is_transport", "classNCTimeSeriesRiver.html#a5f870c9a8ffea21a8ee4edcf6fcd2a58", null ],
     [ "nriv", "classNCTimeSeriesRiver.html#a21a8d0f1c029f7646db7613b9994e017", null ],
     [ "nz", "classNCTimeSeriesRiver.html#ad7bb579c630c113de798f847417bf6cd", null ],
     [ "nzbox", "classNCTimeSeriesRiver.html#a351be9339152e48e75c8d93ad5942d3a", null ],

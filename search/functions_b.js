@@ -4,7 +4,7 @@ var searchData=
   ['ncfile_1',['NCFile',['../classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423',1,'ncutils::NCFile']]],
   ['nctimeseries_2',['NCTimeSeries',['../classNCTimeSeries.html#a9db811fa721ed79a08c08ebb405e7484',1,'NCTimeSeries']]],
   ['nctimeseriesboundary_3',['NCTimeSeriesBoundary',['../classNCTimeSeriesBoundary.html#a9ce5255ff872e1489030c32a31f936d7',1,'NCTimeSeriesBoundary']]],
-  ['nctimeseriesriver_4',['NCTimeSeriesRiver',['../classNCTimeSeriesRiver.html#a7b2e650cbe6ae7352d4b8dea792fa1c1',1,'NCTimeSeriesRiver']]],
+  ['nctimeseriesriver_4',['NCTimeSeriesRiver',['../classNCTimeSeriesRiver.html#a08c913f75309016cbf5f01f3797a89d9',1,'NCTimeSeriesRiver']]],
   ['ndarray_5',['ndarray',['../structNDArray.html#a896e27f1238a68d5221aa00bbf9fd2f0',1,'NDArray::NDArray(const std::string vname, const std::vector&lt; MPI_Offset &gt; &amp;vshape)'],['../structNDArray.html#a1f33dbd861944bc1494f4790f4f8543d',1,'NDArray::NDArray()']]],
   ['ndim_6',['ndim',['../structNDArray.html#a1b3ece1ab109568fcb919d1af8f14eee',1,'NDArray::ndim()'],['../structncutils_1_1NCVar.html#ae0ab15dc4c1033271878c3bf5102f911',1,'ncutils::NCVar::ndim()']]],
   ['nonlin_5feos_7',['nonlin_eos',['../classREMORA.html#addc06a380411d14dc082150b72232548',1,'REMORA']]],

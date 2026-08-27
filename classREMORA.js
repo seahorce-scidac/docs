@@ -35,6 +35,7 @@ var classREMORA =
     [ "calc_stretch_coeffs", "classREMORA.html#a8cd1019868a513474f04070e618fae63", null ],
     [ "calculate_nodal_masks", "classREMORA.html#a12b2ff45daac2a7355a7adcc800ce75e", null ],
     [ "ClearLevel", "classREMORA.html#a381f0228efdd9ed40fd9ed0825aa47c2", null ],
+    [ "clim_nudg_momentum_box", "classREMORA.html#a454cc74d9dd11beea266b589f7b2ccf9", null ],
     [ "ComputeDt", "classREMORA.html#a7671b889b87ca190f7aba7188074efa3", null ],
     [ "ComputeGhostCells", "classREMORA.html#a3be29f45efb0b259995c494f6dac2b97", null ],
     [ "ConfigureDriverAtmosToOceanCoupling", "classREMORA.html#a05c4950669c2a8bd013562a7292a59a9", null ],

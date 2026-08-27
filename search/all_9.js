@@ -66,11 +66,11 @@ var searchData=
   ['init_5fzeta_5ffrom_5fnetcdf_63',['init_zeta_from_netcdf',['../classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0',1,'REMORA']]],
   ['init_5fzeta_5ffull_5fdomain_5ffrom_5fnetcdf_64',['init_zeta_full_domain_from_netcdf',['../classREMORA.html#a1c1ee9da7ff66b36615f16f068f7f5bd',1,'REMORA']]],
   ['initdata_65',['InitData',['../classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089',1,'REMORA']]],
-  ['initialize_66',['initialize',['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()'],['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()']]],
+  ['initialize_66',['initialize',['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()'],['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()']]],
   ['initializefromfile_67',['InitializeFromFile',['../classREMORA.html#af25043e75bc350bc40ae56f65649554b',1,'REMORA']]],
   ['initializelevelfromdata_68',['InitializeLevelFromData',['../classREMORA.html#abc5dc3d0306ebb6507e6c702241f07a0',1,'REMORA']]],
   ['inlm_69',['inlm',['../namespacemod__param.html#a1c294ceeeb627cfedbb56d5c60ca4d08',1,'mod_param']]],
-  ['inputs_5fname_70',['inputs_name',['../REMORA__NCPlotFile_8H.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name:&#160;main.cpp'],['../REMORA__writeJobInfo_8cpp.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name:&#160;main.cpp'],['../main_8cpp.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name:&#160;main.cpp']]],
+  ['inputs_5fname_70',['inputs_name',['../main_8cpp.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name:&#160;main.cpp'],['../REMORA__NCPlotFile_8H.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name:&#160;main.cpp'],['../REMORA__writeJobInfo_8cpp.html#aabaa127a3a319c1b86090d6c88568965',1,'inputs_name:&#160;main.cpp']]],
   ['int_71',['Int',['../structncutils_1_1NCDType.html#ac5bfba212db12de3dfde52dc3ae3eb0c',1,'ncutils::NCDType']]],
   ['int_5fdir_72',['int_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a223988127b7e8a66aabbc3a1f98dddf0',1,'REMORABCType']]],
   ['interp_5ffab_73',['interp_fab',['../classNCTimeSeriesBoundary.html#a0831532ec2874705078026fce481a6b8',1,'NCTimeSeriesBoundary']]],
@@ -82,8 +82,9 @@ var searchData=
   ['is_5fcycle_79',['is_cycle',['../classNCTimeSeries.html#a4deece011c7472c2bd7a1d0cd5cb8e5e',1,'NCTimeSeries']]],
   ['is_5fit_5ftime_5ffor_5faction_80',['is_it_time_for_action',['../classREMORA.html#ac1343ee03c1a0119736b4afe199019f3',1,'REMORA']]],
   ['is_5fopen_81',['is_open',['../classncutils_1_1NCFile.html#aa98d902ef67803393e80929bb73cb379',1,'ncutils::NCFile']]],
-  ['isalt_82',['isalt',['../namespacemod__ncparam.html#aa4aefea770f9f3bb2bc126bacc1e36ce',1,'mod_ncparam']]],
-  ['istep_83',['istep',['../classREMORA.html#a7c44493fe1a5743c92f272c91c3aa558',1,'REMORA']]],
-  ['istr_84',['istr',['../structmod__param_1_1t__bounds.html#a8af397c3734b212feb0b47fb47c09a0e',1,'mod_param::t_bounds']]],
-  ['itemp_85',['itemp',['../namespacemod__ncparam.html#ab415cb908b037ea50b3541047a242042',1,'mod_ncparam']]]
+  ['is_5ftransport_82',['is_transport',['../classNCTimeSeriesRiver.html#a5f870c9a8ffea21a8ee4edcf6fcd2a58',1,'NCTimeSeriesRiver']]],
+  ['isalt_83',['isalt',['../namespacemod__ncparam.html#aa4aefea770f9f3bb2bc126bacc1e36ce',1,'mod_ncparam']]],
+  ['istep_84',['istep',['../classREMORA.html#a7c44493fe1a5743c92f272c91c3aa558',1,'REMORA']]],
+  ['istr_85',['istr',['../structmod__param_1_1t__bounds.html#a8af397c3734b212feb0b47fb47c09a0e',1,'mod_param::t_bounds']]],
+  ['itemp_86',['itemp',['../namespacemod__ncparam.html#ab415cb908b037ea50b3541047a242042',1,'mod_ncparam']]]
 ];
