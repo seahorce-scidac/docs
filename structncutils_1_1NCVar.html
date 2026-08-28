@@ -139,6 +139,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85c122dc6aafe9ec0d1845d75797384a" id="r_a85c122dc6aafe9ec0d1845d75797384a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a85c122dc6aafe9ec0d1845d75797384a">put_all</a> (<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">double</a> *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">dptr</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::vector&lt; MPI_Offset &gt; &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">start</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::vector&lt; MPI_Offset &gt; &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">count</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a></td></tr>
 <tr class="memdesc:a85c122dc6aafe9ec0d1845d75797384a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data, collective.  <br /></td></tr>
 <tr class="separator:a85c122dc6aafe9ec0d1845d75797384a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1890e1c07a36a10c9d6137f51045f0" id="r_a4e1890e1c07a36a10c9d6137f51045f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a4e1890e1c07a36a10c9d6137f51045f0">put_varn_all</a> (int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">num</a>, MPI_Offset *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> *starts, MPI_Offset *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> *counts, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">double</a> *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">dptr</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a></td></tr>
+<tr class="separator:a4e1890e1c07a36a10c9d6137f51045f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d49952f029454736f33332bb9880857" id="r_a2d49952f029454736f33332bb9880857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a2d49952f029454736f33332bb9880857">put_varn_all</a> (int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">num</a>, MPI_Offset *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> *starts, MPI_Offset *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> *counts, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">float</a> *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">dptr</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a></td></tr>
+<tr class="memdesc:a2d49952f029454736f33332bb9880857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out <code>num</code> subarrays in a single collective call (float overload)  <br /></td></tr>
+<tr class="separator:a2d49952f029454736f33332bb9880857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a493ade206e0f39a383ab35aa67f4548c" id="r_a493ade206e0f39a383ab35aa67f4548c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structncutils_1_1NCVar.html#a493ade206e0f39a383ab35aa67f4548c">iput</a> (<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">double</a> *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">dptr</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::vector&lt; MPI_Offset &gt; &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">start</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::vector&lt; MPI_Offset &gt; &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">count</a>, int *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">request</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a></td></tr>
 <tr class="memdesc:a493ade206e0f39a383ab35aa67f4548c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out a slice of data with with strides (see hyperslab definition in NetCDF)  <br /></td></tr>
 <tr class="separator:a493ade206e0f39a383ab35aa67f4548c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,7 +310,7 @@ Public Attributes</h2></td></tr>
 
 <p>Read a chunk of data from the file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00248">248</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00256">256</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -359,7 +364,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data with strides. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00252">252</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00260">260</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -407,7 +412,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data from the file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00194">194</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00202">202</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -461,7 +466,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data with strides. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00202">202</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00210">210</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -493,7 +498,7 @@ Here is the call graph for this function:</div>
 
 <p>Read the entire variable from file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00182">182</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00190">190</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -541,7 +546,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data from the file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00212">212</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00220">220</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -595,7 +600,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data with strides. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00220">220</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00228">228</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -627,7 +632,7 @@ Here is the call graph for this function:</div>
 
 <p>Read the entire variable from file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00186">186</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00194">194</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -675,7 +680,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data from the file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00230">230</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00238">238</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -729,7 +734,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data with strides. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00238">238</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00246">246</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -761,7 +766,7 @@ Here is the call graph for this function:</div>
 
 <p>Read the entire variable from file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00190">190</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00198">198</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -809,7 +814,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data from the file, collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00198">198</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00206">206</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -863,7 +868,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data with strides, collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00207">207</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00215">215</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -911,7 +916,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data from file, collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00216">216</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00224">224</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -965,7 +970,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data with strides, collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00225">225</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00233">233</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1013,7 +1018,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data from the file, collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00234">234</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00242">242</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1067,7 +1072,7 @@ Here is the call graph for this function:</div>
 
 <p>Read a chunk of data with strides, collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00243">243</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00251">251</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1099,7 +1104,7 @@ Here is the call graph for this function:</div>
 
 <p>Read attribute from file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00280">280</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00288">288</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1144,7 +1149,7 @@ Here is the call graph for this function:</div>
 
 <p>Read attribute from file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00289">289</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00297">297</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1189,7 +1194,7 @@ Here is the call graph for this function:</div>
 
 <p>Read attribute from file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00296">296</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00304">304</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1234,7 +1239,7 @@ Here is the call graph for this function:</div>
 
 <p>Read attribute from file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00303">303</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00311">311</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1269,7 +1274,7 @@ Here is the call graph for this function:</div>
 
 <p>Whether a variable has an attribute with name. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00257">257</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00265">265</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1327,7 +1332,7 @@ Here is the call graph for this function:</div>
 <p>Write out a slice of data with with strides (see hyperslab definition in NetCDF) </p>
 <p>Write out a slice of data, non-blocking. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00122">122</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00130">130</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1360,7 +1365,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00075">75</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00280">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00289">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00296">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00303">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00257">has_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00264">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00268">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00272">put_attr()</a>, and <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00276">put_attr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00288">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00297">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00304">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00311">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00265">has_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00272">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00276">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00280">put_attr()</a>, and <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00284">put_attr()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1477,7 +1482,7 @@ Here is the caller graph for this function:</div>
 
 <p>Write out a slice of string data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00173">173</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00181">181</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1531,7 +1536,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of string data with stride. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00177">177</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00185">185</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1633,7 +1638,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of data with with strides. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00127">127</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00135">135</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1713,7 +1718,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00137">137</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00145">145</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1767,7 +1772,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of data with with strides (see hyperslab definition in NetCDF) </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00145">145</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00153">153</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1847,7 +1852,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00155">155</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00163">163</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1901,7 +1906,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of data with with strides (see hyperslab definition in NetCDF) </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00163">163</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00171">171</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2035,7 +2040,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of data with with strides , collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00132">132</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00140">140</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2083,7 +2088,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of data, collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00141">141</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00149">149</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2137,7 +2142,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of data with with strides, collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00150">150</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00158">158</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2185,7 +2190,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of data, collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00159">159</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00167">167</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2239,7 +2244,7 @@ Here is the call graph for this function:</div>
 
 <p>Write out a slice of data with with strides, collective. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00168">168</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00176">176</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2281,7 +2286,7 @@ Here is the call graph for this function:</div>
 
 <p>Set attribute "name" to "value". </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00264">264</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00272">272</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2326,7 +2331,7 @@ Here is the call graph for this function:</div>
 
 <p>Set attribute "name" to "value". </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00268">268</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00276">276</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2371,7 +2376,7 @@ Here is the call graph for this function:</div>
 
 <p>Set attribute "name" to "value". </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00272">272</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00280">280</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2416,7 +2421,7 @@ Here is the call graph for this function:</div>
 
 <p>Set attribute "name" to "value". </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00276">276</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00284">284</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2428,6 +2433,113 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="432,31,495,56"/>
 <area shape="poly" title=" " alt="" coords="177,41,418,41,418,46,177,46"/>
 <area shape="poly" title=" " alt="" coords="385,28,419,34,418,39,384,33"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e1890e1c07a36a10c9d6137f51045f0" name="a4e1890e1c07a36a10c9d6137f51045f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1890e1c07a36a10c9d6137f51045f0">&#9670;&#160;</a></span>put_varn_all() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> ncutils::NCVar::put_varn_all </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Offset *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> *&#160;</td>
+          <td class="paramname"><em>starts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Offset *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> *&#160;</td>
+          <td class="paramname"><em>counts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">double</a> *&#160;</td>
+          <td class="paramname"><em>dptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write out <code>num</code> subarrays in a single collective call. Every rank that opened the file must call this, in the same order, but <code>num</code> may differ between ranks and may be zero. <code>starts[i]</code>/<code>counts[i]</code> describe subarray i, and <code>dptr</code> holds all subarrays' data concatenated in that order. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00121">121</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a4e1890e1c07a36a10c9d6137f51045f0_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a4e1890e1c07a36a10c9d6137f51045f0_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a4e1890e1c07a36a10c9d6137f51045f0_cgraph" id="astructncutils_1_1NCVar_a4e1890e1c07a36a10c9d6137f51045f0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,148,45"/>
+<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="196,13,259,38"/>
+<area shape="poly" title=" " alt="" coords="148,23,182,23,182,28,148,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d49952f029454736f33332bb9880857" name="a2d49952f029454736f33332bb9880857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d49952f029454736f33332bb9880857">&#9670;&#160;</a></span>put_varn_all() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> ncutils::NCVar::put_varn_all </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Offset *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> *&#160;</td>
+          <td class="paramname"><em>starts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Offset *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> *&#160;</td>
+          <td class="paramname"><em>counts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">float</a> *&#160;</td>
+          <td class="paramname"><em>dptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out <code>num</code> subarrays in a single collective call (float overload) </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00125">125</a> of file <a class="el" href="REMORA__NCInterface_8cpp_source.html">REMORA_NCInterface.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structncutils_1_1NCVar_a2d49952f029454736f33332bb9880857_cgraph.png" border="0" usemap="#astructncutils_1_1NCVar_a2d49952f029454736f33332bb9880857_cgraph" alt=""/></div>
+<map name="astructncutils_1_1NCVar_a2d49952f029454736f33332bb9880857_cgraph" id="astructncutils_1_1NCVar_a2d49952f029454736f33332bb9880857_cgraph">
+<area shape="rect" title="Write out num subarrays in a single collective call (float overload)" alt="" coords="5,5,148,45"/>
+<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="196,13,259,38"/>
+<area shape="poly" title=" " alt="" coords="148,23,182,23,182,28,148,28"/>
 </map>
 </div>
 
@@ -2484,7 +2596,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8H_source.html#l00054">54</a> of file <a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00248">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00252">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00194">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00202">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00182">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00212">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00220">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00186">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00230">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00238">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00190">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00198">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00207">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00216">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00225">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00234">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00243">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00280">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00289">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00296">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00303">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00257">has_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00122">iput()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00075">name()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00080">ndim()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00173">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00177">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00112">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00127">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00100">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00137">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00145">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00104">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00155">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00163">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00108">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00117">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00132">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00141">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00150">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00159">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00168">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00264">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00268">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00272">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00276">put_attr()</a>, and <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00086">shape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00256">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00260">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00202">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00210">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00190">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00220">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00228">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00194">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00238">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00246">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00198">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00206">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00215">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00224">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00233">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00242">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00251">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00288">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00297">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00304">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00311">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00265">has_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00130">iput()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00075">name()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00080">ndim()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00181">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00185">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00112">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00135">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00100">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00145">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00153">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00104">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00163">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00171">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00108">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00117">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00140">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00149">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00158">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00167">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00176">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00272">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00276">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00280">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00284">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00121">put_varn_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00125">put_varn_all()</a>, and <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00086">shape()</a>.</p>
 
 </div>
 </div>
@@ -2504,7 +2616,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCInterface_8H_source.html#l00057">57</a> of file <a class="el" href="REMORA__NCInterface_8H_source.html">REMORA_NCInterface.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00248">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00252">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00194">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00202">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00182">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00212">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00220">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00186">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00230">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00238">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00190">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00198">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00207">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00216">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00225">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00234">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00243">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00280">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00289">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00296">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00303">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00257">has_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00122">iput()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00075">name()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00080">ndim()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00173">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00177">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00112">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00127">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00100">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00137">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00145">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00104">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00155">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00163">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00108">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00117">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00132">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00141">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00150">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00159">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00168">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00264">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00268">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00272">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00276">put_attr()</a>, and <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00086">shape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00256">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00260">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00202">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00210">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00190">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00220">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00228">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00194">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00238">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00246">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00198">get()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00206">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00215">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00224">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00233">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00242">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00251">get_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00288">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00297">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00304">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00311">get_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00265">has_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00130">iput()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00075">name()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00080">ndim()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00181">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00185">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00112">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00135">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00100">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00145">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00153">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00104">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00163">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00171">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00108">put()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00117">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00140">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00149">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00158">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00167">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00176">put_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00272">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00276">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00280">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00284">put_attr()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00121">put_varn_all()</a>, <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00125">put_varn_all()</a>, and <a class="el" href="REMORA__NCInterface_8cpp_source.html#l00086">shape()</a>.</p>
 
 </div>
 </div>

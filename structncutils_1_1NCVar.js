@@ -46,6 +46,8 @@ var structncutils_1_1NCVar =
     [ "put_attr", "structncutils_1_1NCVar.html#ac1572a791861a2d297f8f29ba0df8d55", null ],
     [ "put_attr", "structncutils_1_1NCVar.html#a69c358988ebdd589d7e465ca6a5f07e9", null ],
     [ "put_attr", "structncutils_1_1NCVar.html#a72558ae45f30bed210d68c26ec57cb13", null ],
+    [ "put_varn_all", "structncutils_1_1NCVar.html#a4e1890e1c07a36a10c9d6137f51045f0", null ],
+    [ "put_varn_all", "structncutils_1_1NCVar.html#a2d49952f029454736f33332bb9880857", null ],
     [ "shape", "structncutils_1_1NCVar.html#ab202435182d346e990c2c7e47740cdad", null ],
     [ "ncid", "structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218", null ],
     [ "varid", "structncutils_1_1NCVar.html#a2dce982c1ddb8f3b89b071bc3bf15532", null ]
