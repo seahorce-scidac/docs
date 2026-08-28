@@ -1,9 +1,6 @@
 var REMORA__IndexDefines_8H =
 [
     [ "NAT", "REMORA__IndexDefines_8H.html#a581c6a0de9efb13c2fa90ec339efd720", null ],
-    [ "NC2D", "REMORA__IndexDefines_8H.html#abfba840d9b9e67c0c03dc933ee8f40f0", null ],
-    [ "NC3D", "REMORA__IndexDefines_8H.html#a7113d7d10b05d75151fd21d463b9c763", null ],
-    [ "NCH2D", "REMORA__IndexDefines_8H.html#ac5babe7e8b94ad6093eb7a366ac88ad5", null ],
     [ "NGROW", "REMORA__IndexDefines_8H.html#a124da9e47fb1b1f3debaf49368f42e38", null ],
     [ "Salt_comp", "REMORA__IndexDefines_8H.html#ab84ceec196f4b00670dab4fa7794d1cf", null ],
     [ "Temp_comp", "REMORA__IndexDefines_8H.html#a2439ff23f4449b8ffa90ddc5bcb36173", null ],

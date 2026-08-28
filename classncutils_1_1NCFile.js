@@ -5,7 +5,7 @@ var classncutils_1_1NCFile =
     [ "all_dims", "classncutils_1_1NCFile.html#a2c0efb92fe0bb92db1034ce0ca350f72", null ],
     [ "all_vars", "classncutils_1_1NCFile.html#a4bd2d5c4818e3b2ec5f98d01d36e529a", null ],
     [ "close", "classncutils_1_1NCFile.html#af2c4a20c38edb3fae69087a80875b8b9", null ],
-    [ "create", "classncutils_1_1NCFile.html#a8e53d3e6af97b5f415caf03c5c3e317b", null ],
+    [ "create", "classncutils_1_1NCFile.html#abddb0caca9a60c01a48beeafaff0b899", null ],
     [ "def_array", "classncutils_1_1NCFile.html#a32f59732fe788fd03b5fe9969eebd3fd", null ],
     [ "def_array_fill", "classncutils_1_1NCFile.html#aff4928d9721da70bb27132bc1a2d59b0", null ],
     [ "def_dim", "classncutils_1_1NCFile.html#a8cf59bbbf55da997460a610b31bde8a2", null ],

@@ -1,8 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classREMORA.html#a8386c899de7b3b3feab286c144f15229":[2,0,11,398],
-"classREMORA.html#a844263fecbb032c826afd407ebbb9fd0":[2,0,11,206],
-"classREMORA.html#a84a902c6ed5d0956e188d21c2a864e28":[2,0,11,141],
 "classREMORA.html#a84df70f21edd11cb1df1d3e5b96ba754":[2,0,11,254],
 "classREMORA.html#a85896dc904b4034ec5915b181d654237":[2,0,11,95],
 "classREMORA.html#a85d26ee3dd0f81a3e59e0b38672967cd":[2,0,11,276],
@@ -249,5 +246,8 @@ var NAVTREEINDEX5 =
 "classREMORAPhysBCFunct.html#a69c1ed4da313cca5d4c6e81555301cec":[2,0,13,7],
 "classREMORAPhysBCFunct.html#a72a1abb5f7e7624681a68cab8cb73305":[2,0,13,1],
 "classREMORAPhysBCFunct.html#a74c61939fd45d56cc0bfcc6756806b65":[2,0,13,9],
-"classREMORAPhysBCFunct.html#a9c70d0e7e327d55146ab9ae25306cdf7":[2,0,13,2]
+"classREMORAPhysBCFunct.html#a9c70d0e7e327d55146ab9ae25306cdf7":[2,0,13,2],
+"classREMORAPhysBCFunct.html#aa0f07ffec53c799425bf7cbc0b7dcf3b":[2,0,13,0],
+"classREMORAPhysBCFunct.html#aa908f5a017f82a511905b364b5758614":[2,0,13,11],
+"classREMORAPhysBCFunct.html#aba45ee7bbf2e50eae7392f03670d6214":[2,0,13,10]
 };
