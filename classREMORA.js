@@ -280,6 +280,7 @@ var classREMORA =
     [ "longwave_down_data_from_file", "classREMORA.html#a3761efb6d3ba019732d126d111eebb93", null ],
     [ "m_bc_extdir_vals", "classREMORA.html#aebf9fbeebfb3887c0376fe86326a449b", null ],
     [ "max_step", "classREMORA.html#a69c542c1c57e6c6532a20eec60b9a0c3", null ],
+    [ "max_step_specified", "classREMORA.html#abea5c8f25b071c8aa6b38b8cd04cab9c", null ],
     [ "nbio", "classREMORA.html#a7b79b15b3444d138afc8abb5112e33ce", null ],
     [ "nc_bdry_file", "classREMORA.html#a85d26ee3dd0f81a3e59e0b38672967cd", null ],
     [ "nc_clim_coeff_file", "classREMORA.html#a7e036cab1a75c0be9068965a3b7d6cf1", null ],
