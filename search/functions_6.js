@@ -17,11 +17,12 @@ var searchData=
   ['getatmostooceanvfacelayout_14',['GetAtmosToOceanVFaceLayout',['../classREMORA.html#a3929d105d936b75cc1083dbcd220ba59',1,'REMORA']]],
   ['getcputime_15',['getCPUTime',['../classREMORA.html#a79eb0ac9909062422d3b3207a7643dd8',1,'REMORA']]],
   ['getdataattime_16',['GetDataAtTime',['../classREMORA.html#a99e2295484a51457ec8d2c9700261783',1,'REMORA']]],
-  ['getlandseamasks_17',['GetLandSeaMasks',['../classREMORA.html#a17e7f29b155b7bde8c98e011c8882bb0',1,'REMORA']]],
-  ['getmask_18',['GetMask',['../classREMORAFillPatcher.html#a4ed6aa8626f678e898cf7c14e95bcd8d',1,'REMORAFillPatcher']]],
-  ['getrelaxmaskval_19',['GetRelaxMaskVal',['../classREMORAFillPatcher.html#aafe922c1fb5bc1bccf993357fe0599d0',1,'REMORAFillPatcher']]],
-  ['getsetmaskval_20',['GetSetMaskVal',['../classREMORAFillPatcher.html#a350e4b15d395506050608810cd1cc827',1,'REMORAFillPatcher']]],
-  ['gls_5fcorrector_21',['gls_corrector',['../classREMORA.html#afded54aef57ded67542a888a911b67b0',1,'REMORA']]],
-  ['gls_5fprestep_22',['gls_prestep',['../classREMORA.html#a6122490d3208c33fce7fc1896baece42',1,'REMORA']]],
-  ['gotonextline_23',['GotoNextLine',['../classREMORA.html#a03e3346471b528f47454cd969393786d',1,'REMORA']]]
+  ['getdeckconfiguredatmosstatelanes_17',['GetDeckConfiguredAtmosStateLanes',['../classREMORA.html#a975907ef286316a072ff2149723f682a',1,'REMORA']]],
+  ['getlandseamasks_18',['GetLandSeaMasks',['../classREMORA.html#a17e7f29b155b7bde8c98e011c8882bb0',1,'REMORA']]],
+  ['getmask_19',['GetMask',['../classREMORAFillPatcher.html#a4ed6aa8626f678e898cf7c14e95bcd8d',1,'REMORAFillPatcher']]],
+  ['getrelaxmaskval_20',['GetRelaxMaskVal',['../classREMORAFillPatcher.html#aafe922c1fb5bc1bccf993357fe0599d0',1,'REMORAFillPatcher']]],
+  ['getsetmaskval_21',['GetSetMaskVal',['../classREMORAFillPatcher.html#a350e4b15d395506050608810cd1cc827',1,'REMORAFillPatcher']]],
+  ['gls_5fcorrector_22',['gls_corrector',['../classREMORA.html#afded54aef57ded67542a888a911b67b0',1,'REMORA']]],
+  ['gls_5fprestep_23',['gls_prestep',['../classREMORA.html#a6122490d3208c33fce7fc1896baece42',1,'REMORA']]],
+  ['gotonextline_24',['GotoNextLine',['../classREMORA.html#a03e3346471b528f47454cd969393786d',1,'REMORA']]]
 ];

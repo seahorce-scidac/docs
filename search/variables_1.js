@@ -39,5 +39,7 @@ var searchData=
   ['boxes_5fat_5flevel_36',['boxes_at_level',['../classREMORA.html#a45b928a121bd6c5e75ec75732a27f774',1,'REMORA']]],
   ['bry_5ftimes_37',['bry_times',['../classNCTimeSeriesBoundary.html#a54f9df7dd085febef21cf3e58325ceb5',1,'NCTimeSeriesBoundary']]],
   ['bulk_5fflux_5ftype_38',['bulk_flux_type',['../structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b',1,'SolverChoice']]],
-  ['bulk_5ffluxes_39',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice']]]
+  ['bulk_5fflux_5ftype_5fspecified_39',['bulk_flux_type_specified',['../structSolverChoice.html#a27801504eba8ee4a1034f3a9ec9db092',1,'SolverChoice']]],
+  ['bulk_5fflux_5fvalue_5fspecified_40',['bulk_flux_value_specified',['../structSolverChoice.html#aaf9c5583dc72aad6f9a73061004b2153',1,'SolverChoice']]],
+  ['bulk_5ffluxes_41',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice']]]
 ];

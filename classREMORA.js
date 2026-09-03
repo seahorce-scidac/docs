@@ -70,6 +70,7 @@ var classREMORA =
     [ "GetAtmosToOceanVFaceLayout", "classREMORA.html#a3929d105d936b75cc1083dbcd220ba59", null ],
     [ "getCPUTime", "classREMORA.html#a79eb0ac9909062422d3b3207a7643dd8", null ],
     [ "GetDataAtTime", "classREMORA.html#a99e2295484a51457ec8d2c9700261783", null ],
+    [ "GetDeckConfiguredAtmosStateLanes", "classREMORA.html#a975907ef286316a072ff2149723f682a", null ],
     [ "GetLandSeaMasks", "classREMORA.html#a17e7f29b155b7bde8c98e011c8882bb0", null ],
     [ "gls_corrector", "classREMORA.html#afded54aef57ded67542a888a911b67b0", null ],
     [ "gls_prestep", "classREMORA.html#a6122490d3208c33fce7fc1896baece42", null ],
