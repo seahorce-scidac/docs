@@ -4,5 +4,6 @@ var searchData=
   ['remora_5ffunwave_5fisohelper_1',['remora_funwave_isohelper',['../namespaceremora__funwave__isohelper.html',1,'']]],
   ['remorabctype_2',['REMORABCType',['../namespaceREMORABCType.html',1,'']]],
   ['remorabiology_3',['REMORABiology',['../namespaceREMORABiology.html',1,'']]],
-  ['remorabiology_3a_3afennel_4',['Fennel',['../namespaceREMORABiology_1_1Fennel.html',1,'REMORABiology']]]
+  ['remorabiology_3a_3afennel_4',['Fennel',['../namespaceREMORABiology_1_1Fennel.html',1,'REMORABiology']]],
+  ['remoramaskedavgdown_5',['REMORAMaskedAvgDown',['../namespaceREMORAMaskedAvgDown.html',1,'']]]
 ];

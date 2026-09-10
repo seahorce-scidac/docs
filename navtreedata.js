@@ -65,15 +65,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__IndexDefines_8H.html#a581c6a0de9efb13c2fa90ec339efd720",
-"REMORA__InitAnalyticProb__ParticleAdvectionFlat_8H.html#ac4c4116a86fc50f40ef9815982d9267d",
-"REMORA__TimeStepML_8cpp.html",
-"classProblemBase.html#ac71583e0c56f41509812ce960c8db20a",
-"classREMORA.html#a84a902c6ed5d0956e188d21c2a864e28",
-"classREMORAPhysBCFunct.html#aa908f5a017f82a511905b364b5758614",
-"namespaceBCVars.html#aaa7b8a81e61961cbac8081a95f5e4b7b",
-"structREMORABiology_1_1FennelParameters.html#afd218acb97ec955ae5414c8b82432606",
-"structncutils_1_1NCVar.html"
+"REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ae6ffdec5e14fce371eb7ae99edebbbee",
+"REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#ac4c4116a86fc50f40ef9815982d9267d",
+"REMORA__ReadFromInitNetcdf_8cpp.html#a3da36b397933adf369b4577e633d75ad",
+"classNCTimeSeriesRiver.html#a351be9339152e48e75c8d93ad5942d3a",
+"classREMORA.html#a707974bad372495d62963171d386b792",
+"classREMORA.html#afdf4b75f0ec12caf3648dbee5ec7f653",
+"globals_vars_k.html",
+"structREMORABiology_1_1FennelParameters.html#a6b57119caa4662e615e35fe4756ed3e9",
+"structmod__grid_1_1t__grid.html#a4bd1f9c110d3ccb19a6cc020a782905d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

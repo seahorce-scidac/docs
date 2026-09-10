@@ -34,7 +34,7 @@ var searchData=
   ['coriolis_5ff0_31',['coriolis_f0',['../structSolverChoice.html#a3a0b717e880c818de989b2e92c199d34',1,'SolverChoice']]],
   ['coriolis_5ftype_32',['coriolis_type',['../structSolverChoice.html#a5a2eb680fa53af115784a54eaa1924bf',1,'SolverChoice']]],
   ['coupling_5ftype_33',['coupling_type',['../structSolverChoice.html#af976afa61859c07e6249963edc367c2d',1,'SolverChoice']]],
-  ['cp_34',['cp',['../namespacemod__scalars.html#ab9fed999bbfdcbacf818d203feda0cc4',1,'mod_scalars::cp'],['../REMORA__Constants_8H.html#acc9b56aa8386937a703d58529c6bc0a6',1,'Cp:&#160;REMORA_Constants.H']]],
+  ['cp_34',['cp',['../REMORA__Constants_8H.html#acc9b56aa8386937a703d58529c6bc0a6',1,'Cp:&#160;REMORA_Constants.H'],['../namespacemod__scalars.html#ab9fed999bbfdcbacf818d203feda0cc4',1,'mod_scalars::cp']]],
   ['cs_5fr_35',['Cs_r',['../classREMORA.html#aa5f19e735d73db7c3b44a9858b1f6ad7',1,'REMORA']]],
   ['cs_5fw_36',['Cs_w',['../classREMORA.html#ab91481037f0032837c22dbcf45440bef',1,'REMORA']]],
   ['csolar_37',['Csolar',['../REMORA__Constants_8H.html#ad1dc2049479f56da5194d7a18f8b3a07',1,'REMORA_Constants.H']]],

@@ -51,6 +51,10 @@ var REMORA__DataStruct_8H =
       [ "analytic", "REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034da0747ffd2ec4a506ee2b993a044b370c9", null ],
       [ "netcdf", "REMORA__DataStruct_8H.html#ae3ced2280da8e808314b6ece3f71034dac2e0f73e7b066a47b743d6ce8213e684", null ]
     ] ],
+    [ "MaskConsistency", "REMORA__DataStruct_8H.html#a1db09fa0334c56b374c1072774c16701", [
+      [ "abort", "REMORA__DataStruct_8H.html#a1db09fa0334c56b374c1072774c16701a5bb94a1c12413a2e5d14deabab29f2aa", null ],
+      [ "warn", "REMORA__DataStruct_8H.html#a1db09fa0334c56b374c1072774c16701a1ea4c3ab05ee0c6d4de30740443769cb", null ]
+    ] ],
     [ "MaskType", "REMORA__DataStruct_8H.html#a6f9734fca864f135565da5376b5c3e72", [
       [ "none", "REMORA__DataStruct_8H.html#a6f9734fca864f135565da5376b5c3e72a334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
       [ "analytic", "REMORA__DataStruct_8H.html#a6f9734fca864f135565da5376b5c3e72a0747ffd2ec4a506ee2b993a044b370c9", null ],
