@@ -22,6 +22,6 @@ var searchData=
   ['use_5fvert_5finteg_19',['use_vert_integ',['../classNCTimeSeriesRiver.html#ac2d336b34285ab54521f0220c9449507',1,'NCTimeSeriesRiver']]],
   ['userval_20',['userval',['../REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a4465e330978f4494a770c83c5a836640',1,'REMORA_InitAnalyticSMFlux_ChannelTest.H']]],
   ['uv_5fhadv_5fscheme_21',['uv_Hadv_scheme',['../structSolverChoice.html#a4171d60125b56fa53204a2e7bf8d32b1',1,'SolverChoice']]],
-  ['uwind_22',['uwind',['../structmod__forces_1_1t__forces.html#a5d4682fe92051be6e1460d1b850f0d73',1,'mod_forces::t_forces::uwind'],['../structSolverChoice.html#a5974242f789ee1a20d9e6581214d2fb4',1,'SolverChoice::Uwind']]],
+  ['uwind_22',['uwind',['../structSolverChoice.html#a5974242f789ee1a20d9e6581214d2fb4',1,'SolverChoice::Uwind'],['../structmod__forces_1_1t__forces.html#a5d4682fe92051be6e1460d1b850f0d73',1,'mod_forces::t_forces::uwind']]],
   ['uwind_5fdata_5ffrom_5ffile_23',['Uwind_data_from_file',['../classREMORA.html#aa601e1a642f48348267d29fd510645cf',1,'REMORA']]]
 ];
