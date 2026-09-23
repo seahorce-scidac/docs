@@ -13,7 +13,7 @@ var searchData=
   ['rdrag_10',['rdrag',['../structSolverChoice.html#ab32c6e7161ddf37e8051743fae717cf5',1,'SolverChoice']]],
   ['rdrag2_11',['rdrag2',['../structSolverChoice.html#a276a75afbc3aa0e75227cb60c6901d31',1,'SolverChoice']]],
   ['real_12',['Real',['../structncutils_1_1NCDType.html#a7a5be35daa7dbb2cc72507cc4b5a422c',1,'ncutils::NCDType']]],
-  ['ref_5ftags_13',['ref_tags',['../classREMORA.html#a476b854ad74dd35ec1bf21cd9ea1f0b0',1,'REMORA']]],
+  ['ref_5ftags_13',['ref_tags',['../classREMORA.html#aec965550268eba47c8068ec234c176f1',1,'REMORA']]],
   ['regrid_5fint_14',['regrid_int',['../classREMORA.html#a5d3ceaf421e5e6ec42b4da2fcb2d610c',1,'REMORA']]],
   ['remora_5fgregorian_5fdaynum_15',['remora_gregorian_daynum',['../REMORA__DateClock_8H.html#a5790a3c2a97927b6001bad7dbe45f8fa',1,'REMORA_DateClock.H']]],
   ['restart_5fchkfile_16',['restart_chkfile',['../classREMORA.html#ae376daabb97c474de25b283de6bd985d',1,'REMORA']]],

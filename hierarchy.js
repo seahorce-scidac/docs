@@ -3,6 +3,9 @@ var hierarchy =
     [ "amrex::AmrCore", null, [
       [ "REMORA", "classREMORA.html", null ]
     ] ],
+    [ "amrex::AMRErrorTag", null, [
+      [ "REMORAErrorTag", "classREMORAErrorTag.html", null ]
+    ] ],
     [ "REMORABiology::Fennel::Components", "structREMORABiology_1_1Fennel_1_1Components.html", null ],
     [ "REMORABiology::FennelParameters", "structREMORABiology_1_1FennelParameters.html", null ],
     [ "ncutils::NCDim", "structncutils_1_1NCDim.html", null ],

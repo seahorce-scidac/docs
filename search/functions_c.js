@@ -1,5 +1,5 @@
 var searchData=
 [
   ['open_0',['open',['../classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d',1,'ncutils::NCFile']]],
-  ['operator_28_29_1',['operator()',['../classREMORAPhysBCFunct.html#affbd3539ecb2ca59e9f23cf38e56852f',1,'REMORAPhysBCFunct']]]
+  ['operator_28_29_1',['operator()',['../classREMORAPhysBCFunct.html#affbd3539ecb2ca59e9f23cf38e56852f',1,'REMORAPhysBCFunct::operator()()'],['../classREMORAErrorTag.html#ad102aef4d1e340288929a3c22c20baa8',1,'REMORAErrorTag::operator()()']]]
 ];

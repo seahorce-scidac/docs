@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"REMORA__ReadFromInitNetcdf_8cpp.html#a32da5d352db1b3a382b5103613488083":[3,0,0,3,15,1],
+"REMORA__ReadFromInitNetcdf_8cpp.html#a36328e9f5b6c39342e344469f419deae":[3,0,0,3,15,12],
 "REMORA__ReadFromInitNetcdf_8cpp.html#a3da36b397933adf369b4577e633d75ad":[3,0,0,3,15,16],
 "REMORA__ReadFromInitNetcdf_8cpp.html#a53e39809d0043c74fd5799ef3b98b6b4":[3,0,0,3,15,14],
 "REMORA__ReadFromInitNetcdf_8cpp.html#a54ccc5a5efd8bcbe62e36977d87b4cce":[3,0,0,3,15,8],
@@ -20,10 +22,10 @@ var NAVTREEINDEX3 =
 "REMORA__SetPlotVars_8cpp.html":[3,0,0,3,16],
 "REMORA__SetPlotVars_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67":[3,0,0,3,16,0],
 "REMORA__SetPlotVars_8cpp_source.html":[3,0,0,3,16],
-"REMORA__SumIQ_8cpp.html":[3,0,0,19],
-"REMORA__SumIQ_8cpp_source.html":[3,0,0,19],
-"REMORA__Tagging_8cpp.html":[3,0,0,20],
-"REMORA__Tagging_8cpp_source.html":[3,0,0,20],
+"REMORA__SumIQ_8cpp.html":[3,0,0,20],
+"REMORA__SumIQ_8cpp_source.html":[3,0,0,20],
+"REMORA__Tagging_8cpp.html":[3,0,0,21],
+"REMORA__Tagging_8cpp_source.html":[3,0,0,21],
 "REMORA__TimeInterpolatedData_8H.html":[3,0,0,1,10],
 "REMORA__TimeInterpolatedData_8H_source.html":[3,0,0,1,10],
 "REMORA__TimeStepML_8cpp.html":[3,0,0,6,26],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classNCTimeSeriesBoundary.html#afa12b155c7bf216b2da04bf626058051":[2,0,7,19],
 "classNCTimeSeriesBoundary.html#afc32ebf8027d438dbe48242e75081668":[2,0,7,8],
 "classNCTimeSeriesRiver.html":[2,0,8],
-"classNCTimeSeriesRiver.html#a08c913f75309016cbf5f01f3797a89d9":[2,0,8,0],
-"classNCTimeSeriesRiver.html#a21a8d0f1c029f7646db7613b9994e017":[2,0,8,15],
-"classNCTimeSeriesRiver.html#a2ca31e5a532d0b4b5011b2662b1fcb2a":[2,0,8,20]
+"classNCTimeSeriesRiver.html#a08c913f75309016cbf5f01f3797a89d9":[2,0,8,0]
 };

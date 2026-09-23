@@ -13,7 +13,7 @@ var searchData=
   ['one_10',['one',['../REMORA__Constants_8H.html#a473379dfb979d62b5ecd9ca0a9c24baf',1,'REMORA_Constants.H']]],
   ['one_5fway_11',['one_way',['../REMORA__DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139baa78e2b6859393b825bdf8f6a0a9668ad',1,'REMORA_DataStruct.H']]],
   ['open_12',['open',['../classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d',1,'ncutils::NCFile']]],
-  ['operator_28_29_13',['operator()',['../classREMORAPhysBCFunct.html#affbd3539ecb2ca59e9f23cf38e56852f',1,'REMORAPhysBCFunct']]],
+  ['operator_28_29_13',['operator()',['../classREMORAPhysBCFunct.html#affbd3539ecb2ca59e9f23cf38e56852f',1,'REMORAPhysBCFunct::operator()()'],['../classREMORAErrorTag.html#ad102aef4d1e340288929a3c22c20baa8',1,'REMORAErrorTag::operator()()']]],
   ['orlanski_5frad_14',['orlanski_rad',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a2ab9bbca7b5115df69fb69555ddf79bf',1,'REMORABCType::orlanski_rad'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a1ac3f5e31a6cb1a044373ce1b133d560',1,'orlanski_rad:&#160;REMORA_IndexDefines.H']]],
   ['orlanski_5frad_5fnudge_15',['orlanski_rad_nudge',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346ab304567a78a4ea353b0d646ee13459a8',1,'REMORABCType::orlanski_rad_nudge'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325af25c3ea7c3e73452e6b9963cb67c9981',1,'orlanski_rad_nudge:&#160;REMORA_IndexDefines.H']]],
   ['outflow_16',['outflow',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325acac0c32caf84a889ec9b2b4cb2d56972',1,'REMORA_IndexDefines.H']]],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#ab2013be7dd9603b22bececef1eb9f2cf":[3,0,0,5,31,14],
+"REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#ab3fa4c99a50f1243bf94c01124a17b0d":[3,0,0,5,31,1],
 "REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#ac4c4116a86fc50f40ef9815982d9267d":[3,0,0,5,31,17],
 "REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#ade2a0e6d3b4be87f76ca850f1f594add":[3,0,0,5,31,9],
 "REMORA__InitAnalyticProb__DoublyPeriodic_8H_source.html":[3,0,0,5,31],
@@ -175,10 +177,10 @@ var NAVTREEINDEX2 =
 "REMORA__InitAnalyticZeta__DogboneAnalytic_8H.html#abab85d68257048921f5ba6615248009e":[3,0,0,5,56,2],
 "REMORA__InitAnalyticZeta__DogboneAnalytic_8H.html#ae7d7c82c7cf344c91bb4fbae6f5585cb":[3,0,0,5,56,0],
 "REMORA__InitAnalyticZeta__DogboneAnalytic_8H_source.html":[3,0,0,5,56],
-"REMORA__MOAB_8H.html":[3,0,0,18],
-"REMORA__MOAB_8H_source.html":[3,0,0,18],
-"REMORA__MOAB_8cpp.html":[3,0,0,17],
-"REMORA__MOAB_8cpp_source.html":[3,0,0,17],
+"REMORA__MOAB_8H.html":[3,0,0,19],
+"REMORA__MOAB_8H_source.html":[3,0,0,19],
+"REMORA__MOAB_8cpp.html":[3,0,0,18],
+"REMORA__MOAB_8cpp_source.html":[3,0,0,18],
 "REMORA__MaskedAverageDown_8H.html":[3,0,0,7,2],
 "REMORA__MaskedAverageDown_8H.html#a48eaf454b2b9ca835ad162268d6d2cd4":[3,0,0,7,2,0],
 "REMORA__MaskedAverageDown_8H.html#a5cfc80a0b7b80630bbb99fec39d8480b":[3,0,0,7,2,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "REMORA__Plotfile_8cpp.html#aeb56b4bca6dfa0e3b81d3f983926e8a2":[3,0,0,3,14,1],
 "REMORA__Plotfile_8cpp_source.html":[3,0,0,3,14],
 "REMORA__ReadFromInitNetcdf_8cpp.html":[3,0,0,3,15],
-"REMORA__ReadFromInitNetcdf_8cpp.html#a1fb3cc10225716b9d1d2578b35ba2951":[3,0,0,3,15,18],
-"REMORA__ReadFromInitNetcdf_8cpp.html#a32da5d352db1b3a382b5103613488083":[3,0,0,3,15,1],
-"REMORA__ReadFromInitNetcdf_8cpp.html#a36328e9f5b6c39342e344469f419deae":[3,0,0,3,15,12]
+"REMORA__ReadFromInitNetcdf_8cpp.html#a1fb3cc10225716b9d1d2578b35ba2951":[3,0,0,3,15,18]
 };

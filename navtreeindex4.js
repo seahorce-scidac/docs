@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"classNCTimeSeriesRiver.html#a21a8d0f1c029f7646db7613b9994e017":[2,0,8,15],
+"classNCTimeSeriesRiver.html#a2ca31e5a532d0b4b5011b2662b1fcb2a":[2,0,8,20],
 "classNCTimeSeriesRiver.html#a351be9339152e48e75c8d93ad5942d3a":[2,0,8,17],
 "classNCTimeSeriesRiver.html#a494caa0f2cb0e78439fb4e1d6d654039":[2,0,8,3],
 "classNCTimeSeriesRiver.html#a49a0c6d2f31e624c3699831b4a4c1c7e":[2,0,8,10],
@@ -178,7 +180,6 @@ var NAVTREEINDEX4 =
 "classREMORA.html#a45b928a121bd6c5e75ec75732a27f774":[2,0,11,230],
 "classREMORA.html#a464f0a5dcf552c0d583ddb195cdc062e":[2,0,11,134],
 "classREMORA.html#a466d5c5a68c7cfa02247db51bbe74b19":[2,0,11,201],
-"classREMORA.html#a476b854ad74dd35ec1bf21cd9ea1f0b0":[2,0,11,328],
 "classREMORA.html#a4828d8821c4b23d2fbfb92fcb5c1dcae":[2,0,11,256],
 "classREMORA.html#a488738b1aea61abbbf086a9d22b4f815":[2,0,11,388],
 "classREMORA.html#a48c1bf42530780ce02b3655d7cefe592":[2,0,11,362],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classREMORA.html#a6e29cc9deafc7d09ce713b17e1c2edfb":[2,0,11,108],
 "classREMORA.html#a6ecf3d8a4231e02bf6027ff917b0786b":[2,0,11,395],
 "classREMORA.html#a6f50a7999b5955331392139cfb09ad27":[2,0,11,148],
-"classREMORA.html#a6f81196b66d6f9f05a3757f9b09c76c1":[2,0,11,223],
-"classREMORA.html#a70585b0129bfb5d405b1e10ea97020c5":[2,0,11,282]
+"classREMORA.html#a6f81196b66d6f9f05a3757f9b09c76c1":[2,0,11,223]
 };

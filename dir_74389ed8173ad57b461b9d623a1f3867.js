@@ -16,6 +16,7 @@ var dir_74389ed8173ad57b461b9d623a1f3867 =
     [ "REMORA_DataStruct.H", "REMORA__DataStruct_8H.html", "REMORA__DataStruct_8H" ],
     [ "REMORA_Derive.cpp", "REMORA__Derive_8cpp.html", "REMORA__Derive_8cpp" ],
     [ "REMORA_Derive.H", "REMORA__Derive_8H.html", "REMORA__Derive_8H" ],
+    [ "REMORA_ErrorTag.H", "REMORA__ErrorTag_8H.html", "REMORA__ErrorTag_8H" ],
     [ "REMORA_IndexDefines.H", "REMORA__IndexDefines_8H.html", "REMORA__IndexDefines_8H" ],
     [ "REMORA_MOAB.cpp", "REMORA__MOAB_8cpp.html", null ],
     [ "REMORA_MOAB.H", "REMORA__MOAB_8H.html", null ],

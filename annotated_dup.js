@@ -30,6 +30,7 @@ var annotated_dup =
     [ "NDArray", "structNDArray.html", "structNDArray" ],
     [ "ProblemBase", "classProblemBase.html", "classProblemBase" ],
     [ "REMORA", "classREMORA.html", "classREMORA" ],
+    [ "REMORAErrorTag", "classREMORAErrorTag.html", "classREMORAErrorTag" ],
     [ "REMORAFillPatcher", "classREMORAFillPatcher.html", "classREMORAFillPatcher" ],
     [ "REMORAPhysBCFunct", "classREMORAPhysBCFunct.html", "classREMORAPhysBCFunct" ],
     [ "SolverChoice", "structSolverChoice.html", "structSolverChoice" ],
