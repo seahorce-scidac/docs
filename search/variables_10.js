@@ -7,5 +7,6 @@ var searchData=
   ['q04_4',['Q04',['../REMORA__Constants_8H.html#a2549145b8b7aab6b7d49ee1da2778459',1,'REMORA_Constants.H']]],
   ['q05_5',['Q05',['../REMORA__Constants_8H.html#ac341187acb1b842e0ce85cc12ab900ce',1,'REMORA_Constants.H']]],
   ['qair_5fdata_5ffrom_5ffile_6',['qair_data_from_file',['../classREMORA.html#a1369a3a8622d37575cc6d4e64cfde69e',1,'REMORA']]],
-  ['qair_5fis_5fpercent_7',['qair_is_percent',['../structSolverChoice.html#ac169ba909b87d9a0ce9411de3375620b',1,'SolverChoice']]]
+  ['qair_5fis_5fpercent_7',['qair_is_percent',['../structSolverChoice.html#ac169ba909b87d9a0ce9411de3375620b',1,'SolverChoice']]],
+  ['quiescent_8',['quiescent',['../REMORA__InitAnalyticProb__ChannelTest_8H.html#a1ddbefe3c476614663688362a3b8bbcd',1,'quiescent:&#160;REMORA_InitAnalyticProb_ChannelTest.H'],['../REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a1ddbefe3c476614663688362a3b8bbcd',1,'quiescent:&#160;REMORA_InitAnalyticSMFlux_ChannelTest.H']]]
 ];

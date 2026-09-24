@@ -22,6 +22,7 @@ var dir_759b90b1f3ea3c20e13693c83a3534b7 =
     [ "REMORA_rhs_uv_2d.cpp", "REMORA__rhs__uv__2d_8cpp.html", null ],
     [ "REMORA_rhs_uv_3d.cpp", "REMORA__rhs__uv__3d_8cpp.html", null ],
     [ "REMORA_scale_rhs_vars.cpp", "REMORA__scale__rhs__vars_8cpp.html", null ],
+    [ "REMORA_set_2d_cf_bcs.cpp", "REMORA__set__2d__cf__bcs_8cpp.html", null ],
     [ "REMORA_set_weights.cpp", "REMORA__set__weights_8cpp.html", null ],
     [ "REMORA_setup_step.cpp", "REMORA__setup__step_8cpp.html", null ],
     [ "REMORA_t3dmix.cpp", "REMORA__t3dmix_8cpp.html", null ],

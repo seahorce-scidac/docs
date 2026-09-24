@@ -16,6 +16,7 @@ var classNCTimeSeries =
     [ "i_time_before", "classNCTimeSeries.html#a7cd84e642555b80b6aaf9577da2bae4f", null ],
     [ "is2d", "classNCTimeSeries.html#a1fa969bceaf0c79f6b70ebaf9d93c113", null ],
     [ "is_cycle", "classNCTimeSeries.html#a4deece011c7472c2bd7a1d0cd5cb8e5e", null ],
+    [ "last_updated_lev", "classNCTimeSeries.html#a262a38e7a42d1e61897e2d8c4cabb3f5", null ],
     [ "mf_after", "classNCTimeSeries.html#aa4c57df258189f4bb3e6b5e9675c8ffd", null ],
     [ "mf_before", "classNCTimeSeries.html#a77c5d013a59141cb33de82dc03ac75e2", null ],
     [ "mf_interp_lev0", "classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906", null ],

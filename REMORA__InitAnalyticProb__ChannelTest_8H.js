@@ -1,12 +1,16 @@
 var REMORA__InitAnalyticProb__ChannelTest_8H =
 [
     [ "for", "REMORA__InitAnalyticProb__ChannelTest_8H.html#a925c992baa4d66fdc34059b52bfeb7fd", null ],
+    [ "pp_prob", "REMORA__InitAnalyticProb__ChannelTest_8H.html#ab1f222e1f330deaa6bc1b674cced5c96", null ],
+    [ "query", "REMORA__InitAnalyticProb__ChannelTest_8H.html#ae81a44246720ca12e26137c610d02a87", null ],
     [ "EWPeriodic", "REMORA__InitAnalyticProb__ChannelTest_8H.html#a90afb84e87ef8a811e4afff30a9f2db3", null ],
     [ "geomdata", "REMORA__InitAnalyticProb__ChannelTest_8H.html#a055aef9870fdf5d505cc9ad2d0d861c4", null ],
     [ "khi", "REMORA__InitAnalyticProb__ChannelTest_8H.html#a0e309d9162590f5d8287ae33be5c24ff", null ],
     [ "l_do_dye", "REMORA__InitAnalyticProb__ChannelTest_8H.html#ade2a0e6d3b4be87f76ca850f1f594add", null ],
+    [ "l_quiescent", "REMORA__InitAnalyticProb__ChannelTest_8H.html#aeb28c140278fdfadbd7b455495712852", null ],
     [ "l_use_salt", "REMORA__InitAnalyticProb__ChannelTest_8H.html#a75f9d7f9e2a71a0135a9a729ce2f2d6c", null ],
     [ "NSPeriodic", "REMORA__InitAnalyticProb__ChannelTest_8H.html#a473fb8ff0ea2f63f15a7a1ebddd522ab", null ],
+    [ "quiescent", "REMORA__InitAnalyticProb__ChannelTest_8H.html#a1ddbefe3c476614663688362a3b8bbcd", null ],
     [ "S0", "REMORA__InitAnalyticProb__ChannelTest_8H.html#a5fa1183e12f797d3066d16aac374862d", null ],
     [ "T0", "REMORA__InitAnalyticProb__ChannelTest_8H.html#a014260d1becf055937af59cff1b4b773", null ]
 ];

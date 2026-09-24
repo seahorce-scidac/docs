@@ -35,7 +35,6 @@ var REMORA__Constants_8H =
     [ "F02", "REMORA__Constants_8H.html#adbec4349eb539cffe4b575421e44cc36", null ],
     [ "four", "REMORA__Constants_8H.html#a27fee4dc66c221a7e27477953168d232", null ],
     [ "fourth", "REMORA__Constants_8H.html#a51fd20c46a81551dee3956734c5f7bcc", null ],
-    [ "g", "REMORA__Constants_8H.html#a837c5e89fda6bfcbff2005080b5efde0", null ],
     [ "G00", "REMORA__Constants_8H.html#a504d7b8f3a56034b7b696772f3d9751b", null ],
     [ "G01", "REMORA__Constants_8H.html#a946cba2ef2e60516b6ab86f6bf158fc9", null ],
     [ "G02", "REMORA__Constants_8H.html#ac54dd149b109e7056e80ce1c7347b3ea", null ],
