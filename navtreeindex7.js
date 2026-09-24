@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"globals_vars.html":[3,1,2,0],
+"globals_vars.html":[3,1,2],
+"globals_vars_b.html":[3,1,2,1],
+"globals_vars_c.html":[3,1,2,2],
 "globals_vars_d.html":[3,1,2,3],
 "globals_vars_e.html":[3,1,2,4],
 "globals_vars_f.html":[3,1,2,5],
@@ -25,8 +29,8 @@ var NAVTREEINDEX7 =
 "globals_y.html":[3,1,0,22],
 "globals_z.html":[3,1,0,23],
 "hierarchy.html":[2,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#Introduction":[0,0],
 "index.html#amr":[0,1],
 "index.html#dev_model":[0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "structREMORABiology_1_1FennelParameters.html#a536cc290492c5ad063b969057e44f7eb":[1,0,25,1,30],
 "structREMORABiology_1_1FennelParameters.html#a536cc290492c5ad063b969057e44f7eb":[2,0,5,1,30],
 "structREMORABiology_1_1FennelParameters.html#a5fe62379b1181c1e45a9ce9ed4e37363":[1,0,25,1,41],
-"structREMORABiology_1_1FennelParameters.html#a5fe62379b1181c1e45a9ce9ed4e37363":[2,0,5,1,41],
-"structREMORABiology_1_1FennelParameters.html#a625aa3e318c384e0cf6aac9b8478136c":[1,0,25,1,20],
-"structREMORABiology_1_1FennelParameters.html#a625aa3e318c384e0cf6aac9b8478136c":[2,0,5,1,20],
-"structREMORABiology_1_1FennelParameters.html#a6347e1181a7498f8af7de1b11001cbf6":[2,0,5,1,22],
-"structREMORABiology_1_1FennelParameters.html#a6347e1181a7498f8af7de1b11001cbf6":[1,0,25,1,22]
+"structREMORABiology_1_1FennelParameters.html#a5fe62379b1181c1e45a9ce9ed4e37363":[2,0,5,1,41]
 };
