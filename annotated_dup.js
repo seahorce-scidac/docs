@@ -28,6 +28,7 @@ var annotated_dup =
     [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html", "classNCTimeSeriesBoundary" ],
     [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", "classNCTimeSeriesRiver" ],
     [ "NDArray", "structNDArray.html", "structNDArray" ],
+    [ "ProbCoords", "structProbCoords.html", "structProbCoords" ],
     [ "ProblemBase", "classProblemBase.html", "classProblemBase" ],
     [ "REMORA", "classREMORA.html", "classREMORA" ],
     [ "REMORAErrorTag", "classREMORAErrorTag.html", "classREMORAErrorTag" ],

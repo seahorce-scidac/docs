@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['z0_0',['z0',['../REMORA__InitAnalyticProb__Upwelling__ML_8H.html#a3686b9abefe6dda622283bf7109e68fe',1,'z0:&#160;REMORA_InitAnalyticProb_Upwelling_ML.H'],['../REMORA__InitAnalyticProb__ParticleAdvectionFlat_8H.html#a3686b9abefe6dda622283bf7109e68fe',1,'z0:&#160;REMORA_InitAnalyticProb_ParticleAdvectionFlat.H'],['../REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a3686b9abefe6dda622283bf7109e68fe',1,'z0:&#160;REMORA_InitAnalyticProb_DoublyPeriodic.H']]],
-  ['z_5fr_1',['z_r',['../structmod__grid_1_1t__grid.html#a9de2f48721f9c1ea05fd589880603aea',1,'mod_grid::t_grid']]],
-  ['z_5fw_2',['z_w',['../structmod__grid_1_1t__grid.html#a0d99049166004c5009fa4175401de0ec',1,'mod_grid::t_grid']]],
+  ['z0_0',['z0',['../REMORA__InitAnalyticProb__ParticleAdvectionFlat_8H.html#a3686b9abefe6dda622283bf7109e68fe',1,'z0:&#160;REMORA_InitAnalyticProb_ParticleAdvectionFlat.H'],['../REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a3686b9abefe6dda622283bf7109e68fe',1,'z0:&#160;REMORA_InitAnalyticProb_DoublyPeriodic.H'],['../REMORA__InitAnalyticProb__Upwelling__ML_8H.html#a3686b9abefe6dda622283bf7109e68fe',1,'z0:&#160;REMORA_InitAnalyticProb_Upwelling_ML.H']]],
+  ['z_5fr_1',['z_r',['../structProbCoords.html#a606df91f9de478e918cb5af8748fd090',1,'ProbCoords::z_r'],['../structmod__grid_1_1t__grid.html#a9de2f48721f9c1ea05fd589880603aea',1,'mod_grid::t_grid::z_r']]],
+  ['z_5fw_2',['z_w',['../structProbCoords.html#a5f656bd46e889ab40e895301cc4d9516',1,'ProbCoords::z_w'],['../structmod__grid_1_1t__grid.html#a0d99049166004c5009fa4175401de0ec',1,'mod_grid::t_grid::z_w']]],
   ['zero_3',['zero',['../REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5',1,'REMORA_Constants.H']]],
   ['zeta_5fbump_4',['zeta_bump',['../REMORA__InitAnalyticZeta__DogboneAnalytic_8H.html#a672d8aa13cb014fa084a5078905b3382',1,'REMORA_InitAnalyticZeta_DogboneAnalytic.H']]],
   ['zob_5',['Zob',['../structSolverChoice.html#a472eba1016f168f3d74f792412b32e7d',1,'SolverChoice']]],

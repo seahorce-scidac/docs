@@ -2,8 +2,8 @@ var searchData=
 [
   ['z_0',['z',['../REMORA__DataStruct_8H.html#a627f1f843904477f763577ad1460de01afbade9e36a3f36d3d676c1b808451dd7',1,'REMORA_DataStruct.H']]],
   ['z0_1',['z0',['../REMORA__InitAnalyticProb__Upwelling__ML_8H.html#a3686b9abefe6dda622283bf7109e68fe',1,'z0:&#160;REMORA_InitAnalyticProb_Upwelling_ML.H'],['../REMORA__InitAnalyticProb__ParticleAdvectionFlat_8H.html#a3686b9abefe6dda622283bf7109e68fe',1,'z0:&#160;REMORA_InitAnalyticProb_ParticleAdvectionFlat.H'],['../REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a3686b9abefe6dda622283bf7109e68fe',1,'z0:&#160;REMORA_InitAnalyticProb_DoublyPeriodic.H']]],
-  ['z_5fr_2',['z_r',['../structmod__grid_1_1t__grid.html#a9de2f48721f9c1ea05fd589880603aea',1,'mod_grid::t_grid']]],
-  ['z_5fw_3',['z_w',['../structmod__grid_1_1t__grid.html#a0d99049166004c5009fa4175401de0ec',1,'mod_grid::t_grid']]],
+  ['z_5fr_2',['z_r',['../structProbCoords.html#a606df91f9de478e918cb5af8748fd090',1,'ProbCoords::z_r'],['../structmod__grid_1_1t__grid.html#a9de2f48721f9c1ea05fd589880603aea',1,'mod_grid::t_grid::z_r']]],
+  ['z_5fw_3',['z_w',['../structProbCoords.html#a5f656bd46e889ab40e895301cc4d9516',1,'ProbCoords::z_w'],['../structmod__grid_1_1t__grid.html#a0d99049166004c5009fa4175401de0ec',1,'mod_grid::t_grid::z_w']]],
   ['zero_4',['zero',['../REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5',1,'REMORA_Constants.H']]],
   ['zeta_5',['zeta',['../namespaceBdyVars.html#acabae76684c0900a7caf5a2b855b72be',1,'BdyVars']]],
   ['zeta_5fbc_6',['zeta_bc',['../namespaceBCVars.html#ab158e12c033e394ac7b9974865395fa1',1,'BCVars::zeta_bc()'],['../classREMORA.html#a62e507e1575fd9edf395e417e0befb73',1,'REMORA::zeta_bc()']]],

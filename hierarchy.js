@@ -16,6 +16,7 @@ var hierarchy =
     [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", null ],
     [ "ncutils::NCVar", "structncutils_1_1NCVar.html", null ],
     [ "NDArray< DataType >", "structNDArray.html", null ],
+    [ "ProbCoords", "structProbCoords.html", null ],
     [ "ProblemBase", "classProblemBase.html", null ],
     [ "REMORAFillPatcher", "classREMORAFillPatcher.html", null ],
     [ "REMORAPhysBCFunct", "classREMORAPhysBCFunct.html", null ],

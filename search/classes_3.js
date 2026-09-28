@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['problembase_0',['ProblemBase',['../classProblemBase.html',1,'']]]
+  ['probcoords_0',['ProbCoords',['../structProbCoords.html',1,'']]],
+  ['problembase_1',['ProblemBase',['../classProblemBase.html',1,'']]]
 ];

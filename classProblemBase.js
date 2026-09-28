@@ -7,9 +7,9 @@ var classProblemBase =
     [ "init_analytic_grid_scale", "classProblemBase.html#a9ae1790470889e08d9a2bd59fd37947b", null ],
     [ "init_analytic_hmix", "classProblemBase.html#a45a7d5b91618f41b13278abd82b42632", null ],
     [ "init_analytic_masks", "classProblemBase.html#ad3167beba6eef6799681e5fa64e15082", null ],
-    [ "init_analytic_prob", "classProblemBase.html#a1e8d7a0391abd7cb4eb1ea8dc343e953", null ],
+    [ "init_analytic_prob", "classProblemBase.html#acaee86303e9a51cb20ae49fdf20d5dcd", null ],
     [ "init_analytic_smflux", "classProblemBase.html#ae885e3ba865389fbc93c81ca60b49602", null ],
     [ "init_analytic_surface_var", "classProblemBase.html#ac71583e0c56f41509812ce960c8db20a", null ],
     [ "init_analytic_vmix", "classProblemBase.html#ac2ba3f467135bc5cb1d0c742c58353e1", null ],
-    [ "init_analytic_zeta", "classProblemBase.html#aba36d1f412e1932447d9aee6fb0bbb18", null ]
+    [ "init_analytic_zeta", "classProblemBase.html#ab390d267344a179c85e2da13bd871c3e", null ]
 ];

@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"functions_vars_c.html":[2,3,2,2],
+"functions_vars_d.html":[2,3,2,3],
+"functions_vars_e.html":[2,3,2,4],
+"functions_vars_f.html":[2,3,2,5],
 "functions_vars_g.html":[2,3,2,6],
 "functions_vars_h.html":[2,3,2,7],
 "functions_vars_i.html":[2,3,2,8],
@@ -25,8 +29,8 @@ var NAVTREEINDEX7 =
 "functions_y.html":[2,3,0,24],
 "functions_z.html":[2,3,0,25],
 "functions_~.html":[2,3,0,26],
-"globals.html":[3,1,0,0],
 "globals.html":[3,1,0],
+"globals.html":[3,1,0,0],
 "globals_b.html":[3,1,0,1],
 "globals_c.html":[3,1,0,2],
 "globals_d.html":[3,1,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "namespaceremora__funwave__isohelper.html#a4bc9eb5a9804814b13ff0070912a2440":[1,0,23,0],
 "namespaces.html":[1,0],
 "pages.html":[],
-"structNDArray.html":[2,0,9],
-"structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09":[2,0,9,9],
-"structNDArray.html#a197526556d3850037e560585740b9074":[2,0,9,8],
-"structNDArray.html#a1b3ece1ab109568fcb919d1af8f14eee":[2,0,9,6],
-"structNDArray.html#a1f33dbd861944bc1494f4790f4f8543d":[2,0,9,2]
+"structNDArray.html":[2,0,9]
 };
