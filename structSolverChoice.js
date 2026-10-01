@@ -119,7 +119,7 @@ var structSolverChoice =
     [ "Tcoef", "structSolverChoice.html#a45cf7364024323178dd5f67d3996e9ef", null ],
     [ "theta_b", "structSolverChoice.html#a6b82e27f159d8bc0bf4e3429cecce8b5", null ],
     [ "theta_s", "structSolverChoice.html#a6c6e710a8470aace72066b3dfdd69017", null ],
-    [ "time_ref", "structSolverChoice.html#add0d0e092993a0c0e5affa56322c985d", null ],
+    [ "time_ref", "structSolverChoice.html#aacf9aad03987f495a067ea1edcbcc61f", null ],
     [ "tnu2", "structSolverChoice.html#a3619ed466492ce884f56b0770de71c0b", null ],
     [ "tracer_Hadv_scheme", "structSolverChoice.html#a525a9c91d6f7e81c921a9967c35ec5b9", null ],
     [ "use_baroclinic", "structSolverChoice.html#a092beaf56ca711be832b219044efcba6", null ],

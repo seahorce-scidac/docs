@@ -23,7 +23,7 @@ var searchData=
   ['time_5fbefore_20',['time_before',['../classNCTimeSeriesRiver.html#a2ca31e5a532d0b4b5011b2662b1fcb2a',1,'NCTimeSeriesRiver::time_before'],['../classNCTimeSeriesBoundary.html#a32da6694727873e733553f55d793920e',1,'NCTimeSeriesBoundary::time_before'],['../classNCTimeSeries.html#a3a50effe721eb89522d59a84c8946acf',1,'NCTimeSeries::time_before']]],
   ['time_5finterp_5fflux_21',['time_interp_flux',['../classREMORA.html#a1563887e202212c4d54af9695f55d5c8',1,'REMORA']]],
   ['time_5fname_22',['time_name',['../classNCTimeSeriesRiver.html#a64db82cc3972bfc003783864da4e115d',1,'NCTimeSeriesRiver::time_name'],['../classNCTimeSeriesBoundary.html#a575c62aebbbd410371090ec7d2ddd64a',1,'NCTimeSeriesBoundary::time_name'],['../classNCTimeSeries.html#ac4d6108edf5bb3194be820936cf64e13',1,'NCTimeSeries::time_name']]],
-  ['time_5fref_23',['time_ref',['../structSolverChoice.html#add0d0e092993a0c0e5affa56322c985d',1,'SolverChoice']]],
+  ['time_5fref_23',['time_ref',['../structSolverChoice.html#aacf9aad03987f495a067ea1edcbcc61f',1,'SolverChoice']]],
   ['tnu2_24',['tnu2',['../structSolverChoice.html#a3619ed466492ce884f56b0770de71c0b',1,'SolverChoice']]],
   ['total_5fnc_5fplot_5ffile_5fstep_25',['total_nc_plot_file_step',['../classREMORA.html#ab001c0ea487d4b30d2e7570665c2e452',1,'REMORA']]],
   ['tracer_5fhadv_5fscheme_26',['tracer_Hadv_scheme',['../structSolverChoice.html#a525a9c91d6f7e81c921a9967c35ec5b9',1,'SolverChoice']]],
