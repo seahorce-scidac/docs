@@ -53,5 +53,5 @@ var searchData=
   ['cs_5fw_50',['Cs_w',['../classREMORA.html#ab91481037f0032837c22dbcf45440bef',1,'REMORA']]],
   ['csolar_51',['Csolar',['../REMORA__Constants_8H.html#ad1dc2049479f56da5194d7a18f8b3a07',1,'REMORA_Constants.H']]],
   ['cum_5fref_5fratios_52',['cum_ref_ratios',['../classREMORA.html#a6471d89974cbe65ab3ebdb95c775913f',1,'REMORA']]],
-  ['cycle_5flength_53',['cycle_length',['../classNCTimeSeries.html#a747ea29b263f37b56cfa1ef61d89b247',1,'NCTimeSeries']]]
+  ['cycle_5flength_53',['cycle_length',['../classNCTimeSeries.html#ac3b9a422056cdf39570dbe789acd1fa5',1,'NCTimeSeries']]]
 ];

@@ -36,7 +36,7 @@ var searchData=
   ['boundary_5fseries_33',['boundary_series',['../classREMORA.html#aabc81937db98cbe8897d832a08d70ce9',1,'REMORA']]],
   ['bounds_34',['bounds',['../namespacemod__param.html#ae5ec659e87da7c5aa30eeab729d72670',1,'mod_param']]],
   ['boxes_5fat_5flevel_35',['boxes_at_level',['../classREMORA.html#a45b928a121bd6c5e75ec75732a27f774',1,'REMORA']]],
-  ['bry_5ftimes_36',['bry_times',['../classNCTimeSeriesBoundary.html#a54f9df7dd085febef21cf3e58325ceb5',1,'NCTimeSeriesBoundary']]],
+  ['bry_5ftimes_36',['bry_times',['../classNCTimeSeriesBoundary.html#a2f0a4f7de11e6f6018a9b7f6b336e0d1',1,'NCTimeSeriesBoundary']]],
   ['bulk_5fflux_5ftype_37',['bulk_flux_type',['../structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b',1,'SolverChoice']]],
   ['bulk_5fflux_5ftype_5fspecified_38',['bulk_flux_type_specified',['../structSolverChoice.html#a27801504eba8ee4a1034f3a9ec9db092',1,'SolverChoice']]],
   ['bulk_5fflux_5fvalue_5fspecified_39',['bulk_flux_value_specified',['../structSolverChoice.html#aaf9c5583dc72aad6f9a73061004b2153',1,'SolverChoice']]],

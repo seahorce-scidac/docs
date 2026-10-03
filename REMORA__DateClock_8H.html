@@ -100,8 +100,6 @@ $(document).ready(function(){initNavTree('REMORA__DateClock_8H.html',''); initRe
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;type_traits&gt;</code><br />
-<code>#include &lt;AMReX_REAL.H&gt;</code><br />
 <code>#include &lt;AMReX_Extension.H&gt;</code><br />
 <code>#include &lt;AMReX_GpuQualifiers.H&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -109,23 +107,19 @@ Include dependency graph for REMORA_DateClock.H:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__DateClock_8H__incl.png" border="0" usemap="#a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Utils_2REMORA__DateClock_8H" alt=""/></div>
 <map name="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Utils_2REMORA__DateClock_8H" id="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Utils_2REMORA__DateClock_8H">
-<area shape="rect" title=" " alt="" coords="253,5,480,60"/>
+<area shape="rect" title=" " alt="" coords="161,5,388,60"/>
 <area shape="rect" title=" " alt="" coords="5,108,91,133"/>
-<area shape="poly" title=" " alt="" coords="270,63,104,107,103,102,269,57"/>
+<area shape="poly" title=" " alt="" coords="206,63,92,106,90,101,204,58"/>
 <area shape="rect" title=" " alt="" coords="115,108,178,133"/>
-<area shape="poly" title=" " alt="" coords="300,63,190,105,188,100,298,58"/>
+<area shape="poly" title=" " alt="" coords="237,62,177,103,174,98,234,58"/>
 <area shape="rect" title=" " alt="" coords="203,108,264,133"/>
-<area shape="poly" title=" " alt="" coords="327,62,264,103,261,98,325,58"/>
+<area shape="poly" title=" " alt="" coords="264,61,247,97,242,94,260,59"/>
 <area shape="rect" title=" " alt="" coords="288,108,347,133"/>
-<area shape="poly" title=" " alt="" coords="354,61,333,97,329,95,349,59"/>
-<area shape="rect" title=" " alt="" coords="371,108,463,133"/>
-<area shape="poly" title=" " alt="" coords="384,59,406,95,401,97,380,61"/>
-<area shape="rect" title=" " alt="" coords="488,108,611,133"/>
-<area shape="poly" title=" " alt="" coords="424,58,514,100,511,105,421,62"/>
-<area shape="rect" title=" " alt="" coords="635,108,789,133"/>
-<area shape="poly" title=" " alt="" coords="473,57,653,102,652,107,472,63"/>
-<area shape="rect" title=" " alt="" coords="813,108,992,133"/>
-<area shape="poly" title=" " alt="" coords="481,49,818,103,817,108,480,55"/>
+<area shape="poly" title=" " alt="" coords="290,59,308,94,303,97,285,61"/>
+<area shape="rect" title=" " alt="" coords="371,108,525,133"/>
+<area shape="poly" title=" " alt="" coords="329,58,414,99,411,104,326,62"/>
+<area shape="rect" title=" " alt="" coords="549,108,728,133"/>
+<area shape="poly" title=" " alt="" coords="386,57,578,102,577,108,385,63"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -262,36 +256,33 @@ Functions</h2></td></tr>
 <tr class="memitem:a0da920df23b0c8f5fc12d59ef0ea5c91" id="r_a0da920df23b0c8f5fc12d59ef0ea5c91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a0da920df23b0c8f5fc12d59ef0ea5c91">remora_yearday</a> (int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">month</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">day</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
 <tr class="memdesc:a0da920df23b0c8f5fc12d59ef0ea5c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Day of the year for a calendar date. ROMS <code>yearday</code>.  <br /></td></tr>
 <tr class="separator:a0da920df23b0c8f5fc12d59ef0ea5c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae94ae5ede9323e0970aad8ed1341ccec" id="r_ae94ae5ede9323e0970aad8ed1341ccec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#ae94ae5ede9323e0970aad8ed1341ccec">remora_datenum</a> (amrex::Real time_ref, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">month</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">day</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">hour</a>=0, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">minutes</a>=0, amrex::Real <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">seconds</a>=amrex::Real(0.0)) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
-<tr class="memdesc:ae94ae5ede9323e0970aad8ed1341ccec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fractional day number for a calendar date. ROMS <code>datenum</code>.  <br /></td></tr>
-<tr class="separator:ae94ae5ede9323e0970aad8ed1341ccec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad6cda878477bc92a633798b85cdbb5" id="r_a2ad6cda878477bc92a633798b85cdbb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a2ad6cda878477bc92a633798b85cdbb5">remora_ref_clock</a> (amrex::Real time_ref, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">month</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">day</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">hour</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">minute</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">second</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
-<tr class="memdesc:a2ad6cda878477bc92a633798b85cdbb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference date the model clock counts from, implied by <code>time_ref</code>.  <br /></td></tr>
-<tr class="separator:a2ad6cda878477bc92a633798b85cdbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1419b324052faecd7b3addf3744ac95" id="r_aa1419b324052faecd7b3addf3744ac95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#aa1419b324052faecd7b3addf3744ac95">remora_ref_datenum</a> (amrex::Real time_ref) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
-<tr class="memdesc:aa1419b324052faecd7b3addf3744ac95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Day number of the reference date implied by <code>time_ref</code>.  <br /></td></tr>
-<tr class="separator:aa1419b324052faecd7b3addf3744ac95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0679079b26cea665d983a3165d655d9f" id="r_a0679079b26cea665d983a3165d655d9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a0679079b26cea665d983a3165d655d9f">remora_datevec</a> (amrex::Real time_ref, amrex::Real <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">date_number</a>, bool <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">is_day_units</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">month</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">day</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
-<tr class="memdesc:a0679079b26cea665d983a3165d655d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calendar date for a day (or second) number. ROMS <code>datevec</code>.  <br /></td></tr>
-<tr class="separator:a0679079b26cea665d983a3165d655d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a664ef4996854c3f6b424b33bf559aa7d" id="r_a664ef4996854c3f6b424b33bf559aa7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a664ef4996854c3f6b424b33bf559aa7d">remora_caldate</a> (amrex::Real time_ref, amrex::Real <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">current_time_days</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">month</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">day</a>, amrex::Real &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">yday</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
-<tr class="memdesc:a664ef4996854c3f6b424b33bf559aa7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Model time in days to calendar date. ROMS <code>caldate</code>.  <br /></td></tr>
-<tr class="separator:a664ef4996854c3f6b424b33bf559aa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae651edb568cb47f0556b8d5fee20e7f5" id="r_ae651edb568cb47f0556b8d5fee20e7f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#ae651edb568cb47f0556b8d5fee20e7f5">remora_caldate</a> (amrex::Real time_ref, amrex::Real <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">current_time_days</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, amrex::Real &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">yday</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
-<tr class="memdesc:ae651edb568cb47f0556b8d5fee20e7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">remora_caldate for callers that only want the year and day of year.  <br /></td></tr>
-<tr class="separator:ae651edb568cb47f0556b8d5fee20e7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c6c0466fd9d5141a6ee36b9ea8021e1" id="r_a1c6c0466fd9d5141a6ee36b9ea8021e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a1c6c0466fd9d5141a6ee36b9ea8021e1">remora_time_ref_is_valid</a> (amrex::Real time_ref) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
-<tr class="memdesc:a1c6c0466fd9d5141a6ee36b9ea8021e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether <code>time_ref</code> names a calendar this header implements.  <br /></td></tr>
-<tr class="separator:a1c6c0466fd9d5141a6ee36b9ea8021e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81dc420dc7b991c2386049c98f8401b6" id="r_a81dc420dc7b991c2386049c98f8401b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a81dc420dc7b991c2386049c98f8401b6">remora_time_ref_is_representable</a> (amrex::Real time_ref) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
-<tr class="memdesc:a81dc420dc7b991c2386049c98f8401b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether <code>time_ref</code> survives a round trip through amrex::Real.  <br /></td></tr>
-<tr class="separator:a81dc420dc7b991c2386049c98f8401b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae5eabcbdc71b738d02e8dc86d5079fc" id="r_aae5eabcbdc71b738d02e8dc86d5079fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#aae5eabcbdc71b738d02e8dc86d5079fc">remora_ref_calendar</a> (amrex::Real time_ref)</td></tr>
-<tr class="memdesc:aae5eabcbdc71b738d02e8dc86d5079fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">CF calendar name for <code>time_ref</code>. ROMS <code>ref_clock</code>'s <code>Rclockcalendar</code>.  <br /></td></tr>
-<tr class="separator:aae5eabcbdc71b738d02e8dc86d5079fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8513d37341e1f16c7b00f878e1e2dbd1" id="r_a8513d37341e1f16c7b00f878e1e2dbd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a8513d37341e1f16c7b00f878e1e2dbd1">remora_ref_date_string</a> (amrex::Real time_ref)</td></tr>
-<tr class="memdesc:a8513d37341e1f16c7b00f878e1e2dbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference date as <code>YYYY-MM-DD hh:mm:ss</code>. ROMS <code>ref_clock</code>'s <code>Rclockstring</code>.  <br /></td></tr>
-<tr class="separator:a8513d37341e1f16c7b00f878e1e2dbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2176a2e87eaaedaae188fa21a9ed42aa" id="r_a2176a2e87eaaedaae188fa21a9ed42aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a2176a2e87eaaedaae188fa21a9ed42aa">remora_datenum</a> (double time_ref, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">month</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">day</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">hour</a>=0, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">minutes</a>=0, double <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">seconds</a>=0.0) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="memdesc:a2176a2e87eaaedaae188fa21a9ed42aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fractional day number for a calendar date. ROMS <code>datenum</code>.  <br /></td></tr>
+<tr class="separator:a2176a2e87eaaedaae188fa21a9ed42aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac5f2a94709e2340b074de0c2e9de81" id="r_a0ac5f2a94709e2340b074de0c2e9de81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81">remora_ref_clock</a> (double time_ref, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">month</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">day</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">hour</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">minute</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">second</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="memdesc:a0ac5f2a94709e2340b074de0c2e9de81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference date the model clock counts from, implied by <code>time_ref</code>.  <br /></td></tr>
+<tr class="separator:a0ac5f2a94709e2340b074de0c2e9de81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be87e427cd8023198a489fa6007fb18" id="r_a5be87e427cd8023198a489fa6007fb18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18">remora_ref_datenum</a> (double time_ref) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="memdesc:a5be87e427cd8023198a489fa6007fb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Day number of the reference date implied by <code>time_ref</code>.  <br /></td></tr>
+<tr class="separator:a5be87e427cd8023198a489fa6007fb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4124a06314421f1988b077ed441beaf3" id="r_a4124a06314421f1988b077ed441beaf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a4124a06314421f1988b077ed441beaf3">remora_datevec</a> (double time_ref, double <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">date_number</a>, bool <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">is_day_units</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">month</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">day</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="memdesc:a4124a06314421f1988b077ed441beaf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calendar date for a day (or second) number. ROMS <code>datevec</code>.  <br /></td></tr>
+<tr class="separator:a4124a06314421f1988b077ed441beaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57373b1d5164e15d1f17b36c1671c80" id="r_af57373b1d5164e15d1f17b36c1671c80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#af57373b1d5164e15d1f17b36c1671c80">remora_caldate</a> (double time_ref, double <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">current_time_days</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">month</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">day</a>, double &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">yday</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="memdesc:af57373b1d5164e15d1f17b36c1671c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Model time in days to calendar date. ROMS <code>caldate</code>.  <br /></td></tr>
+<tr class="separator:af57373b1d5164e15d1f17b36c1671c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ad8944012884ca0c3844b5b874de2d" id="r_a78ad8944012884ca0c3844b5b874de2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a78ad8944012884ca0c3844b5b874de2d">remora_caldate</a> (double time_ref, double <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">current_time_days</a>, int &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">year</a>, double &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">yday</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="memdesc:a78ad8944012884ca0c3844b5b874de2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">remora_caldate for callers that only want the year and day of year.  <br /></td></tr>
+<tr class="separator:a78ad8944012884ca0c3844b5b874de2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6172a07a4c602d09c5777d3cde7545ba" id="r_a6172a07a4c602d09c5777d3cde7545ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a6172a07a4c602d09c5777d3cde7545ba">remora_time_ref_is_valid</a> (double time_ref) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="memdesc:a6172a07a4c602d09c5777d3cde7545ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether <code>time_ref</code> names a calendar this header implements.  <br /></td></tr>
+<tr class="separator:a6172a07a4c602d09c5777d3cde7545ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa60c96ed488ba0dfb35614d4d27b8c96" id="r_aa60c96ed488ba0dfb35614d4d27b8c96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#aa60c96ed488ba0dfb35614d4d27b8c96">remora_ref_calendar</a> (double time_ref)</td></tr>
+<tr class="memdesc:aa60c96ed488ba0dfb35614d4d27b8c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">CF calendar name for <code>time_ref</code>. ROMS <code>ref_clock</code>'s <code>Rclockcalendar</code>.  <br /></td></tr>
+<tr class="separator:aa60c96ed488ba0dfb35614d4d27b8c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf7942da8b3b8b13cb387b96ea74ca1" id="r_a2bf7942da8b3b8b13cb387b96ea74ca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__DateClock_8H.html#a2bf7942da8b3b8b13cb387b96ea74ca1">remora_ref_date_string</a> (double time_ref)</td></tr>
+<tr class="memdesc:a2bf7942da8b3b8b13cb387b96ea74ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference date as <code>YYYY-MM-DD hh:mm:ss</code>. ROMS <code>ref_clock</code>'s <code>Rclockstring</code>.  <br /></td></tr>
+<tr class="separator:a2bf7942da8b3b8b13cb387b96ea74ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -316,6 +307,7 @@ Variables</h2></td></tr>
 <p>Julian day (NASA)</p>
 <p><code>time_ref</code> is passed in rather than read from a global, so these stay pure functions; ROMS keeps the equivalent in <code>Rclock</code> in <code><a class="el" href="namespacemod__scalars.html">mod_scalars</a></code>. The reference date number is recomputed per call, which is a handful of integer operations, rather than cached.</p>
 <p>The arithmetic is deliberately a transcription rather than a tidier equivalent. Fortran <code>INT</code> and <code>AINT</code> truncate toward zero, as do a C++ cast to <code>int</code> and <code>std::trunc</code>, and C++ integer division truncates toward zero too, so each expression carries over term for term. Where ROMS uses <code>FLOOR</code> &ndash; and in the <code>time_ref = -2</code> conversion it does, which rounds differently from <code>INT</code> on the negative side of the epoch &ndash; <code>std::floor</code> is used here.</p>
+<p>Everything here is <code>double</code> regardless of the build's <code>amrex::Real</code>. A <code>yyyymmdd.dd</code> reference date carries eight significant integer digits, which a single-precision float (24-bit mantissa, exact only to 2^24 = 16777216) cannot hold, and a modern day number (about 737791 for 2020, 2440000 and up for the truncated Julian day) would keep only a fraction of a day of resolution.</p>
 <p>The day fraction is available from remora_caldate's <code>yday</code> for a caller that needs it. The reference date does carry a time of day &ndash; <code>remora.time_ref</code> can name one &ndash; and remora_ref_clock returns it.</p>
 <p>Two quirks of the <code>time_ref = -2</code> calendar carry over, both ROMS's and both confirmed against the Fortran rather than inferred:</p>
 <ul>
@@ -326,8 +318,8 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ae651edb568cb47f0556b8d5fee20e7f5" name="ae651edb568cb47f0556b8d5fee20e7f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae651edb568cb47f0556b8d5fee20e7f5">&#9670;&#160;</a></span>remora_caldate() <span class="overload">[1/2]</span></h2>
+<a id="a78ad8944012884ca0c3844b5b874de2d" name="a78ad8944012884ca0c3844b5b874de2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ad8944012884ca0c3844b5b874de2d">&#9670;&#160;</a></span>remora_caldate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,13 +330,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> remora_caldate </td>
           <td>(</td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>time_ref</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>current_time_days</em>, </td>
         </tr>
         <tr>
@@ -356,7 +348,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">amrex::Real &amp;&#160;</td>
+          <td class="paramtype">double &amp;&#160;</td>
           <td class="paramname"><em>yday</em>&#160;</td>
         </tr>
         <tr>
@@ -378,26 +370,26 @@ Variables</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_ae651edb568cb47f0556b8d5fee20e7f5_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_ae651edb568cb47f0556b8d5fee20e7f5_cgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_ae651edb568cb47f0556b8d5fee20e7f5_cgraph" id="aREMORA__DateClock_8H_ae651edb568cb47f0556b8d5fee20e7f5_cgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a78ad8944012884ca0c3844b5b874de2d_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a78ad8944012884ca0c3844b5b874de2d_cgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a78ad8944012884ca0c3844b5b874de2d_cgraph" id="aREMORA__DateClock_8H_a78ad8944012884ca0c3844b5b874de2d_cgraph">
 <area shape="rect" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,259,129,284"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a664ef4996854c3f6b424b33bf559aa7d" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,208,301,233"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#af57373b1d5164e15d1f17b36c1671c80" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,208,301,233"/>
 <area shape="poly" title=" " alt="" coords="111,256,181,235,183,240,112,261"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="915,157,977,183"/>
 <area shape="poly" title=" " alt="" coords="122,281,254,306,333,316,412,319,606,319,682,321,743,320,771,316,799,307,830,294,865,274,887,257,905,236,931,194,936,196,909,239,890,261,868,279,833,299,801,312,772,321,743,325,682,326,606,325,412,325,332,321,253,311,121,287"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a0679079b26cea665d983a3165d655d9f" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="349,157,477,183"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a4124a06314421f1988b077ed441beaf3" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="349,157,477,183"/>
 <area shape="poly" title=" " alt="" coords="283,205,355,184,356,189,285,210"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#aa1419b324052faecd7b3addf3744ac95" title="Day number of the reference date implied by time_ref." alt="" coords="525,107,684,132"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18" title="Day number of the reference date implied by time_ref." alt="" coords="525,107,684,132"/>
 <area shape="poly" title=" " alt="" coords="252,206,293,173,320,156,348,142,389,130,431,122,511,115,512,120,431,127,390,135,350,147,322,160,296,177,256,210"/>
 <area shape="poly" title=" " alt="" coords="302,214,901,170,901,176,302,219"/>
 <area shape="rect" href="REMORA__DateClock_8H.html#a0da920df23b0c8f5fc12d59ef0ea5c91" title="Day of the year for a calendar date. ROMS yearday." alt="" coords="540,259,669,284"/>
 <area shape="poly" title=" " alt="" coords="302,229,350,237,526,260,525,265,349,242,301,234"/>
 <area shape="poly" title=" " alt="" coords="462,155,542,133,543,138,463,160"/>
 <area shape="poly" title=" " alt="" coords="478,167,901,167,901,173,478,173"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#ae94ae5ede9323e0970aad8ed1341ccec" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="732,5,867,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a2176a2e87eaaedaae188fa21a9ed42aa" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="732,5,867,31"/>
 <area shape="poly" title=" " alt="" coords="627,104,731,48,757,34,760,39,733,52,630,109"/>
 <area shape="poly" title=" " alt="" coords="638,104,685,90,743,79,806,78,837,82,868,92,887,102,904,115,930,145,927,148,900,119,884,106,866,96,836,87,806,83,743,85,686,95,640,109"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a2ad6cda878477bc92a633798b85cdbb5" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="732,107,867,132"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="732,107,867,132"/>
 <area shape="poly" title=" " alt="" coords="684,117,718,117,718,122,684,122"/>
 <area shape="poly" title=" " alt="" coords="837,28,868,48,890,71,909,96,936,144,931,146,904,99,886,74,865,52,834,33"/>
 <area shape="poly" title=" " alt="" coords="838,130,903,152,901,157,836,135"/>
@@ -407,8 +399,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a664ef4996854c3f6b424b33bf559aa7d" name="a664ef4996854c3f6b424b33bf559aa7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a664ef4996854c3f6b424b33bf559aa7d">&#9670;&#160;</a></span>remora_caldate() <span class="overload">[2/2]</span></h2>
+<a id="af57373b1d5164e15d1f17b36c1671c80" name="af57373b1d5164e15d1f17b36c1671c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57373b1d5164e15d1f17b36c1671c80">&#9670;&#160;</a></span>remora_caldate() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -419,13 +411,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> remora_caldate </td>
           <td>(</td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>time_ref</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>current_time_days</em>, </td>
         </tr>
         <tr>
@@ -449,7 +441,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">amrex::Real &amp;&#160;</td>
+          <td class="paramtype">double &amp;&#160;</td>
           <td class="paramname"><em>yday</em>&#160;</td>
         </tr>
         <tr>
@@ -484,12 +476,12 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_a664ef4996854c3f6b424b33bf559aa7d_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a664ef4996854c3f6b424b33bf559aa7d_cgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_a664ef4996854c3f6b424b33bf559aa7d_cgraph" id="aREMORA__DateClock_8H_a664ef4996854c3f6b424b33bf559aa7d_cgraph">
+<div class="center"><img src="REMORA__DateClock_8H_af57373b1d5164e15d1f17b36c1671c80_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_af57373b1d5164e15d1f17b36c1671c80_cgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_af57373b1d5164e15d1f17b36c1671c80_cgraph" id="aREMORA__DateClock_8H_af57373b1d5164e15d1f17b36c1671c80_cgraph">
 <area shape="rect" title="Model time in days to calendar date. ROMS caldate." alt="" coords="5,183,129,208"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a0679079b26cea665d983a3165d655d9f" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="177,157,305,183"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a4124a06314421f1988b077ed441beaf3" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="177,157,305,183"/>
 <area shape="poly" title=" " alt="" coords="129,184,163,179,164,184,130,189"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#aa1419b324052faecd7b3addf3744ac95" title="Day number of the reference date implied by time_ref." alt="" coords="353,107,512,132"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18" title="Day number of the reference date implied by time_ref." alt="" coords="353,107,512,132"/>
 <area shape="poly" title=" " alt="" coords="89,180,129,160,177,142,259,126,339,118,340,124,260,131,178,147,131,165,92,185"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="743,132,805,157"/>
 <area shape="poly" title=" " alt="" coords="129,194,305,191,500,181,694,158,729,152,730,157,695,163,501,186,305,197,130,199"/>
@@ -497,10 +489,10 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="96,206,134,222,178,237,269,255,354,264,354,269,268,260,177,242,132,227,94,211"/>
 <area shape="poly" title=" " alt="" coords="290,155,370,133,371,138,291,160"/>
 <area shape="poly" title=" " alt="" coords="305,164,729,144,729,149,306,170"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#ae94ae5ede9323e0970aad8ed1341ccec" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="560,5,695,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a2176a2e87eaaedaae188fa21a9ed42aa" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="560,5,695,31"/>
 <area shape="poly" title=" " alt="" coords="455,104,559,48,585,34,588,39,561,52,458,109"/>
 <area shape="poly" title=" " alt="" coords="472,104,518,92,574,84,635,82,695,91,724,104,749,121,746,125,722,109,694,97,635,87,575,89,519,98,474,109"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a2ad6cda878477bc92a633798b85cdbb5" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="560,107,695,132"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="560,107,695,132"/>
 <area shape="poly" title=" " alt="" coords="512,117,546,117,546,122,512,122"/>
 <area shape="poly" title=" " alt="" coords="663,28,696,48,732,83,759,118,755,121,728,86,693,52,660,33"/>
 <area shape="poly" title=" " alt="" coords="695,128,730,134,729,140,694,134"/>
@@ -510,18 +502,18 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_a664ef4996854c3f6b424b33bf559aa7d_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a664ef4996854c3f6b424b33bf559aa7d_icgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_a664ef4996854c3f6b424b33bf559aa7d_icgraph" id="aREMORA__DateClock_8H_a664ef4996854c3f6b424b33bf559aa7d_icgraph">
+<div class="center"><img src="REMORA__DateClock_8H_af57373b1d5164e15d1f17b36c1671c80_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_af57373b1d5164e15d1f17b36c1671c80_icgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_af57373b1d5164e15d1f17b36c1671c80_icgraph" id="aREMORA__DateClock_8H_af57373b1d5164e15d1f17b36c1671c80_icgraph">
 <area shape="rect" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,5,301,31"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#ae651edb568cb47f0556b8d5fee20e7f5" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,5,129,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a78ad8944012884ca0c3844b5b874de2d" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,5,129,31"/>
 <area shape="poly" title=" " alt="" coords="163,21,130,21,130,15,163,15"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ae94ae5ede9323e0970aad8ed1341ccec" name="ae94ae5ede9323e0970aad8ed1341ccec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae94ae5ede9323e0970aad8ed1341ccec">&#9670;&#160;</a></span>remora_datenum()</h2>
+<a id="a2176a2e87eaaedaae188fa21a9ed42aa" name="a2176a2e87eaaedaae188fa21a9ed42aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2176a2e87eaaedaae188fa21a9ed42aa">&#9670;&#160;</a></span>remora_datenum()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -530,9 +522,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> amrex::Real remora_datenum </td>
+          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> double remora_datenum </td>
           <td>(</td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>time_ref</em>, </td>
         </tr>
         <tr>
@@ -568,8 +560,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">amrex::Real&#160;</td>
-          <td class="paramname"><em>seconds</em> = <code>amrex::Real(0.0)</code>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>seconds</em> = <code>0.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -591,14 +583,14 @@ Here is the caller graph for this function:</div>
 <li>truncated Julian: <code>datenum(-4713,11,24) = 0</code>, <code>datenum(1968,05,23) = 2440000</code>. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00085">85</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00089">89</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__DateClock_8H_source.html#l00195">remora_ref_datenum()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__DateClock_8H_source.html#l00197">remora_ref_datenum()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_ae94ae5ede9323e0970aad8ed1341ccec_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_ae94ae5ede9323e0970aad8ed1341ccec_cgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_ae94ae5ede9323e0970aad8ed1341ccec_cgraph" id="aREMORA__DateClock_8H_ae94ae5ede9323e0970aad8ed1341ccec_cgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a2176a2e87eaaedaae188fa21a9ed42aa_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a2176a2e87eaaedaae188fa21a9ed42aa_cgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a2176a2e87eaaedaae188fa21a9ed42aa_cgraph" id="aREMORA__DateClock_8H_a2176a2e87eaaedaae188fa21a9ed42aa_cgraph">
 <area shape="rect" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="5,5,140,31"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="188,5,251,31"/>
 <area shape="poly" title=" " alt="" coords="140,15,174,15,174,21,140,21"/>
@@ -607,16 +599,16 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_ae94ae5ede9323e0970aad8ed1341ccec_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_ae94ae5ede9323e0970aad8ed1341ccec_icgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_ae94ae5ede9323e0970aad8ed1341ccec_icgraph" id="aREMORA__DateClock_8H_ae94ae5ede9323e0970aad8ed1341ccec_icgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a2176a2e87eaaedaae188fa21a9ed42aa_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a2176a2e87eaaedaae188fa21a9ed42aa_icgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a2176a2e87eaaedaae188fa21a9ed42aa_icgraph" id="aREMORA__DateClock_8H_a2176a2e87eaaedaae188fa21a9ed42aa_icgraph">
 <area shape="rect" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="732,5,867,31"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#aa1419b324052faecd7b3addf3744ac95" title="Day number of the reference date implied by time_ref." alt="" coords="525,5,684,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18" title="Day number of the reference date implied by time_ref." alt="" coords="525,5,684,31"/>
 <area shape="poly" title=" " alt="" coords="718,21,684,21,684,15,718,15"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a664ef4996854c3f6b424b33bf559aa7d" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,5,301,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#af57373b1d5164e15d1f17b36c1671c80" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,5,301,31"/>
 <area shape="poly" title=" " alt="" coords="511,21,301,21,301,15,511,15"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a0679079b26cea665d983a3165d655d9f" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="349,31,477,56"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a4124a06314421f1988b077ed441beaf3" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="349,31,477,56"/>
 <area shape="poly" title=" " alt="" coords="512,33,478,38,477,32,511,28"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#ae651edb568cb47f0556b8d5fee20e7f5" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,5,129,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a78ad8944012884ca0c3844b5b874de2d" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,5,129,31"/>
 <area shape="poly" title=" " alt="" coords="163,21,130,21,130,15,163,15"/>
 <area shape="poly" title=" " alt="" coords="336,35,301,30,302,24,336,29"/>
 </map>
@@ -624,8 +616,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a0679079b26cea665d983a3165d655d9f" name="a0679079b26cea665d983a3165d655d9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0679079b26cea665d983a3165d655d9f">&#9670;&#160;</a></span>remora_datevec()</h2>
+<a id="a4124a06314421f1988b077ed441beaf3" name="a4124a06314421f1988b077ed441beaf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4124a06314421f1988b077ed441beaf3">&#9670;&#160;</a></span>remora_datevec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -636,13 +628,13 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> remora_datevec </td>
           <td>(</td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>time_ref</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>date_number</em>, </td>
         </tr>
         <tr>
@@ -686,23 +678,23 @@ Here is the caller graph for this function:</div>
 <p><code>is_day_units</code> selects fractional days over fractional seconds, as ROMS's <code>IsDayUnits</code> does.</p>
 <p>ROMS's <code>time_ref = -2</code> branch can also run a proleptic <em>Julian</em> conversion, but its <code>ProlepticJulian</code> switch is a local hardcoded to <code>.FALSE.</code>, so that path is unreachable as shipped and is not ported. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00225">225</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00227">227</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__DateClock_8H_source.html#l00336">remora_caldate()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_a0679079b26cea665d983a3165d655d9f_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a0679079b26cea665d983a3165d655d9f_cgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_a0679079b26cea665d983a3165d655d9f_cgraph" id="aREMORA__DateClock_8H_a0679079b26cea665d983a3165d655d9f_cgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a4124a06314421f1988b077ed441beaf3_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a4124a06314421f1988b077ed441beaf3_cgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a4124a06314421f1988b077ed441beaf3_cgraph" id="aREMORA__DateClock_8H_a4124a06314421f1988b077ed441beaf3_cgraph">
 <area shape="rect" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="5,132,133,157"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#aa1419b324052faecd7b3addf3744ac95" title="Day number of the reference date implied by time_ref." alt="" coords="181,81,340,107"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18" title="Day number of the reference date implied by time_ref." alt="" coords="181,81,340,107"/>
 <area shape="poly" title=" " alt="" coords="118,129,198,108,199,113,119,134"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="571,81,633,107"/>
 <area shape="poly" title=" " alt="" coords="134,153,213,162,311,167,418,162,471,154,522,142,550,130,574,113,577,118,552,134,524,147,472,160,418,168,311,173,213,168,133,158"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#ae94ae5ede9323e0970aad8ed1341ccec" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="388,5,523,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a2176a2e87eaaedaae188fa21a9ed42aa" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="388,5,523,31"/>
 <area shape="poly" title=" " alt="" coords="293,79,408,33,410,38,295,84"/>
 <area shape="poly" title=" " alt="" coords="340,91,557,91,557,97,340,97"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a2ad6cda878477bc92a633798b85cdbb5" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="388,107,523,132"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="388,107,523,132"/>
 <area shape="poly" title=" " alt="" coords="340,102,374,106,374,111,340,107"/>
 <area shape="poly" title=" " alt="" coords="485,28,524,48,568,72,566,77,521,52,483,33"/>
 <area shape="poly" title=" " alt="" coords="522,105,557,99,558,104,523,110"/>
@@ -711,20 +703,20 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_a0679079b26cea665d983a3165d655d9f_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a0679079b26cea665d983a3165d655d9f_icgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_a0679079b26cea665d983a3165d655d9f_icgraph" id="aREMORA__DateClock_8H_a0679079b26cea665d983a3165d655d9f_icgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a4124a06314421f1988b077ed441beaf3_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a4124a06314421f1988b077ed441beaf3_icgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a4124a06314421f1988b077ed441beaf3_icgraph" id="aREMORA__DateClock_8H_a4124a06314421f1988b077ed441beaf3_icgraph">
 <area shape="rect" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="349,5,477,31"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a664ef4996854c3f6b424b33bf559aa7d" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,5,301,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#af57373b1d5164e15d1f17b36c1671c80" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,5,301,31"/>
 <area shape="poly" title=" " alt="" coords="336,21,302,21,302,15,336,15"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#ae651edb568cb47f0556b8d5fee20e7f5" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,5,129,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a78ad8944012884ca0c3844b5b874de2d" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,5,129,31"/>
 <area shape="poly" title=" " alt="" coords="163,21,130,21,130,15,163,15"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aae5eabcbdc71b738d02e8dc86d5079fc" name="aae5eabcbdc71b738d02e8dc86d5079fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae5eabcbdc71b738d02e8dc86d5079fc">&#9670;&#160;</a></span>remora_ref_calendar()</h2>
+<a id="aa60c96ed488ba0dfb35614d4d27b8c96" name="aa60c96ed488ba0dfb35614d4d27b8c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60c96ed488ba0dfb35614d4d27b8c96">&#9670;&#160;</a></span>remora_ref_calendar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -732,7 +724,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> std::string remora_ref_calendar </td>
           <td>(</td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>time_ref</em></td><td>)</td>
           <td></td>
         </tr>
@@ -742,14 +734,14 @@ Here is the caller graph for this function:</div>
 <p>CF calendar name for <code>time_ref</code>. ROMS <code>ref_clock</code>'s <code>Rclockcalendar</code>. </p>
 <p>Written next to every time stamp in NetCDF output, so a reader can tell which calendar the model clock is on. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00413">413</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00393">393</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00256">REMORA::WriteNCPlotFile_which()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_aae5eabcbdc71b738d02e8dc86d5079fc_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_aae5eabcbdc71b738d02e8dc86d5079fc_cgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_aae5eabcbdc71b738d02e8dc86d5079fc_cgraph" id="aREMORA__DateClock_8H_aae5eabcbdc71b738d02e8dc86d5079fc_cgraph">
+<div class="center"><img src="REMORA__DateClock_8H_aa60c96ed488ba0dfb35614d4d27b8c96_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_aa60c96ed488ba0dfb35614d4d27b8c96_cgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_aa60c96ed488ba0dfb35614d4d27b8c96_cgraph" id="aREMORA__DateClock_8H_aa60c96ed488ba0dfb35614d4d27b8c96_cgraph">
 <area shape="rect" title="CF calendar name for time_ref. ROMS ref_clock&#39;s Rclockcalendar." alt="" coords="5,5,163,31"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="211,5,273,31"/>
 <area shape="poly" title=" " alt="" coords="163,15,197,15,197,21,163,21"/>
@@ -758,8 +750,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_aae5eabcbdc71b738d02e8dc86d5079fc_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_aae5eabcbdc71b738d02e8dc86d5079fc_icgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_aae5eabcbdc71b738d02e8dc86d5079fc_icgraph" id="aREMORA__DateClock_8H_aae5eabcbdc71b738d02e8dc86d5079fc_icgraph">
+<div class="center"><img src="REMORA__DateClock_8H_aa60c96ed488ba0dfb35614d4d27b8c96_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_aa60c96ed488ba0dfb35614d4d27b8c96_icgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_aa60c96ed488ba0dfb35614d4d27b8c96_icgraph" id="aREMORA__DateClock_8H_aa60c96ed488ba0dfb35614d4d27b8c96_icgraph">
 <area shape="rect" title="CF calendar name for time_ref. ROMS ref_clock&#39;s Rclockcalendar." alt="" coords="1235,80,1392,105"/>
 <area shape="rect" href="classREMORA.html#ac75370ff14d8a68d5d6f45491af115c2" title="Write a particular NetCDF plotfile." alt="" coords="997,73,1187,113"/>
 <area shape="poly" title=" " alt="" coords="1221,95,1187,95,1187,90,1221,90"/>
@@ -789,8 +781,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a2ad6cda878477bc92a633798b85cdbb5" name="a2ad6cda878477bc92a633798b85cdbb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad6cda878477bc92a633798b85cdbb5">&#9670;&#160;</a></span>remora_ref_clock()</h2>
+<a id="a0ac5f2a94709e2340b074de0c2e9de81" name="a0ac5f2a94709e2340b074de0c2e9de81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac5f2a94709e2340b074de0c2e9de81">&#9670;&#160;</a></span>remora_ref_clock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -801,7 +793,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> remora_ref_clock </td>
           <td>(</td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>time_ref</em>, </td>
         </tr>
         <tr>
@@ -856,14 +848,14 @@ Here is the caller graph for this function:</div>
 <p>Reference date the model clock counts from, implied by <code>time_ref</code>. </p>
 <p>ROMS <code>ref_clock</code>'s date decode, the fields behind <code>Rclockstring</code>. The sentinel calendars carry ROMS's hardcoded dates: 0000-12-30 for 360_day, whose epoch is shifted back a day to undo a historical one-day offset, 1968-05-23 for the truncated Julian day, and 0001-01-01 for <code>time_ref = 0</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00152">152</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00156">156</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__DateClock_8H_source.html#l00434">remora_ref_date_string()</a>, and <a class="el" href="REMORA__DateClock_8H_source.html#l00195">remora_ref_datenum()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__DateClock_8H_source.html#l00414">remora_ref_date_string()</a>, and <a class="el" href="REMORA__DateClock_8H_source.html#l00197">remora_ref_datenum()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_a2ad6cda878477bc92a633798b85cdbb5_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a2ad6cda878477bc92a633798b85cdbb5_cgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_a2ad6cda878477bc92a633798b85cdbb5_cgraph" id="aREMORA__DateClock_8H_a2ad6cda878477bc92a633798b85cdbb5_cgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a0ac5f2a94709e2340b074de0c2e9de81_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a0ac5f2a94709e2340b074de0c2e9de81_cgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a0ac5f2a94709e2340b074de0c2e9de81_cgraph" id="aREMORA__DateClock_8H_a0ac5f2a94709e2340b074de0c2e9de81_cgraph">
 <area shape="rect" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="5,5,140,31"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="188,5,251,31"/>
 <area shape="poly" title=" " alt="" coords="140,15,174,15,174,21,140,21"/>
@@ -872,12 +864,12 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_a2ad6cda878477bc92a633798b85cdbb5_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a2ad6cda878477bc92a633798b85cdbb5_icgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_a2ad6cda878477bc92a633798b85cdbb5_icgraph" id="aREMORA__DateClock_8H_a2ad6cda878477bc92a633798b85cdbb5_icgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a0ac5f2a94709e2340b074de0c2e9de81_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a0ac5f2a94709e2340b074de0c2e9de81_icgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a0ac5f2a94709e2340b074de0c2e9de81_icgraph" id="aREMORA__DateClock_8H_a0ac5f2a94709e2340b074de0c2e9de81_icgraph">
 <area shape="rect" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="1457,113,1592,139"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a8513d37341e1f16c7b00f878e1e2dbd1" title="Reference date as YYYY&#45;MM&#45;DD hh:mm:ss. ROMS ref_clock&#39;s Rclockstring." alt="" coords="1235,84,1409,109"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a2bf7942da8b3b8b13cb387b96ea74ca1" title="Reference date as YYYY&#45;MM&#45;DD hh:mm:ss. ROMS ref_clock&#39;s Rclockstring." alt="" coords="1235,84,1409,109"/>
 <area shape="poly" title=" " alt="" coords="1443,117,1409,112,1410,107,1444,112"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#aa1419b324052faecd7b3addf3744ac95" title="Day number of the reference date implied by time_ref." alt="" coords="1243,137,1401,163"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18" title="Day number of the reference date implied by time_ref." alt="" coords="1243,137,1401,163"/>
 <area shape="poly" title=" " alt="" coords="1444,138,1402,143,1401,138,1443,133"/>
 <area shape="rect" href="classREMORA.html#ac75370ff14d8a68d5d6f45491af115c2" title="Write a particular NetCDF plotfile." alt="" coords="997,73,1187,113"/>
 <area shape="poly" title=" " alt="" coords="1220,98,1187,97,1187,92,1221,92"/>
@@ -902,11 +894,11 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="284,85,165,107,164,102,283,80"/>
 <area shape="poly" title=" " alt="" coords="283,153,164,131,165,126,284,148"/>
 <area shape="poly" title=" " alt="" coords="226,169,192,169,192,163,226,163"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a664ef4996854c3f6b424b33bf559aa7d" title="Model time in days to calendar date. ROMS caldate." alt="" coords="793,163,917,188"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#af57373b1d5164e15d1f17b36c1671c80" title="Model time in days to calendar date. ROMS caldate." alt="" coords="793,163,917,188"/>
 <area shape="poly" title=" " alt="" coords="1229,158,917,175,917,169,1228,152"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a0679079b26cea665d983a3165d655d9f" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="1028,188,1156,213"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a4124a06314421f1988b077ed441beaf3" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="1028,188,1156,213"/>
 <area shape="poly" title=" " alt="" coords="1251,168,1151,191,1150,185,1249,163"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#ae651edb568cb47f0556b8d5fee20e7f5" title="remora_caldate for callers that only want the year and day of year." alt="" coords="565,163,689,188"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a78ad8944012884ca0c3844b5b874de2d" title="remora_caldate for callers that only want the year and day of year." alt="" coords="565,163,689,188"/>
 <area shape="poly" title=" " alt="" coords="779,178,689,178,689,173,779,173"/>
 <area shape="poly" title=" " alt="" coords="1014,195,917,185,917,179,1014,190"/>
 </map>
@@ -914,8 +906,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a8513d37341e1f16c7b00f878e1e2dbd1" name="a8513d37341e1f16c7b00f878e1e2dbd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8513d37341e1f16c7b00f878e1e2dbd1">&#9670;&#160;</a></span>remora_ref_date_string()</h2>
+<a id="a2bf7942da8b3b8b13cb387b96ea74ca1" name="a2bf7942da8b3b8b13cb387b96ea74ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf7942da8b3b8b13cb387b96ea74ca1">&#9670;&#160;</a></span>remora_ref_date_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -923,7 +915,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> std::string remora_ref_date_string </td>
           <td>(</td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>time_ref</em></td><td>)</td>
           <td></td>
         </tr>
@@ -933,16 +925,16 @@ Here is the caller graph for this function:</div>
 <p>Reference date as <code>YYYY-MM-DD hh:mm:ss</code>. ROMS <code>ref_clock</code>'s <code>Rclockstring</code>. </p>
 <p>The "since" half of a CF time-units attribute: prefix <code>days since</code> or <code>seconds since</code> to get the units of a time stamp on the model clock. Host only, since it builds a std::string. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00434">434</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00414">414</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00256">REMORA::WriteNCPlotFile_which()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_a8513d37341e1f16c7b00f878e1e2dbd1_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a8513d37341e1f16c7b00f878e1e2dbd1_cgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_a8513d37341e1f16c7b00f878e1e2dbd1_cgraph" id="aREMORA__DateClock_8H_a8513d37341e1f16c7b00f878e1e2dbd1_cgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a2bf7942da8b3b8b13cb387b96ea74ca1_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a2bf7942da8b3b8b13cb387b96ea74ca1_cgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a2bf7942da8b3b8b13cb387b96ea74ca1_cgraph" id="aREMORA__DateClock_8H_a2bf7942da8b3b8b13cb387b96ea74ca1_cgraph">
 <area shape="rect" title="Reference date as YYYY&#45;MM&#45;DD hh:mm:ss. ROMS ref_clock&#39;s Rclockstring." alt="" coords="5,31,180,56"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a2ad6cda878477bc92a633798b85cdbb5" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="228,5,363,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="228,5,363,31"/>
 <area shape="poly" title=" " alt="" coords="180,30,214,25,215,31,181,35"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="411,31,473,56"/>
 <area shape="poly" title=" " alt="" coords="180,41,397,41,397,46,180,46"/>
@@ -952,8 +944,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_a8513d37341e1f16c7b00f878e1e2dbd1_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a8513d37341e1f16c7b00f878e1e2dbd1_icgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_a8513d37341e1f16c7b00f878e1e2dbd1_icgraph" id="aREMORA__DateClock_8H_a8513d37341e1f16c7b00f878e1e2dbd1_icgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a2bf7942da8b3b8b13cb387b96ea74ca1_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a2bf7942da8b3b8b13cb387b96ea74ca1_icgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a2bf7942da8b3b8b13cb387b96ea74ca1_icgraph" id="aREMORA__DateClock_8H_a2bf7942da8b3b8b13cb387b96ea74ca1_icgraph">
 <area shape="rect" title="Reference date as YYYY&#45;MM&#45;DD hh:mm:ss. ROMS ref_clock&#39;s Rclockstring." alt="" coords="1235,80,1409,105"/>
 <area shape="rect" href="classREMORA.html#ac75370ff14d8a68d5d6f45491af115c2" title="Write a particular NetCDF plotfile." alt="" coords="997,73,1187,113"/>
 <area shape="poly" title=" " alt="" coords="1221,95,1187,95,1187,90,1221,90"/>
@@ -983,8 +975,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aa1419b324052faecd7b3addf3744ac95" name="aa1419b324052faecd7b3addf3744ac95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1419b324052faecd7b3addf3744ac95">&#9670;&#160;</a></span>remora_ref_datenum()</h2>
+<a id="a5be87e427cd8023198a489fa6007fb18" name="a5be87e427cd8023198a489fa6007fb18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be87e427cd8023198a489fa6007fb18">&#9670;&#160;</a></span>remora_ref_datenum()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -993,9 +985,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> amrex::Real remora_ref_datenum </td>
+          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> double remora_ref_datenum </td>
           <td>(</td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>time_ref</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1010,20 +1002,20 @@ Here is the caller graph for this function:</div>
 <p>Day number of the reference date implied by <code>time_ref</code>. </p>
 <p>ROMS <code>ref_clock</code>, reduced to the one field most of this header needs: <code>RclockDateNumber(1)</code>. The two negative calendars carry hardcoded values in ROMS &ndash; 359 for 360_day, whose epoch is shifted to 0000-12-30 to undo a historical one-day offset, and 2440000 for the truncated Julian day. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00195">195</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00197">197</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__DateClock_8H_source.html#l00336">remora_caldate()</a>, and <a class="el" href="REMORA__DateClock_8H_source.html#l00225">remora_datevec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__DateClock_8H_source.html#l00336">remora_caldate()</a>, and <a class="el" href="REMORA__DateClock_8H_source.html#l00227">remora_datevec()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_aa1419b324052faecd7b3addf3744ac95_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_aa1419b324052faecd7b3addf3744ac95_cgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_aa1419b324052faecd7b3addf3744ac95_cgraph" id="aREMORA__DateClock_8H_aa1419b324052faecd7b3addf3744ac95_cgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a5be87e427cd8023198a489fa6007fb18_cgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a5be87e427cd8023198a489fa6007fb18_cgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a5be87e427cd8023198a489fa6007fb18_cgraph" id="aREMORA__DateClock_8H_a5be87e427cd8023198a489fa6007fb18_cgraph">
 <area shape="rect" title="Day number of the reference date implied by time_ref." alt="" coords="5,56,164,81"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#ae94ae5ede9323e0970aad8ed1341ccec" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="212,5,347,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a2176a2e87eaaedaae188fa21a9ed42aa" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="212,5,347,31"/>
 <area shape="poly" title=" " alt="" coords="134,53,216,32,217,37,135,58"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="395,56,457,81"/>
 <area shape="poly" title=" " alt="" coords="164,66,381,66,381,71,164,71"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a2ad6cda878477bc92a633798b85cdbb5" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="212,107,347,132"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="212,107,347,132"/>
 <area shape="poly" title=" " alt="" coords="135,79,217,101,216,106,134,84"/>
 <area shape="poly" title=" " alt="" coords="318,28,383,51,381,56,316,33"/>
 <area shape="poly" title=" " alt="" coords="316,104,381,81,383,86,318,109"/>
@@ -1032,14 +1024,14 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_aa1419b324052faecd7b3addf3744ac95_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_aa1419b324052faecd7b3addf3744ac95_icgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_aa1419b324052faecd7b3addf3744ac95_icgraph" id="aREMORA__DateClock_8H_aa1419b324052faecd7b3addf3744ac95_icgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a5be87e427cd8023198a489fa6007fb18_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a5be87e427cd8023198a489fa6007fb18_icgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a5be87e427cd8023198a489fa6007fb18_icgraph" id="aREMORA__DateClock_8H_a5be87e427cd8023198a489fa6007fb18_icgraph">
 <area shape="rect" title="Day number of the reference date implied by time_ref." alt="" coords="525,5,684,31"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a664ef4996854c3f6b424b33bf559aa7d" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,5,301,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#af57373b1d5164e15d1f17b36c1671c80" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,5,301,31"/>
 <area shape="poly" title=" " alt="" coords="511,21,301,21,301,15,511,15"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a0679079b26cea665d983a3165d655d9f" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="349,31,477,56"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a4124a06314421f1988b077ed441beaf3" title="Calendar date for a day (or second) number. ROMS datevec." alt="" coords="349,31,477,56"/>
 <area shape="poly" title=" " alt="" coords="512,33,478,38,477,32,511,28"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#ae651edb568cb47f0556b8d5fee20e7f5" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,5,129,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a78ad8944012884ca0c3844b5b874de2d" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,5,129,31"/>
 <area shape="poly" title=" " alt="" coords="163,21,130,21,130,15,163,15"/>
 <area shape="poly" title=" " alt="" coords="336,35,301,30,302,24,336,29"/>
 </map>
@@ -1047,57 +1039,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a81dc420dc7b991c2386049c98f8401b6" name="a81dc420dc7b991c2386049c98f8401b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81dc420dc7b991c2386049c98f8401b6">&#9670;&#160;</a></span>remora_time_ref_is_representable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> bool remora_time_ref_is_representable </td>
-          <td>(</td>
-          <td class="paramtype">amrex::Real&#160;</td>
-          <td class="paramname"><em>time_ref</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Whether <code>time_ref</code> survives a round trip through amrex::Real. </p>
-<p>A yyyymmdd.dd date carries eight significant integer digits, and remora_ref_datenum pulls the year, month, and day back out of them arithmetically. That needs those digits to be exact. A single-precision Real has a 24-bit mantissa, so integers above 2^24 (16777216) are not representable and every date from year 1678 on rounds to a neighbouring value &ndash; which then decodes to a different calendar date with nothing to flag it. The three sentinel calendars (0, -1, -2) are small integers and are always fine. </p>
-
-<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00398">398</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="REMORA__DataStruct_8H_source.html#l00133">SolverChoice::init_params()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_a81dc420dc7b991c2386049c98f8401b6_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a81dc420dc7b991c2386049c98f8401b6_icgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_a81dc420dc7b991c2386049c98f8401b6_icgraph" id="aREMORA__DateClock_8H_a81dc420dc7b991c2386049c98f8401b6_icgraph">
-<area shape="rect" title="Whether time_ref survives a round trip through amrex::Real." alt="" coords="624,23,773,63"/>
-<area shape="rect" href="structSolverChoice.html#a990b46996841ced5a04de68c208a20ba" title="read in and initialize parameters" alt="" coords="440,23,576,63"/>
-<area shape="poly" title=" " alt="" coords="610,46,576,46,576,41,610,41"/>
-<area shape="rect" href="classREMORA.html#aae1b7a86e03c93dd71e2d68c700d2512" title="read in some parameters from inputs file" alt="" coords="197,31,392,56"/>
-<area shape="poly" title=" " alt="" coords="426,46,392,46,392,41,426,41"/>
-<area shape="rect" href="classREMORA.html#a8a16e552c794ae05498e4cb0a65399af" title=" " alt="" coords="5,5,149,31"/>
-<area shape="poly" title=" " alt="" coords="183,33,149,29,150,24,184,28"/>
-<area shape="rect" href="classREMORA.html#a2e6c44c76a0dca92869a64f7f8d06fac" title=" " alt="" coords="5,55,149,80"/>
-<area shape="poly" title=" " alt="" coords="184,58,150,62,149,57,183,53"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a1c6c0466fd9d5141a6ee36b9ea8021e1" name="a1c6c0466fd9d5141a6ee36b9ea8021e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c6c0466fd9d5141a6ee36b9ea8021e1">&#9670;&#160;</a></span>remora_time_ref_is_valid()</h2>
+<a id="a6172a07a4c602d09c5777d3cde7545ba" name="a6172a07a4c602d09c5777d3cde7545ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6172a07a4c602d09c5777d3cde7545ba">&#9670;&#160;</a></span>remora_time_ref_is_valid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1108,7 +1051,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_GPU_HOST_DEVICE</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">AMREX_FORCE_INLINE</a> bool remora_time_ref_is_valid </td>
           <td>(</td>
-          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>time_ref</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1129,8 +1072,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="REMORA__DateClock_8H_a1c6c0466fd9d5141a6ee36b9ea8021e1_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a1c6c0466fd9d5141a6ee36b9ea8021e1_icgraph" alt=""/></div>
-<map name="aREMORA__DateClock_8H_a1c6c0466fd9d5141a6ee36b9ea8021e1_icgraph" id="aREMORA__DateClock_8H_a1c6c0466fd9d5141a6ee36b9ea8021e1_icgraph">
+<div class="center"><img src="REMORA__DateClock_8H_a6172a07a4c602d09c5777d3cde7545ba_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a6172a07a4c602d09c5777d3cde7545ba_icgraph" alt=""/></div>
+<map name="aREMORA__DateClock_8H_a6172a07a4c602d09c5777d3cde7545ba_icgraph" id="aREMORA__DateClock_8H_a6172a07a4c602d09c5777d3cde7545ba_icgraph">
 <area shape="rect" title="Whether time_ref names a calendar this header implements." alt="" coords="624,23,773,63"/>
 <area shape="rect" href="structSolverChoice.html#a990b46996841ced5a04de68c208a20ba" title="read in and initialize parameters" alt="" coords="440,23,576,63"/>
 <area shape="poly" title=" " alt="" coords="610,46,576,46,576,41,610,41"/>
@@ -1187,7 +1130,7 @@ Here is the caller graph for this function:</div>
 
 <p>Day of the year for a calendar date. ROMS <code>yearday</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00068">68</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00072">72</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__DateClock_8H_source.html#l00336">remora_caldate()</a>.</p>
 <div class="dynheader">
@@ -1206,9 +1149,9 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="REMORA__DateClock_8H_a0da920df23b0c8f5fc12d59ef0ea5c91_icgraph.png" border="0" usemap="#aREMORA__DateClock_8H_a0da920df23b0c8f5fc12d59ef0ea5c91_icgraph" alt=""/></div>
 <map name="aREMORA__DateClock_8H_a0da920df23b0c8f5fc12d59ef0ea5c91_icgraph" id="aREMORA__DateClock_8H_a0da920df23b0c8f5fc12d59ef0ea5c91_icgraph">
 <area shape="rect" title="Day of the year for a calendar date. ROMS yearday." alt="" coords="349,5,479,31"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a664ef4996854c3f6b424b33bf559aa7d" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,5,301,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#af57373b1d5164e15d1f17b36c1671c80" title="Model time in days to calendar date. ROMS caldate." alt="" coords="177,5,301,31"/>
 <area shape="poly" title=" " alt="" coords="335,21,302,21,302,15,335,15"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#ae651edb568cb47f0556b8d5fee20e7f5" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,5,129,31"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a78ad8944012884ca0c3844b5b874de2d" title="remora_caldate for callers that only want the year and day of year." alt="" coords="5,5,129,31"/>
 <area shape="poly" title=" " alt="" coords="163,21,130,21,130,15,163,15"/>
 </map>
 </div>
@@ -1237,9 +1180,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Reference day number of the 15 October 1582 Gregorian changeover, as ROMS spells it in datevec. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00064">64</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__DateClock_8H_source.html#l00068">68</a> of file <a class="el" href="REMORA__DateClock_8H_source.html">REMORA_DateClock.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__DateClock_8H_source.html#l00225">remora_datevec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__DateClock_8H_source.html#l00227">remora_datevec()</a>.</p>
 
 </div>
 </div>

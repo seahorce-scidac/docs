@@ -3,7 +3,7 @@ var classNCTimeSeriesRiver =
     [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html#a08c913f75309016cbf5f01f3797a89d9", null ],
     [ "Initialize", "classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3", null ],
     [ "read_in_at_time", "classNCTimeSeriesRiver.html#abf586562cf93e68e604212666f66bf31", null ],
-    [ "update_interpolated_to_time", "classNCTimeSeriesRiver.html#a494caa0f2cb0e78439fb4e1d6d654039", null ],
+    [ "update_interpolated_to_time", "classNCTimeSeriesRiver.html#ab8e7cf7ed5dbc122474479fe36fd6154", null ],
     [ "fab_after", "classNCTimeSeriesRiver.html#aa6267956926c193fbcb7f25841d14813", null ],
     [ "fab_before", "classNCTimeSeriesRiver.html#ad506ed09b32a5a480b59906c6fe64f1b", null ],
     [ "fab_interp", "classNCTimeSeriesRiver.html#af52560074964213b0aaf1ee769d67aa2", null ],
@@ -18,9 +18,9 @@ var classNCTimeSeriesRiver =
     [ "nriv", "classNCTimeSeriesRiver.html#a21a8d0f1c029f7646db7613b9994e017", null ],
     [ "nz", "classNCTimeSeriesRiver.html#ad7bb579c630c113de798f847417bf6cd", null ],
     [ "nzbox", "classNCTimeSeriesRiver.html#a351be9339152e48e75c8d93ad5942d3a", null ],
-    [ "river_times", "classNCTimeSeriesRiver.html#a680130b9ab77e2a7e974fd3d06c22373", null ],
-    [ "time_after", "classNCTimeSeriesRiver.html#afe09553c23af3b608bb4d862a21f4f0c", null ],
-    [ "time_before", "classNCTimeSeriesRiver.html#a2ca31e5a532d0b4b5011b2662b1fcb2a", null ],
+    [ "river_times", "classNCTimeSeriesRiver.html#a4e7694af5aadfe6057d458e1774dc2ad", null ],
+    [ "time_after", "classNCTimeSeriesRiver.html#ab133495117f5585b995e860c989ceaac", null ],
+    [ "time_before", "classNCTimeSeriesRiver.html#a82f906b99dd4828ce28e4511197e5bc2", null ],
     [ "time_name", "classNCTimeSeriesRiver.html#a64db82cc3972bfc003783864da4e115d", null ],
     [ "use_vert_integ", "classNCTimeSeriesRiver.html#ac2d336b34285ab54521f0220c9449507", null ]
 ];

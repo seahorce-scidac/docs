@@ -95,5 +95,5 @@ var searchData=
   ['cum_5fref_5fratios_92',['cum_ref_ratios',['../classREMORA.html#a6471d89974cbe65ab3ebdb95c775913f',1,'REMORA']]],
   ['cumulative_5fref_5fratio_93',['cumulative_ref_ratio',['../classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8',1,'NCTimeSeries']]],
   ['curvilinear_94',['curvilinear',['../classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0',1,'REMORA']]],
-  ['cycle_5flength_95',['cycle_length',['../classNCTimeSeries.html#a747ea29b263f37b56cfa1ef61d89b247',1,'NCTimeSeries']]]
+  ['cycle_5flength_95',['cycle_length',['../classNCTimeSeries.html#ac3b9a422056cdf39570dbe789acd1fa5',1,'NCTimeSeries']]]
 ];

@@ -1,15 +1,14 @@
 var REMORA__DateClock_8H =
 [
-    [ "remora_caldate", "REMORA__DateClock_8H.html#ae651edb568cb47f0556b8d5fee20e7f5", null ],
-    [ "remora_caldate", "REMORA__DateClock_8H.html#a664ef4996854c3f6b424b33bf559aa7d", null ],
-    [ "remora_datenum", "REMORA__DateClock_8H.html#ae94ae5ede9323e0970aad8ed1341ccec", null ],
-    [ "remora_datevec", "REMORA__DateClock_8H.html#a0679079b26cea665d983a3165d655d9f", null ],
-    [ "remora_ref_calendar", "REMORA__DateClock_8H.html#aae5eabcbdc71b738d02e8dc86d5079fc", null ],
-    [ "remora_ref_clock", "REMORA__DateClock_8H.html#a2ad6cda878477bc92a633798b85cdbb5", null ],
-    [ "remora_ref_date_string", "REMORA__DateClock_8H.html#a8513d37341e1f16c7b00f878e1e2dbd1", null ],
-    [ "remora_ref_datenum", "REMORA__DateClock_8H.html#aa1419b324052faecd7b3addf3744ac95", null ],
-    [ "remora_time_ref_is_representable", "REMORA__DateClock_8H.html#a81dc420dc7b991c2386049c98f8401b6", null ],
-    [ "remora_time_ref_is_valid", "REMORA__DateClock_8H.html#a1c6c0466fd9d5141a6ee36b9ea8021e1", null ],
+    [ "remora_caldate", "REMORA__DateClock_8H.html#a78ad8944012884ca0c3844b5b874de2d", null ],
+    [ "remora_caldate", "REMORA__DateClock_8H.html#af57373b1d5164e15d1f17b36c1671c80", null ],
+    [ "remora_datenum", "REMORA__DateClock_8H.html#a2176a2e87eaaedaae188fa21a9ed42aa", null ],
+    [ "remora_datevec", "REMORA__DateClock_8H.html#a4124a06314421f1988b077ed441beaf3", null ],
+    [ "remora_ref_calendar", "REMORA__DateClock_8H.html#aa60c96ed488ba0dfb35614d4d27b8c96", null ],
+    [ "remora_ref_clock", "REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81", null ],
+    [ "remora_ref_date_string", "REMORA__DateClock_8H.html#a2bf7942da8b3b8b13cb387b96ea74ca1", null ],
+    [ "remora_ref_datenum", "REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18", null ],
+    [ "remora_time_ref_is_valid", "REMORA__DateClock_8H.html#a6172a07a4c602d09c5777d3cde7545ba", null ],
     [ "remora_yearday", "REMORA__DateClock_8H.html#a0da920df23b0c8f5fc12d59ef0ea5c91", null ],
     [ "remora_gregorian_daynum", "REMORA__DateClock_8H.html#a5790a3c2a97927b6001bad7dbe45f8fa", null ]
 ];

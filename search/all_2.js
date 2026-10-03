@@ -51,7 +51,7 @@ var searchData=
   ['boundary_5fseries_48',['boundary_series',['../classREMORA.html#aabc81937db98cbe8897d832a08d70ce9',1,'REMORA']]],
   ['bounds_49',['bounds',['../namespacemod__param.html#ae5ec659e87da7c5aa30eeab729d72670',1,'mod_param']]],
   ['boxes_5fat_5flevel_50',['boxes_at_level',['../classREMORA.html#a45b928a121bd6c5e75ec75732a27f774',1,'REMORA']]],
-  ['bry_5ftimes_51',['bry_times',['../classNCTimeSeriesBoundary.html#a54f9df7dd085febef21cf3e58325ceb5',1,'NCTimeSeriesBoundary']]],
+  ['bry_5ftimes_51',['bry_times',['../classNCTimeSeriesBoundary.html#a2f0a4f7de11e6f6018a9b7f6b336e0d1',1,'NCTimeSeriesBoundary']]],
   ['bt_5friv_52',['BT_Riv',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06aa8083b9e3c291a871dd61f9dab9df2af',1,'REMORA_NCFile.H']]],
   ['bt_5fsn_5fwe_53',['BT_SN_WE',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a3135905a26a1cf01c9e0be796f3c31b4',1,'REMORA_NCFile.H']]],
   ['build_5fcovered_5fmask_54',['build_covered_mask',['../classREMORA.html#a37196e5f4f9d6a6c3d206d5192238318',1,'REMORA']]],

@@ -1,5 +1,10 @@
 var NAVTREEINDEX7 =
 {
+"functions_u.html":[2,3,0,20],
+"functions_v.html":[2,3,0,21],
+"functions_vars.html":[2,3,2],
+"functions_vars.html":[2,3,2,0],
+"functions_vars_b.html":[2,3,2,1],
 "functions_vars_c.html":[2,3,2,2],
 "functions_vars_d.html":[2,3,2,3],
 "functions_vars_e.html":[2,3,2,4],
@@ -55,8 +60,8 @@ var NAVTREEINDEX7 =
 "globals_type.html":[3,1,3],
 "globals_u.html":[3,1,0,19],
 "globals_v.html":[3,1,0,20],
-"globals_vars.html":[3,1,2],
 "globals_vars.html":[3,1,2,0],
+"globals_vars.html":[3,1,2],
 "globals_vars_b.html":[3,1,2,1],
 "globals_vars_c.html":[3,1,2,2],
 "globals_vars_d.html":[3,1,2,3],
@@ -84,8 +89,8 @@ var NAVTREEINDEX7 =
 "globals_y.html":[3,1,0,22],
 "globals_z.html":[3,1,0,23],
 "hierarchy.html":[2,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#Introduction":[0,0],
 "index.html#amr":[0,1],
 "index.html#dev_model":[0,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX7 =
 "namespaceremora__fennel__isohelper.html":[1,0,22],
 "namespaceremora__fennel__isohelper.html#a0e9f54bcd8ca493dbebae0f6e1afed92":[1,0,22,2],
 "namespaceremora__fennel__isohelper.html#a36776b0d54088d58bb5f5ad6f2add7d1":[1,0,22,1],
-"namespaceremora__fennel__isohelper.html#a80982fb96fcaef4abad709bc436014e8":[1,0,22,0],
-"namespaceremora__funwave__isohelper.html":[1,0,23],
-"namespaceremora__funwave__isohelper.html#a4bc9eb5a9804814b13ff0070912a2440":[1,0,23,0],
-"namespaces.html":[1,0],
-"pages.html":[],
-"structNDArray.html":[2,0,9]
+"namespaceremora__fennel__isohelper.html#a80982fb96fcaef4abad709bc436014e8":[1,0,22,0]
 };
