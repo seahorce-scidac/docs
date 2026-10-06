@@ -8,7 +8,9 @@ var NAVTREEINDEX3 =
 "REMORA__PhysBCFunct_8cpp_source.html":[3,0,0,1,8],
 "REMORA__Plotfile_8cpp.html":[3,0,0,3,14],
 "REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67":[3,0,0,3,14,0],
-"REMORA__Plotfile_8cpp.html#aeb56b4bca6dfa0e3b81d3f983926e8a2":[3,0,0,3,14,1],
+"REMORA__Plotfile_8cpp.html#a3d7752c4e228466550bc8695718e919d":[3,0,0,3,14,1],
+"REMORA__Plotfile_8cpp.html#ad9c886915d1630cb94849c290f0d6b55":[3,0,0,3,14,2],
+"REMORA__Plotfile_8cpp.html#aeb56b4bca6dfa0e3b81d3f983926e8a2":[3,0,0,3,14,3],
 "REMORA__Plotfile_8cpp_source.html":[3,0,0,3,14],
 "REMORA__ProbCoords_8H.html":[3,0,0,2,6],
 "REMORA__ProbCoords_8H_source.html":[3,0,0,2,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classNCTimeSeriesBoundary.html#a49672ca82bc94ed48cdb19e39d8af180":[2,0,7,28],
 "classNCTimeSeriesBoundary.html#a575c62aebbbd410371090ec7d2ddd64a":[2,0,7,21],
 "classNCTimeSeriesBoundary.html#a5dcbd9d5af3f9cfaa6f3a16f4ebe8132":[2,0,7,25],
-"classNCTimeSeriesBoundary.html#a5ebacba3889b3e83a841b88b94ba74cc":[2,0,7,12],
-"classNCTimeSeriesBoundary.html#a61133e7111677c784ab8da84b100e48d":[2,0,7,19],
-"classNCTimeSeriesBoundary.html#a7306bf818fa5c352f3bb63e7c2848d4e":[2,0,7,11]
+"classNCTimeSeriesBoundary.html#a5ebacba3889b3e83a841b88b94ba74cc":[2,0,7,12]
 };
