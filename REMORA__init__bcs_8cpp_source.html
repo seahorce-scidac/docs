@@ -947,17 +947,22 @@ $(document).ready(function(){initNavTree('REMORA__init__bcs_8cpp_source.html',''
 <div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>        }</div>
 <div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    }</div>
 <div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span> </div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span><span class="preprocessor">#ifdef AMREX_USE_GPU</span></div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    Gpu::htod_memcpy</div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>        (<a class="code hl_variable" href="classREMORA.html#af4c01c1be8a352c96a61e03e08c25121">domain_bcs_type_d</a>.data(), <a class="code hl_variable" href="classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f">domain_bcs_type</a>.data(),</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>         <span class="keyword">sizeof</span>(amrex::BCRec)*<a class="code hl_function" href="classREMORA.html#a33a228e32167acff77a28eaba3e6efef">num_bc_vars</a>());</div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>    std::memcpy</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>        (<a class="code hl_variable" href="classREMORA.html#af4c01c1be8a352c96a61e03e08c25121">domain_bcs_type_d</a>.data(), <a class="code hl_variable" href="classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f">domain_bcs_type</a>.data(),</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>         <span class="keyword">sizeof</span>(amrex::BCRec)*<a class="code hl_function" href="classREMORA.html#a33a228e32167acff77a28eaba3e6efef">num_bc_vars</a>());</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>}</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    <span class="comment">// tke and gls take w&#39;s boundary types, extrapolating at every side, but under a type of</span></div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>    <span class="comment">// their own: ROMS masks their boundary values (tkebc) and not those of w (bc_w3d), and</span></div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    <span class="comment">// impose_zvel_bcs tells the two apart by it.</span></div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>    <a class="code hl_variable" href="classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f">domain_bcs_type</a>[<a class="code hl_function" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">tke_bc_idx</a>] = <a class="code hl_variable" href="classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f">domain_bcs_type</a>[<a class="code hl_function" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">zvel_bc_idx</a>];</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span> </div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span> </div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span><span class="preprocessor">#ifdef AMREX_USE_GPU</span></div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>    Gpu::htod_memcpy</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>        (<a class="code hl_variable" href="classREMORA.html#af4c01c1be8a352c96a61e03e08c25121">domain_bcs_type_d</a>.data(), <a class="code hl_variable" href="classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f">domain_bcs_type</a>.data(),</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>         <span class="keyword">sizeof</span>(amrex::BCRec)*<a class="code hl_function" href="classREMORA.html#a33a228e32167acff77a28eaba3e6efef">num_bc_vars</a>());</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>    std::memcpy</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>        (<a class="code hl_variable" href="classREMORA.html#af4c01c1be8a352c96a61e03e08c25121">domain_bcs_type_d</a>.data(), <a class="code hl_variable" href="classREMORA.html#a116e340c1b1afd8b7a64faa108157a0f">domain_bcs_type</a>.data(),</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>         <span class="keyword">sizeof</span>(amrex::BCRec)*<a class="code hl_function" href="classREMORA.html#a33a228e32167acff77a28eaba3e6efef">num_bc_vars</a>());</div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>}</div>
 </div>
 <div class="ttc" id="aREMORA_8H_html"><div class="ttname"><a href="REMORA_8H.html">REMORA.H</a></div></div>
 <div class="ttc" id="aREMORA__Constants_8H_html_a6b7c73c34b8e65d792a04602474f08b5"><div class="ttname"><a href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a></div><div class="ttdeci">constexpr amrex::Real zero</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Constants_8H_source.html#l00006">REMORA_Constants.H:6</a></div></div>

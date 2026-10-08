@@ -90,7 +90,7 @@ var searchData=
   ['coriolis_5ftype_87',['coriolis_type',['../structSolverChoice.html#a5a2eb680fa53af115784a54eaa1924bf',1,'SolverChoice']]],
   ['coupling_5ftype_88',['coupling_type',['../structSolverChoice.html#af976afa61859c07e6249963edc367c2d',1,'SolverChoice']]],
   ['couplingtype_89',['CouplingType',['../REMORA__DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139b',1,'REMORA_DataStruct.H']]],
-  ['cp_90',['cp',['../namespacemod__scalars.html#ab9fed999bbfdcbacf818d203feda0cc4',1,'mod_scalars::cp'],['../REMORA__Constants_8H.html#acc9b56aa8386937a703d58529c6bc0a6',1,'Cp:&#160;REMORA_Constants.H']]],
+  ['cp_90',['cp',['../REMORA__Constants_8H.html#acc9b56aa8386937a703d58529c6bc0a6',1,'Cp:&#160;REMORA_Constants.H'],['../namespacemod__scalars.html#ab9fed999bbfdcbacf818d203feda0cc4',1,'mod_scalars::cp']]],
   ['create_91',['create',['../classncutils_1_1NCFile.html#abddb0caca9a60c01a48beeafaff0b899',1,'ncutils::NCFile']]],
   ['cs_5fr_92',['Cs_r',['../classREMORA.html#aa5f19e735d73db7c3b44a9858b1f6ad7',1,'REMORA']]],
   ['cs_5fw_93',['Cs_w',['../classREMORA.html#ab91481037f0032837c22dbcf45440bef',1,'REMORA']]],

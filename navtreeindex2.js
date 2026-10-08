@@ -1,5 +1,12 @@
 var NAVTREEINDEX2 =
 {
+"REMORA__InitAnalyticProb__DoubleGyre_8H_source.html":[3,0,0,5,30],
+"REMORA__InitAnalyticProb__DoublyPeriodic_8H.html":[3,0,0,5,31],
+"REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a014260d1becf055937af59cff1b4b773":[3,0,0,5,31,12],
+"REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a030282eee99c8d4edae8d18fe6de0dc4":[3,0,0,5,31,6],
+"REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a055aef9870fdf5d505cc9ad2d0d861c4":[3,0,0,5,31,7],
+"REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a0e309d9162590f5d8287ae33be5c24ff":[3,0,0,5,31,8],
+"REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a3686b9abefe6dda622283bf7109e68fe":[3,0,0,5,31,16],
 "REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a4139ec2cb9adc19d00e1e6a1750784a1":[3,0,0,5,31,3],
 "REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a427f1cb3c773239041b790dee84c4182":[3,0,0,5,31,2],
 "REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a5fa1183e12f797d3066d16aac374862d":[3,0,0,5,31,11],
@@ -242,12 +249,5 @@ var NAVTREEINDEX2 =
 "REMORA__NCTimeSeries_8cpp.html":[3,0,0,3,8],
 "REMORA__NCTimeSeries_8cpp_source.html":[3,0,0,3,8],
 "REMORA__PC_8H.html":[3,0,0,4,1],
-"REMORA__PC_8H_source.html":[3,0,0,4,1],
-"REMORA__PC__Evolve_8cpp.html":[3,0,0,4,2],
-"REMORA__PC__Evolve_8cpp_source.html":[3,0,0,4,2],
-"REMORA__PC__Init_8cpp.html":[3,0,0,4,3],
-"REMORA__PC__Init_8cpp_source.html":[3,0,0,4,3],
-"REMORA__PC__Utils_8cpp.html":[3,0,0,4,4],
-"REMORA__PC__Utils_8cpp_source.html":[3,0,0,4,4],
-"REMORA__ParticleData_8H.html":[3,0,0,4,0]
+"REMORA__PC_8H_source.html":[3,0,0,4,1]
 };

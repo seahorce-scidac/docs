@@ -1,5 +1,12 @@
 var NAVTREEINDEX8 =
 {
+"namespacemod__scalars.html#aa1ff3d6d20897f0d98637129cdff0235":[1,0,19,2],
+"namespacemod__scalars.html#ab9fed999bbfdcbacf818d203feda0cc4":[1,0,19,3],
+"namespacemod__scalars.html#ada28f144f6759852e88100c5294ec50b":[1,0,19,5],
+"namespacemod__scalars.html#aee01a732be59192394efbde0b4cdc818":[1,0,19,8],
+"namespacemod__stepping.html":[1,0,20],
+"namespacemod__stepping.html#a94e0a041c2de633e09b5db2ae1d09e90":[1,0,20,0],
+"namespacemod__stepping.html#ad92a16ae817f61db6946f2433444e61f":[1,0,20,1],
 "namespacencutils.html":[1,0,21],
 "namespaceremora__fennel__isohelper.html":[1,0,22],
 "namespaceremora__fennel__isohelper.html#a0e9f54bcd8ca493dbebae0f6e1afed92":[1,0,22,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX8 =
 "structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44":[2,0,16,111],
 "structSolverChoice.html#a8f944322956ed63724190ce9d2fa5b34":[2,0,16,77],
 "structSolverChoice.html#a909482d2d641a9b1836b833c492a3370":[2,0,16,49],
-"structSolverChoice.html#a933da4a3a80aac592c3009df3b93fb98":[2,0,16,51],
-"structSolverChoice.html#a959f0e6fb7aff9e02ea13ba1f588abb6":[2,0,16,86],
-"structSolverChoice.html#a961488d3435e26092359beb4ac12293b":[2,0,16,43],
-"structSolverChoice.html#a982c234b6121ded68232690c714b5364":[2,0,16,57],
-"structSolverChoice.html#a990b46996841ced5a04de68c208a20ba":[2,0,16,1],
-"structSolverChoice.html#a9a72d52a0640879b4aee3c130bf6544b":[2,0,16,60],
-"structSolverChoice.html#a9ac46247923ff034df732112a0815522":[2,0,16,103],
-"structSolverChoice.html#a9bac76aba9ac72cb682a20428d0eece8":[2,0,16,89]
+"structSolverChoice.html#a933da4a3a80aac592c3009df3b93fb98":[2,0,16,51]
 };
