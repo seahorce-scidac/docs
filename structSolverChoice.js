@@ -111,7 +111,6 @@ var structSolverChoice =
     [ "scaled_to_grid_amr_scaling", "structSolverChoice.html#a4827a78004232f8d0e166e5ded8e637c", null ],
     [ "Scoef", "structSolverChoice.html#ae8dbad91ad7a9be8eb4c2db5a62f5c47", null ],
     [ "smflux_type", "structSolverChoice.html#aabcae60d32fc2d0b5739bf5ac1fcf1cb", null ],
-    [ "spatial_order", "structSolverChoice.html#a8e053ce39997ed619ac81aa4d5a1fd44", null ],
     [ "srflux", "structSolverChoice.html#aab55375f5fd6b0845843f01603a3f724", null ],
     [ "T0", "structSolverChoice.html#ab66cd9af0320c884173b77917e1dcf82", null ],
     [ "Tair", "structSolverChoice.html#a3538bf4a83768202b603717d42bd2916", null ],

@@ -45,7 +45,6 @@ var classREMORA =
     [ "coarsen_bathymetry_with_grow_cells", "classREMORA.html#a6b31469759164180d3f98f9027eb8cd8", null ],
     [ "coarsen_masks_with_grow_cells", "classREMORA.html#a82208a3fbe27b64f9847224e52334e5d", null ],
     [ "ComputeDt", "classREMORA.html#a7671b889b87ca190f7aba7188074efa3", null ],
-    [ "ComputeGhostCells", "classREMORA.html#a3be29f45efb0b259995c494f6dac2b97", null ],
     [ "ConfigureDriverAtmosToOceanCoupling", "classREMORA.html#a05c4950669c2a8bd013562a7292a59a9", null ],
     [ "Construct_REMORAFillPatchers", "classREMORA.html#a285cd31f3cb51b9746338775a67677e2", null ],
     [ "convert_inv_days_to_inv_s", "classREMORA.html#af9f49b7bb02986c3efb85bb25b7dc65a", null ],
