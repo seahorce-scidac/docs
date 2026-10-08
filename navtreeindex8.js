@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"namespacemod__scalars.html#a96b32043ef463cc78050b6d20bb0b9db":[1,0,19,6],
+"namespacemod__scalars.html#aa1ff3d6d20897f0d98637129cdff0235":[1,0,19,2],
 "namespacemod__scalars.html#ab9fed999bbfdcbacf818d203feda0cc4":[1,0,19,3],
 "namespacemod__scalars.html#ada28f144f6759852e88100c5294ec50b":[1,0,19,5],
 "namespacemod__scalars.html#aee01a732be59192394efbde0b4cdc818":[1,0,19,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "structSolverChoice.html#a8ce3dfd5f42a5c698790db5f2d2586f3":[2,0,16,83],
 "structSolverChoice.html#a8f944322956ed63724190ce9d2fa5b34":[2,0,16,77],
 "structSolverChoice.html#a909482d2d641a9b1836b833c492a3370":[2,0,16,49],
-"structSolverChoice.html#a933da4a3a80aac592c3009df3b93fb98":[2,0,16,51],
-"structSolverChoice.html#a959f0e6fb7aff9e02ea13ba1f588abb6":[2,0,16,86],
-"structSolverChoice.html#a961488d3435e26092359beb4ac12293b":[2,0,16,43]
+"structSolverChoice.html#a933da4a3a80aac592c3009df3b93fb98":[2,0,16,51]
 };
