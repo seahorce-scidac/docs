@@ -61,6 +61,7 @@ var structSolverChoice =
     [ "gls_L6", "structSolverChoice.html#a4f417f04b0774d82e6659d2b729f7753", null ],
     [ "gls_L7", "structSolverChoice.html#acd1114eafd1d82cb64babaf86f257d3c", null ],
     [ "gls_L8", "structSolverChoice.html#a9a72d52a0640879b4aee3c130bf6544b", null ],
+    [ "gls_length_cap", "structSolverChoice.html#a35de1a97be54174af5c9a7065efa5f86", null ],
     [ "gls_m", "structSolverChoice.html#a28c2c7641ecddd8beca90529803166ae", null ],
     [ "gls_n", "structSolverChoice.html#a6786b75dd4075e026fe7af9310a664be", null ],
     [ "gls_p", "structSolverChoice.html#ac490670bac1391666876c21244efeb87", null ],
