@@ -8,6 +8,8 @@ var hierarchy =
     ] ],
     [ "REMORABiology::Fennel::Components", "structREMORABiology_1_1Fennel_1_1Components.html", null ],
     [ "REMORABiology::FennelParameters", "structREMORABiology_1_1FennelParameters.html", null ],
+    [ "REMORAMaskedAvgDown::FieldWeight", "structREMORAMaskedAvgDown_1_1FieldWeight.html", null ],
+    [ "REMORAMaskedAvgDown::MaskWeight", "structREMORAMaskedAvgDown_1_1MaskWeight.html", null ],
     [ "ncutils::NCDim", "structncutils_1_1NCDim.html", null ],
     [ "ncutils::NCDType", "structncutils_1_1NCDType.html", null ],
     [ "ncutils::NCFile", "classncutils_1_1NCFile.html", null ],

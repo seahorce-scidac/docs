@@ -24,6 +24,10 @@ var annotated_dup =
       ] ],
       [ "FennelParameters", "structREMORABiology_1_1FennelParameters.html", "structREMORABiology_1_1FennelParameters" ]
     ] ],
+    [ "REMORAMaskedAvgDown", "namespaceREMORAMaskedAvgDown.html", [
+      [ "FieldWeight", "structREMORAMaskedAvgDown_1_1FieldWeight.html", "structREMORAMaskedAvgDown_1_1FieldWeight" ],
+      [ "MaskWeight", "structREMORAMaskedAvgDown_1_1MaskWeight.html", "structREMORAMaskedAvgDown_1_1MaskWeight" ]
+    ] ],
     [ "NCTimeSeries", "classNCTimeSeries.html", "classNCTimeSeries" ],
     [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html", "classNCTimeSeriesBoundary" ],
     [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", "classNCTimeSeriesRiver" ],

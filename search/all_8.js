@@ -15,7 +15,10 @@ var searchData=
   ['hires_5fgrid_5flevel_12',['hires_grid_level',['../classREMORA.html#af6613911799ddebd00cff330cf5c5f76',1,'REMORA']]],
   ['hires_5finit_5flevel_13',['hires_init_level',['../classREMORA.html#aa0f93b5eb692df3d7ba897ebe09507ae',1,'REMORA']]],
   ['history_5fcount_14',['history_count',['../classREMORA.html#a296bed166ddc9b98d606f3959ca6bfda',1,'REMORA']]],
-  ['horiz_5fmixing_5ftype_15',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]],
-  ['horizmixingtype_16',['HorizMixingType',['../REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578',1,'REMORA_DataStruct.H']]],
-  ['hz_17',['hz',['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid']]]
+  ['history_5ffile_5fin_5fuse_15',['history_file_in_use',['../classREMORA.html#a5d05cda9fe86068245c6993867868ffc',1,'REMORA']]],
+  ['history_5frecord_5fshift_16',['history_record_shift',['../classREMORA.html#af6ec5d0d394c1e25837be708298e70cc',1,'REMORA']]],
+  ['history_5frestart_5frecord_17',['history_restart_record',['../classREMORA.html#ad96cf5c7c0d2eb30ca56e99fcee3624d',1,'REMORA']]],
+  ['horiz_5fmixing_5ftype_18',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]],
+  ['horizmixingtype_19',['HorizMixingType',['../REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578',1,'REMORA_DataStruct.H']]],
+  ['hz_20',['hz',['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid']]]
 ];

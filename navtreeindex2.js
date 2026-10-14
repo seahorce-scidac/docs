@@ -201,8 +201,9 @@ var NAVTREEINDEX2 =
 "REMORA__MOAB_8cpp.html":[3,0,0,18],
 "REMORA__MOAB_8cpp_source.html":[3,0,0,18],
 "REMORA__MaskedAverageDown_8H.html":[3,0,0,7,2],
-"REMORA__MaskedAverageDown_8H.html#a48eaf454b2b9ca835ad162268d6d2cd4":[3,0,0,7,2,0],
-"REMORA__MaskedAverageDown_8H.html#a5cfc80a0b7b80630bbb99fec39d8480b":[3,0,0,7,2,1],
+"REMORA__MaskedAverageDown_8H.html#a48eaf454b2b9ca835ad162268d6d2cd4":[3,0,0,7,2,2],
+"REMORA__MaskedAverageDown_8H.html#a5cfc80a0b7b80630bbb99fec39d8480b":[3,0,0,7,2,3],
+"REMORA__MaskedAverageDown_8H.html#a8d164fe7492a284e4be5243428eee247":[3,0,0,7,2,4],
 "REMORA__MaskedAverageDown_8H_source.html":[3,0,0,7,2],
 "REMORA__NCFile_8H.html":[3,0,0,3,3],
 "REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06":[3,0,0,3,3,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "REMORA__NCTimeSeries_8H_source.html":[3,0,0,3,9],
 "REMORA__NCTimeSeries_8cpp.html":[3,0,0,3,8],
 "REMORA__NCTimeSeries_8cpp_source.html":[3,0,0,3,8],
-"REMORA__PC_8H.html":[3,0,0,4,1],
-"REMORA__PC_8H_source.html":[3,0,0,4,1]
+"REMORA__PC_8H.html":[3,0,0,4,1]
 };
