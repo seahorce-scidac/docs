@@ -11,6 +11,10 @@ var REMORA__DataStruct_8H =
       [ "quadratic", "REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4ad2ac8798d82192d415e5a4d797dda30a", null ],
       [ "logarithmic", "REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4a7304832fd4fb6edc031f981f8ff12a47", null ]
     ] ],
+    [ "BulkFluxScheme", "REMORA__DataStruct_8H.html#aef5b2a1189f86b8c4815c92098730fa6", [
+      [ "coare30", "REMORA__DataStruct_8H.html#aef5b2a1189f86b8c4815c92098730fa6ae303fd59bd02a1664837fb5d604f5b02", null ],
+      [ "coare35", "REMORA__DataStruct_8H.html#aef5b2a1189f86b8c4815c92098730fa6aaeb37f90153fe78c17313cc5a0fa6e34", null ]
+    ] ],
     [ "Coord", "REMORA__DataStruct_8H.html#a627f1f843904477f763577ad1460de01", [
       [ "x", "REMORA__DataStruct_8H.html#a627f1f843904477f763577ad1460de01a9dd4e461268c8034f5c8564e155c67a6", null ],
       [ "y", "REMORA__DataStruct_8H.html#a627f1f843904477f763577ad1460de01a415290769594460e2e485922904f345d", null ],

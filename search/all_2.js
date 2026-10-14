@@ -63,12 +63,14 @@ var searchData=
   ['buildinfogetgithash_60',['buildInfoGetGitHash',['../namespaceamrex.html#a215b1ed21dbb8f453201c6dc72ab3d1c',1,'amrex']]],
   ['buildmask_61',['BuildMask',['../classREMORAFillPatcher.html#abcf51d6e55f66e3bc1d3bc9945087551',1,'REMORAFillPatcher']]],
   ['built_20on_20amrex_20_3a_20remora_62',['Regional Modeling of Oceans Refined Adaptively (built on AMReX): REMORA',['../index.html',1,'']]],
-  ['bulk_5fflux_5ftype_63',['bulk_flux_type',['../structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b',1,'SolverChoice']]],
-  ['bulk_5fflux_5ftype_5fspecified_64',['bulk_flux_type_specified',['../structSolverChoice.html#a27801504eba8ee4a1034f3a9ec9db092',1,'SolverChoice']]],
-  ['bulk_5fflux_5fvalue_5fspecified_65',['bulk_flux_value_specified',['../structSolverChoice.html#aaf9c5583dc72aad6f9a73061004b2153',1,'SolverChoice']]],
-  ['bulk_5ffluxes_66',['bulk_fluxes',['../classREMORA.html#ae7b7cf1dcfaa0a4603267a722437acd7',1,'REMORA::bulk_fluxes()'],['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice::bulk_fluxes']]],
-  ['bulk_5fpsit_67',['bulk_psit',['../classREMORA.html#ae574156fa5fb71c8301c3c2e4e99202a',1,'REMORA']]],
-  ['bulk_5fpsiu_68',['bulk_psiu',['../classREMORA.html#aa288199efe6ff562ce20f1cae3d249b5',1,'REMORA']]],
-  ['bulkflux_69',['BulkFlux',['../namespaceBulkFlux.html',1,'']]],
-  ['bulkforcingtype_70',['BulkForcingType',['../REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903',1,'REMORA_IndexDefines.H']]]
+  ['bulk_5fflux_5fscheme_63',['bulk_flux_scheme',['../structSolverChoice.html#a9b8ad807c2717db8b82ce87a40a2da18',1,'SolverChoice']]],
+  ['bulk_5fflux_5ftype_64',['bulk_flux_type',['../structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b',1,'SolverChoice']]],
+  ['bulk_5fflux_5ftype_5fspecified_65',['bulk_flux_type_specified',['../structSolverChoice.html#a27801504eba8ee4a1034f3a9ec9db092',1,'SolverChoice']]],
+  ['bulk_5fflux_5fvalue_5fspecified_66',['bulk_flux_value_specified',['../structSolverChoice.html#aaf9c5583dc72aad6f9a73061004b2153',1,'SolverChoice']]],
+  ['bulk_5ffluxes_67',['bulk_fluxes',['../classREMORA.html#ae7b7cf1dcfaa0a4603267a722437acd7',1,'REMORA::bulk_fluxes()'],['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice::bulk_fluxes']]],
+  ['bulk_5fpsit_68',['bulk_psit',['../classREMORA.html#ae574156fa5fb71c8301c3c2e4e99202a',1,'REMORA']]],
+  ['bulk_5fpsiu_69',['bulk_psiu',['../classREMORA.html#aa288199efe6ff562ce20f1cae3d249b5',1,'REMORA']]],
+  ['bulkflux_70',['BulkFlux',['../namespaceBulkFlux.html',1,'']]],
+  ['bulkfluxscheme_71',['BulkFluxScheme',['../REMORA__DataStruct_8H.html#aef5b2a1189f86b8c4815c92098730fa6',1,'REMORA_DataStruct.H']]],
+  ['bulkforcingtype_72',['BulkForcingType',['../REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903',1,'REMORA_IndexDefines.H']]]
 ];

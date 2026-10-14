@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325aac3d3c98c89dcbf5e7ef9f934233f1bd":[3,0,0,17,7,7],
+"REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325acac0c32caf84a889ec9b2b4cb2d56972":[3,0,0,17,7,2],
+"REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325acb8c716b8d9b499d9bc323d8f8a410d3":[3,0,0,17,7,3],
 "REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ad37e67db17cfd059f2852e2673b9e8ef":[3,0,0,17,7,1],
 "REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ae6ffdec5e14fce371eb7ae99edebbbee":[3,0,0,17,7,5],
 "REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325af25c3ea7c3e73452e6b9963cb67c9981":[3,0,0,17,7,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "REMORA__InitAnalyticProb__DoubleGyre_8H.html#a055aef9870fdf5d505cc9ad2d0d861c4":[3,0,0,5,30,1],
 "REMORA__InitAnalyticProb__DoubleGyre_8H.html#a0e309d9162590f5d8287ae33be5c24ff":[3,0,0,5,30,2],
 "REMORA__InitAnalyticProb__DoubleGyre_8H.html#a528a17952edc4a9ec0c759b3ce800c62":[3,0,0,5,30,7],
-"REMORA__InitAnalyticProb__DoubleGyre_8H.html#a75f9d7f9e2a71a0135a9a729ce2f2d6c":[3,0,0,5,30,4],
-"REMORA__InitAnalyticProb__DoubleGyre_8H.html#a925c992baa4d66fdc34059b52bfeb7fd":[3,0,0,5,30,0],
-"REMORA__InitAnalyticProb__DoubleGyre_8H.html#ade2a0e6d3b4be87f76ca850f1f594add":[3,0,0,5,30,3],
-"REMORA__InitAnalyticProb__DoubleGyre_8H.html#ae2e10f8de3f3514831677e5e3e0021c5":[3,0,0,5,30,6]
+"REMORA__InitAnalyticProb__DoubleGyre_8H.html#a75f9d7f9e2a71a0135a9a729ce2f2d6c":[3,0,0,5,30,4]
 };

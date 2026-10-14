@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"REMORA__InitAnalyticProb__DoubleGyre_8H.html#a925c992baa4d66fdc34059b52bfeb7fd":[3,0,0,5,30,0],
+"REMORA__InitAnalyticProb__DoubleGyre_8H.html#ade2a0e6d3b4be87f76ca850f1f594add":[3,0,0,5,30,3],
+"REMORA__InitAnalyticProb__DoubleGyre_8H.html#ae2e10f8de3f3514831677e5e3e0021c5":[3,0,0,5,30,6],
 "REMORA__InitAnalyticProb__DoubleGyre_8H_source.html":[3,0,0,5,30],
 "REMORA__InitAnalyticProb__DoublyPeriodic_8H.html":[3,0,0,5,31],
 "REMORA__InitAnalyticProb__DoublyPeriodic_8H.html#a014260d1becf055937af59cff1b4b773":[3,0,0,5,31,12],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "REMORA__NCTimeSeriesRiver_8cpp.html":[3,0,0,3,12],
 "REMORA__NCTimeSeriesRiver_8cpp_source.html":[3,0,0,3,12],
 "REMORA__NCTimeSeries_8H.html":[3,0,0,3,9],
-"REMORA__NCTimeSeries_8H_source.html":[3,0,0,3,9],
-"REMORA__NCTimeSeries_8cpp.html":[3,0,0,3,8],
-"REMORA__NCTimeSeries_8cpp_source.html":[3,0,0,3,8],
-"REMORA__PC_8H.html":[3,0,0,4,1]
+"REMORA__NCTimeSeries_8H_source.html":[3,0,0,3,9]
 };
