@@ -126,6 +126,7 @@ var classREMORA =
     [ "InitData", "classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089", null ],
     [ "InitializeFromFile", "classREMORA.html#af25043e75bc350bc40ae56f65649554b", null ],
     [ "InitializeLevelFromData", "classREMORA.html#abc5dc3d0306ebb6507e6c702241f07a0", null ],
+    [ "inject_mask_outside_domain", "classREMORA.html#a7add27106d6d3a57a560e18ad8218d50", null ],
     [ "is_it_time_for_action", "classREMORA.html#ac1343ee03c1a0119736b4afe199019f3", null ],
     [ "lin_eos", "classREMORA.html#a7ef206df9b5d4f71dfe5c57049ffb06e", null ],
     [ "MakeNewLevelFromCoarse", "classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe", null ],
