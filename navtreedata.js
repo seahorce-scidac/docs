@@ -69,12 +69,12 @@ var NAVTREEINDEX =
 "REMORA__InitAnalyticProb__DoubleGyre_8H.html#a925c992baa4d66fdc34059b52bfeb7fd",
 "REMORA__NCTimeSeries_8cpp.html",
 "classNCTimeSeriesBoundary.html#a1892a80ec8380590ff38c7a73ed68eaf",
-"classREMORA.html#a54b7048bd828c4a13fe687d951211fa1",
-"classREMORA.html#ad06aa146d3c9d677d44399dad4998d82",
-"functions_func_m.html",
-"namespacemod__param.html#a511b80db0a85a840064ca2ea90002b3e",
-"structSolverChoice.html#a55be5b3388201ee0784d6b6046ab4a06",
-"structncutils_1_1NCVar.html#ac829e900bdd490393d858ae0a1c9f5d1"
+"classREMORA.html#a515f1a5c0506d9d8f0d2231d7c97bc42",
+"classREMORA.html#acf04622fbc873b1bbd5ad18f06369d56",
+"functions_func_g.html",
+"namespacemod__param.html",
+"structSolverChoice.html#a4f417f04b0774d82e6659d2b729f7753",
+"structncutils_1_1NCVar.html#ac1572a791861a2d297f8f29ba0df8d55"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

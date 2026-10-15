@@ -22,8 +22,8 @@ var searchData=
   ['writejobinfo_19',['writeJobInfo',['../classREMORA.html#a331fbdef188eaf70cc72be04b1208020',1,'REMORA']]],
   ['writemultilevelplotfilewithbathymetry_20',['WriteMultiLevelPlotfileWithBathymetry',['../classREMORA.html#add7671138303d3571c64bab22c522abf',1,'REMORA']]],
   ['writencmultifab_21',['WriteNCMultiFab',['../classREMORA.html#a07cdefc2810863920747b6eac934a045',1,'REMORA']]],
-  ['writencplotfile_22',['WriteNCPlotFile',['../classREMORA.html#a7a932915c03b086a20caa8dc3b12c852',1,'REMORA']]],
-  ['writencplotfile_5fwhich_23',['WriteNCPlotFile_which',['../classREMORA.html#af558658144d85bdb5ebbc08ddbdc3689',1,'REMORA']]],
+  ['writencplotfile_22',['WriteNCPlotFile',['../classREMORA.html#a1e6a3a94867bfddb54e20b81d1750252',1,'REMORA']]],
+  ['writencplotfile_5fwhich_23',['WriteNCPlotFile_which',['../classREMORA.html#a32caca8c15112b693b0fc23c6706f8c0',1,'REMORA']]],
   ['writeplotfile_24',['WritePlotFile',['../classREMORA.html#ae34c7e436b23f9c528aaa8589804b196',1,'REMORA']]],
   ['wsdet_25',['wSDet',['../structREMORABiology_1_1FennelParameters.html#ab9f4370f4a72a6e563a86216da60ffbb',1,'REMORABiology::FennelParameters']]]
 ];
