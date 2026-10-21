@@ -72,9 +72,9 @@ var NAVTREEINDEX =
 "classREMORA.html#a515f1a5c0506d9d8f0d2231d7c97bc42",
 "classREMORA.html#acf04622fbc873b1bbd5ad18f06369d56",
 "functions_func_g.html",
-"namespacemod__param.html",
-"structSolverChoice.html#a4f417f04b0774d82e6659d2b729f7753",
-"structncutils_1_1NCVar.html#ac1572a791861a2d297f8f29ba0df8d55"
+"namespacemod__ocean.html#a4087f409cfbd98fe6a69bc00c012f5f9",
+"structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6",
+"structncutils_1_1NCVar.html#ab5087bd7d6abbebda59b6b177988519a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
