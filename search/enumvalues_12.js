@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wanninkhof1992_0',['wanninkhof1992',['../namespaceREMORABiology.html#a4a2664c187daf6e469227efa358aaaeca53ba09d35ef0e6f14315e758c66e06c7',1,'REMORABiology::wanninkhof1992'],['../namespaceREMORABiology.html#a5f60d692a2fc85488d7b9078b382ba01a53ba09d35ef0e6f14315e758c66e06c7',1,'REMORABiology::wanninkhof1992']]],
-  ['wanninkhof2014_1',['wanninkhof2014',['../namespaceREMORABiology.html#a4a2664c187daf6e469227efa358aaaeca88b21fa34606253d954f1ff967909512',1,'REMORABiology::wanninkhof2014'],['../namespaceREMORABiology.html#a5f60d692a2fc85488d7b9078b382ba01a88b21fa34606253d954f1ff967909512',1,'REMORABiology::wanninkhof2014']]],
-  ['warn_2',['warn',['../REMORA__DataStruct_8H.html#a1db09fa0334c56b374c1072774c16701a1ea4c3ab05ee0c6d4de30740443769cb',1,'REMORA_DataStruct.H']]]
+  ['undefined_0',['undefined',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74',1,'REMORA_IndexDefines.H']]],
+  ['upstream3_1',['upstream3',['../REMORA__DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca5b2d34872c0b46cfbabc832368e6ec7d',1,'REMORA_DataStruct.H']]],
+  ['uwind_2',['uwind',['../namespaceAtmosState.html#a8518ea8559a676184759497453b502c4ace44688abc1d064a95c55ac3fe880cde',1,'AtmosState::Uwind'],['../namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8ab903a1809f855b363a48979c69aca552',1,'BulkFlux::Uwind']]]
 ];

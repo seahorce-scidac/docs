@@ -6,7 +6,7 @@ var searchData=
   ['q03_3',['Q03',['../REMORA__Constants_8H.html#ab26a0f5c68d9f199dc24254151873cb3',1,'REMORA_Constants.H']]],
   ['q04_4',['Q04',['../REMORA__Constants_8H.html#a2549145b8b7aab6b7d49ee1da2778459',1,'REMORA_Constants.H']]],
   ['q05_5',['Q05',['../REMORA__Constants_8H.html#ac341187acb1b842e0ce85cc12ab900ce',1,'REMORA_Constants.H']]],
-  ['qair_6',['qair',['../namespaceAtmosState.html#a76d13f6889b52b16bc3d9680db35206ea7cdc5054f6b329adc379ae5e15475fea',1,'AtmosState::Qair'],['../namespaceBulkFlux.html#ab4d324d7d6b4886cca281114c64ba588ac7191f5b0bad6348fad4b26fa4858398',1,'BulkFlux::Qair']]],
+  ['qair_6',['qair',['../namespaceAtmosState.html#a8518ea8559a676184759497453b502c4a7cdc5054f6b329adc379ae5e15475fea',1,'AtmosState::Qair'],['../namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8ac7191f5b0bad6348fad4b26fa4858398',1,'BulkFlux::Qair']]],
   ['qair_5fdata_5ffrom_5ffile_7',['qair_data_from_file',['../classREMORA.html#a1369a3a8622d37575cc6d4e64cfde69e',1,'REMORA']]],
   ['qair_5fis_5fpercent_8',['qair_is_percent',['../structSolverChoice.html#ac169ba909b87d9a0ce9411de3375620b',1,'SolverChoice']]],
   ['quadratic_9',['quadratic',['../REMORA__DataStruct_8H.html#a02f293b6823fb5306216d7de2d4a32c4ad2ac8798d82192d415e5a4d797dda30a',1,'REMORA_DataStruct.H']]],

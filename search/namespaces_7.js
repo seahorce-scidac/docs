@@ -5,5 +5,7 @@ var searchData=
   ['remorabctype_2',['REMORABCType',['../namespaceREMORABCType.html',1,'']]],
   ['remorabiology_3',['REMORABiology',['../namespaceREMORABiology.html',1,'']]],
   ['remorabiology_3a_3afennel_4',['Fennel',['../namespaceREMORABiology_1_1Fennel.html',1,'REMORABiology']]],
-  ['remoramaskedavgdown_5',['REMORAMaskedAvgDown',['../namespaceREMORAMaskedAvgDown.html',1,'']]]
+  ['remoramaskedavgdown_5',['REMORAMaskedAvgDown',['../namespaceREMORAMaskedAvgDown.html',1,'']]],
+  ['remoraparticleinitializations_6',['REMORAParticleInitializations',['../namespaceREMORAParticleInitializations.html',1,'']]],
+  ['remoraparticlenames_7',['REMORAParticleNames',['../namespaceREMORAParticleNames.html',1,'']]]
 ];

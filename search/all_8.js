@@ -20,5 +20,6 @@ var searchData=
   ['history_5frestart_5frecord_17',['history_restart_record',['../classREMORA.html#ad96cf5c7c0d2eb30ca56e99fcee3624d',1,'REMORA']]],
   ['horiz_5fmixing_5ftype_18',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]],
   ['horizmixingtype_19',['HorizMixingType',['../REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578',1,'REMORA_DataStruct.H']]],
-  ['hz_20',['hz',['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid']]]
+  ['hydro_20',['hydro',['../namespaceREMORAParticleNames.html#a6d2fee8d4c38df86b642bd747fcfb14a',1,'REMORAParticleNames']]],
+  ['hz_21',['hz',['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid']]]
 ];

@@ -45,7 +45,8 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
-        [ "Enumerations", "functions_enum.html", null ]
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -68,13 +69,13 @@ var NAVTREEINDEX =
 "REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325aac3d3c98c89dcbf5e7ef9f934233f1bd",
 "REMORA__InitAnalyticProb__DoubleGyre_8H.html#a925c992baa4d66fdc34059b52bfeb7fd",
 "REMORA__NCTimeSeries_8cpp.html",
-"classNCTimeSeriesBoundary.html#a1892a80ec8380590ff38c7a73ed68eaf",
-"classREMORA.html#a515f1a5c0506d9d8f0d2231d7c97bc42",
-"classREMORA.html#acf04622fbc873b1bbd5ad18f06369d56",
-"functions_func_g.html",
-"namespacemod__ocean.html#a4087f409cfbd98fe6a69bc00c012f5f9",
-"structSolverChoice.html#a4b0edf29a032ff18b10a42825fa9e4b6",
-"structncutils_1_1NCVar.html#ab5087bd7d6abbebda59b6b177988519a"
+"classNCTimeSeries.html#afc9c6b7d596f3e7cb85d798b584bd0d2",
+"classREMORA.html#a443952ed65d7042dfbc471bb405f8d90",
+"classREMORA.html#abf7c58cac8975a2cd4c634887976c22f",
+"classncutils_1_1NCFile.html#ab275cede297730cc0338b6f18ec1e518",
+"namespaceREMORABiology.html#aa77892264812710f1c33d8b2a1ce3f03a617ac08757d38a5a7ed91c224f0e90a0",
+"structREMORABiology_1_1Fennel_1_1Components.html#afc84757cce3c475affcc3d707ea3705c",
+"structncutils_1_1NCVar.html#a2d49952f029454736f33332bb9880857"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -18,9 +18,18 @@ var hierarchy =
     [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", null ],
     [ "ncutils::NCVar", "structncutils_1_1NCVar.html", null ],
     [ "NDArray< DataType >", "structNDArray.html", null ],
+    [ "amrex::ParticleContainer", null, [
+      [ "REMORAPC", "classREMORAPC.html", null ]
+    ] ],
+    [ "ParticleData", "classParticleData.html", null ],
     [ "ProbCoords", "structProbCoords.html", null ],
     [ "ProblemBase", "classProblemBase.html", null ],
     [ "REMORAFillPatcher", "classREMORAFillPatcher.html", null ],
+    [ "REMORAParticlesAssignor", "structREMORAParticlesAssignor.html", null ],
+    [ "REMORAParticlesIntIdxAoS", "structREMORAParticlesIntIdxAoS.html", null ],
+    [ "REMORAParticlesIntIdxSoA", "structREMORAParticlesIntIdxSoA.html", null ],
+    [ "REMORAParticlesRealIdxAoS", "structREMORAParticlesRealIdxAoS.html", null ],
+    [ "REMORAParticlesRealIdxSoA", "structREMORAParticlesRealIdxSoA.html", null ],
     [ "REMORAPhysBCFunct", "classREMORAPhysBCFunct.html", null ],
     [ "SolverChoice", "structSolverChoice.html", null ],
     [ "mod_param::t_bounds", "structmod__param_1_1t__bounds.html", null ],

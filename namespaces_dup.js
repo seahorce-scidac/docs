@@ -113,5 +113,12 @@ var namespaces_dup =
       ] ]
     ] ],
     [ "REMORABiology", "namespaceREMORABiology.html", "namespaceREMORABiology" ],
-    [ "REMORAMaskedAvgDown", "namespaceREMORAMaskedAvgDown.html", "namespaceREMORAMaskedAvgDown" ]
+    [ "REMORAMaskedAvgDown", "namespaceREMORAMaskedAvgDown.html", "namespaceREMORAMaskedAvgDown" ],
+    [ "REMORAParticleInitializations", "namespaceREMORAParticleInitializations.html", [
+      [ "init_box_uniform", "namespaceREMORAParticleInitializations.html#a461355088c00fb5f39f61c48b83fb73b", null ]
+    ] ],
+    [ "REMORAParticleNames", "namespaceREMORAParticleNames.html", [
+      [ "hydro", "namespaceREMORAParticleNames.html#a6d2fee8d4c38df86b642bd747fcfb14a", null ],
+      [ "tracers", "namespaceREMORAParticleNames.html#a2ef19c3e52c6ecf90b2f7fe816c28de0", null ]
+    ] ]
 ];
