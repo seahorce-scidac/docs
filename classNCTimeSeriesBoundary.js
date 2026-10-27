@@ -1,6 +1,6 @@
 var classNCTimeSeriesBoundary =
 [
-    [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html#a9ce5255ff872e1489030c32a31f936d7", null ],
+    [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html#a7c1c8085948b2b52ac093b1b08d8dc6b", null ],
     [ "Initialize", "classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63", null ],
     [ "interp_fab", "classNCTimeSeriesBoundary.html#a0831532ec2874705078026fce481a6b8", null ],
     [ "read_in_at_time", "classNCTimeSeriesBoundary.html#aa59234163bfc966da5e57d66865745b4", null ],
@@ -22,6 +22,7 @@ var classNCTimeSeriesBoundary =
     [ "time_after", "classNCTimeSeriesBoundary.html#a61133e7111677c784ab8da84b100e48d", null ],
     [ "time_before", "classNCTimeSeriesBoundary.html#a3564419d77ac8b5639683de883f8d971", null ],
     [ "time_name", "classNCTimeSeriesBoundary.html#a575c62aebbbd410371090ec7d2ddd64a", null ],
+    [ "time_ref", "classNCTimeSeriesBoundary.html#a128f7f33fcfe26a6766cd0d17d589c10", null ],
     [ "var_need_data", "classNCTimeSeriesBoundary.html#a07707a13344a0612d6a8caf94c8502ae", null ],
     [ "xhi_dat_after", "classNCTimeSeriesBoundary.html#a8f7bc5f1935b73d6e364f14d9b54b00f", null ],
     [ "xhi_dat_before", "classNCTimeSeriesBoundary.html#aba4a0b240edae0c0cec301ad3600e89a", null ],

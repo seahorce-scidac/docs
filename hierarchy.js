@@ -31,6 +31,7 @@ var hierarchy =
     [ "REMORAParticlesRealIdxAoS", "structREMORAParticlesRealIdxAoS.html", null ],
     [ "REMORAParticlesRealIdxSoA", "structREMORAParticlesRealIdxSoA.html", null ],
     [ "REMORAPhysBCFunct", "classREMORAPhysBCFunct.html", null ],
+    [ "REMORATimeUnits", "structREMORATimeUnits.html", null ],
     [ "SolverChoice", "structSolverChoice.html", null ],
     [ "mod_param::t_bounds", "structmod__param_1_1t__bounds.html", null ],
     [ "mod_forces::t_forces", "structmod__forces_1_1t__forces.html", null ],

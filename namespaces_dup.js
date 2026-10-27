@@ -97,6 +97,12 @@ var namespaces_dup =
     [ "remora_funwave_isohelper", "namespaceremora__funwave__isohelper.html", [
       [ "funwave_advance_c", "namespaceremora__funwave__isohelper.html#a4bc9eb5a9804814b13ff0070912a2440", null ]
     ] ],
+    [ "remora_time_units_detail", "namespaceremora__time__units__detail.html", [
+      [ "is_utc", "namespaceremora__time__units__detail.html#a86103624959e4d1b0d8c218711cc8129", null ],
+      [ "lower", "namespaceremora__time__units__detail.html#a33e5f125b3348e491928b8e581b26bb4", null ],
+      [ "parse_clock", "namespaceremora__time__units__detail.html#a3b1855feaa62972ff1a896c4a1a2d1eb", null ],
+      [ "parse_date", "namespaceremora__time__units__detail.html#acd1c63ee52658e214ff9628afdb6f52f", null ]
+    ] ],
     [ "REMORABCType", "namespaceREMORABCType.html", [
       [ "mathematicalBndryTypes", "namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346", [
         [ "bogus", "namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aa8f1b3ad9a76977588e149a0f264e93b", null ],

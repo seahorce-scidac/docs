@@ -45,6 +45,7 @@ var annotated_dup =
     [ "REMORAParticlesRealIdxSoA", "structREMORAParticlesRealIdxSoA.html", null ],
     [ "REMORAPC", "classREMORAPC.html", "classREMORAPC" ],
     [ "REMORAPhysBCFunct", "classREMORAPhysBCFunct.html", "classREMORAPhysBCFunct" ],
+    [ "REMORATimeUnits", "structREMORATimeUnits.html", "structREMORATimeUnits" ],
     [ "SolverChoice", "structSolverChoice.html", "structSolverChoice" ],
     [ "TimeInterpolatedData", "structTimeInterpolatedData.html", "structTimeInterpolatedData" ]
 ];

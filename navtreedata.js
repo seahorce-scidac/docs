@@ -53,7 +53,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
+        [ "Functions", "globals_func.html", "globals_func" ],
         [ "Variables", "globals_vars.html", "globals_vars" ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
@@ -68,14 +68,14 @@ var NAVTREEINDEX =
 "REMORA_8H.html",
 "REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325aac3d3c98c89dcbf5e7ef9f934233f1bd",
 "REMORA__InitAnalyticProb__DoubleGyre_8H.html#a925c992baa4d66fdc34059b52bfeb7fd",
-"REMORA__NCTimeSeries_8cpp.html",
-"classNCTimeSeries.html#afc9c6b7d596f3e7cb85d798b584bd0d2",
-"classREMORA.html#a443952ed65d7042dfbc471bb405f8d90",
-"classREMORA.html#abf7c58cac8975a2cd4c634887976c22f",
-"classncutils_1_1NCFile.html#ab275cede297730cc0338b6f18ec1e518",
-"namespaceREMORABiology.html#aa77892264812710f1c33d8b2a1ce3f03a617ac08757d38a5a7ed91c224f0e90a0",
-"structREMORABiology_1_1Fennel_1_1Components.html#afc84757cce3c475affcc3d707ea3705c",
-"structncutils_1_1NCVar.html#a2d49952f029454736f33332bb9880857"
+"REMORA__NCTimeSeries_8H.html",
+"classNCTimeSeries.html#a77c5d013a59141cb33de82dc03ac75e2",
+"classREMORA.html#a3f2fe1e2454d8f33e64a88e987e489d1",
+"classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4",
+"classncutils_1_1NCFile.html#a8cf59bbbf55da997460a610b31bde8a2",
+"namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a9994ccef2f6dcda504622422bd4f0693",
+"structREMORABiology_1_1Fennel_1_1Components.html#a0f9fe5c575c81aee6924e1592579cbc6",
+"structmod__param_1_1t__bounds.html#a9c753f98c65c4f72ca837911e0f9ba3c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

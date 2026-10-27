@@ -9,5 +9,6 @@ var searchData=
   ['remoraparticlesrealidxaos_6',['REMORAParticlesRealIdxAoS',['../structREMORAParticlesRealIdxAoS.html',1,'']]],
   ['remoraparticlesrealidxsoa_7',['REMORAParticlesRealIdxSoA',['../structREMORAParticlesRealIdxSoA.html',1,'']]],
   ['remorapc_8',['REMORAPC',['../classREMORAPC.html',1,'']]],
-  ['remoraphysbcfunct_9',['REMORAPhysBCFunct',['../classREMORAPhysBCFunct.html',1,'']]]
+  ['remoraphysbcfunct_9',['REMORAPhysBCFunct',['../classREMORAPhysBCFunct.html',1,'']]],
+  ['remoratimeunits_10',['REMORATimeUnits',['../structREMORATimeUnits.html',1,'']]]
 ];

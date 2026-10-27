@@ -222,13 +222,15 @@ var NAVTREEINDEX2 =
 "REMORA__NCFile_8H.html#a4249e844e315ed3cb1e750d3798a7baf":[3,0,0,3,3,5],
 "REMORA__NCFile_8H.html#a60014a8d74bed0d5ae984e600c68dc85":[3,0,0,3,3,1],
 "REMORA__NCFile_8H.html#aa6354e0acb3f047d2772642bc3d5c06f":[3,0,0,3,3,6],
+"REMORA__NCFile_8H.html#aaa5a20305e771e7b0e25ee04fceb9781":[3,0,0,3,3,8],
 "REMORA__NCFile_8H.html#aec6b89e9ef60018dca2f1a9e5b281241":[3,0,0,3,3,4],
-"REMORA__NCFile_8H.html#af8eb0b5eb41bbbf48a6dbced8cd0d6ea":[3,0,0,3,3,8],
+"REMORA__NCFile_8H.html#af8eb0b5eb41bbbf48a6dbced8cd0d6ea":[3,0,0,3,3,9],
 "REMORA__NCFile_8H_source.html":[3,0,0,3,3],
 "REMORA__NCFile_8cpp.html":[3,0,0,3,2],
 "REMORA__NCFile_8cpp.html#a4249e844e315ed3cb1e750d3798a7baf":[3,0,0,3,2,0],
 "REMORA__NCFile_8cpp.html#aa6354e0acb3f047d2772642bc3d5c06f":[3,0,0,3,2,1],
-"REMORA__NCFile_8cpp.html#af8eb0b5eb41bbbf48a6dbced8cd0d6ea":[3,0,0,3,2,2],
+"REMORA__NCFile_8cpp.html#aaa5a20305e771e7b0e25ee04fceb9781":[3,0,0,3,2,2],
+"REMORA__NCFile_8cpp.html#af8eb0b5eb41bbbf48a6dbced8cd0d6ea":[3,0,0,3,2,3],
 "REMORA__NCFile_8cpp_source.html":[3,0,0,3,2],
 "REMORA__NCInterface_8H.html":[3,0,0,3,5],
 "REMORA__NCInterface_8H_source.html":[3,0,0,3,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "REMORA__NCTimeSeriesRiver_8H.html":[3,0,0,3,13],
 "REMORA__NCTimeSeriesRiver_8H_source.html":[3,0,0,3,13],
 "REMORA__NCTimeSeriesRiver_8cpp.html":[3,0,0,3,12],
-"REMORA__NCTimeSeriesRiver_8cpp_source.html":[3,0,0,3,12],
-"REMORA__NCTimeSeries_8H.html":[3,0,0,3,9],
-"REMORA__NCTimeSeries_8H_source.html":[3,0,0,3,9]
+"REMORA__NCTimeSeriesRiver_8cpp_source.html":[3,0,0,3,12]
 };

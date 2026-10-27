@@ -1,6 +1,6 @@
 var classNCTimeSeriesRiver =
 [
-    [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html#a08c913f75309016cbf5f01f3797a89d9", null ],
+    [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html#a12d57917b8fad359fe7813faabf9a7d8", null ],
     [ "Initialize", "classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3", null ],
     [ "read_in_at_time", "classNCTimeSeriesRiver.html#abf586562cf93e68e604212666f66bf31", null ],
     [ "update_interpolated_to_time", "classNCTimeSeriesRiver.html#ab8e7cf7ed5dbc122474479fe36fd6154", null ],
@@ -22,5 +22,6 @@ var classNCTimeSeriesRiver =
     [ "time_after", "classNCTimeSeriesRiver.html#ab133495117f5585b995e860c989ceaac", null ],
     [ "time_before", "classNCTimeSeriesRiver.html#a82f906b99dd4828ce28e4511197e5bc2", null ],
     [ "time_name", "classNCTimeSeriesRiver.html#a64db82cc3972bfc003783864da4e115d", null ],
+    [ "time_ref", "classNCTimeSeriesRiver.html#a931da0b0127bc62cac02ad4fa800ea12", null ],
     [ "use_vert_integ", "classNCTimeSeriesRiver.html#ac2d336b34285ab54521f0220c9449507", null ]
 ];

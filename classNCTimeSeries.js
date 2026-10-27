@@ -1,6 +1,6 @@
 var classNCTimeSeries =
 [
-    [ "NCTimeSeries", "classNCTimeSeries.html#a9db811fa721ed79a08c08ebb405e7484", null ],
+    [ "NCTimeSeries", "classNCTimeSeries.html#a2f5f0e604df7cdc5e5c8ad31d06b5f5e", null ],
     [ "cumulative_ref_ratio", "classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8", null ],
     [ "get_interpolated_mf", "classNCTimeSeries.html#ade407058a6b4aca90273b1ed867a8f73", null ],
     [ "Initialize", "classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9", null ],
@@ -26,5 +26,6 @@ var classNCTimeSeries =
     [ "save_interpolated", "classNCTimeSeries.html#a2906c98db6ce85fcd9f099e6534ed165", null ],
     [ "time_after", "classNCTimeSeries.html#afc9c6b7d596f3e7cb85d798b584bd0d2", null ],
     [ "time_before", "classNCTimeSeries.html#a2bb45e41770a284db8ae1f0f2275cb5b", null ],
-    [ "time_name", "classNCTimeSeries.html#ac4d6108edf5bb3194be820936cf64e13", null ]
+    [ "time_name", "classNCTimeSeries.html#ac4d6108edf5bb3194be820936cf64e13", null ],
+    [ "time_ref", "classNCTimeSeries.html#a6511a165aa2dd0271013a6b0778d68b7", null ]
 ];

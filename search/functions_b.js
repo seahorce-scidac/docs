@@ -2,9 +2,9 @@ var searchData=
 [
   ['name_0',['name',['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()']]],
   ['ncfile_1',['NCFile',['../classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423',1,'ncutils::NCFile']]],
-  ['nctimeseries_2',['NCTimeSeries',['../classNCTimeSeries.html#a9db811fa721ed79a08c08ebb405e7484',1,'NCTimeSeries']]],
-  ['nctimeseriesboundary_3',['NCTimeSeriesBoundary',['../classNCTimeSeriesBoundary.html#a9ce5255ff872e1489030c32a31f936d7',1,'NCTimeSeriesBoundary']]],
-  ['nctimeseriesriver_4',['NCTimeSeriesRiver',['../classNCTimeSeriesRiver.html#a08c913f75309016cbf5f01f3797a89d9',1,'NCTimeSeriesRiver']]],
+  ['nctimeseries_2',['NCTimeSeries',['../classNCTimeSeries.html#a2f5f0e604df7cdc5e5c8ad31d06b5f5e',1,'NCTimeSeries']]],
+  ['nctimeseriesboundary_3',['NCTimeSeriesBoundary',['../classNCTimeSeriesBoundary.html#a7c1c8085948b2b52ac093b1b08d8dc6b',1,'NCTimeSeriesBoundary']]],
+  ['nctimeseriesriver_4',['NCTimeSeriesRiver',['../classNCTimeSeriesRiver.html#a12d57917b8fad359fe7813faabf9a7d8',1,'NCTimeSeriesRiver']]],
   ['ndarray_5',['ndarray',['../structNDArray.html#a896e27f1238a68d5221aa00bbf9fd2f0',1,'NDArray::NDArray(const std::string vname, const std::vector&lt; MPI_Offset &gt; &amp;vshape)'],['../structNDArray.html#a1f33dbd861944bc1494f4790f4f8543d',1,'NDArray::NDArray()']]],
   ['ndim_6',['ndim',['../structNDArray.html#a1b3ece1ab109568fcb919d1af8f14eee',1,'NDArray::ndim()'],['../structncutils_1_1NCVar.html#ae0ab15dc4c1033271878c3bf5102f911',1,'ncutils::NCVar::ndim()']]],
   ['nonlin_5feos_7',['nonlin_eos',['../classREMORA.html#addc06a380411d14dc082150b72232548',1,'REMORA']]],
