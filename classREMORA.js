@@ -149,6 +149,7 @@ var classREMORA =
     [ "num_scalar", "classREMORA.html#a3b4d65518872da5102f7589658d27f32", null ],
     [ "NumDataLogs", "classREMORA.html#abe6c7702fc1edcb5bb7d9a1a56d007a9", null ],
     [ "PackSurfaceState", "classREMORA.html#aeddfad55142f06af3e4484b0aa084966", null ],
+    [ "plot_node_coords", "classREMORA.html#aa511d5798b9db3ab6e647f3d76a34ef6", null ],
     [ "PlotFileName", "classREMORA.html#ac4d8c0cbac8976c70668280de6a142c2", null ],
     [ "post_timestep", "classREMORA.html#a697e9a0fc5d32cd8833f68defaa65467", null ],
     [ "prestep", "classREMORA.html#a707974bad372495d62963171d386b792", null ],

@@ -12,6 +12,7 @@ var classREMORAPC =
     [ "readInputs", "classREMORAPC.html#acac09f1bc88cbf8e83bae042caf61838", null ],
     [ "setAdvectWithFlow", "classREMORAPC.html#aa18189eeba76fcabe1a2ed4a45dee061", null ],
     [ "varNames", "classREMORAPC.html#ab3d17241664ddedd2903f8a043f8d287", null ],
+    [ "WritePlotFile", "classREMORAPC.html#a376902d44945b27f36723b6f45ae29b9", null ],
     [ "m_advect_w_flow", "classREMORAPC.html#abca3d47a2a1dd2499f691ea22258dfb1", null ],
     [ "m_initialization_type", "classREMORAPC.html#a569ba07305da82e27d369058c2bfd753", null ],
     [ "m_name", "classREMORAPC.html#ad6d078e473813dcd5895f39fc24f23ad", null ],

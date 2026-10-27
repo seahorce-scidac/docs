@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"classncutils_1_1NCFile.html#a7ac6d78b85ba1350b50b3462889bb8ea":[1,0,21,2,19],
+"classncutils_1_1NCFile.html#a813ff70b34dd5bc2b091bdb6a395c56d":[1,0,21,2,10],
+"classncutils_1_1NCFile.html#a813ff70b34dd5bc2b091bdb6a395c56d":[2,0,4,2,10],
+"classncutils_1_1NCFile.html#a8cf59bbbf55da997460a610b31bde8a2":[1,0,21,2,8],
 "classncutils_1_1NCFile.html#a8cf59bbbf55da997460a610b31bde8a2":[2,0,4,2,8],
 "classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96":[2,0,4,2,14],
 "classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96":[1,0,21,2,14],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "namespaceBdyVars.html#acabae76684c0900a7caf5a2b855b72be":[1,0,4,4],
 "namespaceBdyVars.html#af59fd7497b3057d5c15fea9c2b950d8c":[1,0,4,2],
 "namespaceBulkFlux.html":[1,0,6],
-"namespaceInterpType.html":[1,0,10],
-"namespaceREMORABCType.html":[1,0,25],
-"namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346":[1,0,25,0],
-"namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a223988127b7e8a66aabbc3a1f98dddf0":[1,0,25,0,2],
-"namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a2ab9bbca7b5115df69fb69555ddf79bf":[1,0,25,0,9]
+"namespaceInterpType.html":[1,0,10]
 };

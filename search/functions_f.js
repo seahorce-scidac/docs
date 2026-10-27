@@ -56,7 +56,7 @@ var searchData=
   ['remorapc_53',['remorapc',['../classREMORAPC.html#ae385ccde436cd1536d8ec81be7cc5041',1,'REMORAPC::REMORAPC(amrex::ParGDBBase *a_gdb, const std::string &amp;a_name=&quot;particles&quot;)'],['../classREMORAPC.html#a80c158a76acc493b816e2ad967aaeab1',1,'REMORAPC::REMORAPC(const amrex::Geometry &amp;a_geom, const amrex::DistributionMapping &amp;a_dmap, const amrex::BoxArray &amp;a_ba, const std::string &amp;a_name=&quot;particles&quot;)']]],
   ['remoraphysbcfunct_54',['REMORAPhysBCFunct',['../classREMORAPhysBCFunct.html#aa0f07ffec53c799425bf7cbc0b7dcf3b',1,'REMORAPhysBCFunct']]],
   ['resize_5fstuff_55',['resize_stuff',['../classREMORA.html#aa91decb04550c58b177e6a18b9d70f0d',1,'REMORA']]],
-  ['restart_56',['restart',['../classParticleData.html#ad08de4d511cf534ff10386d2f5423312',1,'ParticleData::Restart()'],['../classREMORA.html#af82928444cae433cc744c0cf7427e8eb',1,'REMORA::restart()']]],
+  ['restart_56',['restart',['../classREMORA.html#af82928444cae433cc744c0cf7427e8eb',1,'REMORA::restart()'],['../classParticleData.html#ad08de4d511cf534ff10386d2f5423312',1,'ParticleData::Restart()']]],
   ['restore_5fperimeter_5ffaces_57',['restore_perimeter_faces',['../classREMORA.html#abbd80b412cba00a7ac76a54d5f09d79b',1,'REMORA']]],
   ['rho_5feos_58',['rho_eos',['../classREMORA.html#a2b8ea8e7b1db929b8a9c3c8180ee0341',1,'REMORA']]],
   ['rhs_5ft_5f3d_59',['rhs_t_3d',['../classREMORA.html#a36b75d2f50e6a142541263d0f4db9e89',1,'REMORA']]],

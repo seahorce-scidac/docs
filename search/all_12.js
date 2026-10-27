@@ -251,7 +251,7 @@ var searchData=
   ['remoraphysbcfunct_248',['remoraphysbcfunct',['../classREMORAPhysBCFunct.html#aa0f07ffec53c799425bf7cbc0b7dcf3b',1,'REMORAPhysBCFunct::REMORAPhysBCFunct()'],['../classREMORAPhysBCFunct.html',1,'REMORAPhysBCFunct']]],
   ['remoratimeunits_249',['REMORATimeUnits',['../structREMORATimeUnits.html',1,'']]],
   ['resize_5fstuff_250',['resize_stuff',['../classREMORA.html#aa91decb04550c58b177e6a18b9d70f0d',1,'REMORA']]],
-  ['restart_251',['restart',['../classParticleData.html#ad08de4d511cf534ff10386d2f5423312',1,'ParticleData::Restart()'],['../classREMORA.html#af82928444cae433cc744c0cf7427e8eb',1,'REMORA::restart()']]],
+  ['restart_251',['restart',['../classREMORA.html#af82928444cae433cc744c0cf7427e8eb',1,'REMORA::restart()'],['../classParticleData.html#ad08de4d511cf534ff10386d2f5423312',1,'ParticleData::Restart()']]],
   ['restart_5fchkfile_252',['restart_chkfile',['../classREMORA.html#ae376daabb97c474de25b283de6bd985d',1,'REMORA']]],
   ['restore_5fperimeter_5ffaces_253',['restore_perimeter_faces',['../classREMORA.html#abbd80b412cba00a7ac76a54d5f09d79b',1,'REMORA']]],
   ['rho0_254',['rho0',['../REMORA__InitAnalyticSMFlux__ParticleAdvectionFlat_8H.html#ab8e36533c29290d98a91375f7bdbf726',1,'rho0:&#160;REMORA_InitAnalyticSMFlux_ParticleAdvectionFlat.H'],['../structSolverChoice.html#a87396b485f47a76010673143372cca17',1,'SolverChoice::rho0'],['../namespacemod__scalars.html#a96b32043ef463cc78050b6d20bb0b9db',1,'mod_scalars::rho0']]],
