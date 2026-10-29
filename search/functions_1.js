@@ -9,13 +9,14 @@ var searchData=
   ['biology_5fmodel_5fname_6',['biology_model_name',['../namespaceREMORABiology.html#afd52093d40bf5c68f32de652662510c6',1,'REMORABiology']]],
   ['build_5fcovered_5fmask_7',['build_covered_mask',['../classREMORA.html#a37196e5f4f9d6a6c3d206d5192238318',1,'REMORA']]],
   ['build_5ffine_5fmask_8',['build_fine_mask',['../classREMORA.html#a6577b0c143b8fc44c6f68cad8dec5fd6',1,'REMORA']]],
-  ['buildfabsfromnetcdffile_9',['BuildFABsFromNetCDFFile',['../REMORA__NCFile_8H.html#a41ff4f048600ccc17103500c9cc273bf',1,'REMORA_NCFile.H']]],
-  ['buildinfogetbuilddate_10',['buildInfoGetBuildDate',['../namespaceamrex.html#a4722f2802412a1b4759ed3dde96e7004',1,'amrex']]],
-  ['buildinfogetcomp_11',['buildInfoGetComp',['../namespaceamrex.html#a5f81ff33377203a46fb45efb7c30a2e6',1,'amrex']]],
-  ['buildinfogetcompversion_12',['buildInfoGetCompVersion',['../namespaceamrex.html#a51d56426424c3c4103a45c273a3abf97',1,'amrex']]],
-  ['buildinfogetgithash_13',['buildInfoGetGitHash',['../namespaceamrex.html#a215b1ed21dbb8f453201c6dc72ab3d1c',1,'amrex']]],
-  ['buildmask_14',['BuildMask',['../classREMORAFillPatcher.html#abcf51d6e55f66e3bc1d3bc9945087551',1,'REMORAFillPatcher']]],
-  ['bulk_5ffluxes_15',['bulk_fluxes',['../classREMORA.html#ae7b7cf1dcfaa0a4603267a722437acd7',1,'REMORA']]],
-  ['bulk_5fpsit_16',['bulk_psit',['../classREMORA.html#ae574156fa5fb71c8301c3c2e4e99202a',1,'REMORA']]],
-  ['bulk_5fpsiu_17',['bulk_psiu',['../classREMORA.html#aa288199efe6ff562ce20f1cae3d249b5',1,'REMORA']]]
+  ['build_5fweights_9',['build_weights',['../classLatLonRegrid.html#a2ea9549509b31c5c8d9ccb454a42b5e6',1,'LatLonRegrid']]],
+  ['buildfabsfromnetcdffile_10',['BuildFABsFromNetCDFFile',['../REMORA__NCFile_8H.html#a41ff4f048600ccc17103500c9cc273bf',1,'REMORA_NCFile.H']]],
+  ['buildinfogetbuilddate_11',['buildInfoGetBuildDate',['../namespaceamrex.html#a4722f2802412a1b4759ed3dde96e7004',1,'amrex']]],
+  ['buildinfogetcomp_12',['buildInfoGetComp',['../namespaceamrex.html#a5f81ff33377203a46fb45efb7c30a2e6',1,'amrex']]],
+  ['buildinfogetcompversion_13',['buildInfoGetCompVersion',['../namespaceamrex.html#a51d56426424c3c4103a45c273a3abf97',1,'amrex']]],
+  ['buildinfogetgithash_14',['buildInfoGetGitHash',['../namespaceamrex.html#a215b1ed21dbb8f453201c6dc72ab3d1c',1,'amrex']]],
+  ['buildmask_15',['BuildMask',['../classREMORAFillPatcher.html#abcf51d6e55f66e3bc1d3bc9945087551',1,'REMORAFillPatcher']]],
+  ['bulk_5ffluxes_16',['bulk_fluxes',['../classREMORA.html#ae7b7cf1dcfaa0a4603267a722437acd7',1,'REMORA']]],
+  ['bulk_5fpsit_17',['bulk_psit',['../classREMORA.html#ae574156fa5fb71c8301c3c2e4e99202a',1,'REMORA']]],
+  ['bulk_5fpsiu_18',['bulk_psiu',['../classREMORA.html#aa288199efe6ff562ce20f1cae3d249b5',1,'REMORA']]]
 ];

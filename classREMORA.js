@@ -329,6 +329,7 @@ var classREMORA =
     [ "FPr_v", "classREMORA.html#a184d9f57eac54eae6d8090ec19314d19", null ],
     [ "FPr_vbar", "classREMORA.html#a67bc95982abb4d510d33686193f674c0", null ],
     [ "FPr_w", "classREMORA.html#aa40ef2a9ae8a1833f6edf34b371aaca3", null ],
+    [ "frc_regrid_options", "classREMORA.html#a2570552bffa3093e66524cac23b62b42", null ],
     [ "frc_time_varname", "classREMORA.html#abf7c58cac8975a2cd4c634887976c22f", null ],
     [ "hires_grid_level", "classREMORA.html#af6613911799ddebd00cff330cf5c5f76", null ],
     [ "hires_init_level", "classREMORA.html#aa0f93b5eb692df3d7ba897ebe09507ae", null ],
