@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"namespaceBCVars.html#acb6a409721d6814ef5f897b37584f61e":[1,0,3,3],
 "namespaceBCVars.html#ad4001f729c68fb206d41a41ed4208cc6":[1,0,3,14],
 "namespaceBCVars.html#ada877ef4d960f81bda3b10d2c5ba73d9":[1,0,3,1],
 "namespaceBdyVars.html":[1,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structREMORABiology_1_1FennelParameters.html#ab95ac90aa93ee47026ee237207680811":[2,0,5,1,34],
 "structREMORABiology_1_1FennelParameters.html#ab95ac90aa93ee47026ee237207680811":[1,0,26,1,34],
 "structREMORABiology_1_1FennelParameters.html#ab9f4370f4a72a6e563a86216da60ffbb":[2,0,5,1,42],
-"structREMORABiology_1_1FennelParameters.html#ab9f4370f4a72a6e563a86216da60ffbb":[1,0,26,1,42],
-"structREMORABiology_1_1FennelParameters.html#abf5052d8a21dd70b55acb7968236c58a":[1,0,26,1,4]
+"structREMORABiology_1_1FennelParameters.html#ab9f4370f4a72a6e563a86216da60ffbb":[1,0,26,1,42]
 };

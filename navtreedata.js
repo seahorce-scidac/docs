@@ -70,10 +70,10 @@ var NAVTREEINDEX =
 "REMORA__InitAnalyticProb__DoubleGyre_8H.html#a925c992baa4d66fdc34059b52bfeb7fd",
 "REMORA__NCTimeSeries_8H.html",
 "classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906",
-"classREMORA.html#a39048951d6927086a690d57a53754160",
-"classREMORA.html#ab4968edab382c970457c69032c09606a",
+"classREMORA.html#a38fd5da4d5547fc8598be2a73995644a",
+"classREMORA.html#ab3877fc3f9e4698d3a7e6afda4bdee50",
 "classncutils_1_1NCFile.html#a32f59732fe788fd03b5fe9969eebd3fd",
-"namespaceBCVars.html#ad4001f729c68fb206d41a41ed4208cc6",
+"namespaceBCVars.html#acb6a409721d6814ef5f897b37584f61e",
 "structREMORABiology_1_1FennelParameters.html#abf5052d8a21dd70b55acb7968236c58a",
 "structmod__grid_1_1t__grid.html#a9de2f48721f9c1ea05fd589880603aea"
 ];
