@@ -27,5 +27,5 @@ var searchData=
   ['exit_5fdef_5fmode_24',['exit_def_mode',['../classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96',1,'ncutils::NCFile']]],
   ['expand_5fplotvars_5fto_5funif_5frr_25',['expand_plotvars_to_unif_rr',['../classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4',1,'REMORA']]],
   ['ext_5fdir_26',['ext_dir',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0',1,'REMORABCType']]],
-  ['extrapolate_5fmetric_5fto_5fphysical_5fboundaries_27',['extrapolate_metric_to_physical_boundaries',['../classREMORA.html#a4a25b256aabbffa91da49c1b48a372bf',1,'REMORA']]]
+  ['extrapolate_5fmetric_5fto_5fphysical_5fboundaries_27',['extrapolate_metric_to_physical_boundaries',['../classREMORA.html#a2db07c02489b68d7a25c23a126ca8bb0',1,'REMORA']]]
 ];

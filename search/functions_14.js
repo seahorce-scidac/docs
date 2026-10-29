@@ -11,5 +11,5 @@ var searchData=
   ['writencmultifab_8',['WriteNCMultiFab',['../classREMORA.html#a07cdefc2810863920747b6eac934a045',1,'REMORA']]],
   ['writencplotfile_9',['WriteNCPlotFile',['../classREMORA.html#a1e6a3a94867bfddb54e20b81d1750252',1,'REMORA']]],
   ['writencplotfile_5fwhich_10',['WriteNCPlotFile_which',['../classREMORA.html#a32caca8c15112b693b0fc23c6706f8c0',1,'REMORA']]],
-  ['writeplotfile_11',['writeplotfile',['../classREMORAPC.html#a376902d44945b27f36723b6f45ae29b9',1,'REMORAPC::WritePlotFile()'],['../classREMORA.html#ae34c7e436b23f9c528aaa8589804b196',1,'REMORA::WritePlotFile()'],['../classParticleData.html#ab1ed35d12b9b5a17e43aa72f6fb5a0f4',1,'ParticleData::writePlotFile()']]]
+  ['writeplotfile_11',['writeplotfile',['../classParticleData.html#ab1ed35d12b9b5a17e43aa72f6fb5a0f4',1,'ParticleData::writePlotFile()'],['../classREMORAPC.html#a376902d44945b27f36723b6f45ae29b9',1,'REMORAPC::WritePlotFile()'],['../classREMORA.html#ae34c7e436b23f9c528aaa8589804b196',1,'REMORA::WritePlotFile()']]]
 ];

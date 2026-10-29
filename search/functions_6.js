@@ -26,9 +26,10 @@ var searchData=
   ['getnames_23',['getNames',['../classParticleData.html#ab48c519d8d2ced9b11085353f7203689',1,'ParticleData']]],
   ['getnamesunalloc_24',['getNamesUnalloc',['../classParticleData.html#a350dbcdfdd11a10493893692581f54d2',1,'ParticleData']]],
   ['getrelaxmaskval_25',['GetRelaxMaskVal',['../classREMORAFillPatcher.html#aafe922c1fb5bc1bccf993357fe0599d0',1,'REMORAFillPatcher']]],
-  ['getsetmaskval_26',['GetSetMaskVal',['../classREMORAFillPatcher.html#a350e4b15d395506050608810cd1cc827',1,'REMORAFillPatcher']]],
-  ['getspecies_27',['getspecies',['../classParticleData.html#abbe20f02d5c5a2d7864f48b77a7ee972',1,'ParticleData::GetSpecies(const std::string &amp;a_name)'],['../classParticleData.html#a50e0bc11809c12ccbf29d745c107b70f',1,'ParticleData::GetSpecies(const std::string &amp;a_name) const']]],
-  ['gls_5fcorrector_28',['gls_corrector',['../classREMORA.html#afded54aef57ded67542a888a911b67b0',1,'REMORA']]],
-  ['gls_5fprestep_29',['gls_prestep',['../classREMORA.html#a6122490d3208c33fce7fc1896baece42',1,'REMORA']]],
-  ['gotonextline_30',['GotoNextLine',['../classREMORA.html#a03e3346471b528f47454cd969393786d',1,'REMORA']]]
+  ['getrholonlat_26',['GetRhoLonLat',['../classREMORA.html#afdd48591237f498f1ac398e41ab46caf',1,'REMORA']]],
+  ['getsetmaskval_27',['GetSetMaskVal',['../classREMORAFillPatcher.html#a350e4b15d395506050608810cd1cc827',1,'REMORAFillPatcher']]],
+  ['getspecies_28',['getspecies',['../classParticleData.html#abbe20f02d5c5a2d7864f48b77a7ee972',1,'ParticleData::GetSpecies(const std::string &amp;a_name)'],['../classParticleData.html#a50e0bc11809c12ccbf29d745c107b70f',1,'ParticleData::GetSpecies(const std::string &amp;a_name) const']]],
+  ['gls_5fcorrector_29',['gls_corrector',['../classREMORA.html#afded54aef57ded67542a888a911b67b0',1,'REMORA']]],
+  ['gls_5fprestep_30',['gls_prestep',['../classREMORA.html#a6122490d3208c33fce7fc1896baece42',1,'REMORA']]],
+  ['gotonextline_31',['GotoNextLine',['../classREMORA.html#a03e3346471b528f47454cd969393786d',1,'REMORA']]]
 ];

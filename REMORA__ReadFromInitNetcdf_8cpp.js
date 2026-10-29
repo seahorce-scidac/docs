@@ -13,9 +13,9 @@ var REMORA__ReadFromInitNetcdf_8cpp =
     [ "read_grid_vars_full_domain_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#aec1c389b9822a484c2fc252d290b8deb", null ],
     [ "read_masks_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a9db26fcebf8aa7a073f11a57200d318e", null ],
     [ "read_masks_full_domain_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a36328e9f5b6c39342e344469f419deae", null ],
+    [ "read_optional_grid_vars_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a7011ccb795c48a2fa068bed3c4faf1a7", null ],
     [ "read_scalars_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#ac00c3e32f5a064a7dd298f031295590a", null ],
     [ "read_scalars_full_domain_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a53e39809d0043c74fd5799ef3b98b6b4", null ],
-    [ "read_spherical_grid_vars_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#aa564069a43b5e2da32ffb41552b5495b", null ],
     [ "read_vec_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a3da36b397933adf369b4577e633d75ad", null ],
     [ "read_zeta_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a93abfd752f08163f171e4aae8649b6c1", null ],
     [ "read_zeta_full_domain_from_netcdf", "REMORA__ReadFromInitNetcdf_8cpp.html#a1fb3cc10225716b9d1d2578b35ba2951", null ]
