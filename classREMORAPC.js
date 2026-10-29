@@ -2,9 +2,10 @@ var classREMORAPC =
 [
     [ "REMORAPC", "classREMORAPC.html#ae385ccde436cd1536d8ec81be7cc5041", null ],
     [ "REMORAPC", "classREMORAPC.html#a80c158a76acc493b816e2ad967aaeab1", null ],
-    [ "AdvectWithFlow", "classREMORAPC.html#a61fd886be849561694ad350e11b36be3", null ],
+    [ "advectsWithFlow", "classREMORAPC.html#a910355da61f9e95b8e3d746de6d15224", null ],
+    [ "AdvectWithFlow", "classREMORAPC.html#a744c1c920ce038fccc2c0d19dfe43220", null ],
     [ "computeMeshVar", "classREMORAPC.html#a1ebd91e946393069bb38b0580ca19d1e", null ],
-    [ "EvolveParticles", "classREMORAPC.html#a08ae4428f391eb2956640a8ba60c6729", null ],
+    [ "EvolveParticles", "classREMORAPC.html#a4bc0a8ad2c6ec1aa4570e75531b5c38b", null ],
     [ "InitializeParticles", "classREMORAPC.html#ac858f194f6a884f8be004914b2138594", null ],
     [ "initializeParticlesUniformDistributionInBox", "classREMORAPC.html#ac014546bf4e670fd63e0723c40ac72e3", null ],
     [ "massDensity", "classREMORAPC.html#a279703d3c6d21827ca3ab05f36eec03b", null ],

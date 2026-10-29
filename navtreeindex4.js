@@ -1,5 +1,10 @@
 var NAVTREEINDEX4 =
 {
+"classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906":[2,0,7,19],
+"classNCTimeSeries.html#a4deece011c7472c2bd7a1d0cd5cb8e5e":[2,0,7,15],
+"classNCTimeSeries.html#a52b1efdb2e35f56ad86df2aa461a0b54":[2,0,7,7],
+"classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9":[2,0,7,3],
+"classNCTimeSeries.html#a6511a165aa2dd0271013a6b0778d68b7":[2,0,7,27],
 "classNCTimeSeries.html#a6c01d8052548d06070179aca975c8671":[2,0,7,10],
 "classNCTimeSeries.html#a77c5d013a59141cb33de82dc03ac75e2":[2,0,7,18],
 "classNCTimeSeries.html#a7a833832c56633023267c7f6ff43f82e":[2,0,7,22],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "classREMORA.html#a38fd5da4d5547fc8598be2a73995644a":[2,0,14,100],
 "classREMORA.html#a39048951d6927086a690d57a53754160":[2,0,14,297],
 "classREMORA.html#a3929d105d936b75cc1083dbcd220ba59":[2,0,14,83],
-"classREMORA.html#a3950916f4ed965bcd10f62e28e08fd76":[2,0,14,533],
-"classREMORA.html#a397ab83c24faf65936268e39d43e645c":[2,0,14,166],
-"classREMORA.html#a398559d6ee84b21d647222fd24224c10":[2,0,14,198],
-"classREMORA.html#a3a15e957a8ef57501e2fd6c09c86995b":[2,0,14,201],
-"classREMORA.html#a3a732792091225d48c7c4622cda07228":[2,0,14,81],
-"classREMORA.html#a3b4294bba1b8e40b7cfa0048d4ebd2f3":[2,0,14,33]
+"classREMORA.html#a3950916f4ed965bcd10f62e28e08fd76":[2,0,14,533]
 };
