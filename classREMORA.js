@@ -143,6 +143,7 @@ var classREMORA =
     [ "MakeNewLevelFromScratch", "classREMORA.html#ad64e9b244603ae920ed761821753a71f", null ],
     [ "mask_arrays_for_write", "classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb", null ],
     [ "model_time", "classREMORA.html#ae961006ec86eda2d7dd6496c3bbd4486", null ],
+    [ "netcdf_subdomain", "classREMORA.html#a8c7a1ab136f0d14e95582f59b22583cb", null ],
     [ "nonlin_eos", "classREMORA.html#addc06a380411d14dc082150b72232548", null ],
     [ "num_bc_vars", "classREMORA.html#a33a228e32167acff77a28eaba3e6efef", null ],
     [ "num_bdy_vars", "classREMORA.html#a643af97dc825a2bf8445487935d5b53d", null ],

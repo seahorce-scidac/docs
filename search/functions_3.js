@@ -8,7 +8,7 @@ var searchData=
   ['def_5fscalar_5',['def_scalar',['../classncutils_1_1NCFile.html#a2c14c8dc8c0be8e9f7455f0e40fb0b8e',1,'ncutils::NCFile']]],
   ['def_5fvar_6',['def_var',['../classncutils_1_1NCFile.html#a813ff70b34dd5bc2b091bdb6a395c56d',1,'ncutils::NCFile']]],
   ['def_5fvar_5ffill_7',['def_var_fill',['../classncutils_1_1NCFile.html#afb8a21bdc82bc45c7a12cc0323535708',1,'ncutils::NCFile']]],
-  ['define_8',['define',['../classREMORAFillPatcher.html#a50868f4ca1d6e80e87a5cefdb1c4088d',1,'REMORAFillPatcher::Define()'],['../classLatLonRegrid.html#a0da83605069cb6a36231ac46a67e7211',1,'LatLonRegrid::define()']]],
+  ['define_8',['define',['../classLatLonRegrid.html#a0da83605069cb6a36231ac46a67e7211',1,'LatLonRegrid::define()'],['../classREMORAFillPatcher.html#a50868f4ca1d6e80e87a5cefdb1c4088d',1,'REMORAFillPatcher::Define()']]],
   ['define_5fflux_5fregister_9',['define_flux_register',['../classREMORA.html#a22b850460eb1f8dd28b3701c1b343255',1,'REMORA']]],
   ['define_5fremorafillpatchers_10',['Define_REMORAFillPatchers',['../classREMORA.html#a6436d9b8e7993f9d893010237fda4b88',1,'REMORA']]],
   ['dim_11',['dim',['../classncutils_1_1NCFile.html#a55a1e2afa5b84bd16d374477c6dcb1e9',1,'ncutils::NCFile']]],

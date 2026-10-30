@@ -9,7 +9,7 @@ var searchData=
   ['parse_5fbulk_5fforcing_5ftype_6',['parse_bulk_forcing_type',['../structSolverChoice.html#a70b8935e5c9e326db058435008e310e9',1,'SolverChoice']]],
   ['parse_5fclock_7',['parse_clock',['../namespaceremora__time__units__detail.html#a3b1855feaa62972ff1a896c4a1a2d1eb',1,'remora_time_units_detail']]],
   ['parse_5fdate_8',['parse_date',['../namespaceremora__time__units__detail.html#acd1c63ee52658e214ff9628afdb6f52f',1,'remora_time_units_detail']]],
-  ['particledata_9',['particledata',['../classParticleData.html',1,'ParticleData'],['../classREMORA.html#addc78d6236db873ac714690ba5f58250',1,'REMORA::particleData'],['../classParticleData.html#a62e2743c91122a7980ee9fbbae498196',1,'ParticleData::ParticleData()']]],
+  ['particledata_9',['particledata',['../classParticleData.html',1,'ParticleData'],['../classParticleData.html#a62e2743c91122a7980ee9fbbae498196',1,'ParticleData::ParticleData()'],['../classREMORA.html#addc78d6236db873ac714690ba5f58250',1,'REMORA::particleData']]],
   ['particlesnameslist_10',['ParticlesNamesList',['../REMORA__ParticleData_8H.html#abf443828ef22024afc39f798fbe5fd4e',1,'REMORA_ParticleData.H']]],
   ['particlesnamesvector_11',['ParticlesNamesVector',['../REMORA__ParticleData_8H.html#af2c5e26bfa4c614447cca0a1fd39358d',1,'REMORA_ParticleData.H']]],
   ['particlespeciesmap_12',['ParticleSpeciesMap',['../REMORA__ParticleData_8H.html#a307629588b9b06d9290fdd88d438048d',1,'REMORA_ParticleData.H']]],
