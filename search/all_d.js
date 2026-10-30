@@ -89,7 +89,7 @@ var searchData=
   ['mod_5fparam_86',['mod_param',['../namespacemod__param.html',1,'']]],
   ['mod_5fscalars_87',['mod_scalars',['../namespacemod__scalars.html',1,'']]],
   ['mod_5fstepping_88',['mod_stepping',['../namespacemod__stepping.html',1,'']]],
-  ['model_89',['Development Model',['../index.html#dev_model',1,'']]],
+  ['model_89',['model',['../index.html#dev_model',1,'Development Model'],['../classNCTimeSeries.html#ae5b3191da69e619a88af53d41e2df277a20f35e630daf44dbfa4c3f68f5399d8c',1,'NCTimeSeries::model']]],
   ['model_5ftime_90',['model_time',['../classREMORA.html#ae961006ec86eda2d7dd6496c3bbd4486',1,'REMORA']]],
   ['modeling_20of_20oceans_20refined_20adaptively_20built_20on_20amrex_20_3a_20remora_91',['Regional Modeling of Oceans Refined Adaptively (built on AMReX): REMORA',['../index.html',1,'']]],
   ['month_92',['month',['../structREMORATimeUnits.html#a1ceaea4084693d837c59c4f47061536b',1,'REMORATimeUnits']]],

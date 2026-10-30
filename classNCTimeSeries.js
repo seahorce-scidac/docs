@@ -1,11 +1,18 @@
 var classNCTimeSeries =
 [
+    [ "SourceGridKind", "classNCTimeSeries.html#ae5b3191da69e619a88af53d41e2df277", [
+      [ "model", "classNCTimeSeries.html#ae5b3191da69e619a88af53d41e2df277a20f35e630daf44dbfa4c3f68f5399d8c", null ],
+      [ "uniform", "classNCTimeSeries.html#ae5b3191da69e619a88af53d41e2df277aa489ffed938ef1b9e86889bc413501ee", null ],
+      [ "latlon", "classNCTimeSeries.html#ae5b3191da69e619a88af53d41e2df277ae4d220a05c86f3d8c182e9a57a5fedab", null ]
+    ] ],
     [ "NCTimeSeries", "classNCTimeSeries.html#aab4915c7eaa95f39c19064c40e27e964", null ],
     [ "cumulative_ref_ratio", "classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8", null ],
     [ "get_interpolated_mf", "classNCTimeSeries.html#ade407058a6b4aca90273b1ed867a8f73", null ],
     [ "Initialize", "classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9", null ],
     [ "read_in_at_time", "classNCTimeSeries.html#a297437358973471709cbec9de11a24bb", null ],
     [ "regridded", "classNCTimeSeries.html#a3a23706bd2fa863aaf3b8981b8e280c6", null ],
+    [ "source_grid", "classNCTimeSeries.html#a563ba84dad8bfcbda0f341658a9ad3c4", null ],
+    [ "spatially_uniform", "classNCTimeSeries.html#a4ed7adc73ef3fe627a375ddb7240d66d", null ],
     [ "update_interpolated_to_time", "classNCTimeSeries.html#adf5aedc7963f0a326084362439be00a8", null ],
     [ "cycle_length", "classNCTimeSeries.html#ac3b9a422056cdf39570dbe789acd1fa5", null ],
     [ "domain", "classNCTimeSeries.html#a52b1efdb2e35f56ad86df2aa461a0b54", null ],

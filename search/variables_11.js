@@ -20,7 +20,7 @@ var searchData=
   ['regrid_5foptions_17',['regrid_options',['../classNCTimeSeries.html#a0e501f03d2340631606204f0212d4277',1,'NCTimeSeries']]],
   ['remora_5fgregorian_5fdaynum_18',['remora_gregorian_daynum',['../REMORA__DateClock_8H.html#a5790a3c2a97927b6001bad7dbe45f8fa',1,'REMORA_DateClock.H']]],
   ['restart_5fchkfile_19',['restart_chkfile',['../classREMORA.html#ae376daabb97c474de25b283de6bd985d',1,'REMORA']]],
-  ['rho0_20',['rho0',['../structSolverChoice.html#a87396b485f47a76010673143372cca17',1,'SolverChoice::rho0'],['../REMORA__InitAnalyticSMFlux__ParticleAdvectionFlat_8H.html#ab8e36533c29290d98a91375f7bdbf726',1,'rho0:&#160;REMORA_InitAnalyticSMFlux_ParticleAdvectionFlat.H'],['../namespacemod__scalars.html#a96b32043ef463cc78050b6d20bb0b9db',1,'mod_scalars::rho0']]],
+  ['rho0_20',['rho0',['../REMORA__InitAnalyticSMFlux__ParticleAdvectionFlat_8H.html#ab8e36533c29290d98a91375f7bdbf726',1,'rho0:&#160;REMORA_InitAnalyticSMFlux_ParticleAdvectionFlat.H'],['../namespacemod__scalars.html#a96b32043ef463cc78050b6d20bb0b9db',1,'mod_scalars::rho0'],['../structSolverChoice.html#a87396b485f47a76010673143372cca17',1,'SolverChoice::rho0']]],
   ['rhow_21',['rhow',['../REMORA__Constants_8H.html#aac834cc142fec1b6d8408a0c4819e015',1,'REMORA_Constants.H']]],
   ['ring_5fx_22',['ring_x',['../REMORA__InitAnalyticMasks__DogboneAnalytic_8H.html#ace71000d0e18bd5f253a4edf4ae85ed1',1,'REMORA_InitAnalyticMasks_DogboneAnalytic.H']]],
   ['ring_5fy_23',['ring_y',['../REMORA__InitAnalyticMasks__DogboneAnalytic_8H.html#aabec0c5c19285ffa57ba374c76fbbba8',1,'REMORA_InitAnalyticMasks_DogboneAnalytic.H']]],
@@ -32,7 +32,8 @@ var searchData=
   ['river_5fsource_5ftransportbar_29',['river_source_transportbar',['../classREMORA.html#a495d8e3b3344e97ce392a99ed7ab9ab0',1,'REMORA']]],
   ['river_5ftimes_30',['river_times',['../classNCTimeSeriesRiver.html#a4e7694af5aadfe6057d458e1774dc2ad',1,'NCTimeSeriesRiver']]],
   ['rmask_31',['rmask',['../structmod__grid_1_1t__grid.html#a4bd1f9c110d3ccb19a6cc020a782905d',1,'mod_grid::t_grid']]],
-  ['rrx_32',['rrx',['../REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#ae51ba4c9a85750213ff0251cc415cf33',1,'REMORA_InitAnalyticBathymetry_Upwelling_ML.H']]],
-  ['rry_33',['rry',['../REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#a90eb3e53bf0fc4d87f666beea4e94179',1,'REMORA_InitAnalyticBathymetry_Upwelling_ML.H']]],
-  ['running_5fwith_5fcoupling_5fdriver_34',['running_with_coupling_driver',['../classREMORA.html#a13ee4ac976520b8bf4132619ebcb3ad1',1,'REMORA']]]
+  ['rotate_32',['rotate',['../structLatLonRegridOptions.html#a1ac7ea2e73c41e259bd997bcecd08518',1,'LatLonRegridOptions']]],
+  ['rrx_33',['rrx',['../REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#ae51ba4c9a85750213ff0251cc415cf33',1,'REMORA_InitAnalyticBathymetry_Upwelling_ML.H']]],
+  ['rry_34',['rry',['../REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#a90eb3e53bf0fc4d87f666beea4e94179',1,'REMORA_InitAnalyticBathymetry_Upwelling_ML.H']]],
+  ['running_5fwith_5fcoupling_5fdriver_35',['running_with_coupling_driver',['../classREMORA.html#a13ee4ac976520b8bf4132619ebcb3ad1',1,'REMORA']]]
 ];

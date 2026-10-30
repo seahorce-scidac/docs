@@ -52,9 +52,10 @@ var searchData=
   ['attsw_49',['AttSW',['../structREMORABiology_1_1FennelParameters.html#a03fbe11abbced21bdf79c433c42a4315',1,'REMORABiology::FennelParameters']]],
   ['average_5fdown_5fmasked_50',['average_down_masked',['../classREMORA.html#a42c70dc0942461c9b4519ddd00c691f0',1,'REMORA']]],
   ['average_5fdown_5fwith_5fgrow_5fcells_51',['average_down_with_grow_cells',['../classREMORA.html#ae3d31fecc901585ca386040fdffe2a67',1,'REMORA']]],
-  ['averagedown_52',['AverageDown',['../classREMORA.html#acc4cc491f4e1714d3d4999290046c82e',1,'REMORA']]],
-  ['averagedownto_53',['AverageDownTo',['../classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3',1,'REMORA']]],
-  ['avgdown_5ffaces_5fmasked_54',['avgdown_faces_masked',['../namespaceREMORAMaskedAvgDown.html#a48eaf454b2b9ca835ad162268d6d2cd4',1,'REMORAMaskedAvgDown']]],
-  ['avgdown_5fmasked_55',['avgdown_masked',['../namespaceREMORAMaskedAvgDown.html#a5cfc80a0b7b80630bbb99fec39d8480b',1,'REMORAMaskedAvgDown']]],
-  ['avgdown_5fweighted_56',['avgdown_weighted',['../namespaceREMORAMaskedAvgDown.html#a8d164fe7492a284e4be5243428eee247',1,'REMORAMaskedAvgDown']]]
+  ['average_5fstress_5fto_5ffaces_52',['average_stress_to_faces',['../classREMORA.html#a40737b62e53a4eebca84ac246bb3930c',1,'REMORA']]],
+  ['averagedown_53',['AverageDown',['../classREMORA.html#acc4cc491f4e1714d3d4999290046c82e',1,'REMORA']]],
+  ['averagedownto_54',['AverageDownTo',['../classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3',1,'REMORA']]],
+  ['avgdown_5ffaces_5fmasked_55',['avgdown_faces_masked',['../namespaceREMORAMaskedAvgDown.html#a48eaf454b2b9ca835ad162268d6d2cd4',1,'REMORAMaskedAvgDown']]],
+  ['avgdown_5fmasked_56',['avgdown_masked',['../namespaceREMORAMaskedAvgDown.html#a5cfc80a0b7b80630bbb99fec39d8480b',1,'REMORAMaskedAvgDown']]],
+  ['avgdown_5fweighted_57',['avgdown_weighted',['../namespaceREMORAMaskedAvgDown.html#a8d164fe7492a284e4be5243428eee247',1,'REMORAMaskedAvgDown']]]
 ];

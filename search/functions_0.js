@@ -17,7 +17,7 @@ var searchData=
   ['all_5fvars_14',['all_vars',['../classncutils_1_1NCFile.html#a4bd2d5c4818e3b2ec5f98d01d36e529a',1,'ncutils::NCFile']]],
   ['allocate_5fbathymetry_5fgrid_5fvars_5ffull_5fdomain_15',['allocate_bathymetry_grid_vars_full_domain',['../classREMORA.html#ad6317da73441a63a9bca0104d81c1356',1,'REMORA']]],
   ['allocate_5finit_5ffull_5fdomain_16',['allocate_init_full_domain',['../classREMORA.html#a146972412be0b63dd478d4bf1ecab343',1,'REMORA']]],
-  ['amrex_5falways_5fassert_17',['amrex_always_assert',['../REMORA__InitAnalyticSMFlux__Upwelling_8H.html#af7f3ba67c009067c556a82938120fbdd',1,'AMREX_ALWAYS_ASSERT(!NSPeriodic||!EWPeriodic):&#160;REMORA_InitAnalyticSMFlux_Upwelling.H'],['../REMORA__InitAnalyticBathymetry__Upwelling__Coupling_8H.html#a089e3e71dbe9099d4297fc7e89221e6f',1,'AMREX_ALWAYS_ASSERT(!EWPeriodic):&#160;REMORA_InitAnalyticBathymetry_Upwelling_Coupling.H'],['../REMORA__InitAnalyticBathymetry__Upwelling_8H.html#af7f3ba67c009067c556a82938120fbdd',1,'AMREX_ALWAYS_ASSERT(!NSPeriodic||!EWPeriodic):&#160;REMORA_InitAnalyticBathymetry_Upwelling.H'],['../REMORA__InitAnalyticBathymetry__ChannelTest_8H.html#af7f3ba67c009067c556a82938120fbdd',1,'AMREX_ALWAYS_ASSERT(!NSPeriodic||!EWPeriodic):&#160;REMORA_InitAnalyticBathymetry_ChannelTest.H'],['../REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd',1,'AMREX_ALWAYS_ASSERT(!NSPeriodic||!EWPeriodic):&#160;REMORA_InitAnalyticBathymetry_BoundaryLayer.H']]],
+  ['amrex_5falways_5fassert_17',['amrex_always_assert',['../REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd',1,'AMREX_ALWAYS_ASSERT(!NSPeriodic||!EWPeriodic):&#160;REMORA_InitAnalyticBathymetry_BoundaryLayer.H'],['../REMORA__InitAnalyticSMFlux__Upwelling_8H.html#af7f3ba67c009067c556a82938120fbdd',1,'AMREX_ALWAYS_ASSERT(!NSPeriodic||!EWPeriodic):&#160;REMORA_InitAnalyticSMFlux_Upwelling.H'],['../REMORA__InitAnalyticBathymetry__Upwelling__Coupling_8H.html#a089e3e71dbe9099d4297fc7e89221e6f',1,'AMREX_ALWAYS_ASSERT(!EWPeriodic):&#160;REMORA_InitAnalyticBathymetry_Upwelling_Coupling.H'],['../REMORA__InitAnalyticBathymetry__Upwelling_8H.html#af7f3ba67c009067c556a82938120fbdd',1,'AMREX_ALWAYS_ASSERT(!NSPeriodic||!EWPeriodic):&#160;REMORA_InitAnalyticBathymetry_Upwelling.H'],['../REMORA__InitAnalyticBathymetry__ChannelTest_8H.html#af7f3ba67c009067c556a82938120fbdd',1,'AMREX_ALWAYS_ASSERT(!NSPeriodic||!EWPeriodic):&#160;REMORA_InitAnalyticBathymetry_ChannelTest.H']]],
   ['amrex_5fprobinit_18',['amrex_probinit',['../REMORA__prob__common_8H.html#ade80d7c09ccacfd7138b8fa7a7e7a62c',1,'REMORA_prob_common.H']]],
   ['append2dplotvariables_19',['append2DPlotVariables',['../classREMORA.html#aed280db496ab7b660c2195fa41cbf5be',1,'REMORA']]],
   ['append3dplotvariables_20',['append3DPlotVariables',['../classREMORA.html#ad520335720a727807d115d0fb141f65f',1,'REMORA']]],
@@ -27,9 +27,10 @@ var searchData=
   ['applyatmosphericstates_24',['ApplyAtmosphericStates',['../classREMORA.html#aa8d92cad90026002f74faa5da3b4d09a',1,'REMORA']]],
   ['average_5fdown_5fmasked_25',['average_down_masked',['../classREMORA.html#a42c70dc0942461c9b4519ddd00c691f0',1,'REMORA']]],
   ['average_5fdown_5fwith_5fgrow_5fcells_26',['average_down_with_grow_cells',['../classREMORA.html#ae3d31fecc901585ca386040fdffe2a67',1,'REMORA']]],
-  ['averagedown_27',['AverageDown',['../classREMORA.html#acc4cc491f4e1714d3d4999290046c82e',1,'REMORA']]],
-  ['averagedownto_28',['AverageDownTo',['../classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3',1,'REMORA']]],
-  ['avgdown_5ffaces_5fmasked_29',['avgdown_faces_masked',['../namespaceREMORAMaskedAvgDown.html#a48eaf454b2b9ca835ad162268d6d2cd4',1,'REMORAMaskedAvgDown']]],
-  ['avgdown_5fmasked_30',['avgdown_masked',['../namespaceREMORAMaskedAvgDown.html#a5cfc80a0b7b80630bbb99fec39d8480b',1,'REMORAMaskedAvgDown']]],
-  ['avgdown_5fweighted_31',['avgdown_weighted',['../namespaceREMORAMaskedAvgDown.html#a8d164fe7492a284e4be5243428eee247',1,'REMORAMaskedAvgDown']]]
+  ['average_5fstress_5fto_5ffaces_27',['average_stress_to_faces',['../classREMORA.html#a40737b62e53a4eebca84ac246bb3930c',1,'REMORA']]],
+  ['averagedown_28',['AverageDown',['../classREMORA.html#acc4cc491f4e1714d3d4999290046c82e',1,'REMORA']]],
+  ['averagedownto_29',['AverageDownTo',['../classREMORA.html#a685a244b9590a93bd7272b2261d0ecf3',1,'REMORA']]],
+  ['avgdown_5ffaces_5fmasked_30',['avgdown_faces_masked',['../namespaceREMORAMaskedAvgDown.html#a48eaf454b2b9ca835ad162268d6d2cd4',1,'REMORAMaskedAvgDown']]],
+  ['avgdown_5fmasked_31',['avgdown_masked',['../namespaceREMORAMaskedAvgDown.html#a5cfc80a0b7b80630bbb99fec39d8480b',1,'REMORAMaskedAvgDown']]],
+  ['avgdown_5fweighted_32',['avgdown_weighted',['../namespaceREMORAMaskedAvgDown.html#a8d164fe7492a284e4be5243428eee247',1,'REMORAMaskedAvgDown']]]
 ];
