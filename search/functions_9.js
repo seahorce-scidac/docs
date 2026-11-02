@@ -5,5 +5,7 @@ var searchData=
   ['level_5findex_5fcell_2',['level_index_cell',['../REMORA__PC_8H.html#aae66844028ea79c7e9cb113e2c20696c',1,'REMORA_PC.H']]],
   ['level_5findex_5fto_5fheight_3',['level_index_to_height',['../REMORA__PC_8H.html#af2ddadbbd8da6d155254e0542437cbb4',1,'REMORA_PC.H']]],
   ['lin_5feos_4',['lin_eos',['../classREMORA.html#a7ef206df9b5d4f71dfe5c57049ffb06e',1,'REMORA']]],
-  ['lower_5',['lower',['../namespaceremora__time__units__detail.html#a33e5f125b3348e491928b8e581b26bb4',1,'remora_time_units_detail']]]
+  ['longitude_5freference_5',['longitude_reference',['../namespacelatlon__regrid.html#abdd7b46324eb5482d224aa81b46c328c',1,'latlon_regrid']]],
+  ['longitude_5fspan_6',['longitude_span',['../namespacelatlon__regrid.html#a156b3ae407a02b9e7145159edf32b969',1,'latlon_regrid']]],
+  ['lower_7',['lower',['../namespaceremora__time__units__detail.html#a33e5f125b3348e491928b8e581b26bb4',1,'remora_time_units_detail']]]
 ];

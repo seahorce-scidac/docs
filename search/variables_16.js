@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['w_0',['w',['../structREMORAMaskedAvgDown_1_1FieldWeight.html#a3029900db9803b53b2ea925cc0963672',1,'REMORAMaskedAvgDown::FieldWeight']]],
+  ['w_0',['w',['../structlatlon__regrid_1_1Stencil.html#af16170efce73b65d67c6fe5111bebedd',1,'latlon_regrid::Stencil::w'],['../structREMORAMaskedAvgDown_1_1FieldWeight.html#a3029900db9803b53b2ea925cc0963672',1,'REMORAMaskedAvgDown::FieldWeight::w']]],
   ['w00_1',['W00',['../REMORA__Constants_8H.html#a13d8685abbbf65429305a0ad4abaf573',1,'REMORA_Constants.H']]],
   ['weights_2',['weights',['../classLatLonRegrid.html#a5748ef2000e674ff3a9b646f6223752f',1,'LatLonRegrid']]],
   ['width_5fgrowth_3',['width_growth',['../REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a5945a528e9dafb1cc02c86c691f1c21e',1,'REMORA_InitAnalyticGridScale_BoundaryLayer.H']]],

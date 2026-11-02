@@ -35,6 +35,7 @@ var hierarchy =
     [ "REMORAPhysBCFunct", "classREMORAPhysBCFunct.html", null ],
     [ "REMORATimeUnits", "structREMORATimeUnits.html", null ],
     [ "SolverChoice", "structSolverChoice.html", null ],
+    [ "latlon_regrid::Stencil", "structlatlon__regrid_1_1Stencil.html", null ],
     [ "mod_param::t_bounds", "structmod__param_1_1t__bounds.html", null ],
     [ "mod_forces::t_forces", "structmod__forces_1_1t__forces.html", null ],
     [ "mod_grid::t_grid", "structmod__grid_1_1t__grid.html", null ],

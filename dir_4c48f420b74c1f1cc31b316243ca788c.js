@@ -4,6 +4,7 @@ var dir_4c48f420b74c1f1cc31b316243ca788c =
     [ "REMORA_console_io.cpp", "REMORA__console__io_8cpp.html", "REMORA__console__io_8cpp" ],
     [ "REMORA_LatLonRegrid.cpp", "REMORA__LatLonRegrid_8cpp.html", null ],
     [ "REMORA_LatLonRegrid.H", "REMORA__LatLonRegrid_8H.html", "REMORA__LatLonRegrid_8H" ],
+    [ "REMORA_LatLonRegridMath.H", "REMORA__LatLonRegridMath_8H.html", "REMORA__LatLonRegridMath_8H" ],
     [ "REMORA_NCFile.cpp", "REMORA__NCFile_8cpp.html", "REMORA__NCFile_8cpp" ],
     [ "REMORA_NCFile.H", "REMORA__NCFile_8H.html", "REMORA__NCFile_8H" ],
     [ "REMORA_NCInterface.cpp", "REMORA__NCInterface_8cpp.html", "REMORA__NCInterface_8cpp" ],

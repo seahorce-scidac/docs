@@ -56,7 +56,7 @@ var searchData=
   ['init_5fzeta_5ffrom_5fnetcdf_53',['init_zeta_from_netcdf',['../classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0',1,'REMORA']]],
   ['init_5fzeta_5ffull_5fdomain_5ffrom_5fnetcdf_54',['init_zeta_full_domain_from_netcdf',['../classREMORA.html#a1c1ee9da7ff66b36615f16f068f7f5bd',1,'REMORA']]],
   ['initdata_55',['InitData',['../classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089',1,'REMORA']]],
-  ['initialize_56',['initialize',['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()'],['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()']]],
+  ['initialize_56',['initialize',['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()'],['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()']]],
   ['initializefromfile_57',['InitializeFromFile',['../classREMORA.html#af25043e75bc350bc40ae56f65649554b',1,'REMORA']]],
   ['initializelevelfromdata_58',['InitializeLevelFromData',['../classREMORA.html#abc5dc3d0306ebb6507e6c702241f07a0',1,'REMORA']]],
   ['initializeparticles_59',['InitializeParticles',['../classREMORAPC.html#ac858f194f6a884f8be004914b2138594',1,'REMORAPC']]],
@@ -72,6 +72,8 @@ var searchData=
   ['interpolate_5fto_5flevel_5findex_69',['interpolate_to_level_index',['../REMORA__PC_8H.html#aa363c241c96b323e3cd83b9f33553731',1,'REMORA_PC.H']]],
   ['iput_70',['iput',['../structncutils_1_1NCVar.html#a493ade206e0f39a383ab35aa67f4548c',1,'ncutils::NCVar']]],
   ['is_5fit_5ftime_5ffor_5faction_71',['is_it_time_for_action',['../classREMORA.html#ac1343ee03c1a0119736b4afe199019f3',1,'REMORA']]],
-  ['is_5futc_72',['is_utc',['../namespaceremora__time__units__detail.html#a86103624959e4d1b0d8c218711cc8129',1,'remora_time_units_detail']]],
-  ['isempty_73',['isEmpty',['../classParticleData.html#a673700f7219e5cbc0c24d3e342e0866a',1,'ParticleData']]]
+  ['is_5fperiodic_72',['is_periodic',['../namespacelatlon__regrid.html#a0e3712e6e0c5c93b84e694df41b7ecff',1,'latlon_regrid']]],
+  ['is_5futc_73',['is_utc',['../namespaceremora__time__units__detail.html#a86103624959e4d1b0d8c218711cc8129',1,'remora_time_units_detail']]],
+  ['is_5fvalid_74',['is_valid',['../namespacelatlon__regrid.html#a44831790a19ba6229d09fdb8de309bb8',1,'latlon_regrid']]],
+  ['isempty_75',['isEmpty',['../classParticleData.html#a673700f7219e5cbc0c24d3e342e0866a',1,'ParticleData']]]
 ];

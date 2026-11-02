@@ -51,6 +51,7 @@ var namespaces_dup =
       [ "funwave_advance_2d", "namespacefunwave__advance__module.html#a695777be7d7a99b46ca87f35368b9e73", null ]
     ] ],
     [ "InterpType", "namespaceInterpType.html", null ],
+    [ "latlon_regrid", "namespacelatlon__regrid.html", "namespacelatlon__regrid" ],
     [ "mod_biology", "namespacemod__biology.html", [
       [ "fennel_tag", "namespacemod__biology.html#a45250f9a135598d430521618d7363e2a", null ],
       [ "fennel_tag_line", "namespacemod__biology.html#aea73387e302708332072ac74d2dd4757", null ],

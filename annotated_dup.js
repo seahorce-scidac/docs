@@ -1,5 +1,8 @@
 var annotated_dup =
 [
+    [ "latlon_regrid", "namespacelatlon__regrid.html", [
+      [ "Stencil", "structlatlon__regrid_1_1Stencil.html", "structlatlon__regrid_1_1Stencil" ]
+    ] ],
     [ "mod_forces", "namespacemod__forces.html", [
       [ "t_forces", "structmod__forces_1_1t__forces.html", "structmod__forces_1_1t__forces" ]
     ] ],
