@@ -1,5 +1,13 @@
 var NAVTREEINDEX8 =
 {
+"globals_func_r.html":[3,1,1,10],
+"globals_func_s.html":[3,1,1,11],
+"globals_g.html":[3,1,0,6],
+"globals_h.html":[3,1,0,7],
+"globals_i.html":[3,1,0,8],
+"globals_k.html":[3,1,0,9],
+"globals_l.html":[3,1,0,10],
+"globals_m.html":[3,1,0,11],
 "globals_n.html":[3,1,0,12],
 "globals_o.html":[3,1,0,13],
 "globals_p.html":[3,1,0,14],
@@ -10,8 +18,8 @@ var NAVTREEINDEX8 =
 "globals_type.html":[3,1,3],
 "globals_u.html":[3,1,0,19],
 "globals_v.html":[3,1,0,20],
-"globals_vars.html":[3,1,2,0],
 "globals_vars.html":[3,1,2],
+"globals_vars.html":[3,1,2,0],
 "globals_vars_b.html":[3,1,2,1],
 "globals_vars_c.html":[3,1,2,2],
 "globals_vars_d.html":[3,1,2,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX8 =
 "structNDArray.html#a799f5ddb2d974b593051593e38db14dd":[2,0,13,10],
 "structNDArray.html#a896e27f1238a68d5221aa00bbf9fd2f0":[2,0,13,1],
 "structNDArray.html#a96033b69f69ea0ae537a24288715752d":[2,0,13,0],
-"structNDArray.html#aa1c5762c2de2f4286d4f341b618df1e5":[2,0,13,3],
-"structNDArray.html#abc8163390be8642c7b0f9cc366e084a8":[2,0,13,7],
-"structNDArray.html#ae3acda97dcb2f634f84844419483bb17":[2,0,13,5],
-"structProbCoords.html":[2,0,15],
-"structProbCoords.html#a5f656bd46e889ab40e895301cc4d9516":[2,0,15,3],
-"structProbCoords.html#a606df91f9de478e918cb5af8748fd090":[2,0,15,2],
-"structProbCoords.html#a65e54bf4e3e3ca17532aa335884a9a65":[2,0,15,0],
-"structProbCoords.html#af543951946266415ec18e1156190fd83":[2,0,15,1],
-"structREMORABiology_1_1FennelParameters.html":[1,0,27,1]
+"structNDArray.html#aa1c5762c2de2f4286d4f341b618df1e5":[2,0,13,3]
 };

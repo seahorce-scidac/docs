@@ -65,5 +65,6 @@ var searchData=
   ['rhs_5fuv_5f3d_62',['rhs_uv_3d',['../classREMORA.html#a436da7dba62c2b88911f3a6a70d49925',1,'REMORA']]],
   ['roll_5f2d_5fsnapshot_63',['roll_2d_snapshot',['../classREMORA.html#aef92acde7d3710d801522b9311c8802f',1,'REMORA']]],
   ['rotate_5fto_5fgrid_64',['rotate_to_grid',['../namespacelatlon__regrid.html#a888b1a248c574dd59bcf26a37722c4ad',1,'latlon_regrid']]],
-  ['rotate_5fto_5fgrid_5faxes_65',['rotate_to_grid_axes',['../classREMORA.html#a54aa64c655a3a4c3c4636d34e4e1bf0d',1,'REMORA']]]
+  ['rotate_5fto_5fgrid_5faxes_65',['rotate_to_grid_axes',['../classREMORA.html#a54aa64c655a3a4c3c4636d34e4e1bf0d',1,'REMORA']]],
+  ['rowtilingifnotgpu_66',['RowTilingIfNotGPU',['../REMORA__DepthStretchTransform_8H.html#a05e45f480aef17433f52c291a7e286e6',1,'REMORA_DepthStretchTransform.H']]]
 ];

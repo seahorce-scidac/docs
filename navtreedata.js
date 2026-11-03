@@ -66,16 +66,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325aac3d3c98c89dcbf5e7ef9f934233f1bd",
-"REMORA__InitAnalyticProb__DoubleGyre_8H.html#a925c992baa4d66fdc34059b52bfeb7fd",
-"REMORA__NCInterface_8cpp.html#aa67f9bcab4a9da3e92f2e2f3b4ec5979",
-"REMORA__vert__visc__3d_8cpp.html",
-"classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe",
-"classREMORA.html#a97a35cf0503b0467c2ae6f0712c671f2",
-"classREMORAFillPatcher.html#a61e471f7848c2e0ba119380c0063b368",
-"globals_n.html",
-"structREMORABiology_1_1FennelParameters.html",
-"structSolverChoice.html#a9bac76aba9ac72cb682a20428d0eece8"
+"REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74",
+"REMORA__InitAnalyticProb__DoubleGyre_8H.html#a75f9d7f9e2a71a0135a9a729ce2f2d6c",
+"REMORA__NCInterface_8cpp.html",
+"REMORA__vert__mean__3d_8cpp_source.html",
+"classREMORA.html#a1eef83c89b5b470bac43eaff53860fe0",
+"classREMORA.html#a9346e6b7514811842502f8c68393f313",
+"classREMORAFillPatcher.html#a350e4b15d395506050608810cd1cc827",
+"globals_func_r.html",
+"structNDArray.html#abc8163390be8642c7b0f9cc366e084a8",
+"structSolverChoice.html#a933da4a3a80aac592c3009df3b93fb98",
+"structncutils_1_1NCVar.html#afb50217aecfd6a2dfe79a3a015f298d7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
