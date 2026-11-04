@@ -2,10 +2,11 @@ var searchData=
 [
   ['main_0',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
   ['make_5fbiology_1',['make_biology',['../namespaceREMORABiology.html#aec6c3f87799231c224b092c3fa6c3111',1,'REMORABiology']]],
-  ['makenewlevelfromcoarse_2',['MakeNewLevelFromCoarse',['../classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe',1,'REMORA']]],
-  ['makenewlevelfromscratch_3',['MakeNewLevelFromScratch',['../classREMORA.html#ad64e9b244603ae920ed761821753a71f',1,'REMORA']]],
-  ['mask_5farrays_5ffor_5fwrite_4',['mask_arrays_for_write',['../classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb',1,'REMORA']]],
-  ['massdensity_5',['massDensity',['../classREMORAPC.html#a279703d3c6d21827ca3ab05f36eec03b',1,'REMORAPC']]],
-  ['meshplotvarnames_6',['meshPlotVarNames',['../classREMORAPC.html#a6ef7e1db8117abf74a6d4a1afd1ed70d',1,'REMORAPC']]],
-  ['model_5ftime_7',['model_time',['../classREMORA.html#ae961006ec86eda2d7dd6496c3bbd4486',1,'REMORA']]]
+  ['makedistributionmap_2',['MakeDistributionMap',['../classREMORA.html#ae99b00bbe780c42de7990c308c036ff5',1,'REMORA']]],
+  ['makenewlevelfromcoarse_3',['MakeNewLevelFromCoarse',['../classREMORA.html#a2006ad0aefc229079ab5a7da054ea8fe',1,'REMORA']]],
+  ['makenewlevelfromscratch_4',['MakeNewLevelFromScratch',['../classREMORA.html#ad64e9b244603ae920ed761821753a71f',1,'REMORA']]],
+  ['mask_5farrays_5ffor_5fwrite_5',['mask_arrays_for_write',['../classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb',1,'REMORA']]],
+  ['massdensity_6',['massDensity',['../classREMORAPC.html#a279703d3c6d21827ca3ab05f36eec03b',1,'REMORAPC']]],
+  ['meshplotvarnames_7',['meshPlotVarNames',['../classREMORAPC.html#a6ef7e1db8117abf74a6d4a1afd1ed70d',1,'REMORAPC']]],
+  ['model_5ftime_8',['model_time',['../classREMORA.html#ae961006ec86eda2d7dd6496c3bbd4486',1,'REMORA']]]
 ];

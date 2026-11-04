@@ -14,5 +14,6 @@ var searchData=
   ['define_5fremorafillpatchers_11',['Define_REMORAFillPatchers',['../classREMORA.html#a6436d9b8e7993f9d893010237fda4b88',1,'REMORA']]],
   ['dim_12',['dim',['../classncutils_1_1NCFile.html#a55a1e2afa5b84bd16d374477c6dcb1e9',1,'ncutils::NCFile']]],
   ['display_13',['display',['../structSolverChoice.html#abb95d84167308078ce369b4196ef979c',1,'SolverChoice']]],
-  ['driverusesstateforcing_14',['DriverUsesStateForcing',['../classREMORA.html#ac32e17d62815028618a2d45a31f6cd0e',1,'REMORA']]]
+  ['driverusesstateforcing_14',['DriverUsesStateForcing',['../classREMORA.html#ac32e17d62815028618a2d45a31f6cd0e',1,'REMORA']]],
+  ['drop_5fdry_5flevel0_5fboxes_15',['drop_dry_level0_boxes',['../classREMORA.html#a7518865e876ed9ed39b11dcf219281e7',1,'REMORA']]]
 ];

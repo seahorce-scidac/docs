@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['o2schmidttype_0',['O2SchmidtType',['../namespaceREMORABiology.html#a5f60d692a2fc85488d7b9078b382ba01',1,'REMORABiology']]]
+  ['nc_5fdata_5fdims_5ftype_0',['NC_Data_Dims_Type',['../REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06',1,'REMORA_NCFile.H']]]
 ];
