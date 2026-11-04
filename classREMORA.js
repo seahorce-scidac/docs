@@ -1,5 +1,6 @@
 var classREMORA =
 [
+    [ "NCHistoryFile", "structREMORA_1_1NCHistoryFile.html", "structREMORA_1_1NCHistoryFile" ],
     [ "DriverAtmosForcingMode", "classREMORA.html#a448226572176d2410e51ad3d7c0dcb0a", [
       [ "State", "classREMORA.html#a448226572176d2410e51ad3d7c0dcb0aa46a2a41cc6e552044816a2d04634545d", null ],
       [ "Flux", "classREMORA.html#a448226572176d2410e51ad3d7c0dcb0aa1c30b35b12895df175ccd44dbb6f5ace", null ]
@@ -146,7 +147,9 @@ var classREMORA =
     [ "MakeNewLevelFromScratch", "classREMORA.html#ad64e9b244603ae920ed761821753a71f", null ],
     [ "mask_arrays_for_write", "classREMORA.html#a81cc67c1d9d130d134ec352df04b99bb", null ],
     [ "model_time", "classREMORA.html#ae961006ec86eda2d7dd6496c3bbd4486", null ],
-    [ "netcdf_subdomain", "classREMORA.html#a8c7a1ab136f0d14e95582f59b22583cb", null ],
+    [ "netcdf_plot_path", "classREMORA.html#a007d0cbaf560e30af5aa9ad8f2ec9a0a", null ],
+    [ "netcdf_subdomain", "classREMORA.html#af9469d456aa3da880eadab5ab42d39d0", null ],
+    [ "netcdf_subdomain_has_gaps", "classREMORA.html#a5444ee7ea87d0eaef2ec026c41776909", null ],
     [ "nonlin_eos", "classREMORA.html#addc06a380411d14dc082150b72232548", null ],
     [ "num_bc_vars", "classREMORA.html#a33a228e32167acff77a28eaba3e6efef", null ],
     [ "num_bdy_vars", "classREMORA.html#a643af97dc825a2bf8445487935d5b53d", null ],
@@ -253,7 +256,7 @@ var classREMORA =
     [ "WriteMultiLevelPlotfileWithBathymetry", "classREMORA.html#add7671138303d3571c64bab22c522abf", null ],
     [ "WriteNCMultiFab", "classREMORA.html#a07cdefc2810863920747b6eac934a045", null ],
     [ "WriteNCPlotFile", "classREMORA.html#a1e6a3a94867bfddb54e20b81d1750252", null ],
-    [ "WriteNCPlotFile_which", "classREMORA.html#a32caca8c15112b693b0fc23c6706f8c0", null ],
+    [ "WriteNCPlotFile_which", "classREMORA.html#a771727b23eb8a8bd4c596a8280a0a6cf", null ],
     [ "WritePlotFile", "classREMORA.html#ae34c7e436b23f9c528aaa8589804b196", null ],
     [ "xvel_bc", "classREMORA.html#a111674546154c538b2b89b028d80d789", null ],
     [ "yvel_bc", "classREMORA.html#a371163db23112360ff23b6693215e773", null ],
@@ -335,8 +338,7 @@ var classREMORA =
     [ "hires_grid_level", "classREMORA.html#af6613911799ddebd00cff330cf5c5f76", null ],
     [ "hires_init_level", "classREMORA.html#aa0f93b5eb692df3d7ba897ebe09507ae", null ],
     [ "history_count", "classREMORA.html#a296bed166ddc9b98d606f3959ca6bfda", null ],
-    [ "history_file_in_use", "classREMORA.html#a5d05cda9fe86068245c6993867868ffc", null ],
-    [ "history_record_shift", "classREMORA.html#af6ec5d0d394c1e25837be708298e70cc", null ],
+    [ "history_files", "classREMORA.html#aac25e5f372b383e7d9fb8c7f36c3568f", null ],
     [ "istep", "classREMORA.html#a7c44493fe1a5743c92f272c91c3aa558", null ],
     [ "last_check_file_step", "classREMORA.html#a70585b0129bfb5d405b1e10ea97020c5", null ],
     [ "last_check_file_time", "classREMORA.html#aec4672b6d0b92fd2a42d2b88dfc9813b", null ],

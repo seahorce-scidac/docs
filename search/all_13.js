@@ -80,7 +80,7 @@ var searchData=
   ['start_5ftime_77',['start_time',['../classREMORA.html#a400a0a0edd460699fafbe376aadd1a83',1,'REMORA']]],
   ['startcputime_78',['startCPUTime',['../classREMORA.html#a4d3e0a094fbd5ed0ef96114162a88478',1,'REMORA']]],
   ['started_79',['Getting Started',['../index.html#getting_started',1,'']]],
-  ['state_80',['state',['../classREMORA.html#a448226572176d2410e51ad3d7c0dcb0aa46a2a41cc6e552044816a2d04634545d',1,'REMORA::State'],['../structREMORABiology_1_1BiologyInitContext.html#a42478be38571ddb0f2eae87e8c96f34a',1,'REMORABiology::BiologyInitContext::state']]],
+  ['state_80',['state',['../structREMORABiology_1_1BiologyInitContext.html#a42478be38571ddb0f2eae87e8c96f34a',1,'REMORABiology::BiologyInitContext::state'],['../classREMORA.html#a448226572176d2410e51ad3d7c0dcb0aa46a2a41cc6e552044816a2d04634545d',1,'REMORA::State']]],
   ['stdout_81',['stdout',['../namespacemod__iounits.html#adfa8121c69fdcf2ecc88ad1a76318e79',1,'mod_iounits']]],
   ['stefbo_82',['StefBo',['../REMORA__Constants_8H.html#acf8da1fd732e9b6b216f64f0785cbc73',1,'REMORA_Constants.H']]],
   ['stencil_83',['Stencil',['../structlatlon__regrid_1_1Stencil.html',1,'latlon_regrid']]],

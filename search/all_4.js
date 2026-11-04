@@ -6,7 +6,7 @@ var searchData=
   ['d_5fp5nh4_3',['D_p5NH4',['../structREMORABiology_1_1FennelParameters.html#a2be93f1c846ec1261a06a7d06f1732b0',1,'REMORABiology::FennelParameters']]],
   ['data_4',['data',['../structNDArray.html#a197526556d3850037e560585740b9074',1,'NDArray::data'],['../namespaceREMORABiology.html#aa77892264812710f1c33d8b2a1ce3f03a8d777f385d3dfec8815d20f7496026dc',1,'REMORABiology::data']]],
   ['datalog_5',['datalog',['../classREMORA.html#ad3530fc80b87c25ce728095929a4ea99',1,'REMORA::datalog'],['../classREMORA.html#ad2412b07f92537bc22d058e59d6cf426',1,'REMORA::DataLog(int i)']]],
-  ['datalogname_6',['datalogname',['../classREMORA.html#a8062b4dcb1ea9deba016d427d23480aa',1,'REMORA::DataLogName(int i) const noexcept'],['../classREMORA.html#a39048951d6927086a690d57a53754160',1,'REMORA::datalogname']]],
+  ['datalogname_6',['datalogname',['../classREMORA.html#a39048951d6927086a690d57a53754160',1,'REMORA::datalogname'],['../classREMORA.html#a8062b4dcb1ea9deba016d427d23480aa',1,'REMORA::DataLogName(int i) const noexcept']]],
   ['dateclock_5fmod_7',['dateclock_mod',['../namespacedateclock__mod.html',1,'']]],
   ['day_8',['day',['../structREMORATimeUnits.html#a5215714a29ef98ffca7d580297bd4007',1,'REMORATimeUnits']]],
   ['declaration_9',['declaration',['../classREMORABiology_1_1FennelBiology.html#a11c89b1b7092d0c3560e04693e642238',1,'REMORABiology::FennelBiology::declaration()'],['../classREMORABiology_1_1Biology.html#a25a9385977551a6de97856632bd7be9a',1,'REMORABiology::Biology::declaration()']]],

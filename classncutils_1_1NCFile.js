@@ -15,6 +15,7 @@ var classncutils_1_1NCFile =
     [ "dim", "classncutils_1_1NCFile.html#a55a1e2afa5b84bd16d374477c6dcb1e9", null ],
     [ "enter_def_mode", "classncutils_1_1NCFile.html#a69b90d38b2ac2adf1610a0e8443743fb", null ],
     [ "exit_def_mode", "classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96", null ],
+    [ "fill_record", "classncutils_1_1NCFile.html#aed7018da8295104b6f590cf243f91208", null ],
     [ "get_attr", "classncutils_1_1NCFile.html#aa09b5efb34b051addc50a3d47be41f80", null ],
     [ "get_attr", "classncutils_1_1NCFile.html#a7aae5687c100a418160e5df8be0aeefa", null ],
     [ "get_attr", "classncutils_1_1NCFile.html#adf2e247cf67cdf35f141a136a87acabc", null ],

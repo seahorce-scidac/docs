@@ -12,8 +12,8 @@ var searchData=
   ['writemultilevelplotfilewithbathymetry_9',['WriteMultiLevelPlotfileWithBathymetry',['../classREMORA.html#add7671138303d3571c64bab22c522abf',1,'REMORA']]],
   ['writencmultifab_10',['WriteNCMultiFab',['../classREMORA.html#a07cdefc2810863920747b6eac934a045',1,'REMORA']]],
   ['writencplotfile_11',['WriteNCPlotFile',['../classREMORA.html#a1e6a3a94867bfddb54e20b81d1750252',1,'REMORA']]],
-  ['writencplotfile_5fwhich_12',['WriteNCPlotFile_which',['../classREMORA.html#a32caca8c15112b693b0fc23c6706f8c0',1,'REMORA']]],
+  ['writencplotfile_5fwhich_12',['WriteNCPlotFile_which',['../classREMORA.html#a771727b23eb8a8bd4c596a8280a0a6cf',1,'REMORA']]],
   ['writeoutput_13',['WriteOutput',['../classREMORAPC.html#a301bb1364b4b5026393d8215ae46b410',1,'REMORAPC']]],
-  ['writeplotfile_14',['writeplotfile',['../classParticleData.html#ae883e2f845d078a2791a5b94312778da',1,'ParticleData::writePlotFile()'],['../classREMORA.html#ae34c7e436b23f9c528aaa8589804b196',1,'REMORA::WritePlotFile()']]],
+  ['writeplotfile_14',['writeplotfile',['../classREMORA.html#ae34c7e436b23f9c528aaa8589804b196',1,'REMORA::WritePlotFile()'],['../classParticleData.html#ae883e2f845d078a2791a5b94312778da',1,'ParticleData::writePlotFile(const std::string &amp;a_fname, const amrex::Vector&lt; amrex::MultiFab &gt; &amp;a_xy)']]],
   ['writespecies_15',['writeSpecies',['../classParticleData.html#ad29548df06906918e398789674587d29',1,'ParticleData']]]
 ];

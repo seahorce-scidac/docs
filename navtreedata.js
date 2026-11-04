@@ -70,13 +70,13 @@ var NAVTREEINDEX =
 "REMORA__InitAnalyticProb__DogboneAnalytic_8H.html#a0e309d9162590f5d8287ae33be5c24ff",
 "REMORA__NCFile_8H.html#a4249e844e315ed3cb1e750d3798a7baf",
 "REMORA__scale__rhs__vars_8cpp.html",
-"classREMORA.html#a17e7f29b155b7bde8c98e011c8882bb0",
-"classREMORA.html#a8a16e552c794ae05498e4cb0a65399af",
+"classREMORA.html#a17b145e55ffc268dc25b512ee0312a93",
+"classREMORA.html#a89f042895cd59cc1a1226f2af2d3e04f",
 "classREMORABiology_1_1Biology.html",
-"functions_vars_h.html",
-"namespacemod__scalars.html#a96b32043ef463cc78050b6d20bb0b9db",
-"structREMORAParticlesIntIdxSoA.html",
-"structncutils_1_1NCVar.html#a2ad28b44a64152bb00f1a7eeb0084845"
+"functions_vars_e.html",
+"namespacemod__scalars.html#a18d01d6a697691fcf833ca923ff23d92",
+"structREMORAParticlesAssignor.html",
+"structncutils_1_1NCVar.html#a1f4bc3d6ce3b67154f8c078ad4c9bc2c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

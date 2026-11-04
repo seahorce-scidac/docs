@@ -37,7 +37,7 @@ var searchData=
   ['getrelaxmaskval_34',['GetRelaxMaskVal',['../classREMORAFillPatcher.html#aafe922c1fb5bc1bccf993357fe0599d0',1,'REMORAFillPatcher']]],
   ['getrholonlat_35',['GetRhoLonLat',['../classREMORA.html#afdd48591237f498f1ac398e41ab46caf',1,'REMORA']]],
   ['getsetmaskval_36',['GetSetMaskVal',['../classREMORAFillPatcher.html#a350e4b15d395506050608810cd1cc827',1,'REMORAFillPatcher']]],
-  ['getspecies_37',['getspecies',['../classParticleData.html#abbe20f02d5c5a2d7864f48b77a7ee972',1,'ParticleData::GetSpecies(const std::string &amp;a_name)'],['../classParticleData.html#a50e0bc11809c12ccbf29d745c107b70f',1,'ParticleData::GetSpecies(const std::string &amp;a_name) const']]],
+  ['getspecies_37',['getspecies',['../classParticleData.html#a50e0bc11809c12ccbf29d745c107b70f',1,'ParticleData::GetSpecies(const std::string &amp;a_name) const'],['../classParticleData.html#abbe20f02d5c5a2d7864f48b77a7ee972',1,'ParticleData::GetSpecies(const std::string &amp;a_name)']]],
   ['getting_20started_38',['Getting Started',['../index.html#getting_started',1,'']]],
   ['gls_39',['GLS',['../REMORA__DataStruct_8H.html#ae051a5657a30b61eb6fe9bab09127856a07351bfe713bfebc506f0660ff44b7bf',1,'REMORA_DataStruct.H']]],
   ['gls_5fc1_40',['gls_c1',['../structSolverChoice.html#a961488d3435e26092359beb4ac12293b',1,'SolverChoice']]],
@@ -72,5 +72,6 @@ var searchData=
   ['gotonextline_69',['GotoNextLine',['../classREMORA.html#a03e3346471b528f47454cd969393786d',1,'REMORA']]],
   ['grid_70',['grid',['../namespacemod__grid.html#a2853b5a43c7662cfb1dbdae79ebe48d7',1,'mod_grid']]],
   ['grid_5fscale_5ftype_71',['grid_scale_type',['../structSolverChoice.html#ad9e492a86d9c69d92530dfbcd15626f3',1,'SolverChoice']]],
-  ['gridscaletype_72',['GridScaleType',['../REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727',1,'REMORA_DataStruct.H']]]
+  ['grids_5fwritten_72',['grids_written',['../structREMORA_1_1NCHistoryFile.html#ad1779af6cdf756a10450f20fb75a5e3c',1,'REMORA::NCHistoryFile']]],
+  ['gridscaletype_73',['GridScaleType',['../REMORA__DataStruct_8H.html#a1ad3fa15db25afbb04274c0e1b8ba727',1,'REMORA_DataStruct.H']]]
 ];

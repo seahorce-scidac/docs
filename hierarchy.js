@@ -21,6 +21,7 @@ var hierarchy =
     [ "ncutils::NCDim", "structncutils_1_1NCDim.html", null ],
     [ "ncutils::NCDType", "structncutils_1_1NCDType.html", null ],
     [ "ncutils::NCFile", "classncutils_1_1NCFile.html", null ],
+    [ "REMORA::NCHistoryFile", "structREMORA_1_1NCHistoryFile.html", null ],
     [ "NCTimeSeries", "classNCTimeSeries.html", null ],
     [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html", null ],
     [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", null ],
