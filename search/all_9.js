@@ -18,7 +18,7 @@ var searchData=
   ['init_5fana_5ft_15',['init_ana_T',['../structSolverChoice.html#a1142b82645ef7d3d2b45f743fc9b7620',1,'SolverChoice']]],
   ['init_5fanalytic_16',['init_analytic',['../classREMORA.html#abaf362ee14357b8dc0091e3ac3e98cef',1,'REMORA']]],
   ['init_5fanalytic_5fbathymetry_17',['init_analytic_bathymetry',['../classProblemBase.html#aeb76967b7fa42cb5e29d0be55fac98c8',1,'ProblemBase']]],
-  ['init_5fanalytic_5fbiology_18',['init_analytic_biology',['../classProblemBase.html#adc12e9596aac251603c2b17a244a5cfe',1,'ProblemBase']]],
+  ['init_5fanalytic_5fbiology_18',['init_analytic_biology',['../classProblemBase.html#a659a1a8f95b13cd9a9ad39362ce89578',1,'ProblemBase']]],
   ['init_5fanalytic_5fcoriolis_19',['init_analytic_coriolis',['../classProblemBase.html#a8927bf96fa2a65addf0186c2a268bca8',1,'ProblemBase']]],
   ['init_5fanalytic_5fgrid_5fscale_20',['init_analytic_grid_scale',['../classProblemBase.html#a9ae1790470889e08d9a2bd59fd37947b',1,'ProblemBase']]],
   ['init_5fanalytic_5fhmix_21',['init_analytic_hmix',['../classProblemBase.html#a45a7d5b91618f41b13278abd82b42632',1,'ProblemBase']]],

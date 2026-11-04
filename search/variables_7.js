@@ -18,5 +18,5 @@ var searchData=
   ['horiz_5fmixing_5ftype_15',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]],
   ['hour_16',['hour',['../structREMORATimeUnits.html#aee5c56e22e0c3d9645e86a3869b3c96a',1,'REMORATimeUnits']]],
   ['hydro_17',['hydro',['../namespaceREMORAParticleNames.html#a6d2fee8d4c38df86b642bd747fcfb14a',1,'REMORAParticleNames']]],
-  ['hz_18',['hz',['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid']]]
+  ['hz_18',['hz',['../structREMORABiology_1_1BiologyAdvanceContext.html#ab1f6be9f9b64db3fc23f3fdbb9c03639',1,'REMORABiology::BiologyAdvanceContext::hz'],['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid::hz']]]
 ];

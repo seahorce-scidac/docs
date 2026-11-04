@@ -6,6 +6,12 @@ var hierarchy =
     [ "amrex::AMRErrorTag", null, [
       [ "REMORAErrorTag", "classREMORAErrorTag.html", null ]
     ] ],
+    [ "REMORABiology::Biology", "classREMORABiology_1_1Biology.html", [
+      [ "REMORABiology::FennelBiology", "classREMORABiology_1_1FennelBiology.html", null ]
+    ] ],
+    [ "REMORABiology::BiologyAdvanceContext", "structREMORABiology_1_1BiologyAdvanceContext.html", null ],
+    [ "REMORABiology::BiologyDeclaration", "structREMORABiology_1_1BiologyDeclaration.html", null ],
+    [ "REMORABiology::BiologyInitContext", "structREMORABiology_1_1BiologyInitContext.html", null ],
     [ "REMORABiology::Fennel::Components", "structREMORABiology_1_1Fennel_1_1Components.html", null ],
     [ "REMORABiology::FennelParameters", "structREMORABiology_1_1FennelParameters.html", null ],
     [ "REMORAMaskedAvgDown::FieldWeight", "structREMORAMaskedAvgDown_1_1FieldWeight.html", null ],

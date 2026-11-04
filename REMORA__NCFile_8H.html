@@ -167,7 +167,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a60014a8d74bed0d5ae984e600c68dc85" id="r_a60014a8d74bed0d5ae984e600c68dc85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#a60014a8d74bed0d5ae984e600c68dc85">PlaneVector</a> = <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; amrex::FArrayBox &gt;</td></tr>
+<tr class="memitem:a60014a8d74bed0d5ae984e600c68dc85" id="r_a60014a8d74bed0d5ae984e600c68dc85"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#a60014a8d74bed0d5ae984e600c68dc85">PlaneVector</a> = amrex::Vector&lt; amrex::FArrayBox &gt;</td></tr>
 <tr class="separator:a60014a8d74bed0d5ae984e600c68dc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -187,28 +187,28 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3e720d7f1573b1b0c7cb9a0b7b8bb871" id="r_a3e720d7f1573b1b0c7cb9a0b7b8bb871"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">typename</a> DType &gt; </td></tr>
-<tr class="memitem:a3e720d7f1573b1b0c7cb9a0b7b8bb871"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871">ReadNetCDFFile</a> (<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">fname</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; std::string &gt; <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">names</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; <a class="el" href="structNDArray.html">NDArray</a>&lt; DType &gt; &gt; &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">arrays</a>, bool <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">one_time</a>=<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">false</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">fill_time</a>=0)</td></tr>
+<tr class="memitem:a3e720d7f1573b1b0c7cb9a0b7b8bb871" id="r_a3e720d7f1573b1b0c7cb9a0b7b8bb871"><td class="memTemplParams" colspan="2">template&lt;typename DType &gt; </td></tr>
+<tr class="memitem:a3e720d7f1573b1b0c7cb9a0b7b8bb871"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871">ReadNetCDFFile</a> (const std::string &amp;fname, amrex::Vector&lt; std::string &gt; names, amrex::Vector&lt; <a class="el" href="structNDArray.html">NDArray</a>&lt; DType &gt; &gt; &amp;arrays, bool one_time=false, int fill_time=0)</td></tr>
 <tr class="memdesc:a3e720d7f1573b1b0c7cb9a0b7b8bb871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in data from netcdf file and save to data arrays.  <br /></td></tr>
 <tr class="separator:a3e720d7f1573b1b0c7cb9a0b7b8bb871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8eb0b5eb41bbbf48a6dbced8cd0d6ea" id="r_af8eb0b5eb41bbbf48a6dbced8cd0d6ea"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#af8eb0b5eb41bbbf48a6dbced8cd0d6ea">ReadNetCDFVarAttrStr</a> (<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">fname</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">var_name</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">attr_name</a>)</td></tr>
+<tr class="memitem:af8eb0b5eb41bbbf48a6dbced8cd0d6ea" id="r_af8eb0b5eb41bbbf48a6dbced8cd0d6ea"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#af8eb0b5eb41bbbf48a6dbced8cd0d6ea">ReadNetCDFVarAttrStr</a> (const std::string &amp;fname, const std::string &amp;var_name, const std::string &amp;attr_name)</td></tr>
 <tr class="memdesc:af8eb0b5eb41bbbf48a6dbced8cd0d6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for reading a single variable attribute.  <br /></td></tr>
 <tr class="separator:af8eb0b5eb41bbbf48a6dbced8cd0d6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6354e0acb3f047d2772642bc3d5c06f" id="r_aa6354e0acb3f047d2772642bc3d5c06f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#aa6354e0acb3f047d2772642bc3d5c06f">QueryNetCDFVarAttrStr</a> (<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">fname</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">var_name</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">attr_name</a>)</td></tr>
+<tr class="memitem:aa6354e0acb3f047d2772642bc3d5c06f" id="r_aa6354e0acb3f047d2772642bc3d5c06f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#aa6354e0acb3f047d2772642bc3d5c06f">QueryNetCDFVarAttrStr</a> (const std::string &amp;fname, const std::string &amp;var_name, const std::string &amp;attr_name)</td></tr>
 <tr class="memdesc:aa6354e0acb3f047d2772642bc3d5c06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for testing for the presence of a single variable attribute.  <br /></td></tr>
 <tr class="separator:aa6354e0acb3f047d2772642bc3d5c06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa5a20305e771e7b0e25ee04fceb9781" id="r_aaa5a20305e771e7b0e25ee04fceb9781"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#aaa5a20305e771e7b0e25ee04fceb9781">ReadNetCDFTimeOffsetDays</a> (<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">fname</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;time_name, double time_ref, bool <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">units_required</a>, bool <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">announce</a>)</td></tr>
+<tr class="memitem:aaa5a20305e771e7b0e25ee04fceb9781" id="r_aaa5a20305e771e7b0e25ee04fceb9781"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#aaa5a20305e771e7b0e25ee04fceb9781">ReadNetCDFTimeOffsetDays</a> (const std::string &amp;fname, const std::string &amp;time_name, double time_ref, bool units_required, bool announce)</td></tr>
 <tr class="memdesc:aaa5a20305e771e7b0e25ee04fceb9781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset, in days, that puts a file's time variable onto the model clock.  <br /></td></tr>
 <tr class="separator:aaa5a20305e771e7b0e25ee04fceb9781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4249e844e315ed3cb1e750d3798a7baf" id="r_a4249e844e315ed3cb1e750d3798a7baf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#a4249e844e315ed3cb1e750d3798a7baf">QueryNetCDFHasVars</a> (<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">fname</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; std::string &gt; &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">var_names</a>)</td></tr>
+<tr class="memitem:a4249e844e315ed3cb1e750d3798a7baf" id="r_a4249e844e315ed3cb1e750d3798a7baf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#a4249e844e315ed3cb1e750d3798a7baf">QueryNetCDFHasVars</a> (const std::string &amp;fname, const amrex::Vector&lt; std::string &gt; &amp;var_names)</td></tr>
 <tr class="memdesc:a4249e844e315ed3cb1e750d3798a7baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for testing whether a file carries every named variable.  <br /></td></tr>
 <tr class="separator:a4249e844e315ed3cb1e750d3798a7baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec6b89e9ef60018dca2f1a9e5b281241" id="r_aec6b89e9ef60018dca2f1a9e5b281241"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">class</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">FAB</a> , <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">typename</a> DType &gt; </td></tr>
-<tr class="memitem:aec6b89e9ef60018dca2f1a9e5b281241"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#aec6b89e9ef60018dca2f1a9e5b281241">fill_fab_from_arrays</a> (int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">iv</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; <a class="el" href="structNDArray.html">NDArray</a>&lt; amrex::Real &gt; &gt; &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">nc_arrays</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">var_name</a>, <a class="el" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a> &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">NC_dim_type</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">FAB</a> &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">temp</a>, amrex::IntVect <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">custom_ngrow</a>)</td></tr>
+<tr class="memitem:aec6b89e9ef60018dca2f1a9e5b281241" id="r_aec6b89e9ef60018dca2f1a9e5b281241"><td class="memTemplParams" colspan="2">template&lt;class FAB , typename DType &gt; </td></tr>
+<tr class="memitem:aec6b89e9ef60018dca2f1a9e5b281241"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#aec6b89e9ef60018dca2f1a9e5b281241">fill_fab_from_arrays</a> (int iv, amrex::Vector&lt; <a class="el" href="structNDArray.html">NDArray</a>&lt; amrex::Real &gt; &gt; &amp;nc_arrays, const std::string &amp;var_name, <a class="el" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a> &amp;NC_dim_type, FAB &amp;temp, amrex::IntVect custom_ngrow)</td></tr>
 <tr class="memdesc:aec6b89e9ef60018dca2f1a9e5b281241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for reading data from NetCDF file into a provided FAB.  <br /></td></tr>
 <tr class="separator:aec6b89e9ef60018dca2f1a9e5b281241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41ff4f048600ccc17103500c9cc273bf" id="r_a41ff4f048600ccc17103500c9cc273bf"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">class</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">FAB</a> , <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">typename</a> DType &gt; </td></tr>
-<tr class="memitem:a41ff4f048600ccc17103500c9cc273bf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#a41ff4f048600ccc17103500c9cc273bf">BuildFABsFromNetCDFFile</a> (<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::Box &amp;domain, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">fname</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; std::string &gt; nc_var_names, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">enum</a> <a class="el" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a> &gt; <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">NC_dim_types</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">FAB</a> * &gt; <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">fab_vars</a>, bool <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">one_time</a>=<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">false</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">fill_time</a>=0, amrex::IntVect <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">custom_ngrow</a>=amrex::IntVect(1, 1, 0))</td></tr>
+<tr class="memitem:a41ff4f048600ccc17103500c9cc273bf" id="r_a41ff4f048600ccc17103500c9cc273bf"><td class="memTemplParams" colspan="2">template&lt;class FAB , typename DType &gt; </td></tr>
+<tr class="memitem:a41ff4f048600ccc17103500c9cc273bf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="REMORA__NCFile_8H.html#a41ff4f048600ccc17103500c9cc273bf">BuildFABsFromNetCDFFile</a> (const amrex::Box &amp;domain, const std::string &amp;fname, amrex::Vector&lt; std::string &gt; nc_var_names, amrex::Vector&lt; enum <a class="el" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a> &gt; NC_dim_types, amrex::Vector&lt; FAB * &gt; fab_vars, bool one_time=false, int fill_time=0, amrex::IntVect custom_ngrow=amrex::IntVect(1, 1, 0))</td></tr>
 <tr class="memdesc:a41ff4f048600ccc17103500c9cc273bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to read NetCDF variables and fill the corresponding Array4's.  <br /></td></tr>
 <tr class="separator:a41ff4f048600ccc17103500c9cc273bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -220,7 +220,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">using</a> <a class="el" href="REMORA__PhysBCFunct_8H.html#a60014a8d74bed0d5ae984e600c68dc85">PlaneVector</a> =  <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt;amrex::FArrayBox&gt;</td>
+          <td class="memname">using <a class="el" href="REMORA__PhysBCFunct_8H.html#a60014a8d74bed0d5ae984e600c68dc85">PlaneVector</a> =  amrex::Vector&lt;amrex::FArrayBox&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -240,7 +240,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">enum</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">class</a> <a class="el" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a></td>
+          <td class="memname">enum class <a class="el" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a></td>
         </tr>
       </table>
   </td>
@@ -270,43 +270,43 @@ Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">class</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">FAB</a> , <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">typename</a> DType &gt; </div>
+template&lt;class FAB , typename DType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> BuildFABsFromNetCDFFile </td>
+          <td class="memname">void BuildFABsFromNetCDFFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::Box &amp;&#160;</td>
+          <td class="paramtype">const amrex::Box &amp;&#160;</td>
           <td class="paramname"><em>domain</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; std::string &gt;&#160;</td>
+          <td class="paramtype">amrex::Vector&lt; std::string &gt;&#160;</td>
           <td class="paramname"><em>nc_var_names</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">enum</a> <a class="el" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a> &gt;&#160;</td>
+          <td class="paramtype">amrex::Vector&lt; enum <a class="el" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06">NC_Data_Dims_Type</a> &gt;&#160;</td>
           <td class="paramname"><em>NC_dim_types</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">FAB</a> * &gt;&#160;</td>
+          <td class="paramtype">amrex::Vector&lt; FAB * &gt;&#160;</td>
           <td class="paramname"><em>fab_vars</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>one_time</em> = <code><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">false</a></code>, </td>
+          <td class="paramname"><em>one_time</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -348,15 +348,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__NCFile_8H_a41ff4f048600ccc17103500c9cc273bf_cgraph.png" border="0" usemap="#aREMORA__NCFile_8H_a41ff4f048600ccc17103500c9cc273bf_cgraph" alt=""/></div>
 <map name="aREMORA__NCFile_8H_a41ff4f048600ccc17103500c9cc273bf_cgraph" id="aREMORA__NCFile_8H_a41ff4f048600ccc17103500c9cc273bf_cgraph">
-<area shape="rect" title="Function to read NetCDF variables and fill the corresponding Array4&#39;s." alt="" coords="5,81,197,107"/>
-<area shape="rect" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="245,56,373,81"/>
-<area shape="poly" title=" " alt="" coords="197,80,232,75,232,81,198,85"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="624,56,687,81"/>
-<area shape="poly" title=" " alt="" coords="198,93,373,91,502,82,610,71,611,76,503,87,373,97,198,99"/>
+<area shape="rect" title="Function to read NetCDF variables and fill the corresponding Array4&#39;s." alt="" coords="5,5,197,31"/>
+<area shape="rect" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="245,5,373,31"/>
+<area shape="poly" title=" " alt="" coords="198,15,232,15,232,21,198,21"/>
 <area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="421,5,576,31"/>
-<area shape="poly" title=" " alt="" coords="357,53,436,32,438,37,358,58"/>
-<area shape="poly" title=" " alt="" coords="374,66,610,66,610,71,374,71"/>
-<area shape="poly" title=" " alt="" coords="540,28,612,52,610,57,538,33"/>
+<area shape="poly" title=" " alt="" coords="373,15,407,15,407,21,373,21"/>
 </map>
 </div>
 
@@ -368,10 +364,10 @@ Here is the call graph for this function:</div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">class</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">FAB</a> , <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">typename</a> DType &gt; </div>
+template&lt;class FAB , typename DType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> fill_fab_from_arrays </td>
+          <td class="memname">void fill_fab_from_arrays </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>iv</em>, </td>
@@ -379,13 +375,13 @@ template&lt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.htm
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; <a class="el" href="structNDArray.html">NDArray</a>&lt; amrex::Real &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">amrex::Vector&lt; <a class="el" href="structNDArray.html">NDArray</a>&lt; amrex::Real &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>nc_arrays</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>var_name</em>, </td>
         </tr>
         <tr>
@@ -397,7 +393,7 @@ template&lt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.htm
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">FAB</a> &amp;&#160;</td>
+          <td class="paramtype">FAB &amp;&#160;</td>
           <td class="paramname"><em>temp</em>, </td>
         </tr>
         <tr>
@@ -433,11 +429,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__NCFile_8H_aec6b89e9ef60018dca2f1a9e5b281241_cgraph.png" border="0" usemap="#aREMORA__NCFile_8H_aec6b89e9ef60018dca2f1a9e5b281241_cgraph" alt=""/></div>
 <map name="aREMORA__NCFile_8H_aec6b89e9ef60018dca2f1a9e5b281241_cgraph" id="aREMORA__NCFile_8H_aec6b89e9ef60018dca2f1a9e5b281241_cgraph">
-<area shape="rect" title="Helper function for reading data from NetCDF file into a provided FAB." alt="" coords="5,31,157,56"/>
+<area shape="rect" title="Helper function for reading data from NetCDF file into a provided FAB." alt="" coords="5,5,157,31"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="205,5,388,31"/>
-<area shape="poly" title=" " alt="" coords="157,32,191,28,192,33,158,37"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="265,55,328,80"/>
-<area shape="poly" title=" " alt="" coords="158,49,252,60,252,65,157,54"/>
+<area shape="poly" title=" " alt="" coords="158,15,192,15,192,21,158,21"/>
 </map>
 </div>
 
@@ -452,13 +446,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool QueryNetCDFHasVars </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramtype">const amrex::Vector&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>var_names</em>&#160;</td>
         </tr>
         <tr>
@@ -483,18 +477,15 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCFile_8cpp_source.html#l00150">150</a> of file <a class="el" href="REMORA__NCFile_8cpp_source.html">REMORA_NCFile.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02063">REMORA::init_only()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">NCTimeSeriesBoundary::Initialize()</a>, <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00637">read_clim_nudg_coeff_from_netcdf()</a>, and <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00467">read_optional_grid_vars_from_netcdf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">REMORA::init_only()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">NCTimeSeriesBoundary::Initialize()</a>, <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00637">read_clim_nudg_coeff_from_netcdf()</a>, and <a class="el" href="REMORA__ReadFromInitNetcdf_8cpp_source.html#l00467">read_optional_grid_vars_from_netcdf()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_cgraph.png" border="0" usemap="#aREMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_cgraph" alt=""/></div>
 <map name="aREMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_cgraph" id="aREMORA__NCFile_8H_a4249e844e315ed3cb1e750d3798a7baf_cgraph">
-<area shape="rect" title="Helper function for testing whether a file carries every named variable." alt="" coords="5,31,169,56"/>
+<area shape="rect" title="Helper function for testing whether a file carries every named variable." alt="" coords="5,5,169,31"/>
 <area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="217,5,372,31"/>
-<area shape="poly" title=" " alt="" coords="169,31,203,26,204,32,170,36"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="420,31,483,56"/>
-<area shape="poly" title=" " alt="" coords="170,41,406,41,406,46,170,46"/>
-<area shape="poly" title=" " alt="" coords="373,28,407,34,406,39,372,33"/>
+<area shape="poly" title=" " alt="" coords="170,15,203,15,203,21,170,21"/>
 </map>
 </div>
 <div class="dynheader">
@@ -561,19 +552,19 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool QueryNetCDFVarAttrStr </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>var_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>attr_name</em>&#160;</td>
         </tr>
         <tr>
@@ -601,12 +592,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__NCFile_8H_aa6354e0acb3f047d2772642bc3d5c06f_cgraph.png" border="0" usemap="#aREMORA__NCFile_8H_aa6354e0acb3f047d2772642bc3d5c06f_cgraph" alt=""/></div>
 <map name="aREMORA__NCFile_8H_aa6354e0acb3f047d2772642bc3d5c06f_cgraph" id="aREMORA__NCFile_8H_aa6354e0acb3f047d2772642bc3d5c06f_cgraph">
-<area shape="rect" title="Helper function for testing for the presence of a single variable attribute." alt="" coords="5,31,180,56"/>
+<area shape="rect" title="Helper function for testing for the presence of a single variable attribute." alt="" coords="5,5,180,31"/>
 <area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="228,5,383,31"/>
-<area shape="poly" title=" " alt="" coords="180,30,214,26,215,31,180,36"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="431,31,493,56"/>
-<area shape="poly" title=" " alt="" coords="180,41,417,41,417,46,180,46"/>
-<area shape="poly" title=" " alt="" coords="383,28,418,34,417,39,382,33"/>
+<area shape="poly" title=" " alt="" coords="180,15,214,15,214,21,180,21"/>
 </map>
 </div>
 
@@ -618,31 +606,31 @@ Here is the call graph for this function:</div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">typename</a> DType &gt; </div>
+template&lt;typename DType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> ReadNetCDFFile </td>
+          <td class="memname">void ReadNetCDFFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; std::string &gt;&#160;</td>
+          <td class="paramtype">amrex::Vector&lt; std::string &gt;&#160;</td>
           <td class="paramname"><em>names</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">amrex::Vector</a>&lt; <a class="el" href="structNDArray.html">NDArray</a>&lt; DType &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">amrex::Vector&lt; <a class="el" href="structNDArray.html">NDArray</a>&lt; DType &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>arrays</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>one_time</em> = <code><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">false</a></code>, </td>
+          <td class="paramname"><em>one_time</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -678,12 +666,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__NCFile_8H_a3e720d7f1573b1b0c7cb9a0b7b8bb871_cgraph.png" border="0" usemap="#aREMORA__NCFile_8H_a3e720d7f1573b1b0c7cb9a0b7b8bb871_cgraph" alt=""/></div>
 <map name="aREMORA__NCFile_8H_a3e720d7f1573b1b0c7cb9a0b7b8bb871_cgraph" id="aREMORA__NCFile_8H_a3e720d7f1573b1b0c7cb9a0b7b8bb871_cgraph">
-<area shape="rect" title="Read in data from netcdf file and save to data arrays." alt="" coords="5,31,133,56"/>
+<area shape="rect" title="Read in data from netcdf file and save to data arrays." alt="" coords="5,5,133,31"/>
 <area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="181,5,336,31"/>
-<area shape="poly" title=" " alt="" coords="133,32,167,28,168,33,134,37"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="384,31,447,56"/>
-<area shape="poly" title=" " alt="" coords="134,41,370,41,370,46,134,46"/>
-<area shape="poly" title=" " alt="" coords="337,28,371,34,370,39,336,33"/>
+<area shape="poly" title=" " alt="" coords="133,15,167,15,167,21,133,21"/>
 </map>
 </div>
 <div class="dynheader">
@@ -744,13 +729,13 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">double ReadNetCDFTimeOffsetDays </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>time_name</em>, </td>
         </tr>
         <tr>
@@ -801,44 +786,31 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__NCFile_8H_aaa5a20305e771e7b0e25ee04fceb9781_cgraph.png" border="0" usemap="#aREMORA__NCFile_8H_aaa5a20305e771e7b0e25ee04fceb9781_cgraph" alt=""/></div>
 <map name="aREMORA__NCFile_8H_aaa5a20305e771e7b0e25ee04fceb9781_cgraph" id="aREMORA__NCFile_8H_aaa5a20305e771e7b0e25ee04fceb9781_cgraph">
-<area shape="rect" title="Offset, in days, that puts a file&#39;s time variable onto the model clock." alt="" coords="5,283,215,308"/>
-<area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="557,110,712,135"/>
-<area shape="poly" title=" " alt="" coords="132,280,190,249,262,217,338,191,417,168,555,135,556,140,418,173,340,196,264,222,192,254,134,285"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="1017,336,1080,362"/>
-<area shape="poly" title=" " alt="" coords="121,281,178,226,218,194,261,167,455,69,542,33,627,10,668,4,710,3,751,6,793,15,836,28,880,48,925,74,971,107,994,129,1012,155,1026,184,1036,215,1047,274,1050,322,1045,322,1042,275,1031,216,1021,186,1007,158,990,133,968,111,922,79,877,53,834,33,792,20,751,11,710,8,669,10,628,15,544,38,457,74,264,171,221,198,181,230,125,285"/>
-<area shape="rect" href="REMORA__TimeUnits_8H.html#a0dffe91d072fa27c2835a7718fc7eab4" title="Whether a CF calendar attribute names the calendar time_ref selects." alt="" coords="537,193,732,233"/>
-<area shape="poly" title=" " alt="" coords="147,280,201,264,262,249,397,228,523,217,524,222,398,234,263,254,203,269,149,285"/>
-<area shape="rect" href="REMORA__TimeUnits_8H.html#a18f342902ffb9bfa00c6a0fe3d2a98af" title="Parse a CF time&#45;units attribute." alt="" coords="781,260,969,286"/>
-<area shape="poly" title=" " alt="" coords="215,290,767,273,767,279,215,295"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#aa60c96ed488ba0dfb35614d4d27b8c96" title="CF calendar name for time_ref. ROMS ref_clock&#39;s Rclockcalendar." alt="" coords="297,308,455,334"/>
-<area shape="poly" title=" " alt="" coords="215,303,284,310,283,315,215,308"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a2bf7942da8b3b8b13cb387b96ea74ca1" title="Reference date as YYYY&#45;MM&#45;DD hh:mm:ss. ROMS ref_clock&#39;s Rclockstring." alt="" coords="547,423,722,448"/>
-<area shape="poly" title=" " alt="" coords="125,307,181,358,220,386,264,408,332,427,403,438,472,442,534,441,534,447,471,447,402,443,331,432,262,413,218,391,178,362,121,311"/>
-<area shape="rect" href="REMORA__TimeUnits_8H.html#a640da5f105c589de8f369486aff47afa" title="The reference date of units as YYYY&#45;MM&#45;DD hh:mm:ss." alt="" coords="285,358,467,398"/>
-<area shape="poly" title=" " alt="" coords="149,306,263,344,290,352,289,357,262,349,147,311"/>
-<area shape="rect" href="REMORA__TimeUnits_8H.html#a8407e24e830c9927ae16683959900b5a" title="Days to add to a time counted from units&#39; reference date to count it from the date time_ref names ins..." alt="" coords="263,539,489,564"/>
-<area shape="poly" title=" " alt="" coords="125,307,183,370,264,452,350,528,347,532,261,456,180,374,121,310"/>
-<area shape="poly" title=" " alt="" coords="699,107,761,101,832,102,869,107,905,116,939,130,971,150,990,167,1006,188,1029,235,1042,283,1048,322,1043,323,1037,284,1024,237,1002,191,986,171,968,154,937,135,904,121,868,112,832,107,761,106,700,112"/>
-<area shape="poly" title=" " alt="" coords="680,190,742,169,817,154,857,152,897,155,935,164,971,181,988,195,1003,211,1025,249,1039,288,1046,322,1041,323,1033,290,1020,251,998,214,984,199,968,186,933,169,896,160,857,157,818,159,743,175,682,195"/>
-<area shape="rect" href="namespaceremora__time__units__detail.html#a33e5f125b3348e491928b8e581b26bb4" title=" " alt="" coords="780,196,969,236"/>
-<area shape="poly" title=" " alt="" coords="732,211,766,212,766,217,732,217"/>
-<area shape="poly" title=" " alt="" coords="950,234,971,245,991,263,1009,283,1036,323,1032,326,1005,286,988,267,968,250,948,238"/>
-<area shape="poly" title=" " alt="" coords="919,283,970,303,1016,327,1014,331,968,307,918,288"/>
-<area shape="poly" title=" " alt="" coords="455,322,1004,344,1004,350,455,327"/>
-<area shape="poly" title=" " alt="" coords="722,431,841,419,906,408,968,390,1016,367,1019,372,970,395,907,413,841,425,723,436"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="807,463,942,488"/>
-<area shape="poly" title=" " alt="" coords="712,446,794,460,794,465,711,451"/>
-<area shape="poly" title=" " alt="" coords="929,460,968,441,1004,408,1031,372,1035,375,1008,411,971,446,931,465"/>
-<area shape="poly" title=" " alt="" coords="467,372,1004,348,1004,354,467,377"/>
-<area shape="poly" title=" " alt="" coords="403,562,504,604,574,628,652,646,734,657,817,656,857,649,896,638,933,622,968,600,992,578,1010,550,1024,520,1034,488,1044,425,1046,375,1051,375,1049,426,1039,489,1029,522,1015,553,996,581,971,604,936,627,898,643,858,654,818,661,734,663,651,652,572,633,502,609,401,567"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a2176a2e87eaaedaae188fa21a9ed42aa" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="807,564,942,590"/>
-<area shape="poly" title=" " alt="" coords="490,555,794,570,793,576,490,560"/>
-<area shape="rect" href="REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18" title="Day number of the reference date implied by time_ref." alt="" coords="555,514,714,539"/>
-<area shape="poly" title=" " alt="" coords="489,538,542,533,542,538,490,543"/>
-<area shape="poly" title=" " alt="" coords="937,562,968,543,998,503,1020,457,1034,412,1041,375,1047,376,1039,414,1025,459,1003,506,971,547,939,566"/>
-<area shape="poly" title=" " alt="" coords="702,536,763,542,833,541,903,528,937,516,968,499,996,472,1017,439,1031,405,1040,375,1045,376,1036,407,1021,442,1000,476,971,503,939,521,905,533,833,546,763,547,702,542"/>
-<area shape="poly" title=" " alt="" coords="695,511,800,489,801,494,696,516"/>
-<area shape="poly" title=" " alt="" coords="696,536,801,559,800,564,695,542"/>
+<area shape="rect" title="Offset, in days, that puts a file&#39;s time variable onto the model clock." alt="" coords="5,169,215,195"/>
+<area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="299,5,453,31"/>
+<area shape="poly" title=" " alt="" coords="119,168,175,106,216,71,261,41,285,31,287,36,264,46,219,75,178,110,123,171"/>
+<area shape="rect" href="REMORA__TimeUnits_8H.html#a0dffe91d072fa27c2835a7718fc7eab4" title="Whether a CF calendar attribute names the calendar time_ref selects." alt="" coords="279,55,473,95"/>
+<area shape="poly" title=" " alt="" coords="133,167,190,137,262,105,284,97,286,102,264,110,193,142,135,172"/>
+<area shape="rect" href="REMORA__TimeUnits_8H.html#a18f342902ffb9bfa00c6a0fe3d2a98af" title="Parse a CF time&#45;units attribute." alt="" coords="282,120,470,145"/>
+<area shape="poly" title=" " alt="" coords="179,167,293,145,294,151,180,172"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#aa60c96ed488ba0dfb35614d4d27b8c96" title="CF calendar name for time_ref. ROMS ref_clock&#39;s Rclockcalendar." alt="" coords="297,169,455,195"/>
+<area shape="poly" title=" " alt="" coords="215,179,284,179,284,185,215,185"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a2bf7942da8b3b8b13cb387b96ea74ca1" title="Reference date as YYYY&#45;MM&#45;DD hh:mm:ss. ROMS ref_clock&#39;s Rclockstring." alt="" coords="545,227,719,252"/>
+<area shape="poly" title=" " alt="" coords="185,192,263,203,531,229,531,235,262,209,185,197"/>
+<area shape="rect" href="REMORA__TimeUnits_8H.html#a640da5f105c589de8f369486aff47afa" title="The reference date of units as YYYY&#45;MM&#45;DD hh:mm:ss." alt="" coords="285,270,467,310"/>
+<area shape="poly" title=" " alt="" coords="138,192,264,249,302,263,300,268,262,254,136,197"/>
+<area shape="rect" href="REMORA__TimeUnits_8H.html#a8407e24e830c9927ae16683959900b5a" title="Days to add to a time counted from units&#39; reference date to count it from the date time_ref names ins..." alt="" coords="263,335,489,360"/>
+<area shape="poly" title=" " alt="" coords="123,193,178,255,219,290,264,320,283,328,281,333,261,324,215,294,175,258,119,197"/>
+<area shape="rect" href="namespaceremora__time__units__detail.html#a33e5f125b3348e491928b8e581b26bb4" title=" " alt="" coords="537,55,727,95"/>
+<area shape="poly" title=" " alt="" coords="473,73,523,73,523,78,473,78"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="775,260,909,285"/>
+<area shape="poly" title=" " alt="" coords="713,249,761,257,760,262,712,255"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a2176a2e87eaaedaae188fa21a9ed42aa" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="775,309,909,335"/>
+<area shape="poly" title=" " alt="" coords="489,339,761,324,761,329,490,344"/>
+<area shape="rect" href="REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18" title="Day number of the reference date implied by time_ref." alt="" coords="553,284,711,309"/>
+<area shape="poly" title=" " alt="" coords="441,332,553,309,554,315,442,337"/>
+<area shape="poly" title=" " alt="" coords="711,285,761,279,761,285,712,290"/>
+<area shape="poly" title=" " alt="" coords="712,304,761,310,761,315,711,309"/>
 </map>
 </div>
 <div class="dynheader">
@@ -867,19 +839,19 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">std::string ReadNetCDFVarAttrStr </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>var_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>attr_name</em>&#160;</td>
         </tr>
         <tr>
@@ -907,12 +879,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__NCFile_8H_af8eb0b5eb41bbbf48a6dbced8cd0d6ea_cgraph.png" border="0" usemap="#aREMORA__NCFile_8H_af8eb0b5eb41bbbf48a6dbced8cd0d6ea_cgraph" alt=""/></div>
 <map name="aREMORA__NCFile_8H_af8eb0b5eb41bbbf48a6dbced8cd0d6ea_cgraph" id="aREMORA__NCFile_8H_af8eb0b5eb41bbbf48a6dbced8cd0d6ea_cgraph">
-<area shape="rect" title="Helper function for reading a single variable attribute." alt="" coords="5,31,173,56"/>
+<area shape="rect" title="Helper function for reading a single variable attribute." alt="" coords="5,5,173,31"/>
 <area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="221,5,376,31"/>
-<area shape="poly" title=" " alt="" coords="173,31,208,26,208,32,174,36"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="424,31,487,56"/>
-<area shape="poly" title=" " alt="" coords="174,41,411,41,411,46,174,46"/>
-<area shape="poly" title=" " alt="" coords="377,28,411,34,410,39,376,33"/>
+<area shape="poly" title=" " alt="" coords="174,15,208,15,208,21,174,21"/>
 </map>
 </div>
 

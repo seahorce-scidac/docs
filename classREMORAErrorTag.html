@@ -124,30 +124,30 @@ Collaboration diagram for REMORAErrorTag:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0cdd3aab7b6dd61938bf479d383c692" id="r_ad0cdd3aab7b6dd61938bf479d383c692"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#ad0cdd3aab7b6dd61938bf479d383c692">SetTimeWindow</a> (double <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">min_elapsed</a>, double <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">max_elapsed</a>, double <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">min_total</a>, double <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">max_total</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="memitem:ad0cdd3aab7b6dd61938bf479d383c692" id="r_ad0cdd3aab7b6dd61938bf479d383c692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#ad0cdd3aab7b6dd61938bf479d383c692">SetTimeWindow</a> (double min_elapsed, double max_elapsed, double min_total, double max_total) noexcept</td></tr>
 <tr class="separator:ad0cdd3aab7b6dd61938bf479d383c692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a099529e2eb54490b4a33bde85431efff" id="r_a099529e2eb54490b4a33bde85431efff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#a099529e2eb54490b4a33bde85431efff">ActiveAt</a> (double <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">elapsed</a>, double <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">total</a>) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">noexcept</a></td></tr>
+<tr class="memitem:a099529e2eb54490b4a33bde85431efff" id="r_a099529e2eb54490b4a33bde85431efff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#a099529e2eb54490b4a33bde85431efff">ActiveAt</a> (double elapsed, double total) const noexcept</td></tr>
 <tr class="memdesc:a099529e2eb54490b4a33bde85431efff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this criterion applies at the given elapsed and total times.  <br /></td></tr>
 <tr class="separator:a099529e2eb54490b4a33bde85431efff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad102aef4d1e340288929a3c22c20baa8" id="r_ad102aef4d1e340288929a3c22c20baa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#ad102aef4d1e340288929a3c22c20baa8">operator()</a> (amrex::TagBoxArray &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">tba</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::MultiFab *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">mf</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::MultiFab *<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">mskr3d</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">char</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">clearval</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">char</a> <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">tagval</a>, amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a33447f96f00d708dd345d6eb79c95d41">time</a>, int <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">level</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::Geometry &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">geom</a>, <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::IntVect &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">mask_lo</a>=amrex::IntVect::TheZeroVector(), <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::IntVect &amp;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">mask_hi</a>=amrex::IntVect::TheZeroVector()) <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a></td></tr>
+<tr class="memitem:ad102aef4d1e340288929a3c22c20baa8" id="r_ad102aef4d1e340288929a3c22c20baa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#ad102aef4d1e340288929a3c22c20baa8">operator()</a> (amrex::TagBoxArray &amp;tba, const amrex::MultiFab *mf, const amrex::MultiFab *mskr3d, char clearval, char tagval, amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a33447f96f00d708dd345d6eb79c95d41">time</a>, int level, const amrex::Geometry &amp;geom, const amrex::IntVect &amp;mask_lo=amrex::IntVect::TheZeroVector(), const amrex::IntVect &amp;mask_hi=amrex::IntVect::TheZeroVector()) const</td></tr>
 <tr class="separator:ad102aef4d1e340288929a3c22c20baa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a230e41252c3b17e39d6aba00f18c7486" id="r_a230e41252c3b17e39d6aba00f18c7486"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#a230e41252c3b17e39d6aba00f18c7486">m_min_elapsed</a> = std::numeric_limits&lt;double&gt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">::lowest</a>()</td></tr>
+<tr class="memitem:a230e41252c3b17e39d6aba00f18c7486" id="r_a230e41252c3b17e39d6aba00f18c7486"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#a230e41252c3b17e39d6aba00f18c7486">m_min_elapsed</a> = std::numeric_limits&lt;double&gt;::lowest()</td></tr>
 <tr class="separator:a230e41252c3b17e39d6aba00f18c7486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6248b562970aea05395714d08a2c055" id="r_ae6248b562970aea05395714d08a2c055"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#ae6248b562970aea05395714d08a2c055">m_max_elapsed</a> = std::numeric_limits&lt;double&gt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">::max</a>()</td></tr>
+<tr class="memitem:ae6248b562970aea05395714d08a2c055" id="r_ae6248b562970aea05395714d08a2c055"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#ae6248b562970aea05395714d08a2c055">m_max_elapsed</a> = std::numeric_limits&lt;double&gt;::max()</td></tr>
 <tr class="separator:ae6248b562970aea05395714d08a2c055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a649ca2f2afa8654575073a780c5b5a4b" id="r_a649ca2f2afa8654575073a780c5b5a4b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#a649ca2f2afa8654575073a780c5b5a4b">m_min_total</a> = std::numeric_limits&lt;double&gt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">::lowest</a>()</td></tr>
+<tr class="memitem:a649ca2f2afa8654575073a780c5b5a4b" id="r_a649ca2f2afa8654575073a780c5b5a4b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#a649ca2f2afa8654575073a780c5b5a4b">m_min_total</a> = std::numeric_limits&lt;double&gt;::lowest()</td></tr>
 <tr class="separator:a649ca2f2afa8654575073a780c5b5a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a346df918de0ee608260f0533f9a04b82" id="r_a346df918de0ee608260f0533f9a04b82"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#a346df918de0ee608260f0533f9a04b82">m_max_total</a> = std::numeric_limits&lt;double&gt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">::max</a>()</td></tr>
+<tr class="memitem:a346df918de0ee608260f0533f9a04b82" id="r_a346df918de0ee608260f0533f9a04b82"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORAErrorTag.html#a346df918de0ee608260f0533f9a04b82">m_max_total</a> = std::numeric_limits&lt;double&gt;::max()</td></tr>
 <tr class="separator:a346df918de0ee608260f0533f9a04b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An amrex::AMRErrorTag that does not let the coastline drive refinement.</p>
 <p>AMReX writes each data-dependent test twice: a plain form, and an embedded-boundary form that skips a covered cell and differences only across a face EBCellFlag reports as open. <a class="el" href="classREMORA.html" title="Class that stores all relevant simulation state data with methods for time stepping.">REMORA</a>'s land/sea mask plays the part of that connectivity &ndash; tracers on the land side are zeroed every step, so a difference taken across a coast measures the coast, not the flow. This class is that EB form with mskr in place of the flags.</p>
 <p>Guarding each criterion as it is evaluated, rather than clearing land-adjacent tags afterwards, leaves every other criterion's tags alone &ndash; including a static in_box_lo/in_box_hi region drawn across a coast.</p>
-<p>The inheritance is private on purpose: AMRErrorTag::operator() is not virtual, so converting a criterion back to the base would compile and quietly run the unguarded test on masked data. Private inheritance makes that ill-formed while still granting access to the protected m_test, m_value and m_info. Only the constructors and <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">Field()</a> are re-exported; the base's seven-argument <a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">operator()</a> deliberately is not, so a call that forgets the mask will not compile. </p>
+<p>The inheritance is private on purpose: AMRErrorTag::operator() is not virtual, so converting a criterion back to the base would compile and quietly run the unguarded test on masked data. Private inheritance makes that ill-formed while still granting access to the protected m_test, m_value and m_info. Only the constructors and Field() are re-exported; the base's seven-argument operator() deliberately is not, so a call that forgets the mask will not compile. </p>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00030">30</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -188,16 +188,6 @@ Private Attributes</h2></td></tr>
 <p>Whether this criterion applies at the given elapsed and total times. </p>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00056">56</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classREMORAErrorTag_a099529e2eb54490b4a33bde85431efff_cgraph.png" border="0" usemap="#aclassREMORAErrorTag_a099529e2eb54490b4a33bde85431efff_cgraph" alt=""/></div>
-<map name="aclassREMORAErrorTag_a099529e2eb54490b4a33bde85431efff_cgraph" id="aclassREMORAErrorTag_a099529e2eb54490b4a33bde85431efff_cgraph">
-<area shape="rect" title="Whether this criterion applies at the given elapsed and total times." alt="" coords="5,5,200,31"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="248,5,311,31"/>
-<area shape="poly" title=" " alt="" coords="200,15,234,15,234,21,200,21"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -208,7 +198,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> REMORAErrorTag::operator() </td>
+          <td class="memname">void REMORAErrorTag::operator() </td>
           <td>(</td>
           <td class="paramtype">amrex::TagBoxArray &amp;&#160;</td>
           <td class="paramname"><em>tba</em>, </td>
@@ -216,25 +206,25 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::MultiFab *&#160;</td>
+          <td class="paramtype">const amrex::MultiFab *&#160;</td>
           <td class="paramname"><em>mf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::MultiFab *&#160;</td>
+          <td class="paramtype">const amrex::MultiFab *&#160;</td>
           <td class="paramname"><em>mskr3d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">char</a>&#160;</td>
+          <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>clearval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">char</a>&#160;</td>
+          <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>tagval</em>, </td>
         </tr>
         <tr>
@@ -252,19 +242,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::Geometry &amp;&#160;</td>
+          <td class="paramtype">const amrex::Geometry &amp;&#160;</td>
           <td class="paramname"><em>geom</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::IntVect &amp;&#160;</td>
+          <td class="paramtype">const amrex::IntVect &amp;&#160;</td>
           <td class="paramname"><em>mask_lo</em> = <code>amrex::IntVect::TheZeroVector()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">const</a> amrex::IntVect &amp;&#160;</td>
+          <td class="paramtype">const amrex::IntVect &amp;&#160;</td>
           <td class="paramname"><em>mask_hi</em> = <code>amrex::IntVect::TheZeroVector()</code>&#160;</td>
         </tr>
         <tr>
@@ -300,11 +290,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classREMORAErrorTag_ad102aef4d1e340288929a3c22c20baa8_cgraph.png" border="0" usemap="#aclassREMORAErrorTag_ad102aef4d1e340288929a3c22c20baa8_cgraph" alt=""/></div>
 <map name="aclassREMORAErrorTag_ad102aef4d1e340288929a3c22c20baa8_cgraph" id="aclassREMORAErrorTag_ad102aef4d1e340288929a3c22c20baa8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,211,56"/>
+<area shape="rect" title=" " alt="" coords="5,5,211,31"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="259,5,441,31"/>
-<area shape="poly" title=" " alt="" coords="211,30,244,26,245,32,211,35"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="319,55,381,80"/>
-<area shape="poly" title=" " alt="" coords="211,51,306,60,305,66,211,56"/>
+<area shape="poly" title=" " alt="" coords="211,15,245,15,245,21,211,21"/>
 </map>
 </div>
 
@@ -320,7 +308,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">void</a> REMORAErrorTag::SetTimeWindow </td>
+          <td class="memname">void REMORAErrorTag::SetTimeWindow </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>min_elapsed</em>, </td>
@@ -358,16 +346,6 @@ Here is the call graph for this function:</div>
 <p>Restrict this criterion to a time window, given as elapsed time (seconds since remora.start_time), as total time (seconds on the model clock), or both, in which case both must hold. Held here in double rather than in AMRErrorTagInfo, whose Real would round a calendar-scale total time in a single-precision build. </p>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00046">46</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classREMORAErrorTag_ad0cdd3aab7b6dd61938bf479d383c692_cgraph.png" border="0" usemap="#aclassREMORAErrorTag_ad0cdd3aab7b6dd61938bf479d383c692_cgraph" alt=""/></div>
-<map name="aclassREMORAErrorTag_ad0cdd3aab7b6dd61938bf479d383c692_cgraph" id="aclassREMORAErrorTag_ad0cdd3aab7b6dd61938bf479d383c692_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,252,31"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897" title=" " alt="" coords="300,5,363,31"/>
-<area shape="poly" title=" " alt="" coords="252,15,287,15,287,21,252,21"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -382,7 +360,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double REMORAErrorTag::m_max_elapsed = std::numeric_limits&lt;double&gt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">::max</a>()</td>
+          <td class="memname">double REMORAErrorTag::m_max_elapsed = std::numeric_limits&lt;double&gt;::max()</td>
         </tr>
       </table>
   </td>
@@ -408,7 +386,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double REMORAErrorTag::m_max_total = std::numeric_limits&lt;double&gt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">::max</a>()</td>
+          <td class="memname">double REMORAErrorTag::m_max_total = std::numeric_limits&lt;double&gt;::max()</td>
         </tr>
       </table>
   </td>
@@ -434,7 +412,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double REMORAErrorTag::m_min_elapsed = std::numeric_limits&lt;double&gt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">::lowest</a>()</td>
+          <td class="memname">double REMORAErrorTag::m_min_elapsed = std::numeric_limits&lt;double&gt;::lowest()</td>
         </tr>
       </table>
   </td>
@@ -460,7 +438,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double REMORAErrorTag::m_min_total = std::numeric_limits&lt;double&gt;<a class="el" href="REMORA__InitAnalyticBathymetry__Advection_8H.html#a8a679062f388e820893598db05e40897">::lowest</a>()</td>
+          <td class="memname">double REMORAErrorTag::m_min_total = std::numeric_limits&lt;double&gt;::lowest()</td>
         </tr>
       </table>
   </td>

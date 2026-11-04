@@ -25,6 +25,11 @@ var annotated_dup =
       [ "Fennel", "namespaceREMORABiology_1_1Fennel.html", [
         [ "Components", "structREMORABiology_1_1Fennel_1_1Components.html", "structREMORABiology_1_1Fennel_1_1Components" ]
       ] ],
+      [ "Biology", "classREMORABiology_1_1Biology.html", "classREMORABiology_1_1Biology" ],
+      [ "BiologyAdvanceContext", "structREMORABiology_1_1BiologyAdvanceContext.html", "structREMORABiology_1_1BiologyAdvanceContext" ],
+      [ "BiologyDeclaration", "structREMORABiology_1_1BiologyDeclaration.html", "structREMORABiology_1_1BiologyDeclaration" ],
+      [ "BiologyInitContext", "structREMORABiology_1_1BiologyInitContext.html", "structREMORABiology_1_1BiologyInitContext" ],
+      [ "FennelBiology", "classREMORABiology_1_1FennelBiology.html", "classREMORABiology_1_1FennelBiology" ],
       [ "FennelParameters", "structREMORABiology_1_1FennelParameters.html", "structREMORABiology_1_1FennelParameters" ]
     ] ],
     [ "REMORAMaskedAvgDown", "namespaceREMORAMaskedAvgDown.html", [

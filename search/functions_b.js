@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()']]],
+  ['name_0',['name',['../classREMORABiology_1_1FennelBiology.html#ae68443b08b2867769d4da4d75c175855',1,'REMORABiology::FennelBiology::name()'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()'],['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()'],['../classREMORABiology_1_1Biology.html#a33bbaec96c3802978b5b2db6ef90e9e3',1,'REMORABiology::Biology::name()']]],
   ['ncfile_1',['NCFile',['../classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423',1,'ncutils::NCFile']]],
   ['nctimeseries_2',['NCTimeSeries',['../classNCTimeSeries.html#aab4915c7eaa95f39c19064c40e27e964',1,'NCTimeSeries']]],
   ['nctimeseriesboundary_3',['NCTimeSeriesBoundary',['../classNCTimeSeriesBoundary.html#a7c1c8085948b2b52ac093b1b08d8dc6b',1,'NCTimeSeriesBoundary']]],

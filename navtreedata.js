@@ -66,17 +66,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74",
-"REMORA__InitAnalyticProb__DoubleGyre_8H.html#a75f9d7f9e2a71a0135a9a729ce2f2d6c",
-"REMORA__NCInterface_8cpp.html",
-"REMORA__vert__mean__3d_8cpp_source.html",
-"classREMORA.html#a1eef83c89b5b470bac43eaff53860fe0",
-"classREMORA.html#a9346e6b7514811842502f8c68393f313",
-"classREMORAFillPatcher.html#a350e4b15d395506050608810cd1cc827",
-"globals_func_r.html",
-"structNDArray.html#abc8163390be8642c7b0f9cc366e084a8",
-"structSolverChoice.html#a933da4a3a80aac592c3009df3b93fb98",
-"structncutils_1_1NCVar.html#afb50217aecfd6a2dfe79a3a015f298d7"
+"REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ad37e67db17cfd059f2852e2673b9e8ef",
+"REMORA__InitAnalyticProb__DogboneAnalytic_8H.html#a0e309d9162590f5d8287ae33be5c24ff",
+"REMORA__NCFile_8H.html#a4249e844e315ed3cb1e750d3798a7baf",
+"REMORA__scale__rhs__vars_8cpp.html",
+"classREMORA.html#a17e7f29b155b7bde8c98e011c8882bb0",
+"classREMORA.html#a8a16e552c794ae05498e4cb0a65399af",
+"classREMORABiology_1_1Biology.html",
+"functions_vars_h.html",
+"namespacemod__scalars.html#a96b32043ef463cc78050b6d20bb0b9db",
+"structREMORAParticlesIntIdxSoA.html",
+"structncutils_1_1NCVar.html#a2ad28b44a64152bb00f1a7eeb0084845"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

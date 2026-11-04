@@ -7,7 +7,7 @@ var searchData=
   ['impose_5fzvel_5fbcs_4',['impose_zvel_bcs',['../classREMORAPhysBCFunct.html#afd37b8840ee021ea70a9e1b62538c265',1,'REMORAPhysBCFunct']]],
   ['init_5fanalytic_5',['init_analytic',['../classREMORA.html#abaf362ee14357b8dc0091e3ac3e98cef',1,'REMORA']]],
   ['init_5fanalytic_5fbathymetry_6',['init_analytic_bathymetry',['../classProblemBase.html#aeb76967b7fa42cb5e29d0be55fac98c8',1,'ProblemBase']]],
-  ['init_5fanalytic_5fbiology_7',['init_analytic_biology',['../classProblemBase.html#adc12e9596aac251603c2b17a244a5cfe',1,'ProblemBase']]],
+  ['init_5fanalytic_5fbiology_7',['init_analytic_biology',['../classProblemBase.html#a659a1a8f95b13cd9a9ad39362ce89578',1,'ProblemBase']]],
   ['init_5fanalytic_5fcoriolis_8',['init_analytic_coriolis',['../classProblemBase.html#a8927bf96fa2a65addf0186c2a268bca8',1,'ProblemBase']]],
   ['init_5fanalytic_5fgrid_5fscale_9',['init_analytic_grid_scale',['../classProblemBase.html#a9ae1790470889e08d9a2bd59fd37947b',1,'ProblemBase']]],
   ['init_5fanalytic_5fhmix_10',['init_analytic_hmix',['../classProblemBase.html#a45a7d5b91618f41b13278abd82b42632',1,'ProblemBase']]],
