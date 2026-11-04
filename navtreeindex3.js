@@ -101,10 +101,10 @@ var NAVTREEINDEX3 =
 "REMORA__Tagging_8cpp_source.html":[3,0,0,21],
 "REMORA__TimeInterpolatedData_8H.html":[3,0,0,1,10],
 "REMORA__TimeInterpolatedData_8H_source.html":[3,0,0,1,10],
-"REMORA__TimeStepML_8cpp.html":[3,0,0,6,28],
-"REMORA__TimeStepML_8cpp_source.html":[3,0,0,6,28],
-"REMORA__TimeStep_8cpp.html":[3,0,0,6,27],
-"REMORA__TimeStep_8cpp_source.html":[3,0,0,6,27],
+"REMORA__TimeStepML_8cpp.html":[3,0,0,6,27],
+"REMORA__TimeStepML_8cpp_source.html":[3,0,0,6,27],
+"REMORA__TimeStep_8cpp.html":[3,0,0,6,26],
+"REMORA__TimeStep_8cpp_source.html":[3,0,0,6,26],
 "REMORA__TimeUnits_8H.html":[3,0,0,7,3],
 "REMORA__TimeUnits_8H.html#a0dffe91d072fa27c2835a7718fc7eab4":[3,0,0,7,3,5],
 "REMORA__TimeUnits_8H.html#a18f342902ffb9bfa00c6a0fe3d2a98af":[3,0,0,7,3,6],
@@ -246,8 +246,8 @@ var NAVTREEINDEX3 =
 "REMORA__rho__eos_8cpp_source.html":[3,0,0,6,18],
 "REMORA__rhs__t__3d_8cpp.html":[3,0,0,6,19],
 "REMORA__rhs__t__3d_8cpp_source.html":[3,0,0,6,19],
-"REMORA__rhs__uv__2d_8cpp.html":[3,0,0,6,20],
-"REMORA__rhs__uv__2d_8cpp_source.html":[3,0,0,6,20],
-"REMORA__rhs__uv__3d_8cpp.html":[3,0,0,6,21],
-"REMORA__rhs__uv__3d_8cpp_source.html":[3,0,0,6,21]
+"REMORA__rhs__uv__3d_8cpp.html":[3,0,0,6,20],
+"REMORA__rhs__uv__3d_8cpp_source.html":[3,0,0,6,20],
+"REMORA__scale__rhs__vars_8cpp.html":[3,0,0,6,21],
+"REMORA__scale__rhs__vars_8cpp_source.html":[3,0,0,6,21]
 };

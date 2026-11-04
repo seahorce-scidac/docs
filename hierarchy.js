@@ -12,6 +12,7 @@ var hierarchy =
     [ "REMORABiology::BiologyAdvanceContext", "structREMORABiology_1_1BiologyAdvanceContext.html", null ],
     [ "REMORABiology::BiologyDeclaration", "structREMORABiology_1_1BiologyDeclaration.html", null ],
     [ "REMORABiology::BiologyInitContext", "structREMORABiology_1_1BiologyInitContext.html", null ],
+    [ "REMORA::CF2DCache", "structREMORA_1_1CF2DCache.html", null ],
     [ "REMORABiology::Fennel::Components", "structREMORABiology_1_1Fennel_1_1Components.html", null ],
     [ "REMORABiology::FennelParameters", "structREMORABiology_1_1FennelParameters.html", null ],
     [ "REMORAMaskedAvgDown::FieldWeight", "structREMORAMaskedAvgDown_1_1FieldWeight.html", null ],

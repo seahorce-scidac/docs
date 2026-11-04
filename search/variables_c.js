@@ -55,7 +55,7 @@ var searchData=
   ['m_5fwarned_5fsurface_5ftemp_5fmax_52',['m_warned_surface_temp_max',['../classREMORA.html#a9a2b9edf7d37cde87f324fc19d7354f0',1,'REMORA']]],
   ['m_5fwarned_5fsurface_5ftemp_5fmin_53',['m_warned_surface_temp_min',['../classREMORA.html#a2c9ed2b6a6fec3bed5f142d29a84e772',1,'REMORA']]],
   ['m_5fwarned_5fsurface_5ftemp_5fnan_54',['m_warned_surface_temp_nan',['../classREMORA.html#a12d75538c45a0883db2b3e0e1a1fc260',1,'REMORA']]],
-  ['mask_55',['mask',['../structREMORABiology_1_1BiologyAdvanceContext.html#a98e0ec62cdf2c99fc0b1b10790170346',1,'REMORABiology::BiologyAdvanceContext']]],
+  ['mask_55',['mask',['../structREMORABiology_1_1BiologyAdvanceContext.html#a98e0ec62cdf2c99fc0b1b10790170346',1,'REMORABiology::BiologyAdvanceContext::mask'],['../structREMORA_1_1CF2DCache.html#a928b13fc7c5bd82030108b9523b27ccc',1,'REMORA::CF2DCache::mask']]],
   ['mask_5fconsistency_56',['mask_consistency',['../structSolverChoice.html#a5bbb0f8cc7eff9a84b83f874354882b7',1,'SolverChoice']]],
   ['mask_5fring_57',['mask_ring',['../REMORA__InitAnalyticMasks__DogboneAnalytic_8H.html#a5c177ade40c84446578935bf82856e9d',1,'REMORA_InitAnalyticMasks_DogboneAnalytic.H']]],
   ['mask_5ftype_58',['mask_type',['../structSolverChoice.html#a2e2b940cf2e9f62ffdd0e6ff4713af86',1,'SolverChoice']]],

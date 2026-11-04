@@ -11,7 +11,7 @@ var searchData=
   ['centered4_8',['centered4',['../REMORA__DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca6d779455e4a7eebf97d6bcb893dd5235',1,'REMORA_DataStruct.H']]],
   ['chapman_9',['chapman',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346ab9e7e22a79a81b6f51d3362e2dc2a547',1,'REMORABCType::chapman'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325aac3d3c98c89dcbf5e7ef9f934233f1bd',1,'chapman:&#160;REMORA_IndexDefines.H']]],
   ['clamped_10',['clamped',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aea4ae070ce07bfe352f3c5ac8e82a00e',1,'REMORABCType::clamped'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a48d7d3c7878090d92994ab974cb29653',1,'clamped:&#160;REMORA_IndexDefines.H']]],
-  ['cloud_11',['cloud',['../namespaceAtmosState.html#a8518ea8559a676184759497453b502c4aeb082b291a83445d58dd818ec579a47d',1,'AtmosState::Cloud'],['../namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8ac887110b13f25ee64ddb39b39d9df3a2',1,'BulkFlux::Cloud']]],
+  ['cloud_11',['cloud',['../namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297aeb082b291a83445d58dd818ec579a47d',1,'AtmosState::Cloud'],['../namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6bac887110b13f25ee64ddb39b39d9df3a2',1,'BulkFlux::Cloud']]],
   ['coare30_12',['coare30',['../REMORA__DataStruct_8H.html#aef5b2a1189f86b8c4815c92098730fa6ae303fd59bd02a1664837fb5d604f5b02',1,'REMORA_DataStruct.H']]],
   ['coare35_13',['coare35',['../REMORA__DataStruct_8H.html#aef5b2a1189f86b8c4815c92098730fa6aaeb37f90153fe78c17313cc5a0fa6e34',1,'REMORA_DataStruct.H']]],
   ['computed_14',['computed',['../REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903a5a317d3dd3f7a2f675975a6d0c11c629',1,'REMORA_IndexDefines.H']]],

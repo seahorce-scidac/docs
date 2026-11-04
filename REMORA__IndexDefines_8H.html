@@ -251,6 +251,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespaceMetricR" id="r_namespaceMetricR"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMetricR.html">MetricR</a></td></tr>
+<tr class="memdesc:namespaceMetricR"><td class="mdescLeft">&#160;</td><td class="mdescRight">Components of the per-level metric products (vec_metric_r/u/v/p), computed once from pm and pn in set_derived_metrics so the time step multiplies instead of dividing. Names follow ROMS metrics.F; each is evaluated with exactly the expression the kernels used before, so reading the stored value is bitwise identical to recomputing it. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceMetricU" id="r_namespaceMetricU"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMetricU.html">MetricU</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceMetricV" id="r_namespaceMetricV"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMetricV.html">MetricV</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceMetricP" id="r_namespaceMetricP"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMetricP.html">MetricP</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceBCVars" id="r_namespaceBCVars"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBCVars.html">BCVars</a></td></tr>
 <tr class="memdesc:namespaceBCVars"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boundary fill types. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -284,37 +293,81 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a8518ea8559a676184759497453b502c4" id="r_a8518ea8559a676184759497453b502c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceAtmosState.html#a8518ea8559a676184759497453b502c4ace44688abc1d064a95c55ac3fe880cde">AtmosState::Uwind</a> = 0
-, <a class="el" href="namespaceAtmosState.html#a8518ea8559a676184759497453b502c4a6f42830ec5d86daba977fcfd387d24d8">AtmosState::Vwind</a>
-, <a class="el" href="namespaceAtmosState.html#a8518ea8559a676184759497453b502c4a23395b814e847d8394e2e64211f2b4cd">AtmosState::Pair</a>
-, <a class="el" href="namespaceAtmosState.html#a8518ea8559a676184759497453b502c4a7cdc5054f6b329adc379ae5e15475fea">AtmosState::Qair</a>
+<tr class="memitem:af9bd5358f142d4185ad75f4dcec4b91a" id="r_af9bd5358f142d4185ad75f4dcec4b91a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceMetricR.html#af9bd5358f142d4185ad75f4dcec4b91aa6fd836d46510539af0686b0c8a9740e9">MetricR::pmn</a> = 0
+, <a class="el" href="namespaceMetricR.html#af9bd5358f142d4185ad75f4dcec4b91aa2f2e975c9fb455a1db0b201f4a45c7ed">MetricR::omn</a>
+, <a class="el" href="namespaceMetricR.html#af9bd5358f142d4185ad75f4dcec4b91aae4b9f377e77af2e6d0e957f6c9cb4fb4">MetricR::om_r</a>
+, <a class="el" href="namespaceMetricR.html#af9bd5358f142d4185ad75f4dcec4b91aab93d133b72725ec69e90e473817d30c0">MetricR::on_r</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceAtmosState.html#a8518ea8559a676184759497453b502c4aecf95aa2d2e49e57ec90b8df4598bab2">AtmosState::Tair</a>
-, <a class="el" href="namespaceAtmosState.html#a8518ea8559a676184759497453b502c4aeb082b291a83445d58dd818ec579a47d">AtmosState::Cloud</a>
-, <a class="el" href="namespaceAtmosState.html#a8518ea8559a676184759497453b502c4ae5b6e68ed0fb29d473a29bc510a1ba03">AtmosState::Rain</a>
-, <a class="el" href="namespaceAtmosState.html#a8518ea8559a676184759497453b502c4aa3da6c7380dda7f096cf3d58dd506328">AtmosState::SWrad</a>
-, <br />
-&#160;&#160;<a class="el" href="namespaceAtmosState.html#a8518ea8559a676184759497453b502c4abe5478d762a4cfa0d288a8f9befa4b8d">AtmosState::LWrad</a>
-, <a class="el" href="namespaceAtmosState.html#a8518ea8559a676184759497453b502c4aae2f525eb9b6db40a2d89c4fec0e0c4c">AtmosState::NumTypes</a>
+&#160;&#160;<a class="el" href="namespaceMetricR.html#af9bd5358f142d4185ad75f4dcec4b91aa994130290c312eea06a92c8bca338f23">MetricR::pmon_r</a>
+, <a class="el" href="namespaceMetricR.html#af9bd5358f142d4185ad75f4dcec4b91aa2d7412ecace00a20568d19abde00fff3">MetricR::pnom_r</a>
+, <a class="el" href="namespaceMetricR.html#af9bd5358f142d4185ad75f4dcec4b91aa1c63a466841a5293dfb7774525695b70">MetricR::ncomp</a>
 <br />
  }</td></tr>
-<tr class="separator:a8518ea8559a676184759497453b502c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9119db3b56ff875658de63c13cd48149" id="r_a9119db3b56ff875658de63c13cd48149"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceAtmosFluxes.html#a9119db3b56ff875658de63c13cd48149a98459fa37f3f3215eee5d26e34869f40">AtmosFluxes::TauX</a> = 0
-, <a class="el" href="namespaceAtmosFluxes.html#a9119db3b56ff875658de63c13cd48149a9af6c572674080f6c77db30e8269712e">AtmosFluxes::TauY</a>
-, <a class="el" href="namespaceAtmosFluxes.html#a9119db3b56ff875658de63c13cd48149a8e555ee18e679e5ac87f5164e97b9d79">AtmosFluxes::SHflux</a>
-, <a class="el" href="namespaceAtmosFluxes.html#a9119db3b56ff875658de63c13cd48149a3d8f926404bf97cadd8b68c26e7c1211">AtmosFluxes::LHflux</a>
+<tr class="separator:af9bd5358f142d4185ad75f4dcec4b91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d4e0f87ef5d8f979bd7f4baf61f46b" id="r_af5d4e0f87ef5d8f979bd7f4baf61f46b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceMetricU.html#af5d4e0f87ef5d8f979bd7f4baf61f46bae25e72d02f853a39692ff6259b01b1e9">MetricU::om_u</a> = 0
+, <a class="el" href="namespaceMetricU.html#af5d4e0f87ef5d8f979bd7f4baf61f46ba34a7a8c028e4bd3960aec2592c75a79b">MetricU::on_u</a>
+, <a class="el" href="namespaceMetricU.html#af5d4e0f87ef5d8f979bd7f4baf61f46ba85ac0e9b86a880cc464031f26ac8d8be">MetricU::omn_u</a>
+, <a class="el" href="namespaceMetricU.html#af5d4e0f87ef5d8f979bd7f4baf61f46ba47157f8fac9535bfe9ab386437946395">MetricU::pmon_u</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceAtmosFluxes.html#a9119db3b56ff875658de63c13cd48149a9b8274aac1c0e32aa896edb0a8fe9a29">AtmosFluxes::SWrad</a>
-, <a class="el" href="namespaceAtmosFluxes.html#a9119db3b56ff875658de63c13cd48149a2065f94f112fc183d711a793df34cc2c">AtmosFluxes::LWrad</a>
-, <a class="el" href="namespaceAtmosFluxes.html#a9119db3b56ff875658de63c13cd48149a65abad4445aa6739d93a760407ffa235">AtmosFluxes::Rain</a>
-, <a class="el" href="namespaceAtmosFluxes.html#a9119db3b56ff875658de63c13cd48149a77ce1f8024b0ae66a87a147434c0f62e">AtmosFluxes::Evap</a>
-, <br />
-&#160;&#160;<a class="el" href="namespaceAtmosFluxes.html#a9119db3b56ff875658de63c13cd48149ae1c32b36fefe591e742d40d1294272c4">AtmosFluxes::NumTypes</a>
+&#160;&#160;<a class="el" href="namespaceMetricU.html#af5d4e0f87ef5d8f979bd7f4baf61f46ba4369516d76a2a319fd3b01a70f72f115">MetricU::pmn4_u</a>
+, <a class="el" href="namespaceMetricU.html#af5d4e0f87ef5d8f979bd7f4baf61f46bae06fe864c20c50d3a6730d541893901e">MetricU::ncomp</a>
 <br />
  }</td></tr>
-<tr class="separator:a9119db3b56ff875658de63c13cd48149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af5d4e0f87ef5d8f979bd7f4baf61f46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae306041116aa05de4e1e237738bf1f0f" id="r_ae306041116aa05de4e1e237738bf1f0f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceMetricV.html#ae306041116aa05de4e1e237738bf1f0fa8f7d626a00064d3b2bcf0faeca87d355">MetricV::om_v</a> = 0
+, <a class="el" href="namespaceMetricV.html#ae306041116aa05de4e1e237738bf1f0fabdd0d89584946515cc02c8b7a321b455">MetricV::on_v</a>
+, <a class="el" href="namespaceMetricV.html#ae306041116aa05de4e1e237738bf1f0fa68643440fb3bf1254e8f8bcd9d7995c9">MetricV::omn_v</a>
+, <a class="el" href="namespaceMetricV.html#ae306041116aa05de4e1e237738bf1f0fa4319f79b327055c1093a412be8be481b">MetricV::pnom_v</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceMetricV.html#ae306041116aa05de4e1e237738bf1f0fa6cb92fd6dab29503b51d5433fa60c65d">MetricV::pmn4_v</a>
+, <a class="el" href="namespaceMetricV.html#ae306041116aa05de4e1e237738bf1f0fad7c2e8dfd3ec00f6e30f22d2ab30f704">MetricV::ncomp</a>
+<br />
+ }</td></tr>
+<tr class="separator:ae306041116aa05de4e1e237738bf1f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5184b999d1fcf8fb1dbf07b608121ad" id="r_af5184b999d1fcf8fb1dbf07b608121ad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceMetricP.html#af5184b999d1fcf8fb1dbf07b608121ada4f61531f8634d215ccd3cdf2226b1444">MetricP::om_p</a> = 0
+, <a class="el" href="namespaceMetricP.html#af5184b999d1fcf8fb1dbf07b608121ada4b2b84a7c986dbc015ee6d13b645b2e9">MetricP::on_p</a>
+, <a class="el" href="namespaceMetricP.html#af5184b999d1fcf8fb1dbf07b608121adaf10f9fbc1e92a20a3f51d64748add8ba">MetricP::pmon_p</a>
+, <a class="el" href="namespaceMetricP.html#af5184b999d1fcf8fb1dbf07b608121ada3d2e2e0312dcd1323427d93e0faaefcb">MetricP::pnom_p</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceMetricP.html#af5184b999d1fcf8fb1dbf07b608121adac60e0480d768f6d677148cb39c58366b">MetricP::ncomp</a>
+<br />
+ }</td></tr>
+<tr class="separator:af5184b999d1fcf8fb1dbf07b608121ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac649c15d0f625a86a55f42a8ce272297" id="r_ac649c15d0f625a86a55f42a8ce272297"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297ace44688abc1d064a95c55ac3fe880cde">AtmosState::Uwind</a> = 0
+, <a class="el" href="namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297a6f42830ec5d86daba977fcfd387d24d8">AtmosState::Vwind</a>
+, <a class="el" href="namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297a23395b814e847d8394e2e64211f2b4cd">AtmosState::Pair</a>
+, <a class="el" href="namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297a7cdc5054f6b329adc379ae5e15475fea">AtmosState::Qair</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297aecf95aa2d2e49e57ec90b8df4598bab2">AtmosState::Tair</a>
+, <a class="el" href="namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297aeb082b291a83445d58dd818ec579a47d">AtmosState::Cloud</a>
+, <a class="el" href="namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297ae5b6e68ed0fb29d473a29bc510a1ba03">AtmosState::Rain</a>
+, <a class="el" href="namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297aa3da6c7380dda7f096cf3d58dd506328">AtmosState::SWrad</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297abe5478d762a4cfa0d288a8f9befa4b8d">AtmosState::LWrad</a>
+, <a class="el" href="namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297aae2f525eb9b6db40a2d89c4fec0e0c4c">AtmosState::NumTypes</a>
+<br />
+ }</td></tr>
+<tr class="separator:ac649c15d0f625a86a55f42a8ce272297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045dd16941a022f3873d354b01f0a7f2" id="r_a045dd16941a022f3873d354b01f0a7f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceAtmosFluxes.html#a045dd16941a022f3873d354b01f0a7f2a98459fa37f3f3215eee5d26e34869f40">AtmosFluxes::TauX</a> = 0
+, <a class="el" href="namespaceAtmosFluxes.html#a045dd16941a022f3873d354b01f0a7f2a9af6c572674080f6c77db30e8269712e">AtmosFluxes::TauY</a>
+, <a class="el" href="namespaceAtmosFluxes.html#a045dd16941a022f3873d354b01f0a7f2a8e555ee18e679e5ac87f5164e97b9d79">AtmosFluxes::SHflux</a>
+, <a class="el" href="namespaceAtmosFluxes.html#a045dd16941a022f3873d354b01f0a7f2a3d8f926404bf97cadd8b68c26e7c1211">AtmosFluxes::LHflux</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceAtmosFluxes.html#a045dd16941a022f3873d354b01f0a7f2a9b8274aac1c0e32aa896edb0a8fe9a29">AtmosFluxes::SWrad</a>
+, <a class="el" href="namespaceAtmosFluxes.html#a045dd16941a022f3873d354b01f0a7f2a2065f94f112fc183d711a793df34cc2c">AtmosFluxes::LWrad</a>
+, <a class="el" href="namespaceAtmosFluxes.html#a045dd16941a022f3873d354b01f0a7f2a65abad4445aa6739d93a760407ffa235">AtmosFluxes::Rain</a>
+, <a class="el" href="namespaceAtmosFluxes.html#a045dd16941a022f3873d354b01f0a7f2a77ce1f8024b0ae66a87a147434c0f62e">AtmosFluxes::Evap</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceAtmosFluxes.html#a045dd16941a022f3873d354b01f0a7f2ae1c32b36fefe591e742d40d1294272c4">AtmosFluxes::NumTypes</a>
+<br />
+ }</td></tr>
+<tr class="separator:a045dd16941a022f3873d354b01f0a7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c648f46c84bf0dd5dc30d399d55903" id="r_a60c648f46c84bf0dd5dc30d399d55903"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903">BulkForcingType</a> { <a class="el" href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903a617ac08757d38a5a7ed91c224f0e90a0">constant</a>
 , <a class="el" href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903a0747ffd2ec4a506ee2b993a044b370c9">analytic</a>
 , <a class="el" href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903ac2e0f73e7b066a47b743d6ce8213e684">netcdf</a>
@@ -322,23 +375,23 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a60c648f46c84bf0dd5dc30d399d55903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source type for bulk-flux atmospheric forcing variables.  <a href="REMORA__IndexDefines_8H.html#a60c648f46c84bf0dd5dc30d399d55903">More...</a><br /></td></tr>
 <tr class="separator:a60c648f46c84bf0dd5dc30d399d55903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4161a92d4ba80c81690a089e5758f1c8" id="r_a4161a92d4ba80c81690a089e5758f1c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8ab903a1809f855b363a48979c69aca552">BulkFlux::Uwind</a> = 0
-, <a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8a18f3853776f18da69fd85cad7e9613f4">BulkFlux::Vwind</a>
-, <a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8a3117816ccd9024f8b23d6e8baba17433">BulkFlux::Pair</a>
-, <a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8ac7191f5b0bad6348fad4b26fa4858398">BulkFlux::Qair</a>
+<tr class="memitem:a7dc9ee4e257c52a96cef11632131ab6b" id="r_a7dc9ee4e257c52a96cef11632131ab6b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6bab903a1809f855b363a48979c69aca552">BulkFlux::Uwind</a> = 0
+, <a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6ba18f3853776f18da69fd85cad7e9613f4">BulkFlux::Vwind</a>
+, <a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6ba3117816ccd9024f8b23d6e8baba17433">BulkFlux::Pair</a>
+, <a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6bac7191f5b0bad6348fad4b26fa4858398">BulkFlux::Qair</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8ac678ecbe2429f7e7a2f6d444780cbe89">BulkFlux::Tair</a>
-, <a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8ac887110b13f25ee64ddb39b39d9df3a2">BulkFlux::Cloud</a>
-, <a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8af2b8d1353e858319dcc1bb5471d962a4">BulkFlux::Rain</a>
-, <a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8aeed646dd2a40fece711a6ec6b8a9361e">BulkFlux::SWrad</a>
+&#160;&#160;<a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6bac678ecbe2429f7e7a2f6d444780cbe89">BulkFlux::Tair</a>
+, <a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6bac887110b13f25ee64ddb39b39d9df3a2">BulkFlux::Cloud</a>
+, <a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6baf2b8d1353e858319dcc1bb5471d962a4">BulkFlux::Rain</a>
+, <a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6baeed646dd2a40fece711a6ec6b8a9361e">BulkFlux::SWrad</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8ac5ac9ca2dbe65eec4182f8b15a578fc3">BulkFlux::LWrad</a>
-, <a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8afc0eba01188316c7903dd4d981a212ca">BulkFlux::EminusP</a>
-, <a class="el" href="namespaceBulkFlux.html#a4161a92d4ba80c81690a089e5758f1c8ad9b77f657530efa4862d67cc4dbf2616">BulkFlux::NumTypes</a>
+&#160;&#160;<a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6bac5ac9ca2dbe65eec4182f8b15a578fc3">BulkFlux::LWrad</a>
+, <a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6bafc0eba01188316c7903dd4d981a212ca">BulkFlux::EminusP</a>
+, <a class="el" href="namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6bad9b77f657530efa4862d67cc4dbf2616">BulkFlux::NumTypes</a>
 <br />
  }</td></tr>
-<tr class="separator:a4161a92d4ba80c81690a089e5758f1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7dc9ee4e257c52a96cef11632131ab6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a23ce64320a8ee19b456144f4deb325" id="r_a4a23ce64320a8ee19b456144f4deb325"><td class="memItemLeft" align="right" valign="top">enum struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325">REMORA_BC</a> { <br />
 &#160;&#160;<a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a40e712f30d56083318ab20a2402921d2">symmetry</a>
 , <a class="el" href="REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ad37e67db17cfd059f2852e2673b9e8ef">inflow</a>
@@ -548,7 +601,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a60c648f46c84bf0dd5dc30d399d55903a5a317d3dd3f7a2f675975a6d0c11c629" name="a60c648f46c84bf0dd5dc30d399d55903a5a317d3dd3f7a2f675975a6d0c11c629"></a>computed&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00134">134</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00173">173</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
 
 </div>
 </div>
@@ -586,7 +639,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74" name="a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00160">160</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__IndexDefines_8H_source.html#l00199">199</a> of file <a class="el" href="REMORA__IndexDefines_8H_source.html">REMORA_IndexDefines.H</a>.</p>
 
 </div>
 </div>

@@ -52,6 +52,10 @@ var namespaces_dup =
     ] ],
     [ "InterpType", "namespaceInterpType.html", null ],
     [ "latlon_regrid", "namespacelatlon__regrid.html", "namespacelatlon__regrid" ],
+    [ "MetricP", "namespaceMetricP.html", null ],
+    [ "MetricR", "namespaceMetricR.html", null ],
+    [ "MetricU", "namespaceMetricU.html", null ],
+    [ "MetricV", "namespaceMetricV.html", null ],
     [ "mod_biology", "namespacemod__biology.html", [
       [ "fennel_tag", "namespacemod__biology.html#a45250f9a135598d430521618d7363e2a", null ],
       [ "fennel_tag_line", "namespacemod__biology.html#aea73387e302708332072ac74d2dd4757", null ],

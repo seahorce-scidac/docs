@@ -1,8 +1,19 @@
 var searchData=
 [
   ['ocmip_0',['ocmip',['../namespaceREMORABiology.html#a5f60d692a2fc85488d7b9078b382ba01aa7ebf44638782bb91c54d95466d7f857',1,'REMORABiology']]],
-  ['one_5fway_1',['one_way',['../REMORA__DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139baa78e2b6859393b825bdf8f6a0a9668ad',1,'REMORA_DataStruct.H']]],
-  ['orlanski_5frad_2',['orlanski_rad',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a2ab9bbca7b5115df69fb69555ddf79bf',1,'REMORABCType::orlanski_rad'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a1ac3f5e31a6cb1a044373ce1b133d560',1,'orlanski_rad:&#160;REMORA_IndexDefines.H']]],
-  ['orlanski_5frad_5fnudge_3',['orlanski_rad_nudge',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346ab304567a78a4ea353b0d646ee13459a8',1,'REMORABCType::orlanski_rad_nudge'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325af25c3ea7c3e73452e6b9963cb67c9981',1,'orlanski_rad_nudge:&#160;REMORA_IndexDefines.H']]],
-  ['outflow_4',['outflow',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325acac0c32caf84a889ec9b2b4cb2d56972',1,'REMORA_IndexDefines.H']]]
+  ['om_5fp_1',['om_p',['../namespaceMetricP.html#af5184b999d1fcf8fb1dbf07b608121ada4f61531f8634d215ccd3cdf2226b1444',1,'MetricP']]],
+  ['om_5fr_2',['om_r',['../namespaceMetricR.html#af9bd5358f142d4185ad75f4dcec4b91aae4b9f377e77af2e6d0e957f6c9cb4fb4',1,'MetricR']]],
+  ['om_5fu_3',['om_u',['../namespaceMetricU.html#af5d4e0f87ef5d8f979bd7f4baf61f46bae25e72d02f853a39692ff6259b01b1e9',1,'MetricU']]],
+  ['om_5fv_4',['om_v',['../namespaceMetricV.html#ae306041116aa05de4e1e237738bf1f0fa8f7d626a00064d3b2bcf0faeca87d355',1,'MetricV']]],
+  ['omn_5',['omn',['../namespaceMetricR.html#af9bd5358f142d4185ad75f4dcec4b91aa2f2e975c9fb455a1db0b201f4a45c7ed',1,'MetricR']]],
+  ['omn_5fu_6',['omn_u',['../namespaceMetricU.html#af5d4e0f87ef5d8f979bd7f4baf61f46ba85ac0e9b86a880cc464031f26ac8d8be',1,'MetricU']]],
+  ['omn_5fv_7',['omn_v',['../namespaceMetricV.html#ae306041116aa05de4e1e237738bf1f0fa68643440fb3bf1254e8f8bcd9d7995c9',1,'MetricV']]],
+  ['on_5fp_8',['on_p',['../namespaceMetricP.html#af5184b999d1fcf8fb1dbf07b608121ada4b2b84a7c986dbc015ee6d13b645b2e9',1,'MetricP']]],
+  ['on_5fr_9',['on_r',['../namespaceMetricR.html#af9bd5358f142d4185ad75f4dcec4b91aab93d133b72725ec69e90e473817d30c0',1,'MetricR']]],
+  ['on_5fu_10',['on_u',['../namespaceMetricU.html#af5d4e0f87ef5d8f979bd7f4baf61f46ba34a7a8c028e4bd3960aec2592c75a79b',1,'MetricU']]],
+  ['on_5fv_11',['on_v',['../namespaceMetricV.html#ae306041116aa05de4e1e237738bf1f0fabdd0d89584946515cc02c8b7a321b455',1,'MetricV']]],
+  ['one_5fway_12',['one_way',['../REMORA__DataStruct_8H.html#ad285be248c0803917aaf5cf8ce62139baa78e2b6859393b825bdf8f6a0a9668ad',1,'REMORA_DataStruct.H']]],
+  ['orlanski_5frad_13',['orlanski_rad',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346a2ab9bbca7b5115df69fb69555ddf79bf',1,'REMORABCType::orlanski_rad'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a1ac3f5e31a6cb1a044373ce1b133d560',1,'orlanski_rad:&#160;REMORA_IndexDefines.H']]],
+  ['orlanski_5frad_5fnudge_14',['orlanski_rad_nudge',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346ab304567a78a4ea353b0d646ee13459a8',1,'REMORABCType::orlanski_rad_nudge'],['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325af25c3ea7c3e73452e6b9963cb67c9981',1,'orlanski_rad_nudge:&#160;REMORA_IndexDefines.H']]],
+  ['outflow_15',['outflow',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325acac0c32caf84a889ec9b2b4cb2d56972',1,'REMORA_IndexDefines.H']]]
 ];
