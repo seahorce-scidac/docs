@@ -1661,6 +1661,13 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a2585dd62a973e4f7eb8cef3c8a057a85" id="r_a2585dd62a973e4f7eb8cef3c8a057a85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#a2585dd62a973e4f7eb8cef3c8a057a85">m_use_hydro_particles</a></td></tr>
 <tr class="memdesc:a2585dd62a973e4f7eb8cef3c8a057a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">tracer particles that fall with gravity  <br /></td></tr>
 <tr class="separator:a2585dd62a973e4f7eb8cef3c8a057a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33274e8b516703d84e50e542f973357b" id="r_a33274e8b516703d84e50e542f973357b"><td class="memItemLeft" align="right" valign="top">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#a33274e8b516703d84e50e542f973357b">particle_omega</a></td></tr>
+<tr class="memdesc:a33274e8b516703d84e50e542f973357b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per level, the omega and the boundary-filled u and v that particles advect with. Kept between steps, and redefined when the level's grids change.  <br /></td></tr>
+<tr class="separator:a33274e8b516703d84e50e542f973357b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04860c683f5dc45f3a3fdf4dda008b21" id="r_a04860c683f5dc45f3a3fdf4dda008b21"><td class="memItemLeft" align="right" valign="top">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#a04860c683f5dc45f3a3fdf4dda008b21">particle_u</a></td></tr>
+<tr class="separator:a04860c683f5dc45f3a3fdf4dda008b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bcee28e5a008bd2024e98533ada6cbe" id="r_a6bcee28e5a008bd2024e98533ada6cbe"><td class="memItemLeft" align="right" valign="top">amrex::Vector&lt; std::unique_ptr&lt; amrex::MultiFab &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#a6bcee28e5a008bd2024e98533ada6cbe">particle_v</a></td></tr>
+<tr class="separator:a6bcee28e5a008bd2024e98533ada6cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6613911799ddebd00cff330cf5c5f76" id="r_af6613911799ddebd00cff330cf5c5f76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORA.html#af6613911799ddebd00cff330cf5c5f76">hires_grid_level</a> = -1</td></tr>
 <tr class="memdesc:af6613911799ddebd00cff330cf5c5f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which level the high resolution bathymetry is at.  <br /></td></tr>
 <tr class="separator:af6613911799ddebd00cff330cf5c5f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4855,7 +4862,7 @@ Here is the caller graph for this function:</div>
 
 <p>First cons component of the biology block. Problem setups need this to write biology initial conditions, since the passive scalars sit between salinity and the biology tracers. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02351">2351</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02357">2357</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 </div>
 </div>
@@ -5197,7 +5204,7 @@ Here is the caller graph for this function:</div>
 
 <p>Evaluate stability function psi for moisture and heat. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02391">2391</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02397">2397</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>.</p>
 <div class="dynheader">
@@ -5256,7 +5263,7 @@ Here is the caller graph for this function:</div>
 
 <p>Evaluate stability function psi for wind speed. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02359">2359</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02365">2365</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>.</p>
 <div class="dynheader">
@@ -5350,9 +5357,9 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01188">1188</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01194">1194</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01238">update_nodal_masks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01244">update_nodal_masks()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -5863,7 +5870,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00884">884</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">885</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
 
 </div>
 </div>
@@ -7142,7 +7149,7 @@ Here is the caller graph for this function:</div>
 
 <p>Helper function for IO stream. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02269">2269</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02275">2275</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00012">sum_integrated_quantities()</a>.</p>
 <div class="dynheader">
@@ -7195,7 +7202,7 @@ Here is the caller graph for this function:</div>
 
 <p>The filename of the ith datalog file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02319">2319</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02325">2325</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 </div>
 </div>
@@ -7402,7 +7409,7 @@ Here is the caller graph for this function:</div>
 
 <p>Elapsed time since start_time of a time on the model clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02343">2343</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02349">2349</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00057">ComputeDt()</a>, <a class="el" href="REMORA_8cpp_source.html#l00270">Evolve()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00308">EvolveOneStep()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>.</p>
 <div class="dynheader">
@@ -8347,7 +8354,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01251">1251</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01257">1257</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>.</p>
 <div class="dynheader">
@@ -8828,7 +8835,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00719">719</a> of file <a class="el" href="REMORA__FillPatch_8cpp_source.html">REMORA_FillPatch.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00753">FillCoarsePatchMap()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, <a class="el" href="REMORA_8cpp_source.html#l00999">set_coriolis()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, and <a class="el" href="REMORA_8cpp_source.html#l00713">set_zeta()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00753">FillCoarsePatchMap()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, <a class="el" href="REMORA_8cpp_source.html#l00999">set_coriolis()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, and <a class="el" href="REMORA_8cpp_source.html#l00713">set_zeta()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -10048,7 +10055,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l01590">1590</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA__init__bcs_8cpp_source.html#l00009">init_bcs()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00999">set_coriolis()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA__init__bcs_8cpp_source.html#l00009">init_bcs()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00999">set_coriolis()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -10565,7 +10572,7 @@ Here is the caller graph for this function:</div>
 
 <p>Get CPU time used. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02288">2288</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02294">2294</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__writeJobInfo_8cpp_source.html#l00007">writeJobInfo()</a>.</p>
 <div class="dynheader">
@@ -12740,7 +12747,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">561</a> of file <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html">REMORA_init_from_netcdf.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -14340,6 +14347,12 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="166,78,278,100,277,105,165,83"/>
 <area shape="rect" href="classREMORAPC.html#ac014546bf4e670fd63e0723c40ac72e3" title=" " alt="" coords="516,45,731,85"/>
 <area shape="poly" title=" " alt="" coords="463,64,502,63,502,69,463,69"/>
+<area shape="rect" href="REMORA__PC_8H.html#ab4c9f5df9048b6a93a90d55e3aea6a7c" title=" " alt="" coords="779,52,881,77"/>
+<area shape="poly" title=" " alt="" coords="731,62,765,62,765,67,731,67"/>
+<area shape="rect" href="REMORA__PC_8H.html#a0383d8a3a7d0bce173b4ee7d5c5f463b" title=" " alt="" coords="943,27,1081,52"/>
+<area shape="poly" title=" " alt="" coords="881,55,929,48,930,53,882,60"/>
+<area shape="rect" href="REMORA__PC_8H.html#acb87bff16d62a1921381520071c2f942" title=" " alt="" coords="929,76,1095,101"/>
+<area shape="poly" title=" " alt="" coords="882,69,916,73,915,79,881,74"/>
 <area shape="rect" href="classParticleData.html#a20071f2a5b7c25c20f10d844822df943" title=" " alt="" coords="541,109,705,135"/>
 <area shape="poly" title=" " alt="" coords="441,117,528,118,528,123,441,122"/>
 </map>
@@ -14477,9 +14490,9 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01051">1051</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01057">1057</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -15249,7 +15262,7 @@ Here is the caller graph for this function:</div>
 
 <p>Time on the model clock, in seconds, of an elapsed time such as t_new. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02337">2337</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02343">2343</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA_8cpp_source.html#l03722">advance_biology()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00303">history_restart_record()</a>, <a class="el" href="REMORA__prestep_8cpp_source.html#l00038">prestep()</a>, <a class="el" href="REMORA_8cpp_source.html#l01782">set_smflux()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 <div class="dynheader">
@@ -15952,7 +15965,7 @@ Here is the caller graph for this function:</div>
 
 <p>Number of biology tracers carried in the state. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02353">2353</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02359">2359</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 </div>
 </div>
@@ -16011,7 +16024,7 @@ Here is the caller graph for this function:</div>
 
 <p>Number of passive (dye) scalars carried in the state. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02355">2355</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02361">2361</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 </div>
 </div>
@@ -16038,7 +16051,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02276">2276</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02282">2282</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00012">sum_integrated_quantities()</a>.</p>
 <div class="dynheader">
@@ -20448,9 +20461,9 @@ Here is the caller graph for this function:</div>
 </dl>
 <p>level to operate on </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01113">1113</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01119">1119</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -20512,9 +20525,9 @@ Here is the caller graph for this function:</div>
 </dl>
 <p>level to operate on </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00971">971</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00977">977</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -20595,9 +20608,9 @@ Here is the caller graph for this function:</div>
 </dl>
 <p>level to operate on </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">1068</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">1074</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -20657,7 +20670,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">894</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">900</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, and <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>.</p>
 <div class="dynheader">
@@ -20795,7 +20808,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8cpp_source.html#l00826">826</a> of file <a class="el" href="REMORA_8cpp_source.html">REMORA.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -21906,7 +21919,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01135">1135</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01141">1141</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, and <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>.</p>
 <div class="dynheader">
@@ -22025,7 +22038,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02302">2302</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02308">2308</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 <div class="dynheader">
@@ -24078,7 +24091,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01238">1238</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01244">1244</a> of file <a class="el" href="REMORA__make__new__level_8cpp_source.html">REMORA_make_new_level.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00841">init_masks_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>, and <a class="el" href="REMORA_8cpp_source.html#l01173">set_masks_averaged_down()</a>.</p>
 <div class="dynheader">
@@ -27102,7 +27115,7 @@ Here is the caller graph for this function:</div>
 
 <p>Name of time fields for boundary data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02232">2232</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02238">2238</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00879">init_bdry_from_netcdf()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -27130,7 +27143,7 @@ Here is the caller graph for this function:</div>
 
 <p>Default name of time field for boundary data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02230">2230</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02236">2236</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -27189,7 +27202,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l01944">1944</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l03722">advance_biology()</a>, <a class="el" href="REMORA_8H_source.html#l02351">bio_comp_start()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00292">init_biology_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00430">init_biology_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00053">init_biology_ic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00097">init_biology_ic_full_domain()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00246">init_scalars_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00393">init_scalars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, and <a class="el" href="REMORA__SetPlotVars_8cpp_source.html#l00018">set3DPlotVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l03722">advance_biology()</a>, <a class="el" href="REMORA_8H_source.html#l02357">bio_comp_start()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00292">init_biology_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00430">init_biology_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00053">init_biology_ic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00097">init_biology_ic_full_domain()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00246">init_scalars_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00393">init_scalars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, and <a class="el" href="REMORA__SetPlotVars_8cpp_source.html#l00018">set3DPlotVariables()</a>.</p>
 
 </div>
 </div>
@@ -28026,7 +28039,7 @@ Here is the caller graph for this function:</div>
 
 <p>Vector over cons components of the name of the time field for that tracer's climatology data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02244">2244</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02250">2250</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -28054,7 +28067,7 @@ Here is the caller graph for this function:</div>
 
 <p>Name of time field for u climatology data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02239">2239</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02245">2245</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -28082,7 +28095,7 @@ Here is the caller graph for this function:</div>
 
 <p>Name of time field for ubar climatology data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02235">2235</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02241">2241</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -28110,7 +28123,7 @@ Here is the caller graph for this function:</div>
 
 <p>Name of time field for v climatology data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02241">2241</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02247">2247</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -28138,7 +28151,7 @@ Here is the caller graph for this function:</div>
 
 <p>Name of time field for vbar climatology data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02237">2237</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02243">2243</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -28246,7 +28259,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00403">403</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00884">ClearLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00584">Construct_REMORAFillPatchers()</a>, <a class="el" href="REMORA_8cpp_source.html#l03081">define_flux_register()</a>, <a class="el" href="REMORA_8cpp_source.html#l00640">Define_REMORAFillPatchers()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00759">init_bathymetry_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00137">init_beta_plane_coriolis()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00292">init_biology_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00053">init_biology_ic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01016">init_clim_nudg_coeff_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00806">init_coriolis_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00183">init_data_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00841">init_masks_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00246">init_scalars_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00485">PackSurfaceState()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA_8cpp_source.html#l00389">reflux_to()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00011">scale_rhs_vars()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00065">scale_rhs_vars_inv()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00197">set_2darrays()</a>, <a class="el" href="REMORA_8cpp_source.html#l00980">set_init_data_averaged_down()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00173">set_zeta_average()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__DepthStretchTransform_8H_source.html#l00116">stretch_transform()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00012">sum_integrated_quantities()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00209">volWgtSumMF()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00584">Construct_REMORAFillPatchers()</a>, <a class="el" href="REMORA_8cpp_source.html#l03081">define_flux_register()</a>, <a class="el" href="REMORA_8cpp_source.html#l00640">Define_REMORAFillPatchers()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00759">init_bathymetry_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00137">init_beta_plane_coriolis()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00292">init_biology_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00053">init_biology_ic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01016">init_clim_nudg_coeff_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00806">init_coriolis_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00183">init_data_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00841">init_masks_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00246">init_scalars_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00485">PackSurfaceState()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA_8cpp_source.html#l00389">reflux_to()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00011">scale_rhs_vars()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00065">scale_rhs_vars_inv()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00197">set_2darrays()</a>, <a class="el" href="REMORA_8cpp_source.html#l00980">set_init_data_averaged_down()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00173">set_zeta_average()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__DepthStretchTransform_8H_source.html#l00116">stretch_transform()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00012">sum_integrated_quantities()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00209">volWgtSumMF()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -28267,7 +28280,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00394">394</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00884">ClearLevel()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
 
 </div>
 </div>
@@ -28333,7 +28346,7 @@ Here is the caller graph for this function:</div>
 
 <p>Cumulative refinement ratio between level 0 and level i. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02217">2217</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02223">2223</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00355">allocate_bathymetry_grid_vars_full_domain()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03645">average_down_with_grow_cells()</a>, <a class="el" href="REMORA_8cpp_source.html#l01452">coarsen_bathymetry_with_grow_cells()</a>, <a class="el" href="REMORA_8cpp_source.html#l01194">coarsen_masks_with_grow_cells()</a>, <a class="el" href="REMORA_8cpp_source.html#l03566">ensure_full_domain_masks()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01209">init_bathymetry_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00430">init_biology_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00329">init_data_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01262">init_grid_vars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01235">init_masks_full_domain_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l00217">init_ref_ratios()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01100">init_riv_pos_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00393">init_scalars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00517">init_zeta_full_domain_from_netcdf()</a>, and <a class="el" href="REMORA_8cpp_source.html#l03540">refine_masks_with_grow_cells()</a>.</p>
 
@@ -28359,9 +28372,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02315">2315</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02321">2321</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l02269">DataLog()</a>, <a class="el" href="REMORA_8H_source.html#l02276">NumDataLogs()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, and <a class="el" href="REMORA_8H_source.html#l02302">setRecordDataInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l02275">DataLog()</a>, <a class="el" href="REMORA_8H_source.html#l02282">NumDataLogs()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, and <a class="el" href="REMORA_8H_source.html#l02308">setRecordDataInfo()</a>.</p>
 
 </div>
 </div>
@@ -28385,9 +28398,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02316">2316</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02322">2322</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l02319">DataLogName()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l02325">DataLogName()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
 </div>
 </div>
@@ -28691,7 +28704,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l01856">1856</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00057">ComputeDt()</a>, <a class="el" href="REMORA_8cpp_source.html#l00270">Evolve()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00308">EvolveOneStep()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00303">history_restart_record()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00015">print_timestep_hierarchy()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01135">set_zeta_to_Ztavg()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00057">ComputeDt()</a>, <a class="el" href="REMORA_8cpp_source.html#l00270">Evolve()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00308">EvolveOneStep()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00303">history_restart_record()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00015">print_timestep_hierarchy()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01141">set_zeta_to_Ztavg()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
 
 </div>
 </div>
@@ -28773,7 +28786,7 @@ Here is the caller graph for this function:</div>
 
 <p>Minimum number of digits in plotfile name or chunked history file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02184">2184</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02190">2190</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00278">netcdf_plot_path()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
@@ -28801,7 +28814,7 @@ Here is the caller graph for this function:</div>
 
 <p>Mask that zeroes out values on a coarse level underlying grids on the next finest level. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02264">2264</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02270">2270</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00250">build_fine_mask()</a>.</p>
 
@@ -29081,7 +29094,7 @@ Here is the caller graph for this function:</div>
 
 <p>How forcing on a lat-lon grid is interpolated (remora.frc_regrid and friends) </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02251">2251</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02257">2257</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA_8cpp_source.html#l01782">set_smflux()</a>, and <a class="el" href="REMORA_8H_source.html#l01342">winds_need_rotation()</a>.</p>
 
@@ -29109,7 +29122,7 @@ Here is the caller graph for this function:</div>
 
 <p>Name of time field for forcing data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02248">2248</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02254">2254</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -29137,9 +29150,9 @@ Here is the caller graph for this function:</div>
 
 <p>Which level the high resolution bathymetry is at. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02203">2203</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02209">2209</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00355">allocate_bathymetry_grid_vars_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03566">ensure_full_domain_masks()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00398">init_bathymetry_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01209">init_bathymetry_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00479">init_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01262">init_grid_vars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00410">init_masks_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01235">init_masks_full_domain_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, and <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00355">allocate_bathymetry_grid_vars_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03566">ensure_full_domain_masks()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00398">init_bathymetry_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01209">init_bathymetry_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00479">init_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01262">init_grid_vars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00410">init_masks_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01235">init_masks_full_domain_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, and <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>.</p>
 
 </div>
 </div>
@@ -29165,7 +29178,7 @@ Here is the caller graph for this function:</div>
 
 <p>Which level the high resolution initialization data is at. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02210">2210</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02216">2216</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00430">init_biology_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00097">init_biology_ic_full_domain()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00329">init_data_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00479">init_full_domain_from_analytic()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00393">init_scalars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00517">init_zeta_full_domain_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, and <a class="el" href="REMORA_8cpp_source.html#l00713">set_zeta()</a>.</p>
 
@@ -29660,7 +29673,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l01941">1941</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l03722">advance_biology()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00292">init_biology_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00430">init_biology_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00053">init_biology_ic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00097">init_biology_ic_full_domain()</a>, <a class="el" href="REMORA_8H_source.html#l02353">num_bio()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, and <a class="el" href="REMORA__SetPlotVars_8cpp_source.html#l00018">set3DPlotVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l03722">advance_biology()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00292">init_biology_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00430">init_biology_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00053">init_biology_ic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00097">init_biology_ic_full_domain()</a>, <a class="el" href="REMORA_8H_source.html#l02359">num_bio()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, and <a class="el" href="REMORA__SetPlotVars_8cpp_source.html#l00018">set3DPlotVariables()</a>.</p>
 
 </div>
 </div>
@@ -29714,7 +29727,7 @@ Here is the caller graph for this function:</div>
 
 <p>NetCDF climatology coefficient file. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02227">2227</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02233">2233</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00305">init_clim_nudg_coeff()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01016">init_clim_nudg_coeff_from_netcdf()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -29742,7 +29755,7 @@ Here is the caller graph for this function:</div>
 
 <p>NetCDF climatology history file(s) </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02225">2225</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02231">2231</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -29770,7 +29783,7 @@ Here is the caller graph for this function:</div>
 
 <p>NetCDF forcing file(s) </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02220">2220</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02226">2226</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -29826,7 +29839,7 @@ Here is the caller graph for this function:</div>
 
 <p>Grid file for high resolution bathymetry. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02205">2205</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02211">2211</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01209">init_bathymetry_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01262">init_grid_vars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01235">init_masks_full_domain_from_netcdf()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -29854,7 +29867,7 @@ Here is the caller graph for this function:</div>
 
 <p>Box for the full domain at nc_hires_grid_level. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02207">2207</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02213">2213</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00355">allocate_bathymetry_grid_vars_full_domain()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01209">init_bathymetry_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01262">init_grid_vars_full_domain_from_netcdf()</a>, and <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01235">init_masks_full_domain_from_netcdf()</a>.</p>
 
@@ -29882,7 +29895,7 @@ Here is the caller graph for this function:</div>
 
 <p>Box for the full domain at nc_hires_init_level. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02214">2214</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02220">2220</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00430">init_biology_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00329">init_data_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00393">init_scalars_full_domain_from_netcdf()</a>, and <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00517">init_zeta_full_domain_from_netcdf()</a>.</p>
 
@@ -29938,7 +29951,7 @@ Here is the caller graph for this function:</div>
 
 <p>Init file for high resolution. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02212">2212</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02218">2218</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00430">init_biology_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00329">init_data_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00393">init_scalars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00517">init_zeta_full_domain_from_netcdf()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -29966,7 +29979,7 @@ Here is the caller graph for this function:</div>
 
 <p>NetCDF river file(s) </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02222">2222</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02228">2228</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01100">init_riv_pos_from_netcdf()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -30108,7 +30121,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l01938">1938</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l00246">init_scalar_metadata()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00246">init_scalars_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00393">init_scalars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA_8H_source.html#l01610">num_passive_scalars()</a>, <a class="el" href="REMORA_8H_source.html#l02355">num_scalar()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l00246">init_scalar_metadata()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00246">init_scalars_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00393">init_scalars_full_domain_from_netcdf()</a>, <a class="el" href="REMORA_8H_source.html#l01610">num_passive_scalars()</a>, <a class="el" href="REMORA_8H_source.html#l02361">num_scalar()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
 </div>
 </div>
@@ -30221,6 +30234,86 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l01742">1742</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, and <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>.</p>
+
+</div>
+</div>
+<a id="a33274e8b516703d84e50e542f973357b" name="a33274e8b516703d84e50e542f973357b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33274e8b516703d84e50e542f973357b">&#9670;&#160;</a></span>particle_omega</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">amrex::Vector&lt;std::unique_ptr&lt;amrex::MultiFab&gt; &gt; REMORA::particle_omega</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Per level, the omega and the boundary-filled u and v that particles advect with. Kept between steps, and redefined when the level's grids change. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02176">2176</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, and <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>.</p>
+
+</div>
+</div>
+<a id="a04860c683f5dc45f3a3fdf4dda008b21" name="a04860c683f5dc45f3a3fdf4dda008b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04860c683f5dc45f3a3fdf4dda008b21">&#9670;&#160;</a></span>particle_u</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">amrex::Vector&lt;std::unique_ptr&lt;amrex::MultiFab&gt; &gt; REMORA::particle_u</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02177">2177</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, and <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>.</p>
+
+</div>
+</div>
+<a id="a6bcee28e5a008bd2024e98533ada6cbe" name="a6bcee28e5a008bd2024e98533ada6cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bcee28e5a008bd2024e98533ada6cbe">&#9670;&#160;</a></span>particle_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">amrex::Vector&lt;std::unique_ptr&lt;amrex::MultiFab&gt; &gt; REMORA::particle_v</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02178">2178</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, and <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>.</p>
 
 </div>
 </div>
@@ -30471,7 +30564,7 @@ Here is the caller graph for this function:</div>
 
 <p>Whether to write nodal data (Nu_nd) to plotfiles. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02190">2190</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02196">2196</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01240">check_plot_nodal_z()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01037">WriteGenericPlotfileHeaderWithBathymetry()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00854">WriteMultiLevelPlotfileWithBathymetry()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
@@ -30527,7 +30620,7 @@ Here is the caller graph for this function:</div>
 
 <p>Whether to write the staggered velocities (not averaged to cell centers) </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02187">2187</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02193">2193</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01037">WriteGenericPlotfileHeaderWithBathymetry()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00854">WriteMultiLevelPlotfileWithBathymetry()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
@@ -30667,7 +30760,7 @@ Here is the caller graph for this function:</div>
 
 <p>Native or NetCDF plotfile output. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02193">2193</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02199">2199</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
@@ -30715,9 +30808,9 @@ Here is the caller graph for this function:</div>
 
 <p>Accumulator variable for CPU time used thusfar. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02284">2284</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02290">2290</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l02288">getCPUTime()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l02294">getCPUTime()</a>.</p>
 
 </div>
 </div>
@@ -30745,7 +30838,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l01831">1831</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00398">init_bathymetry_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00053">init_biology_ic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00097">init_biology_ic_full_domain()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00479">init_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00410">init_masks_full_domain_from_analytic()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l01049">set_analytic_vmix()</a>, <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, <a class="el" href="REMORA_8cpp_source.html#l00999">set_coriolis()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l01497">set_hmixcoef()</a>, <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01782">set_smflux()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, and <a class="el" href="REMORA_8cpp_source.html#l00713">set_zeta()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00398">init_bathymetry_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00053">init_biology_ic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00097">init_biology_ic_full_domain()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00479">init_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00410">init_masks_full_domain_from_analytic()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l01049">set_analytic_vmix()</a>, <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, <a class="el" href="REMORA_8cpp_source.html#l00999">set_coriolis()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l01497">set_hmixcoef()</a>, <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01782">set_smflux()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, and <a class="el" href="REMORA_8cpp_source.html#l00713">set_zeta()</a>.</p>
 
 </div>
 </div>
@@ -30827,7 +30920,7 @@ Here is the caller graph for this function:</div>
 
 <p>Holds info for dynamically generated tagging criteria. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02261">2261</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02267">2267</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, and <a class="el" href="REMORA__Tagging_8cpp_source.html#l00493">refinement_criteria_setup()</a>.</p>
 
@@ -30967,7 +31060,7 @@ Here is the caller graph for this function:</div>
 
 <p>Name of time field for river time. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02246">2246</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02252">2252</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -31197,7 +31290,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02143">2143</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__Advance_8cpp_source.html#l00017">Advance()</a>, <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA_8cpp_source.html#l03722">advance_biology()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l03645">average_down_with_grow_cells()</a>, <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA__DepthStretchTransform_8H_source.html#l00050">calc_stretch_coeffs()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA_8cpp_source.html#l03081">define_flux_register()</a>, <a class="el" href="REMORA_8cpp_source.html#l03566">ensure_full_domain_masks()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00753">FillCoarsePatchMap()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00412">FillPatchBCs()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00360">GetDeckConfiguredAtmosStateLanes()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00398">init_bathymetry_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init__bcs_8cpp_source.html#l00009">init_bcs()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00879">init_bdry_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00137">init_beta_plane_coriolis()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00053">init_biology_ic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00097">init_biology_ic_full_domain()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00305">init_clim_nudg_coeff()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01016">init_clim_nudg_coeff_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00479">init_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00410">init_masks_full_domain_from_analytic()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l01032">init_set_vmix()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__rho__eos_8cpp_source.html#l00061">lin_eos()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__rho__eos_8cpp_source.html#l00158">nonlin_eos()</a>, <a class="el" href="REMORA_8cpp_source.html#l00439">post_timestep()</a>, <a class="el" href="REMORA__prestep_8cpp_source.html#l00038">prestep()</a>, <a class="el" href="REMORA__prestep__t__advection_8cpp_source.html#l00035">prestep_t_advection()</a>, <a class="el" href="REMORA__prsgrd_8cpp_source.html#l00025">prsgrd()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA_8cpp_source.html#l00389">reflux_to()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA__rho__eos_8cpp_source.html#l00022">rho_eos()</a>, <a class="el" href="REMORA__rhs__t__3d_8cpp_source.html#l00028">rhs_t_3d()</a>, <a class="el" href="REMORA__rhs__uv__3d_8cpp_source.html#l00029">rhs_uv_3d()</a>, <a class="el" href="REMORA__SetPlotVars_8cpp_source.html#l00129">set2DPlotVariables()</a>, <a class="el" href="REMORA_8cpp_source.html#l01049">set_analytic_vmix()</a>, <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, <a class="el" href="REMORA_8cpp_source.html#l00999">set_coriolis()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l01497">set_hmixcoef()</a>, <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01782">set_smflux()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, <a class="el" href="REMORA_8cpp_source.html#l00713">set_zeta()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01135">set_zeta_to_Ztavg()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00349">SetLongwaveFromDriver()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__DepthStretchTransform_8H_source.html#l00116">stretch_transform()</a>, <a class="el" href="REMORA__DepthStretchTransform_8H_source.html#l00264">stretch_transform_full_domain()</a>, <a class="el" href="REMORA__t3dmix_8cpp_source.html#l00023">t3dmix2()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__Advance_8cpp_source.html#l00017">Advance()</a>, <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA_8cpp_source.html#l03722">advance_biology()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l03645">average_down_with_grow_cells()</a>, <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA__DepthStretchTransform_8H_source.html#l00050">calc_stretch_coeffs()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA_8cpp_source.html#l03081">define_flux_register()</a>, <a class="el" href="REMORA_8cpp_source.html#l03566">ensure_full_domain_masks()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00753">FillCoarsePatchMap()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00412">FillPatchBCs()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00360">GetDeckConfiguredAtmosStateLanes()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00398">init_bathymetry_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init__bcs_8cpp_source.html#l00009">init_bcs()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00879">init_bdry_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00137">init_beta_plane_coriolis()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00053">init_biology_ic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00097">init_biology_ic_full_domain()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00305">init_clim_nudg_coeff()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01016">init_clim_nudg_coeff_from_netcdf()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00479">init_full_domain_from_analytic()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00410">init_masks_full_domain_from_analytic()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l01032">init_set_vmix()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__rho__eos_8cpp_source.html#l00061">lin_eos()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__rho__eos_8cpp_source.html#l00158">nonlin_eos()</a>, <a class="el" href="REMORA_8cpp_source.html#l00439">post_timestep()</a>, <a class="el" href="REMORA__prestep_8cpp_source.html#l00038">prestep()</a>, <a class="el" href="REMORA__prestep__t__advection_8cpp_source.html#l00035">prestep_t_advection()</a>, <a class="el" href="REMORA__prsgrd_8cpp_source.html#l00025">prsgrd()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA_8cpp_source.html#l00389">reflux_to()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA__rho__eos_8cpp_source.html#l00022">rho_eos()</a>, <a class="el" href="REMORA__rhs__t__3d_8cpp_source.html#l00028">rhs_t_3d()</a>, <a class="el" href="REMORA__rhs__uv__3d_8cpp_source.html#l00029">rhs_uv_3d()</a>, <a class="el" href="REMORA__SetPlotVars_8cpp_source.html#l00129">set2DPlotVariables()</a>, <a class="el" href="REMORA_8cpp_source.html#l01049">set_analytic_vmix()</a>, <a class="el" href="REMORA_8cpp_source.html#l00752">set_bathymetry()</a>, <a class="el" href="REMORA_8cpp_source.html#l00999">set_coriolis()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l01497">set_hmixcoef()</a>, <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01782">set_smflux()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, <a class="el" href="REMORA_8cpp_source.html#l00713">set_zeta()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01141">set_zeta_to_Ztavg()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00349">SetLongwaveFromDriver()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__DepthStretchTransform_8H_source.html#l00116">stretch_transform()</a>, <a class="el" href="REMORA__DepthStretchTransform_8H_source.html#l00264">stretch_transform_full_domain()</a>, <a class="el" href="REMORA__t3dmix_8cpp_source.html#l00023">t3dmix2()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -31254,7 +31347,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l01930">1930</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l02343">elapsed_time()</a>, <a class="el" href="REMORA_8H_source.html#l02337">model_time()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA_8H_source.html#l00125">SetStartTime()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l02349">elapsed_time()</a>, <a class="el" href="REMORA_8H_source.html#l02343">model_time()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA_8H_source.html#l00125">SetStartTime()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -31280,9 +31373,9 @@ Here is the caller graph for this function:</div>
 
 <p>Variable for CPU timing. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02282">2282</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02288">2288</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l02288">getCPUTime()</a>, and <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA_8H_source.html#l02294">getCPUTime()</a>, and <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>.</p>
 
 </div>
 </div>
@@ -31392,7 +31485,7 @@ Here is the caller graph for this function:</div>
 
 <p>Diagnostic sum output interval in number of steps. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02179">2179</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02185">2185</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA_8cpp_source.html#l00439">post_timestep()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -31420,7 +31513,7 @@ Here is the caller graph for this function:</div>
 
 <p>Diagnostic sum output interval in time. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02181">2181</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02187">2187</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA_8cpp_source.html#l00439">post_timestep()</a>, and <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>.</p>
 
@@ -31877,7 +31970,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00683">683</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA_8cpp_source.html#l01782">set_smflux()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA_8cpp_source.html#l01782">set_smflux()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -32098,7 +32191,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00695">695</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01113">set_curvilinear_terms_from_grid_scale()</a>, and <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01119">set_curvilinear_terms_from_grid_scale()</a>, and <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>.</p>
 
 </div>
 </div>
@@ -32118,7 +32211,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00693">693</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01113">set_curvilinear_terms_from_grid_scale()</a>, and <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01119">set_curvilinear_terms_from_grid_scale()</a>, and <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>.</p>
 
 </div>
 </div>
@@ -32336,7 +32429,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00531">531</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01135">set_zeta_to_Ztavg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01141">set_zeta_to_Ztavg()</a>.</p>
 
 </div>
 </div>
@@ -32356,7 +32449,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00527">527</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01135">set_zeta_to_Ztavg()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01141">set_zeta_to_Ztavg()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -32537,7 +32630,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00679">679</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00455">GetRhoLonLat()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00455">GetRhoLonLat()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -32637,7 +32730,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00676">676</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00455">GetRhoLonLat()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00455">GetRhoLonLat()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -32717,7 +32810,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00642">642</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00971">set_derived_metrics()</a>, and <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00977">set_derived_metrics()</a>, and <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>.</p>
 
 </div>
 </div>
@@ -32737,7 +32830,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00636">636</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00971">set_derived_metrics()</a>, and <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00977">set_derived_metrics()</a>, and <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>.</p>
 
 </div>
 </div>
@@ -32757,7 +32850,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00638">638</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00311">set_2d_cf_flux()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00971">set_derived_metrics()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00244">set_massflux_3d()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, and <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00070">store_2d_flux()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00311">set_2d_cf_flux()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00977">set_derived_metrics()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00244">set_massflux_3d()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, and <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00070">store_2d_flux()</a>.</p>
 
 </div>
 </div>
@@ -32777,7 +32870,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00640">640</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00311">set_2d_cf_flux()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00971">set_derived_metrics()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00244">set_massflux_3d()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, and <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00070">store_2d_flux()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00311">set_2d_cf_flux()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00977">set_derived_metrics()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00244">set_massflux_3d()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, and <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00070">store_2d_flux()</a>.</p>
 
 </div>
 </div>
@@ -32797,7 +32890,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00613">613</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01188">calculate_nodal_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00607">init_masks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01238">update_nodal_masks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01194">calculate_nodal_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00607">init_masks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01244">update_nodal_masks()</a>.</p>
 
 </div>
 </div>
@@ -32817,7 +32910,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00607">607</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA_8cpp_source.html#l03722">advance_biology()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00355">allocate_bathymetry_grid_vars_full_domain()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01188">calculate_nodal_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01480">compute_omega_and_w()</a>, <a class="el" href="REMORA_8cpp_source.html#l03566">ensure_full_domain_masks()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01251">fill_3d_masks()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00753">FillCoarsePatchMap()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00412">FillPatchBCs()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00469">GetLandSeaMasks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00607">init_masks()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00841">init_masks_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l01133">inject_mask_outside_domain()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00485">PackSurfaceState()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l01497">set_hmixcoef()</a>, <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01173">set_masks_averaged_down()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA_8cpp_source.html#l03148">update_avgdown_masks()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA_8cpp_source.html#l03722">advance_biology()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00355">allocate_bathymetry_grid_vars_full_domain()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01194">calculate_nodal_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01480">compute_omega_and_w()</a>, <a class="el" href="REMORA_8cpp_source.html#l03566">ensure_full_domain_masks()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01257">fill_3d_masks()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00753">FillCoarsePatchMap()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00412">FillPatchBCs()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00469">GetLandSeaMasks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00607">init_masks()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00841">init_masks_from_netcdf()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l01133">inject_mask_outside_domain()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00485">PackSurfaceState()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l01497">set_hmixcoef()</a>, <a class="el" href="REMORA_8cpp_source.html#l01072">set_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01173">set_masks_averaged_down()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA_8cpp_source.html#l03148">update_avgdown_masks()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -32837,7 +32930,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00615">615</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01251">fill_3d_masks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00607">init_masks()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01257">fill_3d_masks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00607">init_masks()</a>, and <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>.</p>
 
 </div>
 </div>
@@ -32897,7 +32990,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00609">609</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01188">calculate_nodal_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00753">FillCoarsePatchMap()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00412">FillPatchBCs()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00469">GetLandSeaMasks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00607">init_masks()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00151">set_2d_cf_bcs()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00311">set_2d_cf_flux()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA_8cpp_source.html#l03148">update_avgdown_masks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01238">update_nodal_masks()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01194">calculate_nodal_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00753">FillCoarsePatchMap()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00412">FillPatchBCs()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00469">GetLandSeaMasks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00607">init_masks()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00151">set_2d_cf_bcs()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00311">set_2d_cf_flux()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA_8cpp_source.html#l03148">update_avgdown_masks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01244">update_nodal_masks()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -32935,7 +33028,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00611">611</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01188">calculate_nodal_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00753">FillCoarsePatchMap()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00412">FillPatchBCs()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00469">GetLandSeaMasks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00607">init_masks()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00151">set_2d_cf_bcs()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00311">set_2d_cf_flux()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA_8cpp_source.html#l03148">update_avgdown_masks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01238">update_nodal_masks()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01194">calculate_nodal_masks()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00753">FillCoarsePatchMap()</a>, <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00412">FillPatchBCs()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00469">GetLandSeaMasks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00607">init_masks()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00151">set_2d_cf_bcs()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00311">set_2d_cf_flux()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA_8cpp_source.html#l03148">update_avgdown_masks()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01244">update_nodal_masks()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -33013,7 +33106,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00626">626</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00355">allocate_bathymetry_grid_vars_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03444">average_down_masked()</a>, <a class="el" href="REMORA_8cpp_source.html#l02996">check_cf_metrics()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00074">compute_omega()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00020">gls_prestep()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00011">scale_rhs_vars()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00065">scale_rhs_vars_inv()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01113">set_curvilinear_terms_from_grid_scale()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00971">set_derived_metrics()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">set_grid_coords_from_grid_scale()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA_8cpp_source.html#l01497">set_hmixcoef()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00209">volWgtSumMF()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00355">allocate_bathymetry_grid_vars_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03444">average_down_masked()</a>, <a class="el" href="REMORA_8cpp_source.html#l02996">check_cf_metrics()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00074">compute_omega()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00020">gls_prestep()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00011">scale_rhs_vars()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00065">scale_rhs_vars_inv()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01119">set_curvilinear_terms_from_grid_scale()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00977">set_derived_metrics()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">set_grid_coords_from_grid_scale()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA_8cpp_source.html#l01497">set_hmixcoef()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00209">volWgtSumMF()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -33053,7 +33146,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00628">628</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00355">allocate_bathymetry_grid_vars_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03444">average_down_masked()</a>, <a class="el" href="REMORA_8cpp_source.html#l02996">check_cf_metrics()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00074">compute_omega()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00020">gls_prestep()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00011">scale_rhs_vars()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00065">scale_rhs_vars_inv()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01113">set_curvilinear_terms_from_grid_scale()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00971">set_derived_metrics()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">set_grid_coords_from_grid_scale()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA_8cpp_source.html#l01497">set_hmixcoef()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00209">volWgtSumMF()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00355">allocate_bathymetry_grid_vars_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03444">average_down_masked()</a>, <a class="el" href="REMORA_8cpp_source.html#l02996">check_cf_metrics()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00074">compute_omega()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00020">gls_prestep()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00011">scale_rhs_vars()</a>, <a class="el" href="REMORA__scale__rhs__vars_8cpp_source.html#l00065">scale_rhs_vars_inv()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01119">set_curvilinear_terms_from_grid_scale()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00977">set_derived_metrics()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">set_grid_coords_from_grid_scale()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, <a class="el" href="REMORA_8cpp_source.html#l01497">set_hmixcoef()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00209">volWgtSumMF()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -33113,7 +33206,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00525">525</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00585">ApplyAtmosphericStates()</a>, <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01135">set_zeta_to_Ztavg()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00585">ApplyAtmosphericStates()</a>, <a class="el" href="REMORA__bulk__flux_8cpp_source.html#l00025">bulk_fluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA_8cpp_source.html#l01904">set_surface_state()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01141">set_zeta_to_Ztavg()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -33855,7 +33948,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00663">663</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00427">GetAtmosToOceanPsiCoordinates()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01199">plot_node_coords()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00427">GetAtmosToOceanPsiCoordinates()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01199">plot_node_coords()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -33875,7 +33968,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00648">648</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00015">prob_coords()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">set_grid_coords_from_grid_scale()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00894">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00015">prob_coords()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">set_grid_coords_from_grid_scale()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00900">set_grid_scale()</a>, <a class="el" href="REMORA_8cpp_source.html#l00826">set_grid_vars_averaged_down()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -33895,7 +33988,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00653">653</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -33915,7 +34008,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00658">658</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -33955,7 +34048,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00665">665</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00427">GetAtmosToOceanPsiCoordinates()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01199">plot_node_coords()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00427">GetAtmosToOceanPsiCoordinates()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01199">plot_node_coords()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -33975,7 +34068,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00650">650</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00137">init_beta_plane_coriolis()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00015">prob_coords()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init_8cpp_source.html#l00137">init_beta_plane_coriolis()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00015">prob_coords()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -33995,7 +34088,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00655">655</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -34015,7 +34108,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00660">660</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01068">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00561">init_grid_vars_from_netcdf()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01074">set_grid_coords_from_grid_scale()</a>, and <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>.</p>
 
 </div>
 </div>
@@ -34115,7 +34208,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00601">601</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00151">set_2d_cf_bcs()</a>, <a class="el" href="REMORA_8cpp_source.html#l00713">set_zeta()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00173">set_zeta_average()</a>, <a class="el" href="REMORA_8cpp_source.html#l00969">set_zeta_averaged_down()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01135">set_zeta_to_Ztavg()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d_8cpp_source.html#l00100">advance_2d()</a>, <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA__BoundaryConditions__netcdf_8cpp_source.html#l00020">fill_from_bdyfiles()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00635">init_stuff()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00471">init_zeta_from_netcdf()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__set__2d__cf__bcs_8cpp_source.html#l00151">set_2d_cf_bcs()</a>, <a class="el" href="REMORA_8cpp_source.html#l00713">set_zeta()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00173">set_zeta_average()</a>, <a class="el" href="REMORA_8cpp_source.html#l00969">set_zeta_averaged_down()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01141">set_zeta_to_Ztavg()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
 
 </div>
 </div>
@@ -34215,7 +34308,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00486">486</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00173">set_zeta_average()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01135">set_zeta_to_Ztavg()</a>, <a class="el" href="REMORA__DepthStretchTransform_8H_source.html#l00116">stretch_transform()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__2d__onestep_8cpp_source.html#l00012">advance_2d_onestep()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00459">resize_stuff()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00173">set_zeta_average()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l01141">set_zeta_to_Ztavg()</a>, <a class="el" href="REMORA__DepthStretchTransform_8H_source.html#l00116">stretch_transform()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -34241,7 +34334,7 @@ Here is the caller graph for this function:</div>
 
 <p>Verbosity level of output. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02176">2176</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02182">2182</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__Coupling_8cpp_source.html#l00670">ApplyAtmosphericFluxes()</a>, <a class="el" href="REMORA_8cpp_source.html#l01227">check_mask_consistency()</a>, <a class="el" href="REMORA_8cpp_source.html#l00640">Define_REMORAFillPatchers()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA_8cpp_source.html#l00270">Evolve()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l01100">init_riv_pos_from_netcdf()</a>, <a class="el" href="REMORA__Coupling_8cpp_source.html#l00485">PackSurfaceState()</a>, <a class="el" href="REMORA__prestep__diffusion_8cpp_source.html#l00038">prestep_diffusion()</a>, <a class="el" href="REMORA_8cpp_source.html#l02488">ReadParameters()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00012">sum_integrated_quantities()</a>, and <a class="el" href="REMORA__vert__visc__3d_8cpp_source.html#l00023">vert_visc_3d()</a>.</p>
 
@@ -34319,7 +34412,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00405">405</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__Advance_8cpp_source.html#l00017">Advance()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00884">ClearLevel()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00183">init_data_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00197">set_2darrays()</a>, <a class="el" href="REMORA_8cpp_source.html#l00980">set_init_data_averaged_down()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00244">set_massflux_3d()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00012">sum_integrated_quantities()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__Advance_8cpp_source.html#l00017">Advance()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00183">init_data_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00197">set_2darrays()</a>, <a class="el" href="REMORA_8cpp_source.html#l00980">set_init_data_averaged_down()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00244">set_massflux_3d()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00012">sum_integrated_quantities()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -34339,7 +34432,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00396">396</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00884">ClearLevel()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
 
 </div>
 </div>
@@ -34359,7 +34452,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00407">407</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__Advance_8cpp_source.html#l00017">Advance()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00884">ClearLevel()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00183">init_data_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00197">set_2darrays()</a>, <a class="el" href="REMORA_8cpp_source.html#l00980">set_init_data_averaged_down()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00244">set_massflux_3d()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00012">sum_integrated_quantities()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__Advance_8cpp_source.html#l00017">Advance()</a>, <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00427">allocate_init_full_domain()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00029">init_analytic()</a>, <a class="el" href="REMORA__init__from__netcdf_8cpp_source.html#l00183">init_data_from_netcdf()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Plotfile_8cpp_source.html#l01361">mask_arrays_for_write()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__init_8cpp_source.html#l00197">set_2darrays()</a>, <a class="el" href="REMORA_8cpp_source.html#l00980">set_init_data_averaged_down()</a>, <a class="el" href="REMORA__compute__W_8cpp_source.html#l00244">set_massflux_3d()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__SumIQ_8cpp_source.html#l00012">sum_integrated_quantities()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, <a class="el" href="REMORA__NCPlotFile_8cpp_source.html#l00355">WriteNCPlotFile_which()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -34379,7 +34472,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00398">398</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00884">ClearLevel()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d_8cpp_source.html#l00036">advance_3d()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, <a class="el" href="REMORA__Tracers_8cpp_source.html#l00066">evolveTracers()</a>, <a class="el" href="REMORA__gls_8cpp_source.html#l00250">gls_corrector()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
 
 </div>
 </div>
@@ -34399,7 +34492,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00409">409</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00884">ClearLevel()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA_8cpp_source.html#l03222">AverageDownTo()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">ErrorEst()</a>, <a class="el" href="REMORA__ComputeTimestep_8cpp_source.html#l00118">estTimeStep()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">WritePlotFile()</a>.</p>
 
 </div>
 </div>
@@ -34419,7 +34512,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l00400">400</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00884">ClearLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__advance__3d__ml_8cpp_source.html#l00009">advance_3d_ml()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00885">ClearLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l02060">init_only()</a>, <a class="el" href="REMORA_8cpp_source.html#l00464">InitData()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00064">MakeNewLevelFromCoarse()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00395">MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00242">ReadCheckpointFile()</a>, <a class="el" href="REMORA__Advance_8cpp_source.html#l00094">register_coarse_data()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00222">RemakeLevel()</a>, <a class="el" href="REMORA_8cpp_source.html#l00070">REMORA()</a>, <a class="el" href="REMORA_8cpp_source.html#l00146">REMORA()</a>, <a class="el" href="REMORA__setup__step_8cpp_source.html#l00011">setup_step()</a>, <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">timeStep()</a>, <a class="el" href="REMORA__TimeStepML_8cpp_source.html#l00010">timeStepML()</a>, and <a class="el" href="REMORA__Checkpoint_8cpp_source.html#l00015">WriteCheckpointFile()</a>.</p>
 
 </div>
 </div>

@@ -186,7 +186,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00212">212</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00246">246</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae385ccde436cd1536d8ec81be7cc5041" name="ae385ccde436cd1536d8ec81be7cc5041"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae385ccde436cd1536d8ec81be7cc5041">&#9670;&#160;</a></span>REMORAPC() <span class="overload">[1/2]</span></h2>
@@ -223,7 +223,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Constructor </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00222">222</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00256">256</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -284,7 +284,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Constructor </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00237">237</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00271">271</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -323,7 +323,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Whether the particles advect with the flow </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00307">307</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00341">341</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 
 </div>
 </div>
@@ -387,7 +387,7 @@ Here is the call graph for this function:</div>
 <p>Uses midpoint method to advance particles using flow velocity.</p>
 <p>Midpoint-method advection in terrain-following coordinates. Horizontally the particle moves with u and v at a fixed fractional w-level index (see <a class="el" href="REMORA__PC_8H.html">REMORA_PC.H</a>), so it follows the s-levels over sloping bathymetry; vertically it moves across the levels at omega / Hz. The index is reflected off the bed and the free surface and then mapped back to a height, so a particle can never leave the water column.</p>
 <p>Particle positions are in the uniform coordinates of the AMReX geometry, whose cell size is (prob_hi - prob_lo) / n_cell, while u and v are physical velocities along the grid directions. They are converted with the local metric, dx/dt = u * pm * dx_geom and dy/dt = v * pn * dy_geom, so particles cover the right physical distance on stretched or curvilinear grids; on a uniform grid the factors are 1.</p>
-<p>The index is recovered from the stored height on the current grid, so a particle stays at a fixed height, not a fixed index, while the free surface moves between steps.</p>
+<p>The index is recovered from the stored height on the current grid, so a particle stays at a fixed height, not a fixed index, while the free surface moves between steps. Both stages of the midpoint method run in one kernel; nothing between them needs the particles redistributed, since the midpoint stays within the ghost cells of the particle's grid.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">a_lev</td><td>level at which to evolve particles </td></tr>
@@ -400,7 +400,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC__Evolve_8cpp_source.html#l00057">57</a> of file <a class="el" href="REMORA__PC__Evolve_8cpp_source.html">REMORA_PC_Evolve.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC__Evolve_8cpp_source.html#l00059">59</a> of file <a class="el" href="REMORA__PC__Evolve_8cpp_source.html">REMORA_PC_Evolve.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__PC__Evolve_8cpp_source.html#l00017">EvolveParticles()</a>.</p>
 <div class="dynheader">
@@ -408,25 +408,23 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classREMORAPC_a744c1c920ce038fccc2c0d19dfe43220_cgraph.png" border="0" usemap="#aclassREMORAPC_a744c1c920ce038fccc2c0d19dfe43220_cgraph" alt=""/></div>
 <map name="aclassREMORAPC_a744c1c920ce038fccc2c0d19dfe43220_cgraph" id="aclassREMORAPC_a744c1c920ce038fccc2c0d19dfe43220_cgraph">
-<area shape="rect" title=" " alt="" coords="5,157,216,183"/>
+<area shape="rect" title=" " alt="" coords="5,80,216,105"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="264,5,447,31"/>
-<area shape="poly" title=" " alt="" coords="123,155,181,104,220,74,263,48,295,33,298,38,265,52,224,79,184,108,127,159"/>
-<area shape="rect" href="REMORA__PC_8H.html#a225c0971e38486da17296498ede55606" title=" " alt="" coords="273,107,438,132"/>
-<area shape="poly" title=" " alt="" coords="173,155,280,132,281,137,174,160"/>
-<area shape="rect" href="REMORA__PC_8H.html#ab4c9f5df9048b6a93a90d55e3aea6a7c" title=" " alt="" coords="507,132,609,157"/>
-<area shape="poly" title=" " alt="" coords="216,161,493,146,493,151,216,167"/>
-<area shape="rect" href="REMORA__PC_8H.html#a923697f4e1e785c37ba29dc1ceed15e7" title=" " alt="" coords="669,81,835,107"/>
-<area shape="poly" title=" " alt="" coords="129,155,187,121,224,104,263,91,367,75,473,69,571,72,656,79,655,84,571,77,473,75,368,80,265,97,226,109,189,126,132,159"/>
-<area shape="rect" href="REMORA__PC_8H.html#aa363c241c96b323e3cd83b9f33553731" title=" " alt="" coords="279,207,431,247"/>
-<area shape="poly" title=" " alt="" coords="166,180,266,204,265,209,165,185"/>
-<area shape="rect" href="REMORA__PC_8H.html#aae66844028ea79c7e9cb113e2c20696c" title=" " alt="" coords="495,297,621,323"/>
-<area shape="poly" title=" " alt="" coords="123,181,144,210,177,246,218,281,265,308,319,322,376,328,431,327,481,322,481,327,431,332,376,333,318,328,263,312,215,285,173,250,140,213,119,185"/>
-<area shape="rect" href="REMORA__PC_8H.html#af2ddadbbd8da6d155254e0542437cbb4" title=" " alt="" coords="273,272,438,297"/>
-<area shape="poly" title=" " alt="" coords="132,181,190,218,265,257,288,265,286,270,263,262,187,222,129,185"/>
-<area shape="poly" title=" " alt="" coords="438,127,493,134,492,139,438,132"/>
-<area shape="poly" title=" " alt="" coords="607,129,689,108,690,113,608,134"/>
-<area shape="poly" title=" " alt="" coords="417,270,445,257,473,237,499,213,538,167,542,170,503,217,477,241,448,262,420,274"/>
-<area shape="poly" title=" " alt="" coords="438,292,481,298,481,303,438,298"/>
+<area shape="poly" title=" " alt="" coords="147,77,263,39,290,32,292,37,265,45,149,82"/>
+<area shape="rect" href="REMORA__PC_8H.html#a47651b206c7945bb9f035f08da2a0a20" title=" " alt="" coords="273,55,438,80"/>
+<area shape="poly" title=" " alt="" coords="216,79,259,75,259,80,216,84"/>
+<area shape="rect" href="REMORA__PC_8H.html#aae66844028ea79c7e9cb113e2c20696c" title=" " alt="" coords="514,153,641,179"/>
+<area shape="poly" title=" " alt="" coords="145,103,200,122,265,139,388,156,500,163,500,168,388,161,263,145,199,128,143,108"/>
+<area shape="rect" href="REMORA__PC_8H.html#af2ddadbbd8da6d155254e0542437cbb4" title=" " alt="" coords="273,104,438,129"/>
+<area shape="poly" title=" " alt="" coords="216,100,259,105,259,110,216,106"/>
+<area shape="rect" href="REMORA__PC_8H.html#a0383d8a3a7d0bce173b4ee7d5c5f463b" title=" " alt="" coords="509,104,646,129"/>
+<area shape="poly" title=" " alt="" coords="414,77,507,98,505,104,413,83"/>
+<area shape="rect" href="REMORA__PC_8H.html#acb87bff16d62a1921381520071c2f942" title=" " alt="" coords="495,55,660,80"/>
+<area shape="poly" title=" " alt="" coords="438,65,481,65,481,70,438,70"/>
+<area shape="poly" title=" " alt="" coords="423,78,448,89,464,102,473,115,482,128,496,140,508,146,505,151,493,144,478,131,469,118,460,105,445,94,421,83"/>
+<area shape="poly" title=" " alt="" coords="438,114,495,114,495,119,438,119"/>
+<area shape="poly" title=" " alt="" coords="413,101,505,80,507,86,414,107"/>
+<area shape="poly" title=" " alt="" coords="414,127,507,148,505,153,413,132"/>
 </map>
 </div>
 <div class="dynheader">
@@ -483,7 +481,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Compute mesh variable from particles </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00295">295</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00329">329</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -573,27 +571,25 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classREMORAPC_a4bc0a8ad2c6ec1aa4570e75531b5c38b_cgraph.png" border="0" usemap="#aclassREMORAPC_a4bc0a8ad2c6ec1aa4570e75531b5c38b_cgraph" alt=""/></div>
 <map name="aclassREMORAPC_a4bc0a8ad2c6ec1aa4570e75531b5c38b_cgraph" id="aclassREMORAPC_a4bc0a8ad2c6ec1aa4570e75531b5c38b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,157,208,183"/>
-<area shape="rect" href="classREMORAPC.html#a744c1c920ce038fccc2c0d19dfe43220" title=" " alt="" coords="256,157,467,183"/>
-<area shape="poly" title=" " alt="" coords="208,167,243,167,243,173,208,173"/>
+<area shape="rect" title=" " alt="" coords="5,80,208,105"/>
+<area shape="rect" href="classREMORAPC.html#a744c1c920ce038fccc2c0d19dfe43220" title=" " alt="" coords="256,80,467,105"/>
+<area shape="poly" title=" " alt="" coords="208,90,243,90,243,95,208,95"/>
 <area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="515,5,697,31"/>
-<area shape="poly" title=" " alt="" coords="374,155,432,104,471,74,513,48,546,33,548,38,516,52,474,79,435,108,378,159"/>
-<area shape="rect" href="REMORA__PC_8H.html#a225c0971e38486da17296498ede55606" title=" " alt="" coords="523,107,689,132"/>
-<area shape="poly" title=" " alt="" coords="423,155,530,132,531,137,424,160"/>
-<area shape="rect" href="REMORA__PC_8H.html#ab4c9f5df9048b6a93a90d55e3aea6a7c" title=" " alt="" coords="757,132,860,157"/>
-<area shape="poly" title=" " alt="" coords="467,161,744,146,744,151,467,167"/>
-<area shape="rect" href="REMORA__PC_8H.html#a923697f4e1e785c37ba29dc1ceed15e7" title=" " alt="" coords="920,81,1085,107"/>
-<area shape="poly" title=" " alt="" coords="380,155,438,121,475,104,514,91,618,75,723,69,822,72,907,79,906,84,822,77,723,75,618,80,515,97,477,109,440,126,383,159"/>
-<area shape="rect" href="REMORA__PC_8H.html#aa363c241c96b323e3cd83b9f33553731" title=" " alt="" coords="530,207,682,247"/>
-<area shape="poly" title=" " alt="" coords="417,180,517,204,516,209,416,185"/>
-<area shape="rect" href="REMORA__PC_8H.html#aae66844028ea79c7e9cb113e2c20696c" title=" " alt="" coords="745,297,872,323"/>
-<area shape="poly" title=" " alt="" coords="374,181,395,210,427,246,468,281,516,308,570,322,627,328,682,327,731,322,732,327,682,332,626,333,569,328,514,312,465,285,424,250,391,213,369,185"/>
-<area shape="rect" href="REMORA__PC_8H.html#af2ddadbbd8da6d155254e0542437cbb4" title=" " alt="" coords="523,272,689,297"/>
-<area shape="poly" title=" " alt="" coords="382,181,440,218,516,257,538,265,537,270,514,262,438,222,380,185"/>
-<area shape="poly" title=" " alt="" coords="689,127,744,134,743,139,688,132"/>
-<area shape="poly" title=" " alt="" coords="858,129,939,108,941,113,859,134"/>
-<area shape="poly" title=" " alt="" coords="668,270,696,257,724,237,749,213,789,167,793,170,753,217,727,241,699,262,670,274"/>
-<area shape="poly" title=" " alt="" coords="689,292,732,298,731,303,688,298"/>
+<area shape="poly" title=" " alt="" coords="398,77,514,39,541,32,542,37,515,45,400,82"/>
+<area shape="rect" href="REMORA__PC_8H.html#a47651b206c7945bb9f035f08da2a0a20" title=" " alt="" coords="523,55,689,80"/>
+<area shape="poly" title=" " alt="" coords="466,79,509,75,510,80,467,84"/>
+<area shape="rect" href="REMORA__PC_8H.html#aae66844028ea79c7e9cb113e2c20696c" title=" " alt="" coords="765,153,891,179"/>
+<area shape="poly" title=" " alt="" coords="396,103,451,122,515,139,639,156,751,163,751,168,639,161,514,145,449,128,394,108"/>
+<area shape="rect" href="REMORA__PC_8H.html#af2ddadbbd8da6d155254e0542437cbb4" title=" " alt="" coords="523,104,689,129"/>
+<area shape="poly" title=" " alt="" coords="467,100,510,105,509,110,466,106"/>
+<area shape="rect" href="REMORA__PC_8H.html#a0383d8a3a7d0bce173b4ee7d5c5f463b" title=" " alt="" coords="759,104,897,129"/>
+<area shape="poly" title=" " alt="" coords="664,77,757,98,756,104,663,83"/>
+<area shape="rect" href="REMORA__PC_8H.html#acb87bff16d62a1921381520071c2f942" title=" " alt="" coords="745,55,911,80"/>
+<area shape="poly" title=" " alt="" coords="689,65,732,65,732,70,689,70"/>
+<area shape="poly" title=" " alt="" coords="674,78,699,89,714,102,724,115,732,128,747,140,758,146,756,151,744,144,728,131,719,118,710,105,696,94,671,83"/>
+<area shape="poly" title=" " alt="" coords="689,114,745,114,745,119,689,119"/>
+<area shape="poly" title=" " alt="" coords="663,101,756,80,757,86,664,107"/>
+<area shape="poly" title=" " alt="" coords="664,127,757,148,756,153,663,132"/>
 </map>
 </div>
 
@@ -632,9 +628,15 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classREMORAPC_ac858f194f6a884f8be004914b2138594_cgraph.png" border="0" usemap="#aclassREMORAPC_ac858f194f6a884f8be004914b2138594_cgraph" alt=""/></div>
 <map name="aclassREMORAPC_ac858f194f6a884f8be004914b2138594_cgraph" id="aclassREMORAPC_ac858f194f6a884f8be004914b2138594_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,220,38"/>
-<area shape="rect" href="classREMORAPC.html#ac014546bf4e670fd63e0723c40ac72e3" title=" " alt="" coords="268,5,483,45"/>
-<area shape="poly" title=" " alt="" coords="220,23,254,23,254,28,220,28"/>
+<area shape="rect" title=" " alt="" coords="5,31,220,56"/>
+<area shape="rect" href="classREMORAPC.html#ac014546bf4e670fd63e0723c40ac72e3" title=" " alt="" coords="268,23,483,63"/>
+<area shape="poly" title=" " alt="" coords="220,41,254,41,254,46,220,46"/>
+<area shape="rect" href="REMORA__PC_8H.html#ab4c9f5df9048b6a93a90d55e3aea6a7c" title=" " alt="" coords="531,31,633,56"/>
+<area shape="poly" title=" " alt="" coords="483,41,517,41,517,46,483,46"/>
+<area shape="rect" href="REMORA__PC_8H.html#a0383d8a3a7d0bce173b4ee7d5c5f463b" title=" " alt="" coords="695,5,833,31"/>
+<area shape="poly" title=" " alt="" coords="633,34,681,27,682,32,634,39"/>
+<area shape="rect" href="REMORA__PC_8H.html#acb87bff16d62a1921381520071c2f942" title=" " alt="" coords="681,55,847,80"/>
+<area shape="poly" title=" " alt="" coords="634,47,668,52,667,57,633,53"/>
 </map>
 </div>
 <div class="dynheader">
@@ -691,6 +693,20 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00068">68</a> of file <a class="el" href="REMORA__PC__Init_8cpp_source.html">REMORA_PC_Init.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00051">InitializeParticles()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classREMORAPC_ac014546bf4e670fd63e0723c40ac72e3_cgraph.png" border="0" usemap="#aclassREMORAPC_ac014546bf4e670fd63e0723c40ac72e3_cgraph" alt=""/></div>
+<map name="aclassREMORAPC_ac014546bf4e670fd63e0723c40ac72e3_cgraph" id="aclassREMORAPC_ac014546bf4e670fd63e0723c40ac72e3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,23,220,63"/>
+<area shape="rect" href="REMORA__PC_8H.html#ab4c9f5df9048b6a93a90d55e3aea6a7c" title=" " alt="" coords="268,31,371,56"/>
+<area shape="poly" title=" " alt="" coords="220,41,254,41,254,46,220,46"/>
+<area shape="rect" href="REMORA__PC_8H.html#a0383d8a3a7d0bce173b4ee7d5c5f463b" title=" " alt="" coords="433,5,570,31"/>
+<area shape="poly" title=" " alt="" coords="371,34,419,27,419,32,371,39"/>
+<area shape="rect" href="REMORA__PC_8H.html#acb87bff16d62a1921381520071c2f942" title=" " alt="" coords="419,55,584,80"/>
+<area shape="poly" title=" " alt="" coords="371,47,405,52,405,57,371,53"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -767,7 +783,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__PC__Utils_8cpp_source.html#l00014">14</a> of file <a class="el" href="REMORA__PC__Utils_8cpp_source.html">REMORA_PC_Utils.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__PC_8H_source.html#l00295">computeMeshVar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__PC_8H_source.html#l00329">computeMeshVar()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -805,7 +821,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Get real-type particle attribute names </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00272">272</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00306">306</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 
 </div>
 </div>
@@ -835,7 +851,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00008">8</a> of file <a class="el" href="REMORA__PC__Init_8cpp_source.html">REMORA_PC_Init.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__PC_8H_source.html#l00222">REMORAPC()</a>, and <a class="el" href="REMORA__PC_8H_source.html#l00237">REMORAPC()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__PC_8H_source.html#l00256">REMORAPC()</a>, and <a class="el" href="REMORA__PC_8H_source.html#l00271">REMORAPC()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -876,7 +892,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Specify if particles should advect with flow </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00310">310</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00344">344</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 
 </div>
 </div>
@@ -904,9 +920,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Get real-type particle attribute names </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00265">265</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00299">299</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__PC__Utils_8cpp_source.html#l00066">WriteOutput()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__PC__Utils_8cpp_source.html#l00070">WriteOutput()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -953,7 +969,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Write the particles for a checkpoint, or with a_xy for a plotfile with x and y in physical coordinates</p>
 <p>Write the particles of one species, for a checkpoint or a plotfile. With a_xy null they are written as they are, in the uniform coordinates of the AMReX geometry they move in. With a_xy given (plotfiles), x and y are replaced by the physical coordinates of the cell corners (psi points) interpolated bilinearly to each particle. These are the corner positions the plotfile's nodal displacement gives a viewer, so each particle is drawn inside the cell that holds it. z is already the physical height. The uniform x and y are saved before the conversion and restored bit for bit after the write, so writing a plotfile does not change the run.</p>
-<p>While the plotfile is written the positions no longer match the grids the particles are stored in, so AMReX's AMREX_ASSERT(pc.OK()) at the start of the write fails in builds with assertions on, wherever the physical coordinates differ from the uniform ones.</p>
+<p>Each particle stays filed under the grid that physically holds it, but AMReX checks that against the uniform geometry: pc.OK() maps each position to a cell with <a class="el" href="structREMORAParticlesAssignor.html">REMORAParticlesAssignor</a> and the uniform prob_lo and cell size, not with the physical corners. WriteBinaryParticleData, which both Checkpoint and WritePlotFile call, asserts pc.OK(), so in builds with assertions on the write fails wherever the physical coordinates differ from the uniform ones. Writing through WritePlotFile instead would not avoid this. The writers do not need pc.OK(), and AMReX-Codes/amrex#6175 removes the assertion from them.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">a_fname</td><td>checkpoint or plotfile directory </td></tr>
@@ -963,7 +979,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC__Utils_8cpp_source.html#l00066">66</a> of file <a class="el" href="REMORA__PC__Utils_8cpp_source.html">REMORA_PC_Utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC__Utils_8cpp_source.html#l00070">70</a> of file <a class="el" href="REMORA__PC__Utils_8cpp_source.html">REMORA_PC_Utils.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -999,9 +1015,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>advect with flow velocity </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00325">325</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00359">359</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__PC_8H_source.html#l00307">advectsWithFlow()</a>, <a class="el" href="REMORA__PC__Evolve_8cpp_source.html#l00017">EvolveParticles()</a>, <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00008">readInputs()</a>, and <a class="el" href="REMORA__PC_8H_source.html#l00310">setAdvectWithFlow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__PC_8H_source.html#l00341">advectsWithFlow()</a>, <a class="el" href="REMORA__PC__Evolve_8cpp_source.html#l00017">EvolveParticles()</a>, <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00008">readInputs()</a>, and <a class="el" href="REMORA__PC_8H_source.html#l00344">setAdvectWithFlow()</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1042,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>initial particle distribution type </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00331">331</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00365">365</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00051">InitializeParticles()</a>, and <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00008">readInputs()</a>.</p>
 
@@ -1053,9 +1069,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>name of this particle species </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00329">329</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00363">363</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00051">InitializeParticles()</a>, <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00008">readInputs()</a>, <a class="el" href="REMORA__PC_8H_source.html#l00222">REMORAPC()</a>, and <a class="el" href="REMORA__PC_8H_source.html#l00237">REMORAPC()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00051">InitializeParticles()</a>, <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00008">readInputs()</a>, <a class="el" href="REMORA__PC_8H_source.html#l00256">REMORAPC()</a>, and <a class="el" href="REMORA__PC_8H_source.html#l00271">REMORAPC()</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1096,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>box within which to place particles </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00327">327</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00361">361</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00051">InitializeParticles()</a>, and <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00008">readInputs()</a>.</p>
 
@@ -1107,7 +1123,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>initial number of particles per cell </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00332">332</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00366">366</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00068">initializeParticlesUniformDistributionInBox()</a>, and <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00008">readInputs()</a>.</p>
 
@@ -1134,7 +1150,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>place particles at random positions? </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00339">339</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__PC_8H_source.html#l00373">373</a> of file <a class="el" href="REMORA__PC_8H_source.html">REMORA_PC.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00068">initializeParticlesUniformDistributionInBox()</a>, and <a class="el" href="REMORA__PC__Init_8cpp_source.html#l00008">readInputs()</a>.</p>
 

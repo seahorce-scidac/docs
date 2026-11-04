@@ -36,8 +36,10 @@ var annotated_dup =
       [ "FieldWeight", "structREMORAMaskedAvgDown_1_1FieldWeight.html", "structREMORAMaskedAvgDown_1_1FieldWeight" ],
       [ "MaskWeight", "structREMORAMaskedAvgDown_1_1MaskWeight.html", "structREMORAMaskedAvgDown_1_1MaskWeight" ]
     ] ],
+    [ "HorizontalStencil", "structHorizontalStencil.html", "structHorizontalStencil" ],
     [ "LatLonRegrid", "classLatLonRegrid.html", "classLatLonRegrid" ],
     [ "LatLonRegridOptions", "structLatLonRegridOptions.html", "structLatLonRegridOptions" ],
+    [ "LevelIndex", "structLevelIndex.html", "structLevelIndex" ],
     [ "NCTimeSeries", "classNCTimeSeries.html", "classNCTimeSeries" ],
     [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html", "classNCTimeSeriesBoundary" ],
     [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", "classNCTimeSeriesRiver" ],

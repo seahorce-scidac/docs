@@ -33,5 +33,7 @@ var searchData=
   ['fpr_5fvbar_30',['FPr_vbar',['../classREMORA.html#a67bc95982abb4d510d33686193f674c0',1,'REMORA']]],
   ['fpr_5fw_31',['FPr_w',['../classREMORA.html#aa40ef2a9ae8a1833f6edf34b371aaca3',1,'REMORA']]],
   ['frc_5fregrid_5foptions_32',['frc_regrid_options',['../classREMORA.html#a2570552bffa3093e66524cac23b62b42',1,'REMORA']]],
-  ['frc_5ftime_5fvarname_33',['frc_time_varname',['../classREMORA.html#abf7c58cac8975a2cd4c634887976c22f',1,'REMORA']]]
+  ['frc_5ftime_5fvarname_33',['frc_time_varname',['../classREMORA.html#abf7c58cac8975a2cd4c634887976c22f',1,'REMORA']]],
+  ['fx_34',['fx',['../structHorizontalStencil.html#ae10d376f5acacd8ff613fec2b724fca9',1,'HorizontalStencil']]],
+  ['fy_35',['fy',['../structHorizontalStencil.html#aef75c8c915243fe081db98e71bb50b90',1,'HorizontalStencil']]]
 ];

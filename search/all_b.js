@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['k_0',['k',['../structREMORAParticlesIntIdxAoS.html#a3329a7fbc10baf6d18c62d5502d6be92af696a22967d1ac148ef1a7459cbab307',1,'REMORAParticlesIntIdxAoS']]],
+  ['k_0',['k',['../structREMORAParticlesIntIdxAoS.html#a3329a7fbc10baf6d18c62d5502d6be92af696a22967d1ac148ef1a7459cbab307',1,'REMORAParticlesIntIdxAoS::k'],['../structLevelIndex.html#a479f1bb5d610bc75deddd92ce7206e3f',1,'LevelIndex::k']]],
   ['k_5fnh4_1',['K_NH4',['../structREMORABiology_1_1FennelParameters.html#a306c069e11cc626f78560799215cd727',1,'REMORABiology::FennelParameters']]],
   ['k_5fno3_2',['K_NO3',['../structREMORABiology_1_1FennelParameters.html#a7d2f53688a15333be8ee435e6e1a51d2',1,'REMORABiology::FennelParameters']]],
   ['k_5fphy_3',['K_Phy',['../structREMORABiology_1_1FennelParameters.html#ac20dced0a8bcc404e2dd116fd7dd99db',1,'REMORABiology::FennelParameters']]],

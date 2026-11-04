@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i_0',['i',['../structlatlon__regrid_1_1Stencil.html#a768f3dc4da3165b1812105d00a7869ae',1,'latlon_regrid::Stencil']]],
+  ['i_0',['i',['../structlatlon__regrid_1_1Stencil.html#a768f3dc4da3165b1812105d00a7869ae',1,'latlon_regrid::Stencil::i'],['../structHorizontalStencil.html#a47e5d32d047148deff2f84aeaed7c223',1,'HorizontalStencil::i']]],
   ['i8_1',['i8',['../namespacemod__kinds.html#ab42ba9a50334e4f30ff8270420c8ae71',1,'mod_kinds']]],
   ['i_5fthnh4_2',['I_thNH4',['../structREMORABiology_1_1FennelParameters.html#a4de5956feb0012a41b100cace4a4b459',1,'REMORABiology::FennelParameters']]],
   ['i_5ftime_5fbefore_3',['i_time_before',['../classNCTimeSeries.html#a7cd84e642555b80b6aaf9577da2bae4f',1,'NCTimeSeries::i_time_before'],['../classNCTimeSeriesRiver.html#ab3db62bcd9010e2962122aefb5017ab6',1,'NCTimeSeriesRiver::i_time_before'],['../classNCTimeSeriesBoundary.html#a7306bf818fa5c352f3bb63e7c2848d4e',1,'NCTimeSeriesBoundary::i_time_before']]],
@@ -87,7 +87,7 @@ var searchData=
   ['interpcell_84',['InterpCell',['../classREMORAFillPatcher.html#a61e471f7848c2e0ba119380c0063b368',1,'REMORAFillPatcher']]],
   ['interpface_85',['InterpFace',['../classREMORAFillPatcher.html#aad8d35f93cf74ecc7b2d1a031b5ce890',1,'REMORAFillPatcher']]],
   ['interpolate_86',['interpolate',['../classLatLonRegrid.html#a2d23aa407993a9086005a27f5935ed9d',1,'LatLonRegrid']]],
-  ['interpolate_5fhorizontal_87',['interpolate_horizontal',['../REMORA__PC_8H.html#a923697f4e1e785c37ba29dc1ceed15e7',1,'REMORA_PC.H']]],
+  ['interpolate_5fhorizontal_87',['interpolate_horizontal',['../REMORA__PC_8H.html#acb87bff16d62a1921381520071c2f942',1,'REMORA_PC.H']]],
   ['interpolate_5fto_5flevel_5findex_88',['interpolate_to_level_index',['../REMORA__PC_8H.html#aa363c241c96b323e3cd83b9f33553731',1,'REMORA_PC.H']]],
   ['interptype_89',['InterpType',['../namespaceInterpType.html',1,'']]],
   ['iput_90',['iput',['../structncutils_1_1NCVar.html#a493ade206e0f39a383ab35aa67f4548c',1,'ncutils::NCVar']]],

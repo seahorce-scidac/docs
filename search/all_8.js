@@ -15,7 +15,7 @@ var searchData=
   ['has_5freference_12',['has_reference',['../structREMORATimeUnits.html#ab664259a79ab836061829bfa229aa8f4',1,'REMORATimeUnits']]],
   ['has_5fvar_13',['has_var',['../classncutils_1_1NCFile.html#a6cd26d681dd5e9509b91c58cf6ed4464',1,'ncutils::NCFile']]],
   ['has_5fz_14',['has_z',['../classNCTimeSeriesRiver.html#afbf28d73c655104adcc6766e5e09ea98',1,'NCTimeSeriesRiver']]],
-  ['height_5fto_5flevel_5findex_15',['height_to_level_index',['../REMORA__PC_8H.html#a225c0971e38486da17296498ede55606',1,'REMORA_PC.H']]],
+  ['height_5fto_5flevel_5findex_15',['height_to_level_index',['../REMORA__PC_8H.html#a47651b206c7945bb9f035f08da2a0a20',1,'REMORA_PC.H']]],
   ['hires_5fgrid_5flevel_16',['hires_grid_level',['../classREMORA.html#af6613911799ddebd00cff330cf5c5f76',1,'REMORA']]],
   ['hires_5finit_5flevel_17',['hires_init_level',['../classREMORA.html#aa0f93b5eb692df3d7ba897ebe09507ae',1,'REMORA']]],
   ['history_5fcount_18',['history_count',['../classREMORA.html#a296bed166ddc9b98d606f3959ca6bfda',1,'REMORA']]],
@@ -23,7 +23,9 @@ var searchData=
   ['history_5frestart_5frecord_20',['history_restart_record',['../classREMORA.html#ad96cf5c7c0d2eb30ca56e99fcee3624d',1,'REMORA']]],
   ['horiz_5fmixing_5ftype_21',['horiz_mixing_type',['../structSolverChoice.html#a03928859b0d4b6d28c43a64fcb0efea7',1,'SolverChoice']]],
   ['horizmixingtype_22',['HorizMixingType',['../REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578',1,'REMORA_DataStruct.H']]],
-  ['hour_23',['hour',['../structREMORATimeUnits.html#aee5c56e22e0c3d9645e86a3869b3c96a',1,'REMORATimeUnits']]],
-  ['hydro_24',['hydro',['../namespaceREMORAParticleNames.html#a6d2fee8d4c38df86b642bd747fcfb14a',1,'REMORAParticleNames']]],
-  ['hz_25',['hz',['../structREMORABiology_1_1BiologyAdvanceContext.html#ab1f6be9f9b64db3fc23f3fdbb9c03639',1,'REMORABiology::BiologyAdvanceContext::hz'],['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid::hz']]]
+  ['horizontal_5fstencil_23',['horizontal_stencil',['../REMORA__PC_8H.html#a0383d8a3a7d0bce173b4ee7d5c5f463b',1,'REMORA_PC.H']]],
+  ['horizontalstencil_24',['HorizontalStencil',['../structHorizontalStencil.html',1,'']]],
+  ['hour_25',['hour',['../structREMORATimeUnits.html#aee5c56e22e0c3d9645e86a3869b3c96a',1,'REMORATimeUnits']]],
+  ['hydro_26',['hydro',['../namespaceREMORAParticleNames.html#a6d2fee8d4c38df86b642bd747fcfb14a',1,'REMORAParticleNames']]],
+  ['hz_27',['hz',['../structREMORABiology_1_1BiologyAdvanceContext.html#ab1f6be9f9b64db3fc23f3fdbb9c03639',1,'REMORABiology::BiologyAdvanceContext::hz'],['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid::hz']]]
 ];
