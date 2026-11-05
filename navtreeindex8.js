@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"functions_enum.html":[2,3,4],
+"functions_eval.html":[2,3,5],
 "functions_f.html":[2,3,0,5],
 "functions_func.html":[2,3,1],
 "functions_func.html":[2,3,1,0],
@@ -43,8 +45,8 @@ var NAVTREEINDEX8 =
 "functions_type.html":[2,3,3],
 "functions_u.html":[2,3,0,20],
 "functions_v.html":[2,3,0,21],
-"functions_vars.html":[2,3,2],
 "functions_vars.html":[2,3,2,0],
+"functions_vars.html":[2,3,2],
 "functions_vars_b.html":[2,3,2,1],
 "functions_vars_c.html":[2,3,2,2],
 "functions_vars_d.html":[2,3,2,3],
@@ -75,8 +77,8 @@ var NAVTREEINDEX8 =
 "functions_y.html":[2,3,0,24],
 "functions_z.html":[2,3,0,25],
 "functions_~.html":[2,3,0,26],
-"globals.html":[3,1,0,0],
 "globals.html":[3,1,0],
+"globals.html":[3,1,0,0],
 "globals_b.html":[3,1,0,1],
 "globals_c.html":[3,1,0,2],
 "globals_d.html":[3,1,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "namespacederived.html":[1,0,8],
 "namespacederived.html#a0e96290f839430c45b60d3bde88696ec":[1,0,8,1],
 "namespacederived.html#a2457359b34a83452a2d6d602f9919ae3":[1,0,8,0],
-"namespacefunwave__advance__module.html":[1,0,9],
-"namespacefunwave__advance__module.html#a695777be7d7a99b46ca87f35368b9e73":[1,0,9,0],
-"namespacelatlon__regrid.html":[1,0,11]
+"namespacefunwave__advance__module.html":[1,0,9]
 };

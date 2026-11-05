@@ -3,6 +3,7 @@ var classLatLonRegrid =
     [ "apply", "classLatLonRegrid.html#a8503dd988ee400321027c96219aa77c8", null ],
     [ "build_weights", "classLatLonRegrid.html#a66000e2bd29a025d5432106e7248ac35", null ],
     [ "define", "classLatLonRegrid.html#a0da83605069cb6a36231ac46a67e7211", null ],
+    [ "find_source_box", "classLatLonRegrid.html#a7f76031c63ca2ecc8ee878b6f3f61639", null ],
     [ "has_latlon_axes", "classLatLonRegrid.html#ad7cebf0c8d2841f68fd7c82ed855dba6", null ],
     [ "interpolate", "classLatLonRegrid.html#a2d23aa407993a9086005a27f5935ed9d", null ],
     [ "same_source_grid", "classLatLonRegrid.html#adc80485518bff3cb2eac598e8660b06a", null ],
@@ -28,6 +29,7 @@ var classLatLonRegrid =
     [ "nlon", "classLatLonRegrid.html#a7594125bfac4c40f207c2afd47a73074", null ],
     [ "periodic_lon", "classLatLonRegrid.html#a7334aaeccf5943f612431a7e346acde6", null ],
     [ "scale_factor", "classLatLonRegrid.html#ab23b1d3b983601f2123ab9829304efb2", null ],
+    [ "source_box", "classLatLonRegrid.html#a403bd26cb48ed04f0881c7e61741f1de", null ],
     [ "stencil_size", "classLatLonRegrid.html#a89c0a6d68d7cc7d3e1ca05fb9d480f8f", null ],
     [ "weights", "classLatLonRegrid.html#a36b4d2ddff77d682cbb49cd652dd339a", null ]
 ];
