@@ -54,6 +54,7 @@ var classREMORA =
     [ "clear_avgdown_masks", "classREMORA.html#aaf7d7f04fca1d3e025f32746824e16ae", null ],
     [ "ClearLevel", "classREMORA.html#a381f0228efdd9ed40fd9ed0825aa47c2", null ],
     [ "clim_nudg_momentum_box", "classREMORA.html#a454cc74d9dd11beea266b589f7b2ccf9", null ],
+    [ "coarse_for_interp", "classREMORA.html#a1cefedbb95906ab13b9198daad942971", null ],
     [ "coarsen_bathymetry_with_grow_cells", "classREMORA.html#a6b31469759164180d3f98f9027eb8cd8", null ],
     [ "coarsen_masks_with_grow_cells", "classREMORA.html#a82208a3fbe27b64f9847224e52334e5d", null ],
     [ "compute_diagnostic_omega", "classREMORA.html#a2b27e5c931c362a52237ff21b287899a", null ],
