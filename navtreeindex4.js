@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"REMORA__rhs__uv__3d_8cpp.html":[3,0,0,6,20],
 "REMORA__rhs__uv__3d_8cpp_source.html":[3,0,0,6,20],
 "REMORA__scale__rhs__vars_8cpp.html":[3,0,0,6,21],
 "REMORA__scale__rhs__vars_8cpp_source.html":[3,0,0,6,21],
@@ -162,6 +163,7 @@ var NAVTREEINDEX4 =
 "classParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433":[2,0,16,15],
 "classParticleData.html#a20071f2a5b7c25c20f10d844822df943":[2,0,16,4],
 "classParticleData.html#a350dbcdfdd11a10493893692581f54d2":[2,0,16,8],
+"classParticleData.html#a38ec81440f10e1c4de0078080a384c28":[2,0,16,16],
 "classParticleData.html#a3bde404fe4a0f9f1db64221b627dfe26":[2,0,16,14],
 "classParticleData.html#a435b605510f73ae253f41fe042942c52":[2,0,16,20],
 "classParticleData.html#a50e0bc11809c12ccbf29d745c107b70f":[2,0,16,10],
@@ -174,7 +176,6 @@ var NAVTREEINDEX4 =
 "classParticleData.html#ab48c519d8d2ced9b11085353f7203689":[2,0,16,7],
 "classParticleData.html#abbc8af83c67f7967d863376bfe2038ed":[2,0,16,2],
 "classParticleData.html#abbe20f02d5c5a2d7864f48b77a7ee972":[2,0,16,9],
-"classParticleData.html#ad08de4d511cf534ff10386d2f5423312":[2,0,16,16],
 "classParticleData.html#ad29548df06906918e398789674587d29":[2,0,16,18],
 "classParticleData.html#ae6e5796409e87fdb9575d36be2652f2e":[2,0,16,12],
 "classParticleData.html#ae883e2f845d078a2791a5b94312778da":[2,0,16,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classREMORA.html#a1539f678cff20cd3b345d7ace65358f5":[2,0,19,121],
 "classREMORA.html#a1563887e202212c4d54af9695f55d5c8":[2,0,19,453],
 "classREMORA.html#a15b7ca3e79155dde5c648ac78d64e6c7":[2,0,19,536],
-"classREMORA.html#a15ddefdbd26fea9e9b3562ea21e59345":[2,0,19,111],
-"classREMORA.html#a16a8d3eb63ca62688f9174088db3b981":[2,0,19,567]
+"classREMORA.html#a15ddefdbd26fea9e9b3562ea21e59345":[2,0,19,111]
 };

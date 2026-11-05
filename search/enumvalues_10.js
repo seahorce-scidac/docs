@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s_0',['s',['../REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833aa03c7c0ace395d80182db07ae2c30f034',1,'REMORA_DataStruct.H']]],
+  ['s_0',['s',['../structREMORAParticlesRealIdxSoA.html#abf664dc6ae78545a3c148de8962b2795a34c2b2f064b2f170cedfe522623c8dbb',1,'REMORAParticlesRealIdxSoA::s'],['../REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833aa03c7c0ace395d80182db07ae2c30f034',1,'s:&#160;REMORA_DataStruct.H']]],
   ['scaled_5fto_5fgrid_1',['scaled_to_grid',['../REMORA__DataStruct_8H.html#a4d93f1b4d2049772e7c157b5d2a29578a3b9d24a493d7d6bbd862c426d7d4a7bb',1,'REMORA_DataStruct.H']]],
   ['secular_2',['secular',['../namespaceREMORABiology.html#aa77892264812710f1c33d8b2a1ce3f03a3766bada067efa00a0ea7aa2f8725c56',1,'REMORABiology']]],
   ['sfc_3',['sfc',['../classREMORA.html#a27961c017051f59014248dac19d3b53eafff64cb6beebfa10fd803f442c969238',1,'REMORA']]],
