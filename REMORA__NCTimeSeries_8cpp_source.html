@@ -642,126 +642,193 @@ $(document).ready(function(){initNavTree('REMORA__NCTimeSeries_8cpp_source.html'
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        mapper = &amp;amrex::face_cons_linear_interp;</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    }</div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span> </div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    amrex::InterpFromCoarseLevel(*mf_to_fill_lev, <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>, *<a class="code hl_variable" href="classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906">mf_interp_lev0</a>,</div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>                                 0, 0, 1,</div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>                                 geom[0], geom[lev],</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>                                 <a class="code hl_variable" href="REMORA__Plotfile_8cpp.html#aeb56b4bca6dfa0e3b81d3f983926e8a2">null_bc_for_fill</a>, 0, <a class="code hl_variable" href="REMORA__Plotfile_8cpp.html#aeb56b4bca6dfa0e3b81d3f983926e8a2">null_bc_for_fill</a>, 0,</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>                                 <a class="code hl_function" href="classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8">cumulative_ref_ratio</a>(lev, ref_ratio),</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>                                 mapper, null_dom_bcs, 0);</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span> </div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    mf_to_fill_lev-&gt;FillBoundary(geom[lev].periodicity());</div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>}</div>
-</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>amrex::IntVect</div>
-<div class="foldopen" id="foldopen00547" data-start="{" data-end="}">
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno"><a class="line" href="classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8">  547</a></span><a class="code hl_function" href="classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8">NCTimeSeries::cumulative_ref_ratio</a> (<span class="keywordtype">int</span> lev,</div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>                                    <span class="keyword">const</span> amrex::Vector&lt;amrex::IntVect&gt;&amp; ref_ratio)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    amrex::IntVect rr(1,1,1);</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l = 0; l &lt; lev; ++l) {</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        rr[0] *= ref_ratio[l][0];</div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        rr[1] *= ref_ratio[l][1];</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        rr[2] *= ref_ratio[l][2];</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    }</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    <span class="keywordflow">return</span> rr;</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>}</div>
-</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span> </div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span><span class="keyword">const</span> amrex::MultiFab*</div>
-<div class="foldopen" id="foldopen00559" data-start="{" data-end="}">
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno"><a class="line" href="classNCTimeSeries.html#ade407058a6b4aca90273b1ed867a8f73">  559</a></span><a class="code hl_function" href="classNCTimeSeries.html#ade407058a6b4aca90273b1ed867a8f73">NCTimeSeries::get_interpolated_mf</a> (<span class="keywordtype">int</span> lev)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(<a class="code hl_variable" href="classNCTimeSeries.html#a2906c98db6ce85fcd9f099e6534ed165">save_interpolated</a>);</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(lev &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classNCTimeSeries.html#a083bee2988c704eb313e4ca9ba56da69">mf_interpolated_lev</a>.size()));</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(<a class="code hl_variable" href="classNCTimeSeries.html#a083bee2988c704eb313e4ca9ba56da69">mf_interpolated_lev</a>[lev]);</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    <span class="comment">// Under subcycling the levels reach this at different times, so a buffer another level</span></div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <span class="comment">// filled is at the wrong time even though it is the right shape.</span></div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    AMREX_ALWAYS_ASSERT_WITH_MESSAGE(lev == <a class="code hl_variable" href="classNCTimeSeries.html#a262a38e7a42d1e61897e2d8c4cabb3f5">last_updated_lev</a>,</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>        <span class="stringliteral">&quot;NCTimeSeries &#39;&quot;</span> + <a class="code hl_variable" href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">field_name</a> + <span class="stringliteral">&quot;&#39; was last interpolated for level &quot;</span></div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        + std::to_string(<a class="code hl_variable" href="classNCTimeSeries.html#a262a38e7a42d1e61897e2d8c4cabb3f5">last_updated_lev</a>) + <span class="stringliteral">&quot; but read for level &quot;</span> + std::to_string(lev)</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>        + <span class="stringliteral">&quot;. Call update_interpolated_to_time for this level first.&quot;</span>);</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classNCTimeSeries.html#a083bee2988c704eb313e4ca9ba56da69">mf_interpolated_lev</a>[lev].get();</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>}</div>
-</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="comment"></span> </div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span><span class="comment"> * @param[inout] mf        multifab to store time step data into</span></div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span><span class="comment"> * @param[in   ] itime     index of time step to read from file</span></div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00576" data-start="{" data-end="}">
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno"><a class="line" href="classNCTimeSeries.html#a297437358973471709cbec9de11a24bb">  576</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classNCTimeSeries.html#a297437358973471709cbec9de11a24bb">NCTimeSeries::read_in_at_time</a> (amrex::MultiFab* mf, <span class="keywordtype">int</span> itime) {</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> ifile = <a class="code hl_variable" href="classNCTimeSeries.html#ad563c6adfd00dae5588ce2882fbb7d8d">file_for_time</a>[itime];</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    <span class="keyword">const</span> std::string&amp; file_name = <a class="code hl_variable" href="classNCTimeSeries.html#aa0713de8176b7b8a4bde155bc561970b">file_names</a>[ifile];</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> itime_offset = <a class="code hl_variable" href="classNCTimeSeries.html#a2b76bfa7cb8dabde8d24b623da0045f4">file_itime_offset</a>[itime];</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span> </div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Reading in &quot;</span> &lt;&lt; <a class="code hl_variable" href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">field_name</a> &lt;&lt; <span class="stringliteral">&quot; at time index &quot;</span> &lt;&lt; itime</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                   &lt;&lt; <span class="stringliteral">&quot; from &quot;</span> &lt;&lt; file_name &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    AMREX_ALWAYS_ASSERT_WITH_MESSAGE(</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>        ifile &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classNCTimeSeries.html#a6c01d8052548d06070179aca975c8671">file_is_spatially_uniform</a>.size()),</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>        <span class="stringliteral">&quot;NetCDF time series file layout was not initialized&quot;</span>);</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classNCTimeSeries.html#a6c01d8052548d06070179aca975c8671">file_is_spatially_uniform</a>[ifile]) {</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        <span class="keyword">using </span>RARRAY = <a class="code hl_struct" href="structNDArray.html">NDArray&lt;amrex::Real&gt;</a>;</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        amrex::Vector&lt;RARRAY&gt; array_dat(1);</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        <a class="code hl_function" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871">ReadNetCDFFile</a>(file_name, {<a class="code hl_variable" href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">field_name</a>}, array_dat, <span class="keyword">true</span>, itime_offset);</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    <span class="comment">// The interpolation reads coarse cells one beyond the coarse cell under each fine cell, so</span></div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    <span class="comment">// near the physical boundary it reads level-0 ghost cells (#759). The time interpolation</span></div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    <span class="comment">// above set the domain, the ring the file holds outside a non-nodal edge, and the ghost</span></div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    <span class="comment">// cells inside the domain. Copy the outermost of those rows outward across each</span></div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    <span class="comment">// non-periodic side, then fill the ghost cells across a periodic edge from the cells they</span></div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    <span class="comment">// image. EnforcePeriodicity reads ghost cells too, so a cell that is both beyond a</span></div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    <span class="comment">// periodic edge and outside a wall gets its image&#39;s (already extended) value, and every</span></div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    <span class="comment">// ghost cell then agrees with its periodic image. Only the copy used here is changed;</span></div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    <span class="comment">// level 0 itself returned above.</span></div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    {</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>        <span class="keyword">const</span> amrex::Box&amp; dbx = data_box;</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> per_x = geom[0].isPeriodic(0);</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> per_y = geom[0].isPeriodic(1);</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><span class="preprocessor">#ifdef AMREX_USE_OMP</span></div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="preprocessor">#pragma omp parallel if (amrex::Gpu::notInLaunchRegion())</span></div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        <span class="keywordflow">for</span> (amrex::MFIter mfi(*<a class="code hl_variable" href="classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906">mf_interp_lev0</a>,<span class="keyword">true</span>); mfi.isValid(); ++mfi) {</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>            <span class="keyword">const</span> amrex::Box bx = mfi.growntilebox();</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>            amrex::Array4&lt;amrex::Real&gt; a = <a class="code hl_variable" href="classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906">mf_interp_lev0</a>-&gt;array(mfi);</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>            <span class="keyword">const</span> <span class="keyword">auto</span> lo = amrex::lbound(dbx);</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>            <span class="keyword">const</span> <span class="keyword">auto</span> hi = amrex::ubound(dbx);</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>            amrex::ParallelFor(bx, [=] AMREX_GPU_DEVICE (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>            {</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>                <span class="keyword">const</span> <span class="keywordtype">int</span> ii = per_x ? i : amrex::max(lo.x, amrex::min(hi.x, i));</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                <span class="keyword">const</span> <span class="keywordtype">int</span> jj = per_y ? j : amrex::max(lo.y, amrex::min(hi.y, j));</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>                <span class="comment">// Only cells outside the data in a non-periodic direction are written, and</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>                <span class="comment">// their sources lie inside it in every non-periodic direction</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>                <span class="keywordflow">if</span> (ii != i || jj != j) { a(i,j,k) = a(ii,jj,k); }</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>            });</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>        }</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>        <a class="code hl_variable" href="classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906">mf_interp_lev0</a>-&gt;EnforcePeriodicity(geom[0].periodicity());</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    }</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    <span class="comment">// Take the coarse data from those ghost cells, without periodic wrap: each coarse cell</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <span class="comment">// then has a single source, its own value, as every ghost cell now holds the value the</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    <span class="comment">// wrap would give. Fill the fine ghost cells outside the domain as far as the coarse</span></div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    <span class="comment">// ghost cells reach, horizontally only: nothing above fills level-0 ghost cells in z.</span></div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    <span class="keyword">const</span> amrex::IntVect ratio = <a class="code hl_function" href="classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8">cumulative_ref_ratio</a>(lev, ref_ratio);</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    <span class="keyword">const</span> amrex::IntVect cng = <a class="code hl_variable" href="classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906">mf_interp_lev0</a>-&gt;nGrowVect();</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    <span class="keyword">const</span> amrex::IntVect fng = mf_to_fill_lev-&gt;nGrowVect();</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    <span class="keyword">const</span> <span class="keyword">auto</span> coarsener = mapper-&gt;BoxCoarsener(ratio);</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    amrex::IntVect ng_outside(0);</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    <span class="keywordtype">bool</span> fits = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> d = 0; d &lt; AMREX_SPACEDIM; ++d) {</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = (d &lt; 2) ? fng[d] : 0; n &gt;= 0 &amp;&amp; !found; --n) {</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>            amrex::IntVect nv(0);</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>            nv[d] = n;</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>            <span class="keyword">const</span> amrex::Box crse = coarsener.doit(amrex::Box(-nv, amrex::IntVect(32), idx_type));</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>            <span class="keywordflow">if</span> (-crse.smallEnd(d) &lt;= cng[d]) {</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                ng_outside[d] = n;</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                found = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>            }</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        }</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        fits = fits &amp;&amp; found;</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    }</div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        amrex::Real uniform_value = 0.0;</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>        <span class="keywordflow">if</span> (amrex::ParallelDescriptor::IOProcessor()) {</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>            <span class="keyword">const</span> std::vector&lt;MPI_Offset&gt; shape = array_dat[0].get_vshape();</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>            AMREX_ALWAYS_ASSERT_WITH_MESSAGE(</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>                shape.size() == 1 &amp;&amp; shape[0] == 1,</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>                <span class="stringliteral">&quot;Uniform NetCDF time series read did not produce one value&quot;</span>);</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>            uniform_value = *(array_dat[0].get_data());</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>        }</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> ioproc = amrex::ParallelDescriptor::IOProcessorNumber();</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>        amrex::ParallelDescriptor::Bcast(&amp;uniform_value, 1, ioproc);</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>        mf-&gt;setVal(uniform_value);</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    }</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classNCTimeSeries.html#a66edc841c73461aac213073cf8b2206a">file_is_regridded</a>[ifile]) {</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        <a class="code hl_variable" href="classNCTimeSeries.html#aef8e8ece050e1d3c5aee53c6e36d3f7f">regrid</a>-&gt;apply(file_name, <a class="code hl_variable" href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">field_name</a>, itime_offset, *mf);</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    }</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span> </div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>    <span class="comment">// This all assumes that we&#39;re on level 0 with only one boxes_at_level</span></div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    amrex::FArrayBox NC_fab;</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    amrex::Vector&lt;amrex::FArrayBox*&gt; NC_fabs;</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    amrex::Vector&lt;std::string&gt; NC_names;</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    amrex::Vector&lt;enum NC_Data_Dims_Type&gt; NC_dim_types;</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    NC_fabs.push_back(&amp;NC_fab);</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    NC_names.push_back(<a class="code hl_variable" href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">field_name</a>);</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classNCTimeSeries.html#a1fa969bceaf0c79f6b70ebaf9d93c113">is2d</a>) {</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a5f93bace93896872075eae75770cadc4">NC_Data_Dims_Type::Time_SN_WE</a>);</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>        NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06aa3968158227ea04595d4003503cca22b">NC_Data_Dims_Type::Time_BT_SN_WE</a>);</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    }</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    BuildFABsFromNetCDFFile&lt;amrex::FArrayBox,amrex::Real&gt;(<a class="code hl_variable" href="classNCTimeSeries.html#a52b1efdb2e35f56ad86df2aa461a0b54">domain</a>, file_name, NC_names, NC_dim_types,</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>                                                          NC_fabs, <span class="keyword">true</span>, itime_offset);</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="preprocessor">#ifdef _OPENMP</span></div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="preprocessor">#pragma omp parallel if (amrex::Gpu::notInLaunchRegion())</span></div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    {</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="comment">// Don&#39;t tile this since we are operating on full FABs in this routine</span></div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="keywordflow">for</span> ( amrex::MFIter mfi(*mf, <span class="keyword">false</span>); mfi.isValid(); ++mfi )</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    {</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>        amrex::FArrayBox &amp;fab  = (*mf)[mfi];</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        <span class="comment">//</span></div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        <span class="comment">// FArrayBox to FArrayBox copy does &quot;copy on intersection&quot;</span></div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        <span class="comment">// This only works here because we have broadcast the FArrayBox of data from the netcdf file to all ranks</span></div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>        fab.template copy&lt;amrex::RunOn::Device&gt;(NC_fab);</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    } <span class="comment">// mf</span></div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    } <span class="comment">// omp</span></div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>}</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <span class="keywordflow">if</span> (fits) {</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>        <span class="keyword">const</span> amrex::Geometry&amp; cg = geom[0];</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        <span class="keyword">const</span> amrex::Geometry crse_geom_nonperiodic(cg.Domain(), cg.ProbDomain(), cg.Coord(),</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>                                                    amrex::Array&lt;int,AMREX_SPACEDIM&gt;{AMREX_D_DECL(0,0,0)});</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>        amrex::InterpFromCoarseLevel(*mf_to_fill_lev, fng, ng_outside, *<a class="code hl_variable" href="classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906">mf_interp_lev0</a>,</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>                                     0, 0, 1,</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>                                     crse_geom_nonperiodic, geom[lev],</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>                                     ratio, mapper, null_dom_bcs, 0);</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>        <span class="comment">// Too few level-0 ghost cells for the stencil at the boundary: as before</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>        amrex::InterpFromCoarseLevel(*mf_to_fill_lev, <a class="code hl_variable" href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a>, *<a class="code hl_variable" href="classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906">mf_interp_lev0</a>,</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>                                     0, 0, 1,</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>                                     geom[0], geom[lev],</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>                                     <a class="code hl_variable" href="REMORA__Plotfile_8cpp.html#aeb56b4bca6dfa0e3b81d3f983926e8a2">null_bc_for_fill</a>, 0, <a class="code hl_variable" href="REMORA__Plotfile_8cpp.html#aeb56b4bca6dfa0e3b81d3f983926e8a2">null_bc_for_fill</a>, 0,</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>                                     ratio, mapper, null_dom_bcs, 0);</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    }</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    mf_to_fill_lev-&gt;FillBoundary(geom[lev].periodicity());</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>}</div>
 </div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span><span class="preprocessor">#endif </span><span class="comment">// REMORA_USE_NETCDF</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span> </div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>amrex::IntVect</div>
+<div class="foldopen" id="foldopen00614" data-start="{" data-end="}">
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno"><a class="line" href="classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8">  614</a></span><a class="code hl_function" href="classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8">NCTimeSeries::cumulative_ref_ratio</a> (<span class="keywordtype">int</span> lev,</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>                                    <span class="keyword">const</span> amrex::Vector&lt;amrex::IntVect&gt;&amp; ref_ratio)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    amrex::IntVect rr(1,1,1);</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l = 0; l &lt; lev; ++l) {</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>        rr[0] *= ref_ratio[l][0];</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        rr[1] *= ref_ratio[l][1];</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>        rr[2] *= ref_ratio[l][2];</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    }</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    <span class="keywordflow">return</span> rr;</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>}</div>
+</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span> </div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span><span class="keyword">const</span> amrex::MultiFab*</div>
+<div class="foldopen" id="foldopen00626" data-start="{" data-end="}">
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno"><a class="line" href="classNCTimeSeries.html#ade407058a6b4aca90273b1ed867a8f73">  626</a></span><a class="code hl_function" href="classNCTimeSeries.html#ade407058a6b4aca90273b1ed867a8f73">NCTimeSeries::get_interpolated_mf</a> (<span class="keywordtype">int</span> lev)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(<a class="code hl_variable" href="classNCTimeSeries.html#a2906c98db6ce85fcd9f099e6534ed165">save_interpolated</a>);</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(lev &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classNCTimeSeries.html#a083bee2988c704eb313e4ca9ba56da69">mf_interpolated_lev</a>.size()));</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    <a class="code hl_function" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd">AMREX_ALWAYS_ASSERT</a>(<a class="code hl_variable" href="classNCTimeSeries.html#a083bee2988c704eb313e4ca9ba56da69">mf_interpolated_lev</a>[lev]);</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    <span class="comment">// Under subcycling the levels reach this at different times, so a buffer another level</span></div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    <span class="comment">// filled is at the wrong time even though it is the right shape.</span></div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    AMREX_ALWAYS_ASSERT_WITH_MESSAGE(lev == <a class="code hl_variable" href="classNCTimeSeries.html#a262a38e7a42d1e61897e2d8c4cabb3f5">last_updated_lev</a>,</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>        <span class="stringliteral">&quot;NCTimeSeries &#39;&quot;</span> + <a class="code hl_variable" href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">field_name</a> + <span class="stringliteral">&quot;&#39; was last interpolated for level &quot;</span></div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>        + std::to_string(<a class="code hl_variable" href="classNCTimeSeries.html#a262a38e7a42d1e61897e2d8c4cabb3f5">last_updated_lev</a>) + <span class="stringliteral">&quot; but read for level &quot;</span> + std::to_string(lev)</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>        + <span class="stringliteral">&quot;. Call update_interpolated_to_time for this level first.&quot;</span>);</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classNCTimeSeries.html#a083bee2988c704eb313e4ca9ba56da69">mf_interpolated_lev</a>[lev].get();</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>}</div>
+</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span><span class="comment"></span> </div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="comment"> * @param[inout] mf        multifab to store time step data into</span></div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span><span class="comment"> * @param[in   ] itime     index of time step to read from file</span></div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00643" data-start="{" data-end="}">
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno"><a class="line" href="classNCTimeSeries.html#a297437358973471709cbec9de11a24bb">  643</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classNCTimeSeries.html#a297437358973471709cbec9de11a24bb">NCTimeSeries::read_in_at_time</a> (amrex::MultiFab* mf, <span class="keywordtype">int</span> itime) {</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> ifile = <a class="code hl_variable" href="classNCTimeSeries.html#ad563c6adfd00dae5588ce2882fbb7d8d">file_for_time</a>[itime];</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <span class="keyword">const</span> std::string&amp; file_name = <a class="code hl_variable" href="classNCTimeSeries.html#aa0713de8176b7b8a4bde155bc561970b">file_names</a>[ifile];</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> itime_offset = <a class="code hl_variable" href="classNCTimeSeries.html#a2b76bfa7cb8dabde8d24b623da0045f4">file_itime_offset</a>[itime];</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span> </div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    amrex::Print() &lt;&lt; <span class="stringliteral">&quot;Reading in &quot;</span> &lt;&lt; <a class="code hl_variable" href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">field_name</a> &lt;&lt; <span class="stringliteral">&quot; at time index &quot;</span> &lt;&lt; itime</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>                   &lt;&lt; <span class="stringliteral">&quot; from &quot;</span> &lt;&lt; file_name &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span> </div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    AMREX_ALWAYS_ASSERT_WITH_MESSAGE(</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>        ifile &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classNCTimeSeries.html#a6c01d8052548d06070179aca975c8671">file_is_spatially_uniform</a>.size()),</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>        <span class="stringliteral">&quot;NetCDF time series file layout was not initialized&quot;</span>);</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span> </div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classNCTimeSeries.html#a6c01d8052548d06070179aca975c8671">file_is_spatially_uniform</a>[ifile]) {</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        <span class="keyword">using </span>RARRAY = <a class="code hl_struct" href="structNDArray.html">NDArray&lt;amrex::Real&gt;</a>;</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>        amrex::Vector&lt;RARRAY&gt; array_dat(1);</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>        <a class="code hl_function" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871">ReadNetCDFFile</a>(file_name, {<a class="code hl_variable" href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">field_name</a>}, array_dat, <span class="keyword">true</span>, itime_offset);</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span> </div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>        amrex::Real uniform_value = 0.0;</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>        <span class="keywordflow">if</span> (amrex::ParallelDescriptor::IOProcessor()) {</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>            <span class="keyword">const</span> std::vector&lt;MPI_Offset&gt; shape = array_dat[0].get_vshape();</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>            AMREX_ALWAYS_ASSERT_WITH_MESSAGE(</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>                shape.size() == 1 &amp;&amp; shape[0] == 1,</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>                <span class="stringliteral">&quot;Uniform NetCDF time series read did not produce one value&quot;</span>);</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>            uniform_value = *(array_dat[0].get_data());</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>        }</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> ioproc = amrex::ParallelDescriptor::IOProcessorNumber();</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        amrex::ParallelDescriptor::Bcast(&amp;uniform_value, 1, ioproc);</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        mf-&gt;setVal(uniform_value);</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    }</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classNCTimeSeries.html#a66edc841c73461aac213073cf8b2206a">file_is_regridded</a>[ifile]) {</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>        <a class="code hl_variable" href="classNCTimeSeries.html#aef8e8ece050e1d3c5aee53c6e36d3f7f">regrid</a>-&gt;apply(file_name, <a class="code hl_variable" href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">field_name</a>, itime_offset, *mf);</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    }</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    <span class="comment">// This all assumes that we&#39;re on level 0 with only one boxes_at_level</span></div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    amrex::FArrayBox NC_fab;</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    amrex::Vector&lt;amrex::FArrayBox*&gt; NC_fabs;</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    amrex::Vector&lt;std::string&gt; NC_names;</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>    amrex::Vector&lt;enum NC_Data_Dims_Type&gt; NC_dim_types;</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    NC_fabs.push_back(&amp;NC_fab);</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>    NC_names.push_back(<a class="code hl_variable" href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">field_name</a>);</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classNCTimeSeries.html#a1fa969bceaf0c79f6b70ebaf9d93c113">is2d</a>) {</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06a5f93bace93896872075eae75770cadc4">NC_Data_Dims_Type::Time_SN_WE</a>);</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        NC_dim_types.push_back(<a class="code hl_enumvalue" href="REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06aa3968158227ea04595d4003503cca22b">NC_Data_Dims_Type::Time_BT_SN_WE</a>);</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    }</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span> </div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    BuildFABsFromNetCDFFile&lt;amrex::FArrayBox,amrex::Real&gt;(<a class="code hl_variable" href="classNCTimeSeries.html#a52b1efdb2e35f56ad86df2aa461a0b54">domain</a>, file_name, NC_names, NC_dim_types,</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>                                                          NC_fabs, <span class="keyword">true</span>, itime_offset);</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span><span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span><span class="preprocessor">#pragma omp parallel if (amrex::Gpu::notInLaunchRegion())</span></div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>    {</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    <span class="comment">// Don&#39;t tile this since we are operating on full FABs in this routine</span></div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>    <span class="keywordflow">for</span> ( amrex::MFIter mfi(*mf, <span class="keyword">false</span>); mfi.isValid(); ++mfi )</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>    {</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>        amrex::FArrayBox &amp;fab  = (*mf)[mfi];</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span> </div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        <span class="comment">//</span></div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>        <span class="comment">// FArrayBox to FArrayBox copy does &quot;copy on intersection&quot;</span></div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>        <span class="comment">// This only works here because we have broadcast the FArrayBox of data from the netcdf file to all ranks</span></div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span> </div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>        fab.template copy&lt;amrex::RunOn::Device&gt;(NC_fab);</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>    } <span class="comment">// mf</span></div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    } <span class="comment">// omp</span></div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>}</div>
+</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span><span class="preprocessor">#endif </span><span class="comment">// REMORA_USE_NETCDF</span></div>
 <div class="ttc" id="aREMORA__Constants_8H_html"><div class="ttname"><a href="REMORA__Constants_8H.html">REMORA_Constants.H</a></div></div>
 <div class="ttc" id="aREMORA__Constants_8H_html_a6b7c73c34b8e65d792a04602474f08b5"><div class="ttname"><a href="REMORA__Constants_8H.html#a6b7c73c34b8e65d792a04602474f08b5">zero</a></div><div class="ttdeci">constexpr amrex::Real zero</div><div class="ttdef"><b>Definition</b> <a href="REMORA__Constants_8H_source.html#l00006">REMORA_Constants.H:6</a></div></div>
 <div class="ttc" id="aREMORA__DataStruct_8H_html_a1f2023a583d49fcde1b9ae7365f3833aa03c7c0ace395d80182db07ae2c30f034"><div class="ttname"><a href="REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833aa03c7c0ace395d80182db07ae2c30f034">HarmonicMixingType::s</a></div><div class="ttdeci">@ s</div></div>
@@ -781,7 +848,7 @@ $(document).ready(function(){initNavTree('REMORA__NCTimeSeries_8cpp_source.html'
 <div class="ttc" id="aclassNCTimeSeries_html_a1fa969bceaf0c79f6b70ebaf9d93c113"><div class="ttname"><a href="classNCTimeSeries.html#a1fa969bceaf0c79f6b70ebaf9d93c113">NCTimeSeries::is2d</a></div><div class="ttdeci">bool is2d</div><div class="ttdoc">Whether the field we're reading in is 2d.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00097">REMORA_NCTimeSeries.H:97</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_a262a38e7a42d1e61897e2d8c4cabb3f5"><div class="ttname"><a href="classNCTimeSeries.html#a262a38e7a42d1e61897e2d8c4cabb3f5">NCTimeSeries::last_updated_lev</a></div><div class="ttdeci">int last_updated_lev</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00137">REMORA_NCTimeSeries.H:137</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_a2906c98db6ce85fcd9f099e6534ed165"><div class="ttname"><a href="classNCTimeSeries.html#a2906c98db6ce85fcd9f099e6534ed165">NCTimeSeries::save_interpolated</a></div><div class="ttdeci">bool save_interpolated</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00100">REMORA_NCTimeSeries.H:100</a></div></div>
-<div class="ttc" id="aclassNCTimeSeries_html_a297437358973471709cbec9de11a24bb"><div class="ttname"><a href="classNCTimeSeries.html#a297437358973471709cbec9de11a24bb">NCTimeSeries::read_in_at_time</a></div><div class="ttdeci">void read_in_at_time(amrex::MultiFab *mf, int itime)</div><div class="ttdoc">Read in data from file at time index itime and fill into mf.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8cpp_source.html#l00576">REMORA_NCTimeSeries.cpp:576</a></div></div>
+<div class="ttc" id="aclassNCTimeSeries_html_a297437358973471709cbec9de11a24bb"><div class="ttname"><a href="classNCTimeSeries.html#a297437358973471709cbec9de11a24bb">NCTimeSeries::read_in_at_time</a></div><div class="ttdeci">void read_in_at_time(amrex::MultiFab *mf, int itime)</div><div class="ttdoc">Read in data from file at time index itime and fill into mf.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8cpp_source.html#l00643">REMORA_NCTimeSeries.cpp:643</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_a2b76bfa7cb8dabde8d24b623da0045f4"><div class="ttname"><a href="classNCTimeSeries.html#a2b76bfa7cb8dabde8d24b623da0045f4">NCTimeSeries::file_itime_offset</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; file_itime_offset</div><div class="ttdoc">Offset to access a particular time within its file.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00112">REMORA_NCTimeSeries.H:112</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_a2bb45e41770a284db8ae1f0f2275cb5b"><div class="ttname"><a href="classNCTimeSeries.html#a2bb45e41770a284db8ae1f0f2275cb5b">NCTimeSeries::time_before</a></div><div class="ttdeci">double time_before</div><div class="ttdoc">Time in ocean_times immediately before the last time interpolated to.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00116">REMORA_NCTimeSeries.H:116</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_a2fa9d406d0c45782fb0b1270972da906"><div class="ttname"><a href="classNCTimeSeries.html#a2fa9d406d0c45782fb0b1270972da906">NCTimeSeries::mf_interp_lev0</a></div><div class="ttdeci">amrex::MultiFab * mf_interp_lev0</div><div class="ttdoc">Multifab storing temporally interpolated data on level 0.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00129">REMORA_NCTimeSeries.H:129</a></div></div>
@@ -798,7 +865,7 @@ $(document).ready(function(){initNavTree('REMORA__NCTimeSeries_8cpp_source.html'
 <div class="ttc" id="aclassNCTimeSeries_html_a7cd84e642555b80b6aaf9577da2bae4f"><div class="ttname"><a href="classNCTimeSeries.html#a7cd84e642555b80b6aaf9577da2bae4f">NCTimeSeries::i_time_before</a></div><div class="ttdeci">int i_time_before</div><div class="ttdoc">Time index immediately before the last time interpolated to.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00114">REMORA_NCTimeSeries.H:114</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_a7f9b68cb9a075f7c09c89982430ace8b"><div class="ttname"><a href="classNCTimeSeries.html#a7f9b68cb9a075f7c09c89982430ace8b">NCTimeSeries::field_name</a></div><div class="ttdeci">std::string field_name</div><div class="ttdoc">Field name in netcdf file.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00090">REMORA_NCTimeSeries.H:90</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_a80cf8fe94853019d2f226d07b0f33b19"><div class="ttname"><a href="classNCTimeSeries.html#a80cf8fe94853019d2f226d07b0f33b19">NCTimeSeries::target_lat</a></div><div class="ttdeci">const amrex::MultiFab * target_lat</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00086">REMORA_NCTimeSeries.H:86</a></div></div>
-<div class="ttc" id="aclassNCTimeSeries_html_a9c5564b742da3bc36719af38f8df4fa8"><div class="ttname"><a href="classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8">NCTimeSeries::cumulative_ref_ratio</a></div><div class="ttdeci">amrex::IntVect cumulative_ref_ratio(int lev, const amrex::Vector&lt; amrex::IntVect &gt; &amp;ref_ratio) const</div><div class="ttdoc">Build cumulative refinement ratio from level 0 to lev.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8cpp_source.html#l00547">REMORA_NCTimeSeries.cpp:547</a></div></div>
+<div class="ttc" id="aclassNCTimeSeries_html_a9c5564b742da3bc36719af38f8df4fa8"><div class="ttname"><a href="classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8">NCTimeSeries::cumulative_ref_ratio</a></div><div class="ttdeci">amrex::IntVect cumulative_ref_ratio(int lev, const amrex::Vector&lt; amrex::IntVect &gt; &amp;ref_ratio) const</div><div class="ttdoc">Build cumulative refinement ratio from level 0 to lev.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8cpp_source.html#l00614">REMORA_NCTimeSeries.cpp:614</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_aa0713de8176b7b8a4bde155bc561970b"><div class="ttname"><a href="classNCTimeSeries.html#aa0713de8176b7b8a4bde155bc561970b">NCTimeSeries::file_names</a></div><div class="ttdeci">amrex::Vector&lt; std::string &gt; file_names</div><div class="ttdoc">File names to read from.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00075">REMORA_NCTimeSeries.H:75</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_aa4c57df258189f4bb3e6b5e9675c8ffd"><div class="ttname"><a href="classNCTimeSeries.html#aa4c57df258189f4bb3e6b5e9675c8ffd">NCTimeSeries::mf_after</a></div><div class="ttdeci">amrex::MultiFab * mf_after</div><div class="ttdoc">Multifab to store data at time_after.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00127">REMORA_NCTimeSeries.H:127</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_aab4915c7eaa95f39c19064c40e27e964"><div class="ttname"><a href="classNCTimeSeries.html#aab4915c7eaa95f39c19064c40e27e964">NCTimeSeries::NCTimeSeries</a></div><div class="ttdeci">NCTimeSeries(const amrex::Vector&lt; std::string &gt; &amp;a_file_names, const std::string a_field_name, const std::string a_time_name, const amrex::Box &amp;a_domain, amrex::MultiFab *a_mf_var, bool a_is2d, bool a_save_interpolated, double a_time_ref, const LatLonRegridOptions *a_regrid_options=nullptr, const amrex::MultiFab *a_target_lon=nullptr, const amrex::MultiFab *a_target_lat=nullptr)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8cpp_source.html#l00124">REMORA_NCTimeSeries.cpp:124</a></div></div>
@@ -806,7 +873,7 @@ $(document).ready(function(){initNavTree('REMORA__NCTimeSeries_8cpp_source.html'
 <div class="ttc" id="aclassNCTimeSeries_html_ac4d6108edf5bb3194be820936cf64e13"><div class="ttname"><a href="classNCTimeSeries.html#ac4d6108edf5bb3194be820936cf64e13">NCTimeSeries::time_name</a></div><div class="ttdeci">std::string time_name</div><div class="ttdoc">Field name for time series in netcdf file.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00092">REMORA_NCTimeSeries.H:92</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_acb554e4f01ffc7ff9f8272be1df5370d"><div class="ttname"><a href="classNCTimeSeries.html#acb554e4f01ffc7ff9f8272be1df5370d">NCTimeSeries::target_lon</a></div><div class="ttdeci">const amrex::MultiFab * target_lon</div><div class="ttdoc">Level 0 rho-point longitude and latitude, the interpolation targets.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00085">REMORA_NCTimeSeries.H:85</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_ad563c6adfd00dae5588ce2882fbb7d8d"><div class="ttname"><a href="classNCTimeSeries.html#ad563c6adfd00dae5588ce2882fbb7d8d">NCTimeSeries::file_for_time</a></div><div class="ttdeci">amrex::Vector&lt; int &gt; file_for_time</div><div class="ttdoc">File index to access a particular time.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00110">REMORA_NCTimeSeries.H:110</a></div></div>
-<div class="ttc" id="aclassNCTimeSeries_html_ade407058a6b4aca90273b1ed867a8f73"><div class="ttname"><a href="classNCTimeSeries.html#ade407058a6b4aca90273b1ed867a8f73">NCTimeSeries::get_interpolated_mf</a></div><div class="ttdeci">const amrex::MultiFab * get_interpolated_mf(int lev) const</div><div class="ttdoc">Access interpolated data saved for a specific level.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8cpp_source.html#l00559">REMORA_NCTimeSeries.cpp:559</a></div></div>
+<div class="ttc" id="aclassNCTimeSeries_html_ade407058a6b4aca90273b1ed867a8f73"><div class="ttname"><a href="classNCTimeSeries.html#ade407058a6b4aca90273b1ed867a8f73">NCTimeSeries::get_interpolated_mf</a></div><div class="ttdeci">const amrex::MultiFab * get_interpolated_mf(int lev) const</div><div class="ttdoc">Access interpolated data saved for a specific level.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8cpp_source.html#l00626">REMORA_NCTimeSeries.cpp:626</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_adf5aedc7963f0a326084362439be00a8"><div class="ttname"><a href="classNCTimeSeries.html#adf5aedc7963f0a326084362439be00a8">NCTimeSeries::update_interpolated_to_time</a></div><div class="ttdeci">void update_interpolated_to_time(double time, int lev, amrex::MultiFab *mf_lev, const amrex::Vector&lt; amrex::Geometry &gt; &amp;geom, const amrex::Vector&lt; amrex::IntVect &gt; &amp;ref_ratio)</div><div class="ttdoc">Calculate interpolated values at time, in seconds on the model clock, and fill data for level lev.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8cpp_source.html#l00416">REMORA_NCTimeSeries.cpp:416</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_ae5b3191da69e619a88af53d41e2df277"><div class="ttname"><a href="classNCTimeSeries.html#ae5b3191da69e619a88af53d41e2df277">NCTimeSeries::SourceGridKind</a></div><div class="ttdeci">SourceGridKind</div><div class="ttdoc">Where a series' files store a field.</div><div class="ttdef"><b>Definition</b> <a href="REMORA__NCTimeSeries_8H_source.html#l00041">REMORA_NCTimeSeries.H:41</a></div></div>
 <div class="ttc" id="aclassNCTimeSeries_html_ae5b3191da69e619a88af53d41e2df277a20f35e630daf44dbfa4c3f68f5399d8c"><div class="ttname"><a href="classNCTimeSeries.html#ae5b3191da69e619a88af53d41e2df277a20f35e630daf44dbfa4c3f68f5399d8c">NCTimeSeries::SourceGridKind::model</a></div><div class="ttdeci">@ model</div><div class="ttdoc">on the model grid at the given index type (some files may be uniform)</div></div>
