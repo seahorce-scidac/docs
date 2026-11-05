@@ -158,8 +158,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a38ec81440f10e1c4de0078080a384c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2254129400231ce2379781a42173b75" id="r_af2254129400231ce2379781a42173b75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleData.html#af2254129400231ce2379781a42173b75">GetMeshPlotVarNames</a> (amrex::Vector&lt; std::string &gt; &amp;a_names) const</td></tr>
 <tr class="separator:af2254129400231ce2379781a42173b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e6dbe35abd6ba4dab71a35a3b534782" id="r_a5e6dbe35abd6ba4dab71a35a3b534782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleData.html#a5e6dbe35abd6ba4dab71a35a3b534782">GetMeshPlotVar</a> (const std::string &amp;a_var_name, amrex::MultiFab &amp;a_mf, const int a_lev)</td></tr>
-<tr class="separator:a5e6dbe35abd6ba4dab71a35a3b534782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abe806bccffddca5928a7314c16cea7" id="r_a4abe806bccffddca5928a7314c16cea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleData.html#a4abe806bccffddca5928a7314c16cea7">GetMeshPlotVar</a> (const std::string &amp;a_var_name, amrex::MultiFab &amp;a_mf, const int a_lev, amrex::MultiFab const &amp;a_Hz, amrex::MultiFab const &amp;a_pm, amrex::MultiFab const &amp;a_pn)</td></tr>
+<tr class="separator:a4abe806bccffddca5928a7314c16cea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c0e8c4ee784e488c4469abf41bf5433" id="r_a0c0e8c4ee784e488c4469abf41bf5433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleData.html#a0c0e8c4ee784e488c4469abf41bf5433">Redistribute</a> ()</td></tr>
 <tr class="separator:a0c0e8c4ee784e488c4469abf41bf5433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe20f02d5c5a2d7864f48b77a7ee972" id="r_abbe20f02d5c5a2d7864f48b77a7ee972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classREMORAPC.html">REMORAPC</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleData.html#abbe20f02d5c5a2d7864f48b77a7ee972">GetSpecies</a> (const std::string &amp;a_name)</td></tr>
@@ -283,7 +283,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Add a name; particle container will be initialized later </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00200">200</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00203">203</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__Tracers_8cpp_source.html#l00010">REMORA::readTracersParams()</a>.</p>
 <div class="dynheader">
@@ -395,9 +395,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>queries if container has species of a certain name </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00221">221</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00224">224</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ParticleData_8H_source.html#l00190">pushBack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__ParticleData_8H_source.html#l00193">pushBack()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -426,8 +426,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a5e6dbe35abd6ba4dab71a35a3b534782" name="a5e6dbe35abd6ba4dab71a35a3b534782"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e6dbe35abd6ba4dab71a35a3b534782">&#9670;&#160;</a></span>GetMeshPlotVar()</h2>
+<a id="a4abe806bccffddca5928a7314c16cea7" name="a4abe806bccffddca5928a7314c16cea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4abe806bccffddca5928a7314c16cea7">&#9670;&#160;</a></span>GetMeshPlotVar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,7 +451,25 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>a_lev</em>&#160;</td>
+          <td class="paramname"><em>a_lev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab const &amp;&#160;</td>
+          <td class="paramname"><em>a_Hz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab const &amp;&#160;</td>
+          <td class="paramname"><em>a_pm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::MultiFab const &amp;&#160;</td>
+          <td class="paramname"><em>a_pn</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -472,8 +490,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classParticleData_a5e6dbe35abd6ba4dab71a35a3b534782_icgraph.png" border="0" usemap="#aclassParticleData_a5e6dbe35abd6ba4dab71a35a3b534782_icgraph" alt=""/></div>
-<map name="aclassParticleData_a5e6dbe35abd6ba4dab71a35a3b534782_icgraph" id="aclassParticleData_a5e6dbe35abd6ba4dab71a35a3b534782_icgraph">
+<div class="center"><img src="classParticleData_a4abe806bccffddca5928a7314c16cea7_icgraph.png" border="0" usemap="#aclassParticleData_a4abe806bccffddca5928a7314c16cea7_icgraph" alt=""/></div>
+<map name="aclassParticleData_a4abe806bccffddca5928a7314c16cea7_icgraph" id="aclassParticleData_a4abe806bccffddca5928a7314c16cea7_icgraph">
 <area shape="rect" title=" " alt="" coords="863,73,1076,99"/>
 <area shape="rect" href="classREMORA.html#ae34c7e436b23f9c528aaa8589804b196" title="main driver for writing AMReX plotfiles" alt="" coords="644,73,815,99"/>
 <area shape="poly" title=" " alt="" coords="849,89,815,89,815,83,849,83"/>
@@ -589,7 +607,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Returns list of names of particle species </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00207">207</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00210">210</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__Tagging_8cpp_source.html#l00240">REMORA::ErrorEst()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">REMORA::WritePlotFile()</a>.</p>
 <div class="dynheader">
@@ -649,7 +667,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Returns list of names of particle species that are unallocated </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00214">214</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00217">217</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__Tracers_8cpp_source.html#l00031">REMORA::initializeTracers()</a>, and <a class="el" href="REMORA__SetPlotVars_8cpp_source.html#l00018">REMORA::set3DPlotVariables()</a>.</p>
 <div class="dynheader">
@@ -706,7 +724,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Get species of a given name </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00134">134</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00137">137</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 </div>
 </div>
@@ -735,7 +753,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Get species of a given name (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00162">162</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00165">165</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 </div>
 </div>
@@ -763,7 +781,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>query if container is empty </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00229">229</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00232">232</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__ParticleData_8H_source.html#l00071">Restart()</a>, and <a class="el" href="REMORA__Plotfile_8cpp_source.html#l00103">REMORA::WritePlotFile()</a>.</p>
 <div class="dynheader">
@@ -829,7 +847,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>accessor </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00148">148</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00151">151</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 </div>
 </div>
@@ -858,7 +876,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>accessor </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00176">176</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00179">179</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 </div>
 </div>
@@ -897,7 +915,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Add a particle species to this container </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00190">190</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00193">193</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__Tracers_8cpp_source.html#l00031">REMORA::initializeTracers()</a>, and <a class="el" href="REMORA__ParticleData_8H_source.html#l00071">Restart()</a>.</p>
 <div class="dynheader">
@@ -960,7 +978,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Redistribute/rebalance particles data </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00125">125</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00128">128</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00414">REMORA::MakeNewLevelFromScratch()</a>, <a class="el" href="REMORA_8cpp_source.html#l00439">REMORA::post_timestep()</a>, <a class="el" href="REMORA__make__new__level_8cpp_source.html#l00240">REMORA::RemakeLevel()</a>, and <a class="el" href="REMORA__TimeStep_8cpp_source.html#l00011">REMORA::timeStep()</a>.</p>
 <div class="dynheader">
@@ -1201,7 +1219,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Write every species, for a checkpoint (a_xy null) or a plotfile </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00239">239</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00242">242</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="REMORA__ParticleData_8H_source.html#l00054">Checkpoint()</a>, and <a class="el" href="REMORA__ParticleData_8H_source.html#l00062">writePlotFile()</a>.</p>
 <div class="dynheader">
@@ -1266,9 +1284,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Vector of particle species names </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00252">252</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00255">255</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ParticleData_8H_source.html#l00101">GetMeshPlotVar()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00086">GetMeshPlotVarNames()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00207">getNames()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00032">ParticleData()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00190">pushBack()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00125">Redistribute()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00239">writeSpecies()</a>, and <a class="el" href="REMORA__ParticleData_8H_source.html#l00041">~ParticleData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__ParticleData_8H_source.html#l00101">GetMeshPlotVar()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00086">GetMeshPlotVarNames()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00210">getNames()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00032">ParticleData()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00193">pushBack()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00128">Redistribute()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00242">writeSpecies()</a>, and <a class="el" href="REMORA__ParticleData_8H_source.html#l00041">~ParticleData()</a>.</p>
 
 </div>
 </div>
@@ -1293,9 +1311,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>List with names of unallocated species </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00254">254</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00257">257</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ParticleData_8H_source.html#l00200">addName()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00214">getNamesUnalloc()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00032">ParticleData()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00071">Restart()</a>, and <a class="el" href="REMORA__ParticleData_8H_source.html#l00041">~ParticleData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__ParticleData_8H_source.html#l00203">addName()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00217">getNamesUnalloc()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00032">ParticleData()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00071">Restart()</a>, and <a class="el" href="REMORA__ParticleData_8H_source.html#l00041">~ParticleData()</a>.</p>
 
 </div>
 </div>
@@ -1320,9 +1338,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Vector of all particle species </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00250">250</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ParticleData_8H_source.html#l00253">253</a> of file <a class="el" href="REMORA__ParticleData_8H_source.html">REMORA_ParticleData.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ParticleData_8H_source.html#l00221">contains()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00101">GetMeshPlotVar()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00086">GetMeshPlotVarNames()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00134">GetSpecies()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00162">GetSpecies()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00229">isEmpty()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00148">operator[]()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00176">operator[]()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00032">ParticleData()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00190">pushBack()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00125">Redistribute()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00239">writeSpecies()</a>, and <a class="el" href="REMORA__ParticleData_8H_source.html#l00041">~ParticleData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__ParticleData_8H_source.html#l00224">contains()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00101">GetMeshPlotVar()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00086">GetMeshPlotVarNames()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00137">GetSpecies()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00165">GetSpecies()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00232">isEmpty()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00151">operator[]()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00179">operator[]()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00032">ParticleData()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00193">pushBack()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00128">Redistribute()</a>, <a class="el" href="REMORA__ParticleData_8H_source.html#l00242">writeSpecies()</a>, and <a class="el" href="REMORA__ParticleData_8H_source.html#l00041">~ParticleData()</a>.</p>
 
 </div>
 </div>

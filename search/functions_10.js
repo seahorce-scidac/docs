@@ -48,9 +48,10 @@ var searchData=
   ['source_5fgrid_45',['source_grid',['../classNCTimeSeries.html#a563ba84dad8bfcbda0f341658a9ad3c4',1,'NCTimeSeries']]],
   ['spatially_5funiform_46',['spatially_uniform',['../classNCTimeSeries.html#a4ed7adc73ef3fe627a375ddb7240d66d',1,'NCTimeSeries']]],
   ['store_5f2d_5fflux_47',['store_2d_flux',['../classREMORA.html#a8b377ab9abfebf1c2f0be3fda8b98140',1,'REMORA']]],
-  ['stretch_5ftransform_48',['stretch_transform',['../classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5',1,'REMORA']]],
-  ['stretch_5ftransform_5ffull_5fdomain_49',['stretch_transform_full_domain',['../classREMORA.html#a6a54a3e0fc202c79818c0a6b6b3f4a1a',1,'REMORA']]],
-  ['stretched_5fdepth_50',['stretched_depth',['../REMORA__DepthStretchTransform_8H.html#a5dd12ed5ec3998e9763d714feddb216a',1,'REMORA_DepthStretchTransform.H']]],
-  ['sum_5fintegrated_5fquantities_51',['sum_integrated_quantities',['../classREMORA.html#aafa685722589c03eb84d71568feb26bc',1,'REMORA']]],
-  ['summary_52',['summary',['../classLatLonRegrid.html#ae11fad0a7ccfcd65c75c693dd94f7abf',1,'LatLonRegrid']]]
+  ['store_5fparticle_5fomega_48',['store_particle_omega',['../classREMORA.html#a8f3a756560b95c7a7705333347ba1c6b',1,'REMORA']]],
+  ['stretch_5ftransform_49',['stretch_transform',['../classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5',1,'REMORA']]],
+  ['stretch_5ftransform_5ffull_5fdomain_50',['stretch_transform_full_domain',['../classREMORA.html#a6a54a3e0fc202c79818c0a6b6b3f4a1a',1,'REMORA']]],
+  ['stretched_5fdepth_51',['stretched_depth',['../REMORA__DepthStretchTransform_8H.html#a5dd12ed5ec3998e9763d714feddb216a',1,'REMORA_DepthStretchTransform.H']]],
+  ['sum_5fintegrated_5fquantities_52',['sum_integrated_quantities',['../classREMORA.html#aafa685722589c03eb84d71568feb26bc',1,'REMORA']]],
+  ['summary_53',['summary',['../classLatLonRegrid.html#ae11fad0a7ccfcd65c75c693dd94f7abf',1,'LatLonRegrid']]]
 ];

@@ -75,7 +75,7 @@ var searchData=
   ['masktype_72',['MaskType',['../REMORA__DataStruct_8H.html#a6f9734fca864f135565da5376b5c3e72',1,'REMORA_DataStruct.H']]],
   ['maskweight_73',['MaskWeight',['../structREMORAMaskedAvgDown_1_1MaskWeight.html',1,'REMORAMaskedAvgDown']]],
   ['mass_74',['mass',['../structREMORAParticlesRealIdxSoA.html#abf664dc6ae78545a3c148de8962b2795a1d0f6b4adcfbc9f4ec4b4ccbff1ac020',1,'REMORAParticlesRealIdxSoA']]],
-  ['massdensity_75',['massDensity',['../classREMORAPC.html#a279703d3c6d21827ca3ab05f36eec03b',1,'REMORAPC']]],
+  ['massdensity_75',['massDensity',['../classREMORAPC.html#a3d05b3716b42dc91eaa4b63b8f44b61b',1,'REMORAPC']]],
   ['mathematicalbndrytypes_76',['mathematicalBndryTypes',['../namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346',1,'REMORABCType']]],
   ['max_5fstep_77',['max_step',['../classREMORA.html#a69c542c1c57e6c6532a20eec60b9a0c3',1,'REMORA']]],
   ['mesh_20refinement_78',['Adaptive Mesh Refinement',['../index.html#amr',1,'']]],
