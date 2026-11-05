@@ -6,7 +6,7 @@ var searchData=
   ['wanninkhof1992_3',['wanninkhof1992',['../namespaceREMORABiology.html#a4a2664c187daf6e469227efa358aaaeca53ba09d35ef0e6f14315e758c66e06c7',1,'REMORABiology::wanninkhof1992'],['../namespaceREMORABiology.html#a5f60d692a2fc85488d7b9078b382ba01a53ba09d35ef0e6f14315e758c66e06c7',1,'REMORABiology::wanninkhof1992']]],
   ['wanninkhof2014_4',['wanninkhof2014',['../namespaceREMORABiology.html#a4a2664c187daf6e469227efa358aaaeca88b21fa34606253d954f1ff967909512',1,'REMORABiology::wanninkhof2014'],['../namespaceREMORABiology.html#a5f60d692a2fc85488d7b9078b382ba01a88b21fa34606253d954f1ff967909512',1,'REMORABiology::wanninkhof2014']]],
   ['warn_5',['warn',['../REMORA__DataStruct_8H.html#a1db09fa0334c56b374c1072774c16701a1ea4c3ab05ee0c6d4de30740443769cb',1,'REMORA_DataStruct.H']]],
-  ['weights_6',['weights',['../classLatLonRegrid.html#a5748ef2000e674ff3a9b646f6223752f',1,'LatLonRegrid']]],
+  ['weights_6',['weights',['../classLatLonRegrid.html#a36b4d2ddff77d682cbb49cd652dd339a',1,'LatLonRegrid']]],
   ['wet_5fcells_5fper_5fbox_7',['wet_cells_per_box',['../classREMORA.html#a5c5a7ed2f32c76c26d7114182582c782',1,'REMORA']]],
   ['width_5fgrowth_8',['width_growth',['../REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a5945a528e9dafb1cc02c86c691f1c21e',1,'REMORA_InitAnalyticGridScale_BoundaryLayer.H']]],
   ['wind_5ftype_9',['wind_type',['../structSolverChoice.html#ae6a63553633955dec12073057622d1db',1,'SolverChoice']]],

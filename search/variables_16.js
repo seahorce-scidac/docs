@@ -2,7 +2,7 @@ var searchData=
 [
   ['w_0',['w',['../structREMORAMaskedAvgDown_1_1FieldWeight.html#a3029900db9803b53b2ea925cc0963672',1,'REMORAMaskedAvgDown::FieldWeight::w'],['../structlatlon__regrid_1_1Stencil.html#af16170efce73b65d67c6fe5111bebedd',1,'latlon_regrid::Stencil::w']]],
   ['w00_1',['W00',['../REMORA__Constants_8H.html#a13d8685abbbf65429305a0ad4abaf573',1,'REMORA_Constants.H']]],
-  ['weights_2',['weights',['../classLatLonRegrid.html#a5748ef2000e674ff3a9b646f6223752f',1,'LatLonRegrid']]],
+  ['weights_2',['weights',['../classLatLonRegrid.html#a36b4d2ddff77d682cbb49cd652dd339a',1,'LatLonRegrid']]],
   ['width_5fgrowth_3',['width_growth',['../REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a5945a528e9dafb1cc02c86c691f1c21e',1,'REMORA_InitAnalyticGridScale_BoundaryLayer.H']]],
   ['wind_5ftype_4',['wind_type',['../structSolverChoice.html#ae6a63553633955dec12073057622d1db',1,'SolverChoice']]],
   ['wind_5fu_5',['wind_u',['../structREMORABiology_1_1BiologyAdvanceContext.html#a0b5838ad172a49ca9d33efd6c2279abb',1,'REMORABiology::BiologyAdvanceContext']]],
