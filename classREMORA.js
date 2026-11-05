@@ -348,6 +348,7 @@ var classREMORA =
     [ "drop_dry_boxes", "classREMORA.html#a0d3872f11b9b3f160988942fedcb1355", null ],
     [ "dry_ghost_test", "classREMORA.html#ab7583a5d79f2812ebc1f9b47aed4ae8c", null ],
     [ "dt", "classREMORA.html#aedae6fd90cb13271f63ea80e59a2aacb", null ],
+    [ "Dubar_fresh", "classREMORA.html#a4c7d52644807a1b47ec045a573c63449", null ],
     [ "EminusP_data_from_file", "classREMORA.html#a7723e6a25f311c63a5c9379e6db7843d", null ],
     [ "expand_plotvars_to_unif_rr", "classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4", null ],
     [ "file_min_digits", "classREMORA.html#a84df70f21edd11cb1df1d3e5b96ba754", null ],
