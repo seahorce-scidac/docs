@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['fennelbiology_0',['FennelBiology',['../classREMORABiology_1_1FennelBiology.html',1,'REMORABiology']]],
-  ['fennelparameters_1',['FennelParameters',['../structREMORABiology_1_1FennelParameters.html',1,'REMORABiology']]],
-  ['fieldweight_2',['FieldWeight',['../structREMORAMaskedAvgDown_1_1FieldWeight.html',1,'REMORAMaskedAvgDown']]]
+  ['ecbbiology_0',['ECBBiology',['../classREMORABiology_1_1ECBBiology.html',1,'REMORABiology']]],
+  ['ecbparameters_1',['ECBParameters',['../structREMORABiology_1_1ECBParameters.html',1,'REMORABiology']]]
 ];

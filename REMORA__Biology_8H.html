@@ -93,12 +93,14 @@ $(document).ready(function(){initNavTree('REMORA__Biology_8H.html',''); initResi
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">REMORA_Biology.H File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;AMReX_Geometry.H&gt;</code><br />
@@ -109,19 +111,21 @@ Include dependency graph for REMORA_Biology.H:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__Biology_8H__incl.png" border="0" usemap="#a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Biology_2REMORA__Biology_8H" alt=""/></div>
 <map name="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Biology_2REMORA__Biology_8H" id="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Biology_2REMORA__Biology_8H">
-<area shape="rect" title=" " alt="" coords="207,5,414,60"/>
+<area shape="rect" title=" " alt="" coords="217,5,423,60"/>
 <area shape="rect" title=" " alt="" coords="5,108,91,133"/>
-<area shape="poly" title=" " alt="" coords="231,63,97,106,95,101,230,58"/>
-<area shape="rect" title=" " alt="" coords="115,108,192,133"/>
-<area shape="poly" title=" " alt="" coords="264,62,188,104,185,99,261,58"/>
-<area shape="rect" title=" " alt="" coords="216,108,275,133"/>
-<area shape="poly" title=" " alt="" coords="293,62,265,99,260,95,289,58"/>
-<area shape="rect" title=" " alt="" coords="299,108,453,133"/>
-<area shape="poly" title=" " alt="" coords="333,58,361,95,357,99,329,62"/>
-<area shape="rect" title=" " alt="" coords="477,108,622,133"/>
-<area shape="poly" title=" " alt="" coords="384,58,505,101,504,106,383,63"/>
-<area shape="rect" title=" " alt="" coords="647,108,777,133"/>
-<area shape="poly" title=" " alt="" coords="415,53,645,102,644,108,413,59"/>
+<area shape="poly" title=" " alt="" coords="238,63,98,106,96,101,236,58"/>
+<area shape="rect" title=" " alt="" coords="115,108,165,133"/>
+<area shape="poly" title=" " alt="" coords="266,62,177,105,175,100,264,58"/>
+<area shape="rect" title=" " alt="" coords="189,108,267,133"/>
+<area shape="poly" title=" " alt="" coords="294,62,252,100,249,96,290,58"/>
+<area shape="rect" title=" " alt="" coords="291,108,349,133"/>
+<area shape="poly" title=" " alt="" coords="323,60,323,94,317,94,317,60"/>
+<area shape="rect" title=" " alt="" coords="374,108,527,133"/>
+<area shape="poly" title=" " alt="" coords="361,58,423,98,420,103,358,62"/>
+<area shape="rect" title=" " alt="" coords="551,108,697,133"/>
+<area shape="poly" title=" " alt="" coords="414,57,571,102,570,107,412,63"/>
+<area shape="rect" title=" " alt="" coords="721,108,852,133"/>
+<area shape="poly" title=" " alt="" coords="424,50,711,103,710,108,423,56"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -129,115 +133,116 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__Biology_8H__dep__incl.png" border="0" usemap="#a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Biology_2REMORA__Biology_8Hdep" alt=""/></div>
 <map name="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Biology_2REMORA__Biology_8Hdep" id="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Biology_2REMORA__Biology_8Hdep">
-<area shape="rect" title=" " alt="" coords="236,5,443,60"/>
-<area shape="rect" href="REMORA__Biology_8cpp.html" title=" " alt="" coords="5,211,212,265"/>
-<area shape="poly" title=" " alt="" coords="282,69,225,110,172,163,130,212,126,209,168,159,222,106,279,65"/>
-<area shape="rect" href="REMORA__FennelBiology_8H.html" title=" " alt="" coords="236,108,443,163"/>
-<area shape="poly" title=" " alt="" coords="342,74,342,108,337,108,337,74"/>
-<area shape="rect" href="REMORA_8H.html" title=" " alt="" coords="5187,115,5393,155"/>
-<area shape="poly" title=" " alt="" coords="456,34,5187,129,5187,135,456,39"/>
-<area shape="poly" title=" " alt="" coords="268,170,170,213,168,208,266,166"/>
+<area shape="rect" title=" " alt="" coords="419,5,625,60"/>
+<area shape="rect" href="REMORA__Biology_8cpp.html" title=" " alt="" coords="236,211,443,265"/>
+<area shape="poly" title=" " alt="" coords="499,73,466,118,427,165,375,212,371,208,423,161,462,115,495,70"/>
+<area shape="rect" href="REMORA__ECBBiology_8H.html" title=" " alt="" coords="207,108,413,163"/>
+<area shape="poly" title=" " alt="" coords="456,68,366,110,364,106,454,63"/>
+<area shape="rect" href="REMORA__FennelBiology_8H.html" title=" " alt="" coords="489,108,696,163"/>
+<area shape="poly" title=" " alt="" coords="551,70,576,106,572,109,546,73"/>
+<area shape="rect" href="REMORA_8H.html" title=" " alt="" coords="5607,115,5813,155"/>
+<area shape="poly" title=" " alt="" coords="639,34,5607,129,5607,135,639,39"/>
+<area shape="poly" title=" " alt="" coords="324,175,334,210,329,211,319,177"/>
+<area shape="rect" href="REMORA__ECBBiology_8cpp.html" title=" " alt="" coords="5,211,212,265"/>
+<area shape="poly" title=" " alt="" coords="247,171,162,213,160,208,244,166"/>
+<area shape="poly" title=" " alt="" coords="515,170,406,213,404,208,513,165"/>
 <area shape="rect" href="REMORA__FennelBridge_8cpp.html" title=" " alt="" coords="467,211,719,265"/>
-<area shape="poly" title=" " alt="" coords="419,165,528,208,526,213,417,170"/>
-<area shape="rect" href="REMORA__FennelBiology_8cpp.html" title=" " alt="" coords="236,211,443,265"/>
-<area shape="poly" title=" " alt="" coords="342,176,342,211,337,211,337,176"/>
-<area shape="rect" href="REMORA__BoundaryConditions__netcdf_8cpp.html" title=" " alt="" coords="8728,211,9023,265"/>
-<area shape="poly" title=" " alt="" coords="5407,134,6051,138,7009,149,7516,158,7993,171,8406,187,8717,208,8728,209,8727,214,8716,213,8405,193,7993,176,7516,164,7009,154,6051,143,5407,140"/>
-<area shape="rect" href="REMORA__FillPatch_8cpp.html" title=" " alt="" coords="9047,211,9314,265"/>
-<area shape="poly" title=" " alt="" coords="5407,134,6105,135,7155,144,7713,153,8239,166,8693,184,9036,208,9047,209,9047,215,9035,213,8693,189,8238,171,7713,158,7155,149,6105,140,5407,139"/>
-<area shape="rect" href="REMORA__Checkpoint_8cpp.html" title=" " alt="" coords="9338,211,9549,265"/>
-<area shape="poly" title=" " alt="" coords="5407,135,6226,141,7450,155,8633,177,9069,191,9224,199,9326,208,9338,210,9338,215,9326,213,9223,205,9069,197,8633,183,7450,161,6226,147,5407,140"/>
-<area shape="rect" href="REMORA__NCPlotFile_8cpp.html" title=" " alt="" coords="9573,211,9783,265"/>
-<area shape="poly" title=" " alt="" coords="5407,135,6268,141,7567,154,8824,176,9288,191,9452,199,9561,208,9573,210,9572,215,9560,213,9451,204,9287,196,8824,181,7567,159,6268,146,5407,140"/>
-<area shape="rect" href="REMORA__NCTimeSeriesBoundary_8H.html" title=" " alt="" coords="9807,211,10018,265"/>
-<area shape="poly" title=" " alt="" coords="5407,135,6308,140,7677,153,8378,163,9005,175,9495,190,9668,199,9784,208,9807,211,9806,217,9783,213,9668,204,9494,195,9005,180,8378,168,7677,158,6308,145,5407,140"/>
-<area shape="rect" href="REMORA__NCTimeSeriesRiver_8H.html" title=" " alt="" coords="10042,211,10253,265"/>
-<area shape="poly" title=" " alt="" coords="5407,134,6350,139,7793,151,8533,161,9195,174,9713,189,9896,198,10018,208,10042,211,10041,217,10018,213,9896,203,9713,194,9195,179,8533,166,7793,157,6350,145,5407,140"/>
-<area shape="rect" href="REMORA__Plotfile_8cpp.html" title=" " alt="" coords="10277,211,10487,265"/>
-<area shape="poly" title=" " alt="" coords="5407,134,6394,139,7915,150,8696,160,9396,172,9943,188,10136,198,10265,208,10277,210,10276,215,10264,213,10136,203,9942,194,9396,178,8696,165,7915,156,6394,144,5407,140"/>
-<area shape="rect" href="REMORA__SetPlotVars_8cpp.html" title=" " alt="" coords="10511,211,10722,265"/>
-<area shape="poly" title=" " alt="" coords="5407,134,6435,138,8029,149,8850,158,9586,171,10161,187,10364,197,10500,208,10512,210,10511,215,10499,213,10364,203,10161,193,9586,176,8850,164,8029,154,6435,143,5407,140"/>
-<area shape="rect" href="REMORA__console__io_8cpp.html" title=" " alt="" coords="10746,211,10957,265"/>
-<area shape="poly" title=" " alt="" coords="5408,134,6477,137,8145,148,9005,157,9776,170,10379,187,10593,197,10734,208,10746,210,10746,215,10734,213,10592,202,10379,192,9776,175,9005,162,8145,153,6477,143,5408,139"/>
-<area shape="rect" href="REMORA__writeJobInfo_8cpp.html" title=" " alt="" coords="743,211,954,265"/>
-<area shape="poly" title=" " alt="" coords="5173,140,4304,146,2990,160,1718,182,1249,197,1083,205,973,213,955,216,954,210,972,208,1083,199,1249,191,1718,177,2990,155,4304,141,5173,135"/>
-<area shape="rect" href="REMORA__init_8cpp.html" title=" " alt="" coords="523,313,739,368"/>
-<area shape="poly" title=" " alt="" coords="5173,140,4250,147,2873,161,2191,171,1606,183,1189,197,1065,205,1011,213,997,224,990,238,982,253,967,268,740,318,739,313,965,263,978,250,985,236,993,221,1009,208,1065,199,1189,192,1606,177,2190,165,2873,155,4250,141,5173,135"/>
-<area shape="rect" href="REMORA__init1d_8cpp.html" title=" " alt="" coords="763,313,979,368"/>
-<area shape="poly" title=" " alt="" coords="5173,140,4286,143,2962,154,2299,163,1723,176,1300,193,1166,202,1095,213,1070,224,1052,237,1011,268,924,316,921,311,1009,263,1049,232,1067,219,1093,208,1165,197,1300,187,1723,171,2299,158,2961,149,4286,138,5173,134"/>
-<area shape="rect" href="REMORA__init__bcs_8cpp.html" title=" " alt="" coords="1522,211,1738,265"/>
-<area shape="poly" title=" " alt="" coords="5173,139,4510,138,3519,145,2995,154,2500,168,2073,187,1897,199,1752,213,1739,215,1738,210,1751,208,1897,194,2073,182,2500,162,2994,149,3519,140,4510,133,5173,133"/>
-<area shape="rect" href="REMORA__init__from__netcdf_8cpp.html" title=" " alt="" coords="1004,313,1227,368"/>
-<area shape="poly" title=" " alt="" coords="5173,139,4267,140,2922,148,2257,157,1689,171,1286,189,1169,200,1135,207,1120,213,1106,235,1102,261,1104,288,1109,312,1104,314,1099,289,1097,261,1101,233,1116,209,1133,201,1168,195,1286,184,1688,165,2257,152,2922,143,4267,135,5173,134"/>
-<area shape="rect" href="REMORA__land__layout_8cpp.html" title=" " alt="" coords="1251,313,1467,368"/>
-<area shape="poly" title=" " alt="" coords="5173,139,4356,139,3154,146,2556,155,2037,168,1657,187,1537,199,1475,213,1443,233,1415,260,1376,315,1371,312,1411,257,1440,229,1473,208,1537,194,1657,182,2037,163,2555,149,3154,141,4356,133,5173,134"/>
-<area shape="rect" href="REMORA__make__new__level_8cpp.html" title=" " alt="" coords="1491,313,1718,368"/>
-<area shape="poly" title=" " alt="" coords="5173,139,4340,142,3120,151,2518,160,2006,173,1643,191,1537,201,1507,207,1493,213,1485,224,1483,236,1494,264,1515,291,1543,311,1540,315,1511,294,1489,267,1478,237,1480,223,1490,209,1505,202,1536,196,1642,186,2005,168,2518,155,3120,146,4340,136,5173,134"/>
-<area shape="rect" href="REMORA__prob__common_8H.html" title=" " alt="" coords="1130,211,1346,265"/>
-<area shape="poly" title=" " alt="" coords="5173,140,4372,148,3178,163,2027,184,1603,198,1353,213,1347,214,1346,209,1352,208,1603,193,2027,179,3178,157,4372,142,5173,135"/>
-<area shape="rect" href="REMORA_8cpp.html" title=" " alt="" coords="1742,321,1961,361"/>
-<area shape="poly" title=" " alt="" coords="5173,139,4344,142,3130,151,2532,161,2021,174,1661,191,1555,201,1525,207,1512,213,1503,225,1501,237,1504,250,1512,263,1765,318,1763,323,1508,268,1499,252,1495,237,1498,223,1508,209,1524,202,1555,196,1660,186,2021,168,2531,155,3129,146,4344,136,5173,134"/>
-<area shape="rect" href="REMORA__Tracers_8cpp.html" title=" " alt="" coords="1763,211,1969,265"/>
-<area shape="poly" title=" " alt="" coords="5173,139,4548,139,3624,146,3136,155,2677,169,2281,188,2117,200,1982,213,1970,215,1969,210,1982,208,2117,194,2281,182,2677,163,3136,150,3624,141,4548,134,5173,134"/>
-<area shape="rect" href="REMORA__Coupling_8cpp.html" title=" " alt="" coords="1994,218,2277,258"/>
-<area shape="poly" title=" " alt="" coords="5173,140,4600,145,3766,157,2914,179,2558,194,2289,213,2233,221,2232,215,2288,208,2558,189,2914,174,3766,152,4600,140,5173,135"/>
-<area shape="rect" href="REMORA__MOAB_8cpp.html" title=" " alt="" coords="2301,218,2567,258"/>
-<area shape="poly" title=" " alt="" coords="5173,140,4649,146,3900,158,3138,180,2820,195,2580,213,2527,221,2526,215,2579,208,2820,190,3138,175,3899,153,4649,140,5173,135"/>
-<area shape="rect" href="REMORA__SumIQ_8cpp.html" title=" " alt="" coords="2591,218,2861,258"/>
-<area shape="poly" title=" " alt="" coords="5173,141,4700,148,4036,162,3366,183,3086,197,2874,213,2821,221,2820,215,2874,208,3086,192,3366,178,4036,156,4700,142,5173,135"/>
-<area shape="rect" href="REMORA__Tagging_8cpp.html" title=" " alt="" coords="2885,218,3161,258"/>
-<area shape="poly" title=" " alt="" coords="5173,141,4176,165,3598,186,3357,199,3174,213,3120,221,3120,215,3174,208,3357,194,3598,181,4176,159,5173,136"/>
-<area shape="rect" href="REMORA__Advance_8cpp.html" title=" " alt="" coords="3185,211,3424,265"/>
-<area shape="poly" title=" " alt="" coords="5172,142,4299,165,3801,186,3594,199,3437,213,3425,215,3424,210,3436,208,3594,194,3801,181,4299,160,5172,136"/>
-<area shape="rect" href="REMORA__ComputeTimestep_8cpp.html" title=" " alt="" coords="3448,211,3687,265"/>
-<area shape="poly" title=" " alt="" coords="5173,139,4908,141,4543,151,4124,174,3909,191,3700,213,3687,215,3687,210,3699,208,3909,186,4124,168,4543,146,4908,136,5173,134"/>
-<area shape="rect" href="REMORA__TimeStep_8cpp.html" title=" " alt="" coords="3711,211,3949,265"/>
-<area shape="poly" title=" " alt="" coords="5173,140,4948,145,4647,157,4306,179,4132,194,3962,213,3950,215,3949,210,3962,208,4132,189,4306,173,4647,152,4948,140,5173,135"/>
-<area shape="rect" href="REMORA__TimeStepML_8cpp.html" title=" " alt="" coords="3973,211,4212,265"/>
-<area shape="poly" title=" " alt="" coords="5173,143,4990,150,4753,163,4490,184,4225,213,4213,215,4212,210,4224,208,4489,179,4753,158,4989,145,5172,137"/>
-<area shape="rect" href="REMORA__advance__2d_8cpp.html" title=" " alt="" coords="4236,211,4475,265"/>
-<area shape="poly" title=" " alt="" coords="5173,146,4863,171,4675,190,4488,213,4475,215,4474,210,4487,208,4674,184,4862,165,5173,141"/>
-<area shape="rect" href="REMORA__advance__2d__onestep_8cpp.html" title=" " alt="" coords="4499,211,4753,265"/>
-<area shape="poly" title=" " alt="" coords="5173,154,4766,213,4754,215,4753,210,4766,208,5173,149"/>
-<area shape="rect" href="REMORA__advance__3d_8cpp.html" title=" " alt="" coords="4777,211,5016,265"/>
-<area shape="poly" title=" " alt="" coords="5204,161,5000,213,4998,208,5203,156"/>
-<area shape="rect" href="REMORA__advance__3d__ml_8cpp.html" title=" " alt="" coords="5040,211,5279,265"/>
-<area shape="poly" title=" " alt="" coords="5256,166,5195,213,5192,208,5253,161"/>
-<area shape="rect" href="REMORA__apply__clim__nudg_8cpp.html" title=" " alt="" coords="5303,211,5541,265"/>
-<area shape="poly" title=" " alt="" coords="5327,161,5389,208,5386,213,5324,166"/>
-<area shape="rect" href="REMORA__bulk__flux_8cpp.html" title=" " alt="" coords="5565,211,5804,265"/>
-<area shape="poly" title=" " alt="" coords="5377,156,5583,208,5581,213,5376,161"/>
-<area shape="rect" href="REMORA__bulk__flux__test_8cpp.html" title=" " alt="" coords="5828,211,6067,265"/>
-<area shape="poly" title=" " alt="" coords="5407,149,5600,175,5817,208,5828,210,5827,215,5816,213,5599,180,5407,154"/>
-<area shape="rect" href="REMORA__compute__W_8cpp.html" title=" " alt="" coords="6091,211,6329,265"/>
-<area shape="poly" title=" " alt="" coords="5408,141,5713,166,5896,184,6080,208,6091,210,6090,215,6079,213,5896,190,5712,171,5407,147"/>
-<area shape="rect" href="REMORA__coriolis_8cpp.html" title=" " alt="" coords="6353,211,6592,265"/>
-<area shape="poly" title=" " alt="" coords="5407,137,5588,145,5821,158,6081,179,6342,208,6354,210,6353,215,6342,213,6081,184,5821,164,5588,150,5407,143"/>
-<area shape="rect" href="REMORA__curvilinear_8cpp.html" title=" " alt="" coords="6616,211,6855,265"/>
-<area shape="poly" title=" " alt="" coords="5407,135,5629,140,5927,152,6265,174,6437,189,6605,208,6616,210,6615,215,6604,213,6436,194,6264,179,5927,157,5629,145,5407,140"/>
-<area shape="rect" href="REMORA__gls_8cpp.html" title=" " alt="" coords="6879,211,7117,265"/>
-<area shape="poly" title=" " alt="" coords="5408,134,5670,136,6033,146,6447,168,6660,186,6868,208,6879,209,6878,215,6867,213,6659,191,6447,174,6032,151,5670,141,5407,139"/>
-<area shape="rect" href="REMORA__prestep_8cpp.html" title=" " alt="" coords="7141,211,7380,265"/>
-<area shape="poly" title=" " alt="" coords="5407,136,6274,160,6769,181,6974,194,7130,208,7141,209,7141,215,7130,213,6974,199,6768,186,6274,165,5407,142"/>
-<area shape="rect" href="REMORA__prestep__diffusion_8cpp.html" title=" " alt="" coords="7404,211,7643,265"/>
-<area shape="poly" title=" " alt="" coords="5407,136,5825,143,6398,157,6972,178,7212,192,7393,208,7404,209,7403,215,7392,213,7211,197,6972,184,6398,162,5824,148,5407,141"/>
-<area shape="rect" href="REMORA__prestep__t__advection_8cpp.html" title=" " alt="" coords="7667,211,7916,265"/>
-<area shape="poly" title=" " alt="" coords="5407,135,5871,142,6520,155,7175,177,7449,191,7656,208,7667,209,7666,215,7655,213,7448,196,7175,182,6520,160,5871,147,5407,141"/>
-<area shape="rect" href="REMORA__prsgrd_8cpp.html" title=" " alt="" coords="7940,211,8179,265"/>
-<area shape="poly" title=" " alt="" coords="5407,135,5918,139,6647,151,7386,173,7695,189,7929,208,7940,209,7940,215,7928,213,7695,194,7386,179,6647,157,5918,145,5407,140"/>
-<area shape="rect" href="REMORA__rho__eos_8cpp.html" title=" " alt="" coords="8203,211,8441,265"/>
-<area shape="poly" title=" " alt="" coords="5407,134,5963,138,6769,149,7192,158,7589,171,7932,187,8192,208,8203,209,8202,215,8191,213,7932,193,7589,176,7192,163,6769,154,5963,143,5407,140"/>
-<area shape="rect" href="REMORA__rhs__t__3d_8cpp.html" title=" " alt="" coords="8465,211,8704,265"/>
-<area shape="poly" title=" " alt="" coords="5407,134,6008,136,6890,146,7354,155,7792,168,8169,186,8454,208,8465,209,8465,215,8454,213,8169,191,7792,174,7354,161,6890,151,6008,142,5407,139"/>
-<area shape="poly" title=" " alt="" coords="9794,212,9670,203,9488,194,8984,179,8348,167,7642,157,6275,145,5394,140,5394,134,6275,140,7642,152,8348,162,8985,174,9488,189,9670,197,9795,207"/>
-<area shape="poly" title=" " alt="" coords="10029,212,9897,202,9705,193,9174,178,8502,166,7756,156,6316,144,5393,140,5394,134,6316,139,7756,151,8502,160,9174,173,9706,188,9898,197,10029,207"/>
-<area shape="poly" title=" " alt="" coords="1359,210,1376,208,1628,193,2054,179,3209,157,4401,142,5186,135,5187,140,4401,148,3209,162,2054,184,1628,198,1377,213,1360,216"/>
-<area shape="poly" title=" " alt="" coords="1117,258,944,284,752,316,740,318,739,313,751,311,943,278,1116,253"/>
-<area shape="poly" title=" " alt="" coords="1130,271,968,316,966,311,1129,266"/>
-<area shape="poly" title=" " alt="" coords="1197,276,1149,315,1146,311,1194,272"/>
-<area shape="poly" title=" " alt="" coords="1282,272,1329,311,1326,315,1279,276"/>
-<area shape="poly" title=" " alt="" coords="1347,266,1510,311,1508,316,1346,271"/>
-<area shape="poly" title=" " alt="" coords="1360,253,1536,278,1730,311,1768,318,1767,323,1730,316,1535,284,1360,258"/>
+<area shape="poly" title=" " alt="" coords="595,176,595,211,590,211,590,176"/>
+<area shape="rect" href="REMORA__FennelBiology_8cpp.html" title=" " alt="" coords="743,211,949,265"/>
+<area shape="poly" title=" " alt="" coords="672,165,781,208,779,213,670,170"/>
+<area shape="rect" href="REMORA__BoundaryConditions__netcdf_8cpp.html" title=" " alt="" coords="8097,211,8392,265"/>
+<area shape="poly" title=" " alt="" coords="5827,136,6293,143,6945,158,7604,179,7878,193,8086,208,8097,209,8097,214,8086,213,7878,198,7603,185,6945,163,6293,149,5827,141"/>
+<area shape="rect" href="REMORA__FillPatch_8cpp.html" title=" " alt="" coords="8417,211,8683,265"/>
+<area shape="poly" title=" " alt="" coords="5827,135,6347,141,7093,153,7850,175,8166,190,8405,208,8417,209,8416,215,8404,213,8165,195,7849,180,7093,159,6347,146,5827,140"/>
+<area shape="rect" href="REMORA__Checkpoint_8cpp.html" title=" " alt="" coords="8707,211,8918,265"/>
+<area shape="poly" title=" " alt="" coords="5827,134,6398,136,7227,145,7664,154,8074,167,8428,185,8696,208,8708,210,8707,215,8695,213,8428,190,8074,172,7664,159,7227,150,6397,141,5827,139"/>
+<area shape="rect" href="REMORA__NCPlotFile_8cpp.html" title=" " alt="" coords="8942,211,9153,265"/>
+<area shape="poly" title=" " alt="" coords="5827,134,6437,134,7335,142,7809,151,8255,165,8640,183,8799,195,8930,208,8942,210,8942,215,8930,213,8799,200,8640,189,8255,170,7809,157,7335,148,6437,140,5827,139"/>
+<area shape="rect" href="REMORA__NCTimeSeriesBoundary_8H.html" title=" " alt="" coords="9177,211,9387,265"/>
+<area shape="poly" title=" " alt="" coords="5827,135,6537,143,7576,159,8571,180,8937,194,9153,208,9177,212,9176,217,9152,213,8936,199,8571,186,7575,164,6537,149,5827,141"/>
+<area shape="rect" href="REMORA__NCTimeSeriesRiver_8H.html" title=" " alt="" coords="9411,211,9622,265"/>
+<area shape="poly" title=" " alt="" coords="5827,135,6580,143,7692,157,8762,179,9155,193,9388,208,9411,212,9410,217,9387,213,9155,198,8762,184,7692,163,6580,148,5827,140"/>
+<area shape="rect" href="REMORA__Plotfile_8cpp.html" title=" " alt="" coords="9646,211,9857,265"/>
+<area shape="poly" title=" " alt="" coords="5827,135,6626,142,7815,156,8963,178,9385,192,9634,208,9646,210,9646,215,9634,213,9385,197,8962,183,7815,161,6626,147,5827,140"/>
+<area shape="rect" href="REMORA__SetPlotVars_8cpp.html" title=" " alt="" coords="9881,211,10091,265"/>
+<area shape="poly" title=" " alt="" coords="5827,135,6668,141,7932,155,9153,177,9603,191,9763,199,9869,208,9881,210,9880,215,9868,213,9762,205,9603,196,9153,182,7932,160,6668,146,5827,140"/>
+<area shape="rect" href="REMORA__console__io_8cpp.html" title=" " alt="" coords="10115,211,10326,265"/>
+<area shape="poly" title=" " alt="" coords="5827,135,6710,140,8047,153,8732,163,9344,175,9822,190,9991,199,10104,208,10116,210,10115,215,10103,213,9991,204,9821,196,9344,181,8732,168,8047,159,6710,146,5827,140"/>
+<area shape="rect" href="REMORA__writeJobInfo_8cpp.html" title=" " alt="" coords="10350,211,10561,265"/>
+<area shape="poly" title=" " alt="" coords="5827,134,6752,140,8164,152,8887,162,9534,174,10040,189,10219,198,10338,208,10350,210,10350,215,10338,213,10219,204,10040,195,9534,179,8887,167,8164,157,6752,145,5827,140"/>
+<area shape="rect" href="REMORA__init_8cpp.html" title=" " alt="" coords="5981,313,6197,368"/>
+<area shape="poly" title=" " alt="" coords="5827,135,6873,142,8460,157,9917,179,10387,192,10521,200,10574,208,10585,223,10588,238,10585,253,10574,268,10407,277,9976,287,8633,309,6197,341,6197,335,8633,304,9976,281,10407,271,10571,263,10580,251,10583,238,10580,225,10571,213,10520,205,10387,198,9917,184,8460,162,6873,147,5827,140"/>
+<area shape="rect" href="REMORA__init1d_8cpp.html" title=" " alt="" coords="8393,313,8609,368"/>
+<area shape="poly" title=" " alt="" coords="5827,135,6878,142,8473,156,9263,167,9937,179,10410,192,10544,200,10598,208,10609,223,10612,238,10609,253,10598,267,10568,281,10509,292,10316,310,10048,323,9734,332,9087,341,8609,342,8609,337,9087,336,9734,327,10048,318,10316,305,10508,287,10567,276,10595,263,10604,251,10607,238,10604,225,10595,213,10544,205,10410,198,9937,184,9263,172,8473,162,6878,147,5827,140"/>
+<area shape="rect" href="REMORA__init__bcs_8cpp.html" title=" " alt="" coords="1417,211,1633,265"/>
+<area shape="poly" title=" " alt="" coords="5593,140,4769,147,3535,161,2344,183,1905,197,1646,213,1633,215,1633,210,1646,208,1905,192,2344,178,3535,156,4769,142,5593,135"/>
+<area shape="rect" href="REMORA__init__from__netcdf_8cpp.html" title=" " alt="" coords="657,313,880,368"/>
+<area shape="poly" title=" " alt="" coords="5593,139,4617,141,3137,150,2394,159,1748,172,1272,190,1121,201,1041,213,1018,224,1001,237,985,252,962,268,905,294,849,316,848,311,903,289,959,263,982,248,998,233,1015,220,1040,208,1121,195,1271,184,1747,166,2394,153,3137,144,4617,136,5593,134"/>
+<area shape="rect" href="REMORA__land__layout_8cpp.html" title=" " alt="" coords="905,313,1121,368"/>
+<area shape="poly" title=" " alt="" coords="5593,140,4605,144,3117,156,2377,166,1742,179,1290,194,1156,203,1098,213,1072,233,1051,260,1024,314,1019,312,1046,257,1068,230,1096,208,1156,198,1290,189,1742,173,2377,161,3117,151,4605,139,5593,134"/>
+<area shape="rect" href="REMORA__make__new__level_8cpp.html" title=" " alt="" coords="1145,313,1371,368"/>
+<area shape="poly" title=" " alt="" coords="5593,139,4605,138,3117,145,2380,153,1748,167,1497,176,1301,186,1170,199,1133,206,1116,213,1108,225,1106,237,1109,250,1116,264,1141,291,1172,311,1169,315,1137,295,1112,267,1104,251,1100,237,1103,223,1112,209,1131,201,1169,194,1300,181,1496,170,1748,161,2379,148,3117,139,4605,133,5593,134"/>
+<area shape="rect" href="REMORA__prob__common_8H.html" title=" " alt="" coords="1126,211,1342,265"/>
+<area shape="poly" title=" " alt="" coords="5593,140,4716,146,3388,160,2102,182,1628,197,1460,205,1349,213,1343,214,1342,209,1348,208,1460,199,1628,191,2102,177,3388,155,4716,141,5593,135"/>
+<area shape="rect" href="REMORA_8cpp.html" title=" " alt="" coords="1395,321,1614,361"/>
+<area shape="poly" title=" " alt="" coords="5593,139,4662,139,3271,147,2583,156,1995,169,1761,178,1579,188,1457,200,1422,206,1406,213,1398,224,1397,236,1407,264,1418,281,1432,295,1465,318,1462,323,1429,300,1414,284,1402,267,1392,237,1393,223,1403,209,1421,201,1456,195,1578,183,1761,173,1995,164,2583,150,3271,142,4662,134,5593,134"/>
+<area shape="rect" href="REMORA__Tracers_8cpp.html" title=" " alt="" coords="1657,211,1864,265"/>
+<area shape="poly" title=" " alt="" coords="5593,140,4811,147,3650,161,2531,183,2120,197,1877,213,1865,215,1864,210,1876,208,2120,192,2531,178,3650,156,4811,142,5593,135"/>
+<area shape="rect" href="REMORA__Coupling_8cpp.html" title=" " alt="" coords="1889,218,2171,258"/>
+<area shape="poly" title=" " alt="" coords="5593,139,4932,142,3945,152,3423,162,2930,175,2505,192,2184,213,2127,221,2127,215,2183,208,2504,186,2930,169,3423,156,3945,147,4932,137,5593,134"/>
+<area shape="rect" href="REMORA__MOAB_8cpp.html" title=" " alt="" coords="2195,218,2462,258"/>
+<area shape="poly" title=" " alt="" coords="5593,140,4980,143,4078,154,3602,163,3153,176,2766,192,2474,213,2421,221,2421,215,2474,208,2766,187,3153,170,3602,158,4078,148,4980,138,5593,134"/>
+<area shape="rect" href="REMORA__SumIQ_8cpp.html" title=" " alt="" coords="2486,218,2755,258"/>
+<area shape="poly" title=" " alt="" coords="5593,140,5030,145,4213,157,3380,179,3032,194,2769,213,2715,221,2714,215,2768,208,3032,189,3380,173,4213,151,5030,139,5593,135"/>
+<area shape="rect" href="REMORA__Tagging_8cpp.html" title=" " alt="" coords="2780,218,3056,258"/>
+<area shape="poly" title=" " alt="" coords="5593,140,5082,147,4352,160,3612,181,3303,196,3069,213,3015,221,3014,215,3068,208,3302,191,3612,176,4352,154,5082,141,5593,135"/>
+<area shape="rect" href="REMORA__Advance_8cpp.html" title=" " alt="" coords="3080,211,3319,265"/>
+<area shape="poly" title=" " alt="" coords="5593,140,5127,147,4473,160,3814,181,3540,196,3332,213,3319,215,3319,210,3331,208,3539,191,3814,176,4473,154,5127,141,5593,135"/>
+<area shape="rect" href="REMORA__ComputeTimestep_8cpp.html" title=" " alt="" coords="3343,211,3581,265"/>
+<area shape="poly" title=" " alt="" coords="5593,141,5173,148,4596,162,4018,184,3777,197,3594,213,3582,215,3581,210,3594,208,3776,192,4017,178,4596,157,5173,143,5593,136"/>
+<area shape="rect" href="REMORA__TimeStep_8cpp.html" title=" " alt="" coords="3605,211,3844,265"/>
+<area shape="poly" title=" " alt="" coords="5592,142,4719,165,4221,186,4014,199,3857,213,3845,215,3844,210,3856,208,4014,194,4221,181,4719,160,5592,136"/>
+<area shape="rect" href="REMORA__TimeStepML_8cpp.html" title=" " alt="" coords="3868,211,4107,265"/>
+<area shape="poly" title=" " alt="" coords="5593,139,5328,141,4963,151,4544,174,4329,191,4120,213,4107,215,4107,210,4119,208,4329,186,4544,168,4963,146,5328,136,5593,134"/>
+<area shape="rect" href="REMORA__advance__2d_8cpp.html" title=" " alt="" coords="4131,211,4369,265"/>
+<area shape="poly" title=" " alt="" coords="5593,140,5368,145,5067,157,4726,179,4552,194,4382,213,4370,215,4369,210,4382,208,4552,189,4726,173,5067,152,5368,140,5593,135"/>
+<area shape="rect" href="REMORA__advance__2d__onestep_8cpp.html" title=" " alt="" coords="4393,211,4648,265"/>
+<area shape="poly" title=" " alt="" coords="5593,143,5180,165,4921,185,4661,213,4649,215,4648,210,4660,208,4921,180,5180,160,5593,138"/>
+<area shape="rect" href="REMORA__advance__3d_8cpp.html" title=" " alt="" coords="4672,211,4911,265"/>
+<area shape="poly" title=" " alt="" coords="5593,147,5289,171,5106,190,4924,213,4911,215,4910,210,4923,208,5106,185,5289,166,5593,141"/>
+<area shape="rect" href="REMORA__advance__3d__ml_8cpp.html" title=" " alt="" coords="4935,211,5173,265"/>
+<area shape="poly" title=" " alt="" coords="5593,154,5402,180,5186,213,5174,215,5173,210,5186,208,5402,175,5593,149"/>
+<area shape="rect" href="REMORA__apply__clim__nudg_8cpp.html" title=" " alt="" coords="5197,211,5436,265"/>
+<area shape="poly" title=" " alt="" coords="5624,161,5420,213,5418,208,5623,156"/>
+<area shape="rect" href="REMORA__bulk__flux_8cpp.html" title=" " alt="" coords="5460,211,5699,265"/>
+<area shape="poly" title=" " alt="" coords="5676,166,5615,213,5612,208,5673,161"/>
+<area shape="rect" href="REMORA__bulk__flux__test_8cpp.html" title=" " alt="" coords="5723,211,5961,265"/>
+<area shape="poly" title=" " alt="" coords="5747,161,5809,208,5806,213,5744,166"/>
+<area shape="rect" href="REMORA__compute__W_8cpp.html" title=" " alt="" coords="5985,211,6224,265"/>
+<area shape="poly" title=" " alt="" coords="5797,156,6003,208,6001,213,5796,161"/>
+<area shape="rect" href="REMORA__coriolis_8cpp.html" title=" " alt="" coords="6248,211,6487,265"/>
+<area shape="poly" title=" " alt="" coords="5827,149,6020,175,6237,208,6248,210,6247,215,6236,213,6019,180,5827,154"/>
+<area shape="rect" href="REMORA__curvilinear_8cpp.html" title=" " alt="" coords="6511,211,6749,265"/>
+<area shape="poly" title=" " alt="" coords="5828,141,6133,166,6316,184,6500,208,6511,210,6510,215,6499,213,6316,190,6132,171,5827,147"/>
+<area shape="rect" href="REMORA__gls_8cpp.html" title=" " alt="" coords="6773,211,7012,265"/>
+<area shape="poly" title=" " alt="" coords="5827,137,6008,145,6241,158,6501,179,6762,208,6774,210,6773,215,6762,213,6501,184,6241,164,6008,150,5827,143"/>
+<area shape="rect" href="REMORA__prestep_8cpp.html" title=" " alt="" coords="7036,211,7275,265"/>
+<area shape="poly" title=" " alt="" coords="5827,135,6049,140,6347,152,6685,174,6857,189,7025,208,7036,210,7035,215,7024,213,6856,194,6684,179,6347,157,6049,145,5827,140"/>
+<area shape="rect" href="REMORA__prestep__diffusion_8cpp.html" title=" " alt="" coords="7299,211,7537,265"/>
+<area shape="poly" title=" " alt="" coords="5828,134,6090,136,6453,146,6867,168,7080,186,7288,208,7299,209,7298,215,7287,213,7079,191,6867,174,6452,151,6090,141,5827,139"/>
+<area shape="rect" href="REMORA__prestep__t__advection_8cpp.html" title=" " alt="" coords="7561,211,7811,265"/>
+<area shape="poly" title=" " alt="" coords="5827,136,6694,161,7189,182,7394,194,7550,208,7562,209,7561,215,7550,213,7394,199,7188,187,6694,166,5827,142"/>
+<area shape="rect" href="REMORA__prsgrd_8cpp.html" title=" " alt="" coords="7835,211,8073,265"/>
+<area shape="poly" title=" " alt="" coords="5827,136,6246,143,6823,157,7401,178,7641,192,7824,208,7835,209,7834,215,7823,213,7641,197,7400,184,6823,162,6246,148,5827,141"/>
+<area shape="poly" title=" " alt="" coords="9164,212,8930,198,8552,185,7544,163,6508,148,5814,140,5814,135,6508,143,7544,158,8552,179,8931,192,9164,207"/>
+<area shape="poly" title=" " alt="" coords="9398,212,9148,197,8741,183,7659,162,6549,147,5813,140,5813,135,6550,142,7659,156,8742,178,9148,191,9398,207"/>
+<area shape="poly" title=" " alt="" coords="1355,210,1372,208,1485,199,1653,191,2130,177,3420,155,4745,141,5606,135,5606,140,4745,146,3420,160,2130,182,1654,197,1485,205,1373,213,1356,216"/>
+<area shape="poly" title=" " alt="" coords="1356,257,1405,263,1603,276,1844,288,2426,307,3100,321,3812,330,5138,337,5980,337,5980,342,5138,342,3812,335,3100,326,2426,313,1843,294,1603,282,1404,268,1355,263"/>
+<area shape="poly" title=" " alt="" coords="1356,257,1405,263,1742,277,2305,287,3806,301,6209,311,8392,335,8392,341,6209,316,3806,306,2305,293,1742,282,1404,268,1355,263"/>
+<area shape="poly" title=" " alt="" coords="1113,268,881,318,880,313,1112,263"/>
+<area shape="poly" title=" " alt="" coords="1165,273,1071,316,1069,311,1163,268"/>
+<area shape="poly" title=" " alt="" coords="1246,278,1254,313,1249,314,1241,279"/>
+<area shape="poly" title=" " alt="" coords="1318,268,1455,318,1453,323,1316,273"/>
 </map>
 </div>
 </div>
@@ -263,9 +268,16 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceREMORABiology" id="r_namespaceREMORABiology"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html">REMORABiology</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a9b061192ca3a05c03c55cea7855e4cd2" id="r_a9b061192ca3a05c03c55cea7855e4cd2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#a9b061192ca3a05c03c55cea7855e4cd2">REMORABiology::BiologyConstantIC</a> = std::map&lt; std::string, amrex::Real &gt;</td></tr>
+<tr class="memdesc:a9b061192ca3a05c03c55cea7855e4cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant initial concentration of each biology tracer, by name.  <br /></td></tr>
+<tr class="separator:a9b061192ca3a05c03c55cea7855e4cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:aca4ea0d9dbd715e7a267f0f429fd6a73" id="r_aca4ea0d9dbd715e7a267f0f429fd6a73"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73">REMORABiology::BiologyICType</a> { <a class="el" href="namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73a31da927b57c9fa15695f5b78a263112f">REMORABiology::follow_ic_type</a>
+, <a class="el" href="namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73a617ac08757d38a5a7ed91c224f0e90a0">REMORABiology::constant</a>
 , <a class="el" href="namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73a0747ffd2ec4a506ee2b993a044b370c9">REMORABiology::analytic</a>
 , <a class="el" href="namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73ac2e0f73e7b066a47b743d6ce8213e684">REMORABiology::netcdf</a>
  }</td></tr>
@@ -281,6 +293,12 @@ Functions</h2></td></tr>
 <tr class="separator:aa33d1031866530a1bbc1c6d327d075bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c0ad619b445ee403bf999e50dac6623" id="r_a5c0ad619b445ee403bf999e50dac6623"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#a5c0ad619b445ee403bf999e50dac6623">REMORABiology::biology_ic_type_name</a> (<a class="el" href="namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73">BiologyICType</a> type)</td></tr>
 <tr class="separator:a5c0ad619b445ee403bf999e50dac6623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1daffb98542355037668a1827dd099d" id="r_af1daffb98542355037668a1827dd099d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceREMORABiology.html#a9b061192ca3a05c03c55cea7855e4cd2">BiologyConstantIC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#af1daffb98542355037668a1827dd099d">REMORABiology::read_constant_biology_ic</a> (const <a class="el" href="structREMORABiology_1_1BiologyDeclaration.html">BiologyDeclaration</a> &amp;declaration, const std::string &amp;remora_prefix)</td></tr>
+<tr class="memdesc:af1daffb98542355037668a1827dd099d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one constant initial concentration per declared tracer, by name.  <br /></td></tr>
+<tr class="separator:af1daffb98542355037668a1827dd099d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd6774ffbc2176ac2adb5bbc5220c6c" id="r_abdd6774ffbc2176ac2adb5bbc5220c6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#abdd6774ffbc2176ac2adb5bbc5220c6c">REMORABiology::initialize_constant_biology</a> (const <a class="el" href="structREMORABiology_1_1BiologyDeclaration.html">BiologyDeclaration</a> &amp;declaration, <a class="el" href="structREMORABiology_1_1BiologyInitContext.html">BiologyInitContext</a> &amp;context, const <a class="el" href="namespaceREMORABiology.html#a9b061192ca3a05c03c55cea7855e4cd2">BiologyConstantIC</a> &amp;values)</td></tr>
+<tr class="memdesc:abdd6774ffbc2176ac2adb5bbc5220c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set each declared biology component to its constant value, found by tracer name, ghost cells included. Every declared tracer must have a value. Physical fields and dyes are left unchanged.  <br /></td></tr>
+<tr class="separator:abdd6774ffbc2176ac2adb5bbc5220c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

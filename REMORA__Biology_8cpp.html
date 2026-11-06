@@ -98,45 +98,54 @@ $(document).ready(function(){initNavTree('REMORA__Biology_8cpp.html',''); initRe
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="REMORA__Biology_8H_source.html">REMORA_Biology.H</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="REMORA__ECBBiology_8H_source.html">REMORA_ECBBiology.H</a>&gt;</code><br />
 <code>#include &lt;AMReX.H&gt;</code><br />
+<code>#include &lt;AMReX_ParmParse.H&gt;</code><br />
 <code>#include &lt;AMReX_Utility.H&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for REMORA_Biology.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="REMORA__Biology_8cpp__incl.png" border="0" usemap="#a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Biology_2REMORA__Biology_8cpp" alt=""/></div>
 <map name="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Biology_2REMORA__Biology_8cpp" id="a_2home_2runner_2work_2REMORA_2REMORA_2Source_2Biology_2REMORA__Biology_8cpp">
-<area shape="rect" title=" " alt="" coords="486,5,693,60"/>
-<area shape="rect" href="REMORA__Biology_8H.html" title=" " alt="" coords="303,181,449,207"/>
-<area shape="poly" title=" " alt="" coords="487,59,442,79,403,110,387,138,380,168,375,167,382,136,399,106,439,75,484,54"/>
-<area shape="rect" href="REMORA__FennelBiology_8H.html" title=" " alt="" coords="414,108,605,133"/>
-<area shape="poly" title=" " alt="" coords="567,62,532,99,528,96,563,58"/>
-<area shape="rect" title=" " alt="" coords="629,108,712,133"/>
-<area shape="poly" title=" " alt="" coords="616,58,652,96,648,100,612,62"/>
-<area shape="rect" title=" " alt="" coords="736,108,864,133"/>
-<area shape="poly" title=" " alt="" coords="655,58,760,100,758,105,653,63"/>
+<area shape="rect" title=" " alt="" coords="631,5,838,60"/>
+<area shape="rect" href="REMORA__Biology_8H.html" title=" " alt="" coords="312,181,459,207"/>
+<area shape="poly" title=" " alt="" coords="631,42,550,50,466,63,395,83,369,95,351,110,346,123,348,139,367,170,362,172,343,140,340,123,347,106,366,91,393,78,465,58,549,45,631,37"/>
+<area shape="rect" href="REMORA__FennelBiology_8H.html" title=" " alt="" coords="559,108,750,133"/>
+<area shape="poly" title=" " alt="" coords="712,62,677,99,673,96,708,58"/>
+<area shape="rect" href="REMORA__ECBBiology_8H.html" title=" " alt="" coords="361,108,535,133"/>
+<area shape="poly" title=" " alt="" coords="648,63,500,107,499,102,646,58"/>
+<area shape="rect" title=" " alt="" coords="775,108,857,133"/>
+<area shape="poly" title=" " alt="" coords="761,58,797,96,793,100,758,62"/>
+<area shape="rect" title=" " alt="" coords="882,108,1041,133"/>
+<area shape="poly" title=" " alt="" coords="805,58,919,101,917,106,803,63"/>
+<area shape="rect" title=" " alt="" coords="1065,108,1193,133"/>
+<area shape="poly" title=" " alt="" coords="839,54,1064,102,1063,108,838,59"/>
 <area shape="rect" title=" " alt="" coords="5,255,91,280"/>
-<area shape="poly" title=" " alt="" coords="324,209,105,256,104,251,323,204"/>
-<area shape="rect" title=" " alt="" coords="115,255,192,280"/>
-<area shape="poly" title=" " alt="" coords="341,209,203,253,201,248,339,204"/>
-<area shape="rect" title=" " alt="" coords="216,255,275,280"/>
-<area shape="poly" title=" " alt="" coords="356,209,280,250,277,246,354,204"/>
-<area shape="rect" title=" " alt="" coords="299,255,453,280"/>
-<area shape="poly" title=" " alt="" coords="379,207,379,241,373,241,373,207"/>
-<area shape="rect" title=" " alt="" coords="477,255,622,280"/>
-<area shape="poly" title=" " alt="" coords="405,204,509,247,507,252,403,209"/>
-<area shape="rect" title=" " alt="" coords="647,255,777,280"/>
-<area shape="poly" title=" " alt="" coords="431,204,645,249,644,254,429,209"/>
-<area shape="poly" title=" " alt="" coords="489,136,411,177,409,172,487,131"/>
-<area shape="rect" href="REMORA__IndexDefines_8H.html" title=" " alt="" coords="919,181,1105,207"/>
-<area shape="poly" title=" " alt="" coords="590,131,918,177,917,182,590,136"/>
-<area shape="rect" title=" " alt="" coords="801,255,924,280"/>
-<area shape="poly" title=" " alt="" coords="989,209,901,251,898,246,987,204"/>
-<area shape="rect" title=" " alt="" coords="948,255,1076,280"/>
-<area shape="poly" title=" " alt="" coords="1015,207,1015,241,1009,241,1009,207"/>
-<area shape="rect" title=" " alt="" coords="1100,255,1255,280"/>
-<area shape="poly" title=" " alt="" coords="1040,204,1139,247,1137,252,1038,209"/>
-<area shape="rect" title=" " alt="" coords="1279,255,1457,280"/>
-<area shape="poly" title=" " alt="" coords="1070,204,1298,249,1296,255,1069,209"/>
+<area shape="poly" title=" " alt="" coords="332,209,105,257,104,252,331,204"/>
+<area shape="rect" title=" " alt="" coords="115,255,165,280"/>
+<area shape="poly" title=" " alt="" coords="345,209,179,257,178,252,344,204"/>
+<area shape="rect" title=" " alt="" coords="189,255,267,280"/>
+<area shape="poly" title=" " alt="" coords="361,209,267,251,265,247,359,204"/>
+<area shape="rect" title=" " alt="" coords="291,255,349,280"/>
+<area shape="poly" title=" " alt="" coords="377,209,342,246,338,243,373,205"/>
+<area shape="rect" title=" " alt="" coords="374,255,527,280"/>
+<area shape="poly" title=" " alt="" coords="398,205,433,243,429,246,394,209"/>
+<area shape="rect" title=" " alt="" coords="551,255,697,280"/>
+<area shape="poly" title=" " alt="" coords="424,204,573,248,571,253,423,209"/>
+<area shape="rect" title=" " alt="" coords="721,255,852,280"/>
+<area shape="poly" title=" " alt="" coords="450,204,709,250,708,255,449,209"/>
+<area shape="poly" title=" " alt="" coords="612,136,443,180,441,175,611,131"/>
+<area shape="rect" href="REMORA__IndexDefines_8H.html" title=" " alt="" coords="994,181,1179,207"/>
+<area shape="poly" title=" " alt="" coords="725,131,1004,176,1003,182,724,136"/>
+<area shape="rect" title=" " alt="" coords="876,255,999,280"/>
+<area shape="poly" title=" " alt="" coords="1064,209,975,251,973,246,1062,204"/>
+<area shape="rect" title=" " alt="" coords="1023,255,1151,280"/>
+<area shape="poly" title=" " alt="" coords="1089,207,1089,241,1084,241,1084,207"/>
+<area shape="rect" title=" " alt="" coords="1175,255,1329,280"/>
+<area shape="poly" title=" " alt="" coords="1114,204,1214,247,1211,252,1112,209"/>
+<area shape="rect" title=" " alt="" coords="1353,255,1532,280"/>
+<area shape="poly" title=" " alt="" coords="1144,204,1372,249,1371,255,1143,209"/>
+<area shape="poly" title=" " alt="" coords="440,135,407,173,403,169,436,132"/>
 </map>
 </div>
 </div>
@@ -156,6 +165,12 @@ Functions</h2></td></tr>
 <tr class="separator:aa33d1031866530a1bbc1c6d327d075bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c0ad619b445ee403bf999e50dac6623" id="r_a5c0ad619b445ee403bf999e50dac6623"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#a5c0ad619b445ee403bf999e50dac6623">REMORABiology::biology_ic_type_name</a> (<a class="el" href="namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73">BiologyICType</a> type)</td></tr>
 <tr class="separator:a5c0ad619b445ee403bf999e50dac6623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1daffb98542355037668a1827dd099d" id="r_af1daffb98542355037668a1827dd099d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceREMORABiology.html#a9b061192ca3a05c03c55cea7855e4cd2">BiologyConstantIC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#af1daffb98542355037668a1827dd099d">REMORABiology::read_constant_biology_ic</a> (const <a class="el" href="structREMORABiology_1_1BiologyDeclaration.html">BiologyDeclaration</a> &amp;declaration, const std::string &amp;remora_prefix)</td></tr>
+<tr class="memdesc:af1daffb98542355037668a1827dd099d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one constant initial concentration per declared tracer, by name.  <br /></td></tr>
+<tr class="separator:af1daffb98542355037668a1827dd099d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd6774ffbc2176ac2adb5bbc5220c6c" id="r_abdd6774ffbc2176ac2adb5bbc5220c6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#abdd6774ffbc2176ac2adb5bbc5220c6c">REMORABiology::initialize_constant_biology</a> (const <a class="el" href="structREMORABiology_1_1BiologyDeclaration.html">BiologyDeclaration</a> &amp;declaration, <a class="el" href="structREMORABiology_1_1BiologyInitContext.html">BiologyInitContext</a> &amp;context, const <a class="el" href="namespaceREMORABiology.html#a9b061192ca3a05c03c55cea7855e4cd2">BiologyConstantIC</a> &amp;values)</td></tr>
+<tr class="memdesc:abdd6774ffbc2176ac2adb5bbc5220c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set each declared biology component to its constant value, found by tracer name, ghost cells included. Every declared tracer must have a value. Physical fields and dyes are left unchanged.  <br /></td></tr>
+<tr class="separator:abdd6774ffbc2176ac2adb5bbc5220c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a0bec4186572f00a622df333b73cb61f9" name="a0bec4186572f00a622df333b73cb61f9"></a>
@@ -178,7 +193,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__Biology_8cpp_source.html#l00016">16</a> of file <a class="el" href="REMORA__Biology_8cpp_source.html">REMORA_Biology.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__Biology_8cpp_source.html#l00019">19</a> of file <a class="el" href="REMORA__Biology_8cpp_source.html">REMORA_Biology.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__ECBBiology_8cpp_source.html#l00155">REMORABiology::ECBBiology::advance()</a>, <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00277">REMORABiology::FennelBiology::components()</a>, and <a class="el" href="REMORA__ECBBiology_8cpp_source.html#l00147">REMORABiology::ECBBiology::configure()</a>.</p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dtype_0',['DType',['../structNDArray.html#a96033b69f69ea0ae537a24288715752d',1,'NDArray']]]
+  ['biologyconstantic_0',['BiologyConstantIC',['../namespaceREMORABiology.html#a9b061192ca3a05c03c55cea7855e4cd2',1,'REMORABiology']]]
 ];

@@ -32,6 +32,7 @@ var NAVTREE =
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
@@ -66,17 +67,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325ad37e67db17cfd059f2852e2673b9e8ef",
-"REMORA__InitAnalyticProb__DogboneAnalytic_8H.html#a0e309d9162590f5d8287ae33be5c24ff",
-"REMORA__NCFile_8H.html#a4249e844e315ed3cb1e750d3798a7baf",
-"REMORA__rhs__t__3d_8cpp.html",
-"classREMORA.html#a1539f678cff20cd3b345d7ace65358f5",
-"classREMORA.html#a7a9d6e75f656c31f8e54ddacd1c77892",
-"classREMORA.html#ae961006ec86eda2d7dd6496c3bbd4486",
-"functions_enum.html",
-"namespacefunwave__advance__module.html#a695777be7d7a99b46ca87f35368b9e73",
-"structREMORABiology_1_1FennelParameters.html#abf5052d8a21dd70b55acb7968236c58a",
-"structlatlon__regrid_1_1Stencil.html#af16170efce73b65d67c6fe5111bebedd"
+"REMORA__FillPatcher_8H_source.html",
+"REMORA__InitAnalyticProb__ChannelTest_8H.html#a055aef9870fdf5d505cc9ad2d0d861c4",
+"REMORA__LatLonRegrid_8H_source.html",
+"REMORA__init__from__netcdf_8cpp.html#abb9865928c7797ca39fde9a122765c7b",
+"classREMORA.html#a0d747ec8e2dd3a40475ce19fffa31355",
+"classREMORA.html#a71e63d1870dd72923c2e110fa4158202",
+"classREMORA.html#addc06a380411d14dc082150b72232548",
+"classncutils_1_1NCFile.html#ab275cede297730cc0338b6f18ec1e518",
+"namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346af756bb6d63add06a5624fa131cc82407",
+"structREMORABiology_1_1ECBParameters.html#a1d11d4a45abf0f50df9a97c53cfc0d00",
+"structREMORA_1_1CF2DCache.html#a8e59e0e0c0015238511136d948504110",
+"structncutils_1_1NCVar.html#a2dce982c1ddb8f3b89b071bc3bf15532"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

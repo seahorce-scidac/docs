@@ -292,6 +292,7 @@ var classREMORA =
     [ "bdry_time_varname", "classREMORA.html#a30974467d447dcea00a9c01ed39471ad", null ],
     [ "bdy_index", "classREMORA.html#a639ac7bd780a1dc96cc2401b379cda2d", null ],
     [ "Bio_comp", "classREMORA.html#a6f81196b66d6f9f05a3757f9b09c76c1", null ],
+    [ "biology_constant_ic", "classREMORA.html#a8988acd0e5abbec6997ce5f5b76e909b", null ],
     [ "biology_ic_type", "classREMORA.html#afeb047fefba9c5b2b26b3d7c6abaff6a", null ],
     [ "boundary_series", "classREMORA.html#aabc81937db98cbe8897d832a08d70ce9", null ],
     [ "boxes_at_level", "classREMORA.html#a45b928a121bd6c5e75ec75732a27f774", null ],

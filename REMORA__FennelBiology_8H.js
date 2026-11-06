@@ -17,8 +17,5 @@ var REMORA__FennelBiology_8H =
       [ "data", "REMORA__FennelBiology_8H.html#aa77892264812710f1c33d8b2a1ce3f03a8d777f385d3dfec8815d20f7496026dc", null ],
       [ "secular", "REMORA__FennelBiology_8H.html#aa77892264812710f1c33d8b2a1ce3f03a3766bada067efa00a0ea7aa2f8725c56", null ]
     ] ],
-    [ "components", "REMORA__FennelBiology_8H.html#aaf3a46ad11c8567c1445cfa581993423", null ],
-    [ "num_tracers", "REMORA__FennelBiology_8H.html#ae2b840a79d3042459c08864b5b465252", null ],
-    [ "NumBaseTracers", "REMORA__FennelBiology_8H.html#aea32dd15549530bf26d133a1d36bfbcf", null ],
-    [ "NumCarbonTracers", "REMORA__FennelBiology_8H.html#a3de4b633314d6f009171bcb5dacec13f", null ]
+    [ "NumBaseTracers", "REMORA__FennelBiology_8H.html#aea32dd15549530bf26d133a1d36bfbcf", null ]
 ];

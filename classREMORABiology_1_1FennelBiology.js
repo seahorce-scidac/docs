@@ -1,6 +1,8 @@
 var classREMORABiology_1_1FennelBiology =
 [
+    [ "accepts_legacy_checkpoint", "classREMORABiology_1_1FennelBiology.html#ad2c525ea544d5eb56b862fc9797d37e1", null ],
     [ "advance", "classREMORABiology_1_1FennelBiology.html#a3368d0e2daf61120fd4c2eba8fbce564", null ],
+    [ "components", "classREMORABiology_1_1FennelBiology.html#ada79fe12d7f59fd7106c6899dd388da3", null ],
     [ "configure", "classREMORABiology_1_1FennelBiology.html#a5dd29c46d802296331c7a5be38c52c35", null ],
     [ "declaration", "classREMORABiology_1_1FennelBiology.html#a11c89b1b7092d0c3560e04693e642238", null ],
     [ "name", "classREMORABiology_1_1FennelBiology.html#ae68443b08b2867769d4da4d75c175855", null ],

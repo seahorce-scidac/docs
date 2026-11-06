@@ -1,5 +1,7 @@
 var structREMORABiology_1_1BiologyAdvanceContext =
 [
+    [ "bottom_stress_u", "structREMORABiology_1_1BiologyAdvanceContext.html#a90b0b12b365a2a149a35c1ec1e9ca851", null ],
+    [ "bottom_stress_v", "structREMORABiology_1_1BiologyAdvanceContext.html#aae65a724ca643795d0e308aea4373d23", null ],
     [ "component_start", "structREMORABiology_1_1BiologyAdvanceContext.html#a4aed2b360b0d40775aca68e5701a645c", null ],
     [ "dt", "structREMORABiology_1_1BiologyAdvanceContext.html#af1dc554a5c5cd5b3c4b7888d51d1e3f1", null ],
     [ "hz", "structREMORABiology_1_1BiologyAdvanceContext.html#ab1f6be9f9b64db3fc23f3fdbb9c03639", null ],

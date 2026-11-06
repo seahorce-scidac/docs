@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('classREMORABiology_1_1FennelBiology.ht
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classREMORABiology_1_1FennelBiology-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">REMORABiology::FennelBiology Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -146,6 +147,8 @@ Collaboration diagram for REMORABiology::FennelBiology:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae68443b08b2867769d4da4d75c175855" id="r_ae68443b08b2867769d4da4d75c175855"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORABiology_1_1FennelBiology.html#ae68443b08b2867769d4da4d75c175855">name</a> () const override</td></tr>
 <tr class="separator:ae68443b08b2867769d4da4d75c175855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c525ea544d5eb56b862fc9797d37e1" id="r_ad2c525ea544d5eb56b862fc9797d37e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORABiology_1_1FennelBiology.html#ad2c525ea544d5eb56b862fc9797d37e1">accepts_legacy_checkpoint</a> () const override</td></tr>
+<tr class="separator:ad2c525ea544d5eb56b862fc9797d37e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd29c46d802296331c7a5be38c52c35" id="r_a5dd29c46d802296331c7a5be38c52c35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORABiology_1_1FennelBiology.html#a5dd29c46d802296331c7a5be38c52c35">configure</a> (const std::string &amp;remora_prefix) override</td></tr>
 <tr class="separator:a5dd29c46d802296331c7a5be38c52c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11c89b1b7092d0c3560e04693e642238" id="r_a11c89b1b7092d0c3560e04693e642238"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structREMORABiology_1_1BiologyDeclaration.html">BiologyDeclaration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORABiology_1_1FennelBiology.html#a11c89b1b7092d0c3560e04693e642238">declaration</a> () const noexcept override</td></tr>
@@ -155,6 +158,13 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classREMORABiology_1_1Biology"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classREMORABiology_1_1Biology')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classREMORABiology_1_1Biology.html">REMORABiology::Biology</a></td></tr>
 <tr class="memitem:aaf6085c104ca8dd21b8356acc9bc1a73 inherit pub_methods_classREMORABiology_1_1Biology" id="r_aaf6085c104ca8dd21b8356acc9bc1a73"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORABiology_1_1Biology.html#aaf6085c104ca8dd21b8356acc9bc1a73">~Biology</a> ()=default</td></tr>
 <tr class="separator:aaf6085c104ca8dd21b8356acc9bc1a73 inherit pub_methods_classREMORABiology_1_1Biology"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0149144526478d09c08f98300deb6b1d inherit pub_methods_classREMORABiology_1_1Biology" id="r_a0149144526478d09c08f98300deb6b1d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORABiology_1_1Biology.html#a0149144526478d09c08f98300deb6b1d">checkpoint_identity</a> () const</td></tr>
+<tr class="separator:a0149144526478d09c08f98300deb6b1d inherit pub_methods_classREMORABiology_1_1Biology"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ada79fe12d7f59fd7106c6899dd388da3" id="r_ada79fe12d7f59fd7106c6899dd388da3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structREMORABiology_1_1Fennel_1_1Components.html">Fennel::Components</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classREMORABiology_1_1FennelBiology.html#ada79fe12d7f59fd7106c6899dd388da3">components</a> (int component_start) const</td></tr>
+<tr class="separator:ada79fe12d7f59fd7106c6899dd388da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -174,8 +184,37 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespaceREMORABiology_1_1Fennel.html">Fennel</a> ecosystem; polymorphism is host-only, kernels capture plain data. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00264">264</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00228">228</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad2c525ea544d5eb56b862fc9797d37e1" name="ad2c525ea544d5eb56b862fc9797d37e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c525ea544d5eb56b862fc9797d37e1">&#9670;&#160;</a></span>accepts_legacy_checkpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool REMORABiology::FennelBiology::accepts_legacy_checkpoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classREMORABiology_1_1Biology.html#aa9a98aff9a2c801b26ebd85fad0f791e">REMORABiology::Biology</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00231">231</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
+
+</div>
+</div>
 <a id="a3368d0e2daf61120fd4c2eba8fbce564" name="a3368d0e2daf61120fd4c2eba8fbce564"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3368d0e2daf61120fd4c2eba8fbce564">&#9670;&#160;</a></span>advance()</h2>
 
@@ -202,15 +241,85 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classREMORABiology_1_1Biology.html#a4098c2fc7bf150016c1f1e158dcf9cc4">REMORABiology::Biology</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00450">450</a> of file <a class="el" href="REMORA__FennelBiology_8cpp_source.html">REMORA_FennelBiology.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00309">309</a> of file <a class="el" href="REMORA__FennelBiology_8cpp_source.html">REMORA_FennelBiology.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classREMORABiology_1_1FennelBiology_a3368d0e2daf61120fd4c2eba8fbce564_cgraph.png" border="0" usemap="#aclassREMORABiology_1_1FennelBiology_a3368d0e2daf61120fd4c2eba8fbce564_cgraph" alt=""/></div>
 <map name="aclassREMORABiology_1_1FennelBiology_a3368d0e2daf61120fd4c2eba8fbce564_cgraph" id="aclassREMORABiology_1_1FennelBiology_a3368d0e2daf61120fd4c2eba8fbce564_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,232,45"/>
-<area shape="rect" href="namespaceREMORABiology_1_1Fennel.html#aaf3a46ad11c8567c1445cfa581993423" title="Map the Fennel tracers onto cons components starting at base." alt="" coords="280,5,459,45"/>
-<area shape="poly" title=" " alt="" coords="232,23,266,23,266,28,232,28"/>
+<area shape="rect" title=" " alt="" coords="5,216,232,256"/>
+<area shape="rect" href="namespaceREMORABiology.html#a04ddfdcf402a7dc21a983f252858efc6" title="CO2 solubility [mol/(kg atm)] from temperature [degC] and salinity, by the Weiss (1974) formula." alt="" coords="314,5,473,45"/>
+<area shape="poly" title=" " alt="" coords="130,214,154,179,188,137,230,93,279,55,300,44,302,49,281,60,234,97,192,140,158,183,135,217"/>
+<area shape="rect" href="classREMORABiology_1_1FennelBiology.html#ada79fe12d7f59fd7106c6899dd388da3" title=" " alt="" coords="280,69,507,109"/>
+<area shape="poly" title=" " alt="" coords="142,214,202,167,239,142,279,120,298,112,301,117,281,125,242,147,205,172,145,218"/>
+<area shape="rect" href="namespaceREMORABiology.html#ab2d47f8d5c2a85ba012e89606149aa70" title="O2 saturation [mmol/m3] from temperature [degC] and salinity, by the Garcia and Gordon (1992) formula..." alt="" coords="281,134,505,159"/>
+<area shape="poly" title=" " alt="" coords="164,213,279,169,314,160,315,165,281,175,166,218"/>
+<area shape="rect" href="namespaceREMORABiology.html#a575c811fc03be074271fd0bf280dc24f" title=" " alt="" coords="310,184,477,224"/>
+<area shape="poly" title=" " alt="" coords="232,220,296,213,297,218,233,225"/>
+<area shape="rect" href="namespaceREMORABiology.html#a99ab3dd9f97eea78630ae473cb4f69cb" title="Schmidt number at temperature T [degC]." alt="" coords="300,248,487,288"/>
+<area shape="poly" title=" " alt="" coords="233,247,287,253,286,258,232,252"/>
+<area shape="rect" href="namespaceREMORABiology.html#abf9b30771004455eefc88440f895276d" title="Transfer&#45;velocity rate factor for one step of dtdays days." alt="" coords="284,313,503,338"/>
+<area shape="poly" title=" " alt="" coords="166,254,281,297,315,307,314,312,279,303,164,259"/>
+<area shape="rect" href="namespaceREMORABiology.html#a66d02652fedc9fea0b4949421b95cc30" title="Gas transfer velocity times dt, for rate factor cff2 from transfer_rate, squared wind u10squ and Schm..." alt="" coords="300,363,487,403"/>
+<area shape="poly" title=" " alt="" coords="144,254,204,301,242,326,281,348,298,355,296,360,279,353,239,331,201,305,141,258"/>
+<area shape="rect" href="namespaceREMORABiology.html#aac40c30f312eafaceb3ea993161517dd" title="Squared 10 m wind speed [m2/s2] at rho point (i,j)." alt="" coords="314,427,473,467"/>
+<area shape="poly" title=" " alt="" coords="135,255,158,289,192,332,234,375,281,412,302,423,300,428,279,417,230,379,188,335,154,293,130,258"/>
+<area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="593,49,775,74"/>
+<area shape="poly" title=" " alt="" coords="507,76,579,69,579,74,507,81"/>
+<area shape="rect" href="structREMORABiology_1_1BiologyDeclaration.html#a6145a0857b23c8bb9dc1075c37553d55" title="State component of tracer name in a block starting at component_start, or &#45;1 if the model does not de..." alt="" coords="555,99,813,139"/>
+<area shape="poly" title=" " alt="" coords="507,98,541,102,541,107,507,103"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ada79fe12d7f59fd7106c6899dd388da3" name="ada79fe12d7f59fd7106c6899dd388da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada79fe12d7f59fd7106c6899dd388da3">&#9670;&#160;</a></span>components()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structREMORABiology_1_1Fennel_1_1Components.html">REMORABiology::Fennel::Components</a> REMORABiology::FennelBiology::components </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>component_start</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00277">277</a> of file <a class="el" href="REMORA__FennelBiology_8cpp_source.html">REMORA_FennelBiology.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00309">advance()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classREMORABiology_1_1FennelBiology_ada79fe12d7f59fd7106c6899dd388da3_cgraph.png" border="0" usemap="#aclassREMORABiology_1_1FennelBiology_ada79fe12d7f59fd7106c6899dd388da3_cgraph" alt=""/></div>
+<map name="aclassREMORABiology_1_1FennelBiology_ada79fe12d7f59fd7106c6899dd388da3_cgraph" id="aclassREMORABiology_1_1FennelBiology_ada79fe12d7f59fd7106c6899dd388da3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,232,67"/>
+<area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="318,5,501,31"/>
+<area shape="poly" title=" " alt="" coords="232,33,304,26,305,31,232,39"/>
+<area shape="rect" href="structREMORABiology_1_1BiologyDeclaration.html#a6145a0857b23c8bb9dc1075c37553d55" title="State component of tracer name in a block starting at component_start, or &#45;1 if the model does not de..." alt="" coords="280,55,539,95"/>
+<area shape="poly" title=" " alt="" coords="232,56,267,59,266,64,232,61"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classREMORABiology_1_1FennelBiology_ada79fe12d7f59fd7106c6899dd388da3_icgraph.png" border="0" usemap="#aclassREMORABiology_1_1FennelBiology_ada79fe12d7f59fd7106c6899dd388da3_icgraph" alt=""/></div>
+<map name="aclassREMORABiology_1_1FennelBiology_ada79fe12d7f59fd7106c6899dd388da3_icgraph" id="aclassREMORABiology_1_1FennelBiology_ada79fe12d7f59fd7106c6899dd388da3_icgraph">
+<area shape="rect" title=" " alt="" coords="280,5,507,45"/>
+<area shape="rect" href="classREMORABiology_1_1FennelBiology.html#a3368d0e2daf61120fd4c2eba8fbce564" title=" " alt="" coords="5,5,232,45"/>
+<area shape="poly" title=" " alt="" coords="266,28,232,28,232,23,266,23"/>
 </map>
 </div>
 
@@ -242,7 +351,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classREMORABiology_1_1Biology.html#a58640f029347592cfa19b8cc4dcceb45">REMORABiology::Biology</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00393">393</a> of file <a class="el" href="REMORA__FennelBiology_8cpp_source.html">REMORA_FennelBiology.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00222">222</a> of file <a class="el" href="REMORA__FennelBiology_8cpp_source.html">REMORA_FennelBiology.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -281,7 +390,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classREMORABiology_1_1Biology.html#a25a9385977551a6de97856632bd7be9a">REMORABiology::Biology</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00268">268</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00233">233</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
 
 </div>
 </div>
@@ -310,7 +419,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classREMORABiology_1_1Biology.html#a33bbaec96c3802978b5b2db6ef90e9e3">REMORABiology::Biology</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00266">266</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00230">230</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
 
 </div>
 </div>
@@ -335,9 +444,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00275">275</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00240">240</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00450">advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00393">configure()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00309">advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00222">configure()</a>.</p>
 
 </div>
 </div>
@@ -361,9 +470,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00276">276</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00241">241</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00450">advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00393">configure()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00309">advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00222">configure()</a>.</p>
 
 </div>
 </div>
@@ -387,9 +496,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00277">277</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00242">242</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00450">advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00393">configure()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00309">advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00222">configure()</a>.</p>
 
 </div>
 </div>
@@ -413,9 +522,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00273">273</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00238">238</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00393">configure()</a>, and <a class="el" href="REMORA__FennelBiology_8H_source.html#l00268">declaration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00222">configure()</a>, and <a class="el" href="REMORA__FennelBiology_8H_source.html#l00233">declaration()</a>.</p>
 
 </div>
 </div>
@@ -439,9 +548,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00272">272</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00237">237</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00450">advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00393">configure()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00309">advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00222">configure()</a>.</p>
 
 </div>
 </div>
@@ -465,9 +574,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00274">274</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__FennelBiology_8H_source.html#l00239">239</a> of file <a class="el" href="REMORA__FennelBiology_8H_source.html">REMORA_FennelBiology.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00450">advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00393">configure()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00309">advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00222">configure()</a>.</p>
 
 </div>
 </div>

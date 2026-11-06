@@ -7,6 +7,7 @@ var hierarchy =
       [ "REMORAErrorTag", "classREMORAErrorTag.html", null ]
     ] ],
     [ "REMORABiology::Biology", "classREMORABiology_1_1Biology.html", [
+      [ "REMORABiology::ECBBiology", "classREMORABiology_1_1ECBBiology.html", null ],
       [ "REMORABiology::FennelBiology", "classREMORABiology_1_1FennelBiology.html", null ]
     ] ],
     [ "REMORABiology::BiologyAdvanceContext", "structREMORABiology_1_1BiologyAdvanceContext.html", null ],
@@ -14,6 +15,7 @@ var hierarchy =
     [ "REMORABiology::BiologyInitContext", "structREMORABiology_1_1BiologyInitContext.html", null ],
     [ "REMORA::CF2DCache", "structREMORA_1_1CF2DCache.html", null ],
     [ "REMORABiology::Fennel::Components", "structREMORABiology_1_1Fennel_1_1Components.html", null ],
+    [ "REMORABiology::ECBParameters", "structREMORABiology_1_1ECBParameters.html", null ],
     [ "REMORABiology::FennelParameters", "structREMORABiology_1_1FennelParameters.html", null ],
     [ "REMORAMaskedAvgDown::FieldWeight", "structREMORAMaskedAvgDown_1_1FieldWeight.html", null ],
     [ "HorizontalStencil", "structHorizontalStencil.html", null ],
@@ -44,6 +46,7 @@ var hierarchy =
     [ "REMORAParticlesRealIdxSoA", "structREMORAParticlesRealIdxSoA.html", null ],
     [ "REMORAPhysBCFunct", "classREMORAPhysBCFunct.html", null ],
     [ "REMORATimeUnits", "structREMORATimeUnits.html", null ],
+    [ "REMORABiology::SchmidtCoefficients", "structREMORABiology_1_1SchmidtCoefficients.html", null ],
     [ "SolverChoice", "structSolverChoice.html", null ],
     [ "latlon_regrid::Stencil", "structlatlon__regrid_1_1Stencil.html", null ],
     [ "mod_param::t_bounds", "structmod__param_1_1t__bounds.html", null ],

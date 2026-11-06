@@ -2,8 +2,8 @@ var searchData=
 [
   ['i_0',['i',['../structHorizontalStencil.html#a47e5d32d047148deff2f84aeaed7c223',1,'HorizontalStencil::i'],['../structlatlon__regrid_1_1Stencil.html#a768f3dc4da3165b1812105d00a7869ae',1,'latlon_regrid::Stencil::i']]],
   ['i8_1',['i8',['../namespacemod__kinds.html#ab42ba9a50334e4f30ff8270420c8ae71',1,'mod_kinds']]],
-  ['i_5fthnh4_2',['I_thNH4',['../structREMORABiology_1_1FennelParameters.html#a4de5956feb0012a41b100cace4a4b459',1,'REMORABiology::FennelParameters']]],
-  ['i_5ftime_5fbefore_3',['i_time_before',['../classNCTimeSeriesBoundary.html#a7306bf818fa5c352f3bb63e7c2848d4e',1,'NCTimeSeriesBoundary::i_time_before'],['../classNCTimeSeriesRiver.html#ab3db62bcd9010e2962122aefb5017ab6',1,'NCTimeSeriesRiver::i_time_before'],['../classNCTimeSeries.html#a7cd84e642555b80b6aaf9577da2bae4f',1,'NCTimeSeries::i_time_before']]],
+  ['i_5fthnh4_2',['i_thnh4',['../structREMORABiology_1_1FennelParameters.html#a4de5956feb0012a41b100cace4a4b459',1,'REMORABiology::FennelParameters::I_thNH4'],['../structREMORABiology_1_1ECBParameters.html#a9ce1235b1c93a13c0d5fc96d283a2b95',1,'REMORABiology::ECBParameters::I_thNH4']]],
+  ['i_5ftime_5fbefore_3',['i_time_before',['../classNCTimeSeries.html#a7cd84e642555b80b6aaf9577da2bae4f',1,'NCTimeSeries::i_time_before'],['../classNCTimeSeriesBoundary.html#a7306bf818fa5c352f3bb63e7c2848d4e',1,'NCTimeSeriesBoundary::i_time_before'],['../classNCTimeSeriesRiver.html#ab3db62bcd9010e2962122aefb5017ab6',1,'NCTimeSeriesRiver::i_time_before']]],
   ['ic_5ftype_4',['ic_type',['../structSolverChoice.html#ab9b74574dbcbef0c488da3a8ec1b8195',1,'SolverChoice']]],
   ['iend_5',['iend',['../structmod__param_1_1t__bounds.html#a9c753f98c65c4f72ca837911e0f9ba3c',1,'mod_param::t_bounds']]],
   ['iic_6',['iic',['../namespacemod__scalars.html#ada28f144f6759852e88100c5294ec50b',1,'mod_scalars']]],

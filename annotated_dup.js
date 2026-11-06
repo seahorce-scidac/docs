@@ -29,8 +29,11 @@ var annotated_dup =
       [ "BiologyAdvanceContext", "structREMORABiology_1_1BiologyAdvanceContext.html", "structREMORABiology_1_1BiologyAdvanceContext" ],
       [ "BiologyDeclaration", "structREMORABiology_1_1BiologyDeclaration.html", "structREMORABiology_1_1BiologyDeclaration" ],
       [ "BiologyInitContext", "structREMORABiology_1_1BiologyInitContext.html", "structREMORABiology_1_1BiologyInitContext" ],
+      [ "ECBBiology", "classREMORABiology_1_1ECBBiology.html", "classREMORABiology_1_1ECBBiology" ],
+      [ "ECBParameters", "structREMORABiology_1_1ECBParameters.html", "structREMORABiology_1_1ECBParameters" ],
       [ "FennelBiology", "classREMORABiology_1_1FennelBiology.html", "classREMORABiology_1_1FennelBiology" ],
-      [ "FennelParameters", "structREMORABiology_1_1FennelParameters.html", "structREMORABiology_1_1FennelParameters" ]
+      [ "FennelParameters", "structREMORABiology_1_1FennelParameters.html", "structREMORABiology_1_1FennelParameters" ],
+      [ "SchmidtCoefficients", "structREMORABiology_1_1SchmidtCoefficients.html", "structREMORABiology_1_1SchmidtCoefficients" ]
     ] ],
     [ "REMORAMaskedAvgDown", "namespaceREMORAMaskedAvgDown.html", [
       [ "FieldWeight", "structREMORAMaskedAvgDown_1_1FieldWeight.html", "structREMORAMaskedAvgDown_1_1FieldWeight" ],

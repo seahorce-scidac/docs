@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../classREMORABiology_1_1FennelBiology.html#ae68443b08b2867769d4da4d75c175855',1,'REMORABiology::FennelBiology::name()'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()'],['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()'],['../classREMORABiology_1_1Biology.html#a33bbaec96c3802978b5b2db6ef90e9e3',1,'REMORABiology::Biology::name()']]],
+  ['name_0',['name',['../classREMORABiology_1_1ECBBiology.html#ab8ef52585f1513e44250c3cc71f58592',1,'REMORABiology::ECBBiology::name()'],['../classREMORABiology_1_1FennelBiology.html#ae68443b08b2867769d4da4d75c175855',1,'REMORABiology::FennelBiology::name()'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()'],['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()'],['../classREMORABiology_1_1Biology.html#a33bbaec96c3802978b5b2db6ef90e9e3',1,'REMORABiology::Biology::name()']]],
   ['ncfile_1',['NCFile',['../classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423',1,'ncutils::NCFile']]],
   ['nctimeseries_2',['NCTimeSeries',['../classNCTimeSeries.html#aab4915c7eaa95f39c19064c40e27e964',1,'NCTimeSeries']]],
   ['nctimeseriesboundary_3',['NCTimeSeriesBoundary',['../classNCTimeSeriesBoundary.html#a7c1c8085948b2b52ac093b1b08d8dc6b',1,'NCTimeSeriesBoundary']]],
@@ -18,9 +18,8 @@ var searchData=
   ['num_5fdimensions_15',['num_dimensions',['../classncutils_1_1NCFile.html#aa3f98453011f8a3eb46762fb846a2bbf',1,'ncutils::NCFile']]],
   ['num_5fpassive_5fscalars_16',['num_passive_scalars',['../classREMORA.html#a315996f069e298dbe8f12b6fd3db4091',1,'REMORA']]],
   ['num_5fscalar_17',['num_scalar',['../classREMORA.html#a3b4d65518872da5102f7589658d27f32',1,'REMORA']]],
-  ['num_5ftracers_18',['num_tracers',['../namespaceREMORABiology_1_1Fennel.html#ae2b840a79d3042459c08864b5b465252',1,'REMORABiology::Fennel']]],
-  ['num_5fvariables_19',['num_variables',['../classncutils_1_1NCFile.html#ace4a49831a5dc61e09b8c1e9f0a75f85',1,'ncutils::NCFile']]],
-  ['num_5fvars_20',['num_vars',['../structTimeInterpolatedData.html#a69fdc01eabf8ded65ff6cac13e59c0c0',1,'TimeInterpolatedData']]],
-  ['numdatalogs_21',['NumDataLogs',['../classREMORA.html#abe6c7702fc1edcb5bb7d9a1a56d007a9',1,'REMORA']]],
-  ['numtypes_22',['numtypes',['../namespaceBCVars.html#a11669734493fff525248ddfa64866370',1,'BCVars::NumTypes()'],['../namespaceBdyVars.html#a32a55be366629e968c68d69bdecf0511',1,'BdyVars::NumTypes()']]]
+  ['num_5fvariables_18',['num_variables',['../classncutils_1_1NCFile.html#ace4a49831a5dc61e09b8c1e9f0a75f85',1,'ncutils::NCFile']]],
+  ['num_5fvars_19',['num_vars',['../structTimeInterpolatedData.html#a69fdc01eabf8ded65ff6cac13e59c0c0',1,'TimeInterpolatedData']]],
+  ['numdatalogs_20',['NumDataLogs',['../classREMORA.html#abe6c7702fc1edcb5bb7d9a1a56d007a9',1,'REMORA']]],
+  ['numtypes_21',['numtypes',['../namespaceBCVars.html#a11669734493fff525248ddfa64866370',1,'BCVars::NumTypes()'],['../namespaceBdyVars.html#a32a55be366629e968c68d69bdecf0511',1,'BdyVars::NumTypes()']]]
 ];

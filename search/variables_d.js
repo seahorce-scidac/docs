@@ -20,7 +20,7 @@ var searchData=
   ['nc_5finit_5ffile_5fhires_17',['nc_init_file_hires',['../classREMORA.html#a0a06a3bf594163fcfa5489523e0882d9',1,'REMORA']]],
   ['nc_5friv_5ffile_18',['nc_riv_file',['../classREMORA.html#a01fc217cc104c92d184106400c4054b6',1,'REMORA']]],
   ['nc_5fvar_5fnames_19',['nc_var_names',['../classNCTimeSeriesBoundary.html#a1eaf46471a1304fed218448222bc3580',1,'NCTimeSeriesBoundary']]],
-  ['ncid_20',['ncid',['../structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544',1,'ncutils::NCDim::ncid'],['../classncutils_1_1NCFile.html#a08428af09deb00321229ef4c20587476',1,'ncutils::NCFile::ncid'],['../structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218',1,'ncutils::NCVar::ncid']]],
+  ['ncid_20',['ncid',['../structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544',1,'ncutils::NCDim::ncid'],['../structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218',1,'ncutils::NCVar::ncid'],['../classncutils_1_1NCFile.html#a08428af09deb00321229ef4c20587476',1,'ncutils::NCFile::ncid']]],
   ['ncons_21',['ncons',['../classREMORA.html#a0614aa1826c2b48b2ec5942acf522285',1,'REMORA']]],
   ['ncs_22',['ncs',['../namespacemod__param.html#a77cc3193d345ee0d3cf5ee3ac3b67f12',1,'mod_param']]],
   ['ndbio2d_23',['ndbio2d',['../namespacemod__param.html#a0f60989d4a26a97f8d086786a9f4206a',1,'mod_param']]],
@@ -32,7 +32,7 @@ var searchData=
   ['nfast_29',['nfast',['../classREMORA.html#a05d2c2f58537f7fdae1bb5088f50e149',1,'REMORA']]],
   ['ngrids_30',['ngrids',['../namespacemod__param.html#a511b80db0a85a840064ca2ea90002b3e',1,'mod_param']]],
   ['nh4_31',['nh4',['../structREMORABiology_1_1Fennel_1_1Components.html#ae69db76ed7ed1c07f9331cfc33fca5c7',1,'REMORABiology::Fennel::Components::nh4'],['../REMORA__InitAnalyticBiology__BioToy_8H.html#aada42bafd0deea631007772b0727702f',1,'nh4:&#160;REMORA_InitAnalyticBiology_BioToy.H']]],
-  ['nitrir_32',['NitriR',['../structREMORABiology_1_1FennelParameters.html#a8786b23a3921b015222e80b6d687f194',1,'REMORABiology::FennelParameters']]],
+  ['nitrir_32',['nitrir',['../structREMORABiology_1_1FennelParameters.html#a8786b23a3921b015222e80b6d687f194',1,'REMORABiology::FennelParameters::NitriR'],['../structREMORABiology_1_1ECBParameters.html#a33e6fa04d83b31260f11f97c2443b21c',1,'REMORABiology::ECBParameters::NitriR']]],
   ['nlat_33',['nlat',['../classLatLonRegrid.html#a13be98a0fd17beb643cf217131c58a68',1,'LatLonRegrid']]],
   ['nlon_34',['nlon',['../classLatLonRegrid.html#a7594125bfac4c40f207c2afd47a73074',1,'LatLonRegrid']]],
   ['nnew_35',['nnew',['../namespacemod__stepping.html#a94e0a041c2de633e09b5db2ae1d09e90',1,'mod_stepping']]],
@@ -53,7 +53,6 @@ var searchData=
   ['num_5fboxes_5fat_5flevel_50',['num_boxes_at_level',['../classREMORA.html#a6d28606118c0069a57eb6a3c13685c56',1,'REMORA']]],
   ['num_5ffiles_5fat_5flevel_51',['num_files_at_level',['../classREMORA.html#a66ad489788fb8d0913833d3d6c89b9dd',1,'REMORA']]],
   ['numbasetracers_52',['NumBaseTracers',['../namespaceREMORABiology_1_1Fennel.html#aea32dd15549530bf26d133a1d36bfbcf',1,'REMORABiology::Fennel']]],
-  ['numcarbontracers_53',['NumCarbonTracers',['../namespaceREMORABiology_1_1Fennel.html#a3de4b633314d6f009171bcb5dacec13f',1,'REMORABiology::Fennel']]],
-  ['nz_54',['nz',['../classNCTimeSeriesRiver.html#ad7bb579c630c113de798f847417bf6cd',1,'NCTimeSeriesRiver']]],
-  ['nzbox_55',['nzbox',['../classNCTimeSeriesRiver.html#a351be9339152e48e75c8d93ad5942d3a',1,'NCTimeSeriesRiver']]]
+  ['nz_53',['nz',['../classNCTimeSeriesRiver.html#ad7bb579c630c113de798f847417bf6cd',1,'NCTimeSeriesRiver']]],
+  ['nzbox_54',['nzbox',['../classNCTimeSeriesRiver.html#a351be9339152e48e75c8d93ad5942d3a',1,'NCTimeSeriesRiver']]]
 ];

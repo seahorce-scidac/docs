@@ -1,7 +1,7 @@
 var searchData=
 [
   ['m_5fadvect_5fw_5fflow_0',['m_advect_w_flow',['../classREMORAPC.html#abca3d47a2a1dd2499f691ea22258dfb1',1,'REMORAPC']]],
-  ['m_5fbc_5fextdir_5fvals_1',['m_bc_extdir_vals',['../classREMORAPhysBCFunct.html#a69c1ed4da313cca5d4c6e81555301cec',1,'REMORAPhysBCFunct::m_bc_extdir_vals'],['../classREMORA.html#aebf9fbeebfb3887c0376fe86326a449b',1,'REMORA::m_bc_extdir_vals']]],
+  ['m_5fbc_5fextdir_5fvals_1',['m_bc_extdir_vals',['../classREMORA.html#aebf9fbeebfb3887c0376fe86326a449b',1,'REMORA::m_bc_extdir_vals'],['../classREMORAPhysBCFunct.html#a69c1ed4da313cca5d4c6e81555301cec',1,'REMORAPhysBCFunct::m_bc_extdir_vals']]],
   ['m_5fbc_5fextdir_5fvals_5fd_2',['m_bc_extdir_vals_d',['../classREMORAPhysBCFunct.html#adae6f66de886f11b527bb48a2f5577fa',1,'REMORAPhysBCFunct']]],
   ['m_5fbiology_3',['m_biology',['../classREMORA.html#a58cac55ce729180229dca72c004f43f5',1,'REMORA']]],
   ['m_5fcba_4',['m_cba',['../classREMORAFillPatcher.html#a8c0bb3742efc7d36f7094d9b81f1ab4e',1,'REMORAFillPatcher']]],
@@ -15,7 +15,7 @@ var searchData=
   ['m_5fdebug_12',['m_debug',['../classREMORABiology_1_1FennelBiology.html#ae5f6edaf19d7bd9dac4c996a18d0277c',1,'REMORABiology::FennelBiology']]],
   ['m_5fdebug_5fi_13',['m_debug_i',['../classREMORABiology_1_1FennelBiology.html#ab1ed67cba88ce9393cdb25cc5c8b59c4',1,'REMORABiology::FennelBiology']]],
   ['m_5fdebug_5fj_14',['m_debug_j',['../classREMORABiology_1_1FennelBiology.html#ac37daf4a7fc05be73a9b69c2a75780b3',1,'REMORABiology::FennelBiology']]],
-  ['m_5fdeclaration_15',['m_declaration',['../REMORA__Biology_8cpp.html#a0bec4186572f00a622df333b73cb61f9',1,'m_declaration:&#160;REMORA_Biology.cpp'],['../classREMORABiology_1_1FennelBiology.html#ae0a42b2f1a1c7723191eb30baa5a8f89',1,'REMORABiology::FennelBiology::m_declaration']]],
+  ['m_5fdeclaration_15',['m_declaration',['../REMORA__Biology_8cpp.html#a0bec4186572f00a622df333b73cb61f9',1,'m_declaration:&#160;REMORA_Biology.cpp'],['../classREMORABiology_1_1ECBBiology.html#a278e159a232087cb43918dd996c0f8ac',1,'REMORABiology::ECBBiology::m_declaration'],['../classREMORABiology_1_1FennelBiology.html#ae0a42b2f1a1c7723191eb30baa5a8f89',1,'REMORABiology::FennelBiology::m_declaration']]],
   ['m_5fdomain_5fbcs_5ftype_16',['m_domain_bcs_type',['../classREMORAPhysBCFunct.html#a74c61939fd45d56cc0bfcc6756806b65',1,'REMORAPhysBCFunct']]],
   ['m_5fdomain_5fbcs_5ftype_5fd_17',['m_domain_bcs_type_d',['../classREMORAPhysBCFunct.html#aba45ee7bbf2e50eae7392f03670d6214',1,'REMORAPhysBCFunct']]],
   ['m_5fdt_5fcrse_18',['m_dt_crse',['../classREMORAFillPatcher.html#a96ec275c4647a1dc8b6b11d8859ab904',1,'REMORAFillPatcher']]],
@@ -38,7 +38,7 @@ var searchData=
   ['m_5fnghost_35',['m_nghost',['../classREMORAFillPatcher.html#a7c90c7fdd84b99c435f542100e134ef8',1,'REMORAFillPatcher']]],
   ['m_5fnghost_5fsubset_36',['m_nghost_subset',['../classREMORAFillPatcher.html#a695fb715d1491dbfbf03d8d82bdc357e',1,'REMORAFillPatcher']]],
   ['m_5fowns_5fdata_37',['m_owns_data',['../structTimeInterpolatedData.html#a6eeb9167e2d8051c16fdbb1e7fee54ed',1,'TimeInterpolatedData']]],
-  ['m_5fparameters_38',['m_parameters',['../classREMORABiology_1_1FennelBiology.html#afe315c26a99473bccdbfdb305119627f',1,'REMORABiology::FennelBiology']]],
+  ['m_5fparameters_38',['m_parameters',['../classREMORABiology_1_1ECBBiology.html#ab04eaa0f4c718a96b7eee90f9bf11dae',1,'REMORABiology::ECBBiology::m_parameters'],['../classREMORABiology_1_1FennelBiology.html#afe315c26a99473bccdbfdb305119627f',1,'REMORABiology::FennelBiology::m_parameters']]],
   ['m_5fparticle_5fbox_39',['m_particle_box',['../classREMORAPC.html#a991de5b61a16ef8eacdf1c190b64359b',1,'REMORAPC']]],
   ['m_5fparticle_5fspecies_40',['m_particle_species',['../classParticleData.html#a6e7c4c2296f56c6aa3ccd3b76f574991',1,'ParticleData']]],
   ['m_5fppc_5finit_41',['m_ppc_init',['../classREMORAPC.html#a805404dfc3bd4d7b20a703221f146e4e',1,'REMORAPC']]],
