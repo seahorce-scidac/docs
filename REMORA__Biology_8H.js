@@ -15,5 +15,6 @@ var REMORA__Biology_8H =
     [ "initialize_constant_biology", "REMORA__Biology_8H.html#abdd6774ffbc2176ac2adb5bbc5220c6c", null ],
     [ "make_biology", "REMORA__Biology_8H.html#aec6c3f87799231c224b092c3fa6c3111", null ],
     [ "parse_biology_ic_type", "REMORA__Biology_8H.html#aa33d1031866530a1bbc1c6d327d075bd", null ],
-    [ "read_constant_biology_ic", "REMORA__Biology_8H.html#af1daffb98542355037668a1827dd099d", null ]
+    [ "read_constant_biology_ic", "REMORA__Biology_8H.html#af1daffb98542355037668a1827dd099d", null ],
+    [ "require_parameter", "REMORA__Biology_8H.html#a6109ac7006ec4735c67f712e7099bfe6", null ]
 ];

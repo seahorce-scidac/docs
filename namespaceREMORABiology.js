@@ -46,7 +46,10 @@ var namespaceREMORABiology =
     [ "parse_biology_ic_type", "namespaceREMORABiology.html#aa33d1031866530a1bbc1c6d327d075bd", null ],
     [ "pco2_water", "namespaceREMORABiology.html#a575c811fc03be074271fd0bf280dc24f", null ],
     [ "read_constant_biology_ic", "namespaceREMORABiology.html#af1daffb98542355037668a1827dd099d", null ],
+    [ "require_parameter", "namespaceREMORABiology.html#a6109ac7006ec4735c67f712e7099bfe6", null ],
+    [ "require_parameter", "namespaceREMORABiology.html#a0ac67da5e981761a083e5d66a25f7636", null ],
     [ "schmidt_number", "namespaceREMORABiology.html#a99ab3dd9f97eea78630ae473cb4f69cb", null ],
+    [ "sink_column", "namespaceREMORABiology.html#a050d98a525459d20a80e0466547c15ed", null ],
     [ "transfer_rate", "namespaceREMORABiology.html#abf9b30771004455eefc88440f895276d", null ],
     [ "transfer_velocity", "namespaceREMORABiology.html#a66d02652fedc9fea0b4949421b95cc30", null ],
     [ "u10_squared", "namespaceREMORABiology.html#aac40c30f312eafaceb3ea993161517dd", null ]
