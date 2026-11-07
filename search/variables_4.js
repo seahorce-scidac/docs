@@ -8,7 +8,7 @@ var searchData=
   ['eightthirds_5',['eightthirds',['../REMORA__Constants_8H.html#a3c51983b7b27fc30380c2166fd16610f',1,'REMORA_Constants.H']]],
   ['eldon_6',['ElDON',['../structREMORABiology_1_1ECBParameters.html#aeb6ce3184bf88655277fbefa3b88406b',1,'REMORABiology::ECBParameters']]],
   ['else_7',['else',['../REMORA__InitAnalyticBathymetry__DogboneAnalytic_8H.html#a0544c3fe466e421738dae463968b70ba',1,'else:&#160;REMORA_InitAnalyticBathymetry_DogboneAnalytic.H'],['../REMORA__InitAnalyticBathymetry__Upwelling__ML_8H.html#a0544c3fe466e421738dae463968b70ba',1,'else:&#160;REMORA_InitAnalyticBathymetry_Upwelling_ML.H'],['../REMORA__InitAnalyticSurfaceVar__BoundaryLayer_8H.html#a0544c3fe466e421738dae463968b70ba',1,'else:&#160;REMORA_InitAnalyticSurfaceVar_BoundaryLayer.H']]],
-  ['eminusp_8',['eminusp',['../structSolverChoice.html#a7df31e004bdd9abb419f8095514db644',1,'SolverChoice::EminusP'],['../structSolverChoice.html#ad0c284634a2991aa77dec9b8dbb30373',1,'SolverChoice::eminusp']]],
+  ['eminusp_8',['eminusp',['../structSolverChoice.html#ad0c284634a2991aa77dec9b8dbb30373',1,'SolverChoice::eminusp'],['../structSolverChoice.html#a7df31e004bdd9abb419f8095514db644',1,'SolverChoice::EminusP']]],
   ['eminusp_5fcorrect_5fssh_9',['eminusp_correct_ssh',['../structSolverChoice.html#a65f90912d34e882ba29cb64a20f56ceb',1,'SolverChoice']]],
   ['eminusp_5fdata_5ffrom_5ffile_10',['EminusP_data_from_file',['../classREMORA.html#a7723e6a25f311c63a5c9379e6db7843d',1,'REMORA']]],
   ['emmiss_11',['emmiss',['../REMORA__Constants_8H.html#abc9c124a2d78e72fdc69d32a267c4497',1,'REMORA_Constants.H']]],
