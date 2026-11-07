@@ -67,18 +67,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__Fennel__Fortran__Interface_8H_source.html",
-"REMORA__InitAnalyticProb__BoundaryLayer_8H.html#a925c992baa4d66fdc34059b52bfeb7fd",
-"REMORA__LatLonRegridMath_8H.html#abdd7b46324eb5482d224aa81b46c328c",
-"REMORA__init__from__netcdf_8cpp.html#a75e1d17671d1d9321302fa2b456dce8e",
-"classREMORA.html#a09a545500875aca215d8f2ca6bf57ff4",
-"classREMORA.html#a6f50a7999b5955331392139cfb09ad27",
-"classREMORA.html#adae44083d68fc160078289ba6cd51fdc",
+"REMORA__Fennel__Fortran__Interface_8H.html#a357d37fbf55ece14d89ae561d0a53d03",
+"REMORA__InitAnalyticProb__BoundaryLayer_8H.html#a5fa1183e12f797d3066d16aac374862d",
+"REMORA__LatLonRegridMath_8H.html#a888b1a248c574dd59bcf26a37722c4ad",
+"REMORA__init__from__netcdf_8cpp.html#a6c189eca2928ce27b82e38ae0505fed6",
+"classREMORA.html#a09a4ae6424c19a3b994628fc5ea3aa41",
+"classREMORA.html#a6ecf3d8a4231e02bf6027ff917b0786b",
+"classREMORA.html#ad9ee5aba5b9cb8e020e6cbc8ff3cff74",
 "classncutils_1_1NCFile.html#aa98d902ef67803393e80929bb73cb379",
-"namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aab9d214a2442d0f956923d15f0392cf0",
-"structREMORABiology_1_1ECBParameters.html#a105a168d05299f4dd63a4ffdf7df3c0e",
-"structREMORATimeUnits.html#a5215714a29ef98ffca7d580297bd4007",
-"structncutils_1_1NCVar.html#a233d94aa3ccbef1cc12565340bcc7218"
+"namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aa8f1b3ad9a76977588e149a0f264e93b",
+"structREMORABiology_1_1ECBParameters.html#a0cc1b0801495999ca71dbbf6c8d7e9e6",
+"structREMORAMaskedAvgDown_1_1MaskWeight.html#a1e365c687966c51256b81eacb0e9cc4a",
+"structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

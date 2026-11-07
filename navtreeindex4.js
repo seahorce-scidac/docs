@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"REMORA__init__from__netcdf_8cpp.html#a6c189eca2928ce27b82e38ae0505fed6":[3,0,0,2,3,5],
 "REMORA__init__from__netcdf_8cpp.html#a75e1d17671d1d9321302fa2b456dce8e":[3,0,0,2,3,1],
 "REMORA__init__from__netcdf_8cpp.html#a7df46640ff1f1386c66fe17f23b7efa1":[3,0,0,2,3,7],
 "REMORA__init__from__netcdf_8cpp.html#a9db26fcebf8aa7a073f11a57200d318e":[3,0,0,2,3,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classREMORA.html#a0614aa1826c2b48b2ec5942acf522285":[2,0,19,393],
 "classREMORA.html#a067fc971166efe9ade5d6f195a164c9f":[2,0,19,519],
 "classREMORA.html#a069a2cdaa4d42436e6968cc0d23e7714":[2,0,19,449],
-"classREMORA.html#a07cdefc2810863920747b6eac934a045":[2,0,19,270],
-"classREMORA.html#a09a4ae6424c19a3b994628fc5ea3aa41":[2,0,19,584]
+"classREMORA.html#a07cdefc2810863920747b6eac934a045":[2,0,19,270]
 };

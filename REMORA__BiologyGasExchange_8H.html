@@ -140,6 +140,9 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structREMORABiology_1_1SchmidtCoefficients.html">REMORABiology::SchmidtCoefficients</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structREMORABiology_1_1SurfaceGasExchange.html">REMORABiology::SurfaceGasExchange</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The air-sea exchange factors for one surface cell.  <a href="structREMORABiology_1_1SurfaceGasExchange.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -168,6 +171,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a04ddfdcf402a7dc21a983f252858efc6" id="r_a04ddfdcf402a7dc21a983f252858efc6"><td class="memItemLeft" align="right" valign="top">AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#a04ddfdcf402a7dc21a983f252858efc6">REMORABiology::co2_solubility</a> (amrex::Real T, amrex::Real S) noexcept</td></tr>
 <tr class="memdesc:a04ddfdcf402a7dc21a983f252858efc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">CO2 solubility [mol/(kg atm)] from temperature [degC] and salinity, by the Weiss (1974) formula.  <br /></td></tr>
 <tr class="separator:a04ddfdcf402a7dc21a983f252858efc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d862a1f79c24a7bc6fc103c86529c37" id="r_a1d862a1f79c24a7bc6fc103c86529c37"><td class="memItemLeft" align="right" valign="top">AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE <a class="el" href="structREMORABiology_1_1SurfaceGasExchange.html">SurfaceGasExchange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37">REMORABiology::surface_gas_exchange</a> (bool oxygen, bool carbon, <a class="el" href="structREMORABiology_1_1SchmidtCoefficients.html">SchmidtCoefficients</a> const &amp;o2_schmidt, <a class="el" href="structREMORABiology_1_1SchmidtCoefficients.html">SchmidtCoefficients</a> const &amp;co2_schmidt, amrex::Real dtdays, bool bulk_fluxes, amrex::Array4&lt; amrex::Real const &gt; const &amp;uwind, amrex::Array4&lt; amrex::Real const &gt; const &amp;vwind, amrex::Array4&lt; amrex::Real const &gt; const &amp;sustr, amrex::Array4&lt; amrex::Real const &gt; const &amp;svstr, int i, int j, amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ParticleAdvectionFlat_8H.html#ab8e36533c29290d98a91375f7bdbf726">rho0</a>, amrex::Array4&lt; amrex::Real &gt; const &amp;temp, amrex::Array4&lt; amrex::Real &gt; const &amp;salt, int ksurf) noexcept</td></tr>
+<tr class="memdesc:a1d862a1f79c24a7bc6fc103c86529c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Air-sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer <code>ksurf</code> and the wind or stress.  <br /></td></tr>
+<tr class="separator:a1d862a1f79c24a7bc6fc103c86529c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

@@ -33,7 +33,8 @@ var annotated_dup =
       [ "ECBParameters", "structREMORABiology_1_1ECBParameters.html", "structREMORABiology_1_1ECBParameters" ],
       [ "FennelBiology", "classREMORABiology_1_1FennelBiology.html", "classREMORABiology_1_1FennelBiology" ],
       [ "FennelParameters", "structREMORABiology_1_1FennelParameters.html", "structREMORABiology_1_1FennelParameters" ],
-      [ "SchmidtCoefficients", "structREMORABiology_1_1SchmidtCoefficients.html", "structREMORABiology_1_1SchmidtCoefficients" ]
+      [ "SchmidtCoefficients", "structREMORABiology_1_1SchmidtCoefficients.html", "structREMORABiology_1_1SchmidtCoefficients" ],
+      [ "SurfaceGasExchange", "structREMORABiology_1_1SurfaceGasExchange.html", "structREMORABiology_1_1SurfaceGasExchange" ]
     ] ],
     [ "REMORAMaskedAvgDown", "namespaceREMORAMaskedAvgDown.html", [
       [ "FieldWeight", "structREMORAMaskedAvgDown_1_1FieldWeight.html", "structREMORAMaskedAvgDown_1_1FieldWeight" ],

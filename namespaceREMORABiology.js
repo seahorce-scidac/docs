@@ -17,6 +17,7 @@ var namespaceREMORABiology =
     [ "FennelBiology", "classREMORABiology_1_1FennelBiology.html", "classREMORABiology_1_1FennelBiology" ],
     [ "FennelParameters", "structREMORABiology_1_1FennelParameters.html", "structREMORABiology_1_1FennelParameters" ],
     [ "SchmidtCoefficients", "structREMORABiology_1_1SchmidtCoefficients.html", "structREMORABiology_1_1SchmidtCoefficients" ],
+    [ "SurfaceGasExchange", "structREMORABiology_1_1SurfaceGasExchange.html", "structREMORABiology_1_1SurfaceGasExchange" ],
     [ "BiologyConstantIC", "namespaceREMORABiology.html#a9b061192ca3a05c03c55cea7855e4cd2", null ],
     [ "BiologyICType", "namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73", [
       [ "follow_ic_type", "namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73a31da927b57c9fa15695f5b78a263112f", null ],
@@ -50,6 +51,7 @@ var namespaceREMORABiology =
     [ "require_parameter", "namespaceREMORABiology.html#a0ac67da5e981761a083e5d66a25f7636", null ],
     [ "schmidt_number", "namespaceREMORABiology.html#a99ab3dd9f97eea78630ae473cb4f69cb", null ],
     [ "sink_column", "namespaceREMORABiology.html#a050d98a525459d20a80e0466547c15ed", null ],
+    [ "surface_gas_exchange", "namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37", null ],
     [ "transfer_rate", "namespaceREMORABiology.html#abf9b30771004455eefc88440f895276d", null ],
     [ "transfer_velocity", "namespaceREMORABiology.html#a66d02652fedc9fea0b4949421b95cc30", null ],
     [ "u10_squared", "namespaceREMORABiology.html#aac40c30f312eafaceb3ea993161517dd", null ]

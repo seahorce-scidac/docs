@@ -1,5 +1,17 @@
 var NAVTREEINDEX11 =
 {
+"structREMORAMaskedAvgDown_1_1MaskWeight.html#a1e365c687966c51256b81eacb0e9cc4a":[1,0,32,1,0],
+"structREMORAMaskedAvgDown_1_1MaskWeight.html#a3fd3fbbaeacab1c3e48289853e54785a":[2,0,7,1,1],
+"structREMORAMaskedAvgDown_1_1MaskWeight.html#a3fd3fbbaeacab1c3e48289853e54785a":[1,0,32,1,1],
+"structREMORAParticlesAssignor.html":[2,0,22],
+"structREMORAParticlesAssignor.html#a757a130047ac4d56547b36e2d4bb0f67":[2,0,22,0],
+"structREMORAParticlesIntIdxAoS.html":[2,0,23],
+"structREMORAParticlesIntIdxSoA.html":[2,0,24],
+"structREMORAParticlesRealIdxAoS.html":[2,0,25],
+"structREMORAParticlesRealIdxSoA.html":[2,0,26],
+"structREMORATimeUnits.html":[2,0,29],
+"structREMORATimeUnits.html#a1ceaea4084693d837c59c4f47061536b":[2,0,29,4],
+"structREMORATimeUnits.html#a397ffa6bb2ff94e380fcb024d77b4f01":[2,0,29,3],
 "structREMORATimeUnits.html#a5215714a29ef98ffca7d580297bd4007":[2,0,29,0],
 "structREMORATimeUnits.html#a6647b2895dcbc0f50482fe5a94445e31":[2,0,29,6],
 "structREMORATimeUnits.html#a879b1450057352c23dbef22be4e62df1":[2,0,29,5],
@@ -237,17 +249,5 @@ var NAVTREEINDEX11 =
 "structncutils_1_1NCDim.html#a1c5560c95be35dbcedaf1390972175f8":[1,0,26,0,2],
 "structncutils_1_1NCDim.html#a1c5560c95be35dbcedaf1390972175f8":[2,0,5,0,2],
 "structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544":[1,0,26,0,3],
-"structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544":[2,0,5,0,3],
-"structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338":[2,0,5,0,0],
-"structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338":[1,0,26,0,0],
-"structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6":[2,0,5,0,1],
-"structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6":[1,0,26,0,1],
-"structncutils_1_1NCVar.html":[2,0,5,3],
-"structncutils_1_1NCVar.html":[1,0,26,3],
-"structncutils_1_1NCVar.html#a0a4ddce55f60e3accbaf02441b6484cf":[2,0,5,3,21],
-"structncutils_1_1NCVar.html#a0a4ddce55f60e3accbaf02441b6484cf":[1,0,26,3,21],
-"structncutils_1_1NCVar.html#a1f4bc3d6ce3b67154f8c078ad4c9bc2c":[1,0,26,3,28],
-"structncutils_1_1NCVar.html#a1f4bc3d6ce3b67154f8c078ad4c9bc2c":[2,0,5,3,28],
-"structncutils_1_1NCVar.html#a20a21f72754e272750c8fa38c9ad44b6":[1,0,26,3,41],
-"structncutils_1_1NCVar.html#a20a21f72754e272750c8fa38c9ad44b6":[2,0,5,3,41]
+"structncutils_1_1NCDim.html#a3272d1768518ba020b9bcd0d3699d544":[2,0,5,0,3]
 };

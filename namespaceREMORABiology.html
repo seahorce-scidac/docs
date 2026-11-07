@@ -132,6 +132,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structREMORABiology_1_1SchmidtCoefficients.html">SchmidtCoefficients</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structREMORABiology_1_1SurfaceGasExchange.html">SurfaceGasExchange</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The air-sea exchange factors for one surface cell.  <a href="structREMORABiology_1_1SurfaceGasExchange.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -203,6 +206,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a04ddfdcf402a7dc21a983f252858efc6" id="r_a04ddfdcf402a7dc21a983f252858efc6"><td class="memItemLeft" align="right" valign="top">AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#a04ddfdcf402a7dc21a983f252858efc6">co2_solubility</a> (amrex::Real T, amrex::Real S) noexcept</td></tr>
 <tr class="memdesc:a04ddfdcf402a7dc21a983f252858efc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">CO2 solubility [mol/(kg atm)] from temperature [degC] and salinity, by the Weiss (1974) formula.  <br /></td></tr>
 <tr class="separator:a04ddfdcf402a7dc21a983f252858efc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d862a1f79c24a7bc6fc103c86529c37" id="r_a1d862a1f79c24a7bc6fc103c86529c37"><td class="memItemLeft" align="right" valign="top">AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE <a class="el" href="structREMORABiology_1_1SurfaceGasExchange.html">SurfaceGasExchange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37">surface_gas_exchange</a> (bool oxygen, bool carbon, <a class="el" href="structREMORABiology_1_1SchmidtCoefficients.html">SchmidtCoefficients</a> const &amp;o2_schmidt, <a class="el" href="structREMORABiology_1_1SchmidtCoefficients.html">SchmidtCoefficients</a> const &amp;co2_schmidt, amrex::Real dtdays, bool bulk_fluxes, amrex::Array4&lt; amrex::Real const &gt; const &amp;uwind, amrex::Array4&lt; amrex::Real const &gt; const &amp;vwind, amrex::Array4&lt; amrex::Real const &gt; const &amp;sustr, amrex::Array4&lt; amrex::Real const &gt; const &amp;svstr, int i, int j, amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ParticleAdvectionFlat_8H.html#ab8e36533c29290d98a91375f7bdbf726">rho0</a>, amrex::Array4&lt; amrex::Real &gt; const &amp;temp, amrex::Array4&lt; amrex::Real &gt; const &amp;salt, int ksurf) noexcept</td></tr>
+<tr class="memdesc:a1d862a1f79c24a7bc6fc103c86529c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Air-sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer <code>ksurf</code> and the wind or stress.  <br /></td></tr>
+<tr class="separator:a1d862a1f79c24a7bc6fc103c86529c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a050d98a525459d20a80e0466547c15ed" id="r_a050d98a525459d20a80e0466547c15ed"><td class="memItemLeft" align="right" valign="top">AMREX_GPU_DEVICE AMREX_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceREMORABiology.html#a050d98a525459d20a80e0466547c15ed">sink_column</a> (int i, int j, int nlev, amrex::Real sink_distance, amrex::Array4&lt; amrex::Real &gt; const &amp;bio, amrex::Array4&lt; amrex::Real &gt; const &amp;qc, amrex::Array4&lt; amrex::Real &gt; const &amp;bR, amrex::Array4&lt; amrex::Real &gt; const &amp;bL, amrex::Array4&lt; amrex::Real &gt; const &amp;WR, amrex::Array4&lt; amrex::Real &gt; const &amp;WL, amrex::Array4&lt; amrex::Real &gt; const &amp;FC, amrex::Array4&lt; amrex::Real const &gt; const &amp;Hz, amrex::Array4&lt; amrex::Real const &gt; const &amp;z_w, amrex::Array4&lt; amrex::Real &gt; const &amp;inv_hz, amrex::Array4&lt; amrex::Real &gt; const &amp;inv_hz2, amrex::Array4&lt; amrex::Real &gt; const &amp;inv_hz3) noexcept</td></tr>
 <tr class="separator:a050d98a525459d20a80e0466547c15ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -426,17 +432,19 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00130">130</a> of file <a class="el" href="REMORA__BiologyGasExchange_8H_source.html">REMORA_BiologyGasExchange.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ECBBiology_8cpp_source.html#l00151">REMORABiology::ECBBiology::advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00305">REMORABiology::FennelBiology::advance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00165">surface_gas_exchange()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceREMORABiology_a04ddfdcf402a7dc21a983f252858efc6_icgraph.png" border="0" usemap="#anamespaceREMORABiology_a04ddfdcf402a7dc21a983f252858efc6_icgraph" alt=""/></div>
 <map name="anamespaceREMORABiology_a04ddfdcf402a7dc21a983f252858efc6_icgraph" id="anamespaceREMORABiology_a04ddfdcf402a7dc21a983f252858efc6_icgraph">
-<area shape="rect" title="CO2 solubility [mol/(kg atm)] from temperature [degC] and salinity, by the Weiss (1974) formula." alt="" coords="280,37,439,77"/>
+<area shape="rect" title="CO2 solubility [mol/(kg atm)] from temperature [degC] and salinity, by the Weiss (1974) formula." alt="" coords="511,37,669,77"/>
+<area shape="rect" href="namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37" title="Air&#45;sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer..." alt="" coords="280,37,463,77"/>
+<area shape="poly" title=" " alt="" coords="497,60,463,60,463,55,497,55"/>
 <area shape="rect" href="classREMORABiology_1_1ECBBiology.html#af1c7016efdb1aa36e370206847e51829" title=" " alt="" coords="13,5,224,45"/>
-<area shape="poly" title=" " alt="" coords="266,48,224,42,225,37,266,42"/>
+<area shape="poly" title=" " alt="" coords="266,47,224,41,224,36,267,41"/>
 <area shape="rect" href="classREMORABiology_1_1FennelBiology.html#a3368d0e2daf61120fd4c2eba8fbce564" title=" " alt="" coords="5,69,232,109"/>
-<area shape="poly" title=" " alt="" coords="266,72,232,77,232,72,266,67"/>
+<area shape="poly" title=" " alt="" coords="267,73,233,78,232,72,266,68"/>
 </map>
 </div>
 
@@ -596,17 +604,20 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00104">104</a> of file <a class="el" href="REMORA__BiologyGasExchange_8H_source.html">REMORA_BiologyGasExchange.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ECBBiology_8cpp_source.html#l00151">REMORABiology::ECBBiology::advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00305">REMORABiology::FennelBiology::advance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__ECBBiology_8cpp_source.html#l00151">REMORABiology::ECBBiology::advance()</a>, and <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00165">surface_gas_exchange()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceREMORABiology_ab2d47f8d5c2a85ba012e89606149aa70_icgraph.png" border="0" usemap="#anamespaceREMORABiology_ab2d47f8d5c2a85ba012e89606149aa70_icgraph" alt=""/></div>
 <map name="anamespaceREMORABiology_ab2d47f8d5c2a85ba012e89606149aa70_icgraph" id="anamespaceREMORABiology_ab2d47f8d5c2a85ba012e89606149aa70_icgraph">
-<area shape="rect" title="O2 saturation [mmol/m3] from temperature [degC] and salinity, by the Garcia and Gordon (1992) formula..." alt="" coords="280,45,504,70"/>
+<area shape="rect" title="O2 saturation [mmol/m3] from temperature [degC] and salinity, by the Garcia and Gordon (1992) formula..." alt="" coords="511,42,735,67"/>
 <area shape="rect" href="classREMORABiology_1_1ECBBiology.html#af1c7016efdb1aa36e370206847e51829" title=" " alt="" coords="13,5,224,45"/>
-<area shape="poly" title=" " alt="" coords="270,46,224,40,224,35,270,40"/>
+<area shape="poly" title=" " alt="" coords="496,50,224,34,224,29,496,45"/>
+<area shape="rect" href="namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37" title="Air&#45;sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer..." alt="" coords="280,63,463,103"/>
+<area shape="poly" title=" " alt="" coords="497,71,463,75,463,70,497,66"/>
+<area shape="poly" title=" " alt="" coords="269,62,207,48,208,43,270,57"/>
 <area shape="rect" href="classREMORABiology_1_1FennelBiology.html#a3368d0e2daf61120fd4c2eba8fbce564" title=" " alt="" coords="5,69,232,109"/>
-<area shape="poly" title=" " alt="" coords="270,74,232,79,232,73,269,69"/>
+<area shape="poly" title=" " alt="" coords="266,88,232,89,232,84,266,83"/>
 </map>
 </div>
 
@@ -912,13 +923,15 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00056">56</a> of file <a class="el" href="REMORA__BiologyGasExchange_8H_source.html">REMORA_BiologyGasExchange.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ECBBiology_8cpp_source.html#l00151">REMORABiology::ECBBiology::advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00305">REMORABiology::FennelBiology::advance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00165">surface_gas_exchange()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceREMORABiology_a99ab3dd9f97eea78630ae473cb4f69cb_icgraph.png" border="0" usemap="#anamespaceREMORABiology_a99ab3dd9f97eea78630ae473cb4f69cb_icgraph" alt=""/></div>
 <map name="anamespaceREMORABiology_a99ab3dd9f97eea78630ae473cb4f69cb_icgraph" id="anamespaceREMORABiology_a99ab3dd9f97eea78630ae473cb4f69cb_icgraph">
-<area shape="rect" title="Schmidt number at temperature T [degC]." alt="" coords="280,37,467,77"/>
+<area shape="rect" title="Schmidt number at temperature T [degC]." alt="" coords="511,37,697,77"/>
+<area shape="rect" href="namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37" title="Air&#45;sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer..." alt="" coords="280,37,463,77"/>
+<area shape="poly" title=" " alt="" coords="497,60,463,60,463,55,497,55"/>
 <area shape="rect" href="classREMORABiology_1_1ECBBiology.html#af1c7016efdb1aa36e370206847e51829" title=" " alt="" coords="13,5,224,45"/>
 <area shape="poly" title=" " alt="" coords="266,47,224,41,224,36,267,41"/>
 <area shape="rect" href="classREMORABiology_1_1FennelBiology.html#a3368d0e2daf61120fd4c2eba8fbce564" title=" " alt="" coords="5,69,232,109"/>
@@ -1066,6 +1079,165 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a1d862a1f79c24a7bc6fc103c86529c37" name="a1d862a1f79c24a7bc6fc103c86529c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d862a1f79c24a7bc6fc103c86529c37">&#9670;&#160;</a></span>surface_gas_exchange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE <a class="el" href="structREMORABiology_1_1SurfaceGasExchange.html">SurfaceGasExchange</a> REMORABiology::surface_gas_exchange </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>oxygen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>carbon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structREMORABiology_1_1SchmidtCoefficients.html">SchmidtCoefficients</a> const &amp;&#160;</td>
+          <td class="paramname"><em>o2_schmidt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structREMORABiology_1_1SchmidtCoefficients.html">SchmidtCoefficients</a> const &amp;&#160;</td>
+          <td class="paramname"><em>co2_schmidt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramname"><em>dtdays</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bulk_fluxes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real const &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>uwind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real const &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>vwind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real const &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>sustr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real const &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>svstr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramname"><em>rho0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>temp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Array4&lt; amrex::Real &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>salt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ksurf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Air-sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer <code>ksurf</code> and the wind or stress. </p>
+<p>They depend only on those, so a kernel computes them once per column, not once per BioIter iteration. The O2 factors are computed only with <code>oxygen</code> and the CO2 ones only with <code>carbon</code>; the others stay zero. With neither, the salinity, wind and stress views are not read, so they may be empty. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00165">165</a> of file <a class="el" href="REMORA__BiologyGasExchange_8H_source.html">REMORA_BiologyGasExchange.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__ECBBiology_8cpp_source.html#l00151">REMORABiology::ECBBiology::advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00305">REMORABiology::FennelBiology::advance()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceREMORABiology_a1d862a1f79c24a7bc6fc103c86529c37_cgraph.png" border="0" usemap="#anamespaceREMORABiology_a1d862a1f79c24a7bc6fc103c86529c37_cgraph" alt=""/></div>
+<map name="anamespaceREMORABiology_a1d862a1f79c24a7bc6fc103c86529c37_cgraph" id="anamespaceREMORABiology_a1d862a1f79c24a7bc6fc103c86529c37_cgraph">
+<area shape="rect" title="Air&#45;sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer..." alt="" coords="5,149,188,189"/>
+<area shape="rect" href="namespaceREMORABiology.html#a04ddfdcf402a7dc21a983f252858efc6" title="CO2 solubility [mol/(kg atm)] from temperature [degC] and salinity, by the Weiss (1974) formula." alt="" coords="269,5,427,45"/>
+<area shape="poly" title=" " alt="" coords="116,147,167,101,200,76,235,55,254,46,256,51,237,60,203,81,170,105,119,151"/>
+<area shape="rect" href="namespaceREMORABiology.html#ab2d47f8d5c2a85ba012e89606149aa70" title="O2 saturation [mmol/m3] from temperature [degC] and salinity, by the Garcia and Gordon (1992) formula..." alt="" coords="236,70,460,95"/>
+<area shape="poly" title=" " alt="" coords="137,147,183,126,235,105,267,96,269,101,237,111,185,130,139,152"/>
+<area shape="rect" href="namespaceREMORABiology.html#a99ab3dd9f97eea78630ae473cb4f69cb" title="Schmidt number at temperature T [degC]." alt="" coords="255,120,441,160"/>
+<area shape="poly" title=" " alt="" coords="188,156,241,150,241,155,188,161"/>
+<area shape="rect" href="namespaceREMORABiology.html#abf9b30771004455eefc88440f895276d" title="Transfer&#45;velocity rate factor for one step of dtdays days." alt="" coords="239,185,457,210"/>
+<area shape="poly" title=" " alt="" coords="188,177,225,181,225,186,188,182"/>
+<area shape="rect" href="namespaceREMORABiology.html#a66d02652fedc9fea0b4949421b95cc30" title="Gas transfer velocity times dt, for rate factor cff2 from transfer_rate, squared wind u10squ and Schm..." alt="" coords="255,235,441,275"/>
+<area shape="poly" title=" " alt="" coords="150,187,237,219,265,228,264,233,235,224,148,192"/>
+<area shape="rect" href="namespaceREMORABiology.html#aac40c30f312eafaceb3ea993161517dd" title="Squared 10 m wind speed [m2/s2] at rho point (i,j)." alt="" coords="269,299,427,339"/>
+<area shape="poly" title=" " alt="" coords="118,188,169,236,202,262,237,284,256,293,254,298,235,289,199,266,166,240,115,192"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceREMORABiology_a1d862a1f79c24a7bc6fc103c86529c37_icgraph.png" border="0" usemap="#anamespaceREMORABiology_a1d862a1f79c24a7bc6fc103c86529c37_icgraph" alt=""/></div>
+<map name="anamespaceREMORABiology_a1d862a1f79c24a7bc6fc103c86529c37_icgraph" id="anamespaceREMORABiology_a1d862a1f79c24a7bc6fc103c86529c37_icgraph">
+<area shape="rect" title="Air&#45;sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer..." alt="" coords="280,37,463,77"/>
+<area shape="rect" href="classREMORABiology_1_1ECBBiology.html#af1c7016efdb1aa36e370206847e51829" title=" " alt="" coords="13,5,224,45"/>
+<area shape="poly" title=" " alt="" coords="266,47,224,41,224,36,267,41"/>
+<area shape="rect" href="classREMORABiology_1_1FennelBiology.html#a3368d0e2daf61120fd4c2eba8fbce564" title=" " alt="" coords="5,69,232,109"/>
+<area shape="poly" title=" " alt="" coords="267,73,233,78,232,72,266,68"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="abf9b30771004455eefc88440f895276d" name="abf9b30771004455eefc88440f895276d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf9b30771004455eefc88440f895276d">&#9670;&#160;</a></span>transfer_rate()</h2>
 
@@ -1104,17 +1276,19 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00063">63</a> of file <a class="el" href="REMORA__BiologyGasExchange_8H_source.html">REMORA_BiologyGasExchange.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ECBBiology_8cpp_source.html#l00151">REMORABiology::ECBBiology::advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00305">REMORABiology::FennelBiology::advance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00165">surface_gas_exchange()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceREMORABiology_abf9b30771004455eefc88440f895276d_icgraph.png" border="0" usemap="#anamespaceREMORABiology_abf9b30771004455eefc88440f895276d_icgraph" alt=""/></div>
 <map name="anamespaceREMORABiology_abf9b30771004455eefc88440f895276d_icgraph" id="anamespaceREMORABiology_abf9b30771004455eefc88440f895276d_icgraph">
-<area shape="rect" title="Transfer&#45;velocity rate factor for one step of dtdays days." alt="" coords="280,45,499,70"/>
+<area shape="rect" title="Transfer&#45;velocity rate factor for one step of dtdays days." alt="" coords="511,45,729,70"/>
+<area shape="rect" href="namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37" title="Air&#45;sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer..." alt="" coords="280,37,463,77"/>
+<area shape="poly" title=" " alt="" coords="497,60,463,60,463,55,497,55"/>
 <area shape="rect" href="classREMORABiology_1_1ECBBiology.html#af1c7016efdb1aa36e370206847e51829" title=" " alt="" coords="13,5,224,45"/>
-<area shape="poly" title=" " alt="" coords="268,46,224,40,225,35,269,40"/>
+<area shape="poly" title=" " alt="" coords="266,47,224,41,224,36,267,41"/>
 <area shape="rect" href="classREMORABiology_1_1FennelBiology.html#a3368d0e2daf61120fd4c2eba8fbce564" title=" " alt="" coords="5,69,232,109"/>
-<area shape="poly" title=" " alt="" coords="269,74,233,79,232,73,268,69"/>
+<area shape="poly" title=" " alt="" coords="267,73,233,78,232,72,266,68"/>
 </map>
 </div>
 
@@ -1164,13 +1338,15 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00096">96</a> of file <a class="el" href="REMORA__BiologyGasExchange_8H_source.html">REMORA_BiologyGasExchange.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ECBBiology_8cpp_source.html#l00151">REMORABiology::ECBBiology::advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00305">REMORABiology::FennelBiology::advance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00165">surface_gas_exchange()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceREMORABiology_a66d02652fedc9fea0b4949421b95cc30_icgraph.png" border="0" usemap="#anamespaceREMORABiology_a66d02652fedc9fea0b4949421b95cc30_icgraph" alt=""/></div>
 <map name="anamespaceREMORABiology_a66d02652fedc9fea0b4949421b95cc30_icgraph" id="anamespaceREMORABiology_a66d02652fedc9fea0b4949421b95cc30_icgraph">
-<area shape="rect" title="Gas transfer velocity times dt, for rate factor cff2 from transfer_rate, squared wind u10squ and Schm..." alt="" coords="280,37,467,77"/>
+<area shape="rect" title="Gas transfer velocity times dt, for rate factor cff2 from transfer_rate, squared wind u10squ and Schm..." alt="" coords="511,37,697,77"/>
+<area shape="rect" href="namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37" title="Air&#45;sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer..." alt="" coords="280,37,463,77"/>
+<area shape="poly" title=" " alt="" coords="497,60,463,60,463,55,497,55"/>
 <area shape="rect" href="classREMORABiology_1_1ECBBiology.html#af1c7016efdb1aa36e370206847e51829" title=" " alt="" coords="13,5,224,45"/>
 <area shape="poly" title=" " alt="" coords="266,47,224,41,224,36,267,41"/>
 <area shape="rect" href="classREMORABiology_1_1FennelBiology.html#a3368d0e2daf61120fd4c2eba8fbce564" title=" " alt="" coords="5,69,232,109"/>
@@ -1255,17 +1431,19 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00074">74</a> of file <a class="el" href="REMORA__BiologyGasExchange_8H_source.html">REMORA_BiologyGasExchange.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ECBBiology_8cpp_source.html#l00151">REMORABiology::ECBBiology::advance()</a>, and <a class="el" href="REMORA__FennelBiology_8cpp_source.html#l00305">REMORABiology::FennelBiology::advance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__BiologyGasExchange_8H_source.html#l00165">surface_gas_exchange()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceREMORABiology_aac40c30f312eafaceb3ea993161517dd_icgraph.png" border="0" usemap="#anamespaceREMORABiology_aac40c30f312eafaceb3ea993161517dd_icgraph" alt=""/></div>
 <map name="anamespaceREMORABiology_aac40c30f312eafaceb3ea993161517dd_icgraph" id="anamespaceREMORABiology_aac40c30f312eafaceb3ea993161517dd_icgraph">
-<area shape="rect" title="Squared 10 m wind speed [m2/s2] at rho point (i,j)." alt="" coords="280,37,439,77"/>
+<area shape="rect" title="Squared 10 m wind speed [m2/s2] at rho point (i,j)." alt="" coords="511,37,669,77"/>
+<area shape="rect" href="namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37" title="Air&#45;sea exchange factors at rho point (i,j) from the temperature [degC] and salinity of surface layer..." alt="" coords="280,37,463,77"/>
+<area shape="poly" title=" " alt="" coords="497,60,463,60,463,55,497,55"/>
 <area shape="rect" href="classREMORABiology_1_1ECBBiology.html#af1c7016efdb1aa36e370206847e51829" title=" " alt="" coords="13,5,224,45"/>
-<area shape="poly" title=" " alt="" coords="266,48,224,42,225,37,266,42"/>
+<area shape="poly" title=" " alt="" coords="266,47,224,41,224,36,267,41"/>
 <area shape="rect" href="classREMORABiology_1_1FennelBiology.html#a3368d0e2daf61120fd4c2eba8fbce564" title=" " alt="" coords="5,69,232,109"/>
-<area shape="poly" title=" " alt="" coords="266,72,232,77,232,72,266,67"/>
+<area shape="poly" title=" " alt="" coords="267,73,233,78,232,72,266,68"/>
 </map>
 </div>
 
