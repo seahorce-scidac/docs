@@ -1,33 +1,50 @@
 <map id="NCTimeSeriesRiver::Initialize" name="NCTimeSeriesRiver::Initialize">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,49,161,89"/>
-<area shape="rect" id="Node000002" href="$classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="503,5,657,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,49,209,41,356,26,489,18,489,24,357,31,210,46,162,54"/>
-<area shape="rect" id="Node000003" href="$REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="250,56,378,81"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,66,237,66,237,71,162,71"/>
-<area shape="rect" id="Node000004" href="$REMORA__NCFile_8cpp.html#aaa5a20305e771e7b0e25ee04fceb9781" title="Offset, in days, that puts a file&#39;s time variable onto the model clock." alt="" coords="209,144,419,169"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="138,86,268,137,266,142,136,91"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="378,54,499,31,500,36,379,59"/>
-<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="338,142,376,119,417,91,430,77,439,65,449,53,465,41,489,31,491,36,468,46,453,57,444,68,434,81,420,95,379,124,341,146"/>
-<area shape="rect" id="Node000005" href="$REMORA__TimeUnits_8H.html#a0dffe91d072fa27c2835a7718fc7eab4" title="Whether a CF calendar attribute names the calendar time_ref selects." alt="" coords="483,55,677,95"/>
-<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="352,141,466,105,493,97,494,102,467,110,354,146"/>
-<area shape="rect" id="Node000007" href="$REMORA__TimeUnits_8H.html#a18f342902ffb9bfa00c6a0fe3d2a98af" title="Parse a CF time&#45;units attribute." alt="" coords="486,120,674,145"/>
-<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="419,145,472,140,473,145,419,150"/>
-<area shape="rect" id="Node000008" href="$REMORA__DateClock_8H.html#aa60c96ed488ba0dfb35614d4d27b8c96" title="CF calendar name for time_ref. ROMS ref_clock&#39;s Rclockcalendar." alt="" coords="501,169,659,195"/>
-<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="419,164,488,171,487,176,419,169"/>
-<area shape="rect" id="Node000009" href="$REMORA__DateClock_8H.html#a2bf7942da8b3b8b13cb387b96ea74ca1" title="Reference date as YYYY&#45;MM&#45;DD hh:mm:ss. ROMS ref_clock&#39;s Rclockstring." alt="" coords="749,227,923,252"/>
-<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="348,167,403,186,467,203,607,224,735,234,735,239,606,229,466,209,402,191,346,172"/>
-<area shape="rect" id="Node000011" href="$REMORA__TimeUnits_8H.html#a640da5f105c589de8f369486aff47afa" title="The reference date of units as YYYY&#45;MM&#45;DD hh:mm:ss." alt="" coords="489,270,671,310"/>
-<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="334,167,392,206,468,249,501,263,499,268,465,254,389,211,331,172"/>
-<area shape="rect" id="Node000012" href="$REMORA__TimeUnits_8H.html#a8407e24e830c9927ae16683959900b5a" title="Days to add to a time counted from units&#39; reference date to count it from the date time_ref names ins..." alt="" coords="467,335,693,360"/>
-<area shape="poly" id="edge13_Node000004_Node000012" title=" " alt="" coords="325,168,346,199,378,241,420,284,468,320,484,328,482,332,465,324,416,288,374,244,342,202,321,171"/>
-<area shape="rect" id="Node000006" href="$namespaceremora__time__units__detail.html#a33e5f125b3348e491928b8e581b26bb4" title=" " alt="" coords="741,55,931,95"/>
-<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="677,73,727,73,727,78,677,78"/>
-<area shape="rect" id="Node000010" href="$REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="979,260,1113,285"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="917,249,965,257,964,262,916,255"/>
-<area shape="rect" id="Node000013" href="$REMORA__DateClock_8H.html#a2176a2e87eaaedaae188fa21a9ed42aa" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="979,309,1113,335"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="693,339,965,324,965,329,694,344"/>
-<area shape="rect" id="Node000014" href="$REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18" title="Day number of the reference date implied by time_ref." alt="" coords="757,284,915,309"/>
-<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="645,332,757,309,758,315,646,337"/>
-<area shape="poly" id="edge17_Node000014_Node000010" title=" " alt="" coords="915,285,965,279,965,285,916,290"/>
-<area shape="poly" id="edge16_Node000014_Node000013" title=" " alt="" coords="916,304,965,310,965,315,915,309"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,74,161,119"/>
+<area shape="rect" id="Node000002" href="$REMORA__NCFile_8H.html#a41ff4f048600ccc17103500c9cc273bf" title="Function to read NetCDF variables and fill the corresponding Array4&#39;s." alt="" coords="217,7,408,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,72,208,50,251,38,248,41,210,55,149,76"/>
+<area shape="rect" id="Node000005" href="$REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="514,57,642,85"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="161,90,501,73,498,77,162,95"/>
+<area shape="rect" id="Node000006" href="$classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="756,108,911,136"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="161,96,742,116,739,121,162,102"/>
+<area shape="rect" id="Node000008" href="$REMORA__NCFile_8cpp.html#aaa5a20305e771e7b0e25ee04fceb9781" title="Offset, in days, that puts a file&#39;s time variable onto the model clock." alt="" coords="209,304,417,332"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="109,117,289,292,284,295,107,122"/>
+<area shape="rect" id="Node000003" href="$REMORA__NCFile_8H.html#aec6b89e9ef60018dca2f1a9e5b281241" title="Helper function for reading data from NetCDF file into a provided FAB." alt="" coords="502,5,654,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,18,489,18,484,21,410,22"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="388,32,502,55,497,57,390,38"/>
+<area shape="rect" id="Node000004" href="$REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="742,5,925,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="654,17,729,18,724,20,655,22"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="642,81,748,104,743,105,642,86"/>
+<area shape="rect" id="Node000007" href="$classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423" title=" " alt="" coords="988,108,1152,136"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="910,119,975,121,970,122,911,124"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="326,301,382,249,421,220,464,195,515,178,586,161,743,135,738,137,587,167,516,183,466,200,424,224,386,253,329,305"/>
+<area shape="rect" id="Node000009" href="$REMORA__TimeUnits_8H.html#a0dffe91d072fa27c2835a7718fc7eab4" title="Whether a CF calendar attribute names the calendar time_ref selects." alt="" coords="481,210,675,255"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="355,301,464,265,490,259,485,261,466,270,357,306"/>
+<area shape="rect" id="Node000011" href="$REMORA__TimeUnits_8H.html#a18f342902ffb9bfa00c6a0fe3d2a98af" title="Parse a CF time&#45;units attribute." alt="" coords="484,279,672,306"/>
+<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="417,305,472,302,467,304,418,310"/>
+<area shape="rect" id="Node000015" href="$REMORA__DateClock_8H.html#aa60c96ed488ba0dfb35614d4d27b8c96" title="CF calendar name for time_ref. ROMS ref_clock&#39;s Rclockcalendar." alt="" coords="500,331,656,358"/>
+<area shape="poly" id="edge19_Node000008_Node000015" title=" " alt="" coords="417,326,487,335,482,336,418,331"/>
+<area shape="rect" id="Node000016" href="$REMORA__DateClock_8H.html#a2bf7942da8b3b8b13cb387b96ea74ca1" title="Reference date as YYYY&#45;MM&#45;DD hh:mm:ss. ROMS ref_clock&#39;s Rclockstring." alt="" coords="747,433,920,461"/>
+<area shape="poly" id="edge20_Node000008_Node000016" title=" " alt="" coords="352,330,466,367,590,396,746,430,741,430,589,401,464,372,351,335"/>
+<area shape="rect" id="Node000018" href="$REMORA__TimeUnits_8H.html#a640da5f105c589de8f369486aff47afa" title="The reference date of units as YYYY&#45;MM&#45;DD hh:mm:ss." alt="" coords="488,433,668,478"/>
+<area shape="poly" id="edge22_Node000008_Node000018" title=" " alt="" coords="334,330,393,369,466,411,496,427,491,426,464,416,390,374,333,335"/>
+<area shape="rect" id="Node000019" href="$REMORA__TimeUnits_8H.html#a8407e24e830c9927ae16683959900b5a" title="Days to add to a time counted from units&#39; reference date to count it from the date time_ref names ins..." alt="" coords="465,501,691,529"/>
+<area shape="poly" id="edge23_Node000008_Node000019" title=" " alt="" coords="323,330,345,364,377,406,418,451,466,488,477,495,472,494,464,492,415,455,373,410,341,367,321,335"/>
+<area shape="rect" id="Node000010" href="$namespaceremora__time__units__detail.html#a33e5f125b3348e491928b8e581b26bb4" title=" " alt="" coords="739,176,928,220"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="675,217,726,212,721,214,676,222"/>
+<area shape="poly" id="edge15_Node000011_Node000010" title=" " alt="" coords="660,276,690,265,714,248,738,230,748,228,753,226,741,235,717,253,693,270,662,281"/>
+<area shape="rect" id="Node000012" href="$namespaceremora__time__units__detail.html#a86103624959e4d1b0d8c218711cc8129" title="A time&#45;zone designator that means UTC." alt="" coords="739,245,928,290"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="672,281,726,277,721,279,673,286"/>
+<area shape="rect" id="Node000013" href="$namespaceremora__time__units__detail.html#a3b1855feaa62972ff1a896c4a1a2d1eb" title="hh:mm[:ss[.s]], optionally suffixed z. Fills the time fields on success." alt="" coords="976,336,1164,380"/>
+<area shape="poly" id="edge16_Node000011_Node000013" title=" " alt="" coords="672,302,962,343,957,344,672,308"/>
+<area shape="rect" id="Node000014" href="$namespaceremora__time__units__detail.html#acd1c63ee52658e214ff9628afdb6f52f" title=" " alt="" coords="739,365,928,410"/>
+<area shape="poly" id="edge17_Node000011_Node000014" title=" " alt="" coords="653,304,692,317,717,329,741,343,768,358,762,358,738,348,714,334,690,322,653,310"/>
+<area shape="poly" id="edge18_Node000014_Node000013" title=" " alt="" coords="928,373,963,371,958,372,929,378"/>
+<area shape="rect" id="Node000017" href="$REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="1003,445,1137,473"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="920,449,990,455,984,455,921,454"/>
+<area shape="rect" id="Node000020" href="$REMORA__DateClock_8H.html#a2176a2e87eaaedaae188fa21a9ed42aa" title="Fractional day number for a calendar date. ROMS datenum." alt="" coords="1003,511,1136,538"/>
+<area shape="poly" id="edge24_Node000019_Node000020" title=" " alt="" coords="692,520,739,522,991,526,985,526,739,527,692,525"/>
+<area shape="rect" id="Node000021" href="$REMORA__DateClock_8H.html#a5be87e427cd8023198a489fa6007fb18" title="Day number of the reference date implied by time_ref." alt="" coords="754,485,913,513"/>
+<area shape="poly" id="edge25_Node000019_Node000021" title=" " alt="" coords="692,505,736,505,741,505,692,511"/>
+<area shape="poly" id="edge27_Node000021_Node000017" title=" " alt="" coords="913,483,985,473,990,473,914,488"/>
+<area shape="poly" id="edge26_Node000021_Node000020" title=" " alt="" coords="913,505,990,516,985,516,913,510"/>
 </map>

@@ -1,6 +1,5 @@
 var namespaceREMORABiology =
 [
-    [ "Fennel", "namespaceREMORABiology_1_1Fennel.html", "namespaceREMORABiology_1_1Fennel" ],
     [ "GasExchange", "namespaceREMORABiology_1_1GasExchange.html", [
       [ "CO2Wanninkhof1992", "namespaceREMORABiology_1_1GasExchange.html#a958327e8901d727de35cd2d8b917aed5", null ],
       [ "CO2Wanninkhof2014", "namespaceREMORABiology_1_1GasExchange.html#af3d7a640e519dd12b76c53bd28994b7a", null ],
@@ -8,17 +7,18 @@ var namespaceREMORABiology =
       [ "O2Wanninkhof1992", "namespaceREMORABiology_1_1GasExchange.html#aa6e91b6364639d4dd033a6bb250b83bd", null ],
       [ "O2Wanninkhof2014", "namespaceREMORABiology_1_1GasExchange.html#aed7995b94129a694d26c37ea84fb42a4", null ]
     ] ],
-    [ "Biology", "classREMORABiology_1_1Biology.html", "classREMORABiology_1_1Biology" ],
-    [ "BiologyAdvanceContext", "structREMORABiology_1_1BiologyAdvanceContext.html", "structREMORABiology_1_1BiologyAdvanceContext" ],
+    [ "Fennel", "namespaceREMORABiology_1_1Fennel.html", "namespaceREMORABiology_1_1Fennel" ],
     [ "BiologyDeclaration", "structREMORABiology_1_1BiologyDeclaration.html", "structREMORABiology_1_1BiologyDeclaration" ],
     [ "BiologyInitContext", "structREMORABiology_1_1BiologyInitContext.html", "structREMORABiology_1_1BiologyInitContext" ],
-    [ "ECBBiology", "classREMORABiology_1_1ECBBiology.html", "classREMORABiology_1_1ECBBiology" ],
-    [ "ECBParameters", "structREMORABiology_1_1ECBParameters.html", "structREMORABiology_1_1ECBParameters" ],
-    [ "FennelBiology", "classREMORABiology_1_1FennelBiology.html", "classREMORABiology_1_1FennelBiology" ],
-    [ "FennelParameters", "structREMORABiology_1_1FennelParameters.html", "structREMORABiology_1_1FennelParameters" ],
+    [ "BiologyAdvanceContext", "structREMORABiology_1_1BiologyAdvanceContext.html", "structREMORABiology_1_1BiologyAdvanceContext" ],
+    [ "Biology", "classREMORABiology_1_1Biology.html", "classREMORABiology_1_1Biology" ],
     [ "SchmidtCoefficients", "structREMORABiology_1_1SchmidtCoefficients.html", "structREMORABiology_1_1SchmidtCoefficients" ],
     [ "SurfaceGasExchange", "structREMORABiology_1_1SurfaceGasExchange.html", "structREMORABiology_1_1SurfaceGasExchange" ],
-    [ "BiologyConstantIC", "namespaceREMORABiology.html#a9b061192ca3a05c03c55cea7855e4cd2", null ],
+    [ "ECBParameters", "structREMORABiology_1_1ECBParameters.html", "structREMORABiology_1_1ECBParameters" ],
+    [ "ECBBiology", "classREMORABiology_1_1ECBBiology.html", "classREMORABiology_1_1ECBBiology" ],
+    [ "FennelParameters", "structREMORABiology_1_1FennelParameters.html", "structREMORABiology_1_1FennelParameters" ],
+    [ "FennelBiology", "classREMORABiology_1_1FennelBiology.html", "classREMORABiology_1_1FennelBiology" ],
+    [ "BiologyConstantIC", "namespaceREMORABiology.html#a829ab669fb196707ca7fad2818441190", null ],
     [ "BiologyICType", "namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73", [
       [ "follow_ic_type", "namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73a31da927b57c9fa15695f5b78a263112f", null ],
       [ "constant", "namespaceREMORABiology.html#aca4ea0d9dbd715e7a267f0f429fd6a73a617ac08757d38a5a7ed91c224f0e90a0", null ],

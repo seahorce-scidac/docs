@@ -1,76 +1,79 @@
 <map id="REMORA::WriteNCPlotFile" name="REMORA::WriteNCPlotFile">
-<area shape="rect" id="Node000001" title="Write plotfile using NetCDF (wrapper)" alt="" coords="5,180,195,205"/>
-<area shape="rect" id="Node000002" href="$classncutils_1_1NCFile.html#abddb0caca9a60c01a48beeafaff0b899" title="Create a file. Defaults to CDF&#45;5; classic CDF&#45;1 has a 2GB limit." alt="" coords="259,72,423,97"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,178,175,147,242,114,282,99,283,104,244,119,177,152,124,182"/>
-<area shape="rect" id="Node000003" href="$classREMORA.html#ad96cf5c7c0d2eb30ca56e99fcee3624d" title="Record at which a restarted run continues a history file." alt="" coords="249,173,432,213"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,190,235,190,235,195,195,195"/>
-<area shape="rect" id="Node000010" href="$classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="513,5,667,31"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="156,177,327,137,437,106,452,91,460,74,468,57,485,40,499,32,501,37,488,44,473,60,465,76,457,94,440,111,329,142,157,183"/>
-<area shape="rect" id="Node000012" href="$classREMORA.html#a007d0cbaf560e30af5aa9ad8f2ec9a0a" title="NetCDF file a level&#39;s output goes to at this output step." alt="" coords="243,237,439,263"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="155,203,274,231,273,237,154,208"/>
-<area shape="rect" id="Node000013" href="$classREMORA.html#a771727b23eb8a8bd4c596a8280a0a6cf" title="Write a particular NetCDF plotfile." alt="" coords="246,699,435,739"/>
-<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="110,205,327,685,322,687,105,207"/>
-<area shape="rect" id="Node000004" href="$classncutils_1_1NCFile.html#af2c4a20c38edb3fae69087a80875b8b9" title="Close file object." alt="" coords="511,256,669,281"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="408,210,535,249,533,254,407,215"/>
-<area shape="rect" id="Node000005" href="$classncutils_1_1NCFile.html#a55a1e2afa5b84bd16d374477c6dcb1e9" title="Get the dimension instance by name." alt="" coords="998,404,1146,429"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="432,181,491,178,558,179,627,186,694,199,748,218,802,240,903,294,987,350,1046,393,1043,398,984,354,900,299,800,245,747,223,693,205,626,191,557,184,491,183,432,186"/>
-<area shape="rect" id="Node000006" href="$structncutils_1_1NCVar.html#ab5087bd7d6abbebda59b6b177988519a" title="Read a chunk of data from the file, collective." alt="" coords="507,55,673,80"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="405,170,437,152,452,136,460,121,469,105,485,89,496,83,498,88,488,93,473,108,464,123,456,139,440,156,408,175"/>
-<area shape="rect" id="Node000007" href="$structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338" title="Length of this dimension." alt="" coords="517,104,663,129"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="407,170,533,131,535,136,408,175"/>
-<area shape="rect" id="Node000008" href="$classREMORA.html#ae961006ec86eda2d7dd6496c3bbd4486" title="Time on the model clock, in seconds, of an elapsed time such as t_new." alt="" coords="507,305,673,331"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="418,210,440,224,457,242,465,259,473,276,488,292,498,297,495,302,485,296,468,279,460,262,452,245,437,228,415,215"/>
-<area shape="rect" id="Node000009" href="$classREMORA.html#af9469d456aa3da880eadab5ab42d39d0" title="Region of a level that its NetCDF output covers." alt="" coords="741,461,948,487"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="433,192,507,197,584,206,651,221,676,231,695,243,715,268,723,293,724,320,721,346,718,372,719,397,726,422,743,447,749,452,745,456,739,450,721,425,713,398,713,371,716,345,719,319,718,294,710,270,692,247,674,235,649,226,583,211,506,202,432,197"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="411,170,437,152,448,138,454,125,459,96,465,68,472,54,485,40,499,31,502,35,488,44,476,57,470,70,464,97,459,126,452,141,440,156,414,175"/>
-<area shape="rect" id="Node000011" href="$classncutils_1_1NCFile.html#af3b0f96840a58464b5f5b2ae8576d3ac" title="Get the variable instance by name." alt="" coords="518,355,662,380"/>
-<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="422,211,440,224,453,239,460,255,465,285,469,314,476,328,488,341,506,353,503,357,485,345,472,331,464,316,459,286,455,256,448,242,437,228,419,215"/>
-<area shape="poly" id="edge14_Node000013_Node000004" title=" " alt="" coords="340,699,346,623,354,571,367,513,385,453,410,395,443,340,485,292,497,283,500,287,488,296,447,343,415,397,390,455,372,515,359,572,351,624,345,700"/>
-<area shape="poly" id="edge28_Node000013_Node000008" title=" " alt="" coords="341,699,350,630,373,534,391,481,416,430,447,383,485,341,493,335,497,339,488,345,451,386,420,433,396,483,378,535,355,631,346,699"/>
-<area shape="poly" id="edge29_Node000013_Node000009" title=" " alt="" coords="364,697,418,658,486,620,543,600,589,593,636,586,692,568,760,531,815,493,818,497,763,535,694,572,637,591,590,598,544,605,488,624,421,662,368,701"/>
-<area shape="poly" id="edge41_Node000013_Node000011" title=" " alt="" coords="342,699,354,638,379,555,398,510,422,466,450,426,485,391,504,379,507,383,488,395,454,429,426,469,403,512,384,557,359,639,347,700"/>
-<area shape="rect" id="Node000014" href="$classncutils_1_1NCFile.html#a8cf59bbbf55da997460a610b31bde8a2" title="Define new dimension." alt="" coords="502,929,678,955"/>
-<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="353,739,373,777,402,826,441,875,463,897,488,916,498,922,495,926,485,920,460,901,437,878,398,829,368,780,349,741"/>
-<area shape="rect" id="Node000015" href="$classncutils_1_1NCFile.html#a813ff70b34dd5bc2b091bdb6a395c56d" title="Define a variable (wrapper for def_array)" alt="" coords="504,404,676,429"/>
-<area shape="poly" id="edge16_Node000013_Node000015" title=" " alt="" coords="344,699,359,646,386,576,405,539,427,503,454,469,485,440,495,433,498,438,488,444,458,473,432,506,409,542,391,578,364,648,349,700"/>
-<area shape="rect" id="Node000017" href="$classncutils_1_1NCFile.html#afb8a21bdc82bc45c7a12cc0323535708" title="Define a variable (wrapper for def_array)" alt="" coords="518,979,662,1019"/>
-<area shape="poly" id="edge19_Node000013_Node000017" title=" " alt="" coords="351,738,368,785,396,846,436,910,461,940,488,965,507,977,504,981,485,969,457,943,432,913,391,849,363,787,346,740"/>
-<area shape="rect" id="Node000019" href="$classncutils_1_1NCFile.html#a69b90d38b2ac2adf1610a0e8443743fb" title="Enter definition mode (not needed for NetCDF4 format)" alt="" coords="511,1043,669,1083"/>
-<area shape="poly" id="edge22_Node000013_Node000019" title=" " alt="" coords="348,739,361,796,388,874,406,916,429,958,456,996,488,1029,500,1038,497,1042,485,1033,452,999,424,960,401,919,383,876,356,798,343,740"/>
-<area shape="rect" id="Node000020" href="$classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96" title="Exit definition mode." alt="" coords="516,1107,664,1147"/>
-<area shape="poly" id="edge23_Node000013_Node000020" title=" " alt="" coords="346,739,356,806,380,902,398,953,422,1004,452,1052,488,1093,505,1105,502,1110,485,1097,448,1055,417,1007,393,955,374,903,351,807,341,740"/>
-<area shape="rect" id="Node000021" href="$classncutils_1_1NCFile.html#aed7018da8295104b6f590cf243f91208" title="Fill one record of every record variable that has a fill value (collective)" alt="" coords="521,1171,659,1211"/>
-<area shape="poly" id="edge24_Node000013_Node000021" title=" " alt="" coords="345,740,351,817,359,870,372,929,390,990,415,1051,447,1108,488,1157,509,1172,506,1176,485,1161,443,1111,410,1053,385,992,367,931,354,871,346,818,340,740"/>
-<area shape="rect" id="Node000023" href="$classncutils_1_1NCFile.html#ace4a49831a5dc61e09b8c1e9f0a75f85" title="Number of variables." alt="" coords="996,1201,1148,1241"/>
-<area shape="poly" id="edge32_Node000013_Node000023" title=" " alt="" coords="347,739,363,843,392,991,412,1066,434,1133,460,1187,474,1207,488,1221,518,1241,549,1256,616,1278,686,1288,758,1289,828,1282,893,1271,1002,1242,1004,1247,895,1276,828,1288,758,1294,686,1293,615,1283,547,1261,515,1245,485,1225,470,1211,456,1190,430,1135,407,1067,387,992,358,844,342,740"/>
-<area shape="rect" id="Node000024" href="$classREMORA.html#a4a29caf53968cd9f182ce157c0d061f0" title="Whether level 0&#39;s BoxArray leaves part of the domain out." alt="" coords="511,518,669,558"/>
-<area shape="poly" id="edge27_Node000013_Node000024" title=" " alt="" coords="356,697,409,638,445,604,485,574,510,561,512,566,488,579,449,608,413,641,360,701"/>
-<area shape="rect" id="Node000025" href="$classREMORA.html#a5444ee7ea87d0eaef2ec026c41776909" title="Whether a level&#39;s grids leave cells of its NetCDF region uncovered." alt="" coords="487,454,693,494"/>
-<area shape="poly" id="edge30_Node000013_Node000025" title=" " alt="" coords="348,698,367,657,396,605,436,551,459,526,485,504,493,499,496,503,488,508,463,530,440,554,401,608,372,660,353,700"/>
-<area shape="rect" id="Node000026" href="$structncutils_1_1NCVar.html#a4e8fff402cd5e79f76ac029288756105" title="Write out the entire double variable." alt="" coords="519,633,661,659"/>
-<area shape="poly" id="edge33_Node000013_Node000026" title=" " alt="" coords="398,697,486,669,520,660,521,665,487,674,400,702"/>
-<area shape="rect" id="Node000027" href="$structncutils_1_1NCVar.html#a85c122dc6aafe9ec0d1845d75797384a" title="Write out a slice of data, collective." alt="" coords="507,683,673,708"/>
-<area shape="poly" id="edge34_Node000013_Node000027" title=" " alt="" coords="435,708,493,702,494,707,436,713"/>
-<area shape="rect" id="Node000028" href="$structncutils_1_1NCVar.html#a9f60ebf70762d1d8e0962afb01118a31" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="504,831,676,856"/>
-<area shape="poly" id="edge35_Node000013_Node000028" title=" " alt="" coords="367,738,420,778,488,817,507,824,505,829,486,822,417,782,364,742"/>
-<area shape="rect" id="Node000030" href="$classncutils_1_1NCFile.html#a0d76e57eb7e5c576b7bf4249462ba063" title="Set file attribute to value." alt="" coords="503,732,677,757"/>
-<area shape="poly" id="edge37_Node000013_Node000030" title=" " alt="" coords="436,726,489,732,489,737,435,732"/>
-<area shape="rect" id="Node000031" href="$REMORA__DateClock_8H.html#aa60c96ed488ba0dfb35614d4d27b8c96" title="CF calendar name for time_ref. ROMS ref_clock&#39;s Rclockcalendar." alt="" coords="511,781,669,807"/>
-<area shape="poly" id="edge38_Node000013_Node000031" title=" " alt="" coords="396,737,487,767,517,775,516,781,486,773,394,742"/>
-<area shape="rect" id="Node000032" href="$REMORA__DateClock_8H.html#a2bf7942da8b3b8b13cb387b96ea74ca1" title="Reference date as YYYY&#45;MM&#45;DD hh:mm:ss. ROMS ref_clock&#39;s Rclockstring." alt="" coords="503,880,677,905"/>
-<area shape="poly" id="edge39_Node000013_Node000032" title=" " alt="" coords="358,738,410,802,447,837,488,866,501,873,499,878,485,871,443,841,406,806,354,741"/>
-<area shape="rect" id="Node000016" href="$classncutils_1_1NCFile.html#a32f59732fe788fd03b5fe9969eebd3fd" title="Define an array." alt="" coords="773,397,917,437"/>
-<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="676,414,759,414,759,419,676,419"/>
-<area shape="poly" id="edge18_Node000016_Node000005" title=" " alt="" coords="917,414,984,414,984,419,917,419"/>
-<area shape="rect" id="Node000018" href="$classncutils_1_1NCFile.html#aff4928d9721da70bb27132bc1a2d59b0" title="Define an array with a fill value." alt="" coords="773,955,917,995"/>
-<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="662,990,759,981,759,986,662,995"/>
-<area shape="poly" id="edge21_Node000018_Node000005" title=" " alt="" coords="899,953,925,937,946,916,984,856,1013,791,1035,722,1050,654,1066,530,1069,443,1074,443,1071,530,1055,655,1040,723,1018,792,989,859,950,920,928,941,902,957"/>
-<area shape="rect" id="Node000022" href="$classncutils_1_1NCFile.html#a4bd2d5c4818e3b2ec5f98d01d36e529a" title="Return a list of all variables defined in this group." alt="" coords="757,1183,932,1208"/>
-<area shape="poly" id="edge25_Node000021_Node000022" title=" " alt="" coords="660,1190,743,1191,743,1196,659,1195"/>
-<area shape="poly" id="edge26_Node000022_Node000023" title=" " alt="" coords="933,1202,982,1208,982,1213,932,1208"/>
-<area shape="poly" id="edge31_Node000025_Node000009" title=" " alt="" coords="693,471,728,471,728,477,693,477"/>
-<area shape="rect" id="Node000029" href="$structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="765,831,924,856"/>
-<area shape="poly" id="edge36_Node000028_Node000029" title=" " alt="" coords="676,841,752,841,752,846,676,846"/>
-<area shape="rect" id="Node000033" href="$REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="777,880,912,905"/>
-<area shape="poly" id="edge40_Node000032_Node000033" title=" " alt="" coords="677,890,764,890,764,895,677,895"/>
+<area shape="rect" id="Node000001" title="Write plotfile using NetCDF (wrapper)." alt="" coords="5,185,194,213"/>
+<area shape="rect" id="Node000002" href="$classncutils_1_1NCFile.html#abddb0caca9a60c01a48beeafaff0b899" title="Create a file. Defaults to CDF&#45;5; classic CDF&#45;1 has a 2GB limit." alt="" coords="258,5,421,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,184,167,132,240,72,297,38,295,43,243,76,170,136,117,186"/>
+<area shape="rect" id="Node000004" href="$classREMORA.html#ad96cf5c7c0d2eb30ca56e99fcee3624d" title="Record at which a restarted run continues a history file." alt="" coords="249,177,430,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="193,197,235,197,231,201,196,201"/>
+<area shape="rect" id="Node000011" href="$classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="511,32,665,60"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="145,183,484,75,528,63,524,67,486,80,148,187"/>
+<area shape="rect" id="Node000013" href="$classREMORA.html#a007d0cbaf560e30af5aa9ad8f2ec9a0a" title="NetCDF file a level&#39;s output goes to at this output step." alt="" coords="242,245,437,273"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="156,211,268,239,264,243,159,216"/>
+<area shape="rect" id="Node000014" href="$classREMORA.html#a771727b23eb8a8bd4c596a8280a0a6cf" title="Write a particular NetCDF plotfile." alt="" coords="245,805,434,850"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="108,211,327,789,321,791,105,216"/>
+<area shape="rect" id="Node000003" href="$classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423" title=" " alt="" coords="760,7,925,34"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="420,17,747,18,743,22,423,22"/>
+<area shape="rect" id="Node000005" href="$classncutils_1_1NCFile.html#af2c4a20c38edb3fae69087a80875b8b9" title="Close file object." alt="" coords="510,287,666,314"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="411,220,438,232,462,249,486,266,518,280,513,282,484,271,459,254,436,236,413,225"/>
+<area shape="rect" id="Node000006" href="$classncutils_1_1NCFile.html#a55a1e2afa5b84bd16d374477c6dcb1e9" title="Get the dimension instance by name." alt="" coords="996,451,1143,478"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="398,174,436,156,458,136,469,127,484,119,541,102,589,96,636,101,692,119,755,149,814,187,868,231,918,277,999,367,1052,438,1047,438,995,370,914,281,865,235,811,191,752,154,690,124,635,106,589,101,542,108,486,124,472,131,462,140,438,160,402,178"/>
+<area shape="rect" id="Node000007" href="$structncutils_1_1NCVar.html#ab5087bd7d6abbebda59b6b177988519a" title="Read a chunk of data from the file, collective." alt="" coords="506,133,670,161"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="429,178,506,163,502,167,432,182"/>
+<area shape="rect" id="Node000008" href="$structncutils_1_1NCDim.html#a499e6ebe6c5d13d286340c900ab2a338" title="Length of this dimension." alt="" coords="515,185,661,213"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="429,197,501,198,497,201,432,201"/>
+<area shape="rect" id="Node000009" href="$classREMORA.html#ae961006ec86eda2d7dd6496c3bbd4486" title="Time on the model clock, in seconds, of an elapsed time such as t_new." alt="" coords="506,339,670,366"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="419,220,439,232,456,256,463,280,470,302,487,324,495,330,490,332,483,328,465,305,458,281,452,258,435,236,421,225"/>
+<area shape="rect" id="Node000010" href="$classREMORA.html#af9469d456aa3da880eadab5ab42d39d0" title="Region of a level that its NetCDF output covers." alt="" coords="739,659,946,686"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="430,214,596,247,662,262,693,273,715,300,727,326,731,352,731,379,729,434,732,465,742,498,760,540,782,579,824,646,819,645,778,582,756,542,737,500,727,466,724,434,726,379,726,353,721,328,710,303,690,277,660,267,595,252,432,219"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="363,175,426,119,484,76,514,63,511,67,486,80,430,123,367,178"/>
+<area shape="rect" id="Node000012" href="$classncutils_1_1NCFile.html#af3b0f96840a58464b5f5b2ae8576d3ac" title="Get the variable instance by name." alt="" coords="516,391,660,418"/>
+<area shape="poly" id="edge12_Node000004_Node000012" title=" " alt="" coords="422,220,439,232,453,251,460,270,463,306,466,342,473,359,487,376,504,389,499,390,483,380,468,362,461,343,458,307,455,271,448,253,435,236,423,225"/>
+<area shape="poly" id="edge11_Node000011_Node000003" title=" " alt="" coords="664,36,747,29,743,32,667,40"/>
+<area shape="poly" id="edge16_Node000014_Node000005" title=" " alt="" coords="337,804,340,716,346,654,357,587,375,517,401,447,436,382,483,325,498,316,494,321,487,329,441,385,406,449,380,518,362,588,351,655,345,716,343,805"/>
+<area shape="poly" id="edge30_Node000014_Node000009" title=" " alt="" coords="338,804,344,724,351,669,363,609,381,546,407,485,440,427,483,377,494,371,491,375,487,381,445,431,411,487,387,548,368,610,356,670,349,725,343,805"/>
+<area shape="poly" id="edge31_Node000014_Node000010" title=" " alt="" coords="433,823,558,809,626,795,690,774,725,757,759,736,817,695,813,698,762,741,728,762,692,779,627,800,559,814,435,828"/>
+<area shape="poly" id="edge43_Node000014_Node000012" title=" " alt="" coords="339,804,347,731,369,630,388,575,412,521,444,471,483,428,504,416,500,420,487,432,448,474,417,524,393,577,375,631,353,732,344,805"/>
+<area shape="rect" id="Node000015" href="$classncutils_1_1NCFile.html#a8cf59bbbf55da997460a610b31bde8a2" title="Define new dimension." alt="" coords="500,1271,676,1298"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="342,847,350,928,358,980,370,1038,388,1097,413,1156,446,1210,487,1257,491,1263,486,1261,483,1261,441,1213,408,1158,383,1099,365,1039,352,981,345,928,340,852"/>
+<area shape="rect" id="Node000016" href="$classncutils_1_1NCFile.html#a813ff70b34dd5bc2b091bdb6a395c56d" title="Define a variable (wrapper for def_array)." alt="" coords="502,1151,674,1178"/>
+<area shape="poly" id="edge18_Node000014_Node000016" title=" " alt="" coords="345,847,360,907,386,985,405,1026,427,1067,455,1104,487,1136,494,1143,489,1142,483,1140,451,1107,423,1069,400,1029,381,987,355,909,344,853"/>
+<area shape="rect" id="Node000018" href="$classncutils_1_1NCFile.html#afb8a21bdc82bc45c7a12cc0323535708" title="Define a variable (wrapper for def_array)." alt="" coords="516,442,660,487"/>
+<area shape="poly" id="edge21_Node000014_Node000018" title=" " alt="" coords="342,804,355,743,381,661,399,617,422,574,450,533,483,497,505,484,501,489,487,501,454,536,427,576,404,619,386,663,360,745,347,805"/>
+<area shape="rect" id="Node000020" href="$classncutils_1_1NCFile.html#a69b90d38b2ac2adf1610a0e8443743fb" title="Enter definition mode (not needed for NetCDF4 format)." alt="" coords="510,511,666,556"/>
+<area shape="poly" id="edge24_Node000014_Node000020" title=" " alt="" coords="345,803,362,755,390,691,430,625,455,594,483,566,498,558,495,562,487,571,459,597,435,628,395,694,367,757,350,806"/>
+<area shape="rect" id="Node000021" href="$classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96" title="Exit definition mode." alt="" coords="514,581,662,625"/>
+<area shape="poly" id="edge25_Node000014_Node000021" title=" " alt="" coords="350,803,371,767,401,722,439,676,483,636,502,627,498,630,487,640,442,679,405,725,375,770,354,806"/>
+<area shape="rect" id="Node000022" href="$classncutils_1_1NCFile.html#aed7018da8295104b6f590cf243f91208" title="Fill one record of every record variable that has a fill value (collective)." alt="" coords="519,1202,657,1247"/>
+<area shape="poly" id="edge26_Node000014_Node000022" title=" " alt="" coords="344,847,357,915,381,1006,400,1055,423,1103,452,1148,487,1188,508,1204,502,1204,483,1192,448,1151,418,1106,395,1057,376,1008,352,917,342,852"/>
+<area shape="rect" id="Node000024" href="$classncutils_1_1NCFile.html#ace4a49831a5dc61e09b8c1e9f0a75f85" title="Number of variables." alt="" coords="994,1258,1145,1303"/>
+<area shape="poly" id="edge34_Node000014_Node000024" title=" " alt="" coords="345,847,363,950,393,1090,412,1161,435,1225,460,1276,473,1294,487,1308,516,1327,547,1342,614,1362,685,1369,756,1366,826,1356,892,1341,998,1309,1004,1309,893,1347,827,1362,757,1372,685,1374,613,1367,546,1347,514,1332,483,1312,469,1298,455,1279,430,1227,407,1163,388,1092,358,951,343,852"/>
+<area shape="rect" id="Node000025" href="$classREMORA.html#a4a29caf53968cd9f182ce157c0d061f0" title="Whether level 0&#39;s BoxArray leaves part of the domain out." alt="" coords="510,720,666,764"/>
+<area shape="poly" id="edge29_Node000014_Node000025" title=" " alt="" coords="405,802,508,768,504,771,408,807"/>
+<area shape="rect" id="Node000026" href="$classREMORA.html#a5444ee7ea87d0eaef2ec026c41776909" title="Whether a level&#39;s grids leave cells of its NetCDF region uncovered." alt="" coords="485,650,691,695"/>
+<area shape="poly" id="edge32_Node000014_Node000026" title=" " alt="" coords="361,803,414,754,448,728,484,705,498,700,494,703,486,709,451,732,418,758,365,806"/>
+<area shape="rect" id="Node000027" href="$structncutils_1_1NCVar.html#a4e8fff402cd5e79f76ac029288756105" title="Write out the entire double variable." alt="" coords="518,839,659,866"/>
+<area shape="poly" id="edge35_Node000014_Node000027" title=" " alt="" coords="433,834,504,843,500,845,435,839"/>
+<area shape="rect" id="Node000028" href="$structncutils_1_1NCVar.html#a85c122dc6aafe9ec0d1845d75797384a" title="Write out a slice of data, collective." alt="" coords="506,891,670,918"/>
+<area shape="poly" id="edge36_Node000014_Node000028" title=" " alt="" coords="402,847,486,875,516,885,511,887,484,880,403,853"/>
+<area shape="rect" id="Node000029" href="$classncutils_1_1NCFile.html#a0d76e57eb7e5c576b7bf4249462ba063" title="Set file attribute to value." alt="" coords="502,943,675,970"/>
+<area shape="poly" id="edge37_Node000014_Node000029" title=" " alt="" coords="366,847,421,889,486,927,506,937,501,938,484,932,418,893,367,853"/>
+<area shape="rect" id="Node000030" href="$structncutils_1_1NCVar.html#a9f60ebf70762d1d8e0962afb01118a31" title="Set attribute &quot;name&quot; to &quot;value&quot;." alt="" coords="502,995,674,1022"/>
+<area shape="poly" id="edge38_Node000014_Node000030" title=" " alt="" coords="356,847,409,914,446,950,486,980,501,988,495,989,484,984,442,954,405,918,355,853"/>
+<area shape="rect" id="Node000032" href="$REMORA__DateClock_8H.html#aa60c96ed488ba0dfb35614d4d27b8c96" title="CF calendar name for time_ref. ROMS ref_clock&#39;s Rclockcalendar." alt="" coords="510,1099,666,1126"/>
+<area shape="poly" id="edge40_Node000014_Node000032" title=" " alt="" coords="347,847,366,898,393,962,433,1028,458,1058,487,1084,499,1093,493,1093,483,1088,454,1062,429,1031,388,964,361,900,346,852"/>
+<area shape="rect" id="Node000033" href="$REMORA__DateClock_8H.html#a2bf7942da8b3b8b13cb387b96ea74ca1" title="Reference date as YYYY&#45;MM&#45;DD hh:mm:ss. ROMS ref_clock&#39;s Rclockstring." alt="" coords="502,1047,675,1074"/>
+<area shape="poly" id="edge41_Node000014_Node000033" title=" " alt="" coords="350,847,372,889,401,938,439,989,487,1032,497,1039,492,1040,483,1036,435,993,396,941,367,891,350,852"/>
+<area shape="rect" id="Node000017" href="$classncutils_1_1NCFile.html#a32f59732fe788fd03b5fe9969eebd3fd" title="Define an array." alt="" coords="771,1120,914,1164"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="674,1154,758,1149,753,1150,675,1159"/>
+<area shape="poly" id="edge20_Node000017_Node000006" title=" " alt="" coords="904,1117,926,1103,944,1084,968,1036,990,967,1010,884,1026,794,1050,619,1064,496,1067,492,1055,619,1031,795,1015,885,996,969,973,1038,948,1087,929,1107,906,1121"/>
+<area shape="rect" id="Node000019" href="$classncutils_1_1NCFile.html#aff4928d9721da70bb27132bc1a2d59b0" title="Define an array with a fill value." alt="" coords="771,442,914,487"/>
+<area shape="poly" id="edge22_Node000018_Node000019" title=" " alt="" coords="659,462,757,463,753,466,661,467"/>
+<area shape="poly" id="edge23_Node000019_Node000006" title=" " alt="" coords="914,462,983,463,978,466,916,467"/>
+<area shape="rect" id="Node000023" href="$classncutils_1_1NCFile.html#a4bd2d5c4818e3b2ec5f98d01d36e529a" title="Return a list of all variables defined in this group." alt="" coords="756,1241,929,1269"/>
+<area shape="poly" id="edge27_Node000022_Node000023" title=" " alt="" coords="658,1230,743,1243,738,1243,658,1235"/>
+<area shape="poly" id="edge28_Node000023_Node000024" title=" " alt="" coords="929,1262,981,1270,975,1270,929,1267"/>
+<area shape="poly" id="edge33_Node000026_Node000010" title=" " alt="" coords="691,670,726,671,721,674,693,675"/>
+<area shape="rect" id="Node000031" href="$structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724" title="Name of this variable." alt="" coords="764,995,921,1022"/>
+<area shape="poly" id="edge39_Node000030_Node000031" title=" " alt="" coords="674,1006,751,1008,746,1009,675,1011"/>
+<area shape="rect" id="Node000034" href="$REMORA__DateClock_8H.html#a0ac5f2a94709e2340b074de0c2e9de81" title="Reference date the model clock counts from, implied by time_ref." alt="" coords="775,1047,910,1074"/>
+<area shape="poly" id="edge42_Node000033_Node000034" title=" " alt="" coords="675,1058,762,1060,757,1061,676,1063"/>
 </map>

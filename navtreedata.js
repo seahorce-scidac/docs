@@ -67,19 +67,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "REMORA_8H.html",
-"REMORA__Fennel__Fortran__Interface_8H.html#a357d37fbf55ece14d89ae561d0a53d03",
-"REMORA__InitAnalyticProb__BoundaryLayer_8H.html#a5fa1183e12f797d3066d16aac374862d",
-"REMORA__LatLonRegridMath_8H.html#a888b1a248c574dd59bcf26a37722c4ad",
-"REMORA__init__from__netcdf_8cpp.html#a6c189eca2928ce27b82e38ae0505fed6",
-"classREMORA.html#a09a4ae6424c19a3b994628fc5ea3aa41",
-"classREMORA.html#a6ecf3d8a4231e02bf6027ff917b0786b",
-"classREMORA.html#ad9ee5aba5b9cb8e020e6cbc8ff3cff74",
-"classncutils_1_1NCFile.html#aa98d902ef67803393e80929bb73cb379",
-"namespaceREMORABCType.html#ac0d18d4bb218d5950db1000ef1abf346aa8f1b3ad9a76977588e149a0f264e93b",
-"structREMORABiology_1_1ECBParameters.html#a0cc1b0801495999ca71dbbf6c8d7e9e6",
-"structREMORAMaskedAvgDown_1_1MaskWeight.html#a1e365c687966c51256b81eacb0e9cc4a",
-"structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6"
+"REMORA__InitAnalyticBathymetry__ChannelTest_8H.html#a8bd0252da68c3743fdacf81b4bf74caa",
+"REMORA__InitAnalyticProb__Seamount_8H.html",
+"REMORA__ProbCoords_8H_source.html",
+"classNCTimeSeriesBoundary.html#a8ca78813df73f0645f004c4818293cf7",
+"classREMORA.html#a448226572176d2410e51ad3d7c0dcb0a",
+"classREMORA.html#ab17dd7f0866773488c052d67cb6086b3",
+"classREMORAFillPatcher.html#a3ee6c1ce281bcdb17350baf84a5a5878",
+"globals_func_m.html",
+"namespaceremora__time__units__detail.html#a86103624959e4d1b0d8c218711cc8129",
+"structREMORABiology_1_1FennelParameters.html#a78b12b5ad97ba48260907b8405f0d8f6",
+"structSolverChoice.html#ae492274577f959e481e90e5f4a462cc8"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

@@ -42,7 +42,7 @@ var searchData=
   ['init_5fmasks_5ffull_5fdomain_5ffrom_5fanalytic_39',['init_masks_full_domain_from_analytic',['../classREMORA.html#ad4d9769a49e270d356ae80fa953b4b36',1,'REMORA']]],
   ['init_5fmasks_5ffull_5fdomain_5ffrom_5fnetcdf_40',['init_masks_full_domain_from_netcdf',['../classREMORA.html#a23120c9c7b01861156f7cd09e970c55c',1,'REMORA']]],
   ['init_5fonly_41',['init_only',['../classREMORA.html#a4010e1137df2630bdd56327fad98e4a1',1,'REMORA']]],
-  ['init_5fparams_42',['init_params',['../structSolverChoice.html#a990b46996841ced5a04de68c208a20ba',1,'SolverChoice::init_params()'],['../structREMORABiology_1_1FennelParameters.html#a93fc4c0d2ec377b42ee2e5c7229c3f5f',1,'REMORABiology::FennelParameters::init_params()'],['../structREMORABiology_1_1ECBParameters.html#ad7121c6268f3bc43f83c1ce7d6e0d072',1,'REMORABiology::ECBParameters::init_params()']]],
+  ['init_5fparams_42',['init_params',['../structREMORABiology_1_1ECBParameters.html#ad7121c6268f3bc43f83c1ce7d6e0d072',1,'REMORABiology::ECBParameters::init_params()'],['../structREMORABiology_1_1FennelParameters.html#a93fc4c0d2ec377b42ee2e5c7229c3f5f',1,'REMORABiology::FennelParameters::init_params()'],['../structSolverChoice.html#a990b46996841ced5a04de68c208a20ba',1,'SolverChoice::init_params()']]],
   ['init_5fref_5fratios_43',['init_ref_ratios',['../classREMORA.html#aa064cddbf0d49faf75b10e2c01599681',1,'REMORA']]],
   ['init_5friv_5fpos_5ffrom_5fnetcdf_44',['init_riv_pos_from_netcdf',['../classREMORA.html#a85896dc904b4034ec5915b181d654237',1,'REMORA']]],
   ['init_5fscalar_5fmetadata_45',['init_scalar_metadata',['../classREMORA.html#a613dac4977d4663e98afb8e8613c44f5',1,'REMORA']]],
@@ -56,7 +56,7 @@ var searchData=
   ['init_5fzeta_5ffrom_5fnetcdf_53',['init_zeta_from_netcdf',['../classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0',1,'REMORA']]],
   ['init_5fzeta_5ffull_5fdomain_5ffrom_5fnetcdf_54',['init_zeta_full_domain_from_netcdf',['../classREMORA.html#a1c1ee9da7ff66b36615f16f068f7f5bd',1,'REMORA']]],
   ['initdata_55',['InitData',['../classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089',1,'REMORA']]],
-  ['initialize_56',['initialize',['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()'],['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()']]],
+  ['initialize_56',['Initialize',['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()'],['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()']]],
   ['initialize_5fconstant_5fbiology_57',['initialize_constant_biology',['../namespaceREMORABiology.html#abdd6774ffbc2176ac2adb5bbc5220c6c',1,'REMORABiology']]],
   ['initializefromfile_58',['InitializeFromFile',['../classREMORA.html#af25043e75bc350bc40ae56f65649554b',1,'REMORA']]],
   ['initializelevelfromdata_59',['InitializeLevelFromData',['../classREMORA.html#abc5dc3d0306ebb6507e6c702241f07a0',1,'REMORA']]],
@@ -75,6 +75,6 @@ var searchData=
   ['is_5fit_5ftime_5ffor_5faction_72',['is_it_time_for_action',['../classREMORA.html#ac1343ee03c1a0119736b4afe199019f3',1,'REMORA']]],
   ['is_5fperiodic_73',['is_periodic',['../namespacelatlon__regrid.html#a0e3712e6e0c5c93b84e694df41b7ecff',1,'latlon_regrid']]],
   ['is_5futc_74',['is_utc',['../namespaceremora__time__units__detail.html#a86103624959e4d1b0d8c218711cc8129',1,'remora_time_units_detail']]],
-  ['is_5fvalid_75',['is_valid',['../namespacelatlon__regrid.html#a44831790a19ba6229d09fdb8de309bb8',1,'latlon_regrid']]],
+  ['is_5fvalid_75',['is_valid',['../namespacelatlon__regrid.html#a44831790a19ba6229d09fdb8de309bb8',1,'latlon_regrid::is_valid()'],['../REMORA__LatLonRegrid_8cpp.html#a44831790a19ba6229d09fdb8de309bb8',1,'is_valid():&#160;REMORA_LatLonRegridMath.H']]],
   ['isempty_76',['isEmpty',['../classParticleData.html#a673700f7219e5cbc0c24d3e342e0866a',1,'ParticleData']]]
 ];

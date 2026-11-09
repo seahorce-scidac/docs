@@ -9,11 +9,12 @@ var searchData=
   ['def_5fscalar_6',['def_scalar',['../classncutils_1_1NCFile.html#a2c14c8dc8c0be8e9f7455f0e40fb0b8e',1,'ncutils::NCFile']]],
   ['def_5fvar_7',['def_var',['../classncutils_1_1NCFile.html#a813ff70b34dd5bc2b091bdb6a395c56d',1,'ncutils::NCFile']]],
   ['def_5fvar_5ffill_8',['def_var_fill',['../classncutils_1_1NCFile.html#afb8a21bdc82bc45c7a12cc0323535708',1,'ncutils::NCFile']]],
-  ['define_9',['define',['../classLatLonRegrid.html#a0da83605069cb6a36231ac46a67e7211',1,'LatLonRegrid::define()'],['../classREMORAFillPatcher.html#a50868f4ca1d6e80e87a5cefdb1c4088d',1,'REMORAFillPatcher::Define()']]],
-  ['define_5fflux_5fregister_10',['define_flux_register',['../classREMORA.html#a22b850460eb1f8dd28b3701c1b343255',1,'REMORA']]],
-  ['define_5fremorafillpatchers_11',['Define_REMORAFillPatchers',['../classREMORA.html#a6436d9b8e7993f9d893010237fda4b88',1,'REMORA']]],
-  ['dim_12',['dim',['../classncutils_1_1NCFile.html#a55a1e2afa5b84bd16d374477c6dcb1e9',1,'ncutils::NCFile']]],
-  ['display_13',['display',['../structSolverChoice.html#abb95d84167308078ce369b4196ef979c',1,'SolverChoice']]],
-  ['driverusesstateforcing_14',['DriverUsesStateForcing',['../classREMORA.html#ac32e17d62815028618a2d45a31f6cd0e',1,'REMORA']]],
-  ['drop_5fdry_5flevel0_5fboxes_15',['drop_dry_level0_boxes',['../classREMORA.html#a7518865e876ed9ed39b11dcf219281e7',1,'REMORA']]]
+  ['define_9',['Define',['../classREMORAFillPatcher.html#a50868f4ca1d6e80e87a5cefdb1c4088d',1,'REMORAFillPatcher']]],
+  ['define_10',['define',['../classLatLonRegrid.html#a0da83605069cb6a36231ac46a67e7211',1,'LatLonRegrid']]],
+  ['define_5fflux_5fregister_11',['define_flux_register',['../classREMORA.html#a22b850460eb1f8dd28b3701c1b343255',1,'REMORA']]],
+  ['define_5fremorafillpatchers_12',['Define_REMORAFillPatchers',['../classREMORA.html#a6436d9b8e7993f9d893010237fda4b88',1,'REMORA']]],
+  ['dim_13',['dim',['../classncutils_1_1NCFile.html#a55a1e2afa5b84bd16d374477c6dcb1e9',1,'ncutils::NCFile']]],
+  ['display_14',['display',['../structSolverChoice.html#abb95d84167308078ce369b4196ef979c',1,'SolverChoice']]],
+  ['driverusesstateforcing_15',['DriverUsesStateForcing',['../classREMORA.html#ac32e17d62815028618a2d45a31f6cd0e',1,'REMORA']]],
+  ['drop_5fdry_5flevel0_5fboxes_16',['drop_dry_level0_boxes',['../classREMORA.html#a7518865e876ed9ed39b11dcf219281e7',1,'REMORA']]]
 ];

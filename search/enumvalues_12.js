@@ -3,5 +3,5 @@ var searchData=
   ['undefined_0',['undefined',['../REMORA__IndexDefines_8H.html#a4a23ce64320a8ee19b456144f4deb325a5e543256c480ac577d30f76f9120eb74',1,'REMORA_IndexDefines.H']]],
   ['uniform_1',['uniform',['../classNCTimeSeries.html#ae5b3191da69e619a88af53d41e2df277aa489ffed938ef1b9e86889bc413501ee',1,'NCTimeSeries']]],
   ['upstream3_2',['upstream3',['../REMORA__DataStruct_8H.html#a3ffde1e69b7cc5344b53bf310e4a212ca5b2d34872c0b46cfbabc832368e6ec7d',1,'REMORA_DataStruct.H']]],
-  ['uwind_3',['uwind',['../namespaceAtmosState.html#ac649c15d0f625a86a55f42a8ce272297ace44688abc1d064a95c55ac3fe880cde',1,'AtmosState::Uwind'],['../namespaceBulkFlux.html#a7dc9ee4e257c52a96cef11632131ab6bab903a1809f855b363a48979c69aca552',1,'BulkFlux::Uwind']]]
+  ['uwind_3',['Uwind',['../namespaceAtmosState.html#afe0f9c3c78dccb79cd25d44b754081a4ace44688abc1d064a95c55ac3fe880cde',1,'AtmosState::Uwind'],['../namespaceBulkFlux.html#abe5350ae9aea44ab501cbc72f18d8319ab903a1809f855b363a48979c69aca552',1,'BulkFlux::Uwind']]]
 ];

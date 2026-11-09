@@ -14,6 +14,6 @@ var searchData=
   ['akt_5fbak_5fall_11',['Akt_bak_all',['../structSolverChoice.html#a268b28033dba060b3776fdeb740d2bf2',1,'SolverChoice']]],
   ['akv_5fbak_12',['Akv_bak',['../structSolverChoice.html#a04b27a3f48ecc0b7e626eb7ec0fe194e',1,'SolverChoice']]],
   ['atm2ocn_5fflux_5fmode_13',['atm2ocn_flux_mode',['../structSolverChoice.html#a63e045b9a8569a191f584057e240eddd',1,'SolverChoice']]],
-  ['attchl_14',['attchl',['../structREMORABiology_1_1ECBParameters.html#ab5f2da1e1ca459952246648ef18572a9',1,'REMORABiology::ECBParameters::AttChl'],['../structREMORABiology_1_1FennelParameters.html#ab400b17f6124b5e02342e9caf2a843cc',1,'REMORABiology::FennelParameters::AttChl']]],
-  ['attsw_15',['attsw',['../structREMORABiology_1_1ECBParameters.html#ae4d787fa7fa034e774d1745306091bcc',1,'REMORABiology::ECBParameters::AttSW'],['../structREMORABiology_1_1FennelParameters.html#a03fbe11abbced21bdf79c433c42a4315',1,'REMORABiology::FennelParameters::AttSW']]]
+  ['attchl_14',['AttChl',['../structREMORABiology_1_1ECBParameters.html#ab5f2da1e1ca459952246648ef18572a9',1,'REMORABiology::ECBParameters::AttChl'],['../structREMORABiology_1_1FennelParameters.html#ab400b17f6124b5e02342e9caf2a843cc',1,'REMORABiology::FennelParameters::AttChl']]],
+  ['attsw_15',['AttSW',['../structREMORABiology_1_1ECBParameters.html#ae4d787fa7fa034e774d1745306091bcc',1,'REMORABiology::ECBParameters::AttSW'],['../structREMORABiology_1_1FennelParameters.html#a03fbe11abbced21bdf79c433c42a4315',1,'REMORABiology::FennelParameters::AttSW']]]
 ];

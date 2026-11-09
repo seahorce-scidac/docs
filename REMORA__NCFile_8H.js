@@ -1,6 +1,6 @@
 var REMORA__NCFile_8H =
 [
-    [ "NDArray< DataType >", "structNDArray.html", "structNDArray" ],
+    [ "NDArray&lt; DataType &gt;", "structNDArray.html", "structNDArray" ],
     [ "PlaneVector", "REMORA__NCFile_8H.html#a60014a8d74bed0d5ae984e600c68dc85", null ],
     [ "NC_Data_Dims_Type", "REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06", [
       [ "Time_BT_SN_WE", "REMORA__NCFile_8H.html#a147911bcb83952a10f7560fd4e9d8f06aa3968158227ea04595d4003503cca22b", null ],

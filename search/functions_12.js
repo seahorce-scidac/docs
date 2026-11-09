@@ -9,5 +9,7 @@ var searchData=
   ['update_5finterpolated_5fto_5ftime_6',['update_interpolated_to_time',['../classNCTimeSeries.html#adf5aedc7963f0a326084362439be00a8',1,'NCTimeSeries::update_interpolated_to_time()'],['../classNCTimeSeriesBoundary.html#a3c152f0a4cef6e25c049c844ec120ecb',1,'NCTimeSeriesBoundary::update_interpolated_to_time()'],['../classNCTimeSeriesRiver.html#ab8e7cf7ed5dbc122474479fe36fd6154',1,'NCTimeSeriesRiver::update_interpolated_to_time()']]],
   ['update_5fmassflux_5f3d_7',['update_massflux_3d',['../classREMORA.html#a596ca4f1ee5d1b6f22b81362ba2fd4c4',1,'REMORA']]],
   ['update_5fnodal_5fmasks_8',['update_nodal_masks',['../classREMORA.html#a2f9082721165ecef4b3b0fe5dfbafb8a',1,'REMORA']]],
-  ['uv3dmix_9',['uv3dmix',['../classREMORA.html#ae2ddd377294e00e00938c0d35e6238f3',1,'REMORA']]]
+  ['update_5fwvel_9',['update_wvel',['../classREMORA.html#af4efa19ba13da068e99e1dc3759b700c',1,'REMORA']]],
+  ['update_5fwvel_5fbefore_5fcheckpoint_5fstep_10',['update_wvel_before_checkpoint_step',['../classREMORA.html#ac913b0905819be075a6e2dd8334b6e8a',1,'REMORA']]],
+  ['uv3dmix_11',['uv3dmix',['../classREMORA.html#ae2ddd377294e00e00938c0d35e6238f3',1,'REMORA']]]
 ];

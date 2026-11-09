@@ -16,29 +16,29 @@ var annotated_dup =
       [ "t_bounds", "structmod__param_1_1t__bounds.html", "structmod__param_1_1t__bounds" ]
     ] ],
     [ "ncutils", "namespacencutils.html", [
-      [ "NCDim", "structncutils_1_1NCDim.html", "structncutils_1_1NCDim" ],
       [ "NCDType", "structncutils_1_1NCDType.html", "structncutils_1_1NCDType" ],
-      [ "NCFile", "classncutils_1_1NCFile.html", "classncutils_1_1NCFile" ],
-      [ "NCVar", "structncutils_1_1NCVar.html", "structncutils_1_1NCVar" ]
+      [ "NCDim", "structncutils_1_1NCDim.html", "structncutils_1_1NCDim" ],
+      [ "NCVar", "structncutils_1_1NCVar.html", "structncutils_1_1NCVar" ],
+      [ "NCFile", "classncutils_1_1NCFile.html", "classncutils_1_1NCFile" ]
     ] ],
     [ "REMORABiology", "namespaceREMORABiology.html", [
       [ "Fennel", "namespaceREMORABiology_1_1Fennel.html", [
         [ "Components", "structREMORABiology_1_1Fennel_1_1Components.html", "structREMORABiology_1_1Fennel_1_1Components" ]
       ] ],
-      [ "Biology", "classREMORABiology_1_1Biology.html", "classREMORABiology_1_1Biology" ],
-      [ "BiologyAdvanceContext", "structREMORABiology_1_1BiologyAdvanceContext.html", "structREMORABiology_1_1BiologyAdvanceContext" ],
       [ "BiologyDeclaration", "structREMORABiology_1_1BiologyDeclaration.html", "structREMORABiology_1_1BiologyDeclaration" ],
       [ "BiologyInitContext", "structREMORABiology_1_1BiologyInitContext.html", "structREMORABiology_1_1BiologyInitContext" ],
-      [ "ECBBiology", "classREMORABiology_1_1ECBBiology.html", "classREMORABiology_1_1ECBBiology" ],
-      [ "ECBParameters", "structREMORABiology_1_1ECBParameters.html", "structREMORABiology_1_1ECBParameters" ],
-      [ "FennelBiology", "classREMORABiology_1_1FennelBiology.html", "classREMORABiology_1_1FennelBiology" ],
-      [ "FennelParameters", "structREMORABiology_1_1FennelParameters.html", "structREMORABiology_1_1FennelParameters" ],
+      [ "BiologyAdvanceContext", "structREMORABiology_1_1BiologyAdvanceContext.html", "structREMORABiology_1_1BiologyAdvanceContext" ],
+      [ "Biology", "classREMORABiology_1_1Biology.html", "classREMORABiology_1_1Biology" ],
       [ "SchmidtCoefficients", "structREMORABiology_1_1SchmidtCoefficients.html", "structREMORABiology_1_1SchmidtCoefficients" ],
-      [ "SurfaceGasExchange", "structREMORABiology_1_1SurfaceGasExchange.html", "structREMORABiology_1_1SurfaceGasExchange" ]
+      [ "SurfaceGasExchange", "structREMORABiology_1_1SurfaceGasExchange.html", "structREMORABiology_1_1SurfaceGasExchange" ],
+      [ "ECBParameters", "structREMORABiology_1_1ECBParameters.html", "structREMORABiology_1_1ECBParameters" ],
+      [ "ECBBiology", "classREMORABiology_1_1ECBBiology.html", "classREMORABiology_1_1ECBBiology" ],
+      [ "FennelParameters", "structREMORABiology_1_1FennelParameters.html", "structREMORABiology_1_1FennelParameters" ],
+      [ "FennelBiology", "classREMORABiology_1_1FennelBiology.html", "classREMORABiology_1_1FennelBiology" ]
     ] ],
     [ "REMORAMaskedAvgDown", "namespaceREMORAMaskedAvgDown.html", [
-      [ "FieldWeight", "structREMORAMaskedAvgDown_1_1FieldWeight.html", "structREMORAMaskedAvgDown_1_1FieldWeight" ],
-      [ "MaskWeight", "structREMORAMaskedAvgDown_1_1MaskWeight.html", "structREMORAMaskedAvgDown_1_1MaskWeight" ]
+      [ "MaskWeight", "structREMORAMaskedAvgDown_1_1MaskWeight.html", "structREMORAMaskedAvgDown_1_1MaskWeight" ],
+      [ "FieldWeight", "structREMORAMaskedAvgDown_1_1FieldWeight.html", "structREMORAMaskedAvgDown_1_1FieldWeight" ]
     ] ],
     [ "HorizontalStencil", "structHorizontalStencil.html", "structHorizontalStencil" ],
     [ "LatLonRegrid", "classLatLonRegrid.html", "classLatLonRegrid" ],

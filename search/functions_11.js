@@ -4,7 +4,7 @@ var searchData=
   ['t3dmix2_5fgeo_1',['t3dmix2_geo',['../classREMORA.html#a5d707a29979b07ff903e17c040aa6c7d',1,'REMORA']]],
   ['t3dmix2_5fs_2',['t3dmix2_s',['../classREMORA.html#a3f28146db5c71ff9c442236f0f09e8b7',1,'REMORA']]],
   ['target_5fbox_3',['target_box',['../classLatLonRegrid.html#aefc6d8a64c45c98374b46af1caed1680',1,'LatLonRegrid']]],
-  ['timeinterpolateddata_4',['timeinterpolateddata',['../structTimeInterpolatedData.html#af9e82f258d3d78331e0805ec7eca0a2e',1,'TimeInterpolatedData::TimeInterpolatedData()'],['../structTimeInterpolatedData.html#ae8db82a30cc400c01b3cb5a2ee83a778',1,'TimeInterpolatedData::TimeInterpolatedData(amrex::Real time)']]],
+  ['timeinterpolateddata_4',['TimeInterpolatedData',['../structTimeInterpolatedData.html#af9e82f258d3d78331e0805ec7eca0a2e',1,'TimeInterpolatedData::TimeInterpolatedData()'],['../structTimeInterpolatedData.html#ae8db82a30cc400c01b3cb5a2ee83a778',1,'TimeInterpolatedData::TimeInterpolatedData(amrex::Real time)']]],
   ['timestep_5',['timeStep',['../classREMORA.html#ac88ed7a3bf97eec4dca7f70126a0600d',1,'REMORA']]],
   ['timestepml_6',['timeStepML',['../classREMORA.html#acf259537f6d9c23a0edcf6641381a9d0',1,'REMORA']]],
   ['tke_5fbc_7',['tke_bc',['../classREMORA.html#a20e2cb42fa40efb871fd6fdf956a7609',1,'REMORA::tke_bc()'],['../namespaceBCVars.html#acb6a409721d6814ef5f897b37584f61e',1,'BCVars::tke_bc()']]],

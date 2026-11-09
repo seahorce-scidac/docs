@@ -14,7 +14,7 @@ var searchData=
   ['bio_5fdbg_5flevel_11',['bio_dbg_level',['../namespacemod__scalars.html#aa1ff3d6d20897f0d98637129cdff0235',1,'mod_scalars']]],
   ['bio_5fdeclaration_12',['bio_declaration',['../REMORA__InitAnalyticBiology__BioToy_8H.html#ac6ba0ca90d4093d98ac054861b600f24',1,'REMORA_InitAnalyticBiology_BioToy.H']]],
   ['bio_5fsediment_13',['bio_sediment',['../structREMORABiology_1_1FennelParameters.html#a0cfa39609712c31e0d1ac59cb1b64238',1,'REMORABiology::FennelParameters']]],
-  ['bioiter_14',['bioiter',['../structREMORABiology_1_1FennelParameters.html#abf5052d8a21dd70b55acb7968236c58a',1,'REMORABiology::FennelParameters::BioIter'],['../structREMORABiology_1_1ECBParameters.html#ad1d46d6fa780a3c9c10ebe4b718c8027',1,'REMORABiology::ECBParameters::BioIter']]],
+  ['bioiter_14',['BioIter',['../structREMORABiology_1_1ECBParameters.html#ad1d46d6fa780a3c9c10ebe4b718c8027',1,'REMORABiology::ECBParameters::BioIter'],['../structREMORABiology_1_1FennelParameters.html#abf5052d8a21dd70b55acb7968236c58a',1,'REMORABiology::FennelParameters::BioIter']]],
   ['biology_5fconstant_5fic_15',['biology_constant_ic',['../classREMORA.html#a8988acd0e5abbec6997ce5f5b76e909b',1,'REMORA']]],
   ['biology_5fic_5ftype_16',['biology_ic_type',['../classREMORA.html#afeb047fefba9c5b2b26b3d7c6abaff6a',1,'REMORA']]],
   ['bioname_17',['bioname',['../namespacemod__param.html#a974120e647918d6bef25e5e28a43958c',1,'mod_param']]],

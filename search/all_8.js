@@ -7,7 +7,7 @@ var searchData=
   ['hair_4',['Hair',['../structSolverChoice.html#ad543d5441b4ea9d4ecba199d220671d7',1,'SolverChoice']]],
   ['harmonic_5fmixing_5ftype_5',['harmonic_mixing_type',['../structSolverChoice.html#aefa757413322421a85f6f74774d63968',1,'SolverChoice']]],
   ['harmonicmixingtype_6',['HarmonicMixingType',['../REMORA__DataStruct_8H.html#a1f2023a583d49fcde1b9ae7365f3833a',1,'REMORA_DataStruct.H']]],
-  ['has_5fattr_7',['has_attr',['../classncutils_1_1NCFile.html#a7ac6d78b85ba1350b50b3462889bb8ea',1,'ncutils::NCFile::has_attr()'],['../structncutils_1_1NCVar.html#a0a4ddce55f60e3accbaf02441b6484cf',1,'ncutils::NCVar::has_attr()']]],
+  ['has_5fattr_7',['has_attr',['../structncutils_1_1NCVar.html#a0a4ddce55f60e3accbaf02441b6484cf',1,'ncutils::NCVar::has_attr()'],['../classncutils_1_1NCFile.html#a7ac6d78b85ba1350b50b3462889bb8ea',1,'ncutils::NCFile::has_attr(const std::string &amp;) const']]],
   ['has_5fdim_8',['has_dim',['../classncutils_1_1NCFile.html#ab275cede297730cc0338b6f18ec1e518',1,'ncutils::NCFile']]],
   ['has_5ffill_9',['has_fill',['../classLatLonRegrid.html#a862c05d2764ef4352e292733e97f20a5',1,'LatLonRegrid']]],
   ['has_5flatlon_5faxes_10',['has_latlon_axes',['../classLatLonRegrid.html#ad7cebf0c8d2841f68fd7c82ed855dba6',1,'LatLonRegrid']]],
@@ -27,5 +27,5 @@ var searchData=
   ['horizontalstencil_24',['HorizontalStencil',['../structHorizontalStencil.html',1,'']]],
   ['hour_25',['hour',['../structREMORATimeUnits.html#aee5c56e22e0c3d9645e86a3869b3c96a',1,'REMORATimeUnits']]],
   ['hydro_26',['hydro',['../namespaceREMORAParticleNames.html#a6d2fee8d4c38df86b642bd747fcfb14a',1,'REMORAParticleNames']]],
-  ['hz_27',['hz',['../structREMORABiology_1_1BiologyAdvanceContext.html#ab1f6be9f9b64db3fc23f3fdbb9c03639',1,'REMORABiology::BiologyAdvanceContext::hz'],['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid::hz']]]
+  ['hz_27',['hz',['../structmod__grid_1_1t__grid.html#ae3894d598411b0f3bd82b962bff9d12b',1,'mod_grid::t_grid::hz'],['../structREMORABiology_1_1BiologyAdvanceContext.html#ab1f6be9f9b64db3fc23f3fdbb9c03639',1,'REMORABiology::BiologyAdvanceContext::hz']]]
 ];

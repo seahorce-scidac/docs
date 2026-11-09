@@ -16,7 +16,7 @@ var REMORA__PC_8H =
     [ "level_index_cell", "REMORA__PC_8H.html#aae66844028ea79c7e9cb113e2c20696c", null ],
     [ "level_index_in_column", "REMORA__PC_8H.html#a60e97f730a0473a2abcbde04d1920fd1", null ],
     [ "level_index_to_height", "REMORA__PC_8H.html#af2ddadbbd8da6d155254e0542437cbb4", null ],
-    [ "hydro", "REMORA__PC_8H.html#a6d2fee8d4c38df86b642bd747fcfb14a", null ],
-    [ "init_box_uniform", "REMORA__PC_8H.html#a461355088c00fb5f39f61c48b83fb73b", null ],
-    [ "tracers", "REMORA__PC_8H.html#a2ef19c3e52c6ecf90b2f7fe816c28de0", null ]
+    [ "REMORAParticleNames::hydro", "namespaceREMORAParticleNames.html#a6d2fee8d4c38df86b642bd747fcfb14a", null ],
+    [ "REMORAParticleInitializations::init_box_uniform", "namespaceREMORAParticleInitializations.html#a461355088c00fb5f39f61c48b83fb73b", null ],
+    [ "REMORAParticleNames::tracers", "namespaceREMORAParticleNames.html#a2ef19c3e52c6ecf90b2f7fe816c28de0", null ]
 ];

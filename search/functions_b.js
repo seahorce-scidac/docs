@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['name_0',['name',['../classREMORABiology_1_1ECBBiology.html#ab8ef52585f1513e44250c3cc71f58592',1,'REMORABiology::ECBBiology::name()'],['../classREMORABiology_1_1FennelBiology.html#ae68443b08b2867769d4da4d75c175855',1,'REMORABiology::FennelBiology::name()'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()'],['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()'],['../classREMORABiology_1_1Biology.html#a33bbaec96c3802978b5b2db6ef90e9e3',1,'REMORABiology::Biology::name()']]],
+  ['name_0',['name',['../classREMORABiology_1_1Biology.html#a33bbaec96c3802978b5b2db6ef90e9e3',1,'REMORABiology::Biology::name()'],['../classREMORABiology_1_1ECBBiology.html#ab8ef52585f1513e44250c3cc71f58592',1,'REMORABiology::ECBBiology::name()'],['../classREMORABiology_1_1FennelBiology.html#ae68443b08b2867769d4da4d75c175855',1,'REMORABiology::FennelBiology::name()'],['../structncutils_1_1NCDim.html#aaf6334138e9892f5403400e31f062fd6',1,'ncutils::NCDim::name()'],['../structncutils_1_1NCVar.html#a4b34f3722befd10e92d1267bcbd49724',1,'ncutils::NCVar::name()']]],
   ['ncfile_1',['NCFile',['../classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423',1,'ncutils::NCFile']]],
   ['nctimeseries_2',['NCTimeSeries',['../classNCTimeSeries.html#aab4915c7eaa95f39c19064c40e27e964',1,'NCTimeSeries']]],
   ['nctimeseriesboundary_3',['NCTimeSeriesBoundary',['../classNCTimeSeriesBoundary.html#a7c1c8085948b2b52ac093b1b08d8dc6b',1,'NCTimeSeriesBoundary']]],
   ['nctimeseriesriver_4',['NCTimeSeriesRiver',['../classNCTimeSeriesRiver.html#a12d57917b8fad359fe7813faabf9a7d8',1,'NCTimeSeriesRiver']]],
-  ['ndarray_5',['ndarray',['../structNDArray.html#a896e27f1238a68d5221aa00bbf9fd2f0',1,'NDArray::NDArray(const std::string vname, const std::vector&lt; MPI_Offset &gt; &amp;vshape)'],['../structNDArray.html#a1f33dbd861944bc1494f4790f4f8543d',1,'NDArray::NDArray()']]],
+  ['ndarray_5',['NDArray',['../structNDArray.html#a896e27f1238a68d5221aa00bbf9fd2f0',1,'NDArray::NDArray(const std::string vname, const std::vector&lt; MPI_Offset &gt; &amp;vshape)'],['../structNDArray.html#a1f33dbd861944bc1494f4790f4f8543d',1,'NDArray::NDArray()']]],
   ['ndim_6',['ndim',['../structNDArray.html#a1b3ece1ab109568fcb919d1af8f14eee',1,'NDArray::ndim()'],['../structncutils_1_1NCVar.html#ae0ab15dc4c1033271878c3bf5102f911',1,'ncutils::NCVar::ndim()']]],
   ['netcdf_5fplot_5fpath_7',['netcdf_plot_path',['../classREMORA.html#a007d0cbaf560e30af5aa9ad8f2ec9a0a',1,'REMORA']]],
   ['netcdf_5fsubdomain_8',['netcdf_subdomain',['../classREMORA.html#af9469d456aa3da880eadab5ab42d39d0',1,'REMORA']]],
@@ -21,5 +21,5 @@ var searchData=
   ['num_5fvariables_18',['num_variables',['../classncutils_1_1NCFile.html#ace4a49831a5dc61e09b8c1e9f0a75f85',1,'ncutils::NCFile']]],
   ['num_5fvars_19',['num_vars',['../structTimeInterpolatedData.html#a69fdc01eabf8ded65ff6cac13e59c0c0',1,'TimeInterpolatedData']]],
   ['numdatalogs_20',['NumDataLogs',['../classREMORA.html#abe6c7702fc1edcb5bb7d9a1a56d007a9',1,'REMORA']]],
-  ['numtypes_21',['numtypes',['../namespaceBCVars.html#a11669734493fff525248ddfa64866370',1,'BCVars::NumTypes()'],['../namespaceBdyVars.html#a32a55be366629e968c68d69bdecf0511',1,'BdyVars::NumTypes()']]]
+  ['numtypes_21',['NumTypes',['../namespaceBCVars.html#a11669734493fff525248ddfa64866370',1,'BCVars::NumTypes()'],['../namespaceBdyVars.html#a32a55be366629e968c68d69bdecf0511',1,'BdyVars::NumTypes()']]]
 ];

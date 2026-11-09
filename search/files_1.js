@@ -148,7 +148,7 @@ var searchData=
   ['remora_5frho_5feos_2ecpp_145',['REMORA_rho_eos.cpp',['../REMORA__rho__eos_8cpp.html',1,'']]],
   ['remora_5frhs_5ft_5f3d_2ecpp_146',['REMORA_rhs_t_3d.cpp',['../REMORA__rhs__t__3d_8cpp.html',1,'']]],
   ['remora_5frhs_5fuv_5f3d_2ecpp_147',['REMORA_rhs_uv_3d.cpp',['../REMORA__rhs__uv__3d_8cpp.html',1,'']]],
-  ['remora_5fscale_5frhs_5fvars_2ecpp_148',['REMORA_scale_rhs_vars.cpp',['../REMORA__scale__rhs__vars_8cpp.html',1,'']]],
+  ['remora_5fscale_5frhs_5fby_5farea_2ecpp_148',['REMORA_scale_rhs_by_area.cpp',['../REMORA__scale__rhs__by__area_8cpp.html',1,'']]],
   ['remora_5fset_5f2d_5fcf_5fbcs_2ecpp_149',['REMORA_set_2d_cf_bcs.cpp',['../REMORA__set__2d__cf__bcs_8cpp.html',1,'']]],
   ['remora_5fset_5fweights_2ecpp_150',['REMORA_set_weights.cpp',['../REMORA__set__weights_8cpp.html',1,'']]],
   ['remora_5fsetplotvars_2ecpp_151',['REMORA_SetPlotVars.cpp',['../REMORA__SetPlotVars_8cpp.html',1,'']]],
