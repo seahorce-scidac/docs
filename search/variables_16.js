@@ -14,5 +14,6 @@ var searchData=
   ['write_5fhistory_5ffile_11',['write_history_file',['../classREMORA.html#a1eef83c89b5b470bac43eaff53860fe0',1,'REMORA']]],
   ['wsdet_12',['wSDet',['../structREMORABiology_1_1ECBParameters.html#a96eddba198eccdc7aaa5dd44b9174c04',1,'REMORABiology::ECBParameters::wSDet'],['../structREMORABiology_1_1FennelParameters.html#ab9f4370f4a72a6e563a86216da60ffbb',1,'REMORABiology::FennelParameters::wSDet']]],
   ['wvel_5fcurrent_13',['wvel_current',['../classREMORA.html#a4859862c6db53144d0641bc0d56c6e74',1,'REMORA']]],
-  ['wvel_5fold_5fcurrent_14',['wvel_old_current',['../classREMORA.html#ae93f8e25df2113523e45b69a522b70f3',1,'REMORA']]]
+  ['wvel_5fevery_5fsubstep_14',['wvel_every_substep',['../classREMORA.html#a3801f85182fb1893e8d7cbe6048cf996',1,'REMORA']]],
+  ['wvel_5fold_5fcurrent_15',['wvel_old_current',['../classREMORA.html#ae93f8e25df2113523e45b69a522b70f3',1,'REMORA']]]
 ];

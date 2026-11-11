@@ -18,5 +18,6 @@ var searchData=
   ['writeplotfile_15',['WritePlotFile',['../classREMORA.html#ae34c7e436b23f9c528aaa8589804b196',1,'REMORA']]],
   ['writeplotfile_16',['writePlotFile',['../classParticleData.html#ae883e2f845d078a2791a5b94312778da',1,'ParticleData']]],
   ['writespecies_17',['writeSpecies',['../classParticleData.html#ad29548df06906918e398789674587d29',1,'ParticleData']]],
-  ['wvel_5fis_5flazy_18',['wvel_is_lazy',['../classREMORA.html#ae93df0ba94cf49b9f6b214a3b65cd42c',1,'REMORA']]]
+  ['wvel_5fis_5flazy_18',['wvel_is_lazy',['../classREMORA.html#ae93df0ba94cf49b9f6b214a3b65cd42c',1,'REMORA']]],
+  ['wvel_5fskip_5fsubstep_19',['wvel_skip_substep',['../classREMORA.html#acaa5aee89fd5a759ea28cafccb2d25ae',1,'REMORA']]]
 ];

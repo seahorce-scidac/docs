@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['u_0',['u',['../namespaceBdyVars.html#a0e35fe055c193e7553b0c7bd14431d43',1,'BdyVars']]],
+  ['u_0',['u',['../structREMORA_1_1CFInterfaceFlux.html#a99d27c09800b2c9104e6e0beb25a254f',1,'REMORA::CFInterfaceFlux::u'],['../namespaceBdyVars.html#a0e35fe055c193e7553b0c7bd14431d43',1,'BdyVars::u']]],
   ['u00_1',['U00',['../REMORA__Constants_8H.html#ae617e2f56428829183709d44ab6e5dc1',1,'REMORA_Constants.H']]],
   ['u01_2',['U01',['../REMORA__Constants_8H.html#a0f46603db42ba0a6cfe2e4d0bd48372c',1,'REMORA_Constants.H']]],
   ['u02_3',['U02',['../REMORA__Constants_8H.html#ad8da9603d2ba0b5f6012fbb2f74591e6',1,'REMORA_Constants.H']]],

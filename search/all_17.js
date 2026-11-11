@@ -36,6 +36,8 @@ var searchData=
   ['writespecies_33',['writeSpecies',['../classParticleData.html#ad29548df06906918e398789674587d29',1,'ParticleData']]],
   ['wsdet_34',['wSDet',['../structREMORABiology_1_1ECBParameters.html#a96eddba198eccdc7aaa5dd44b9174c04',1,'REMORABiology::ECBParameters::wSDet'],['../structREMORABiology_1_1FennelParameters.html#ab9f4370f4a72a6e563a86216da60ffbb',1,'REMORABiology::FennelParameters::wSDet']]],
   ['wvel_5fcurrent_35',['wvel_current',['../classREMORA.html#a4859862c6db53144d0641bc0d56c6e74',1,'REMORA']]],
-  ['wvel_5fis_5flazy_36',['wvel_is_lazy',['../classREMORA.html#ae93df0ba94cf49b9f6b214a3b65cd42c',1,'REMORA']]],
-  ['wvel_5fold_5fcurrent_37',['wvel_old_current',['../classREMORA.html#ae93f8e25df2113523e45b69a522b70f3',1,'REMORA']]]
+  ['wvel_5fevery_5fsubstep_36',['wvel_every_substep',['../classREMORA.html#a3801f85182fb1893e8d7cbe6048cf996',1,'REMORA']]],
+  ['wvel_5fis_5flazy_37',['wvel_is_lazy',['../classREMORA.html#ae93df0ba94cf49b9f6b214a3b65cd42c',1,'REMORA']]],
+  ['wvel_5fold_5fcurrent_38',['wvel_old_current',['../classREMORA.html#ae93f8e25df2113523e45b69a522b70f3',1,'REMORA']]],
+  ['wvel_5fskip_5fsubstep_39',['wvel_skip_substep',['../classREMORA.html#acaa5aee89fd5a759ea28cafccb2d25ae',1,'REMORA']]]
 ];

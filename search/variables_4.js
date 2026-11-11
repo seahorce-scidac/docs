@@ -18,5 +18,6 @@ var searchData=
   ['eradius_15',['Eradius',['../REMORA__Constants_8H.html#a293dbdde8ae4c8260e4b71203e468134',1,'REMORA_Constants.H']]],
   ['esdon_16',['EsDON',['../structREMORABiology_1_1ECBParameters.html#a18c0d971d3d722ec3fa1053ec1dbe09a',1,'REMORABiology::ECBParameters']]],
   ['ewperiodic_17',['EWPeriodic',['../REMORA__InitAnalyticProb__ChannelTest_8H.html#a90afb84e87ef8a811e4afff30a9f2db3',1,'EWPeriodic:&#160;REMORA_InitAnalyticProb_ChannelTest.H'],['../REMORA__InitAnalyticProb__Upwelling_8H.html#a90afb84e87ef8a811e4afff30a9f2db3',1,'EWPeriodic:&#160;REMORA_InitAnalyticProb_Upwelling.H']]],
-  ['expand_5fplotvars_5fto_5funif_5frr_18',['expand_plotvars_to_unif_rr',['../classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4',1,'REMORA']]]
+  ['exchanged_18',['exchanged',['../structREMORA_1_1CrseInterpEntry.html#a7d1141fb914588065d51f23a7e4a7046',1,'REMORA::CrseInterpEntry']]],
+  ['expand_5fplotvars_5fto_5funif_5frr_19',['expand_plotvars_to_unif_rr',['../classREMORA.html#ab973c21da05e8fc4ad9bf4ea9d33f2a4',1,'REMORA']]]
 ];

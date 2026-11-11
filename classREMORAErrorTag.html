@@ -109,11 +109,13 @@ Collaboration diagram for REMORAErrorTag:</div>
 <div class="dyncontent">
 <div class="center"><img src="classREMORAErrorTag__coll__graph.png" border="0" usemap="#aREMORAErrorTag_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aREMORAErrorTag_coll__map" id="aREMORAErrorTag_coll__map">
-<area shape="rect" title=" " alt="" coords="84,173,215,201"/>
+<area shape="rect" title=" " alt="" coords="150,173,282,201"/>
 <area shape="rect" title=" " alt="" coords="5,5,160,33"/>
-<area shape="poly" title=" " alt="" coords="95,46,147,172,141,173,91,49"/>
+<area shape="poly" title=" " alt="" coords="104,43,208,172,203,174,101,47"/>
 <area shape="rect" title=" " alt="" coords="183,5,248,33"/>
-<area shape="poly" title=" " alt="" coords="208,47,157,174,152,171,202,48"/>
+<area shape="poly" title=" " alt="" coords="218,47,218,173,213,172,214,50"/>
+<area shape="rect" title=" " alt="" coords="336,5,386,33"/>
+<area shape="poly" title=" " alt="" coords="364,47,359,100,350,127,334,151,310,169,283,180,281,175,308,164,330,147,345,125,354,99,361,51"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -122,6 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad0cdd3aab7b6dd61938bf479d383c692" id="r_ad0cdd3aab7b6dd61938bf479d383c692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0cdd3aab7b6dd61938bf479d383c692">SetTimeWindow</a> (double min_elapsed, double max_elapsed, double min_total, double max_total) noexcept</td></tr>
 <tr class="memitem:a099529e2eb54490b4a33bde85431efff" id="r_a099529e2eb54490b4a33bde85431efff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a099529e2eb54490b4a33bde85431efff">ActiveAt</a> (double elapsed, double total) const noexcept</td></tr>
 <tr class="memdesc:a099529e2eb54490b4a33bde85431efff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this criterion applies at the given elapsed and total times.  <br /></td></tr>
+<tr class="memitem:aa2b2291aa97cb5973cde1aade9ebe939" id="r_aa2b2291aa97cb5973cde1aade9ebe939"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2b2291aa97cb5973cde1aade9ebe939">SetTagLand</a> (bool tag_land) noexcept</td></tr>
 <tr class="memitem:ad102aef4d1e340288929a3c22c20baa8" id="r_ad102aef4d1e340288929a3c22c20baa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad102aef4d1e340288929a3c22c20baa8">operator()</a> (amrex::TagBoxArray &amp;tba, const amrex::MultiFab *mf, const amrex::MultiFab *mskr3d, char clearval, char tagval, amrex::Real <a class="el" href="REMORA__InitAnalyticSMFlux__ChannelTest_8H.html#a33447f96f00d708dd345d6eb79c95d41">time</a>, int level, const amrex::Geometry &amp;geom, const amrex::IntVect &amp;mask_lo=amrex::IntVect::TheZeroVector(), const amrex::IntVect &amp;mask_hi=amrex::IntVect::TheZeroVector()) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -130,14 +133,16 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae6248b562970aea05395714d08a2c055" id="r_ae6248b562970aea05395714d08a2c055"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6248b562970aea05395714d08a2c055">m_max_elapsed</a> = std::numeric_limits&lt;double&gt;::max()</td></tr>
 <tr class="memitem:a649ca2f2afa8654575073a780c5b5a4b" id="r_a649ca2f2afa8654575073a780c5b5a4b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a649ca2f2afa8654575073a780c5b5a4b">m_min_total</a> = std::numeric_limits&lt;double&gt;::lowest()</td></tr>
 <tr class="memitem:a346df918de0ee608260f0533f9a04b82" id="r_a346df918de0ee608260f0533f9a04b82"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a346df918de0ee608260f0533f9a04b82">m_max_total</a> = std::numeric_limits&lt;double&gt;::max()</td></tr>
+<tr class="memitem:a801685c2f450a49a0bc539ebb8766beb" id="r_a801685c2f450a49a0bc539ebb8766beb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a801685c2f450a49a0bc539ebb8766beb">m_tag_land</a> = false</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An amrex::AMRErrorTag that does not let the coastline drive refinement.</p>
 <p>AMReX writes each data-dependent test twice: a plain form, and an embedded-boundary form that skips a covered cell and differences only across a face EBCellFlag reports as open. <a class="el" href="classREMORA.html" title="Class that stores all relevant simulation state data with methods for time stepping.">REMORA</a>'s land/sea mask plays the part of that connectivity &ndash; tracers on the land side are zeroed every step, so a difference taken across a coast measures the coast, not the flow. This class is that EB form with mskr in place of the flags.</p>
-<p>Guarding each criterion as it is evaluated, rather than clearing land-adjacent tags afterwards, leaves every other criterion's tags alone &ndash; including a static in_box_lo/in_box_hi region drawn across a coast.</p>
+<p>A box region (in_box_lo/in_box_hi) is guarded too: it tags only the water cells inside it, unless SetTagLand asks for the whole rectangle.</p>
+<p>Guarding each criterion as it is evaluated, rather than clearing land-adjacent tags afterwards, leaves every other criterion's tags alone.</p>
 <p>The inheritance is private on purpose: AMRErrorTag::operator() is not virtual, so converting a criterion back to the base would compile and quietly run the unguarded test on masked data. Private inheritance makes that ill-formed while still granting access to the protected m_test, m_value and m_info. Only the constructors and Field() are re-exported; the base's seven-argument operator() deliberately is not, so a call that forgets the mask will not compile. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00030">30</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00032">32</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a099529e2eb54490b4a33bde85431efff" name="a099529e2eb54490b4a33bde85431efff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a099529e2eb54490b4a33bde85431efff">&#9670;&#160;</a></span>ActiveAt()</h2>
@@ -168,7 +173,7 @@ Private Attributes</h2></td></tr>
 
 <p>Whether this criterion applies at the given elapsed and total times. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00056">56</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00058">58</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
 
 </div>
 </div>
@@ -231,7 +236,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Apply this criterion to tba, skipping land.</p>
-<p>Only GRAD, LESS and GREATER consult the mask. BOX and PARSER tag on position alone, USER hands the whole decision to a functor, and VORT and RELGRAD are unreachable from <a class="el" href="classREMORA.html" title="Class that stores all relevant simulation state data with methods for time stepping.">REMORA</a>'s inputs; all of those go to amrex::AMRErrorTag::operator() unchanged.</p>
+<p>GRAD, LESS, GREATER and BOX consult the mask. PARSER tags on position alone, USER hands the whole decision to a functor, and VORT and RELGRAD are unreachable from <a class="el" href="classREMORA.html" title="Class that stores all relevant simulation state data with methods for time stepping.">REMORA</a>'s inputs; all of those go to amrex::AMRErrorTag::operator() unchanged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">tba</td><td>tags to update </td></tr>
@@ -248,7 +253,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>Apply this criterion to tba, skipping values the land/sea mask makes meaningless. The parameters are documented on the declaration in <a class="el" href="REMORA__ErrorTag_8H.html">REMORA_ErrorTag.H</a>.</p>
-<p>The one thing to know when reading the body: a cell this declines to test is left exactly as it was found, not cleared. That is what lets a static box keep the tags it set over a coast, and it is the whole difference from the derefine criteria this replaced. </p>
+<p>The one thing to know when reading the body: a cell this declines to test is left exactly as it was found, not cleared. That is what keeps one criterion's tags from being undone by another, and it is the whole difference from the derefine criteria this replaced. </p>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__Tagging_8cpp_source.html#l00097">97</a> of file <a class="el" href="REMORA__Tagging_8cpp_source.html">REMORA_Tagging.cpp</a>.</p>
 <div class="dynheader">
@@ -261,6 +266,34 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="210,17,244,19,239,19,210,22"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aa2b2291aa97cb5973cde1aade9ebe939" name="aa2b2291aa97cb5973cde1aade9ebe939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b2291aa97cb5973cde1aade9ebe939">&#9670;&#160;</a></span>SetTagLand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void REMORAErrorTag::SetTagLand </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>tag_land</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Let a box region tag its land cells too, refining the whole rectangle as a ROMS nest does. Meant only for comparing directly against a ROMS nest; has no effect on a field criterion. </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00069">69</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
 
 </div>
 </div>
@@ -302,7 +335,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Restrict this criterion to a time window, given as elapsed time (seconds since remora.start_time), as total time (seconds on the model clock), or both, in which case both must hold. Held here in double rather than in AMRErrorTagInfo, whose Real would round a calendar-scale total time in a single-precision build. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00046">46</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00048">48</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
 
 </div>
 </div>
@@ -327,9 +360,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00106">106</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00115">115</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ErrorTag_8H_source.html#l00056">ActiveAt()</a>, and <a class="el" href="REMORA__ErrorTag_8H_source.html#l00046">SetTimeWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__ErrorTag_8H_source.html#l00058">ActiveAt()</a>, and <a class="el" href="REMORA__ErrorTag_8H_source.html#l00048">SetTimeWindow()</a>.</p>
 
 </div>
 </div>
@@ -353,9 +386,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00108">108</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00117">117</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ErrorTag_8H_source.html#l00056">ActiveAt()</a>, and <a class="el" href="REMORA__ErrorTag_8H_source.html#l00046">SetTimeWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__ErrorTag_8H_source.html#l00058">ActiveAt()</a>, and <a class="el" href="REMORA__ErrorTag_8H_source.html#l00048">SetTimeWindow()</a>.</p>
 
 </div>
 </div>
@@ -379,9 +412,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00105">105</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00114">114</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ErrorTag_8H_source.html#l00056">ActiveAt()</a>, and <a class="el" href="REMORA__ErrorTag_8H_source.html#l00046">SetTimeWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__ErrorTag_8H_source.html#l00058">ActiveAt()</a>, and <a class="el" href="REMORA__ErrorTag_8H_source.html#l00048">SetTimeWindow()</a>.</p>
 
 </div>
 </div>
@@ -405,9 +438,35 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00107">107</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00116">116</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__ErrorTag_8H_source.html#l00056">ActiveAt()</a>, and <a class="el" href="REMORA__ErrorTag_8H_source.html#l00046">SetTimeWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__ErrorTag_8H_source.html#l00058">ActiveAt()</a>, and <a class="el" href="REMORA__ErrorTag_8H_source.html#l00048">SetTimeWindow()</a>.</p>
+
+</div>
+</div>
+<a id="a801685c2f450a49a0bc539ebb8766beb" name="a801685c2f450a49a0bc539ebb8766beb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801685c2f450a49a0bc539ebb8766beb">&#9670;&#160;</a></span>m_tag_land</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool REMORAErrorTag::m_tag_land = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="REMORA__ErrorTag_8H_source.html#l00118">118</a> of file <a class="el" href="REMORA__ErrorTag_8H_source.html">REMORA_ErrorTag.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__Tagging_8cpp_source.html#l00097">operator()()</a>, and <a class="el" href="REMORA__ErrorTag_8H_source.html#l00069">SetTagLand()</a>.</p>
 
 </div>
 </div>

@@ -10,6 +10,7 @@ var searchData=
   ['evolveonestep_7',['EvolveOneStep',['../classREMORA.html#a429a2087fc3b9b964e573b672b4e17f2',1,'REMORA']]],
   ['evolveparticles_8',['EvolveParticles',['../classREMORAPC.html#a4bc0a8ad2c6ec1aa4570e75531b5c38b',1,'REMORAPC']]],
   ['evolvetracers_9',['evolveTracers',['../classREMORA.html#a6d126c0d4c7fe3f0c89cabbc3cb766cc',1,'REMORA']]],
-  ['exit_5fdef_5fmode_10',['exit_def_mode',['../classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96',1,'ncutils::NCFile']]],
-  ['extrapolate_5fmetric_5fto_5fphysical_5fboundaries_11',['extrapolate_metric_to_physical_boundaries',['../classREMORA.html#a2db07c02489b68d7a25c23a126ca8bb0',1,'REMORA']]]
+  ['exchange_5fcoarse_10',['exchange_coarse',['../classREMORA.html#aef098a85186c5df0489fdad3fde6420a',1,'REMORA']]],
+  ['exit_5fdef_5fmode_11',['exit_def_mode',['../classncutils_1_1NCFile.html#a927f0e440a42d1219f5e618ca48c0d96',1,'ncutils::NCFile']]],
+  ['extrapolate_5fmetric_5fto_5fphysical_5fboundaries_12',['extrapolate_metric_to_physical_boundaries',['../classREMORA.html#a2db07c02489b68d7a25c23a126ca8bb0',1,'REMORA']]]
 ];

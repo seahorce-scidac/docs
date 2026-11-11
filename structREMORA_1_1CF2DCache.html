@@ -100,24 +100,26 @@ Collaboration diagram for REMORA::CF2DCache:</div>
 <div class="dyncontent">
 <div class="center"><img src="structREMORA_1_1CF2DCache__coll__graph.png" border="0" usemap="#aREMORA_1_1CF2DCache_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aREMORA_1_1CF2DCache_coll__map" id="aREMORA_1_1CF2DCache_coll__map">
-<area shape="rect" title="one cached two&#45;level fill: the values it leaves in the ghost cells it writes (mask),..." alt="" coords="736,155,898,182"/>
+<area shape="rect" title="one cached two&#45;level fill: the values it leaves in the ghost cells it writes (mask),..." alt="" coords="736,181,898,209"/>
 <area shape="rect" title=" " alt="" coords="469,46,644,91"/>
-<area shape="poly" title=" " alt="" coords="646,94,713,118,790,154,784,154,711,123,646,99"/>
+<area shape="poly" title=" " alt="" coords="640,94,714,126,760,153,799,181,794,180,757,157,711,131,640,99"/>
 <area shape="rect" title=" " alt="" coords="158,5,234,33"/>
 <area shape="poly" title=" " alt="" coords="249,22,445,47,471,53,466,54,445,52,250,28"/>
 <area shape="rect" title=" " alt="" coords="118,89,274,117"/>
-<area shape="poly" title=" " alt="" coords="289,92,471,76,467,78,290,97"/>
+<area shape="poly" title=" " alt="" coords="289,92,471,75,467,78,290,97"/>
 <area shape="rect" title=" " alt="" coords="469,116,644,160"/>
 <area shape="poly" title=" " alt="" coords="279,118,298,120,386,129,471,135,466,136,386,134,298,125,280,123"/>
 <area shape="rect" title=" " alt="" coords="5,89,44,117"/>
 <area shape="poly" title=" " alt="" coords="58,101,119,101,116,105,60,106"/>
-<area shape="poly" title=" " alt="" coords="660,147,738,159,733,159,660,153"/>
+<area shape="poly" title=" " alt="" coords="659,154,713,166,765,181,760,181,712,171,659,160"/>
 <area shape="rect" title=" " alt="" coords="156,173,236,201"/>
-<area shape="poly" title=" " alt="" coords="251,182,342,176,445,163,472,160,467,161,445,168,343,181,252,188"/>
+<area shape="poly" title=" " alt="" coords="251,182,342,176,445,163,472,160,467,162,445,168,343,181,252,188"/>
 <area shape="rect" title=" " alt="" coords="471,184,642,212"/>
-<area shape="poly" title=" " alt="" coords="658,195,712,191,763,183,768,183,713,196,658,201"/>
-<area shape="rect" title=" " alt="" coords="497,239,617,266"/>
-<area shape="poly" title=" " alt="" coords="632,244,672,237,711,226,757,204,793,184,798,182,760,209,713,231,673,242,633,249"/>
+<area shape="poly" title=" " alt="" coords="658,194,738,196,733,196,658,199"/>
+<area shape="rect" title=" " alt="" coords="497,237,617,265"/>
+<area shape="poly" title=" " alt="" coords="632,239,712,224,771,210,776,209,713,229,633,244"/>
+<area shape="rect" title=" " alt="" coords="478,289,636,334"/>
+<area shape="poly" title=" " alt="" coords="650,286,711,263,759,235,796,210,801,208,762,240,714,268,651,291"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -127,11 +129,13 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a928b13fc7c5bd82030108b9523b27ccc" id="r_a928b13fc7c5bd82030108b9523b27ccc"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; amrex::iMultiFab &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a928b13fc7c5bd82030108b9523b27ccc">mask</a></td></tr>
 <tr class="memitem:ad38943c903c3170b5b0afa6aceaa551d" id="r_ad38943c903c3170b5b0afa6aceaa551d"><td class="memItemLeft" align="right" valign="top">amrex::Vector&lt; amrex::Real &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad38943c903c3170b5b0afa6aceaa551d">time</a></td></tr>
 <tr class="memitem:a8e59e0e0c0015238511136d948504110" id="r_a8e59e0e0c0015238511136d948504110"><td class="memItemLeft" align="right" valign="top">amrex::Vector&lt; long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e59e0e0c0015238511136d948504110">gen</a></td></tr>
+<tr class="memitem:a74f120279dc8fcf62bf4f9964a597c14" id="r_a74f120279dc8fcf62bf4f9964a597c14"><td class="memItemLeft" align="right" valign="top">amrex::Vector&lt; const amrex::MultiFab * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74f120279dc8fcf62bf4f9964a597c14">src</a></td></tr>
+<tr class="memdesc:a74f120279dc8fcf62bf4f9964a597c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">the coarse data each component was interpolated from: the old snapshot of an interpolated pair, or the parent's own field  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>one cached two-level fill: the values it leaves in the ghost cells it writes (mask), per component, with the fill time and coarse generation of each </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02136">2136</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02202">2202</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="a8e59e0e0c0015238511136d948504110" name="a8e59e0e0c0015238511136d948504110"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e59e0e0c0015238511136d948504110">&#9670;&#160;</a></span>gen</h2>
@@ -145,9 +149,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02140">2140</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02206">2206</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00394">REMORA::cf_2d_cache_entry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00642">REMORA::cf_2d_cache_entry()</a>, and <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00342">REMORA::FillPatch()</a>.</p>
 
 </div>
 </div>
@@ -163,9 +167,29 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02138">2138</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02204">2204</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00394">REMORA::cf_2d_cache_entry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00642">REMORA::cf_2d_cache_entry()</a>, and <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00342">REMORA::FillPatch()</a>.</p>
+
+</div>
+</div>
+<a id="a74f120279dc8fcf62bf4f9964a597c14" name="a74f120279dc8fcf62bf4f9964a597c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f120279dc8fcf62bf4f9964a597c14">&#9670;&#160;</a></span>src</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">amrex::Vector&lt;const amrex::MultiFab*&gt; REMORA::CF2DCache::src</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the coarse data each component was interpolated from: the old snapshot of an interpolated pair, or the parent's own field </p>
+
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02209">2209</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00642">REMORA::cf_2d_cache_entry()</a>, and <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00342">REMORA::FillPatch()</a>.</p>
 
 </div>
 </div>
@@ -181,9 +205,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02139">2139</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02205">2205</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00394">REMORA::cf_2d_cache_entry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00642">REMORA::cf_2d_cache_entry()</a>, and <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00342">REMORA::FillPatch()</a>.</p>
 
 </div>
 </div>
@@ -199,9 +223,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02137">2137</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA_8H_source.html#l02203">2203</a> of file <a class="el" href="REMORA_8H_source.html">REMORA.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00394">REMORA::cf_2d_cache_entry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00642">REMORA::cf_2d_cache_entry()</a>, and <a class="el" href="REMORA__FillPatch_8cpp_source.html#l00342">REMORA::FillPatch()</a>.</p>
 
 </div>
 </div>
