@@ -186,6 +186,7 @@ var classREMORA =
     [ "num_passive_scalars", "classREMORA.html#a315996f069e298dbe8f12b6fd3db4091", null ],
     [ "num_scalar", "classREMORA.html#a3b4d65518872da5102f7589658d27f32", null ],
     [ "NumDataLogs", "classREMORA.html#abe6c7702fc1edcb5bb7d9a1a56d007a9", null ],
+    [ "PackSurfaceCurrents", "classREMORA.html#a35a78d2cd0f78f358571edc460a670ba", null ],
     [ "PackSurfaceState", "classREMORA.html#aeddfad55142f06af3e4484b0aa084966", null ],
     [ "plot_node_coords", "classREMORA.html#aa511d5798b9db3ab6e647f3d76a34ef6", null ],
     [ "PlotFileName", "classREMORA.html#ac4d8c0cbac8976c70668280de6a142c2", null ],
