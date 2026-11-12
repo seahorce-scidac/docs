@@ -39,6 +39,10 @@ var namespaces_dup =
       [ "v", "namespaceBdyVars.html#a6b8b096afed3b8316768766e0b7b9716", null ]
     ] ],
     [ "biology_mod", "namespacebiology__mod.html", null ],
+    [ "boundary_interp", "namespaceboundary__interp.html", [
+      [ "cell_centered_weight", "namespaceboundary__interp.html#a159f0cc21b399eaf523410f2cfb09550", null ],
+      [ "nodal_weight", "namespaceboundary__interp.html#a09dec84ce0e3dffd18fcf00d7590aaf8", null ]
+    ] ],
     [ "BulkFlux", "namespaceBulkFlux.html", null ],
     [ "dateclock_mod", "namespacedateclock__mod.html", [
       [ "caldate", "namespacedateclock__mod.html#a2c5d7cadae693e0a68f247c53b7f6643", null ]

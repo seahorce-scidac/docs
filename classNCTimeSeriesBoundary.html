@@ -302,7 +302,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">22</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html">REMORA_NCTimeSeriesBoundary.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">23</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html">REMORA_NCTimeSeriesBoundary.cpp</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Private Attributes</h2></td></tr>
 
 <p>Read in time array from file and allocate data arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">45</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html">REMORA_NCTimeSeriesBoundary.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">46</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html">REMORA_NCTimeSeriesBoundary.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -398,17 +398,31 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>spatially interpolate boundary fabs from level 0 data (read in) to current level </p>
+<p>Interpolate a level-0 boundary strip onto this level's strip.</p>
+<p>Values are interpolated linearly along the strip between the coarse points on either side of each fine point: cell centers where the strip is cell-centered along its length, nodes where it is nodal. The point across the boundary is not interpolated.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dat_crse</td><td>fab of coarse data to interpolate from </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dat_fine</td><td>fab of fine data to interpoalte to </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dat_fine</td><td>fab of fine data to interpolate to </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00513">513</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html">REMORA_NCTimeSeriesBoundary.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00520">520</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html">REMORA_NCTimeSeriesBoundary.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classNCTimeSeriesBoundary_a0831532ec2874705078026fce481a6b8_cgraph.png" border="0" usemap="#aclassNCTimeSeriesBoundary_a0831532ec2874705078026fce481a6b8_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassNCTimeSeriesBoundary_a0831532ec2874705078026fce481a6b8_cgraph" id="aclassNCTimeSeriesBoundary_a0831532ec2874705078026fce481a6b8_cgraph">
+<area shape="rect" title="spatially interpolate boundary fabs from level 0 data (read in) to current level" alt="" coords="5,40,181,85"/>
+<area shape="rect" href="namespaceboundary__interp.html#a159f0cc21b399eaf523410f2cfb09550" title=" " alt="" coords="235,5,394,50"/>
+<area shape="poly" title=" " alt="" coords="180,46,222,42,217,43,181,51"/>
+<area shape="rect" href="namespaceboundary__interp.html#a09dec84ce0e3dffd18fcf00d7590aaf8" title=" " alt="" coords="229,75,400,119"/>
+<area shape="poly" title=" " alt="" coords="181,73,216,81,210,81,181,79"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -476,9 +490,9 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00382">382</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html">REMORA_NCTimeSeriesBoundary.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00383">383</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html">REMORA_NCTimeSeriesBoundary.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -531,25 +545,29 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">193</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html">REMORA_NCTimeSeriesBoundary.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">194</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html">REMORA_NCTimeSeriesBoundary.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNCTimeSeriesBoundary_a3c152f0a4cef6e25c049c844ec120ecb_cgraph.png" border="0" usemap="#aclassNCTimeSeriesBoundary_a3c152f0a4cef6e25c049c844ec120ecb_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassNCTimeSeriesBoundary_a3c152f0a4cef6e25c049c844ec120ecb_cgraph" id="aclassNCTimeSeriesBoundary_a3c152f0a4cef6e25c049c844ec120ecb_cgraph">
-<area shape="rect" title="Calculate interpolated values at time, in seconds on the model clock, reading in data as necessary." alt="" coords="5,32,181,93"/>
-<area shape="rect" href="classNCTimeSeriesBoundary.html#a0831532ec2874705078026fce481a6b8" title="spatially interpolate boundary fabs from level 0 data (read in) to current level" alt="" coords="229,5,404,50"/>
-<area shape="poly" title=" " alt="" coords="180,46,216,43,211,45,182,51"/>
-<area shape="rect" href="classNCTimeSeriesBoundary.html#aa59234163bfc966da5e57d66865745b4" title="Read in data from file at time index itime and fill into mf." alt="" coords="229,75,404,119"/>
-<area shape="poly" title=" " alt="" coords="181,73,216,81,211,81,181,79"/>
-<area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="452,56,634,84"/>
-<area shape="poly" title=" " alt="" coords="404,84,439,83,434,83,405,89"/>
-<area shape="rect" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="480,108,607,136"/>
-<area shape="poly" title=" " alt="" coords="404,104,467,114,461,114,404,109"/>
-<area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="682,108,837,136"/>
-<area shape="poly" title=" " alt="" coords="607,120,669,122,664,122,607,125"/>
-<area shape="rect" href="classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423" title=" " alt="" coords="885,108,1049,136"/>
-<area shape="poly" title=" " alt="" coords="837,120,872,122,866,122,837,125"/>
+<area shape="rect" title="Calculate interpolated values at time, in seconds on the model clock, reading in data as necessary." alt="" coords="5,98,181,160"/>
+<area shape="rect" href="classNCTimeSeriesBoundary.html#a0831532ec2874705078026fce481a6b8" title="spatially interpolate boundary fabs from level 0 data (read in) to current level" alt="" coords="229,72,404,117"/>
+<area shape="poly" title=" " alt="" coords="180,113,216,109,211,111,182,118"/>
+<area shape="rect" href="classNCTimeSeriesBoundary.html#aa59234163bfc966da5e57d66865745b4" title="Read in data from file at time index itime and fill into mf." alt="" coords="229,141,404,186"/>
+<area shape="poly" title=" " alt="" coords="181,140,216,147,211,148,181,145"/>
+<area shape="rect" href="namespaceboundary__interp.html#a159f0cc21b399eaf523410f2cfb09550" title=" " alt="" coords="464,5,622,50"/>
+<area shape="poly" title=" " alt="" coords="394,69,453,54,448,56,396,74"/>
+<area shape="rect" href="namespaceboundary__interp.html#a09dec84ce0e3dffd18fcf00d7590aaf8" title=" " alt="" coords="458,75,629,119"/>
+<area shape="poly" title=" " alt="" coords="404,93,444,95,439,96,405,98"/>
+<area shape="rect" href="REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="452,147,634,175"/>
+<area shape="poly" title=" " alt="" coords="404,160,439,162,434,162,405,165"/>
+<area shape="rect" href="REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="480,199,607,227"/>
+<area shape="poly" title=" " alt="" coords="405,180,467,196,462,196,404,185"/>
+<area shape="rect" href="classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="682,199,837,227"/>
+<area shape="poly" title=" " alt="" coords="607,210,669,213,664,213,607,216"/>
+<area shape="rect" href="classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423" title=" " alt="" coords="885,199,1049,227"/>
+<area shape="poly" title=" " alt="" coords="837,210,872,213,866,213,837,216"/>
 </map>
 </div>
 
@@ -580,7 +598,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00092">92</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00382">read_in_at_time()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00383">read_in_at_time()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -608,7 +626,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00073">73</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>.</p>
 
 </div>
 </div>
@@ -636,7 +654,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00067">67</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00382">read_in_at_time()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00383">read_in_at_time()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -664,7 +682,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00094">94</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00382">read_in_at_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00383">read_in_at_time()</a>.</p>
 
 </div>
 </div>
@@ -692,7 +710,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00096">96</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00382">read_in_at_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00383">read_in_at_time()</a>.</p>
 
 </div>
 </div>
@@ -720,7 +738,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00065">65</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00382">read_in_at_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00383">read_in_at_time()</a>.</p>
 
 </div>
 </div>
@@ -748,7 +766,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00098">98</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -776,7 +794,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00075">75</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -804,7 +822,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00084">84</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00382">read_in_at_time()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00383">read_in_at_time()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -832,7 +850,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00081">81</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -860,7 +878,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00078">78</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -880,7 +898,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00050">50</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00513">interp_fab()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00520">interp_fab()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>.</p>
 
 </div>
 </div>
@@ -898,7 +916,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00050">50</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00513">interp_fab()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00520">interp_fab()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>.</p>
 
 </div>
 </div>
@@ -926,7 +944,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00069">69</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00382">read_in_at_time()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00383">read_in_at_time()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -954,7 +972,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00102">102</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -982,7 +1000,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00100">100</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1028,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00071">71</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +1055,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00089">89</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>.</p>
 
 </div>
 </div>
@@ -1065,7 +1083,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00125">125</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00022">NCTimeSeriesBoundary()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00023">NCTimeSeriesBoundary()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1111,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00117">117</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1121,7 +1139,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00115">115</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1141,7 +1159,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00044">44</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1169,7 +1187,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00107">107</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1197,7 +1215,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00105">105</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1235,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00038">38</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1245,7 +1263,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00122">122</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1273,7 +1291,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00120">120</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1311,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00047">47</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1321,7 +1339,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00112">112</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1367,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00110">110</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
@@ -1369,7 +1387,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html#l00041">41</a> of file <a class="el" href="REMORA__NCTimeSeriesBoundary_8H_source.html">REMORA_NCTimeSeriesBoundary.H</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00045">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00193">update_interpolated_to_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00046">Initialize()</a>, and <a class="el" href="REMORA__NCTimeSeriesBoundary_8cpp_source.html#l00194">update_interpolated_to_time()</a>.</p>
 
 </div>
 </div>
