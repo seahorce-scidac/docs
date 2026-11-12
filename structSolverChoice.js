@@ -14,6 +14,8 @@ var structSolverChoice =
     [ "blk_ZW", "structSolverChoice.html#a6247a812f5037d4e66e7ebbda8858b42", null ],
     [ "bottom_stress_type", "structSolverChoice.html#a87953245714a80185fceae6fe421a81e", null ],
     [ "boundary_from_netcdf", "structSolverChoice.html#a73e08531bdac22cdef52a8511b4fffa5", null ],
+    [ "bulk_flux_current_factor", "structSolverChoice.html#ac51c9f77a075afd15ef0c5011a8895dc", null ],
+    [ "bulk_flux_relative_wind", "structSolverChoice.html#a6abf022dca95b119f05f794751587dbf", null ],
     [ "bulk_flux_scheme", "structSolverChoice.html#a9b8ad807c2717db8b82ce87a40a2da18", null ],
     [ "bulk_flux_type", "structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b", null ],
     [ "bulk_flux_type_specified", "structSolverChoice.html#a27801504eba8ee4a1034f3a9ec9db092", null ],

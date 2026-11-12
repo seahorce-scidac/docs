@@ -39,9 +39,11 @@ var searchData=
   ['bounds_36',['bounds',['../namespacemod__param.html#ae5ec659e87da7c5aa30eeab729d72670',1,'mod_param']]],
   ['boxes_5fat_5flevel_37',['boxes_at_level',['../classREMORA.html#a45b928a121bd6c5e75ec75732a27f774',1,'REMORA']]],
   ['bry_5ftimes_38',['bry_times',['../classNCTimeSeriesBoundary.html#a2f0a4f7de11e6f6018a9b7f6b336e0d1',1,'NCTimeSeriesBoundary']]],
-  ['bulk_5fflux_5fscheme_39',['bulk_flux_scheme',['../structSolverChoice.html#a9b8ad807c2717db8b82ce87a40a2da18',1,'SolverChoice']]],
-  ['bulk_5fflux_5ftype_40',['bulk_flux_type',['../structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b',1,'SolverChoice']]],
-  ['bulk_5fflux_5ftype_5fspecified_41',['bulk_flux_type_specified',['../structSolverChoice.html#a27801504eba8ee4a1034f3a9ec9db092',1,'SolverChoice']]],
-  ['bulk_5fflux_5fvalue_5fspecified_42',['bulk_flux_value_specified',['../structSolverChoice.html#aaf9c5583dc72aad6f9a73061004b2153',1,'SolverChoice']]],
-  ['bulk_5ffluxes_43',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice']]]
+  ['bulk_5fflux_5fcurrent_5ffactor_39',['bulk_flux_current_factor',['../structSolverChoice.html#ac51c9f77a075afd15ef0c5011a8895dc',1,'SolverChoice']]],
+  ['bulk_5fflux_5frelative_5fwind_40',['bulk_flux_relative_wind',['../structSolverChoice.html#a6abf022dca95b119f05f794751587dbf',1,'SolverChoice']]],
+  ['bulk_5fflux_5fscheme_41',['bulk_flux_scheme',['../structSolverChoice.html#a9b8ad807c2717db8b82ce87a40a2da18',1,'SolverChoice']]],
+  ['bulk_5fflux_5ftype_42',['bulk_flux_type',['../structSolverChoice.html#ac0fb41264cfa315018121cd16e4d325b',1,'SolverChoice']]],
+  ['bulk_5fflux_5ftype_5fspecified_43',['bulk_flux_type_specified',['../structSolverChoice.html#a27801504eba8ee4a1034f3a9ec9db092',1,'SolverChoice']]],
+  ['bulk_5fflux_5fvalue_5fspecified_44',['bulk_flux_value_specified',['../structSolverChoice.html#aaf9c5583dc72aad6f9a73061004b2153',1,'SolverChoice']]],
+  ['bulk_5ffluxes_45',['bulk_fluxes',['../structSolverChoice.html#a543d738984416baeefd3791411c79088',1,'SolverChoice']]]
 ];
