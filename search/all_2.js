@@ -70,7 +70,7 @@ var searchData=
   ['buildinfogetcomp_67',['buildInfoGetComp',['../namespaceamrex.html#a5f81ff33377203a46fb45efb7c30a2e6',1,'amrex']]],
   ['buildinfogetcompversion_68',['buildInfoGetCompVersion',['../namespaceamrex.html#a51d56426424c3c4103a45c273a3abf97',1,'amrex']]],
   ['buildinfogetgithash_69',['buildInfoGetGitHash',['../namespaceamrex.html#a215b1ed21dbb8f453201c6dc72ab3d1c',1,'amrex']]],
-  ['buildlocalfabsfromnetcdffile_70',['BuildLocalFABsFromNetCDFFile',['../REMORA__NCFile_8H.html#a47461143ba5018eead8131fa2e433b4c',1,'REMORA_NCFile.H']]],
+  ['buildlocalfabsfromnetcdffile_70',['BuildLocalFABsFromNetCDFFile',['../REMORA__NCFile_8H.html#a6b98f5da511e2a91716b951d3659f025',1,'REMORA_NCFile.H']]],
   ['buildmask_71',['BuildMask',['../classREMORAFillPatcher.html#abcf51d6e55f66e3bc1d3bc9945087551',1,'REMORAFillPatcher']]],
   ['built_20on_20amrex_20_3a_20remora_72',['Regional Modeling of Oceans Refined Adaptively (built on AMReX): REMORA',['../index.html',1,'']]],
   ['bulk_5fflux_5fcurrent_5ffactor_73',['bulk_flux_current_factor',['../structSolverChoice.html#ac51c9f77a075afd15ef0c5011a8895dc',1,'SolverChoice']]],

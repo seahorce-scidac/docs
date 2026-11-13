@@ -54,6 +54,7 @@ var classREMORA =
     [ "check_cf_metrics", "classREMORA.html#a3b4294bba1b8e40b7cfa0048d4ebd2f3", null ],
     [ "check_dropped_level0_mask", "classREMORA.html#a618d1a783d571f39f1e908a0ecc98f8d", null ],
     [ "check_dry_box_nesting", "classREMORA.html#aa5c302adb9b0cecb9d5750b550f3364f", null ],
+    [ "check_grid_metrics_from_file", "classREMORA.html#a93185880d9150f626e9fa5d584125073", null ],
     [ "check_mask_consistency", "classREMORA.html#a2744f37adb6e1e04f230e2b1ec728998", null ],
     [ "check_plot_nodal_z", "classREMORA.html#acfda3b6b1ff350749ace894e45fbeb98", null ],
     [ "checkpoint_due", "classREMORA.html#ab04f5975068f7f5e9847d684410e9390", null ],

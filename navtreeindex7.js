@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"classREMORABiology_1_1ECBBiology.html#ab04eaa0f4c718a96b7eee90f9bf11dae":[1,0,32,9,5],
 "classREMORABiology_1_1ECBBiology.html#ab04eaa0f4c718a96b7eee90f9bf11dae":[2,0,6,8,5],
 "classREMORABiology_1_1ECBBiology.html#ab8ef52585f1513e44250c3cc71f58592":[1,0,32,9,3],
 "classREMORABiology_1_1ECBBiology.html#ab8ef52585f1513e44250c3cc71f58592":[2,0,6,8,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "functions_func_u.html":[2,3,1,17],
 "functions_func_v.html":[2,3,1,18],
 "functions_func_w.html":[2,3,1,19],
-"functions_func_x.html":[2,3,1,20],
-"functions_func_y.html":[2,3,1,21]
+"functions_func_x.html":[2,3,1,20]
 };

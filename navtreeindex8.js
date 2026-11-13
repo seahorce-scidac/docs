@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"functions_func_y.html":[2,3,1,21],
 "functions_func_z.html":[2,3,1,22],
 "functions_func_~.html":[2,3,1,23],
 "functions_g.html":[2,3,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "namespacefunwave__advance__module.html":[1,0,10],
 "namespacefunwave__advance__module.html#a695777be7d7a99b46ca87f35368b9e73":[1,0,10,0],
 "namespacelatlon__regrid.html":[1,0,12],
-"namespacelatlon__regrid.html#a0e3712e6e0c5c93b84e694df41b7ecff":[1,0,12,3],
-"namespacelatlon__regrid.html#a156b3ae407a02b9e7145159edf32b969":[1,0,12,6]
+"namespacelatlon__regrid.html#a0e3712e6e0c5c93b84e694df41b7ecff":[1,0,12,3]
 };
