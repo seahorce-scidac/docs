@@ -44,6 +44,8 @@ var annotated_dup =
     [ "LatLonRegrid", "classLatLonRegrid.html", "classLatLonRegrid" ],
     [ "LatLonRegridOptions", "structLatLonRegridOptions.html", "structLatLonRegridOptions" ],
     [ "LevelIndex", "structLevelIndex.html", "structLevelIndex" ],
+    [ "NCLocalFab", "structNCLocalFab.html", "structNCLocalFab" ],
+    [ "NCReadSession", "classNCReadSession.html", "classNCReadSession" ],
     [ "NCTimeSeries", "classNCTimeSeries.html", "classNCTimeSeries" ],
     [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html", "classNCTimeSeriesBoundary" ],
     [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", "classNCTimeSeriesRiver" ],

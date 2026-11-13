@@ -1,38 +1,58 @@
 <map id="REMORA::init_grid_vars_full_domain_from_netcdf" name="REMORA::init_grid_vars_full_domain_from_netcdf">
-<area shape="rect" id="Node000001" title="Full domain high&#45;res grid variable initialization from NetCDF file." alt="" coords="5,307,197,351"/>
-<area shape="rect" id="Node000002" href="$classREMORA.html#ae3d31fecc901585ca386040fdffe2a67" title="Average down from level lev+1 to lev in mf, including grow cells." alt="" coords="245,104,426,149"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,304,297,156,296,162,130,308"/>
-<area shape="rect" id="Node000007" href="$REMORA__ReadFromInitNetcdf_8cpp.html#a5c502b74b98d2e4f249f50d0d3eb73f4" title="helper function checking that a high&#45;resolution file covers the refined domain plus grow cells" alt="" coords="720,399,896,443"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="188,349,245,361,368,379,493,394,708,414,702,415,492,399,368,385,244,366,189,355"/>
-<area shape="rect" id="Node000010" href="$classREMORA.html#a2db07c02489b68d7a25c23a126ca8bb0" title="Extrapolate grid metrics to edge of MultiFab, copying the outermost in&#45;domain ghost row outward or,..." alt="" coords="255,449,416,510"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="133,349,246,428,265,441,259,441,243,433,131,354"/>
-<area shape="rect" id="Node000011" href="$REMORA__ReadFromInitNetcdf_8cpp.html#aec1c389b9822a484c2fc252d290b8deb" title="helper function to read full&#45;domain high resolution grid variables from netcdf" alt="" coords="254,237,417,282"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="178,304,245,285,241,289,180,308"/>
-<area shape="rect" id="Node000015" href="$REMORA__ReadFromInitNetcdf_8cpp.html#a7011ccb795c48a2fa068bed3c4faf1a7" title="helper function to read grid variables a file may or may not carry (spherical coordinates,..." alt="" coords="264,307,406,351"/>
-<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="197,326,251,328,246,330,198,332"/>
-<area shape="rect" id="Node000003" href="$REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="951,194,1133,222"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="426,130,644,149,903,180,956,190,950,191,902,185,644,155,427,136"/>
-<area shape="rect" id="Node000004" href="$namespaceREMORAMaskedAvgDown.html#a48eaf454b2b9ca835ad162268d6d2cd4" title=" " alt="" coords="475,75,664,119"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="425,113,462,110,457,112,427,117"/>
-<area shape="rect" id="Node000005" href="$namespaceREMORAMaskedAvgDown.html#a5cfc80a0b7b80630bbb99fec39d8480b" title=" " alt="" coords="475,5,664,50"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="382,101,473,60,492,55,487,58,475,65,385,106"/>
-<area shape="rect" id="Node000006" href="$namespaceREMORAMaskedAvgDown.html#a8d164fe7492a284e4be5243428eee247" title=" " alt="" coords="713,5,903,50"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="664,25,700,27,695,29,666,30"/>
-<area shape="rect" id="Node000008" href="$classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="965,347,1119,375"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="896,396,967,380,973,379,897,401"/>
-<area shape="rect" id="Node000009" href="$classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423" title=" " alt="" coords="1181,347,1345,375"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1119,358,1168,361,1163,361,1120,364"/>
-<area shape="rect" id="Node000012" href="$REMORA__NCFile_8H.html#a41ff4f048600ccc17103500c9cc273bf" title="Function to read NetCDF variables and fill the corresponding Array4&#39;s." alt="" coords="474,246,665,274"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="416,257,461,259,456,260,418,262"/>
-<area shape="rect" id="Node000013" href="$REMORA__NCFile_8H.html#aec6b89e9ef60018dca2f1a9e5b281241" title="Helper function for reading data from NetCDF file into a provided FAB." alt="" coords="732,194,884,222"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="636,243,729,225,724,226,637,248"/>
-<area shape="rect" id="Node000014" href="$REMORA__NCFile_8H.html#a3e720d7f1573b1b0c7cb9a0b7b8bb871" title="Read in data from netcdf file and save to data arrays." alt="" coords="744,246,872,274"/>
-<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="665,257,731,259,726,260,666,262"/>
-<area shape="poly" id="edge13_Node000013_Node000003" title=" " alt="" coords="883,205,938,207,932,208,884,210"/>
-<area shape="poly" id="edge15_Node000014_Node000008" title=" " alt="" coords="842,271,997,341,991,341,842,277"/>
-<area shape="poly" id="edge17_Node000015_Node000003" title=" " alt="" coords="406,330,506,332,631,328,767,313,836,300,902,282,959,258,1006,232,1011,230,962,263,904,288,837,305,768,318,631,333,506,337,407,336"/>
-<area shape="poly" id="edge18_Node000015_Node000012" title=" " alt="" coords="406,306,508,277,503,279,408,311"/>
-<area shape="rect" id="Node000016" href="$REMORA__NCFile_8cpp.html#a4249e844e315ed3cb1e750d3798a7baf" title="Helper function for testing whether a file carries every named variable." alt="" coords="488,347,651,375"/>
-<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="407,336,475,347,470,348,407,341"/>
-<area shape="poly" id="edge20_Node000016_Node000008" title=" " alt="" coords="652,358,952,360,947,362,652,364"/>
+<area shape="rect" id="Node000001" title="Full domain high&#45;res grid variable initialization from NetCDF file." alt="" coords="5,315,197,359"/>
+<area shape="rect" id="Node000002" href="$REMORA__InitAnalyticBathymetry__BoundaryLayer_8H.html#af7f3ba67c009067c556a82938120fbdd" title=" " alt="" coords="751,143,933,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,312,176,269,209,248,244,231,307,209,372,191,505,167,630,156,738,154,733,156,630,161,505,173,373,196,308,214,246,235,211,252,179,273,128,316"/>
+<area shape="rect" id="Node000003" href="$classREMORA.html#ae3d31fecc901585ca386040fdffe2a67" title="Average down from level lev+1 to lev in mf, including grow cells." alt="" coords="245,100,426,145"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,313,174,254,243,187,290,152,287,156,246,191,178,258,124,316"/>
+<area shape="rect" id="Node000007" href="$REMORA__ReadFromInitNetcdf_8cpp.html#a5c502b74b98d2e4f249f50d0d3eb73f4" title="helper function checking that a high&#45;resolution file covers the refined domain plus grow cells" alt="" coords="499,511,674,555"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="196,357,337,393,427,420,493,458,550,501,544,500,490,462,425,425,335,398,196,363"/>
+<area shape="rect" id="Node000011" href="$classREMORA.html#a2db07c02489b68d7a25c23a126ca8bb0" title="Extrapolate grid metrics to edge of MultiFab, copying the outermost in&#45;domain ghost row outward or,..." alt="" coords="255,434,416,496"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="144,357,246,413,267,426,261,426,243,418,143,362"/>
+<area shape="rect" id="Node000012" href="$REMORA__NCFile_8H.html#a799ce47c137539766b397c4ca4334f81" title="The boxes, cell&#45;centered and with ghost cells, of every FAB this rank owns in each of mfs: the region..." alt="" coords="274,520,396,548"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="116,357,168,431,204,471,246,505,262,516,257,516,243,510,200,475,163,434,114,362"/>
+<area shape="rect" id="Node000013" href="$REMORA__ReadFromInitNetcdf_8cpp.html#ae16013f87f23cc7a276cb39bf3aa9284" title="helper function to read full&#45;domain high resolution grid variables from netcdf" alt="" coords="254,245,417,290"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="178,312,245,293,241,297,180,316"/>
+<area shape="rect" id="Node000023" href="$REMORA__ReadFromInitNetcdf_8cpp.html#a0239484ed75545b28ceb213fb977a0b0" title="helper function to read grid variables a file may or may not carry (spherical coordinates,..." alt="" coords="264,315,406,359"/>
+<area shape="poly" id="edge28_Node000001_Node000023" title=" " alt="" coords="196,334,251,336,246,338,198,340"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="426,126,738,148,733,151,427,131"/>
+<area shape="rect" id="Node000004" href="$namespaceREMORAMaskedAvgDown.html#a48eaf454b2b9ca835ad162268d6d2cd4" title=" " alt="" coords="492,5,681,50"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="384,97,473,60,496,54,491,57,475,65,387,102"/>
+<area shape="rect" id="Node000005" href="$namespaceREMORAMaskedAvgDown.html#a5cfc80a0b7b80630bbb99fec39d8480b" title=" " alt="" coords="492,75,681,119"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="425,111,479,107,474,109,427,116"/>
+<area shape="rect" id="Node000006" href="$namespaceREMORAMaskedAvgDown.html#a8d164fe7492a284e4be5243428eee247" title=" " alt="" coords="747,75,937,119"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="681,94,734,96,729,98,682,100"/>
+<area shape="rect" id="Node000008" href="$classncutils_1_1NCFile.html#a8e04513f7fd62f322b30e2edec623de0" title=" " alt="" coords="1003,501,1157,546"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="675,534,799,537,937,534,984,534,990,533,937,540,799,542,675,539"/>
+<area shape="rect" id="Node000009" href="$classncutils_1_1NCFile.html#aec0e1a7f0f93f2f806c0a0abaae66423" title=" " alt="" coords="1425,484,1590,512"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1158,516,1407,504,1413,504,1158,522"/>
+<area shape="rect" id="Node000010" href="$classncutils_1_1NCFile.html#af2716d5bd568c6b56c0756a593e8378d" title="Open an existing file." alt="" coords="1223,459,1377,487"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="1157,503,1219,491,1225,491,1158,509"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="1378,480,1412,486,1407,486,1378,485"/>
+<area shape="rect" id="Node000014" href="$REMORA__NCFile_8H.html#a47461143ba5018eead8131fa2e433b4c" title="Read the part of each variable that this rank needs, collectively." alt="" coords="474,299,699,327"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="417,280,494,295,488,296,418,285"/>
+<area shape="poly" id="edge18_Node000014_Node000002" title=" " alt="" coords="665,296,698,278,708,266,715,255,721,231,727,206,734,194,746,182,752,180,757,177,749,186,738,197,732,208,726,232,720,257,713,270,701,282,667,301"/>
+<area shape="rect" id="Node000015" href="$classNCReadSession.html#ac98b0b562cb68d813c6cff33a27587eb" title="Whether a session is open on this rank." alt="" coords="756,247,928,275"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="658,296,758,278,753,279,659,301"/>
+<area shape="rect" id="Node000017" href="$classNCReadSession.html#a74d912883427d6d84bc3d637d3236b78" title="The file, opened read&#45;only over comm the first time it is asked for." alt="" coords="766,299,918,327"/>
+<area shape="poly" id="edge19_Node000014_Node000017" title=" " alt="" coords="700,310,754,313,748,313,700,316"/>
+<area shape="rect" id="Node000018" href="$classNCReadSession.html#af59baec86339bf1516e0f37356b2f97f" title="Open fname read&#45;only over comm, outside any session." alt="" coords="985,450,1175,478"/>
+<area shape="poly" id="edge24_Node000014_Node000018" title=" " alt="" coords="622,325,662,346,701,374,716,392,724,410,732,426,749,440,802,462,858,474,915,478,972,479,967,479,915,483,858,479,800,467,746,445,728,430,719,413,712,395,697,378,659,350,622,330"/>
+<area shape="rect" id="Node000019" href="$REMORA__NCFile_8H.html#a12d459901f4fd676a67ba4f75c69bc25" title="Where fill_fab_from_arrays puts a variable&#39;s data, before the shift by the domain&#39;s lower corner." alt="" coords="794,351,890,379"/>
+<area shape="poly" id="edge23_Node000014_Node000019" title=" " alt="" coords="658,325,781,352,776,353,658,330"/>
+<area shape="rect" id="Node000020" href="$structncutils_1_1NCVar.html#ab202435182d346e990c2c7e47740cdad" title="Shape of the array (size in each array dimension)." alt="" coords="762,195,922,223"/>
+<area shape="poly" id="edge25_Node000014_Node000020" title=" " alt="" coords="653,296,698,277,712,267,721,256,731,245,746,233,759,230,764,228,749,238,735,248,725,259,716,271,701,282,655,301"/>
+<area shape="rect" id="Node000022" href="$classncutils_1_1NCFile.html#af3b0f96840a58464b5f5b2ae8576d3ac" title="Get the variable instance by name." alt="" coords="770,403,914,431"/>
+<area shape="poly" id="edge27_Node000014_Node000022" title=" " alt="" coords="614,325,675,356,748,388,772,398,767,398,746,393,673,361,614,330"/>
+<area shape="rect" id="Node000016" href="$classNCReadSession.html#a0c7555dd60c54b8cac83c76a5a439601" title=" " alt="" coords="998,274,1162,302"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="928,268,985,276,980,277,928,273"/>
+<area shape="poly" id="edge22_Node000017_Node000016" title=" " alt="" coords="917,302,985,297,980,299,918,308"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="908,325,938,337,973,360,1006,386,1059,439,1054,438,1003,390,970,364,935,342,908,330"/>
+<area shape="poly" id="edge21_Node000018_Node000010" title=" " alt="" coords="1175,465,1211,469,1205,469,1175,470"/>
+<area shape="rect" id="Node000021" href="$structncutils_1_1NCVar.html#ae0ab15dc4c1033271878c3bf5102f911" title="Number of array dimensions for this variable." alt="" coords="1003,195,1156,223"/>
+<area shape="poly" id="edge26_Node000020_Node000021" title=" " alt="" coords="922,206,990,208,985,210,923,212"/>
+<area shape="poly" id="edge29_Node000023_Node000002" title=" " alt="" coords="396,312,473,285,538,269,589,261,639,250,698,224,712,214,721,203,731,192,746,181,764,176,759,178,749,186,735,196,725,207,716,218,701,229,640,255,590,266,539,274,475,290,398,317"/>
+<area shape="poly" id="edge30_Node000023_Node000014" title=" " alt="" coords="406,328,461,324,456,326,407,333"/>
+<area shape="rect" id="Node000024" href="$REMORA__NCFile_8cpp.html#a4249e844e315ed3cb1e750d3798a7baf" title="Helper function for testing whether a file carries every named variable." alt="" coords="505,387,668,415"/>
+<area shape="poly" id="edge31_Node000023_Node000024" title=" " alt="" coords="407,352,517,382,512,383,407,358"/>
+<area shape="poly" id="edge32_Node000024_Node000008" title=" " alt="" coords="609,413,670,450,708,469,748,484,809,499,872,510,990,523,984,523,871,515,808,505,747,489,706,473,668,454,608,418"/>
 </map>

@@ -50,12 +50,13 @@ var searchData=
   ['sink_5fcolumn_47',['sink_column',['../namespaceREMORABiology.html#a050d98a525459d20a80e0466547c15ed',1,'REMORABiology']]],
   ['source_5fgrid_48',['source_grid',['../classNCTimeSeries.html#a563ba84dad8bfcbda0f341658a9ad3c4',1,'NCTimeSeries']]],
   ['spatially_5funiform_49',['spatially_uniform',['../classNCTimeSeries.html#a4ed7adc73ef3fe627a375ddb7240d66d',1,'NCTimeSeries']]],
-  ['store_5f2d_5fflux_50',['store_2d_flux',['../classREMORA.html#a8b377ab9abfebf1c2f0be3fda8b98140',1,'REMORA']]],
-  ['store_5fparticle_5fomega_51',['store_particle_omega',['../classREMORA.html#a8f3a756560b95c7a7705333347ba1c6b',1,'REMORA']]],
-  ['stretch_5ftransform_52',['stretch_transform',['../classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5',1,'REMORA']]],
-  ['stretch_5ftransform_5ffull_5fdomain_53',['stretch_transform_full_domain',['../classREMORA.html#a6a54a3e0fc202c79818c0a6b6b3f4a1a',1,'REMORA']]],
-  ['stretched_5fdepth_54',['stretched_depth',['../REMORA__DepthStretchTransform_8H.html#a5dd12ed5ec3998e9763d714feddb216a',1,'REMORA_DepthStretchTransform.H']]],
-  ['sum_5fintegrated_5fquantities_55',['sum_integrated_quantities',['../classREMORA.html#aafa685722589c03eb84d71568feb26bc',1,'REMORA']]],
-  ['summary_56',['summary',['../classLatLonRegrid.html#ae11fad0a7ccfcd65c75c693dd94f7abf',1,'LatLonRegrid']]],
-  ['surface_5fgas_5fexchange_57',['surface_gas_exchange',['../namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37',1,'REMORABiology']]]
+  ['state_50',['state',['../classNCReadSession.html#a0c7555dd60c54b8cac83c76a5a439601',1,'NCReadSession']]],
+  ['store_5f2d_5fflux_51',['store_2d_flux',['../classREMORA.html#a8b377ab9abfebf1c2f0be3fda8b98140',1,'REMORA']]],
+  ['store_5fparticle_5fomega_52',['store_particle_omega',['../classREMORA.html#a8f3a756560b95c7a7705333347ba1c6b',1,'REMORA']]],
+  ['stretch_5ftransform_53',['stretch_transform',['../classREMORA.html#a20f12090c7b81ca46d953ccf1319c0f5',1,'REMORA']]],
+  ['stretch_5ftransform_5ffull_5fdomain_54',['stretch_transform_full_domain',['../classREMORA.html#a6a54a3e0fc202c79818c0a6b6b3f4a1a',1,'REMORA']]],
+  ['stretched_5fdepth_55',['stretched_depth',['../REMORA__DepthStretchTransform_8H.html#a5dd12ed5ec3998e9763d714feddb216a',1,'REMORA_DepthStretchTransform.H']]],
+  ['sum_5fintegrated_5fquantities_56',['sum_integrated_quantities',['../classREMORA.html#aafa685722589c03eb84d71568feb26bc',1,'REMORA']]],
+  ['summary_57',['summary',['../classLatLonRegrid.html#ae11fad0a7ccfcd65c75c693dd94f7abf',1,'LatLonRegrid']]],
+  ['surface_5fgas_5fexchange_58',['surface_gas_exchange',['../namespaceREMORABiology.html#a1d862a1f79c24a7bc6fc103c86529c37',1,'REMORABiology']]]
 ];

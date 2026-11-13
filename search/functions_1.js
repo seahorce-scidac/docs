@@ -16,8 +16,9 @@ var searchData=
   ['buildinfogetcomp_13',['buildInfoGetComp',['../namespaceamrex.html#a5f81ff33377203a46fb45efb7c30a2e6',1,'amrex']]],
   ['buildinfogetcompversion_14',['buildInfoGetCompVersion',['../namespaceamrex.html#a51d56426424c3c4103a45c273a3abf97',1,'amrex']]],
   ['buildinfogetgithash_15',['buildInfoGetGitHash',['../namespaceamrex.html#a215b1ed21dbb8f453201c6dc72ab3d1c',1,'amrex']]],
-  ['buildmask_16',['BuildMask',['../classREMORAFillPatcher.html#abcf51d6e55f66e3bc1d3bc9945087551',1,'REMORAFillPatcher']]],
-  ['bulk_5ffluxes_17',['bulk_fluxes',['../classREMORA.html#ae7b7cf1dcfaa0a4603267a722437acd7',1,'REMORA']]],
-  ['bulk_5fpsit_18',['bulk_psit',['../classREMORA.html#ae574156fa5fb71c8301c3c2e4e99202a',1,'REMORA']]],
-  ['bulk_5fpsiu_19',['bulk_psiu',['../classREMORA.html#aa288199efe6ff562ce20f1cae3d249b5',1,'REMORA']]]
+  ['buildlocalfabsfromnetcdffile_16',['BuildLocalFABsFromNetCDFFile',['../REMORA__NCFile_8H.html#a47461143ba5018eead8131fa2e433b4c',1,'REMORA_NCFile.H']]],
+  ['buildmask_17',['BuildMask',['../classREMORAFillPatcher.html#abcf51d6e55f66e3bc1d3bc9945087551',1,'REMORAFillPatcher']]],
+  ['bulk_5ffluxes_18',['bulk_fluxes',['../classREMORA.html#ae7b7cf1dcfaa0a4603267a722437acd7',1,'REMORA']]],
+  ['bulk_5fpsit_19',['bulk_psit',['../classREMORA.html#ae574156fa5fb71c8301c3c2e4e99202a',1,'REMORA']]],
+  ['bulk_5fpsiu_20',['bulk_psiu',['../classREMORA.html#aa288199efe6ff562ce20f1cae3d249b5',1,'REMORA']]]
 ];

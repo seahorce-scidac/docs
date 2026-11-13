@@ -4,7 +4,7 @@ var searchData=
   ['n_5fbase_1',['n_base',['../REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a2d4a8c72f64df2c5d3534a027fc999b2',1,'REMORA_InitAnalyticGridScale_BoundaryLayer.H']]],
   ['n_5fcell_5fx_2',['n_cell_x',['../REMORA__InitAnalyticGridScale__BoundaryLayer_8H.html#a3c65d7c152a927932e8691b3d91407d1',1,'REMORA_InitAnalyticGridScale_BoundaryLayer.H']]],
   ['n_5fscratch_5f2d_3',['n_scratch_2d',['../classREMORA.html#a831de9b43b80ee9c2e3b85846744190e',1,'REMORA']]],
-  ['name_4',['name',['../structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09',1,'NDArray']]],
+  ['name_4',['name',['../structNDArray.html#a0d3be2b45f3fb008d12ec17dfd6abf09',1,'NDArray::name'],['../structNCReadSession_1_1Entry.html#ac5d43dc94b0b52e586a996e0642136a5',1,'NCReadSession::Entry::name']]],
   ['nat_5',['nat',['../namespacemod__param.html#a8e180e438cebc09f369f9a995d48da82',1,'mod_param']]],
   ['nbio_6',['nbio',['../classREMORA.html#a7b79b15b3444d138afc8abb5112e33ce',1,'REMORA']]],
   ['nbt_7',['nbt',['../namespacemod__param.html#a64e98e8be2aca5c6f6fb5cf4a1b8236a',1,'mod_param']]],

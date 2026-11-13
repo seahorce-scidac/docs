@@ -44,10 +44,11 @@ var searchData=
   ['containerhaselement_41',['containerHasElement',['../REMORA__Plotfile_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'containerHasElement(const V &amp;iterable, const T &amp;query):&#160;REMORA_Plotfile.cpp'],['../REMORA__SetPlotVars_8cpp.html#a1f8554e7b211b0acfc202e8a600e7d67',1,'containerHasElement(const V &amp;iterable, const T &amp;query):&#160;REMORA_SetPlotVars.cpp']]],
   ['contains_42',['contains',['../classParticleData.html#a20071f2a5b7c25c20f10d844822df943',1,'ParticleData']]],
   ['convert_5finv_5fdays_5fto_5finv_5fs_43',['convert_inv_days_to_inv_s',['../classREMORA.html#af9f49b7bb02986c3efb85bb25b7dc65a',1,'REMORA']]],
-  ['coriolis_44',['coriolis',['../classREMORA.html#af28f51401edd36aa6014d9536e1393da',1,'REMORA']]],
-  ['count_5fbitwise_5fdiff_45',['count_bitwise_diff',['../REMORA__BitwiseDiff_8H.html#a8530441f8e227d3a90897e3c053599d2',1,'REMORA_BitwiseDiff.H']]],
-  ['create_46',['create',['../classncutils_1_1NCFile.html#abddb0caca9a60c01a48beeafaff0b899',1,'ncutils::NCFile']]],
-  ['crse_5finterp_5fentry_47',['crse_interp_entry',['../classREMORA.html#ada1c39552865ff6ee17e3356b6865171',1,'REMORA']]],
-  ['cumulative_5fref_5fratio_48',['cumulative_ref_ratio',['../classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8',1,'NCTimeSeries']]],
-  ['curvilinear_49',['curvilinear',['../classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0',1,'REMORA']]]
+  ['copy_5fto_44',['copy_to',['../structNCLocalFab.html#a81f5a51d2330ae66e67eba93a813ead4',1,'NCLocalFab']]],
+  ['coriolis_45',['coriolis',['../classREMORA.html#af28f51401edd36aa6014d9536e1393da',1,'REMORA']]],
+  ['count_5fbitwise_5fdiff_46',['count_bitwise_diff',['../REMORA__BitwiseDiff_8H.html#a8530441f8e227d3a90897e3c053599d2',1,'REMORA_BitwiseDiff.H']]],
+  ['create_47',['create',['../classncutils_1_1NCFile.html#abddb0caca9a60c01a48beeafaff0b899',1,'ncutils::NCFile']]],
+  ['crse_5finterp_5fentry_48',['crse_interp_entry',['../classREMORA.html#ada1c39552865ff6ee17e3356b6865171',1,'REMORA']]],
+  ['cumulative_5fref_5fratio_49',['cumulative_ref_ratio',['../classNCTimeSeries.html#a9c5564b742da3bc36719af38f8df4fa8',1,'NCTimeSeries']]],
+  ['curvilinear_50',['curvilinear',['../classREMORA.html#ad2f25a8f87ee53ce3acb01550318e3a0',1,'REMORA']]]
 ];

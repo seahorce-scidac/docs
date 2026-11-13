@@ -12,7 +12,7 @@ var searchData=
   ['deltc_9',['deltC',['../structREMORABiology_1_1ECBParameters.html#aaf29814f4e8406203fa4d1936f8c3e3a',1,'REMORABiology::ECBParameters']]],
   ['deltn_10',['deltN',['../structREMORABiology_1_1ECBParameters.html#a8af1e38c3c5ae42b5598584cf81b16f1',1,'REMORABiology::ECBParameters']]],
   ['denitrification_11',['denitrification',['../structREMORABiology_1_1FennelParameters.html#a7658d0641d6ab6303720bf8bd8f1dad1',1,'REMORABiology::FennelParameters']]],
-  ['depth_12',['depth',['../REMORA__InitAnalyticBathymetry__DogboneAnalytic_8H.html#af933472eaf102220549e29b229aab4a3',1,'REMORA_InitAnalyticBathymetry_DogboneAnalytic.H']]],
+  ['depth_12',['depth',['../structNCReadSession_1_1State.html#aabb5286bef45c770316b9cfde4370f8a',1,'NCReadSession::State::depth'],['../REMORA__InitAnalyticBathymetry__DogboneAnalytic_8H.html#af933472eaf102220549e29b229aab4a3',1,'depth:&#160;REMORA_InitAnalyticBathymetry_DogboneAnalytic.H']]],
   ['derived_5fnames_5f2d_13',['derived_names_2d',['../classREMORA.html#afa180eb16bb3c1382d6c70749f923ad6',1,'REMORA']]],
   ['derived_5fnames_5f3d_14',['derived_names_3d',['../classREMORA.html#a64b30e43cd97f4882a884af258ccee10',1,'REMORA']]],
   ['dhi_15',['dhi',['../REMORA__InitAnalyticMasks__DogboneAnalytic_8H.html#a8f51e2d520717d99a11e187e759d898a',1,'REMORA_InitAnalyticMasks_DogboneAnalytic.H']]],
