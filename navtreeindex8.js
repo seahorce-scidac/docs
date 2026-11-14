@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"functions_d.html":[2,3,0,3],
+"functions_e.html":[2,3,0,4],
+"functions_enum.html":[2,3,4],
+"functions_eval.html":[2,3,5],
 "functions_f.html":[2,3,0,5],
 "functions_func.html":[2,3,1],
 "functions_func.html":[2,3,1,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "namespaceREMORABiology_1_1GasExchange.html#a958327e8901d727de35cd2d8b917aed5":[1,0,32,0,0],
 "namespaceREMORABiology_1_1GasExchange.html#aa6e91b6364639d4dd033a6bb250b83bd":[1,0,32,0,3],
 "namespaceREMORABiology_1_1GasExchange.html#aed7995b94129a694d26c37ea84fb42a4":[1,0,32,0,4],
-"namespaceREMORABiology_1_1GasExchange.html#af3d7a640e519dd12b76c53bd28994b7a":[1,0,32,0,1],
-"namespaceREMORAMaskedAvgDown.html":[1,0,33],
-"namespaceREMORAMaskedAvgDown.html#a48eaf454b2b9ca835ad162268d6d2cd4":[1,0,33,2],
-"namespaceREMORAMaskedAvgDown.html#a5cfc80a0b7b80630bbb99fec39d8480b":[1,0,33,3],
-"namespaceREMORAMaskedAvgDown.html#a8d164fe7492a284e4be5243428eee247":[1,0,33,4]
+"namespaceREMORABiology_1_1GasExchange.html#af3d7a640e519dd12b76c53bd28994b7a":[1,0,32,0,1]
 };

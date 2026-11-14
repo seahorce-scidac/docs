@@ -71,14 +71,14 @@ var NAVTREEINDEX =
 "REMORA__InitAnalyticProb__ParticleAdvectionFlat_8H.html#ab2013be7dd9603b22bececef1eb9f2cf",
 "REMORA__ParticleData_8H.html#af2c5e26bfa4c614447cca0a1fd39358d",
 "classNCTimeSeries.html#af265606e236105f17b0354069bb9f3bc",
-"classREMORA.html#a3199f163918597f4654c2a73d4bf9d08",
-"classREMORA.html#a9acf62fad9b709ea10e00e9534d7a7c5",
-"classREMORA.html#afeb047fefba9c5b2b26b3d7c6abaff6a",
-"functions_f.html",
-"namespaceREMORAParticleInitializations.html",
-"structREMORABiology_1_1ECBParameters.html#a8af1e38c3c5ae42b5598584cf81b16f1",
-"structREMORA_1_1NCHistoryFile.html#a6c8516645fc7fa5b35150caa301ea949",
-"structncutils_1_1NCVar.html#a37e593abf9039f34c9515a788e43d001"
+"classREMORA.html#a316a6db4c0b9a218e834c054d8c8f437",
+"classREMORA.html#a9a67a95c1bc1f744268a245f4ca4c446",
+"classREMORA.html#afdd48591237f498f1ac398e41ab46caf",
+"functions_d.html",
+"namespaceREMORAMaskedAvgDown.html",
+"structREMORABiology_1_1ECBParameters.html#a788c157d6d1c4da3ef00bf300dfd5396",
+"structREMORA_1_1CrseInterpEntry.html#abfe10213a6347555507a35c0e7688e9e",
+"structncutils_1_1NCVar.html#a2dce982c1ddb8f3b89b071bc3bf15532"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

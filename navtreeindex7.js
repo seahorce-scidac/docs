@@ -1,6 +1,10 @@
 var NAVTREEINDEX7 =
 {
-"classREMORA.html#afeb047fefba9c5b2b26b3d7c6abaff6a":[2,0,22,308],
+"classREMORA.html#afdd48591237f498f1ac398e41ab46caf":[2,0,22,112],
+"classREMORA.html#afded54aef57ded67542a888a911b67b0":[2,0,22,113],
+"classREMORA.html#afdf4b75f0ec12caf3648dbee5ec7f653":[2,0,22,511],
+"classREMORA.html#afe8358d09c3dcb5dfca0ae0a0c04951e":[2,0,22,533],
+"classREMORA.html#afeb047fefba9c5b2b26b3d7c6abaff6a":[2,0,22,310],
 "classREMORABiology_1_1Biology.html":[1,0,32,5],
 "classREMORABiology_1_1Biology.html":[2,0,6,4],
 "classREMORABiology_1_1Biology.html#a0149144526478d09c08f98300deb6b1d":[1,0,32,5,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "functions.html":[2,3,0],
 "functions.html":[2,3,0,0],
 "functions_b.html":[2,3,0,1],
-"functions_c.html":[2,3,0,2],
-"functions_d.html":[2,3,0,3],
-"functions_e.html":[2,3,0,4],
-"functions_enum.html":[2,3,4],
-"functions_eval.html":[2,3,5]
+"functions_c.html":[2,3,0,2]
 };
