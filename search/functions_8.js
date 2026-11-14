@@ -56,7 +56,7 @@ var searchData=
   ['init_5fzeta_5ffrom_5fnetcdf_53',['init_zeta_from_netcdf',['../classREMORA.html#a9147d37874b2c7e11f94c1600b57a1c0',1,'REMORA']]],
   ['init_5fzeta_5ffull_5fdomain_5ffrom_5fnetcdf_54',['init_zeta_full_domain_from_netcdf',['../classREMORA.html#a1c1ee9da7ff66b36615f16f068f7f5bd',1,'REMORA']]],
   ['initdata_55',['InitData',['../classREMORA.html#a7c0d7d3c687b85e71541fc5b5f849089',1,'REMORA']]],
-  ['initialize_56',['Initialize',['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()'],['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()']]],
+  ['initialize_56',['Initialize',['../classNCTimeSeries.html#a5377c65e30685bb7963b6b613d63ffa9',1,'NCTimeSeries::Initialize()'],['../classNCTimeSeriesBoundary.html#a400f64bcc3115eace7b06ecabb321f63',1,'NCTimeSeriesBoundary::Initialize()'],['../classNCTimeSeriesRiver.html#aeff5c70b433d0f1b70c4e170f9e424c3',1,'NCTimeSeriesRiver::Initialize()'],['../classNCVectorTimeSeries.html#a25a1a3e870d268f9efe32f650bc6494f',1,'NCVectorTimeSeries::Initialize()']]],
   ['initialize_5fconstant_5fbiology_57',['initialize_constant_biology',['../namespaceREMORABiology.html#abdd6774ffbc2176ac2adb5bbc5220c6c',1,'REMORABiology']]],
   ['initializefromfile_58',['InitializeFromFile',['../classREMORA.html#af25043e75bc350bc40ae56f65649554b',1,'REMORA']]],
   ['initializelevelfromdata_59',['InitializeLevelFromData',['../classREMORA.html#abc5dc3d0306ebb6507e6c702241f07a0',1,'REMORA']]],

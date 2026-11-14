@@ -10,5 +10,6 @@ var searchData=
   ['nctimeseriesboundary_7',['NCTimeSeriesBoundary',['../classNCTimeSeriesBoundary.html',1,'']]],
   ['nctimeseriesriver_8',['NCTimeSeriesRiver',['../classNCTimeSeriesRiver.html',1,'']]],
   ['ncvar_9',['NCVar',['../structncutils_1_1NCVar.html',1,'ncutils']]],
-  ['ndarray_10',['NDArray',['../structNDArray.html',1,'']]]
+  ['ncvectortimeseries_10',['NCVectorTimeSeries',['../classNCVectorTimeSeries.html',1,'']]],
+  ['ndarray_11',['NDArray',['../structNDArray.html',1,'']]]
 ];

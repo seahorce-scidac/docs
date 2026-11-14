@@ -36,6 +36,7 @@ var hierarchy =
     [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html", null ],
     [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", null ],
     [ "ncutils::NCVar", "structncutils_1_1NCVar.html", null ],
+    [ "NCVectorTimeSeries", "classNCVectorTimeSeries.html", null ],
     [ "NDArray&lt; DataType &gt;", "structNDArray.html", null ],
     [ "amrex::ParticleContainer", null, [
       [ "REMORAPC", "classREMORAPC.html", null ]

@@ -227,6 +227,10 @@ var NAVTREEINDEX2 =
 "REMORA__NCTimeSeries_8H_source.html":[3,0,0,3,13],
 "REMORA__NCTimeSeries_8cpp.html":[3,0,0,3,12],
 "REMORA__NCTimeSeries_8cpp_source.html":[3,0,0,3,12],
+"REMORA__NCVectorTimeSeries_8H.html":[3,0,0,3,19],
+"REMORA__NCVectorTimeSeries_8H_source.html":[3,0,0,3,19],
+"REMORA__NCVectorTimeSeries_8cpp.html":[3,0,0,3,18],
+"REMORA__NCVectorTimeSeries_8cpp_source.html":[3,0,0,3,18],
 "REMORA__PC_8H.html":[3,0,0,4,1],
 "REMORA__PC_8H.html#a0383d8a3a7d0bce173b4ee7d5c5f463b":[3,0,0,4,1,9],
 "REMORA__PC_8H.html#a47651b206c7945bb9f035f08da2a0a20":[3,0,0,4,1,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX2 =
 "REMORA__PC__Utils_8cpp_source.html":[3,0,0,4,4],
 "REMORA__ParticleData_8H.html":[3,0,0,4,0],
 "REMORA__ParticleData_8H.html#a307629588b9b06d9290fdd88d438048d":[3,0,0,4,0,3],
-"REMORA__ParticleData_8H.html#abf443828ef22024afc39f798fbe5fd4e":[3,0,0,4,0,1],
-"REMORA__ParticleData_8H.html#af2c5e26bfa4c614447cca0a1fd39358d":[3,0,0,4,0,2],
-"REMORA__ParticleData_8H_source.html":[3,0,0,4,0],
-"REMORA__PhysBCFunct_8H.html":[3,0,0,1,9],
-"REMORA__PhysBCFunct_8H.html#a60014a8d74bed0d5ae984e600c68dc85":[3,0,0,1,9,1]
+"REMORA__ParticleData_8H.html#abf443828ef22024afc39f798fbe5fd4e":[3,0,0,4,0,1]
 };

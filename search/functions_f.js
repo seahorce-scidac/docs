@@ -67,11 +67,12 @@ var searchData=
   ['restart_64',['restart',['../classREMORA.html#af82928444cae433cc744c0cf7427e8eb',1,'REMORA']]],
   ['restore_5fperimeter_5ffaces_65',['restore_perimeter_faces',['../classREMORA.html#abbd80b412cba00a7ac76a54d5f09d79b',1,'REMORA']]],
   ['rho_5feos_66',['rho_eos',['../classREMORA.html#a2b8ea8e7b1db929b8a9c3c8180ee0341',1,'REMORA']]],
-  ['rhs_5fper_5farea_5fcopy_67',['rhs_per_area_copy',['../classREMORA.html#a199789bccf11152ee1eddeedc31f8104',1,'REMORA']]],
-  ['rhs_5ft_5f3d_68',['rhs_t_3d',['../classREMORA.html#a36b75d2f50e6a142541263d0f4db9e89',1,'REMORA']]],
-  ['rhs_5fuv_5f3d_69',['rhs_uv_3d',['../classREMORA.html#a00f46ff162baeef568c646c662861437',1,'REMORA']]],
-  ['roll_5f2d_5fsnapshot_70',['roll_2d_snapshot',['../classREMORA.html#aef92acde7d3710d801522b9311c8802f',1,'REMORA']]],
-  ['rotate_5fto_5fgrid_71',['rotate_to_grid',['../namespacelatlon__regrid.html#a888b1a248c574dd59bcf26a37722c4ad',1,'latlon_regrid']]],
-  ['rotate_5fto_5fgrid_5faxes_72',['rotate_to_grid_axes',['../classREMORA.html#a54aa64c655a3a4c3c4636d34e4e1bf0d',1,'REMORA']]],
-  ['rowtilingifnotgpu_73',['RowTilingIfNotGPU',['../REMORA__DepthStretchTransform_8H.html#a05e45f480aef17433f52c291a7e286e6',1,'REMORA_DepthStretchTransform.H']]]
+  ['rho_5fvector_5fto_5fgrid_5faxes_67',['rho_vector_to_grid_axes',['../classREMORA.html#a977806fac76300584b59916389b19c27',1,'REMORA']]],
+  ['rhs_5fper_5farea_5fcopy_68',['rhs_per_area_copy',['../classREMORA.html#a199789bccf11152ee1eddeedc31f8104',1,'REMORA']]],
+  ['rhs_5ft_5f3d_69',['rhs_t_3d',['../classREMORA.html#a36b75d2f50e6a142541263d0f4db9e89',1,'REMORA']]],
+  ['rhs_5fuv_5f3d_70',['rhs_uv_3d',['../classREMORA.html#a00f46ff162baeef568c646c662861437',1,'REMORA']]],
+  ['roll_5f2d_5fsnapshot_71',['roll_2d_snapshot',['../classREMORA.html#aef92acde7d3710d801522b9311c8802f',1,'REMORA']]],
+  ['rotate_5fto_5fgrid_72',['rotate_to_grid',['../namespacelatlon__regrid.html#a888b1a248c574dd59bcf26a37722c4ad',1,'latlon_regrid']]],
+  ['rotate_5fto_5fgrid_5faxes_73',['rotate_to_grid_axes',['../classREMORA.html#ad4fa18b4d401b4a3c641269021beba9d',1,'REMORA']]],
+  ['rowtilingifnotgpu_74',['RowTilingIfNotGPU',['../REMORA__DepthStretchTransform_8H.html#a05e45f480aef17433f52c291a7e286e6',1,'REMORA_DepthStretchTransform.H']]]
 ];

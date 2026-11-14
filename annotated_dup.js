@@ -49,6 +49,7 @@ var annotated_dup =
     [ "NCTimeSeries", "classNCTimeSeries.html", "classNCTimeSeries" ],
     [ "NCTimeSeriesBoundary", "classNCTimeSeriesBoundary.html", "classNCTimeSeriesBoundary" ],
     [ "NCTimeSeriesRiver", "classNCTimeSeriesRiver.html", "classNCTimeSeriesRiver" ],
+    [ "NCVectorTimeSeries", "classNCVectorTimeSeries.html", "classNCVectorTimeSeries" ],
     [ "NDArray", "structNDArray.html", "structNDArray" ],
     [ "ParticleData", "classParticleData.html", "classParticleData" ],
     [ "ProbCoords", "structProbCoords.html", "structProbCoords" ],
